@@ -1,0 +1,28 @@
+/* FILE: blocks/_search.scss */
+
+.wp-block-search {
+	flex-wrap: wrap;
+
+	svg {
+		fill: currentColor;
+		width: auto !important;
+		height: 1.5rem !important;
+		vertical-align: middle;
+	}
+
+	&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+		padding: .25rem;
+
+		.wp-block-search__input,
+		.wp-block-search__button {
+			padding: calc( #{ $form_field_padding_vertical } - .25rem ) 1em;
+		}
+
+	}
+
+	.wp-block-search__input,
+	&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+		border-color: inherit;
+	}
+
+}

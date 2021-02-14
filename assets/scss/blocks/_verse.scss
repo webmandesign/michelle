@@ -1,0 +1,12 @@
+/* FILE: blocks/_verse.scss */
+
+.wp-block-verse {
+
+	&,
+	pre {
+		padding: 0;
+		border: 0;
+		overflow: hidden;
+	}
+
+}

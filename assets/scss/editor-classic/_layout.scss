@@ -1,0 +1,11 @@
+/* FILE: editor-classic/_layout.scss */
+
+html {
+	padding: 20px;
+}
+
+.mce-content-body {
+	width: 100%;
+	max-width: var(--layout_width_entry_content);
+	margin: 0 auto;
+}

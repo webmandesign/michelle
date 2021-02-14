@@ -1,0 +1,262 @@
+/* FILE: global/modifiers/_box-model.scss */
+
+$important_modifiers: important( 'modifier_has_background' );
+
+.has-background.has-background {
+	// Need to use absolute units due to possible
+	// custom font size set on the paragraph block.
+	padding: calc( var(--typography_size_html) * #{ $golden } ) $important_modifiers;
+
+	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+		padding-left: 6vw;
+		padding-right: 6vw;
+	}
+
+}
+
+$important_modifiers: null; // Required reset.
+
+// Width
+
+	.has-wide-content-width {
+
+		.wp-block-cover__inner-container,
+		.wp-block-group__inner-container {
+			max-width: var(--layout_width_content);
+		}
+
+	}
+
+// Height
+
+	$important_modifiers: important( 'modifier_screen_min_height' );
+
+	.has-half-screen-min-height {
+		min-height: 50vh $important_modifiers;
+	}
+
+		[class^="wp-block-"].has-half-screen-min-height {
+			@extend .has-half-screen-min-height;
+		}
+
+	.has-phi-screen-min-height {
+		min-height: ( $golden_major * 100vh ) $important_modifiers;
+	}
+
+		[class^="wp-block-"].has-phi-screen-min-height {
+			@extend .has-phi-screen-min-height;
+		}
+
+	.has-70-percent-screen-min-height {
+		min-height: 70vh $important_modifiers;
+	}
+
+		[class^="wp-block-"].has-70-percent-screen-min-height {
+			@extend .has-70-percent-screen-min-height;
+		}
+
+	.has-75-percent-screen-min-height {
+		min-height: 75vh $important_modifiers;
+	}
+
+		[class^="wp-block-"].has-75-percent-screen-min-height {
+			@extend .has-75-percent-screen-min-height;
+		}
+
+	.has-80-percent-screen-min-height {
+		min-height: 80vh $important_modifiers;
+	}
+
+		[class^="wp-block-"].has-80-percent-screen-min-height {
+			@extend .has-80-percent-screen-min-height;
+		}
+
+	.has-90-percent-screen-min-height {
+		min-height: 90vh $important_modifiers;
+	}
+
+		[class^="wp-block-"].has-90-percent-screen-min-height {
+			@extend .has-90-percent-screen-min-height;
+		}
+
+	.has-95-percent-screen-min-height {
+		min-height: 95vh $important_modifiers;
+	}
+
+		[class^="wp-block-"].has-95-percent-screen-min-height {
+			@extend .has-95-percent-screen-min-height;
+		}
+
+	.has-full-screen-min-height {
+		min-height: 100vh $important_modifiers;
+	}
+
+		[class^="wp-block-"].has-full-screen-min-height {
+			@extend .has-full-screen-min-height;
+		}
+
+	$important_modifiers: null; // Required reset.
+
+// Padding
+
+	$important_modifiers: important( 'modifier_padding' );
+
+	.has-phi-padding,
+	.has-golden-padding {
+		padding: ( $golden +em ) $important_modifiers;
+	}
+
+	.has-no-padding,
+	.p-0 {
+		padding: 0 $important_modifiers;
+	}
+
+	.has-no-padding-top,
+	.pt-0 {
+		padding-top: 0 $important_modifiers;
+	}
+
+	.has-no-padding-right,
+	.pr-0 {
+		padding-right: 0 $important_modifiers;
+	}
+
+	.has-no-padding-bottom,
+	.pb-0 {
+		padding-bottom: 0 $important_modifiers;
+	}
+
+	.has-no-padding-left,
+	.pl-0 {
+		padding-left: 0 $important_modifiers;
+	}
+
+	.has-no-padding-horizontal,
+	.plr-0 {
+		padding-left: 0 $important_modifiers;
+		padding-right: 0 $important_modifiers;
+	}
+
+	.has-no-padding-vertical,
+	.ptb-0 {
+		padding-top: 0 $important_modifiers;
+		padding-bottom: 0 $important_modifiers;
+	}
+
+	.has-extra-small-padding {
+		padding: .8em $important_modifiers;
+	}
+
+	.has-small-padding {
+		padding: 1em $important_modifiers;
+	}
+
+	.has-regular-padding,
+	.has-medium-padding {
+		padding: 1.5em $important_modifiers;
+	}
+
+	.has-large-padding {
+		padding: 2em $important_modifiers;
+	}
+
+	.has-huge-padding,
+	.has-extra-large-padding {
+		padding: 3em $important_modifiers;
+	}
+
+	.has-phi-padding,
+	.has-golden-padding,
+	.has-regular-padding,
+	.has-medium-padding,
+	.has-large-padding,
+	.has-huge-padding,
+	.has-extra-large-padding {
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			padding-left: 6vw $important_modifiers;
+			padding-right: 6vw $important_modifiers;
+		}
+	}
+
+	$important_modifiers: null; // Required reset.
+
+// Margin
+
+	$important_modifiers: important( 'modifier_margin' );
+
+	.has-no-margin,
+	.m-0 {
+		margin: 0 $important_modifiers;
+	}
+
+	.has-no-margin-top,
+	.mt-0 {
+		margin-top: 0 $important_modifiers;
+	}
+
+	.has-no-margin-right,
+	.mr-0 {
+		margin-right: 0 $important_modifiers;
+	}
+
+	.has-no-margin-bottom,
+	.mb-0 {
+		margin-bottom: 0 $important_modifiers;
+	}
+
+	.has-no-margin-left,
+	.ml-0 {
+		margin-left: 0 $important_modifiers;
+	}
+
+	.has-no-margin-horizontal,
+	.mlr-0 {
+		margin-left: 0 $important_modifiers;
+		margin-right: 0 $important_modifiers;
+	}
+
+	.has-no-margin-vertical,
+	.mtb-0 {
+		margin-top: 0 $important_modifiers;
+		margin-bottom: 0 $important_modifiers;
+	}
+
+	.has-regular-margin-bottom {
+		margin-bottom: calc( var(--typography_size_html) * #{ $golden } ) $important_modifiers;
+	}
+
+	$important_modifiers: null; // Required reset.
+
+// Flexbox
+
+	$important_modifiers: important( 'modifier_flex_order' );
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
+
+		@for $i from 1 through 6 {
+			.has-order-#{$i} {
+				order: $i $important_modifiers;
+			}
+		}
+
+		.has-order-first {
+			order: -99;
+		}
+
+		.has-order-last {
+			order: 99;
+		}
+
+	}
+
+	$important_modifiers: null; // Required reset.
+
+	$important_modifiers: important( 'modifier_flex_grow' );
+
+	@for $i from 2 through 6 {
+		.has-#{$i}-flex-grow {
+			flex-grow: $i $important_modifiers;
+		}
+	}
+
+	$important_modifiers: null; // Required reset.

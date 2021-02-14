@@ -1,0 +1,62 @@
+/* FILE: comments/_single.scss */
+
+.comment {
+
+	&-body {
+		padding: 0 0 ( $golden +em );
+
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			padding-#{$left}: 1em;
+		}
+
+	}
+
+	&-content {
+
+		&::after {
+			content: '';
+			clear: both;
+			display: table;
+			table-layout: fixed;
+		}
+
+		a {
+			word-wrap: break-word;
+		}
+
+		p,
+		blockquote,
+		table {
+			margin-bottom: 1em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}
+
+	}
+
+	.reply {
+		position: absolute;
+		#{$right}: 0;
+		top: $golden +rem;
+		font-size: .8em;
+		text-transform: uppercase;
+		letter-spacing: var(--letter_spacing);
+	}
+
+}
+
+.trackback,
+.pingback {
+
+	.comment-list & {
+		padding-#{$left}: 0;
+	}
+
+	.comment-body {
+		padding: 0;
+	}
+
+}

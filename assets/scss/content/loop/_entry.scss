@@ -1,0 +1,37 @@
+/* FILE: content/loop/_entry.scss */
+
+.posts .entry {
+	display: flex;
+	flex-direction: column;
+	width: calc( 100% - var(--posts_list_gap) );
+	margin: var(--posts_list_gap) calc( var(--posts_list_gap) / 2 );
+
+	.has-posts-list-cascade & {
+		justify-content: center;
+	}
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		width: calc( 50% - var(--posts_list_gap) );
+		max-width: calc( 50% - var(--posts_list_gap) );
+	}
+
+	@include media( map_get( $breakpoint, 'xl' ) ) {
+		width: calc( 33.33% - var(--posts_list_gap) );
+		max-width: calc( 33.33% - var(--posts_list_gap) );
+	}
+
+	> * {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+
+}

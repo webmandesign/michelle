@@ -1,0 +1,203 @@
+/* FILE: global/form/_search.scss */
+
+form[role="search"],
+.form-search,
+.search-form {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin: 0;
+
+	[type="search"],
+	.search-field {
+		width: 100%;
+		min-width: 100px;
+		margin: 0; // For Search Form block.
+	}
+
+	[type="submit"],
+	.search-submit {
+		padding-left: 1em;
+		padding-right: 1em;
+		margin-#{$left}: .25em;
+
+		&:focus {
+			outline-color: inherit;
+		}
+
+	}
+
+	select {
+		margin-#{$right}: .25em;
+	}
+
+	> label:not([for]) {
+		flex: 1 1 auto;
+		padding: 0;
+	}
+
+	.svg-icon {
+		width: auto;
+		height: 1.5em;
+		margin: -.25em 0;
+		vertical-align: middle;
+	}
+
+	.main-navigation & {
+		font-size: 1rem;
+	}
+
+	&.has-submit-with-icon {
+
+		[type="search"],
+		.search-field {
+			padding-#{$right}: 3em;
+		}
+
+		[type="submit"] {
+			position: absolute;
+			width: 3em;
+			#{$right}: 0;
+			bottom: 0;
+			padding-#{$left}: 0;
+			padding-#{$right}: 0;
+			margin: 0;
+			background: none;
+			color: inherit;
+			border: 1px solid transparent; // To match the form field height.
+		}
+
+	}
+
+	.page-header + & {
+		max-width: var(--layout_width_entry_content);
+		margin: 0 auto var(--white_space);
+	}
+
+	.site-header-content > & {
+		margin-#{$left}: 1rem;
+		z-index: 1;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			#{$left}: 50%;
+			top: 50%;
+			opacity: 0;
+			z-index: -2;
+			transition: opacity .1s;
+		}
+
+		[type="search"],
+		.search-field {
+			border-color: transparent;
+		}
+
+		&:not(:focus-within) {
+
+			[type="search"],
+			.search-field {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				min-width: 0;
+				padding: 0;
+				padding-#{$right}: 100%;
+				opacity: 0;
+				z-index: 2;
+				cursor: pointer;
+			}
+
+			[type="submit"],
+			.search-submit {
+				position: relative;
+				width: 4rem;
+				padding-top: 6vh;
+				padding-bottom: 6vh;
+				line-height: 1.25;
+
+				.svg-icon {
+					height: 2em;
+				}
+
+			}
+
+		}
+
+		&:focus-within {
+			position: fixed;
+			left: calc( 50vw - var(--scrollbar_width) / 2 );
+			top: 50vh;
+			margin-#{$left}: 0;
+			font-size: 2em;
+			background: none;
+			color: var(--color_search_text);
+			transform: translateX(-50%) translateY(-50%);
+
+			&::before {
+				width: calc( 100vw - 2em - var(--scrollbar_width) );
+				height: calc( 100vh - 2em );
+				margin: calc( -50vh + 1em ) calc( -50vw + 1em + ( var(--scrollbar_width) / 2 ) );
+				background: var(--color_search_background);
+				box-shadow: 0 0 2em rgba( #000, .25 );
+				opacity: .98;
+				cursor: zoom-out;
+				backdrop-filter: blur( 10px );
+			}
+
+			&::after {
+				content: '\00d7'; // &times;
+				position: absolute;
+				#{$right}: 0;
+				bottom: 100%;
+				width: 1.5em;
+				font-size: 2 * .8 +em;
+				text-align: center;
+				border: 1px solid transparent;
+				opacity: .33;
+				z-index: -1;
+				cursor: pointer;
+			}
+
+		}
+
+		&:focus-within [type="search"],
+		&:focus-within .search-field,
+		[type="search"]:focus,
+		.search-field:focus {
+			$width: $golden_major * 100 +vw;
+
+			width: $width;
+			max-width: $width;
+			padding-#{$left}: 1em;
+			padding-#{$right}: 3em;
+			border-bottom-color: currentColor;
+			z-index: 0;
+			cursor: text;
+		}
+
+		.has-navigation-mobile & {
+			@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+				display: none;
+			}
+		}
+
+	}
+
+}
+
+.wp-block-search {
+
+	&:not(:last-child) {
+		margin-bottom: calc( var(--typography_size_html) * #{ $golden } );
+	}
+
+	&__label {
+		margin-bottom: 0;
+	}
+
+}

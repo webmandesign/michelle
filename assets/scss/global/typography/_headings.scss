@@ -1,0 +1,54 @@
+/* FILE: global/typography/_headings.scss */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	clear: both;
+	margin-top: 0;
+	margin-bottom: calc( 1.618 * var(--typography_size_html) );
+	font-family: var(--typography_font_headings);
+	font-weight: 300;
+	line-height: 1.25;
+	word-wrap: break-word;
+	color: var(--color_content_headings);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+
+	}
+
+}
+
+h1 {
+	text-transform: uppercase;
+
+	@include media( map_get( $breakpoint, 'xxl' ) ) {
+		line-height: 1.1;
+	}
+
+}
+
+h2, h3, h4, h5, h6 {
+	margin-top: calc( var(--white_space) / 2 );
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+}
+
+@for $heading from 1 through 6 {
+	h#{ $heading },
+	.h#{ $heading } {
+		font-size: calc( var(--typography_heading_size_multiplier) * var(--typography_heading_size_#{ $heading }) );
+	}
+}

@@ -1,0 +1,63 @@
+/* FILE: content/layout/_base.scss */
+
+.site-content {
+	position: relative;
+	padding-left: 6vw;
+	padding-right: 6vw;
+	background: var(--color_content_background);
+	color: var(--color_content_text);
+	border-color: var(--color_content_border);
+	z-index: 1;
+
+	.no-js & {
+		// No need to do this when JS is enabled as we are setting
+		// `--scrollbar_width` CSS variable with JS.
+		overflow-x: hidden;
+	}
+
+}
+
+.content-area {
+	max-width: var(--layout_width_content);
+	padding: var(--content_padding) 0;
+	margin: 0 auto;
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+		table-layout: fixed;
+	}
+
+}
+
+.site-main {
+	max-width: var(--layout_width_entry_content);
+	margin: 0 auto;
+
+	.blog &,
+	.archive &,
+	.search-results & {
+		max-width: none;
+	}
+
+}
+
+.page-content.not-found {
+	max-width: var(--layout_width_entry_content);
+	margin: 0 auto;
+}
+
+// Page templates:
+
+	[class*="-template-content-only"] .content-area,
+	.has-content-layout-no-padding .site-content,
+	.has-content-layout-no-padding .content-area {
+		padding: 0;
+	}
+
+	.has-content-layout-full-width .content-area,
+	.has-content-layout-full-width .site-main,
+	.has-content-layout-no-padding .site-main {
+		max-width: none;
+	}

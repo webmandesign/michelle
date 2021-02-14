@@ -1,0 +1,181 @@
+/* FILE: global/menu/_mobile.scss */
+
+.menu-toggle {
+	position: relative;
+	padding: .5em 1em;
+	margin-#{$right}: 1em;
+	font-size: 1em;
+	border: 0;
+	z-index: 999;
+
+	.site &,
+	.site &:hover,
+	.site &:focus,
+	.site &:active {
+		background: none;
+		color: var(--color_accent);
+		box-shadow: none;
+	}
+
+	.toggled & {
+		position: fixed;
+		width: 100%;
+		#{$left}: 50%;
+		top: 0;
+		padding: 1em;
+		margin-#{$right}: 0;
+		transform: translateX(-50%);
+	}
+
+	.svg-icon {
+		font-size: $golden +em;
+		vertical-align: middle;
+	}
+
+		.menu-open {
+
+			.toggled & {
+				display: none;
+			}
+
+		}
+
+		.menu-close {
+			display: none;
+
+			.toggled & {
+				display: inline;
+			}
+
+		}
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		display: none;
+	}
+
+	&-skip-link {
+
+		&:not(:focus) {
+			@extend %screen_reader_hiding;
+		}
+
+		&-container {
+
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				display: none;
+			}
+
+		}
+
+	}
+
+}
+
+.mobile-search-form {
+	margin-bottom: 3em;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		display: none;
+	}
+
+}
+
+// Normal menu style overrides:
+.has-navigation-mobile {
+
+	.main-navigation-container {
+		display: none;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			display: flex;
+		}
+
+	}
+
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+
+		.main-navigation {
+			margin: 0;
+
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+
+			a {
+				flex: 1 1 auto;
+				display: block;
+				padding: $golden_major +rem;
+			}
+
+			&-container {
+				position: fixed;
+				width: calc( 100vw - var(--scrollbar_width) );
+				height: 100vh;
+				#{$left}: 0;
+				top: 0;
+				padding: 6em 6% 3em;
+				margin-bottom: 0;
+				background: var(--color_header_background);
+				overflow-y: auto;
+				z-index: 998;
+			}
+
+			.sub-menu {
+				position: relative;
+				width: 100%;
+				#{$left}: auto;
+				top: auto;
+				padding: 0;
+				padding-#{$left}: $golden_major +rem;
+				background: transparent;
+				box-shadow: none;
+
+				.sub-menu {
+					#{$left}: auto;
+					top: auto;
+				}
+
+			}
+
+			.sub-menu::before,
+			.sub-menu .sub-menu::before {
+				opacity: .05;
+			}
+
+		}
+
+		.menu-primary {
+			display: block;
+
+			// Top level menu items.
+			> li {
+
+				&:not(:last-child) {
+					margin-#{$right}: 0;
+				}
+
+			}
+
+		}
+
+		.toggle-sub-menus {
+
+			.button-toggle-sub-menu {
+				position: relative;
+				#{$right}: auto;
+				top: auto;
+				transform: none;
+			}
+
+		}
+
+		.toggled .main-navigation-container {
+			display: block;
+		}
+
+	}
+
+}

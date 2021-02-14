@@ -1,0 +1,16 @@
+/* FILE: blocks-rtl.scss */
+
+//
+// Content styles, RTL.
+//
+// @package    Michelle
+// @copyright  WebMan Design, Oliver Juhas
+//
+
+$left: right;
+$right: left;
+
+@import 'tools/_index';
+@import 'setup/_index';
+
+@import 'blocks/_index';

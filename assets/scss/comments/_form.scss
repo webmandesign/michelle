@@ -1,0 +1,73 @@
+/* FILE: comments/_single.scss */
+
+.comment-respond {
+
+	.comment-list & {
+		margin: ( $golden +em ) 0;
+	}
+
+	textarea,
+	[type="text"],
+	[type="email"],
+	[type="url"] {
+		width: 100%;
+	}
+
+	label:first-child {
+		display: block;
+		margin-bottom: $golden_minor +em;
+	}
+
+	textarea:invalid {
+		max-height: 2em * $golden + 2 * $golden_major; // 2x line height + vertical textarea padding.
+		overflow-y: hidden;
+	}
+
+}
+
+.comment-form {
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	label {
+		display: block;
+		font-size: .8em;
+	}
+
+	[type="checkbox"] + label,
+	[type="radio"] + label {
+		display: inline;
+	}
+
+	&-url {
+		clear: both;
+	}
+
+	@include media( map_get( $breakpoint, 's' ) ) {
+
+		&-author,
+		&-email {
+			float: $left;
+			width: 48%;
+			margin-#{$left}: 4%;
+		}
+
+		&-author {
+			margin-#{$left}: 0;
+		}
+
+	}
+
+}
+
+.comment-reply-title {
+	margin-bottom: 2rem;
+	font-size: calc( var(--typography_heading_size_multiplier) * var(--typography_heading_size_4) );
+}
+
+#cancel-comment-reply-link {
+	float: $right;
+	font-size: .8rem;
+}

@@ -1,0 +1,58 @@
+/* FILE: global/header/_base.scss */
+
+.site-header {
+	position: relative;
+	font-size: var(--typography_size_header);
+	background: var(--color_header_background);
+	color: var(--color_header_text);
+	border-color: var(--color_header_border);
+	z-index: 998;
+
+	&-section {
+		position: relative;
+		padding: 0 6vw;
+	}
+
+	&-content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		min-width: 240px;
+		max-width: var(--max_width_header_content);
+		margin-left: auto;
+		margin-right: auto;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			flex-wrap: nowrap;
+		}
+
+	}
+
+	a {
+		color: var(--color_header_link);
+	}
+
+	// Sticky header.
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+
+		.has-scrolled:not(.has-navigation-toggled) & {
+			position: sticky;
+			top: 0;
+			transform: translateY( -100% );
+			transition: transform .6s;
+		}
+
+		.has-scrolled-up:not(.has-navigation-toggled) & {
+			box-shadow: 0 1em 2em rgba( #000, .15 );
+			transform: translateY( 0 );
+
+			&-section {
+				padding-top: .5em;
+				padding-bottom: .5em;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,160 @@
+/* FILE: global/elements/_base.scss */
+
+body {
+	border-top: var(--border_body_width) solid;
+	border-bottom: var(--border_body_width) solid;
+	border-color: var(--color_body_border);
+}
+
+hr:not(.is-style-dots),
+.wp-block-separator:not(.is-style-dots) {
+	clear: both;
+	max-width: percentage( $golden_minor );
+	border-width: 0;
+	border-bottom: 2px solid;
+
+	&.alignleft,
+	&.alignright {
+		float: none;
+		width: percentage( $golden_minor );
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: calc( var(--typography_size_html) * #{ $golden } ); // Simulating rem unit for block editor.
+	}
+
+	&.alignleft {
+		margin-right: auto;
+	}
+
+	&.alignright {
+		margin-left: auto;
+	}
+
+}
+
+	@supports ( mask-image: url('') ) {
+		// @see  setup/_others.scss for mask images.
+		// @link  https://developer.mozilla.org/en-US/docs/Web/CSS/mask
+		// @link  https://caniuse.com/#feat=css-masks
+
+		hr:not(.is-style-dots),
+		.wp-block-separator:not(.is-style-dots) {
+			height: var(--hr_zigzag_height);
+			width: calc( 20/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
+			max-width: 100%;
+			background: var(--color_accent);
+			border-width: 0;
+			mask-image: url('data:image/svg+xml;utf8,#{ encode_url( map_get( $zigzag_mask, '20x5' ) ) }');
+
+			&.alignleft,
+			&.alignright {
+				width: calc( 20/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
+			}
+
+		}
+
+		// Override default block styles:
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: var(--hr_zigzag_height);
+		}
+
+	}
+
+	hr,
+	.wp-block-separator {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+abbr[title],
+acronym[title],
+dfn {
+	cursor: help;
+	text-decoration: none;
+}
+
+mark,
+ins {
+	padding: .15em 0;
+	margin: 0 .25em;
+	box-decoration-break: clone;
+}
+
+s,
+del {
+	text-decoration: line-through;
+	color: inherit;
+}
+
+audio,
+embed,
+iframe,
+img,
+object,
+video {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-size: .8em;
+	text-align: center;
+}
+
+img {
+	height: auto;
+	font-style: italic;
+}
+
+pre {
+	position: relative;
+	padding: 1em;
+	font-size: .8em;
+	overflow: auto;
+	tab-size: 2;
+	border-width: 1px;
+	border-style: solid;
+}
+
+menu,
+ul,
+ol {
+	padding: 0;
+}
+
+	ul,
+	ol {
+		margin-#{$left}: $golden +em;
+	}
+
+	li > ul,
+	li > ol {
+		margin-bottom: 0;
+	}
+
+	ul {
+		list-style: disc;
+	}
+
+dl {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+dt {
+	margin-top: .5em;
+	font-weight: 700;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+}
+
+dd {
+	margin-#{$left}: 1.5em;
+}

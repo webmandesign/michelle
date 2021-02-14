@@ -1,0 +1,23 @@
+/* FILE: editor-style-classic.scss */
+
+//
+// Classic editor RTL styles.
+//
+// @package    Michelle
+// @copyright  WebMan Design, Oliver Juhas
+//
+
+$left: right;
+$right: left;
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+@import 'tools/_index';
+@import 'setup/_index';
+
+@import 'custom-properties';
+
+@import 'editor-classic/__index';

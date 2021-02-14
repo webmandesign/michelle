@@ -1,0 +1,11 @@
+/* FILE: global/elements/_spacing.scss */
+
+#{ $selectors_margin_bottom } {
+	margin-top: 0;
+	margin-bottom: calc( var(--typography_size_html) * #{ $golden } ); // Simulating rem unit for block editor.
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+}

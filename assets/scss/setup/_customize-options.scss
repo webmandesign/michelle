@@ -1,0 +1,71 @@
+$customize_options: (
+	// @see  WebManDesign\Michelle\Customize\Options::set()
+
+	'custom_logo_height': 100px,
+
+	'color_body_border': #fbce2f,
+
+	'color_accent': #4134ae,
+
+	'color_button_background': #fbce2f,
+	'color_button_hover_background': #fbce2f,
+	'color_button_text': #222222,
+
+	'color_header_background': transparent,
+	'color_header_text': inherit,
+	'color_header_link': inherit,
+	'color_header_border': inherit,
+
+	'color_navigation_background': #ffffff,
+	'color_navigation_text': #666666,
+	'color_navigation_link': #222222,
+	'color_navigation_border': var(--color_navigation_text--a20),
+
+	'color_search_background': #fbce2f,
+	'color_search_text': #222222,
+
+	'intro_image_mix_blend_mode': luminosity,
+	'intro_image_opacity': .2,
+
+	'color_content_background': transparent,
+	'color_content_text': inherit,
+	'color_content_headings': inherit,
+	'color_content_border': inherit,
+
+	'color_footer_background': #fbce2f,
+	'color_footer_text': #222222,
+	'color_footer_link': #4134ae,
+
+	'layout_width_content': 1400px,
+	'layout_width_entry_content': 640px,
+
+	'typography_size_html': 20px,
+	'typography_size_header': 16px,
+	'typography_size_footer': 16px,
+	'typography_font_global': ( -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif ),
+	'typography_font_headings': var(--typography_font_global),
+	'typography_font_site_title': var(--typography_font_global),
+	'typography_font_alt': ( Georgia, sans-serif ),
+
+);
+
+$customize_options_editor_palette: (
+	// @see  WebManDesign\Michelle\Customize\Colors::get()
+
+	'color_palette_1': #0a0a00,
+	'color_palette_2': #2a2a20,
+	'color_palette_3': #d3a978,
+	'color_palette_4': #f5f0ea, // Default shaded color from content text color.
+	'color_palette_5': #ffffff,
+);
+
+$customize_options: map-merge( $customize_options, $customize_options_editor_palette );
+
+$customize_options_rgba: (
+	// @see  WebManDesign\Michelle\Customize\RGBA::alphas()
+
+	// 'color_header_text',
+	// 'color_navigation_text',
+	// 'color_content_text',
+	// 'color_footer_text',
+);

@@ -1,0 +1,8 @@
+/* FILE: editor-classic/_colors.scss */
+
+:root, html, html[lang],
+.mce-content-body {
+	background: var(--color_content_background);
+	color: var(--color_content_text);
+	border-color: var(--color_content_border);
+}

@@ -1,0 +1,45 @@
+/* FILE: global/modifiers/_colors.scss */
+
+$specificity : ':root [class]';
+
+@if variable-exists( 'selector_editor_wrapper' ) {
+	$specificity : '[class]';
+}
+
+@each $option, $value in $customize_options {
+	@if str-index( #{ $option }, 'color_' ) or str-index( #{ $option }, 'palette_' ) {
+		$selector: str_replace( 'color_', '', $option );
+		$selector: str_replace( '_', '-', $selector );
+
+		#{ $specificity }.has-#{ $selector }-color {
+
+			&,
+			&:hover,
+			&:focus,
+			&:active,
+			&:visited {
+				color: var(--#{ $option });
+			}
+
+		}
+
+		#{ $specificity }.has-#{ $selector }-background-color {
+			background-color: var(--#{ $option });
+		}
+
+		#{ $specificity }.has-#{ $selector }-border-color {
+			border-color: var(--#{ $option });
+		}
+	}
+}
+
+// Force link color inheritance.
+
+	.link-color-inherit a,
+	a.link-color-inherit {
+
+		.site & {
+			color: inherit;
+		}
+
+	}

@@ -1,0 +1,78 @@
+/* FILE: content/pagination/_paged.scss */
+
+.pagination {
+	clear: both;
+	position: relative;
+	margin-top: var(--white_space);
+	text-align: center;
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+		table-layout: fixed;
+	}
+
+	&.pagination::before {
+		content: attr(data-current) " / " attr(data-total);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			display: none;
+		}
+
+	}
+
+	a,
+	span {
+		display: none;
+		min-width: 2.5em;
+		padding: ( $form_field_padding_vertical / $button_font_size ) 0;
+		margin: .15em;
+		font-size: $button_font_size +em;
+		line-height: $golden / $button_font_size;
+		text-align: center;
+		text-decoration: none;
+		vertical-align: top;
+		border: 1px solid transparent;
+
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			display: inline-block;
+		}
+
+	}
+
+	.prev,
+	.next {
+		display: inline-block;
+	}
+
+	.prev {
+
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			float: $left;
+		}
+
+	}
+
+	.next {
+
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			float: $right;
+		}
+
+	}
+
+	.dots,
+	.extend {
+		width: auto;
+	}
+
+	.current {
+		font-weight: 700;
+	}
+
+}

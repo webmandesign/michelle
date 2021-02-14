@@ -1,0 +1,12 @@
+/* FILE: content/entry/_content.scss */
+
+.entry-content {
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+		table-layout: fixed;
+	}
+
+}

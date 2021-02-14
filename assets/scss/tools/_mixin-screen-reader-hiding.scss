@@ -1,0 +1,15 @@
+//
+// Screen reader hiding.
+//
+// @since  1.0.0
+//
+@mixin screen_reader_hiding() {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	line-height: 1px;
+	overflow: hidden;
+	word-wrap: normal !important; // Many screen reader and browser combinations announce broken words as they would appear visually.
+}

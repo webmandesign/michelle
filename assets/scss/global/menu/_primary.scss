@@ -1,0 +1,48 @@
+/* FILE: global/menu/_primary.scss */
+
+.main-navigation {
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	a {
+		display: block;
+		padding: .25rem 0;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+}
+
+.menu-primary {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	height: 100%;
+
+	// Top level menu items.
+	> li {
+
+		&:not(:last-child) {
+			margin-#{$right}: 1em;
+
+			@include media( map_get( $breakpoint, 'xxl' ) ) {
+				margin-#{$right}: 1.5em;
+			}
+
+		}
+
+		> a {
+
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				padding-top: 6vh;
+				padding-bottom: 6vh;
+			}
+
+		}
+
+	}
+
+}

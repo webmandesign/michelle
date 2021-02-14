@@ -1,0 +1,22 @@
+/* FILE: editor-style-blocks.scss */
+
+//
+// Blocks editor styles.
+//
+// @see  WebManDesign\Michelle\Assets\Editor::enqueue_styles()
+//
+// @package    Michelle
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+$left: left;
+$right: right;
+
+@import 'tools/_index';
+@import 'setup/_index';
+
+@import 'custom-properties';
+
+@import 'editor-block/__index';

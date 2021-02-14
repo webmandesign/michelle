@@ -1,0 +1,31 @@
+/* FILE: global/modifiers/_others.scss */
+
+$important_modifiers: important( 'modifier_overflow' );
+
+.has-hidden-overflow {
+	overflow: hidden $important_modifiers;
+}
+
+.has-hidden-overflow-x {
+	overflow-x: hidden $important_modifiers;
+}
+
+.has-hidden-overflow-y {
+	overflow-y: hidden $important_modifiers;
+}
+
+$important_modifiers: null; // Required reset.
+
+$important_modifiers: important( 'modifier_white_space' );
+
+.has-nowrap-white-space {
+	white-space: nowrap $important_modifiers;
+}
+
+.has-responsive-nowrap-white-space {
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		white-space: nowrap $important_modifiers;
+	}
+}
+
+$important_modifiers: null; // Required reset.

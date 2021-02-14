@@ -1,0 +1,43 @@
+/* FILE: global/form/_button.scss */
+
+#{ $selectors_button } {
+	padding: ( $form_field_padding_vertical / $button_font_size ) ( 1.5em / $button_font_size );
+	font-family: var(--typography_font_headings);
+	font-size: $button_font_size +em;
+	font-weight: 700;
+	line-height: $golden / $button_font_size;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: var(--letter_spacing);
+	background: var(--color_button_background);
+	color: var(--color_button_text);
+	border: 1px solid transparent; // To match the form field height.
+	border-radius: 0;
+	cursor: pointer;
+	transition: box-shadow .3s, background .3s, border .3s;
+
+	&:hover,
+	&:focus {
+		box-shadow: 0 4px 0 -2px;
+	}
+
+	&:active {
+		box-shadow: 0 3px 0 -2px;
+	}
+
+	&:not(.has-background) {
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: var(--color_button_hover_background);
+		}
+
+	}
+
+	&:focus {
+		outline-color: var(--color_accent);
+	}
+
+}

@@ -1,0 +1,17 @@
+/* FILE: global/accessibility/_base.scss */
+
+:focus {
+	outline-width: 2px;
+	outline-style: dashed;
+	outline-offset: 1px;
+	outline-color: currentColor;
+}
+
+body:focus {
+	outline: none;
+}
+
+[name="top"] {
+	position: absolute;
+	top: -99em;
+}

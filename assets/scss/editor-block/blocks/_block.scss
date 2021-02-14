@@ -1,0 +1,109 @@
+/* FILE: editor-block/blocks/_block.scss */
+
+.wp-block {
+	max-width: $max_width_entry_content;
+	margin-bottom: calc( 1.618 * var(--typography_size_html) );
+	z-index: 1; // In case of negative margin overlay.
+
+	&:not([style*="margin-bottom"]):not(.has-no-margin):not(.has-no-margin-bottom):not(.has-no-margin-vertical):not(.m-0):not(.mb-0) {
+		+ .block-list-appender {
+			margin-top: calc( 1.618 * var(--typography_size_html) * -1 );
+		}
+	}
+
+		&[style*="margin-bottom"],
+		&.has-no-margin,
+		&.has-no-margin-bottom,
+		&.has-no-margin-vertical,
+		&.m-0,
+		&.mb-0 {
+			> .block-list-appender.block-list-appender.block-list-appender.block-list-appender.block-list-appender:last-child {
+				margin-top: 0;
+			}
+		}
+
+	&:not([data-align="wide"]):not([data-align="full"]):last-child {
+		margin-bottom: 0;
+	}
+
+	&.is-reusable {
+		max-width: calc( 100% - 120px ) !important;
+	}
+
+	&[data-align="left"] {
+
+		.block-editor-block-list__layout & > .is-block-content,
+		#{ $selector_editor_wrapper } & .block-editor-block-list__block-edit {
+			margin-right: 1em;
+			margin-bottom: 1em;
+		}
+
+	}
+
+	&[data-align="right"] {
+
+		.block-editor-block-list__layout & > .is-block-content,
+		#{ $selector_editor_wrapper } & .block-editor-block-list__block-edit {
+			margin-left: 1em;
+			margin-bottom: 1em;
+		}
+
+	}
+
+	&[data-align="left"],
+	&[data-align="right"] {
+
+		.block-editor-block-list__layout & > .is-block-content,
+		#{ $selector_editor_wrapper } & .block-editor-block-list__block-edit {
+
+			.block-editor-block-list__block {
+				padding-left: 0;
+				padding-right: 0;
+
+				&-edit {
+					float: none;
+					width: auto;
+					max-width: none;
+					margin-left: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	&[data-align="wide"] {
+		max-width: $max_width_content;
+	}
+
+	// @see global/modifiers/_box-model.scss
+	&[data-align="wide"],
+	&[data-align="full"] {
+
+		> .has-no-margin,
+		> .has-no-margin-vertical,
+		> .has-no-margin-bottom {
+			// Simulate no margin between wide/full aligned blocks
+			// with specific margin removal modifier classes applied.
+			margin-bottom: calc( -1.618 * var(--typography_size_html) ) important( 'modifier_margin' );
+		}
+
+	}
+
+}
+
+#{ $selector_editor_wrapper } figure.wp-block {
+	margin-bottom: calc( 1.618 * var(--typography_size_html) );
+}
+
+.has-background:not([style*="padding-bottom"]):not(.has-no-padding):not(.has-no-padding-bottom):not(.has-no-padding-vertical):not(.p-0):not(.pb-0) {
+	[data-align="wide"],
+	[data-align="full"] {
+		+ .block-list-appender:last-child {
+			margin-top: 0;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+$selectors_margin_bottom: (
+	'p',
+	'ol', 'ul', 'dl',
+	'hr',
+	'form',
+	'blockquote',
+	'table',
+	'figure',
+	'iframe',
+	'address',
+	'pre',
+	'[class^="wp-block-"]',
+);
+
+$selectors_button: (
+	'.button',
+	'.wp-block-button__link',
+	'button',
+	'[type="button"]',
+	'[type="reset"]',
+	'[type="submit"]',
+	'.page-numbers:not(.current):not(.dots)',
+	'.post-page-numbers:not(.current):not(.dots)',
+);

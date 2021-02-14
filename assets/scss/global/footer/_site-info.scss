@@ -1,0 +1,29 @@
+/* FILE: global/footer/_site-info.scss */
+
+.site-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	&-section {
+		padding: 6vh 0;
+		background: var(--color_footer_background);
+		color: var(--color_footer_text);
+	}
+
+	&-item:not(:last-child) {
+		margin-#{$right}: 1em;
+	}
+
+	.sep {
+		display: inline-block;
+		margin: 0 .25em;
+		opacity: .5;
+	}
+
+	a {
+		color: var(--color_footer_link);
+	}
+
+}

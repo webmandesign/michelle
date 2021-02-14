@@ -1,0 +1,11 @@
+/* FILE: editor-block/blocks/_button.scss */
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	border: 1px solid;
+}
+
+#{ $selector_editor_wrapper } .wp-block-buttons .wp-block.block-editor-block-list__block[data-type="core/button"]:not([data-align=wide]):not([data-align=full]) {
+	width: auto;
+	margin-#{$right}: 1em;
+}

@@ -1,0 +1,14 @@
+/* FILE: editor-block/blocks/_gallery.scss */
+
+#{ $selector_editor_wrapper } {
+
+	.blocks-gallery-grid {
+		margin: 0;
+
+		figure:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+
+}

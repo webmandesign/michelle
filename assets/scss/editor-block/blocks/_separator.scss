@@ -1,0 +1,26 @@
+/* FILE: editor-block/blocks/_separator.scss */
+
+[data-type="core/separator"] {
+	clear: both;
+}
+
+#{ $selector_editor_wrapper } .wp-block-separator {
+	opacity: 1;
+
+	&:not(.is-style-dots) {
+		max-width: calc( #{ $golden_minor } * var(--layout_width_entry_content) );
+	}
+
+	&.is-style-wide {
+		max-width: $max_width_entry_content;
+	}
+
+	&.is-style-dots.has-background::before {
+		color: inherit;
+	}
+
+}
+
+hr {
+	margin-bottom: calc( 1.618 * var(--typography_size_html) );
+}

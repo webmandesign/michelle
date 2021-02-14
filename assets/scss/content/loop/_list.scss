@@ -1,0 +1,9 @@
+/* FILE: content/loop/_list.scss */
+
+.posts {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: calc( 100% + var(--posts_list_gap) );
+	margin: calc( var(--posts_list_gap) * -1 ) calc( var(--posts_list_gap) / 2 * -1 );
+}

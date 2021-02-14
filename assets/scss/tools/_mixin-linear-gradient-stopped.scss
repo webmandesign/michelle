@@ -1,0 +1,21 @@
+//
+// Stopped linear gradient.
+//
+// @since  1.0.0
+//
+// @param  lists  $palette    List of color stops.
+// @param  string $direction  Gradient direction.
+//
+@mixin linear_gradient_stopped( $palette : ( #fff, #000 ), $direction : to $right ) {
+	$stops : ();
+	$part : 1 / length( $palette );
+
+	$i: 0;
+	@each $stop in $palette {
+		$stops : append( $stops, $stop percentage( $i * $part ), comma );
+		$i: $i + 1;
+		$stops : append( $stops, $stop percentage( $i * $part ), comma );
+	}
+
+	background-image: repeating-linear-gradient( $direction, $stops );
+}

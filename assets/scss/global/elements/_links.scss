@@ -1,0 +1,30 @@
+/* FILE: global/elements/_links.scss */
+
+a {
+	// From @link  https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	color: var(--color_accent);
+
+	&:hover,
+	&:active {
+		outline: none;
+	}
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+}
+
+[href^="tel"] {
+	white-space: nowrap;
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
+		pointer-events: none;
+		text-decoration: none;
+		color: inherit;
+	}
+
+}

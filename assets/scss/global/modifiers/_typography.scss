@@ -1,0 +1,92 @@
+/* FILE: global/modifiers/_typography.scss */
+
+// Font size
+
+	$important_modifiers: important( 'modifier_font_size' );
+
+	.has-extra-small-font-size {
+		font-size: .66em $important_modifiers;
+	}
+
+	.has-small-font-size {
+		font-size: .8em $important_modifiers;
+	}
+
+	.has-regular-font-size,
+	.has-normal-font-size {
+		font-size: 1em $important_modifiers;
+	}
+
+	.has-large-font-size {
+		font-size: var(--typography_heading_size_5) $important_modifiers;
+	}
+
+	.has-extra-large-font-size {
+		font-size: var(--typography_heading_size_4) $important_modifiers;
+	}
+
+	.has-huge-font-size {
+		font-size: calc( var(--typography_heading_size_multiplier) * var(--typography_font_size_huge) ) $important_modifiers;
+	}
+
+	$important_modifiers: null; // Required reset.
+
+// Font style
+
+	$important_modifiers: important( 'modifier_font_style' );
+
+	.has-italic-font-style {
+		font-style: italic $important_modifiers;
+	}
+
+	.has-normal-font-style {
+		font-style: normal $important_modifiers;
+	}
+
+	$important_modifiers: null; // Required reset.
+
+// Font weight
+
+	$important_modifiers: important( 'modifier_font_weight' );
+
+	// @link  https://developer.mozilla.org/en/docs/Web/CSS/font-weight
+	@for $i from 1 through 9 {
+		.has-#{ $i * 100 }-font-weight {
+			font-weight: $i * 100 $important_modifiers;
+		}
+	}
+
+	$important_modifiers: null; // Required reset.
+
+// Line height
+
+	$important_modifiers: important( 'modifier_line_height' );
+
+	.has-1-line-height {
+		line-height: 1 $important_modifiers;
+	}
+
+	.has-extra-small-line-height {
+		line-height: ( 1 + $golden_minor / 2 ) $important_modifiers;
+	}
+
+	.has-small-line-height {
+		line-height: ( 1 + $golden_minor ) $important_modifiers;
+	}
+
+	.has-regular-line-height,
+	.has-medium-line-height {
+		line-height: $golden $important_modifiers;
+	}
+
+	$important_modifiers: null; // Required reset.
+
+// Text transform
+
+	$important_modifiers: important( 'modifier_text_transform' );
+
+	.has-uppercase-text-transform {
+		text-transform: uppercase $important_modifiers;
+	}
+
+	$important_modifiers: null; // Required reset.

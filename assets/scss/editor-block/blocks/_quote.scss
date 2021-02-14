@@ -1,0 +1,14 @@
+/* FILE: editor-block/blocks/_quote.scss */
+
+.wp-block-quote__citation,
+.wp-block-pullquote__citation {
+	margin-top: $golden_major +em;
+	font-size: .8em;
+	font-weight: 400;
+	text-transform: none;
+
+	&::before {
+		content: '\2014\2002'; // &mdash; + &ensp;
+	}
+
+}

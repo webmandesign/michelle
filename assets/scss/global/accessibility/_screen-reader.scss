@@ -1,0 +1,35 @@
+/* FILE: global/accessibility/_screen-reader.scss */
+
+// Text meant only for screen readers.
+.screen-reader-text {
+	@extend %screen_reader_hiding;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+
+	&:focus {
+		clip: auto;
+		clip-path: none;
+		width: auto;
+		height: auto;
+		line-height: normal;
+
+		display: block;
+		#{$left}: 5px;
+		top: 5px;
+		padding: 1em 1.5em;
+		font-size: 14px;
+		font-size: .875rem;
+		font-weight: bold;
+		text-decoration: none;
+		background-color: #36b;
+		color: #fff;
+		z-index: 100000; // Above WP toolbar.
+	}
+
+}
+
+// Do not show the outline on the skip link target.
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}

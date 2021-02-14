@@ -1,0 +1,13 @@
+/* FILE: customize-controls-rtl.scss */
+
+//
+// Customize controls RTL styles.
+//
+// @package    Michelle
+// @copyright  WebMan Design, Oliver Juhas
+//
+
+$left: right;
+$right: left;
+
+@import 'customize-controls/_index';

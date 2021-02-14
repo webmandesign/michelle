@@ -1,0 +1,16 @@
+/* FILE: editor-classic/_typography.scss */
+
+html {
+	font-size: 100%;
+}
+
+.mce-content-body,
+.mce-content-body.rtl {
+	font-family: var(--typography_font_global);
+	line-height: $golden;
+
+	@include media( map_get( $breakpoint, 's' ) ) {
+		font-size: var(--typography_size_html);
+	}
+
+}

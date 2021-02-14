@@ -1,0 +1,5 @@
+/* FILE: comments/_bypostauthor.scss */
+
+.bypostauthor > .comment-body .vcard .fn::before {
+	content: '✍️ ';
+}

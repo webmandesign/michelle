@@ -1,0 +1,71 @@
+/* FILE: content/page/_header.scss */
+
+.page-header {
+	width: calc( 100vw - var(--scrollbar_width) );
+	padding: 0 6vw;
+	margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
+	margin-bottom: calc( 6vh + var(--content_padding) );
+
+	&-content {
+		max-width: var(--layout_width_content);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-text:not(.has-page-summary) {
+		max-width: calc( #{ $golden_major } * var(--layout_width_content) );
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.page-summary {
+		font-size: 1.333em;
+	}
+
+	@include media( map_get( $breakpoint, 'xl' ) ) {
+
+		&-text {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.page-title,
+		.page-summary {
+			flex: 1;
+		}
+
+		.page-title {
+			max-width: calc( #{ $golden_major } * var(--layout_width_content) );
+			margin-bottom: 0;
+		}
+
+		.page-summary {
+			align-self: flex-end;
+			margin-#{$left}: 6%;
+		}
+
+	}
+
+	.page-number {
+		font-size: 1.333rem;
+		font-weight: 400;
+		text-transform: none;
+		white-space: nowrap;
+	}
+
+	.page-meta {
+		width: 100%;
+		padding-top: 2rem;
+		margin-top: 2rem;
+		border-top-width: 1px;
+		border-top-style: solid;
+	}
+
+	&.not-found {
+		margin-top: -6vh;
+		margin-bottom: 6vh;
+	}
+
+}

@@ -1,0 +1,106 @@
+/* FILE: global/header/_site-branding.scss */
+
+.site-branding {
+	display: flex;
+	padding: 6vh 0;
+	color: var(--color_header_link);
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		order: 10;
+		margin-#{$left}: auto;
+	}
+
+	&-text {
+		line-height: 1.25;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.is-hidden-site-title & {
+			@extend %screen_reader_hiding;
+		}
+
+		.wp-custom-logo & {
+			@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+				@include screen_reader_hiding();
+			}
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+
+		.site & {
+			color: inherit;
+		}
+
+	}
+
+}
+
+.site-title {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 1.777em;
+	font-weight: 900;
+	text-transform: lowercase;
+	color: inherit;
+	white-space: nowrap;
+	vertical-align: top;
+
+	@include media( map_get( $breakpoint, 'xxl' ) ) {
+		font-size: 2.369em;
+	}
+
+}
+
+.site-description {
+	font-size: .9em;
+	font-style: italic;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		order: -1;
+
+		&::after {
+			content: '\2014'; // &mdash;
+			display: inline-block;
+			margin: 0 1rem;
+			opacity: .2;
+		}
+
+	}
+
+}
+
+.custom-logo {
+	width: auto;
+	max-height: var(--custom_logo_height);
+
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+		margin-#{$right}: 0;
+	}
+
+	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+		max-width: 33vw;
+		max-height: 3em;
+	}
+
+	&-link {
+		display: inline-block;
+
+		+ .site-branding-text {
+			margin-#{$left}: 2em;
+			margin-#{$right}: 2em;
+		}
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			order: 10;
+		}
+
+	}
+
+}

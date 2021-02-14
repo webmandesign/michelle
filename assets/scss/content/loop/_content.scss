@@ -1,0 +1,10 @@
+/* FILE: content/loop/_content.scss */
+
+.posts .entry-content {
+	margin-top: 0;
+
+	&:empty {
+		display: none;
+	}
+
+}

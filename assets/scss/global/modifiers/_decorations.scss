@@ -1,0 +1,35 @@
+/* FILE: global/modifiers/_decorations.scss */
+
+// Sticky element within container.
+
+	// This will not work if any of the parents has overflow
+	// styles set. We are using `--scrollbar_width` CSS variable
+	// to mitigate this problem in the theme, so it should work
+	// in vast majority of cases. Unless a block parent has an
+	// overflow style set, of course...
+	.is-sticky-within-container {
+		@include media(
+			( map_get( $breakpoint, 'xl' ), 'min-width' ),
+			( map_get( $breakpoint, 's' ), 'min-height' )
+		) {
+			position: sticky;
+			top: 2em;
+		}
+	}
+
+// Shadow.
+
+	.has-inner-shadow {
+		$spread : 100px;
+		$indent : 10px;
+		$opacity : .33;
+
+		box-shadow: inset 0 #{ $spread - $indent } #{ $spread } rgba( #000, $opacity );
+
+		&.alignfull {
+			box-shadow:
+				inset 0 #{ $spread + $indent } #{ $spread } -#{ $spread } rgba( #000, $opacity ),
+				inset 0 #{ $indent - $spread } #{ $spread } -#{ $spread } rgba( #000, $opacity );
+		}
+
+	}

@@ -1,0 +1,108 @@
+/* FILE: _custom-properties.scss */
+
+//
+// Custom properties (CSS variables).
+//
+// @package    Michelle
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+:root {
+
+	// Theme/customize options.
+
+		// `$value + ''` is converting values to string to prevent any issues.
+
+		@each $option, $value in $customize_options {
+			--#{ $option }: #{ $value + '' };
+		}
+
+		// RGBA colors:
+		// As all of the RGBA options use the same alpha value,
+		// we just set it here directly.
+		$alpha: 20;
+		@each $option_rgba in $customize_options_rgba {
+			$value: rgba( map_get( $customize_options, $option_rgba ), $alpha / 100 );
+			--#{ $option_rgba }--a#{ $alpha }: #{ $value + '' };
+		}
+
+	// Typography.
+
+		// @link  https://www.modularscale.com/?1&em&1.333
+		$heading_sizes : ( 3.157, 2.369, 1.777, 1.333, 1, 1 );
+		@each $size in $heading_sizes {
+			--typography_heading_size_#{ index( $heading_sizes, $size ) }: #{ $size +em };
+		}
+
+		@include media( map_get( $breakpoint, 'xxl' ) ) {
+			--typography_heading_size_1: 4.209em;
+		}
+
+		--typography_heading_size_multiplier: .75;
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			--typography_heading_size_multiplier: .875;
+		}
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			--typography_heading_size_multiplier: 1;
+		}
+
+		--typography_font_size_huge: 5.063em;
+
+		--typography_heading_size_posts: 1.5em;
+		@include media( map_get( $breakpoint, 'xxl' ) ) {
+			--typography_heading_size_posts: 2.25em;
+		}
+
+	// Spacing and size.
+
+		// Unit is required in `calc()`.
+		// A non-zero value is required for minification process not to strip the unit.
+		--zero: 0.001px;
+
+		--scrollbar_width: var(--zero);
+
+		--white_space: 50px;
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			--white_space: 100px;
+		}
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			--white_space: 150px;
+		}
+
+		--posts_list_gap: 2em;
+
+		--button_toggle_sub_menu_size: 10px;
+		// Touch enabled devices.
+		@media (hover: none) {
+			--button_toggle_sub_menu_size: 24px;
+		}
+
+		--max_width_header_content: var(--layout_width_content);
+		--max_width_footer_content: var(--layout_width_content);
+
+		--content_padding:          calc(  1 * var(--white_space) );
+		--content_padding_negative: calc( -1 * var(--white_space) );
+
+		--letter_spacing: .05em;
+
+		--hr_zigzag_height: 10px;
+		--hr_zigzag_segments: 3;
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			--hr_zigzag_segments: 5;
+		}
+
+		--border_body_width: 10px;
+
+	// Others.
+
+		--pseudo_background_opacity: .05;
+
+}
+
+.has-navigation-mobile {
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+		--button_toggle_sub_menu_size: 32px;
+	}
+}
