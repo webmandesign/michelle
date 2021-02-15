@@ -19,6 +19,14 @@
 ( function( $ ) {
 	'use strict';
 
+	wp.customize( 'background_color', function( value ) {
+		value
+			.bind( function( to ) {
+				$( '#michelle-inline-css' )
+					.append( ':root{ --background_color:' + to + '; }' );
+			} );
+	} );
+
 	wp.customize( 'header_textcolor', function( value ) {
 		value
 			.bind( function( to ) {

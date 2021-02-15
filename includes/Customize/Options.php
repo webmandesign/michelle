@@ -81,6 +81,10 @@ class Options implements Component_Interface {
 			$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 			$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
+			// Default background color control.
+			$wp_customize->get_control( 'background_color' )->section = 'colors_general';
+			$wp_customize->get_control( 'background_color' )->priority = 0;
+
 			// Remove obsolete custom header controls (only, not setting!).
 			$wp_customize->remove_control( 'header_textcolor' );
 
@@ -164,7 +168,7 @@ class Options implements Component_Interface {
 						'type'              => 'number',
 						'id'                => 'custom_logo_height',
 						'label'             => esc_html__( 'Max logo image height (px)', 'michelle' ),
-						'default'           => 60,
+						'default'           => 100,
 						'sanitize_callback' => 'absint',
 						'input_attrs'       => array(
 							'size'     => 5,
@@ -215,9 +219,67 @@ class Options implements Component_Interface {
 				),
 
 				/**
-				 * Colors: Accent colors.
+				 * Colors: General colors.
 				 */
 				100 . 'colors' => array(
+					'id'             => 'colors_general',
+					'type'           => 'section',
+					'create_section' => sprintf(
+						/* translators: Customizer section title. %s = section name. */
+						esc_html__( 'Colors: %s', 'michelle' ),
+						esc_html_x( 'General', 'Customizer color section title', 'michelle' )
+					),
+					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
+				),
+
+						100 . 'colors' . 100 => array(
+							'type'       => 'color',
+							'id'         => 'color_body_text',
+							'label'      => esc_html__( 'Text color', 'michelle' ),
+							'default'    => '#434547',
+							'css_var'    => 'maybe_hash_hex_color',
+							'preview_js' => array(
+								'css' => array(
+									':root' => array(
+										'--[[id]]',
+									),
+								),
+							),
+						),
+						100 . 'colors' . 110 => array(
+							'type'       => 'color',
+							'id'         => 'color_body_headings',
+							'label'      => esc_html__( 'Headings color', 'michelle' ),
+							'default'    => '#030507',
+							'css_var'    => 'maybe_hash_hex_color',
+							'preview_js' => array(
+								'css' => array(
+									':root' => array(
+										'--[[id]]',
+									),
+								),
+							),
+						),
+
+						100 . 'colors' . 200 => array(
+							'type'       => 'color',
+							'id'         => 'color_border_decorative',
+							'label'      => esc_html__( 'Decorative border color', 'michelle' ),
+							'default'    => '#f5df4d',
+							'css_var'    => 'maybe_hash_hex_color',
+							'preview_js' => array(
+								'css' => array(
+									':root' => array(
+										'--[[id]]',
+									),
+								),
+							),
+						),
+
+				/**
+				 * Colors: Accent colors.
+				 */
+				110 . 'colors' => array(
 					'id'             => 'colors_accents',
 					'type'           => 'section',
 					'create_section' => sprintf(
@@ -228,11 +290,11 @@ class Options implements Component_Interface {
 					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
 				),
 
-					100 . 'colors' . 100 => array(
+					110 . 'colors' . 100 => array(
 						'type'       => 'color',
 						'id'         => 'color_accent',
 						'label'      => esc_html__( 'Accent color', 'michelle' ),
-						'default'    => '#aa5a00',
+						'default'    => '#6340a7',
 						'css_var'    => 'maybe_hash_hex_color',
 						'preview_js' => array(
 							'css' => array(
@@ -246,16 +308,16 @@ class Options implements Component_Interface {
 					/**
 					 * Button colors.
 					 */
-					100 . 'colors' . 200 => array(
+					110 . 'colors' . 200 => array(
 						'type'    => 'html',
 						'content' => '<h3>' . esc_html__( 'Button', 'michelle' ) . '</h3>',
 					),
 
-						100 . 'colors' . 210 => array(
+						110 . 'colors' . 210 => array(
 							'type'       => 'color',
 							'id'         => 'color_button_background',
 							'label'      => esc_html__( 'Background color', 'michelle' ),
-							'default'    => '#aa5a00',
+							'default'    => '#f5df4d',
 							'css_var'    => 'maybe_hash_hex_color',
 							'preview_js' => array(
 								'css' => array(
@@ -265,27 +327,13 @@ class Options implements Component_Interface {
 								),
 							),
 						),
-						100 . 'colors' . 220 => array(
+						110 . 'colors' . 220 => array(
 							'type'        => 'color',
 							'id'          => 'color_button_text',
 							'label'       => esc_html__( 'Text color', 'michelle' ),
-							'default'     => '#ffffff',
+							'default'     => '#030507',
 							'css_var'     => 'maybe_hash_hex_color',
 							'preview_js'  => array(
-								'css' => array(
-									':root' => array(
-										'--[[id]]',
-									),
-								),
-							),
-						),
-						100 . 'colors' . 230 => array(
-							'type'       => 'color',
-							'id'         => 'color_button_hover_background',
-							'label'      => esc_html__( 'Hover background color', 'michelle' ),
-							'default'    => '#9a4a00',
-							'css_var'    => 'maybe_hash_hex_color',
-							'preview_js' => array(
 								'css' => array(
 									':root' => array(
 										'--[[id]]',
@@ -297,7 +345,7 @@ class Options implements Component_Interface {
 				/**
 				 * Colors: Header.
 				 */
-				110 . 'colors' => array(
+				120 . 'colors' => array(
 					'id'             => 'colors_header',
 					'type'           => 'section',
 					'create_section' => sprintf(
@@ -308,76 +356,56 @@ class Options implements Component_Interface {
 					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
 				),
 
-					110 . 'colors' . 100 => array(
-						'type'       => 'color',
-						'id'         => 'color_header_background',
-						'label'      => esc_html__( 'Background color', 'michelle' ),
-						'default'    => '#ffffff',
-						'css_var'    => 'maybe_hash_hex_color',
-						'preview_js' => array(
-							'css' => array(
-								':root' => array(
-									'--[[id]]',
-								),
-							),
-						),
-					),
-					110 . 'colors' . 110 => array(
-						'type'       => 'color',
-						'id'         => 'color_header_text',
-						'label'      => esc_html__( 'Text color', 'michelle' ),
-						'default'    => '#6a6a60',
-						'css_var'    => 'maybe_hash_hex_color',
-						'preview_js' => array(
-							'css' => array(
-								':root' => array(
-									'--[[id]]',
-								),
-							),
-						),
-					),
-					110 . 'colors' . 120 => array(
-						'type'       => 'color',
-						'id'         => 'color_header_link',
-						'label'      => esc_html__( 'Link color', 'michelle' ),
-						'default'    => '#0a0a00',
-						'css_var'    => 'maybe_hash_hex_color',
-						'preview_js' => array(
-							'css' => array(
-								':root' => array(
-									'--[[id]]',
-								),
-							),
-						),
+					/**
+					 * Navigation colors.
+					 */
+					120 . 'colors' . 100 => array(
+						'type'    => 'html',
+						'content' => '<h3>' . esc_html__( 'Site navigation', 'michelle' ) . '</h3>',
 					),
 
-				/**
-				 * Colors: Content.
-				 */
-				130 . 'colors' => array(
-					'id'             => 'colors_content',
-					'type'           => 'section',
-					'create_section' => sprintf(
-						/* translators: Customizer section title. %s = section name. */
-						esc_html__( 'Colors: %s', 'michelle' ),
-						esc_html_x( 'Content', 'Customizer color section title', 'michelle' )
-					),
-					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
-				),
+						120 . 'colors' . 110 => array(
+							'type'       => 'color',
+							'id'         => 'color_navigation_background',
+							'label'      => esc_html__( 'Background color', 'michelle' ),
+							'default'    => '#f5df4d',
+							'css_var'    => 'maybe_hash_hex_color',
+							'preview_js' => array(
+								'css' => array(
+									':root' => array(
+										'--[[id]]',
+									),
+								),
+							),
+						),
+						120 . 'colors' . 120 => array(
+							'type'       => 'color',
+							'id'         => 'color_navigation_text',
+							'label'      => esc_html__( 'Text color', 'michelle' ),
+							'default'    => '#030507',
+							'css_var'    => 'maybe_hash_hex_color',
+							'preview_js' => array(
+								'css' => array(
+									':root' => array(
+										'--[[id]]',
+									),
+								),
+							),
+						),
 
 					/**
-					 * Content colors.
+					 * Search form colors.
 					 */
-					130 . 'colors' . 100 => array(
+					120 . 'colors' . 200 => array(
 						'type'    => 'html',
-						'content' => '<h3>' . esc_html__( 'Content', 'michelle' ) . '</h3>',
+						'content' => '<h3>' . esc_html__( 'Search form', 'michelle' ) . '</h3>',
 					),
 
-						130 . 'colors' . 110 => array(
+						120 . 'colors' . 210 => array(
 							'type'       => 'color',
-							'id'         => 'color_content_background',
+							'id'         => 'color_search_background',
 							'label'      => esc_html__( 'Background color', 'michelle' ),
-							'default'    => '#fbf7f0',
+							'default'    => '#f5df4d',
 							'css_var'    => 'maybe_hash_hex_color',
 							'preview_js' => array(
 								'css' => array(
@@ -387,25 +415,11 @@ class Options implements Component_Interface {
 								),
 							),
 						),
-						130 . 'colors' . 120 => array(
+						120 . 'colors' . 220 => array(
 							'type'       => 'color',
-							'id'         => 'color_content_text',
+							'id'         => 'color_search_text',
 							'label'      => esc_html__( 'Text color', 'michelle' ),
-							'default'    => '#6a6a60',
-							'css_var'    => 'maybe_hash_hex_color',
-							'preview_js' => array(
-								'css' => array(
-									':root' => array(
-										'--[[id]]',
-									),
-								),
-							),
-						),
-						130 . 'colors' . 130 => array(
-							'type'       => 'color',
-							'id'         => 'color_content_headings',
-							'label'      => esc_html__( 'Headings color', 'michelle' ),
-							'default'    => '#0a0a00',
+							'default'    => '#030507',
 							'css_var'    => 'maybe_hash_hex_color',
 							'preview_js' => array(
 								'css' => array(
@@ -419,7 +433,7 @@ class Options implements Component_Interface {
 				/**
 				 * Colors: Footer.
 				 */
-				140 . 'colors' => array(
+				130 . 'colors' => array(
 					'id'             => 'colors_footer',
 					'type'           => 'section',
 					'create_section' => sprintf(
@@ -430,11 +444,11 @@ class Options implements Component_Interface {
 					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
 				),
 
-					140 . 'colors' . 100 => array(
+					130 . 'colors' . 100 => array(
 						'type'       => 'color',
 						'id'         => 'color_footer_background',
 						'label'      => esc_html__( 'Background color', 'michelle' ),
-						'default'    => '#ffffff',
+						'default'    => '#030507',
 						'css_var'    => 'maybe_hash_hex_color',
 						'preview_js' => array(
 							'css' => array(
@@ -444,24 +458,10 @@ class Options implements Component_Interface {
 							),
 						),
 					),
-					140 . 'colors' . 110 => array(
+					130 . 'colors' . 110 => array(
 						'type'       => 'color',
 						'id'         => 'color_footer_text',
 						'label'      => esc_html__( 'Text color', 'michelle' ),
-						'default'    => '#6a6a60',
-						'css_var'    => 'maybe_hash_hex_color',
-						'preview_js' => array(
-							'css' => array(
-								':root' => array(
-									'--[[id]]',
-								),
-							),
-						),
-					),
-					140 . 'colors' . 120 => array(
-						'type'       => 'color',
-						'id'         => 'color_footer_headings',
-						'label'      => esc_html__( 'Headings color', 'michelle' ),
 						'default'    => '#ffffff',
 						'css_var'    => 'maybe_hash_hex_color',
 						'preview_js' => array(
@@ -472,11 +472,11 @@ class Options implements Component_Interface {
 							),
 						),
 					),
-					140 . 'colors' . 130 => array(
+					130 . 'colors' . 120 => array(
 						'type'       => 'color',
 						'id'         => 'color_footer_link',
 						'label'      => esc_html__( 'Link color', 'michelle' ),
-						'default'    => '#0a0a00',
+						'default'    => '#ffffff',
 						'css_var'    => 'maybe_hash_hex_color',
 						'preview_js' => array(
 							'css' => array(
@@ -490,7 +490,7 @@ class Options implements Component_Interface {
 				/**
 				 * Layout.
 				 */
-				300 . 'layout' => array(
+				200 . 'layout' => array(
 					'id'             => 'layout',
 					'type'           => 'section',
 					'create_section' => esc_html_x( 'Layout', 'Customizer section title.', 'michelle' ),
@@ -500,20 +500,20 @@ class Options implements Component_Interface {
 					/**
 					 * Site layout.
 					 */
-					300 . 'layout' . 100 => array(
+					200 . 'layout' . 100 => array(
 						'type'    => 'html',
 						'content' => '<h3>' . esc_html_x( 'Site Container', 'A website container.', 'michelle' ) . '</h3>',
 					),
 
-						300 . 'layout' . 110 => array(
+						200 . 'layout' . 110 => array(
 							'type'              => 'range',
 							'id'                => 'layout_width_content',
 							'label'             => esc_html__( 'Content width', 'michelle' ),
 							'description'       =>
-								esc_html__( 'Default value:', 'michelle' ) . ' ' . 1280
+								esc_html__( 'Default value:', 'michelle' ) . ' ' . 1400
 								. '<br>'
 								. esc_html__( 'This width is applied on archive pages, wide-aligned blocks&hellip;', 'michelle' ),
-							'default'           => 1280,
+							'default'           => 1400,
 							'min'               => 880,
 							'max'               => 1920,
 							'step'              => 1,
@@ -531,7 +531,7 @@ class Options implements Component_Interface {
 								),
 							),
 						),
-						300 . 'layout' . 120 => array(
+						200 . 'layout' . 120 => array(
 							'type'              => 'range',
 							'id'                => 'layout_width_entry_content',
 							'label'             => esc_html__( 'Entry content width', 'michelle' ),
@@ -575,7 +575,51 @@ class Options implements Component_Interface {
 						'id'                => 'typography_size_html',
 						'label'             => esc_html__( 'Basic font size in px', 'michelle' ),
 						'description'       => esc_html__( 'All other font sizes are calculated automatically from this basic font size.', 'michelle' ),
-						'default'           => 18,
+						'default'           => 20,
+						'min'               => 12,
+						'max'               => 24,
+						'step'              => 1,
+						'suffix'            => 'px',
+						'sanitize_callback' => 'absint',
+						'css_var'           => __NAMESPACE__ . '\Sanitize::css_px',
+						'preview_js'        => array(
+							'css' => array(
+								':root' => array(
+									array(
+										'property' => '--[[id]]',
+										'suffix'   => 'px',
+									),
+								),
+							),
+						),
+					),
+					900 . 'typography' . 110 => array(
+						'type'              => 'range',
+						'id'                => 'typography_size_header',
+						'label'             => esc_html__( 'Header font size in px', 'michelle' ),
+						'default'           => 16,
+						'min'               => 12,
+						'max'               => 24,
+						'step'              => 1,
+						'suffix'            => 'px',
+						'sanitize_callback' => 'absint',
+						'css_var'           => __NAMESPACE__ . '\Sanitize::css_px',
+						'preview_js'        => array(
+							'css' => array(
+								':root' => array(
+									array(
+										'property' => '--[[id]]',
+										'suffix'   => 'px',
+									),
+								),
+							),
+						),
+					),
+					900 . 'typography' . 120 => array(
+						'type'              => 'range',
+						'id'                => 'typography_size_footer',
+						'label'             => esc_html__( 'Footer font size in px', 'michelle' ),
+						'default'           => 16,
 						'min'               => 12,
 						'max'               => 24,
 						'step'              => 1,
@@ -594,7 +638,7 @@ class Options implements Component_Interface {
 						),
 					),
 
-					900 . 'typography' . 110 => array(
+					900 . 'typography' . 200 => array(
 						'type'    => 'html',
 						'content' =>
 							'<h3>'
@@ -614,73 +658,86 @@ class Options implements Component_Interface {
 							. '</p>',
 					),
 
-					900 . 'typography' . 120 => array(
-						'type'              => 'text',
-						'id'                => 'typography_font_global',
-						'label'             => esc_html__( 'Global font', 'michelle' ),
-						'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
-						'default'           => 'system',
-						'datalist'          => $font_families,
-						'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
-						'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
-						'input_attrs'       => array(
-							'placeholder' => 'sans-serif',
+						900 . 'typography' . 210 => array(
+							'type'              => 'text',
+							'id'                => 'typography_font_global',
+							'label'             => esc_html__( 'Global font', 'michelle' ),
+							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
+							'default'           => 'system',
+							'datalist'          => $font_families,
+							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
+							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
+							'input_attrs'       => array(
+								'placeholder' => 'sans-serif',
+							),
 						),
-					),
-					900 . 'typography' . 130 => array(
-						'type'              => 'text',
-						'id'                => 'typography_font_headings',
-						'label'             => esc_html__( 'Headings font', 'michelle' ),
-						'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
-						'default'           => 'system',
-						'datalist'          => $font_families,
-						'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
-						'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
-						'input_attrs'       => array(
-							'placeholder' => 'sans-serif',
+						900 . 'typography' . 220 => array(
+							'type'              => 'text',
+							'id'                => 'typography_font_headings',
+							'label'             => esc_html__( 'Headings font', 'michelle' ),
+							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
+							'default'           => 'system',
+							'datalist'          => $font_families,
+							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
+							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
+							'input_attrs'       => array(
+								'placeholder' => 'sans-serif',
+							),
 						),
-					),
-					900 . 'typography' . 140 => array(
-						'type'              => 'text',
-						'id'                => 'typography_font_site_title',
-						'label'             => esc_html__( 'Site title font', 'michelle' ),
-						'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
-						'default'           => 'system',
-						'datalist'          => $font_families,
-						'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
-						'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
-						'input_attrs'       => array(
-							'placeholder' => 'serif',
+						900 . 'typography' . 230 => array(
+							'type'              => 'text',
+							'id'                => 'typography_font_site_title',
+							'label'             => esc_html__( 'Site title font', 'michelle' ),
+							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
+							'default'           => 'system',
+							'datalist'          => $font_families,
+							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
+							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
+							'input_attrs'       => array(
+								'placeholder' => 'serif',
+							),
 						),
-					),
+						900 . 'typography' . 240 => array(
+							'type'              => 'text',
+							'id'                => 'typography_font_alt',
+							'label'             => esc_html__( 'Alternative font', 'michelle' ),
+							'description'       => esc_html__( 'Used for quotes, for example.', 'michelle' ) . ' ' . esc_html__( 'Default value:', 'michelle' ) . ' <code>Georgia, sans-serif</code>',
+							'default'           => 'Georgia, sans-serif',
+							'datalist'          => $font_families,
+							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
+							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
+							'input_attrs'       => array(
+								'placeholder' => 'serif',
+							),
+						),
 
-					900 . 'typography' . 150 => array(
-						'type'        => 'checkbox',
-						'id'          => 'typography_google_fonts',
-						'label'       => esc_html__( 'Enable theme Google Fonts loading', 'michelle' ),
-						'description' => esc_html__( 'In case you are loading fonts via plugin, disable this option.', 'michelle' ),
-						'default'     => true,
-					),
-					900 . 'typography' . 160 => array(
-						'type'        => 'multicheckbox',
-						'id'          => 'typography_font_language',
-						'label'       => esc_html__( 'Languages', 'michelle' ),
-						'description' =>
-							esc_html__( 'Not all Google Fonts support all languages.', 'michelle' )
-							. ' '
-							. esc_html__( 'Please check on Google Fonts website to make sure.', 'michelle' ),
-						'default'     => array( 'latin' ),
-						'choices' 		=> array(
-							'latin'        => esc_html__( 'Latin', 'michelle' ),
-							'latin-ext'    => esc_html__( 'Latin Extended', 'michelle' ),
-							'cyrillic'     => esc_html__( 'Cyrillic', 'michelle' ),
-							'cyrillic-ext' => esc_html__( 'Cyrillic Extended', 'michelle' ),
-							'greek'        => esc_html__( 'Greek', 'michelle' ),
-							'greek-ext'    => esc_html__( 'Greek Extended', 'michelle' ),
-							'vietnamese'   => esc_html__( 'Vietnamese', 'michelle' ),
+						900 . 'typography' . 250 => array(
+							'type'        => 'checkbox',
+							'id'          => 'typography_google_fonts',
+							'label'       => esc_html__( 'Enable theme Google Fonts loading', 'michelle' ),
+							'description' => esc_html__( 'In case you are loading fonts via plugin, disable this option.', 'michelle' ),
+							'default'     => true,
 						),
-						'active_callback' => __NAMESPACE__ . '\Options_Conditional::is_typography_google_fonts',
-					),
+						900 . 'typography' . 260 => array(
+							'type'        => 'multicheckbox',
+							'id'          => 'typography_font_language',
+							'label'       => esc_html__( 'Languages', 'michelle' ),
+							'description' =>
+								esc_html__( 'Not all Google Fonts support all languages.', 'michelle' )
+								. ' '
+								. esc_html__( 'Please check on Google Fonts website to make sure.', 'michelle' ),
+							'default'     => array( 'latin' ),
+							'choices' 		=> array(
+								'latin'        => esc_html__( 'Latin', 'michelle' ),
+								'latin-ext'    => esc_html__( 'Latin Extended', 'michelle' ),
+								'cyrillic'     => esc_html__( 'Cyrillic', 'michelle' ),
+								'cyrillic-ext' => esc_html__( 'Cyrillic Extended', 'michelle' ),
+								'greek'        => esc_html__( 'Greek', 'michelle' ),
+								'greek-ext'    => esc_html__( 'Greek Extended', 'michelle' ),
+								'vietnamese'   => esc_html__( 'Vietnamese', 'michelle' ),
+							),
+							'active_callback' => __NAMESPACE__ . '\Options_Conditional::is_typography_google_fonts',
+						),
 
 				/**
 				 * Others.
@@ -709,15 +766,15 @@ class Options implements Component_Interface {
 						'default'     => true,
 					),
 
-					950 . 'others' . 120 => array(
+					950 . 'others' . 200 => array(
 						'type'    => 'html',
 						'content' =>
 							'<h3>'
-							. esc_html__( 'Footer', 'michelle' )
+							. esc_html__( 'Content', 'michelle' )
 							. '</h3>',
 					),
 
-						950 . 'others' . 130 => array(
+						950 . 'others' . 210 => array(
 							'type'              => 'select',
 							'id'                => 'block_area_site_footer',
 							'label'             => esc_html__( 'Footer content', 'michelle' ),

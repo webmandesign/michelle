@@ -3,4 +3,4 @@ $golden_major:  .618;
 $golden_minor:  .382;
 
 $button_font_size: .8; // in em;
-$form_field_padding_vertical: 1em; // Do not use $golden_major here! Causes calculation issues!
+$form_field_padding_vertical: .618em; // Do not use $golden_major here! Causes calculation issues!

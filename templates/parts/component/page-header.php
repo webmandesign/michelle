@@ -36,7 +36,11 @@ if (
 <header class="page-header">
 	<div class="page-header-content">
 		<?php do_action( 'michelle/page_header/top' ); ?>
-		<div class="page-header-text<?php echo ( $has_page_summary ) ? ( ' has-page-summary' ) : ( '' ); ?>">
+		<div class="page-header-text<?php
+			if ( $has_page_summary ) {
+				echo ' has-page-summary';
+			}
+			?>">
 			<h1 class="page-title"><?php
 
 				if ( is_home() && is_front_page() ) {

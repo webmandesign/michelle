@@ -10,17 +10,15 @@
 		min-width: 16em;
 		#{$left}: -2em;
 		top: 100%;
-		padding: 0 2em calc( 6vh - #{ $golden_minor +em } );
+		padding: calc( 6vh - .25rem ) 2em calc( 6vh - .25rem );
 		background: var(--color_navigation_background);
 		color: var(--color_navigation_text);
-		border-color: var(--color_navigation_border);
-		border-bottom-#{$right}-radius: 6vh;
 		z-index: 1;
 
 		.sub-menu {
 			#{$left}: 100%;
-			top: calc( -6vh + #{ $golden_minor +em } );
-			padding-top: calc( 6vh - #{ $golden_minor +em } );
+			top: calc( -6vh + .25rem );
+			padding-top: calc( 6vh - .25rem );
 			box-shadow: 0 1em 2em rgba( #000, .15 );
 		}
 
@@ -28,11 +26,6 @@
 			#{$left}: -6vh;
 			padding-left: 6vh;
 			padding-right: 6vh;
-
-			a {
-				color: var(--color_navigation_link);
-			}
-
 		}
 
 	}
@@ -73,41 +66,6 @@
 				display: block;
 			}
 
-		}
-
-	}
-
-}
-
-@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-
-	.site {
-		// Unfortunately, this disables using any sticky positioning on the site...
-		overflow-x: hidden;
-	}
-
-	.menu-primary > li > .sub-menu {
-
-		&::after,
-		&::before {
-			content: '';
-			position: absolute;
-			width: 200vw;
-			height: 100%;
-			top: 0;
-			background-color: inherit;
-			z-index: -1;
-		}
-
-		&::after {
-			#{$right}: 0;
-			border-radius: inherit;
-		}
-
-		&::before {
-			margin-#{$left}: -100vw;
-			background-color: var(--color_body_border);
-			height: calc( 100% + var(--border_body_width) );
 		}
 
 	}

@@ -36,10 +36,10 @@ class Colors implements Component_Interface {
 	 * @var     array
 	 */
 	public static $editor_palette = array(
-		'#0a0a00',
-		'#2a2a20',
-		'#d3a978',
-		'#f5f0ea', // Default shaded color from content text color.
+		'#f5df4d',
+		'#030507',
+		'#434547',
+		'#939597',
 		'#ffffff',
 	);
 
@@ -158,7 +158,7 @@ class Colors implements Component_Interface {
 
 		// Processing
 
-			$options[ 100 . 'colors' . 100 ]['palette'] = array(
+			$options[ 110 . 'colors' . 100 ]['palette'] = array(
 				'name' => esc_html__( 'Accent color', 'michelle' ),
 				'slug' => 'accent',
 			);

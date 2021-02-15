@@ -25,7 +25,7 @@
 		border: 1px solid;
 
 		&:not(.has-text-color) {
-			color: var(--color_button_background);
+			color: currentColor;
 		}
 
 		&:hover,

@@ -7,6 +7,11 @@
 	clip-path: none;
 	width: auto;
 	height: auto;
+	min-height: 40px;
+	font-size: 1em;
+	font-weight: 700;
+	text-transform: none;
+	letter-spacing: 0;
 	opacity: .5;
 
 	&::before {

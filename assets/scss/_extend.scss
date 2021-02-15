@@ -9,26 +9,6 @@
 		@include screen_reader_hiding();
 	}
 
-// Background.
-
-	%shaded_background {
-		z-index: 1; // Trick to keep pseudo element below child elements.
-
-		&::before {
-			content: '';
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			background-color: currentColor;
-			border-radius: inherit;
-			opacity: var(--pseudo_background_opacity);
-			z-index: -1; // Trick to keep pseudo element below child elements.
-		}
-
-	}
-
 // Loop.
 
 	// Post list columns.
@@ -165,8 +145,8 @@
 			th {
 				font-size: .8em;
 				font-weight: 700;
-				background: var(--color_content_headings);
-				color: var(--color_content_background);
+				background: var(--color_body_headings);
+				color: var(--background_color);
 				border-width: 0;
 			}
 
@@ -183,11 +163,6 @@
 				background: var(--color_button_background);
 				color: var(--color_button_text);
 				transition: background .3s;
-
-				&:hover,
-				&:focus {
-					background: var(--color_button_hover_background);
-				}
 
 				&:focus {
 					outline-color: var(--color_accent);
@@ -305,7 +280,7 @@
 			font-weight: 600;
 			text-transform: uppercase;
 			letter-spacing: var(--letter_spacing);
-			color: var(--color_content_headings);
+			color: var(--color_body_headings);
 		}
 
 	}

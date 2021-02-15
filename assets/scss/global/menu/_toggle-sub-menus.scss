@@ -15,6 +15,18 @@
 
 	}
 
+	// Top level menu items.
+	> [aria-haspopup] {
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			align-items: baseline;
+
+			> .button-toggle-sub-menu {
+				transform: translateY(-50%);
+			}
+
+		}
+	}
+
 	.button-toggle-sub-menu {
 		position: relative;
 		width: var(--button_toggle_sub_menu_size);

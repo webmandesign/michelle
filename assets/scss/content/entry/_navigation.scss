@@ -7,7 +7,7 @@
 		display: block;
 		height: 100%;
 		text-decoration: none;
-		color: var(--color_content_headings);
+		color: var(--color_body_headings);
 
 		&:hover .title {
 			text-decoration: underline;
@@ -18,7 +18,7 @@
 	.label,
 	.title {
 		display: block;
-		color: var(--color_content_text);
+		color: var(--color_body_text);
 	}
 
 	.label {
@@ -32,7 +32,7 @@
 		line-height: 1.25;
 		text-transform: uppercase;
 		letter-spacing: var(--letter_spacing);
-		color: var(--color_content_headings);
+		color: var(--color_body_headings);
 	}
 
 	.nav-links > div:nth-last-child(2) {

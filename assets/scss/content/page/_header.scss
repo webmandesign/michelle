@@ -63,9 +63,29 @@
 		border-top-style: solid;
 	}
 
-	&.not-found {
+	&.not-found,
+	.search-results & {
 		margin-top: -6vh;
 		margin-bottom: 6vh;
 	}
 
+}
+
+.search-results .page-title span {
+	display: block;
+	text-transform: none;
+	quotes: '“' '”' '‘' '’';
+
+	&::before {
+		content: open-quote;
+	}
+
+	&::after {
+		content: close-quote;
+	}
+
+	&::before,
+	&::after {
+		display: inline-block; // Required for correct RTL display.
+	}
 }

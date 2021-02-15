@@ -42,6 +42,6 @@ Initial release.
 * TGM-Plugin-Activation © Thomas Griffin, GPL v2 or later
 * Normalize.css © Nicolas Gallagher and Jonathan Neal, MIT
 * a11y-menu.js ©  WebMan Design, Oliver Juhas, GPL-3.0-or-later
+* images/background-pattern.png ©  https://cc0textures.com/view?id=Paper001, CC0
 * images/starter/*.jpg ©  https://www.pexels.com/, CC0
-* images/svg/*.svg © Based on Font Awesome icons font by Dave Gandy, SIL Open Font License 1.1
 * screenshot.jpg images ©  http://www.pexels.com/, CC0

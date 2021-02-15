@@ -95,6 +95,7 @@ class Page_Template implements Component_Interface {
 			if (
 				self::is_no_intro()
 				|| self::is_content_only()
+				|| self::is_header_overlaid()
 			) {
 				return false;
 			}
@@ -123,29 +124,22 @@ class Page_Template implements Component_Interface {
 
 		} // /is_content_only
 
+	// [header-overlaid-{{dark/light}}.php] Overlay Header (Dark/Light).
+
 		/**
-		 * Bypassed is page template: Content only?
+		 * Is page template: Overlay Header (Dark/Light)?
 		 *
 		 * @since  1.0.0
 		 *
-		 * @param  bool $bool
-		 *
 		 * @return  bool
 		 */
-		public static function bypass_is_content_only( bool $bool = false ): bool {
-
-			// Processing
-
-				if ( self::is_content_only() ) {
-					$bool = true;
-				}
-
+		public static function is_header_overlaid(): bool {
 
 			// Output
 
-				return $bool;
+				return is_page_template( 'templates/header-overlaid-dark.php' ) || is_page_template( 'templates/header-overlaid-light.php' );
 
-		} // /bypass_is_content_only
+		} // /is_header_overlaid
 
 	// [no-intro.php] No intro.
 

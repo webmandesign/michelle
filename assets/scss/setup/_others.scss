@@ -2,12 +2,10 @@ $mobile_menu_breakpoint: 'xl';
 
 $zigzag_mask: (
 
-	'8x8' : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="m0 0 l0 4 l4 4 l4 -4 l0 -4 l-4 4 l-4 -4 z" /></svg>',
+	'8/8' : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="m0 0 l0 4 l4 4 l4 -4 l0 -4 l-4 4 l-4 -4 z" /></svg>',
 
-	'8x6' : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6"><path d="m0 0 l0 2 l4 4 l4 -4 l0 -2 l-4 4 l-4 -4 z" /></svg>',
+	'8/6' : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6"><path d="m0 0 l0 2 l4 4 l4 -4 l0 -2 l-4 4 l-4 -4 z" /></svg>',
 
-	'8x5' : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5"><path d="m0 0 l0 1 l4 4 l4 -4 l0 -1 l-4 4 l-4 -4 z" /></svg>',
-
-	'20x5' : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 5"><path d="m 0,0 v 1.371551 c 1.557622,0 3.090516,0.831324 4.712106,1.738547 C 6.333696,4.017322 8.043981,5 10.000001,5 11.95602,5 13.666305,4.017322 15.287894,3.110098 16.909484,2.202875 18.442378,1.371551 20,1.371551 V 0 C 18.04398,0 16.333696,0.982677 14.712107,1.8899 13.090517,2.797124 11.557622,3.628449 10.000001,3.628449 8.442379,3.628449 6.909484,2.797124 5.287894,1.8899 3.666304,0.982677 1.95602,0 0,0 Z" /></svg>',
+	'8/5' : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5"><path d="m0 0 l0 1 l4 4 l4 -4 l0 -1 l-4 4 l-4 -4 z" /></svg>',
 
 );

@@ -73,10 +73,7 @@ class RGBA implements Component_Interface {
 
 		// Processing
 
-			$alphas['color_header_text'] =
-			$alphas['color_content_text'] =
-			$alphas['color_footer_text'] =
-				20;
+			$alphas['color_body_text'] = 20;
 
 
 		// Output

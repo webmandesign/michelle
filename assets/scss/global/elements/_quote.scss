@@ -8,6 +8,7 @@ blockquote {
 	font-family: var(--typography_font_alt);
 	font-size: 1.25em;
 	font-style: italic;
+	color: var(--color_body_headings);
 	quotes: '“' '”' '‘' '’';
 
 	@include media( map_get( $breakpoint, 'l' ) ) {

@@ -3,7 +3,7 @@
 .site-branding {
 	display: flex;
 	padding: 6vh 0;
-	color: var(--color_header_link);
+	color: var(--color_body_headings);
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		order: 10;
@@ -20,7 +20,9 @@
 		}
 
 		.is-hidden-site-title & {
-			@extend %screen_reader_hiding;
+			// No accessibility here.
+			// Just prevent the read as there is alt text in logo image.
+			display: none;
 		}
 
 		.wp-custom-logo & {

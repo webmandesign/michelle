@@ -1,8 +1,14 @@
 /* FILE: global/elements/_base.scss */
 
+html {
+	border-top: var(--border_decorative_width) solid;
+	border-bottom: var(--border_decorative_width) solid;
+	border-color: var(--color_border_decorative);
+}
+
 body {
-	border-top: var(--border_body_width) solid;
-	border-bottom: var(--border_body_width) solid;
+	background: var(--color_body_background);
+	color: var(--color_body_text);
 	border-color: var(--color_body_border);
 }
 
@@ -40,15 +46,15 @@ hr:not(.is-style-dots),
 		hr:not(.is-style-dots),
 		.wp-block-separator:not(.is-style-dots) {
 			height: var(--hr_zigzag_height);
-			width: calc( 20/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
+			width: calc( 8/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
 			max-width: 100%;
 			background: var(--color_accent);
 			border-width: 0;
-			mask-image: url('data:image/svg+xml;utf8,#{ encode_url( map_get( $zigzag_mask, '20x5' ) ) }');
+			mask-image: url('data:image/svg+xml;utf8,#{ encode_url( map_get( $zigzag_mask, '8/5' ) ) }');
 
 			&.alignleft,
 			&.alignright {
-				width: calc( 20/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
+				width: calc( 8/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
 			}
 
 		}

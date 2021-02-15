@@ -86,6 +86,14 @@ class Component implements Component_Interface {
 				'search-form',
 			) );
 
+			// Custom background.
+			add_theme_support( 'custom-background', array(
+				'default-color'      => 'ffffff',
+				'default-image'      => get_theme_file_uri( 'assets/images/background-pattern.png' ),
+				'default-position-x' => 'center',
+				'default-position-y' => 'center',
+			) );
+
 			// Custom header. Required for site title hiding.
 			add_theme_support( 'custom-header', array(
 				'default-text-color' => 'ffffff',

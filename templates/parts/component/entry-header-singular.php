@@ -32,7 +32,11 @@ if (
 <header class="entry-header page-header">
 	<div class="page-header-content">
 		<?php do_action( 'michelle/page_header/top' ); ?>
-		<div class="entry-header-text page-header-text<?php echo ( $has_page_summary ) ? ( ' has-page-summary' ) : ( '' ); ?>">
+		<div class="entry-header-text page-header-text<?php
+			if ( $has_page_summary ) {
+				echo ' has-page-summary';
+			}
+			?>">
 			<h1 class="entry-title page-title"><?php
 				the_title();
 				echo $paged_info; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

@@ -65,6 +65,7 @@ form[role="search"],
 			background: none;
 			color: inherit;
 			border: 1px solid transparent; // To match the form field height.
+			box-shadow: none;
 		}
 
 	}
@@ -75,7 +76,6 @@ form[role="search"],
 	}
 
 	.site-header-content > & {
-		margin-#{$left}: 1rem;
 		z-index: 1;
 
 		&::before {
@@ -139,11 +139,11 @@ form[role="search"],
 			transform: translateX(-50%) translateY(-50%);
 
 			&::before {
-				width: calc( 100vw - 2em - var(--scrollbar_width) );
-				height: calc( 100vh - 2em );
-				margin: calc( -50vh + 1em ) calc( -50vw + 1em + ( var(--scrollbar_width) / 2 ) );
+				width: calc( 100vw - 12vh - var(--scrollbar_width) );
+				height: calc( 100vh - 12vh );
+				margin: calc( -50vh + 6vh ) calc( -50vw + 6vh + ( var(--scrollbar_width) / 2 ) );
 				background: var(--color_search_background);
-				box-shadow: 0 0 2em rgba( #000, .25 );
+				box-shadow: 0 0 6vh rgba( #000, .25 );
 				opacity: .98;
 				cursor: zoom-out;
 				backdrop-filter: blur( 10px );

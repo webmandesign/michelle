@@ -87,17 +87,13 @@
 
 		--letter_spacing: .05em;
 
-		--hr_zigzag_height: 10px;
+		--hr_zigzag_height: 20px;
 		--hr_zigzag_segments: 3;
 		@include media( map_get( $breakpoint, 'm' ) ) {
 			--hr_zigzag_segments: 5;
 		}
 
-		--border_body_width: 10px;
-
-	// Others.
-
-		--pseudo_background_opacity: .05;
+		--border_decorative_width: 10px;
 
 }
 

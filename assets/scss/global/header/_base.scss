@@ -3,9 +3,6 @@
 .site-header {
 	position: relative;
 	font-size: var(--typography_size_header);
-	background: var(--color_header_background);
-	color: var(--color_header_text);
-	border-color: var(--color_header_border);
 	z-index: 998;
 
 	&-section {
@@ -29,7 +26,7 @@
 	}
 
 	a {
-		color: var(--color_header_link);
+		color: inherit;
 	}
 
 	// Sticky header.
@@ -53,6 +50,29 @@
 
 		}
 
+	}
+
+}
+
+// Overlaid header.
+@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+
+	[class*="-header-overlaid-dark"],
+	[class*="-header-overlaid-light"] {
+		position: relative;
+
+		.site-header {
+			position: absolute;
+			width: 100%;
+			#{$left}: 0;
+			top: 0;
+			color: #000;
+		}
+
+	}
+
+	[class*="-header-overlaid-light"] .site-header {
+		color: #fff;
 	}
 
 }

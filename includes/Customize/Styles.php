@@ -74,7 +74,8 @@ class Styles implements Component_Interface {
 
 		// Variables
 
-			$css_vars = CSS_Variables::get_string();
+			$css_vars  = '--background_color:' . maybe_hash_hex_color( get_background_color() ) . ';';
+			$css_vars .= CSS_Variables::get_string();
 
 
 		// Processing

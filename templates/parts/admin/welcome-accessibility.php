@@ -21,21 +21,39 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 <hr>
 
-<div class="about__section has-1-column">
+<div class="about__section has-2-columns section-accessibility">
+
+	<h2 class="is-section-header"><?php esc_html_e( 'Create an Accessible Website', 'michelle' ); ?></h2>
 
 	<div class="column">
-		<h2><?php esc_html_e( 'Accessibility Tips', 'michelle' ); ?></h2>
+		<h3><?php esc_html_e( 'Hierarchy', 'michelle' ); ?></h3>
+		<p><?php esc_html_e( 'Keep proper headings hierarchy, do not skip heading levels: H2 should be followed by H3 and so on.', 'michelle' ); ?></p>
 
-		<p><?php esc_html_e( 'Tips for creating an accessible website:', 'michelle' ); ?></p>
+		<h3><?php esc_html_e( 'Simplicity', 'michelle' ); ?></h3>
+		<p><?php esc_html_e( 'Keep your text simple. Paragraphs with more than four lines are more difficult to read. Use lists and spacing in your content.', 'michelle' ); ?></p>
+	</div>
 
-		<ul>
-			<li><?php esc_html_e( 'Keep proper headings hierarchy, do not skip heading levels: H2 should be followed by H3 and so on.', 'michelle' ); ?></li>
-			<li><?php esc_html_e( 'Keep your text simple. Paragraphs with more than four lines are more difficult to read. Use lists and spacing in your content.', 'michelle' ); ?></li>
-			<li><?php esc_html_e( 'Adding images to posts and pages makes your content easier to remember.', 'michelle' ); ?></li>
-			<li><?php esc_html_e( 'Add alt texts to images (you can do this in the media library or directly in post editor).', 'michelle' ); ?></li>
-			<li><?php esc_html_e( 'Add text alternatives for videos and sound.', 'michelle' ); ?></li>
-		</ul>
+	<div class="column">
+		<h3><?php esc_html_e( 'Images', 'michelle' ); ?></h3>
+		<p><?php esc_html_e( 'Adding images to posts and pages makes your content easier to remember.', 'michelle' ); ?></p>
 
+		<h3><?php esc_html_e( 'Alternatives', 'michelle' ); ?></h3>
+		<p>
+			<?php esc_html_e( 'Add alt texts to images (you can do this in the media library or directly in post editor).', 'michelle' ); ?>
+			<?php esc_html_e( 'Add text alternatives for videos and sound.', 'michelle' ); ?>
+		</p>
 	</div>
 
 </div>
+
+<style>
+	.section-accessibility h3 {
+		margin-bottom: 10px;
+	}
+	.section-accessibility h3:not(:first-child) {
+		margin-top: 30px;
+	}
+	.section-accessibility p {
+		margin-top: 0;
+	}
+</style>

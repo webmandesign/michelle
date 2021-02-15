@@ -127,7 +127,7 @@ class Body_Class implements Component_Interface {
 
 		// Processing
 
-			$content_color = sanitize_hex_color_no_hash( Mod::get( 'color_content_background' ) );
+			$content_color = sanitize_hex_color_no_hash( get_background_color() );
 
 			/**
 			 * Color darkness code inspiration:
