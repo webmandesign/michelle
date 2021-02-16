@@ -1,9 +1,10 @@
 <?php
 /**
- * Template Name: Overlay Header (Dark)
+ * Template Name: Content only
  * Template Post Type: public-post-types
  *
- * Overlays header, making it dark color.
+ * Displays only page content.
+ * Removes site header and site footer.
  * Removes page/post intro.
  * Works with all public post types.
  *
@@ -17,7 +18,7 @@
 defined( 'ABSPATH' ) || exit;
 
 /* translators: Custom page template name. */
-__( 'Overlay Header (Dark)', 'michelle' );
+__( 'Content only', 'michelle' );
 
 if ( is_page( get_the_ID() ) ) {
 	get_template_part( 'page' );

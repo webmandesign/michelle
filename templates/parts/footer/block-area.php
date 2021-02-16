@@ -36,6 +36,13 @@ if ( ! $site_footer_query->have_posts() ) {
 	<div class="site-footer-content">
 		<?php
 
+		/**
+		 * Fires before site footer block area content.
+		 *
+		 * @since  1.0.0
+		 */
+		do_action( 'michelle/footer/block-area/before' );
+
 		while ( $site_footer_query->have_posts() ) {
 			$site_footer_query->the_post();
 
@@ -43,6 +50,13 @@ if ( ! $site_footer_query->have_posts() ) {
 		}
 
 		wp_reset_postdata();
+
+		/**
+		 * Fires after site footer block area content.
+		 *
+		 * @since  1.0.0
+		 */
+		do_action( 'michelle/footer/block-area/after' );
 
 		?>
 	</div>

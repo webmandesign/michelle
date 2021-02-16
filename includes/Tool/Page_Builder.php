@@ -13,6 +13,7 @@ namespace WebManDesign\Michelle\Tool;
 use WebManDesign\Michelle\Component_Interface;
 use WebManDesign\Michelle\Customize\Mod;
 use WebManDesign\Michelle\Entry;
+use WebManDesign\Michelle\Header\Body_Class;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -157,7 +158,7 @@ class Page_Builder implements Component_Interface {
 
 			// Any page builder layout.
 			if ( is_singular() ) {
-				$content_layout = ( self::is_page_template() ) ? ( Mod::get( 'page_builder_content_layout' ) ) : ( '' );
+				$content_layout = ( stripos( implode( ' ', $classes ), '-page-builder' ) ) ? ( Mod::get( 'page_builder_content_layout' ) ) : ( '' );
 
 				if ( 'full-width' === $content_layout ) {
 					$classes[] = 'has-content-layout-no-padding';
@@ -175,7 +176,11 @@ class Page_Builder implements Component_Interface {
 	} // /body_class
 
 	/**
-	 * Is page template: Page builder [builder.php]?
+	 * Is page template: Page builder?
+	 *
+	 * Not using `is_page_template()` but rather checking for a page template
+	 * filename portion in body classes to make the functionality much more
+	 * flexible (also for custom page templates, for example).
 	 *
 	 * @since  1.0.0
 	 *
@@ -185,7 +190,7 @@ class Page_Builder implements Component_Interface {
 
 		// Output
 
-			return is_page_template( 'templates/builder.php' );
+			return stripos( implode( ' ', Body_Class::get_body_class() ), '-page-builder' );
 
 	} // /is_page_template
 
@@ -203,7 +208,11 @@ class Page_Builder implements Component_Interface {
 		// Processing
 
 			if ( ! Mod::get( 'page_builder_template' ) ) {
-				unset( $post_templates['templates/builder.php'] );
+				foreach ( $post_templates as $file => $name ) {
+					if ( 0 === stripos( $file, 'templates/page-builder' ) ) {
+						unset( $post_templates[ $file ] );
+					}
+				}
 			}
 
 

@@ -2,6 +2,10 @@
 /**
  * Page template component.
  *
+ * Not using `is_page_template()` but rather checking for a page template
+ * filename portion in body classes to make the functionality much more
+ * flexible (also for custom page templates, for example).
+ *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -11,6 +15,7 @@
 namespace WebManDesign\Michelle\Entry;
 
 use WebManDesign\Michelle\Component_Interface;
+use WebManDesign\Michelle\Header\Body_Class;
 use WP_Theme;
 
 // Exit if accessed directly.
@@ -36,8 +41,6 @@ class Page_Template implements Component_Interface {
 				add_filter( 'michelle/header/is_disabled',      __CLASS__ . '::is_content_only' );
 				add_filter( 'michelle/footer/is_disabled',      __CLASS__ . '::is_content_only' );
 				add_filter( 'michelle/breadcrumbs/is_disabled', __CLASS__ . '::is_content_only' );
-
-				add_filter( 'michelle/content/show_primary_title', __CLASS__ . '::show_primary_title' );
 
 	} // /init
 
@@ -79,35 +82,7 @@ class Page_Template implements Component_Interface {
 
 	} // /post_templates
 
-	/**
-	 * Show page title?
-	 *
-	 * @since  1.0.0
-	 *
-	 * @param  bool $show
-	 *
-	 * @return  bool
-	 */
-	public static function show_primary_title( bool $show ): bool {
-
-		// Processing
-
-			if (
-				self::is_no_intro()
-				|| self::is_content_only()
-				|| self::is_header_overlaid()
-			) {
-				return false;
-			}
-
-
-		// Output
-
-			return $show;
-
-	} // /show_primary_title
-
-	// [content-only.php] Content only.
+	// Page templates with content only.
 
 		/**
 		 * Is page template: Content only?
@@ -120,42 +95,8 @@ class Page_Template implements Component_Interface {
 
 			// Output
 
-				return is_page_template( 'templates/content-only.php' );
+				return stripos( implode( ' ', Body_Class::get_body_class() ), '-content-only' );
 
 		} // /is_content_only
-
-	// [header-overlaid-{{dark/light}}.php] Overlay Header (Dark/Light).
-
-		/**
-		 * Is page template: Overlay Header (Dark/Light)?
-		 *
-		 * @since  1.0.0
-		 *
-		 * @return  bool
-		 */
-		public static function is_header_overlaid(): bool {
-
-			// Output
-
-				return is_page_template( 'templates/header-overlaid-dark.php' ) || is_page_template( 'templates/header-overlaid-light.php' );
-
-		} // /is_header_overlaid
-
-	// [no-intro.php] No intro.
-
-		/**
-		 * Is page template: No intro?
-		 *
-		 * @since  1.0.0
-		 *
-		 * @return  bool
-		 */
-		public static function is_no_intro(): bool {
-
-			// Output
-
-				return is_page_template( 'templates/no-intro.php' );
-
-		} // /is_no_intro
 
 }

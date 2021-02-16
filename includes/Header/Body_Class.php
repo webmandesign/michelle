@@ -22,6 +22,15 @@ defined( 'ABSPATH' ) || exit;
 class Body_Class implements Component_Interface {
 
 	/**
+	 * Soft cache for body classes array.
+	 *
+	 * @since   1.0.0
+	 * @access  private
+	 * @var     string
+	 */
+	private static $body_classes = array();
+
+	/**
 	 * Initialization.
 	 *
 	 * @since  1.0.0
@@ -86,7 +95,7 @@ class Body_Class implements Component_Interface {
 			}
 
 			// Is primary title displayed?
-			if ( Content\Component::show_primary_title() ) {
+			if ( Content\Component::show_primary_title( $classes ) ) {
 				$classes[] = 'has-primary-title';
 			} else {
 				$classes[] = 'no-primary-title';
@@ -151,5 +160,35 @@ class Body_Class implements Component_Interface {
 			return $classes;
 
 	} // /body_class_admin
+
+	/**
+	 * Retrieves soft cached array of body classes.
+	 *
+	 * @since  1.0.0
+	 *
+	 * @param  array $classes  Optional additional classes.
+	 *
+	 * @return  array
+	 */
+	public static function get_body_class( array $classes = array() ): array {
+
+		// Variables
+
+			if ( empty( self::$body_classes ) ) {
+				if ( ! doing_filter( 'body_class' ) ) {
+					self::$body_classes = get_body_class();
+				}
+			}
+
+
+		// Output
+
+			if ( empty( $classes ) ) {
+				return self::$body_classes;
+			} else {
+				return array_unique( array_merge( self::$body_classes, $classes ) );
+			}
+
+	} // /get_body_class
 
 }

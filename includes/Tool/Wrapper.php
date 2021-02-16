@@ -95,7 +95,7 @@ class Wrapper implements Component_Interface {
 				 * Include base core, such as `wrapper-archive.php`
 				 * for `archive-post-type.php` template request.
 				 */
-				if ( strpos( self::$base, '-' ) ) {
+				if ( stripos( self::$base, '-' ) ) {
 					self::$base_core = explode( '-', self::$base );
 					$templates[]     = sprintf( 'wrapper-%s.php', reset( self::$base_core ) );
 				}

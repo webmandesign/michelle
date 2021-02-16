@@ -11,6 +11,7 @@
 namespace WebManDesign\Michelle\Content;
 
 use WebManDesign\Michelle\Component_Interface;
+use WebManDesign\Michelle\Header\Body_Class;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -49,9 +50,9 @@ class Component implements Component_Interface {
 		// Variables
 
 			$sub_context = '';
-			$separator = '/';
+			$separator   = '/';
 
-			if ( strpos( $context, $separator ) ) {
+			if ( stripos( $context, $separator ) ) {
 				$contexts = explode( $separator, $context );
 				$context  = $contexts[0];
 				unset( $contexts[0] );
@@ -134,9 +135,17 @@ class Component implements Component_Interface {
 	 *
 	 * @since  1.0.0
 	 *
+	 * @param  array $body_classes  Optional forced array of body classes when using the method within `body_class` hook.
+	 *
 	 * @return  bool
 	 */
-	public static function show_primary_title(): bool {
+	public static function show_primary_title( array $body_classes = array() ): bool {
+
+		// Variables
+
+			$is_blog_homepage        = is_front_page() && is_home();
+			$has_no_intro_body_class = stripos( implode( ' ', Body_Class::get_body_class( $body_classes ) ), '-no-intro' );
+
 
 		// Output
 
@@ -145,9 +154,9 @@ class Component implements Component_Interface {
 			 *
 			 * @since  1.0.0
 			 *
-			 * @param  bool $show  Default: ! ( is_front_page() && is_home() ).
+			 * @param  bool $show  Default: ! $is_blog_homepage && ! $has_no_intro_body_class.
 			 */
-			return (bool) apply_filters( 'michelle/content/show_primary_title', ! ( is_front_page() && is_home() ) );
+			return (bool) apply_filters( 'michelle/content/show_primary_title', ! $is_blog_homepage && ! $has_no_intro_body_class );
 
 	} // /show_primary_title
 

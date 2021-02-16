@@ -57,8 +57,7 @@
 // Overlaid header.
 @include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 
-	[class*="-header-overlaid-dark"],
-	[class*="-header-overlaid-light"] {
+	body[class*="-header-overlaid"] {
 		position: relative;
 
 		.site-header {
@@ -71,7 +70,7 @@
 
 	}
 
-	[class*="-header-overlaid-light"] .site-header {
+	body[class*="-header-overlaid-light"] .site-header {
 		color: #fff;
 	}
 

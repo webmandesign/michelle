@@ -47,7 +47,7 @@
 
 // Page templates:
 
-	[class*="-template-content-only"] .content-area,
+	body[class*="-content-only"] .content-area,
 	.has-content-layout-no-padding .site-content,
 	.has-content-layout-no-padding .content-area {
 		padding: 0;

@@ -82,10 +82,10 @@
 
 }
 
-.is-singular:not([class*="-template-content-only"]):not(.has-primary-title) .entry-content-singular > .alignfull:first-child {
+.is-singular:not([class*="-content-only"]):not(.has-primary-title) .entry-content-singular > .alignfull:first-child {
 	margin-top: var(--content_padding_negative);
 }
 
-.is-singular:not([class*="-template-content-only"]) .entry-content-singular > .alignfull:last-child {
+.is-singular:not([class*="-content-only"]) .entry-content-singular > .alignfull:last-child {
 	margin-bottom: var(--content_padding_negative);
 }

@@ -21,7 +21,16 @@ if ( ! Content\Component::show_primary_title() ) {
 
 <header class="page-header">
 	<div class="page-header-content">
-		<?php do_action( 'michelle/page_header/top' ); ?>
+		<?php
+
+		/**
+		 * Fires before page header text content.
+		 *
+		 * @since  1.0.0
+		 */
+		do_action( 'michelle/page_header/top' );
+
+		?>
 		<div class="page-header-text">
 			<h1 class="page-title"><?php
 
@@ -35,6 +44,15 @@ if ( ! Content\Component::show_primary_title() ) {
 
 			?></h1>
 		</div>
-		<?php do_action( 'michelle/page_header/bottom' ); ?>
+		<?php
+
+		/**
+		 * Fires after page header text content.
+		 *
+		 * @since  1.0.0
+		 */
+		do_action( 'michelle/page_header/bottom' );
+
+		?>
 	</div>
 </header>

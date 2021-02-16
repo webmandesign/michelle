@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Overlay Header (Light)
+ * Template Name: Overlay header (light)
  * Template Post Type: public-post-types
  *
  * Overlays header, making it light color.
@@ -17,7 +17,7 @@
 defined( 'ABSPATH' ) || exit;
 
 /* translators: Custom page template name. */
-__( 'Overlay Header (Light)', 'michelle' );
+__( 'Overlay header (light)', 'michelle' );
 
 if ( is_page( get_the_ID() ) ) {
 	get_template_part( 'page' );

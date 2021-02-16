@@ -205,6 +205,13 @@ class Component implements Component_Interface {
 
 		// Output
 
+			/**
+			 * Action to display search form.
+			 *
+			 * @since  1.0.0
+			 *
+			 * @param  array $args
+			 */
 			do_action( 'michelle/search_form', array( 'echo' => true ) );
 
 	} // /search_form
@@ -269,7 +276,7 @@ class Component implements Component_Interface {
 				);
 
 				foreach ( $html as $key => $code ) {
-					if ( strpos( $code, '"submit"' ) ) {
+					if ( stripos( $code, '"submit"' ) ) {
 						$html[ $key ] = '<button type="submit" class="search-submit search-submit-with-icon">' . $icon_search . '<span class="screen-reader-text"> ' . esc_html_x( 'Search', 'Form submit button text.', 'michelle' ) . '</span></button>';
 						break;
 					}

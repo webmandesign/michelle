@@ -101,7 +101,7 @@ class Blocks implements Component_Interface {
 			// Wide align wrapper.
 			if (
 				'wide' == $attrs['align']
-				|| false !== strpos( $attrs['className'], 'alignwide' )
+				|| false !== stripos( $attrs['className'], 'alignwide' )
 			) {
 				$atts = array(
 					'class="alignwide-wrap"',

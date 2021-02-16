@@ -11,6 +11,7 @@
 namespace WebManDesign\Michelle\Entry;
 
 use WebManDesign\Michelle\Component_Interface;
+use WebManDesign\Michelle\Header\Body_Class;
 use WP_Post;
 
 // Exit if accessed directly.
@@ -89,7 +90,7 @@ class Component implements Component_Interface {
 		// Output
 
 			if ( self::is_singular() && doing_action( 'tha_entry_bottom' ) ) {
-				if ( Page_Template::is_no_intro() || Page_Template::is_content_only() ) {
+				if ( ! stripos( implode( ' ', Body_Class::get_body_class() ), '-no-intro' ) ) {
 					get_template_part( 'templates/parts/meta/entry-meta-top', $post_type );
 					get_template_part( 'templates/parts/meta/entry-meta-bottom', $post_type );
 				} else {

@@ -1,9 +1,10 @@
 <?php
 /**
- * Template Name: Content only
+ * Template Name: Page builder
  * Template Post Type: public-post-types
  *
- * Removes site header, footer and page intro, displays only page content.
+ * Prepares page/post content for using a page builder plugin. The default
+ * content area layout can be set in customizer options.
  * Works with all public post types.
  *
  * @package    Michelle
@@ -16,7 +17,7 @@
 defined( 'ABSPATH' ) || exit;
 
 /* translators: Custom page template name. */
-__( 'Content only', 'michelle' );
+__( 'Page builder', 'michelle' );
 
 if ( is_page( get_the_ID() ) ) {
 	get_template_part( 'page' );

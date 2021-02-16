@@ -1,10 +1,10 @@
 <?php
 /**
- * Template Name: Page builder
+ * Template Name: Overlay header (dark)
  * Template Post Type: public-post-types
  *
- * Prepares page/post content for using a page builder plugin. The default
- * content area layout can be set in customizer options.
+ * Overlays header, making it dark color.
+ * Removes page/post intro.
  * Works with all public post types.
  *
  * @package    Michelle
@@ -17,7 +17,7 @@
 defined( 'ABSPATH' ) || exit;
 
 /* translators: Custom page template name. */
-__( 'Page builder ready', 'michelle' );
+__( 'Overlay header (dark)', 'michelle' );
 
 if ( is_page( get_the_ID() ) ) {
 	get_template_part( 'page' );
