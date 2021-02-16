@@ -31,7 +31,7 @@
 
 .comment-metadata {
 	order: -1;
-	font-size: .8em;
+	font-size: var(--typography_font_size_small);
 	font-style: italic;
 
 	a {

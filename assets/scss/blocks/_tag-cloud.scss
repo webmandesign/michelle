@@ -6,7 +6,7 @@
 		display: inline-block;
 		padding: .15em .5em;
 		margin: .15em 0;
-		font-size: .8em !important;
+		font-size: var(--typography_font_size_small) !important;
 		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: var(--letter_spacing);

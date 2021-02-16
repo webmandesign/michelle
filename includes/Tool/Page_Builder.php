@@ -87,7 +87,7 @@ class Page_Builder implements Component_Interface {
 
 				add_filter( 'michelle/customize/options/get', __CLASS__ . '::options' );
 
-				add_filter( 'body_class', __CLASS__ . '::body_class' );
+				add_filter( 'body_class', __CLASS__ . '::body_class', 99 );
 
 				add_filter( 'pre/michelle/entry/media/display', __CLASS__ . '::is_page_ready_maybe_return_empty_string', 100 );
 

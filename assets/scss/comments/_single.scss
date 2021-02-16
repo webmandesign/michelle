@@ -41,7 +41,7 @@
 		position: absolute;
 		#{$right}: 0;
 		top: $golden +rem;
-		font-size: .8em;
+		font-size: var(--typography_font_size_small);
 		text-transform: uppercase;
 		letter-spacing: var(--letter_spacing);
 	}

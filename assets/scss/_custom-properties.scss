@@ -48,12 +48,16 @@
 			--typography_heading_size_multiplier: 1;
 		}
 
-		--typography_font_size_huge: 5.063em;
-
 		--typography_heading_size_posts: 1.5em;
 		@include media( map_get( $breakpoint, 'xxl' ) ) {
 			--typography_heading_size_posts: 2.25em;
 		}
+
+		--typography_font_size_extra_small: .618em;
+		--typography_font_size_small: .75em;
+		--typography_font_size_large: var(--typography_heading_size_4);
+		--typography_font_size_extra_large: var(--typography_heading_size_3);
+		--typography_font_size_huge: 5.063em;
 
 	// Spacing and size.
 

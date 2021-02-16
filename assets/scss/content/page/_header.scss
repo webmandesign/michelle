@@ -20,7 +20,12 @@
 	}
 
 	.page-summary {
-		font-size: 1.333em;
+		font-size: 1.166em;
+
+		@include media( map_get( $breakpoint, 'xxl' ) ) {
+			font-size: 1.333em;
+		}
+
 	}
 
 	@include media( map_get( $breakpoint, 'xl' ) ) {

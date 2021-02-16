@@ -138,14 +138,14 @@ class Editor implements Component_Interface {
 				array(
 					'name'      => _x( 'Extra Small', 'Font size.', 'michelle' ),
 					'shortName' => _x( 'XS', 'Font size.', 'michelle' ),
-					'size'      => round( $base_font_size * .64 ),
+					'size'      => round( $base_font_size * .618 ),
 					'slug'      => 'extra-small',
 				),
 
 				array(
 					'name'      => _x( 'Small', 'Font size.', 'michelle' ),
 					'shortName' => _x( 'S', 'Font size.', 'michelle' ),
-					'size'      => round( $base_font_size * .8 ),
+					'size'      => round( $base_font_size * .75 ),
 					'slug'      => 'small',
 				),
 

@@ -15,7 +15,7 @@ html {
 }
 
 small {
-	font-size: .8em;
+	font-size: var(--typography_font_size_small);
 }
 
 pre,
