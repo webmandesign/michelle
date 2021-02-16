@@ -135,11 +135,11 @@ class Component implements Component_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @param  array $body_classes  Optional forced array of body classes when using the method within `body_class` hook.
+	 * @param  mixed $body_classes  Optional forced array of body classes when using the method within `body_class` hook.
 	 *
 	 * @return  bool
 	 */
-	public static function show_primary_title( array $body_classes = array() ): bool {
+	public static function show_primary_title( $body_classes = array() ): bool {
 
 		// Variables
 

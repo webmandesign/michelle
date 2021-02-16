@@ -166,13 +166,17 @@ class Body_Class implements Component_Interface {
 	 *
 	 * @since  1.0.0
 	 *
-	 * @param  array $classes  Optional additional classes.
+	 * @param  mixed $classes  Optional additional classes.
 	 *
 	 * @return  array
 	 */
-	public static function get_body_class( array $classes = array() ): array {
+	public static function get_body_class( $classes = array() ): array {
 
 		// Variables
+
+			if ( ! is_array( $classes ) ) {
+				$classes = array();
+			}
 
 			if ( empty( self::$body_classes ) ) {
 				if ( ! doing_filter( 'body_class' ) ) {

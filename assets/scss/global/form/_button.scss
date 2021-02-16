@@ -21,6 +21,7 @@
 
 	&:hover,
 	&:focus {
+		border-color: transparent; // To override `global/form/_base.scss` form submit button styles.
 		box-shadow: inset 0 #{ $form_field_padding_vertical / $button_font_size * $golden_major * -1 } 0;
 	}
 

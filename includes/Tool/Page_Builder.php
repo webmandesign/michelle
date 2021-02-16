@@ -89,11 +89,13 @@ class Page_Builder implements Component_Interface {
 
 				add_filter( 'body_class', __CLASS__ . '::body_class', 99 );
 
-				add_filter( 'pre/michelle/entry/media/display', __CLASS__ . '::is_page_ready_maybe_return_empty_string', 100 );
+				add_filter( 'pre/michelle/entry/media/display', __CLASS__ . '::return_empty_string_when_enabled', 100 );
 
-				add_filter( 'michelle/content/show_primary_title', __CLASS__ . '::show_primary_title', 20 );
+				add_filter( 'michelle/content/show_primary_title', __CLASS__ . '::return_false_when_enabled', 20 );
 
 				add_filter( 'theme_templates', __CLASS__ . '::remove_page_template' );
+
+				add_filter( 'michelle/tool/page_builder/is_enabled', __CLASS__ . '::automatic_check' );
 
 	} // /init
 
@@ -107,6 +109,11 @@ class Page_Builder implements Component_Interface {
 	 * @return  array
 	 */
 	public static function options( array $options ): array {
+
+		// Variables
+
+			$is_no_padding_default = class_exists( 'Vc_Manager' ) || class_exists( 'SiteOrigin_Panels' );
+
 
 		// Processing
 
@@ -129,7 +136,7 @@ class Page_Builder implements Component_Interface {
 				'id'          => 'page_builder_content_layout',
 				'label'       => esc_html__( 'Page builder layout', 'michelle' ),
 				'description' => esc_html__( 'Content area layout when using "Page builder" template.', 'michelle' ) . ' ' . esc_html__( 'As every page builder plugin works differently, set this according to your needs.', 'michelle' ),
-				'default'     => 'full-width',
+				'default'     => ( $is_no_padding_default ) ? ( 'no-padding' ) : ( 'full-width' ),
 				'choices'     => array(
 					'full-width' => esc_html__( 'Full width content area, no padding', 'michelle' ),
 					'no-padding' => esc_html__( 'Keep content area width, just remove padding', 'michelle' ),
@@ -157,8 +164,11 @@ class Page_Builder implements Component_Interface {
 		// Processing
 
 			// Any page builder layout.
-			if ( is_singular() ) {
-				$content_layout = ( stripos( implode( ' ', $classes ), '-page-builder' ) ) ? ( Mod::get( 'page_builder_content_layout' ) ) : ( '' );
+			if (
+				is_singular()
+				&& self::is_enabled( $classes )
+			) {
+				$content_layout = Mod::get( 'page_builder_content_layout' );
 
 				if ( 'full-width' === $content_layout ) {
 					$classes[] = 'has-content-layout-no-padding';
@@ -176,23 +186,33 @@ class Page_Builder implements Component_Interface {
 	} // /body_class
 
 	/**
-	 * Is page template: Page builder?
+	 * Is page builder template body class used?
 	 *
-	 * Not using `is_page_template()` but rather checking for a page template
-	 * filename portion in body classes to make the functionality much more
-	 * flexible (also for custom page templates, for example).
+	 * @param  mixed $body_classes  Optional forced array of body classes when using the method within `body_class` hook.
 	 *
 	 * @since  1.0.0
 	 *
 	 * @return  bool
 	 */
-	public static function is_page_template(): bool {
+	public static function is_enabled( $body_classes = array() ): bool {
+
+		// Variables
+
+			$check_body_class = stripos( implode( ' ', Body_Class::get_body_class( $body_classes ) ), '-page-builder' );
+
 
 		// Output
 
-			return stripos( implode( ' ', Body_Class::get_body_class() ), '-page-builder' );
+			/**
+			 * Filters whether we should apply page builder template.
+			 *
+			 * @since  1.0.0
+			 *
+			 * @param  bool $check_body_class  By default it checks for a specific body class name portion.
+			 */
+			return (bool) apply_filters( 'michelle/tool/page_builder/is_enabled', (bool) $check_body_class );
 
-	} // /is_page_template
+	} // /is_enabled
 
 	/**
 	 * Remove "Page builder" page/post template [builder.php].
@@ -223,9 +243,7 @@ class Page_Builder implements Component_Interface {
 	} // /remove_page_template
 
 	/**
-	 * Show primary page title (H1) if we use a page builder?
-	 *
-	 * This is to target any page builder plugin, including Beaver Builder.
+	 * If page builder is enabled, return `false`.
 	 *
 	 * @since  1.0.0
 	 *
@@ -233,67 +251,23 @@ class Page_Builder implements Component_Interface {
 	 *
 	 * @return  bool
 	 */
-	public static function show_primary_title( bool $show ): bool {
+	public static function return_false_when_enabled( bool $show ): bool {
 
 		// Processing
 
-			if ( self::is_page_template() ) {
+			if ( self::is_enabled() ) {
 				$show = false;
 			}
 
 
 		// Output
 
-			return $show;
+			return (bool) $show;
 
-	} // /show_primary_title
-
-	/**
-	 * Using a page builder?
-	 *
-	 * @since  1.0.0
-	 *
-	 * @return  bool
-	 */
-	public static function is_page_ready(): bool {
-
-		// Pre
-
-			/**
-			 * Bypass filter for Page_Builder::is_page_ready().
-			 *
-			 * Returning a non-null value will short-circuit the method,
-			 * returning the passed value instead.
-			 *
-			 * @since  1.0.0
-			 *
-			 * @param  mixed $pre  Default: null. If not null, method returns the value.
-			 */
-			$pre = apply_filters( 'pre/michelle/tool/page_builder/is_page_ready', null );
-
-			if ( null !== $pre ) {
-				return $pre;
-			}
-
-
-		// Requirements check
-
-			if ( ! self::is_page_template() ) {
-				return false;
-			}
-
-
-		// Output
-
-			return in_array(
-				(string) Mod::get( 'page_builder_content_layout' ),
-				array( 'full-width', 'no-padding' )
-			);
-
-	} // /is_page_ready
+	} // /return_false_when_enabled
 
 	/**
-	 * Using a page builder? Return empty string if we do.
+	 * If page builder is enabled, return empty string.
 	 *
 	 * Useful for `pre` filter hooks.
 	 *
@@ -303,14 +277,11 @@ class Page_Builder implements Component_Interface {
 	 *
 	 * @return  mixed  Original pre value or empty string.
 	 */
-	public static function is_page_ready_maybe_return_empty_string( $pre ) {
+	public static function return_empty_string_when_enabled( $pre ) {
 
 		// Processing
 
-			if (
-				Entry\Component::is_singular()
-				&& self::is_page_ready()
-			) {
+			if ( self::is_enabled() ) {
 				return '';
 			}
 
@@ -319,6 +290,47 @@ class Page_Builder implements Component_Interface {
 
 			return $pre;
 
-	} // /is_page_ready_maybe_return_empty_string
+	} // /return_empty_string_when_enabled
+
+	/**
+	 * Enable page builder layout automatically for selected page builder plugins.
+	 *
+	 * Works with:
+	 * - Beaver Builder
+	 * - Elementor
+	 *
+	 * Does not work with:
+	 * - WPBakery Page Builder because there is no way to check if the page was built
+	 *   with this page builder except checking for shortcodes in the page content...
+	 *
+	 * @since  1.0.0
+	 *
+	 * @param  bool $is_enabled
+	 *
+	 * @return  bool
+	 */
+	public static function automatic_check( bool $is_enabled ): bool {
+
+		// Variables
+
+			$beaver_builder = is_callable( 'FLBuilderModel::is_builder_enabled' ) && \FLBuilderModel::is_builder_enabled();
+			$elementor = is_callable( 'Elementor\Plugin::instance' ) && \Elementor\Plugin::instance()->db->is_built_with_elementor( get_the_ID() );
+
+
+		// Processing
+
+			if (
+				$beaver_builder
+				|| $elementor
+			) {
+				return true;
+			}
+
+
+		// Output
+
+			return (bool) $is_enabled;
+
+	} // /automatic_check
 
 }

@@ -89,13 +89,27 @@ class Page_Template implements Component_Interface {
 		 *
 		 * @since  1.0.0
 		 *
+		 * @param  mixed $body_classes  Optional forced array of body classes when using the method within `body_class` hook.
+		 *
 		 * @return  bool
 		 */
-		public static function is_content_only(): bool {
+		public static function is_content_only( $body_classes = array() ): bool {
+
+			// Variables
+
+				$check_body_class = stripos( implode( ' ', Body_Class::get_body_class( $body_classes ) ), '-content-only' );
+
 
 			// Output
 
-				return stripos( implode( ' ', Body_Class::get_body_class() ), '-content-only' );
+				/**
+				 * Filters whether we should display only page content.
+				 *
+				 * @since  1.0.0
+				 *
+				 * @param  bool $check_body_class  By default it checks for a specific body class name portion.
+				 */
+				return (bool) apply_filters( 'michelle/entry/page_template/is_content_only', (bool) $check_body_class );
 
 		} // /is_content_only
 
