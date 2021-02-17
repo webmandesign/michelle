@@ -1,3 +1,5 @@
+<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->

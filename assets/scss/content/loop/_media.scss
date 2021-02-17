@@ -1,0 +1,14 @@
+/* FILE: content/loop/_header.scss */
+
+.site .posts .entry-media {
+	margin-top: calc( -1 * var(--posts_list_gap) );
+	margin-left: calc( -1 * var(--posts_list_gap) );
+	margin-right: calc( -1 * var(--posts_list_gap) );
+
+	@include media( map_get( $breakpoint, 'xxl' ) ) {
+		margin-top: -6vh;
+		margin-left: -6vh;
+		margin-right: -6vh;
+	}
+
+}

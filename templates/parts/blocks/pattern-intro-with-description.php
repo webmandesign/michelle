@@ -1,7 +1,9 @@
+<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+
 <!-- wp:columns {"verticalAlignment":null,"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":1} -->
-<h1>Lorem ipsum dolor</h1>
+<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"h1"} -->
+<h1 class="h1">Lorem ipsum dolor</h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 

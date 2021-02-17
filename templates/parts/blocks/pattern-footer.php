@@ -1,3 +1,5 @@
+<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+
 <!-- wp:group {"align":"full","className":"has-no-margin-bottom","backgroundColor":"palette-1","textColor":"palette-2"} -->
 <div class="wp-block-group alignfull has-no-margin-bottom has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>

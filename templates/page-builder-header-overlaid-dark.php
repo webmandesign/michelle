@@ -1,4 +1,4 @@
-<?php
+<?php // phpcs:ignore WPThemeReview.Templates.ReservedFileNamePrefix.ReservedTemplatePrefixFound
 /**
  * Template Name: Page builder (overlay header dark)
  * Template Post Type: public-post-types

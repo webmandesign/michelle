@@ -2,7 +2,8 @@
 
 .entry-meta {
 	font-size: var(--typography_font_size_small);
-	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: var(--letter_spacing);
 
 	.entry-content + & {
 		margin-top: 3rem;

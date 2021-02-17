@@ -1,8 +1,10 @@
+<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+
 <!-- wp:cover {"url":"PATH_IMAGES/landscape.jpg","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full"} -->
 <div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax has-custom-content-position is-position-bottom-center" style="background-image:url(PATH_IMAGES/landscape.jpg);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":1} -->
-<h1>Lorem ipsum dolor</h1>
+<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"h1"} -->
+<h1 class="h1">Lorem ipsum dolor</h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 

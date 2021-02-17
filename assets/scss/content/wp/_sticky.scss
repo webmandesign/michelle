@@ -1,7 +1,6 @@
 /* FILE: content/wp/_sticky.scss */
 
-.sticky .entry-title {
-	display: inline-block;
-	padding-top: .5rem;
-	border-top: 1px solid var(--color_accent);
+.sticky {
+	position: relative;
+	@extend %shaded_background;
 }

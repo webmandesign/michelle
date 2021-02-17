@@ -1,3 +1,5 @@
+<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+
 <!-- wp:group {"className":"has-no-padding","backgroundColor":"accent","textColor":"palette-5"} -->
 <div class="wp-block-group has-no-padding has-palette-5-color has-accent-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none","className":"has-no-margin"} -->
 <figure class="wp-block-image has-no-margin"><img src="PATH_IMAGES/landscape.jpg" alt="" /></figure>
