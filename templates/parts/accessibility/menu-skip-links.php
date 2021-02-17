@@ -20,9 +20,10 @@ defined( 'ABSPATH' ) || exit;
 		<?php
 
 		$links = array(
-			'site-navigation' => __( 'Skip to main navigation', 'michelle' ),
-			'content'         => __( 'Skip to main content', 'michelle' ),
-			'colophon'        => __( 'Skip to footer', 'michelle' ),
+			'site-navigation'         => __( 'Skip to main navigation', 'michelle' ),
+			'content'                 => __( 'Skip to main content', 'michelle' ),
+			'site-header-search-form' => __( 'Skip to search form', 'michelle' ),
+			'colophon'                => __( 'Skip to footer', 'michelle' ),
 		);
 
 		foreach ( $links as $html_id => $text ) {

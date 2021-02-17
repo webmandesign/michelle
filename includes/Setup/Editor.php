@@ -133,45 +133,39 @@ class Editor implements Component_Interface {
 			$sizes = array(
 
 				array(
-					'name'      => _x( 'Extra Small', 'Font size.', 'michelle' ),
-					'shortName' => _x( 'XS', 'Font size.', 'michelle' ),
-					'size'      => round( $base_font_size * .618 ),
-					'slug'      => 'extra-small',
+					'name' => _x( 'Extra Small', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * .618 ),
+					'slug' => 'extra-small',
 				),
 
 				array(
-					'name'      => _x( 'Small', 'Font size.', 'michelle' ),
-					'shortName' => _x( 'S', 'Font size.', 'michelle' ),
-					'size'      => round( $base_font_size * .75 ),
-					'slug'      => 'small',
+					'name' => _x( 'Small', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * .75 ),
+					'slug' => 'small',
 				),
 
 				array(
-					'name'      => _x( 'Normal', 'Font size.', 'michelle' ),
-					'shortName' => _x( 'M', 'Font size.', 'michelle' ),
-					'size'      => $base_font_size,
-					'slug'      => 'normal', // Can not use empty value here as that would cause inline styles being applied.
+					'name' => _x( 'Normal', 'Font size.', 'michelle' ),
+					'size' => $base_font_size,
+					'slug' => 'normal', // Can not use empty value here as that would cause inline styles being applied.
 				),
 
 				array(
-					'name'      => _x( 'Large', 'Font size.', 'michelle' ),
-					'shortName' => _x( 'L', 'Font size.', 'michelle' ),
-					'size'      => round( $base_font_size * 1.333 ),
-					'slug'      => 'large',
+					'name' => _x( 'Large', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * 1.333 ),
+					'slug' => 'large',
 				),
 
 				array(
-					'name'      => _x( 'Extra Large', 'Font size.', 'michelle' ),
-					'shortName' => _x( 'XL', 'Font size.', 'michelle' ),
-					'size'      => round( $base_font_size * 1.777 ),
-					'slug'      => 'extra-large',
+					'name' => _x( 'Extra Large', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * 1.777 ),
+					'slug' => 'extra-large',
 				),
 
 				array(
-					'name'      => _x( 'Huge', 'Font size.', 'michelle' ),
-					'shortName' => _x( 'XXL', 'Font size.', 'michelle' ),
-					'size'      => round( $base_font_size * 5.063 ),
-					'slug'      => 'huge',
+					'name' => _x( 'Huge', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * 5.063 ),
+					'slug' => 'huge',
 				),
 
 			);

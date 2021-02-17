@@ -4,6 +4,7 @@
 	text-transform: lowercase;
 
 	.sub-menu {
+		@extend %shaded_background;
 		display: none;
 		position: absolute;
 		width: auto;
@@ -66,6 +67,28 @@
 				display: block;
 			}
 
+		}
+
+	}
+
+}
+
+.main-navigation.main-navigation .sub-menu {
+
+	&::before {
+		opacity: 0;
+	}
+
+	.sub-menu {
+
+		&::before {
+			opacity: .03;
+		}
+
+		.sub-menu::before {
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				opacity: .06;
+			}
 		}
 
 	}

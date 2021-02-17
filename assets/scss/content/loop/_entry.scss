@@ -5,7 +5,8 @@
 	flex-direction: column;
 	width: calc( 100% - var(--posts_list_gap) );
 	padding: var(--posts_list_gap);
-	margin: var(--posts_list_gap) calc( var(--posts_list_gap) / 2 );
+	margin: calc( var(--posts_list_gap) / 2 );
+	background: var(--color_body_background);
 	border-width: 1px;
 	border-style: solid;
 	border-top: var(--border_decorative_width) solid var(--color_border_decorative);

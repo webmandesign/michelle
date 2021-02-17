@@ -32,9 +32,16 @@
 	// Sticky header.
 	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
 
+		&-content {
+			align-items: center;
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+
 		.has-scrolled:not(.has-navigation-toggled) & {
 			position: sticky;
 			top: 0;
+			background: var(--color_body_background);
 			transform: translateY( -100% );
 			transition: transform .6s;
 		}
@@ -42,12 +49,6 @@
 		.has-scrolled-up:not(.has-navigation-toggled) & {
 			box-shadow: 0 1em 2em rgba( #000, .15 );
 			transform: translateY( 0 );
-
-			&-section {
-				padding-top: .5em;
-				padding-bottom: .5em;
-			}
-
 		}
 
 	}

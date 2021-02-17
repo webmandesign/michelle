@@ -144,7 +144,7 @@ class Media implements Component_Interface {
 
 				'thumbnail' => array(
 					'name'        => esc_html_x( 'Thumbnail', 'WordPress predefined image size name.', 'michelle' ),
-					'description' => esc_html__( 'Not used in the theme.', 'michelle' ),
+					'description' => esc_html__( 'Used in posts list.', 'michelle' ),
 					'width'       => 480,
 					'height'      => 0,
 					'crop'        => false,
@@ -162,14 +162,6 @@ class Media implements Component_Interface {
 					'name'        => esc_html_x( 'Large', 'WordPress predefined image size name.', 'michelle' ),
 					'description' => esc_html__( 'Not used in the theme.', 'michelle' ),
 					'width'       => absint( $content_width ),
-					'height'      => 0,
-					'crop'        => false,
-				),
-
-				'michelle-thumbnail' => array(
-					'name'        => esc_html_x( 'Posts list thumbnail', 'Image size name', 'michelle' ),
-					'description' => esc_html__( 'Used in posts list by default.', 'michelle' ),
-					'width'       => 480,
 					'height'      => 0,
 					'crop'        => false,
 				),

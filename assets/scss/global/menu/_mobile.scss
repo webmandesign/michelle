@@ -71,15 +71,6 @@
 
 }
 
-.mobile-search-form {
-	margin-bottom: 3em;
-
-	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-		display: none;
-	}
-
-}
-
 // Normal menu style overrides:
 .has-navigation-mobile {
 

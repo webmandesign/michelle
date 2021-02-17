@@ -93,8 +93,8 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
-				'outline' => array(
-					'label'  => _x( 'Outline', 'Block style label.', 'michelle' ),
+				'outline-items' => array(
+					'label'  => _x( 'Outline items', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/list',
 					),

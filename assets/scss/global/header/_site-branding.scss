@@ -1,14 +1,16 @@
 /* FILE: global/header/_site-branding.scss */
 
 .site-branding {
+	order: 10;
 	display: flex;
 	align-items: flex-end;
-	padding: 6vh 0;
+	padding: 0;
+	margin-#{$left}: auto;
 	color: var(--color_body_headings);
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-		order: 10;
-		margin-#{$left}: auto;
+		padding-top: 6vh;
+		padding-bottom: 6vh;
 	}
 
 	&-text {
@@ -68,6 +70,7 @@
 .site-description {
 	font-size: .875em;
 	text-transform: uppercase;
+	letter-spacing: var(--letter_spacing);
 }
 
 .custom-logo {

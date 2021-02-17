@@ -60,7 +60,7 @@ class Media implements Component_Interface {
 			 *
 			 * @param  string $image_size  Default: 'thumbnail'.
 			 */
-			return (string) apply_filters( 'michelle/entry/media/get_image_size', Mod::get( 'posts_list_thumbnail_size' ) );
+			return (string) apply_filters( 'michelle/entry/media/get_image_size', 'thumbnail' );
 
 	} // /get_image_size
 

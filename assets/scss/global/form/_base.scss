@@ -31,8 +31,8 @@ textarea {
 	letter-spacing: inherit;
 	background: transparent;
 	color: inherit;
-	border: 1px solid;
-	border-color: inherit;
+	border: 1px solid transparent;
+	border-bottom-color: currentColor;
 	vertical-align: baseline;
 
 	&:focus {

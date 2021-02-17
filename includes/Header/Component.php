@@ -271,9 +271,17 @@ class Component implements Component_Interface {
 			if ( 1 < count( $html ) ) {
 				$html[0] = str_replace(
 					'search-form',
-					'search-form has-submit-with-icon ',
+					'search-form has-submit-with-icon',
 					$html[0]
 				);
+
+				if ( doing_action( 'tha_header_top' ) ) {
+					$html[0] = str_replace(
+						'<form ',
+						'<form id="site-header-search-form" ',
+						$html[0]
+					);
+				}
 
 				foreach ( $html as $key => $code ) {
 					if ( stripos( $code, '"submit"' ) ) {

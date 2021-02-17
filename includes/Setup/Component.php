@@ -127,7 +127,7 @@ class Component implements Component_Interface {
 			 * We cannot use WebManDesign\Michelle\Customize\Mod::get() here as we are setting
 			 * these before the actual theme options are declared.
 			 */
-			$content_width = absint( get_theme_mod( 'layout_width_content', 1280 ) );
+			$content_width = absint( get_theme_mod( 'layout_width_content', 1400 ) );
 
 			// Allow filtering.
 			$GLOBALS['content_width'] = absint(
