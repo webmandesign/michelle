@@ -18,8 +18,18 @@
 
 }
 
-.wp-block-gallery.wp-block-gallery.has-no-item-margin .blocks-gallery-item,
-.wp-block-gallery.wp-block-gallery.has-no-gap .blocks-gallery-item,
-.wp-block-gallery.wp-block-gallery.has-no-gaps .blocks-gallery-item {
-	margin: 0;
+.gallery,
+.wp-block-gallery {
+
+	.site & figure figcaption {
+		padding: 4%;
+		background: rgba( #000, .66 );
+		color: #fff;
+		backdrop-filter: blur( 10px );
+	}
+
+}
+
+.is-style-hide-caption figcaption {
+	display:none;
 }

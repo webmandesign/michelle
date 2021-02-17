@@ -1,4 +1,4 @@
-<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+<?php // See `includes/Content/Block_Patterns.php` for block pattern registration. ?>
 
 <!-- wp:columns {"verticalAlignment":null,"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->

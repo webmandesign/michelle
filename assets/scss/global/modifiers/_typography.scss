@@ -85,7 +85,8 @@
 
 	$important_modifiers: important( 'modifier_text_transform' );
 
-	.has-uppercase-text-transform {
+	.has-uppercase-text-transform,
+	.is-style-uppercase {
 		text-transform: uppercase $important_modifiers;
 	}
 

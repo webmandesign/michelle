@@ -278,7 +278,7 @@ class Starter_Content implements Component_Interface {
 
 			self::$content['attachments'] = array(
 				'attachment-image-landscape' => array(
-					'file' => 'assets/images/starter/landscape.jpg',
+					'file' => 'assets/images/starter/3to2.jpg',
 				),
 			);
 

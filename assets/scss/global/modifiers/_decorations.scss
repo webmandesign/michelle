@@ -19,15 +19,15 @@
 
 // Shadow.
 
-	// @TODO Check EditorPlus plugin options first.
-	.has-inner-shadow {
-		$spread : 100px;
-		$indent : 10px;
-		$opacity : .2;
+	$spread : 6vh;
+	$indent : 1vh;
+	$opacity : .2;
 
+	.has-inner-shadow,
+	.is-style-inner-shadow {
 		position: relative;
 
-		.site &::after {
+		body &::after {
 			content: '';
 			position: absolute;
 			display: block; // This is required for cover block, for example.
@@ -35,7 +35,7 @@
 			right: 0;
 			top: 0;
 			bottom: 0;
-			box-shadow: inset 0 #{ $spread - $indent } #{ $spread } rgba( #000, $opacity );
+			box-shadow: inset 0 #{ $indent } #{ $spread } rgba( #000, $opacity );
 			z-index: 99;
 			pointer-events: none;
 		}
@@ -48,9 +48,29 @@
 
 	}
 
+		// For block editor only:
+		[data-align="full"] > .has-inner-shadow,
+		[data-align="full"] > .is-style-inner-shadow {
+
+			&::after {
+				box-shadow:
+					inset 0 #{ $spread + $indent } #{ $spread } -#{ $spread } rgba( #000, $opacity ),
+					inset 0 #{ $indent - $spread } #{ $spread } -#{ $spread } rgba( #000, $opacity );
+			}
+
+		}
+
+	.has-drop-shadow,
+	.is-style-drop-shadow {
+		box-shadow: var(--drop_shadow);
+	}
+
 // Lists.
 
-	.has-outline-style {
+	ul.has-outline-style,
+	ol.has-outline-style,
+	ul.is-style-outline,
+	ol.is-style-outline {
 		list-style: none;
 		font-size: .875em;
 		text-transform: uppercase;
@@ -88,22 +108,4 @@
 	.invert,
 	.has-invert-filter {
 		filter: invert(1);
-	}
-
-	.link-color-inherit,
-	.has-inherit-link-color {
-
-		a {
-			color: inherit;
-		}
-
-	}
-
-	.link-color-current,
-	.has-current-link-color {
-
-		a {
-			color: currentColor;
-		}
-
 	}

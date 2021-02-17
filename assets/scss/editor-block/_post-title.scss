@@ -17,18 +17,16 @@
 	}
 
 	& &__input {
-		max-width: $max_width_entry_content;
+		max-width: calc( #{ $golden_major } * var(--layout_width_content) );
 		padding-top: 0;
 		padding-bottom: 0;
 		margin-left: auto;
 		margin-right: auto;
 		font-family: var(--typography_font_headings);
-		font-size: calc( var(--typography_heading_size_multiplier) * var(--typography_heading_size_1) );
-		font-weight: 400;
+		font-size: 2.5em;
+		font-weight: 700;
 		line-height: 1.25;
-		text-transform: uppercase;
 		text-align: center;
-		letter-spacing: var(--letter_spacing);
 
 		&,
 		&:focus {

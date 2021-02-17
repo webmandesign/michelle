@@ -90,11 +90,6 @@
 
 	}
 
-	&.is-cascade li,
-	&.has-center-vertical-align li {
-		justify-content: center;
-	}
-
 	// Columns.
 
 		&[class*="columns-"] li {
@@ -105,51 +100,6 @@
 			&.columns-#{ $i } li {
 				@extend %posts_list_columns_#{$i};
 			}
-		}
-
-	// Modification classes.
-
-		&.has-no-gap,
-		&.has-no-gaps {
-			--posts_list_gap: var(--zero);
-
-			 li {
-
-				@include media( map_get( $breakpoint, 'm' ) ) {
-					padding-left: .5em;
-					padding-right: .5em;
-
-					.wp-block-latest-posts__featured-image {
-						margin-left: -.5em;
-						margin-right: -.5em;
-					}
-
-				}
-
-				@include media( map_get( $breakpoint, 'xl' ) ) {
-					padding-left: 1em;
-					padding-right: 1em;
-
-					.wp-block-latest-posts__featured-image {
-						margin-left: -1em;
-						margin-right: -1em;
-					}
-
-				}
-
-				@include media( map_get( $breakpoint, 'xxl' ) ) {
-					padding-left: 1.5em;
-					padding-right: 1.5em;
-
-					.wp-block-latest-posts__featured-image {
-						margin-left: -1.5em;
-						margin-right: -1.5em;
-					}
-
-				}
-
-			}
-
 		}
 
 }

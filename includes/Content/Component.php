@@ -33,6 +33,8 @@ class Component implements Component_Interface {
 			Container::init();
 			// Blocks.
 			Blocks::init();
+			Block_Patterns::init();
+			Block_Styles::init();
 
 	} // /init
 

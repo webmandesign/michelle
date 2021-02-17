@@ -27,4 +27,9 @@
 		table-layout: fixed;
 	}
 
+	&.is-style-drop-shadow,
+	&.is-style-inner-shadow {
+		padding: $golden +em;
+	}
+
 }

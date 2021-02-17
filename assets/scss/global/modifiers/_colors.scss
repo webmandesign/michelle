@@ -36,7 +36,9 @@ $specificity : ':root [class]';
 // Force link color inheritance.
 
 	.link-color-inherit a,
-	a.link-color-inherit {
+	.has-inherit-link-color a,
+	a.link-color-inherit
+	a.has-inherit-link-color {
 
 		.site & {
 			color: inherit;

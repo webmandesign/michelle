@@ -1,9 +1,9 @@
-<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+<?php // See `includes/Content/Block_Patterns.php` for block pattern registration. ?>
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="PATH_IMAGES/icon-dark.png" alt="" /></figure>
+<figure class="wp-block-image"><img src="PATH_IMAGES/icon.png" alt="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
@@ -23,7 +23,7 @@
 
 <!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="PATH_IMAGES/icon-dark.png" alt="" /></figure>
+<figure class="wp-block-image"><img src="PATH_IMAGES/icon.png" alt="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
@@ -43,7 +43,7 @@
 
 <!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="PATH_IMAGES/icon-dark.png" alt="" /></figure>
+<figure class="wp-block-image"><img src="PATH_IMAGES/icon.png" alt="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->

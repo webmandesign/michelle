@@ -62,11 +62,9 @@
 	}
 
 	.page-meta {
+		order: -1;
 		width: 100%;
-		padding-top: 2rem;
-		margin-top: 2rem;
-		border-top-width: 1px;
-		border-top-style: solid;
+		margin-bottom: $golden_major +rem;
 	}
 
 	&.not-found,

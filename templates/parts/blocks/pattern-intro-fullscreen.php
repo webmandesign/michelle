@@ -1,10 +1,10 @@
-<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+<?php // See `includes/Content/Block_Patterns.php` for block pattern registration. ?>
 
-<!-- wp:cover {"url":"PATH_IMAGES/landscape.jpg","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full"} -->
-<div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax has-custom-content-position is-position-bottom-center" style="background-image:url(PATH_IMAGES/landscape.jpg);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
+<!-- wp:cover {"url":"PATH_IMAGES/3to2.jpg","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full"} -->
+<div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax has-custom-content-position is-position-bottom-center" style="background-image:url(PATH_IMAGES/3to2.jpg);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"h1"} -->
-<h1 class="h1">Lorem ipsum dolor</h1>
+<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"h1","textColor":"palette-5"} -->
+<h1 class="h1 has-palette-5-color has-text-color">Lorem ipsum dolor</h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 

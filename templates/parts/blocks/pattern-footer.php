@@ -1,4 +1,4 @@
-<?php // See `includes/Setup/Editor.php` for block pattern registration. ?>
+<?php // See `includes/Content/Block_Patterns.php` for block pattern registration. ?>
 
 <!-- wp:group {"align":"full","className":"has-no-margin-bottom","backgroundColor":"palette-1","textColor":"palette-2"} -->
 <div class="wp-block-group alignfull has-no-margin-bottom has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer -->
@@ -8,7 +8,7 @@
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="PATH_IMAGES/icon-dark.png" alt="" /></figure>
+<figure class="wp-block-image"><img src="PATH_IMAGES/icon.png" alt="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
