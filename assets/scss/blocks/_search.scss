@@ -10,19 +10,33 @@
 		vertical-align: middle;
 	}
 
+	.wp-block-search__inside-wrapper .wp-block-search__button {
+		padding-left: 0;
+		padding-right: 0;
+		border-left-width: 1em;
+		border-right-width: 1em;
+	}
+
 	&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 		padding: .25rem;
 
 		.wp-block-search__input,
 		.wp-block-search__button {
-			padding: calc( #{ $form_field_padding_vertical } - .25rem ) 1em;
+			padding: calc( #{ $form_field_padding_vertical } - .25rem ) 0;
+		}
+
+		.has-icon {
+			background: transparent;
+			color: inherit;
+			box-shadow: none;
 		}
 
 	}
 
 	.wp-block-search__input,
 	&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
-		border-color: inherit;
+		border-color: transparent;
+		border-bottom-color: currentColor;
 	}
 
 }

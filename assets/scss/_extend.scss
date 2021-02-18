@@ -258,49 +258,4 @@
 
 		}
 
-		// For WooCommerce:
-		.chosen {
-			font-weight: 700;
-		}
-
-	}
-
-	%widget_list_items_menu {
-		font-size: var(--typography_font_size_small);
-		overflow-x: hidden;
-
-		li {
-			position: relative;
-			padding-top: .5em;
-			padding-bottom: .5em;
-
-			&::before {
-				display: none;
-			}
-
-			&::after {
-				content: '';
-				position: absolute;
-				width: 200%;
-				#{$right}: 0;
-				top: 0;
-				border-bottom: 1px solid;
-				border-color: inherit;
-			}
-
-		}
-
-		ul {
-			margin-top: .5em;
-			margin-bottom: -.5em;
-			overflow-x: visible;
-		}
-
-		a {
-			font-weight: 600;
-			text-transform: uppercase;
-			letter-spacing: var(--letter_spacing);
-			color: var(--color_body_headings);
-		}
-
 	}

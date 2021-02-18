@@ -2,7 +2,6 @@
 
 .sticky {
 	position: relative;
-	@extend %shaded_background;
 }
 
 .blog .sticky.has-post-thumbnail {
