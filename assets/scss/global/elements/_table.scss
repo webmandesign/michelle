@@ -4,8 +4,7 @@ table {
 	width: 100%;
 	margin: 0 0 ( $golden +em );
 	color: inherit; // Required for Chrome browser, for example.
-	border-width: 2px;
-	border-style: solid;
+	border: 2px solid;
 	border-collapse: collapse;
 
 	+ figcaption {

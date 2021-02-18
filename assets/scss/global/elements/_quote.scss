@@ -2,7 +2,6 @@
 
 blockquote {
 	clear: both;
-	padding: 1em 0;
 	margin-left: 0;
 	margin-right: 0;
 	font-family: var(--typography_font_alt);
@@ -22,7 +21,7 @@ blockquote {
 
 		> cite {
 			display: block;
-			margin-top: $golden_major +em;
+			margin-top: calc( .618 * var(--typography_size_html) );
 		}
 
 	blockquote {
@@ -30,7 +29,7 @@ blockquote {
 	}
 
 	p {
-		margin-bottom: $golden_major +em;
+		margin-bottom: calc( .618 * var(--typography_size_html) );
 	}
 
 }

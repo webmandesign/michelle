@@ -3,7 +3,14 @@
 .is-style-stripes table,
 table.is-style-stripes,
 .wp-block-table.is-style-stripes {
-	border-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+
+	th,
+	td {
+		border-top-color: inherit;
+	}
+
 }
 
 .wp-block-table {
