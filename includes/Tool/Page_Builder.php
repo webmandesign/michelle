@@ -117,21 +117,21 @@ class Page_Builder implements Component_Interface {
 
 		// Processing
 
-			$options[ 700 . 'page_builders' ] = array(
+			$options[ 960 . 'page_builders' ] = array(
 				'id'             => 'page_builders',
 				'type'           => 'section',
 				'create_section' => esc_html_x( 'Page builders', 'Customizer section title.', 'michelle' ),
 				'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
 			);
 
-			$options[ 700 . 'page_builders' . 100 ] = array(
+			$options[ 960 . 'page_builders' . 100 ] = array(
 				'type'    => 'checkbox',
 				'id'      => 'page_builder_template',
 				'label'   => esc_html__( 'Use "Page builder" template', 'michelle' ),
 				'default' => self::$is_page_builder_plugin_active,
 			);
 
-			$options[ 700 . 'page_builders' . 110 ] = array(
+			$options[ 960 . 'page_builders' . 110 ] = array(
 				'type'        => 'radio',
 				'id'          => 'page_builder_content_layout',
 				'label'       => esc_html__( 'Page builder layout', 'michelle' ),

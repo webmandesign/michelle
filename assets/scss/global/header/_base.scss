@@ -18,11 +18,6 @@
 		max-width: var(--max_width_header_content);
 		margin-left: auto;
 		margin-right: auto;
-
-		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			flex-wrap: nowrap;
-		}
-
 	}
 
 	a {
