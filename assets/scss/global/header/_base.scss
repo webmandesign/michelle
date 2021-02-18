@@ -47,7 +47,7 @@
 		}
 
 		.has-scrolled-up:not(.has-navigation-toggled) & {
-			box-shadow: 0 1em 2em rgba( #000, .15 );
+			box-shadow: var(--drop_shadow);
 			transform: translateY( 0 );
 		}
 

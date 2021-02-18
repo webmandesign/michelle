@@ -55,6 +55,44 @@ class Block_Styles implements Component_Interface {
 
 		// Variables
 
+			$styles = self::get_styles();
+
+
+		// Processing
+
+			foreach ( $styles as $class => $args ) {
+
+				if (
+					empty( $args['blocks'] )
+					|| empty( $args['label'] )
+				) {
+					continue;
+				}
+
+				foreach ( (array) $args['blocks'] as $block ) {
+					register_block_style(
+						$block,
+						array(
+							'name'  => sanitize_html_class( $class ),
+							'label' => $args['label'],
+						)
+					);
+				}
+			}
+
+	} // /register
+
+	/**
+	 * Gets theme block styles setup array.
+	 *
+	 * @since  1.0.0
+	 *
+	 * @return  array
+	 */
+	public static function get_styles(): array {
+
+		// Variables
+
 			$styles = array(
 
 				'drop-shadow' => array(
@@ -110,39 +148,26 @@ class Block_Styles implements Component_Interface {
 
 			);
 
+
+		// Output
+
 			/**
 			 * Filters block styles setup array.
+			 *
+			 * @example
+			 *   array(
+			 *     'css-class' => array(
+			 *       'label'  => (string) 'Block style label',
+			 *       'blocks' => array( 'core/block-identifier' ),
+			 *     ),
+			 *   )
 			 *
 			 * @since  1.0.0
 			 *
 			 * @param  array $styles
 			 */
-			$styles = (array) apply_filters( 'michelle/content/block_styles/register', $styles );
+			return (array) apply_filters( 'michelle/content/block_styles/get_styles', $styles );
 
-
-		// Processing
-
-			// Register patterns.
-			foreach ( $styles as $class => $args ) {
-
-				if (
-					empty( $args['blocks'] )
-					|| empty( $args['label'] )
-				) {
-					continue;
-				}
-
-				foreach ( (array) $args['blocks'] as $block ) {
-					register_block_style(
-						$block,
-						array(
-							'name'  => sanitize_html_class( $class ),
-							'label' => $args['label'],
-						)
-					);
-				}
-			}
-
-	} // /register
+	} // /get_styles
 
 }

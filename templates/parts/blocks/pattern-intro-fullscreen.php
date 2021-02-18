@@ -1,7 +1,32 @@
-<?php // See `includes/Content/Block_Patterns.php` for block pattern registration. ?>
+<?php
+/**
+ * Block pattern setup file.
+ *
+ * @package    Michelle
+ * @copyright  WebMan Design, Oliver Juhas
+ *
+ * @since  1.0.0
+ */
 
-<!-- wp:cover {"url":"PATH_IMAGES/3to2.jpg","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full"} -->
-<div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax has-custom-content-position is-position-bottom-center" style="background-image:url(PATH_IMAGES/3to2.jpg);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
+namespace WebManDesign\Michelle\Content;
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+// Add block pattern setup args.
+Block_Patterns::add_pattern_args( __FILE__, array(
+	'title'      => _x( 'Full-screen page title', 'Block pattern title.', 'michelle' ),
+	'categories' => array( 'header' ),
+) );
+
+// Block pattern content:
+
+$image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
+
+?>
+
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full"} -->
+<div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax has-custom-content-position is-position-bottom-center" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":1,"className":"h1","textColor":"palette-5"} -->
 <h1 class="h1 has-palette-5-color has-text-color">Lorem ipsum dolor</h1>

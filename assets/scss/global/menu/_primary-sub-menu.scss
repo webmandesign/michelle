@@ -14,13 +14,13 @@
 		padding: calc( 6vh - .25rem ) 2em calc( 6vh - .25rem );
 		background: var(--color_navigation_background);
 		color: var(--color_navigation_text);
+		box-shadow: var(--drop_shadow);
 		z-index: 1;
 
 		.sub-menu {
 			#{$left}: 100%;
 			top: calc( -6vh + .25rem );
 			padding-top: calc( 6vh - .25rem );
-			box-shadow: 0 1em 2em rgba( #000, .15 );
 		}
 
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {

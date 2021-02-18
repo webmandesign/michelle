@@ -143,7 +143,7 @@ form[role="search"],
 				height: calc( 100vh - 12vh );
 				margin: calc( -50vh + 6vh ) calc( -50vw + 6vh + ( var(--scrollbar_width) / 2 ) );
 				background: var(--color_search_background);
-				box-shadow: 0 0 6vh rgba( #000, .25 );
+				box-shadow: var(--drop_shadow);
 				opacity: .98;
 				cursor: zoom-out;
 				backdrop-filter: blur( 10px );

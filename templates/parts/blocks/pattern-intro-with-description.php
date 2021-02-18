@@ -1,4 +1,27 @@
-<?php // See `includes/Content/Block_Patterns.php` for block pattern registration. ?>
+<?php
+/**
+ * Block pattern setup file.
+ *
+ * @package    Michelle
+ * @copyright  WebMan Design, Oliver Juhas
+ *
+ * @since  1.0.0
+ */
+
+namespace WebManDesign\Michelle\Content;
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+// Add block pattern setup args.
+Block_Patterns::add_pattern_args( __FILE__, array(
+	'title'      => _x( 'Page title with description', 'Block pattern title.', 'michelle' ),
+	'categories' => array( 'header' ),
+) );
+
+// Block pattern content:
+
+?>
 
 <!-- wp:columns {"verticalAlignment":null,"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->

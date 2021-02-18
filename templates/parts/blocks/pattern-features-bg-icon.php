@@ -1,9 +1,34 @@
-<?php // See `includes/Content/Block_Patterns.php` for block pattern registration. ?>
+<?php
+/**
+ * Block pattern setup file.
+ *
+ * @package    Michelle
+ * @copyright  WebMan Design, Oliver Juhas
+ *
+ * @since  1.0.0
+ */
+
+namespace WebManDesign\Michelle\Content;
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+// Add block pattern setup args.
+Block_Patterns::add_pattern_args( __FILE__, array(
+	'title'      => _x( 'Center aligned features with background, icon, text and button', 'Block pattern title.', 'michelle' ),
+	'categories' => array( 'columns' ),
+) );
+
+// Block pattern content:
+
+$image = get_theme_file_uri( 'assets/images/starter/icon.png' );
+
+?>
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="PATH_IMAGES/icon.png" alt="" /></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
@@ -23,7 +48,7 @@
 
 <!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="PATH_IMAGES/icon.png" alt="" /></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
@@ -43,7 +68,7 @@
 
 <!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="PATH_IMAGES/icon.png" alt="" /></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->

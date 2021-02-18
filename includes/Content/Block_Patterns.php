@@ -2,6 +2,14 @@
 /**
  * Block patterns registration component.
  *
+ * Default pattern categories in WordPress:
+ * - buttons
+ * - columns
+ * - gallery
+ * - header
+ * - text
+ * @link  https://developer.wordpress.org/reference/functions/register_block_pattern_category/
+ *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -17,6 +25,13 @@ use WebManDesign\Michelle\Customize;
 defined( 'ABSPATH' ) || exit;
 
 class Block_Patterns implements Component_Interface {
+
+	/**
+	 * Lists pattern setup arrays.
+	 *
+	 * @var array
+	 */
+	private static $pattern_args = array();
 
 	/**
 	 * Initialization.
@@ -45,17 +60,6 @@ class Block_Patterns implements Component_Interface {
 	/**
 	 * Register block patterns.
 	 *
-	 * When registering a new block pattern category, a prefix is needed.
-	 * @link  https://make.wordpress.org/themes/handbook/review/required/#code
-	 *
-	 * Default pattern categories in WordPress:
-	 * - buttons
-	 * - columns
-	 * - gallery
-	 * - header
-	 * - text
-	 * @link  https://developer.wordpress.org/reference/functions/register_block_pattern_category/
-	 *
 	 * @since  1.0.0
 	 *
 	 * @return  void
@@ -64,86 +68,37 @@ class Block_Patterns implements Component_Interface {
 
 		// Variables
 
-			$content_width = Customize\Mod::get( 'layout_width_content' );
+			global $content_width;
 
-			$path_images = ( is_child_theme() ) ? ( get_stylesheet_directory_uri() ) : ( get_template_directory_uri() );
-			$path_images = trailingslashit( $path_images ) . 'assets/images/starter';
-
-			$patterns = array(
-
-				'features-bg-image' => array(
-					'title'         => _x( 'Features with background, image, text and button', 'Block pattern title.', 'michelle' ),
-					'categories'    => array( 'columns' ),
-				),
-
-				'features-bg-icon' => array(
-					'title'      => _x( 'Center aligned features with background, icon, text and button', 'Block pattern title.', 'michelle' ),
-					'categories' => array( 'columns' ),
-				),
-
-				'footer' => array(
-					'title'      => _x( 'Site footer', 'Block pattern title.', 'michelle' ),
-					'categories' => array( 'columns' ),
-				),
-
-				'image-parallax' => array(
-					'title'      => _x( 'Parallax image background', 'Block pattern title.', 'michelle' ),
-					'categories' => array( 'gallery' ),
-				),
-
-				'intro-with-description' => array(
-					'title'      => _x( 'Page title with description text', 'Block pattern title.', 'michelle' ),
-					'categories' => array( 'header' ),
-				),
-
-				'intro-fullscreen' => array(
-					'title'      => _x( 'Fullscreen page title', 'Block pattern title.', 'michelle' ),
-					'categories' => array( 'header' ),
-				),
-
-				'heading-hidden-accessibly' => array(
-					'title'         => _x( 'Accessibly hidden heading', 'Block pattern title.', 'michelle' ),
-					'categories'    => array( 'header' ),
-					'viewportWidth' => 400,
-				),
-
-			);
-
-			/**
-			 * Filters block patterns setup array.
-			 *
-			 * @link  https://developer.wordpress.org/block-editor/developers/block-api/block-patterns/
-			 *
-			 * @since  1.0.0
-			 *
-			 * @param  array $patterns
-			 */
-			$patterns = (array) apply_filters( 'michelle/content/block_patterns/register', $patterns );
+			$patterns = self::get_pattern_ids();
 
 
 		// Processing
 
-			// Register patterns.
-			foreach ( $patterns as $id => $args ) {
+			foreach ( $patterns as $id ) {
 
-				// Get pattern content from file if not defined.
-				if ( ! isset( $args['content'] ) ) {
-					ob_start();
-					get_template_part( 'templates/parts/blocks/pattern', $id );
-					$args['content'] = str_replace(
-						'PATH_IMAGES',
-						$path_images,
-						trim( ob_get_clean() )
-					);
+				ob_start();
+				get_template_part( 'templates/parts/blocks/pattern', $id );
+				$content = ob_get_clean();
+
+				// Why bother if we have no patter setup args?
+				if ( empty( self::$pattern_args[ $id ] ) ) {
+					continue;
 				}
+
+				$args = wp_parse_args(
+					self::$pattern_args[ $id ],
+					array(
+						'title'         => '',
+						'content'       => trim( $content ),
+						'categories'    => array( 'text' ),
+						'viewportWidth' => absint( $content_width * 1.1 ),
+					)
+				);
 
 				// Why bother if we have no content?
 				if ( empty( $args['content'] ) ) {
 					continue;
-				}
-
-				if ( empty( $args['viewportWidth'] ) ) {
-					$args['viewportWidth'] = absint( $content_width * 1.1 );
 				}
 
 				register_block_pattern(
@@ -153,5 +108,66 @@ class Block_Patterns implements Component_Interface {
 			}
 
 	} // /register
+
+	/**
+	 * Gets array of block pattern IDs/slugs to load.
+	 *
+	 * The theme will look for a `templates/parts/blocks/pattern-{{$id}}.php` file
+	 * based on the array values (the `$id` in the filename).
+	 *
+	 * @since  1.0.0
+	 *
+	 * @return  array
+	 */
+	public static function get_pattern_ids(): array {
+
+		// Variables
+
+			$pattern_ids = array(
+				'features-bg-icon',
+				'features-bg-image',
+				'footer',
+				'heading-hidden-accessibly',
+				'image-parallax',
+				'intro-fullscreen',
+				'intro-with-description',
+			);
+
+
+		// Output
+
+			/**
+			 * Filters array of block pattern IDs.
+			 *
+			 * @since  1.0.0
+			 *
+			 * @param  array $pattern_ids
+			 */
+			return (array) apply_filters( 'michelle/content/block_patterns/get_pattern_ids', $pattern_ids );
+
+	} // /get_pattern_ids
+
+	/**
+	 * Adds a block pattern setup array to list.
+	 *
+	 * @since  1.0.0
+	 *
+	 * @param  string $file  Pattern setup file name/path.
+	 * @param  array  $args  Pattern setup arguments.
+	 *
+	 * @return  void
+	 */
+	public static function add_pattern_args( string $file, array $args ) {
+
+		// Variables
+
+			$id = str_replace( 'pattern-', '', basename( $file, '.php' ) );
+
+
+		// Processing
+
+			self::$pattern_args[ $id ] = (array) $args;
+
+	} // /add_pattern_args
 
 }

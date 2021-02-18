@@ -1,6 +1,6 @@
 === Michelle ===
 Contributors: webmandesign
-Requires at least: 5.2.0
+Requires at least: 5.4
 Tested up to: 5.6
 Requires PHP: 7.0
 License: GPL-3.0-or-later
@@ -8,7 +8,6 @@ License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 
 == Description ==
-
 Michelle is accessibility ready WordPress theme for creating inclusive, accessible websites.
 
 
@@ -28,14 +27,13 @@ Please visit support forum at https://support.webmandesign.eu/
 
 
 == Changelog ==
-
 Please see `changelog.md` file.
 
 
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release.
+2021MMDD Initial release. @TODO
 
 
 == Resources ==
