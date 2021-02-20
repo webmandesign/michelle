@@ -11,9 +11,20 @@
 		// margin of children elements.
 		display: flex;
 		flex-direction: column;
+		padding: var(--posts_list_gap);
+		background: var(--color_body_background);
+		border-width: 1px;
+		border-style: solid;
+		border-top: var(--border_decorative_width) solid var(--color_border_decorative);
+		transition: box-shadow .3s;
 
-		&:not(:first-child) {
-			margin-top: 2em;
+		@include media( map_get( $breakpoint, 'xxl' ) ) {
+			padding: 6vh;
+		}
+
+		&:hover,
+		&:focus-within {
+			box-shadow: var(--drop_shadow);
 		}
 
 		> * {
@@ -30,10 +41,23 @@
 
 		}
 
+		&:not(:first-child) {
+			margin-top: 1em;
+		}
+
 	}
 
-	&__featured-image {
+	li .wp-block-latest-posts__featured-image {
 		float: none; // If `alignleft/right` class is applied via block settings.
+		margin-top: calc( -1 * var(--posts_list_gap) );
+		margin-left: calc( -1 * var(--posts_list_gap) );
+		margin-right: calc( -1 * var(--posts_list_gap) );
+
+		@include media( map_get( $breakpoint, 'xxl' ) ) {
+			margin-top: -6vh;
+			margin-left: -6vh;
+			margin-right: -6vh;
+		}
 
 		img {
 			width: 100%;
@@ -45,7 +69,9 @@
 		display: block;
 		font-family: var(--typography_font_headings);
 		font-size: var(--typography_heading_size_posts);
+		font-weight: 300;
 		line-height: 1.25;
+		text-transform: uppercase;
 		text-decoration: none;
 		color: var(--color_body_headings);
 	}
@@ -78,12 +104,20 @@
 
 		&:not(.alignwide):not(.alignfull) {
 			width: calc( 100% + var(--posts_list_gap) );
-			margin: calc( var(--posts_list_gap) * -1 ) calc( var(--posts_list_gap) / 2 * -1 );
+			margin: calc( var(--posts_list_gap) / 2 * -1 );
 		}
 
 		li {
 			width: calc( 100% - var(--posts_list_gap) );
-			margin: var(--posts_list_gap) calc( var(--posts_list_gap) / 2 );
+			margin: calc( var(--posts_list_gap) / 2 );
+		}
+
+		a:not(.link-more) { // Post title.
+
+			+ div {
+				margin-top: 1rem;
+			}
+
 		}
 
 	}

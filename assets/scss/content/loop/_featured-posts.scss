@@ -58,10 +58,10 @@
 		color: #fff;
 		z-index: 1; // Trick to keep pseudo element below child elements.
 		transition:
-			transform .3s,
-			margin .3s,
-			box-shadow .3s,
-			opacity .3s;
+			transform var(--featured_posts_transition_speed),
+			margin var(--featured_posts_transition_speed),
+			box-shadow var(--featured_posts_transition_speed),
+			opacity var(--featured_posts_transition_speed);
 
 		@include media( map_get( $breakpoint, 'xxl' ) ) {
 			padding: calc( 2 * var(--posts_list_gap) );
@@ -78,7 +78,7 @@
 			width: 100%;
 			height: calc( 100% - ( var(--white_space) / 2 ) );
 			background: linear-gradient( to top, #000, rgba( #000, 0 ) );
-			transition: opacity .3s;
+			transition: opacity var(--featured_posts_transition_speed);
 			opacity: .8;
 			pointer-events: none; // So we can click the image below.
 			z-index: -1; // Trick to keep pseudo element below child elements.
@@ -112,7 +112,11 @@
 		&:focus-within {
 
 			.entry {
-				opacity: .5;
+
+				&,
+				&:first-child {
+					opacity: var(--featured_posts_opacity_shaded);
+				}
 
 				&:hover,
 				&:focus-within {
@@ -159,7 +163,7 @@
 	@include media( map_get( $breakpoint, 'xl' ) ) {
 		width: 50%;
 		min-width: 50%;
-		opacity: .5;
+		opacity: var(--featured_posts_opacity_shaded);
 
 		&:nth-child(1) {
 			margin-top: calc( -1 * var(--posts_list_gap) / 2 );
