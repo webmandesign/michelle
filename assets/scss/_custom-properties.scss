@@ -48,7 +48,7 @@
 			--typography_heading_size_multiplier: 1;
 		}
 
-		--typography_heading_size_posts: var(--typography_heading_size_2);
+		--typography_heading_size_posts: var(--typography_heading_size_3);
 
 		--typography_font_size_extra_small: .618em;
 		--typography_font_size_small: .75em;
@@ -64,9 +64,9 @@
 
 		--scrollbar_width: var(--zero);
 
-		--white_space: 50px;
+		--white_space: 90px;
 		@include media( map_get( $breakpoint, 'l' ) ) {
-			--white_space: 100px;
+			--white_space: 120px;
 		}
 		@include media( map_get( $breakpoint, 'xl' ) ) {
 			--white_space: 150px;

@@ -30,8 +30,8 @@ class Component implements Component_Interface {
 
 			// Pagination.
 			Pagination::init();
-			// Sticky posts.
-			Sticky::init();
+			// Featured posts.
+			Featured_Posts::init();
 
 			// Actions
 

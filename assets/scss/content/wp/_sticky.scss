@@ -1,55 +1,11 @@
 /* FILE: content/wp/_sticky.scss */
 
 .sticky {
+	@extend %shaded_background;
 	position: relative;
-}
 
-.blog .sticky.has-post-thumbnail {
-
-	@include media( map_get( $breakpoint, 'xl' ) ) {
-		order: -1;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto auto;
-		grid-column-gap: var(--posts_list_gap);
-		grid-row-gap: 1rem;
-		width: calc( 100% - var(--posts_list_gap) );
-		max-width: calc( 100% - var(--posts_list_gap) );
-
-		> * {
-			grid-column: 2;
-			margin: 0;
-		}
-
-		> .entry-media {
-			grid-column: 1;
-			grid-row: span 3;
-			display: flex;
-			position: relative;
-			margin: calc( -1 * var(--posts_list_gap) );
-			margin-#{$right}: 0;
-
-			img {
-				position: absolute;
-				#{$left}: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-
-		}
-
-	}
-
-	@include media( map_get( $breakpoint, 'xxl' ) ) {
-		grid-column-gap: 6vh;
-
-		> .entry-media {
-			margin: -6vh;
-			margin-#{$right}: 0;
-		}
-
+	.posts & {
+		border-top-color: var(--color_accent);
 	}
 
 }

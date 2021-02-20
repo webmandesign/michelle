@@ -144,10 +144,10 @@ class Media implements Component_Interface {
 
 				'thumbnail' => array(
 					'name'        => esc_html_x( 'Thumbnail', 'WordPress predefined image size name.', 'michelle' ),
-					'description' => esc_html__( 'Used in posts list.', 'michelle' ),
+					'description' => esc_html__( 'In posts list.', 'michelle' ),
 					'width'       => 480,
-					'height'      => 0,
-					'crop'        => false,
+					'height'      => 320,
+					'crop'        => true,
 				),
 
 				'medium' => array(
@@ -160,7 +160,7 @@ class Media implements Component_Interface {
 
 				'large' => array(
 					'name'        => esc_html_x( 'Large', 'WordPress predefined image size name.', 'michelle' ),
-					'description' => esc_html__( 'Not used in the theme.', 'michelle' ),
+					'description' => esc_html__( 'In featured posts.', 'michelle' ),
 					'width'       => absint( $content_width ),
 					'height'      => 0,
 					'crop'        => false,

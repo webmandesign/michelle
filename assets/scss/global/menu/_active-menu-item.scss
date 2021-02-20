@@ -4,9 +4,9 @@
 
 	.current-menu-item > a,
 	.current-menu-ancestor > a {
-		font-weight: 900;
-		font-size: 1.333em;
-		line-height: $golden / 1.333;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: var(--letter_spacing);
 	}
 
 }

@@ -4,5 +4,5 @@
 	display: flex;
 	flex-wrap: wrap;
 	width: calc( 100% + var(--posts_list_gap) );
-	margin: calc( var(--posts_list_gap) * -1 ) calc( var(--posts_list_gap) / 2 * -1 );
+	margin: calc( var(--posts_list_gap) / 2 * -1 );
 }

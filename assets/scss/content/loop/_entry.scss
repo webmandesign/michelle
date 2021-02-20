@@ -10,17 +10,11 @@
 	border-width: 1px;
 	border-style: solid;
 	border-top: var(--border_decorative_width) solid var(--color_border_decorative);
-	box-shadow: var(--drop_shadow);
 	transition: box-shadow .3s;
 
 	@include media( map_get( $breakpoint, 'l' ) ) {
 		width: calc( 50% - var(--posts_list_gap) );
 		max-width: calc( 50% - var(--posts_list_gap) );
-	}
-
-	@include media( map_get( $breakpoint, 'xl' ) ) {
-		width: calc( 33.33% - var(--posts_list_gap) );
-		max-width: calc( 33.33% - var(--posts_list_gap) );
 	}
 
 	@include media( map_get( $breakpoint, 'xxl' ) ) {
@@ -29,7 +23,7 @@
 
 	&:hover,
 	&:focus-within {
-		box-shadow: none;
+		box-shadow: var(--drop_shadow);
 	}
 
 	> * {

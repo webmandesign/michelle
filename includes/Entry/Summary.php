@@ -144,7 +144,7 @@ class Summary implements Component_Interface {
 
 		// Output
 
-			return 40;
+			return 32;
 
 	} // /excerpt_length
 

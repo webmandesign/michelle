@@ -38,6 +38,11 @@
 
 		}
 
+		> a {
+			text-transform: uppercase;
+			letter-spacing: var(--letter_spacing);
+		}
+
 	}
 
 }
