@@ -115,10 +115,13 @@ form[role="search"],
 			[type="submit"],
 			.search-submit {
 				position: relative;
-				width: 4rem;
-				padding-top: 6vh;
-				padding-bottom: 6vh;
-				line-height: 1.25;
+
+				@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+					width: 4rem;
+					padding-top: 6vh;
+					padding-bottom: 6vh;
+					line-height: 1.25;
+				}
 
 				.svg-icon {
 					height: 2em;
@@ -137,16 +140,24 @@ form[role="search"],
 			background: none;
 			color: var(--color_search_text);
 			transform: translateX(-50%) translateY(-50%);
+			z-index: 999; // Above mobile menu toggle button.
 
 			&::before {
-				width: calc( 100vw - 12vh - var(--scrollbar_width) );
-				height: calc( 100vh - 12vh );
-				margin: calc( -50vh + 6vh ) calc( -50vw + 6vh + ( var(--scrollbar_width) / 2 ) );
+				width: calc( 100vw - var(--scrollbar_width) );
+				height: 100vh;
+				margin: -50vh calc( -50vw + ( var(--scrollbar_width) / 2 ) );
 				background: var(--color_search_background);
 				box-shadow: var(--drop_shadow);
 				opacity: .98;
 				cursor: zoom-out;
 				backdrop-filter: blur( 10px );
+
+				@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+					width: calc( 100vw - 12vh - var(--scrollbar_width) );
+					height: calc( 100vh - 12vh );
+					margin: calc( -50vh + 6vh ) calc( -50vw + 6vh + ( var(--scrollbar_width) / 2 ) );
+				}
+
 			}
 
 			&::after {
@@ -169,21 +180,19 @@ form[role="search"],
 		&:focus-within .search-field,
 		[type="search"]:focus,
 		.search-field:focus {
-			$width: $golden_major * 100 +vw;
-
-			width: $width;
-			max-width: $width;
+			width: 88vw;
+			max-width: 88vw;
 			padding-#{$left}: 1em;
 			padding-#{$right}: 3em;
 			border-bottom-color: currentColor;
 			z-index: 0;
 			cursor: text;
-		}
 
-		.has-navigation-mobile & {
-			@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
-				display: none;
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				width: $golden_major * 100 +vw;
+				max-width: $golden_major * 100 +vw;
 			}
+
 		}
 
 	}

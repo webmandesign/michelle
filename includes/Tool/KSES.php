@@ -57,6 +57,7 @@ class KSES implements Component_Interface {
 						'a' => array(
 							'href'   => array(),
 							'class'  => array(),
+							'rel'    => array(),
 							'title'  => array(),
 							'target' => array(),
 						),

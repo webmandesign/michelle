@@ -90,6 +90,11 @@ class Options implements Component_Interface {
 
 			// Option pointers only:
 
+				// Post thumbnail.
+				$wp_customize->selective_refresh->add_partial( 'thumbnail_aspect_ratio', array(
+					'selector' => '#posts',
+				) );
+
 				// Footer content.
 				$wp_customize->selective_refresh->add_partial( 'block_area_site_footer', array(
 					'selector' => '.site-footer-section:first-child .site-footer-content',
@@ -360,8 +365,9 @@ class Options implements Component_Interface {
 					 * Navigation colors.
 					 */
 					120 . 'colors' . 100 => array(
-						'type'    => 'html',
-						'content' => '<h3>' . esc_html__( 'Site navigation', 'michelle' ) . '</h3>',
+						'type'        => 'html',
+						'content'     => '<h3>' . esc_html__( 'Site navigation', 'michelle' ) . '</h3>',
+						'description' => esc_html__( 'Primary menu location sub-menu colors.', 'michelle' ),
 					),
 
 						120 . 'colors' . 110 => array(
@@ -397,8 +403,9 @@ class Options implements Component_Interface {
 					 * Search form colors.
 					 */
 					120 . 'colors' . 200 => array(
-						'type'    => 'html',
-						'content' => '<h3>' . esc_html__( 'Search form', 'michelle' ) . '</h3>',
+						'type'        => 'html',
+						'content'     => '<h3>' . esc_html__( 'Search form', 'michelle' ) . '</h3>',
+						'description' => esc_html__( 'Pop-up search form colors.', 'michelle' ),
 					),
 
 						120 . 'colors' . 210 => array(
@@ -563,14 +570,14 @@ class Options implements Component_Interface {
 				/**
 				 * Typography.
 				 */
-				900 . 'typography' => array(
+				300 . 'typography' => array(
 					'id'             => 'typography',
 					'type'           => 'section',
 					'create_section' => esc_html_x( 'Typography', 'Customizer section title.', 'michelle' ),
 					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
 				),
 
-					900 . 'typography' . 100 => array(
+					300 . 'typography' . 100 => array(
 						'type'              => 'range',
 						'id'                => 'typography_size_html',
 						'label'             => esc_html__( 'Basic font size in px', 'michelle' ),
@@ -593,7 +600,7 @@ class Options implements Component_Interface {
 							),
 						),
 					),
-					900 . 'typography' . 110 => array(
+					300 . 'typography' . 110 => array(
 						'type'              => 'range',
 						'id'                => 'typography_size_header',
 						'label'             => esc_html__( 'Header font size in px', 'michelle' ),
@@ -615,7 +622,7 @@ class Options implements Component_Interface {
 							),
 						),
 					),
-					900 . 'typography' . 120 => array(
+					300 . 'typography' . 120 => array(
 						'type'              => 'range',
 						'id'                => 'typography_size_footer',
 						'label'             => esc_html__( 'Footer font size in px', 'michelle' ),
@@ -638,7 +645,7 @@ class Options implements Component_Interface {
 						),
 					),
 
-					900 . 'typography' . 200 => array(
+					300 . 'typography' . 200 => array(
 						'type'    => 'html',
 						'content' =>
 							'<h3>'
@@ -658,7 +665,7 @@ class Options implements Component_Interface {
 							. '</p>',
 					),
 
-						900 . 'typography' . 210 => array(
+						300 . 'typography' . 210 => array(
 							'type'              => 'text',
 							'id'                => 'typography_font_global',
 							'label'             => esc_html__( 'Global font', 'michelle' ),
@@ -671,7 +678,7 @@ class Options implements Component_Interface {
 								'placeholder' => 'sans-serif',
 							),
 						),
-						900 . 'typography' . 220 => array(
+						300 . 'typography' . 220 => array(
 							'type'              => 'text',
 							'id'                => 'typography_font_headings',
 							'label'             => esc_html__( 'Headings font', 'michelle' ),
@@ -684,7 +691,7 @@ class Options implements Component_Interface {
 								'placeholder' => 'sans-serif',
 							),
 						),
-						900 . 'typography' . 230 => array(
+						300 . 'typography' . 230 => array(
 							'type'              => 'text',
 							'id'                => 'typography_font_site_title',
 							'label'             => esc_html__( 'Site title font', 'michelle' ),
@@ -697,7 +704,7 @@ class Options implements Component_Interface {
 								'placeholder' => 'serif',
 							),
 						),
-						900 . 'typography' . 240 => array(
+						300 . 'typography' . 240 => array(
 							'type'              => 'text',
 							'id'                => 'typography_font_alt',
 							'label'             => esc_html__( 'Alternative font', 'michelle' ),
@@ -711,14 +718,14 @@ class Options implements Component_Interface {
 							),
 						),
 
-						900 . 'typography' . 250 => array(
+						300 . 'typography' . 250 => array(
 							'type'        => 'checkbox',
 							'id'          => 'typography_google_fonts',
 							'label'       => esc_html__( 'Enable theme Google Fonts loading', 'michelle' ),
 							'description' => esc_html__( 'In case you are loading fonts via plugin, disable this option.', 'michelle' ),
 							'default'     => true,
 						),
-						900 . 'typography' . 260 => array(
+						300 . 'typography' . 260 => array(
 							'type'        => 'multicheckbox',
 							'id'          => 'typography_font_language',
 							'label'       => esc_html__( 'Languages', 'michelle' ),
@@ -738,6 +745,34 @@ class Options implements Component_Interface {
 							),
 							'active_callback' => __NAMESPACE__ . '\Options_Conditional::is_typography_google_fonts',
 						),
+
+				/**
+				 * Posts.
+				 */
+				400 . 'posts' => array(
+					'id'             => 'posts',
+					'type'           => 'section',
+					'create_section' => esc_html_x( 'Posts', 'Customizer section title.', 'michelle' ),
+					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
+				),
+
+					400 . 'posts' . 100 => array(
+						'type'        => 'select',
+						'id'          => 'thumbnail_aspect_ratio',
+						'label'       => esc_html__( 'Post thumbnail aspect ratio', 'michelle' ),
+						'description' => esc_html__( 'Note that if you already have images uploaded to your website, you need to regenerate their sizes to apply this change.', 'michelle' ) . ' <a href="' . esc_url( ( class_exists( 'RegenerateThumbnails' ) ) ? ( admin_url( 'tools.php?page=regenerate-thumbnails' ) ) : ( 'https://wordpress.org/plugins/regenerate-thumbnails/' ) ) . '">' . esc_html__( 'You can use a plugin for that &rarr;', 'michelle' ) . '</a><br>' . esc_html__( '(This option can not be previewed here, only on your live website.)', 'michelle' ),
+						'default'     => '3:2',
+						'choices'     => array(
+							''     => esc_html__( 'Keep original image aspect ratio', 'michelle' ),
+							'1:1'  => '1:1',
+							'4:3'  => '4:3',
+							'3:2'  => '3:2',
+							'2:1'  => '2:1',
+							'16:9' => '16:9',
+							'21:9' => '21:9',
+						),
+						'preview_js' => false, // This is to prevent customizer preview reload.
+					),
 
 				/**
 				 * Others.
@@ -766,23 +801,15 @@ class Options implements Component_Interface {
 						'default'     => true,
 					),
 
-					950 . 'others' . 200 => array(
-						'type'    => 'html',
-						'content' =>
-							'<h3>'
-							. esc_html__( 'Content', 'michelle' )
-							. '</h3>',
+					950 . 'others' . 120 => array(
+						'type'              => 'select',
+						'id'                => 'block_area_site_footer',
+						'label'             => esc_html__( 'Footer content', 'michelle' ),
+						'description'       => esc_html__( 'Edit or create your footer content in the Reusable Blocks manager.', 'michelle' ) . ' <a href="' . esc_url( admin_url( 'edit.php?post_type=wp_block' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Open Reusable Blocks manager in a new window now &rarr;', 'michelle' ) . '</a>',
+						'default'           => 0,
+						'choices'           => $blocks,
+						'sanitize_callback' => 'absint',
 					),
-
-						950 . 'others' . 210 => array(
-							'type'              => 'select',
-							'id'                => 'block_area_site_footer',
-							'label'             => esc_html__( 'Footer content', 'michelle' ),
-							'description'       => esc_html__( 'Edit or create your footer content in the Reusable Blocks manager.', 'michelle' ) . ' <a href="' . esc_url_raw( admin_url( 'edit.php?post_type=wp_block' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Open Reusable Blocks manager in a new window now &rarr;', 'michelle' ) . '</a>',
-							'default'           => 0,
-							'choices'           => $blocks,
-							'sanitize_callback' => 'absint',
-						),
 
 			);
 

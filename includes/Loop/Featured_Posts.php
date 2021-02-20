@@ -170,7 +170,14 @@ class Featured_Posts implements Component_Interface {
 
 		// Output
 
-			return 'large';
+			/**
+			 * Filters featured posts image size.
+			 *
+			 * @since  1.0.0
+			 *
+			 * @param  string $image_size
+			 */
+			return (string) apply_filters( 'michelle/loop/featured_posts/get_image_size', 'large' );
 
 	} // /get_image_size
 
@@ -228,7 +235,7 @@ class Featured_Posts implements Component_Interface {
 
 		// Processing
 
-			$options[ 950 . 'others' . 300 ] = array(
+			$options[ 400 . 'posts' . 200 ] = array(
 				'type'    => 'html',
 				'content' =>
 					'<h3>'
@@ -236,7 +243,7 @@ class Featured_Posts implements Component_Interface {
 					. '</h3>',
 			);
 
-			$options[ 950 . 'others' . 310 ] = array(
+			$options[ 400 . 'posts' . 210 ] = array(
 				'type'              => 'text',
 				'id'                => 'featured_posts_tag',
 				'label'             => esc_html__( 'Featured posts tag slug', 'michelle' ),
@@ -249,7 +256,7 @@ class Featured_Posts implements Component_Interface {
 				),
 			);
 
-			$options[ 950 . 'others' . 320 ] = array(
+			$options[ 400 . 'posts' . 220 ] = array(
 				'type'        => 'checkbox',
 				'id'          => 'featured_posts_remove_from_blog',
 				'label'       => esc_html__( 'Remove from blog posts', 'michelle' ),
@@ -257,11 +264,12 @@ class Featured_Posts implements Component_Interface {
 				'default'     => false,
 			);
 
-			$options[ 950 . 'others' . 330 ] = array(
-				'type'    => 'image',
-				'id'      => 'featured_posts_image',
-				'label'   => esc_html__( 'Fallback image', 'icelander' ),
-				'default' => '',
+			$options[ 400 . 'posts' . 230 ] = array(
+				'type'        => 'image',
+				'id'          => 'featured_posts_image',
+				'label'       => esc_html__( 'Fallback image', 'icelander' ),
+				'description' => esc_html__( 'This image will be displayed when post has no featured image set.', 'michelle' ),
+				'default'     => '',
 			);
 
 
@@ -308,7 +316,7 @@ class Featured_Posts implements Component_Interface {
 			if (
 				! $query->is_home()
 				|| ! $query->is_main_query()
-				|| empty( Mod::get( 'featured_posts_tag' ) )
+				|| empty( Mod::get( 'featured_posts_remove_from_blog' ) )
 			) {
 				return;
 			}

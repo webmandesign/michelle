@@ -4,8 +4,11 @@
 	width: calc( 100vw - var(--scrollbar_width) );
 	padding: 0 6vw;
 	margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
-	margin-top: calc( -1 * var(--content_padding) / 2 );
-	margin-bottom: calc( 6vh + var(--content_padding) / 2 );
+	margin-bottom: var(--content_padding);
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		margin-top: -6vh;
+	}
 
 	&-content {
 		max-width: var(--layout_width_content);
@@ -70,8 +73,10 @@
 
 	&.not-found,
 	.search-results & {
-		margin-top: -6vh;
-		margin-bottom: 6vh;
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			margin-top: -6vh;
+			margin-bottom: 6vh;
+		}
 	}
 
 }

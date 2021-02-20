@@ -50,9 +50,7 @@ $customize_options_editor_palette: (
 
 	'color_palette_1': #f5df4d,
 	'color_palette_2': #030507,
-	'color_palette_3': #434547,
-	'color_palette_4': #939597,
-	'color_palette_5': #ffffff,
+	'color_palette_3': #ffffff,
 );
 
 $customize_options: map-merge( $customize_options, $customize_options_editor_palette );

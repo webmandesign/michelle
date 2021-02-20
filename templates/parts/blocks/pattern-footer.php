@@ -59,11 +59,11 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- /wp:columns --></div></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","backgroundColor":"accent","textColor":"palette-5"} -->
-<div class="wp-block-group alignfull has-palette-5-color has-accent-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<!-- wp:group {"align":"full","backgroundColor":"accent","textColor":"palette-3"} -->
+<div class="wp-block-group alignfull has-palette-3-color has-accent-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"33.33%","className":"has-no-margin-bottom"} -->
-<div class="wp-block-column is-vertically-aligned-center has-no-margin-bottom" style="flex-basis:33.33%"><!-- wp:heading {"textColor":"palette-5","fontSize":"small"} -->
-<h2 class="has-palette-5-color has-text-color has-small-font-size"><strong>CONNECT WITH US</strong></h2>
+<div class="wp-block-column is-vertically-aligned-center has-no-margin-bottom" style="flex-basis:33.33%"><!-- wp:heading {"textColor":"palette-3","fontSize":"small"} -->
+<h2 class="has-palette-3-color has-text-color has-small-font-size"><strong>CONNECT WITH US</strong></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 

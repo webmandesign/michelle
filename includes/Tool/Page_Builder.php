@@ -117,25 +117,26 @@ class Page_Builder implements Component_Interface {
 
 		// Processing
 
-			$options[ 960 . 'page_builders' ] = array(
+			$options[ 940 . 'page_builders' ] = array(
 				'id'             => 'page_builders',
 				'type'           => 'section',
 				'create_section' => esc_html_x( 'Page builders', 'Customizer section title.', 'michelle' ),
 				'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
 			);
 
-			$options[ 960 . 'page_builders' . 100 ] = array(
-				'type'    => 'checkbox',
-				'id'      => 'page_builder_template',
-				'label'   => esc_html__( 'Use "Page builder" template', 'michelle' ),
-				'default' => self::$is_page_builder_plugin_active,
+			$options[ 940 . 'page_builders' . 100 ] = array(
+				'type'        => 'checkbox',
+				'id'          => 'page_builder_template',
+				'label'       => esc_html__( 'Enable "Page builder" page/post template', 'michelle' ),
+				'description' => esc_html__( 'Use this page/post template when building a content with your page builder plugin.', 'michelle' ) . ' ' . esc_html__( 'You can tweak the desired layout of this template below.', 'michelle' ) . '<br>(<a href="https://support.webmandesign.eu/page-template/" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'How to assign a page/post template &rarr;', 'michelle' ) . '</a>)',
+				'default'     => self::$is_page_builder_plugin_active,
 			);
 
-			$options[ 960 . 'page_builders' . 110 ] = array(
+			$options[ 940 . 'page_builders' . 110 ] = array(
 				'type'        => 'radio',
 				'id'          => 'page_builder_content_layout',
 				'label'       => esc_html__( 'Page builder layout', 'michelle' ),
-				'description' => esc_html__( 'Content area layout when using "Page builder" template.', 'michelle' ) . ' ' . esc_html__( 'As every page builder plugin works differently, set this according to your needs.', 'michelle' ),
+				'description' => esc_html__( 'Tweaks content area layout when using "Page builder" template.', 'michelle' ) . ' ' . esc_html__( 'As every page builder plugin works differently, set this according to your needs.', 'michelle' ),
 				'default'     => ( $is_no_padding_default ) ? ( 'no-padding' ) : ( 'full-width' ),
 				'choices'     => array(
 					'full-width' => esc_html__( 'Full width content area, no padding', 'michelle' ),

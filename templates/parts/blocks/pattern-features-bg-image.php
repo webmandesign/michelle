@@ -32,9 +32,9 @@ $image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
 <figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:group {"className":"has-large-padding","textColor":"palette-5"} -->
-<div class="wp-block-group has-large-padding has-palette-5-color has-text-color"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-5"} -->
-<h2 class="has-no-margin-top has-palette-5-color has-text-color">Lorem ipsum</h2>
+<!-- wp:group {"className":"has-large-padding","textColor":"palette-3"} -->
+<div class="wp-block-group has-large-padding has-palette-3-color has-text-color"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-3"} -->
+<h2 class="has-no-margin-top has-palette-3-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -54,9 +54,9 @@ $image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
 <figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:group {"className":"has-large-padding","textColor":"palette-5"} -->
-<div class="wp-block-group has-large-padding has-palette-5-color has-text-color"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-5"} -->
-<h2 class="has-no-margin-top has-palette-5-color has-text-color">Lorem ipsum</h2>
+<!-- wp:group {"className":"has-large-padding","textColor":"palette-3"} -->
+<div class="wp-block-group has-large-padding has-palette-3-color has-text-color"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-3"} -->
+<h2 class="has-no-margin-top has-palette-3-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -76,9 +76,9 @@ $image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
 <figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:group {"className":"has-large-padding","textColor":"palette-5"} -->
-<div class="wp-block-group has-large-padding has-palette-5-color has-text-color"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-5"} -->
-<h2 class="has-no-margin-top has-palette-5-color has-text-color">Lorem ipsum</h2>
+<!-- wp:group {"className":"has-large-padding","textColor":"palette-3"} -->
+<div class="wp-block-group has-large-padding has-palette-3-color has-text-color"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-3"} -->
+<h2 class="has-no-margin-top has-palette-3-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

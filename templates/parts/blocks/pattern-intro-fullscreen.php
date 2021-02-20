@@ -28,8 +28,8 @@ $image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
 <!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full"} -->
 <div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax has-custom-content-position is-position-bottom-center" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"h1","textColor":"palette-5"} -->
-<h1 class="h1 has-palette-5-color has-text-color">Lorem ipsum dolor</h1>
+<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"h1","textColor":"palette-3"} -->
+<h1 class="h1 has-palette-3-color has-text-color">Lorem ipsum dolor</h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 

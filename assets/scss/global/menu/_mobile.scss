@@ -13,7 +13,7 @@
 	.site &:focus,
 	.site &:active {
 		background: none;
-		color: var(--color_accent);
+		color: inherit;
 		box-shadow: none;
 	}
 

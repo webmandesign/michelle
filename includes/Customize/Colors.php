@@ -38,8 +38,6 @@ class Colors implements Component_Interface {
 	public static $editor_palette = array(
 		'#f5df4d',
 		'#030507',
-		'#434547',
-		'#939597',
 		'#ffffff',
 	);
 

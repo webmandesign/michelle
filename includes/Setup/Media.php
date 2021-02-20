@@ -11,7 +11,6 @@
 namespace WebManDesign\Michelle\Setup;
 
 use WebManDesign\Michelle\Component_Interface;
-use WebManDesign\Michelle\Customize\Mod;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -137,6 +136,25 @@ class Media implements Component_Interface {
 
 			global $content_width;
 
+			$typography_size_html   = get_theme_mod( 'typography_size_html', 20 );
+			$entry_content_width    = get_theme_mod( 'layout_width_entry_content', 640 );
+			$thumbnail_aspect_ratio = (string) get_theme_mod( 'thumbnail_aspect_ratio', '3:2' );
+
+			$thumbnail_size = array(
+				absint( ( $content_width - 2 * $typography_size_html ) / 2 ),
+				0,
+				false,
+			);
+
+			if ( stripos( $thumbnail_aspect_ratio, ':' ) ) {
+				$ratio = explode( ':', $thumbnail_aspect_ratio );
+
+				$width  = absint( ( $content_width - 2 * $typography_size_html ) / 2 );
+				$height = absint( $width / absint( $ratio[0] ) * absint( $ratio[1] ) );
+
+				$thumbnail_size = array( $width, $height, true );
+			}
+
 
 		// Processing
 
@@ -144,16 +162,16 @@ class Media implements Component_Interface {
 
 				'thumbnail' => array(
 					'name'        => esc_html_x( 'Thumbnail', 'WordPress predefined image size name.', 'michelle' ),
-					'description' => esc_html__( 'In posts list.', 'michelle' ),
+					'description' => esc_html__( 'Not used by the theme.', 'michelle' ),
 					'width'       => 480,
-					'height'      => 320,
-					'crop'        => true,
+					'height'      => 0,
+					'crop'        => false,
 				),
 
 				'medium' => array(
 					'name'        => esc_html_x( 'Medium', 'WordPress predefined image size name.', 'michelle' ),
 					'description' => esc_html__( 'In image attachment page preview.', 'michelle' ),
-					'width'       => absint( get_theme_mod( 'layout_width_entry_content', 640 ) ),
+					'width'       => absint( $entry_content_width ),
 					'height'      => 0,
 					'crop'        => false,
 				),
@@ -164,6 +182,14 @@ class Media implements Component_Interface {
 					'width'       => absint( $content_width ),
 					'height'      => 0,
 					'crop'        => false,
+				),
+
+				'michelle-thumbnail' => array(
+					'name'        => esc_html_x( 'Post thumbnail', 'Image size name', 'michelle' ),
+					'description' => esc_html__( 'Used in posts list.', 'michelle' ) . ' <a href="' . esc_url( admin_url( 'customize.php?autofocus[control]=thumbnail_aspect_ratio' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Change this image &rarr;', 'michelle' ) . '</a>',
+					'width'       => $thumbnail_size[0],
+					'height'      => $thumbnail_size[1],
+					'crop'        => $thumbnail_size[2],
 				),
 
 			);

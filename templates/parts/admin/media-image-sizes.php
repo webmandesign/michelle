@@ -19,17 +19,21 @@ if ( empty( $image_sizes ) ) {
 	return;
 }
 
+$resize_url = 'https://wordpress.org/plugins/regenerate-thumbnails/';
+if ( class_exists( 'RegenerateThumbnails' ) ) {
+	$resize_url = admin_url( 'tools.php?page=regenerate-thumbnails' );
+}
+
 ?>
 
 <div class="recommended-image-sizes">
 
 	<h3><?php esc_html_e( 'Recommended image sizes', 'michelle' ); ?></h3>
 
-	<p><?php esc_html_e( 'For the optimal theme display, please, set image sizes recommended in table below.', 'michelle' ); ?></p>
-
 	<p>
-		<?php esc_html_e( 'Do you already have images uploaded to your website and want to resize them?', 'michelle' ); ?>
-		<a href="https://wordpress.org/plugins/search/regenerate+thumbnails/"><?php esc_html_e( 'Use a plugin &raquo;', 'michelle' ); ?></a>
+		<?php esc_html_e( 'For the optimal theme display, please, set image sizes recommended below.', 'michelle' ); ?>
+		<?php esc_html_e( 'If you already have images uploaded to your website you need to resize them after changing the sizes here.', 'michelle' ); ?>
+		<a href="<?php echo esc_url( $resize_url ); ?>"><?php esc_html_e( 'Resize images using plugin &rarr;', 'michelle' ); ?></a>
 	</p>
 
 	<table>
@@ -97,7 +101,7 @@ if ( empty( $image_sizes ) ) {
 						<?php
 
 						if ( isset( $args['description'] ) ) {
-							echo esc_html( $args['description'] );
+							echo wp_kses( $args['description'], 'option_description' );
 						} else {
 							echo '&mdash;';
 						}
@@ -120,8 +124,7 @@ if ( empty( $image_sizes ) ) {
 
 		.recommended-image-sizes {
 			display: inline-block;
-			padding: 1.618em;
-			border: 2px solid #dadcde;
+			max-width: 800px;
 		}
 
 		.recommended-image-sizes h3:first-child {
@@ -129,7 +132,14 @@ if ( empty( $image_sizes ) ) {
 		}
 
 		.recommended-image-sizes table {
+			width: 100%;
 			margin-top: 1.618em;
+		}
+
+		.recommended-image-sizes th,
+		.recommended-image-sizes td:nth-child(3),
+		.recommended-image-sizes code {
+			white-space: nowrap;
 		}
 
 		.recommended-image-sizes th,

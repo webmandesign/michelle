@@ -58,9 +58,9 @@ class Media implements Component_Interface {
 			 *
 			 * @since  1.0.0
 			 *
-			 * @param  string $image_size  Default: 'thumbnail'.
+			 * @param  string $image_size  Default: 'michelle-thumbnail'.
 			 */
-			return (string) apply_filters( 'michelle/entry/media/get_image_size', 'thumbnail' );
+			return (string) apply_filters( 'michelle/entry/media/get_image_size', 'michelle-thumbnail' );
 
 	} // /get_image_size
 
