@@ -2,8 +2,9 @@
 
 #{ $selector_editor_wrapper } .wp-block-latest-posts {
 
-	&:not(.alignwide):not(.alignfull) {
-		margin-#{$left}: auto;
+	&.wp-block-latest-posts:not(.alignwide):not(.alignfull) {
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.wp-block-latest-posts__post-author,

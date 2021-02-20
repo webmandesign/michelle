@@ -51,7 +51,7 @@
 				( map_get( $breakpoint, 's' ), 'min-width' ),
 				( map_get( $breakpoint, 'm' ), 'max-width' )
 			) {
-				&:last-child {
+				&:nth-last-child( 1 ):nth-child( 2n - 1 ) {
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -80,7 +80,7 @@
 				( map_get( $breakpoint, 's' ), 'min-width' ),
 				( map_get( $breakpoint, 'm' ), 'max-width' )
 			) {
-				&:last-child {
+				&:nth-last-child( 1 ):nth-child( 2n - 1 ) {
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -93,11 +93,16 @@
 				( map_get( $breakpoint, 'm' ), 'min-width' ),
 				( map_get( $breakpoint, 'xl' ), 'max-width' )
 			) {
-				&:nth-last-child(2) {
+				// @link  https://jsfiddle.net/Lbjwqo38/
+				&:nth-last-child( 2 ):nth-child( 5n - 1 ):nth-child( 3n + 1 ) {
 					margin-#{$left}: auto;
 				}
-				&:nth-last-child(1) {
+				&:nth-last-child( 1 ):nth-child( 5n ):nth-child( 3n + 2 ) {
 					margin-#{$right}: auto;
+				}
+				&:nth-last-child( 1 ):nth-child( 5n ):nth-child( 3n ) {
+					margin-left: auto;
+					margin-right: auto;
 				}
 			}
 
