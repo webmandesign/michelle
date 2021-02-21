@@ -48,7 +48,7 @@ class CSS_Variables implements Component_Interface {
 
 				add_action( 'switch_theme',         __CLASS__ . '::transient_cache_flush' );
 				add_action( 'customize_save_after', __CLASS__ . '::transient_cache_flush' );
-				add_action( 'michelle/upgrade',        __CLASS__ . '::transient_cache_flush' );
+				add_action( 'michelle/upgrade',     __CLASS__ . '::transient_cache_flush' );
 
 	} // /init
 

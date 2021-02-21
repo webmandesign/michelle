@@ -1,6 +1,6 @@
 <?php
 /**
- * Starter content: FAQ page.
+ * Starter content: Services page.
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas

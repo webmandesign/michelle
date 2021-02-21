@@ -19,7 +19,6 @@
 namespace WebManDesign\Michelle\Content;
 
 use WebManDesign\Michelle\Component_Interface;
-use WebManDesign\Michelle\Customize;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;

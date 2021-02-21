@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-21 18:37+0100\n"
-"PO-Revision-Date: 2021-02-21 18:45+0100\n"
+"POT-Creation-Date: 2021-02-21 21:41+0100\n"
+"PO-Revision-Date: 2021-02-21 21:41+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:24
+#: 404.php:23
 #, fuzzy
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
@@ -87,37 +87,37 @@ msgstr "Táto téma vyžaduje aspoň PHP verzie %1$s. Používate verziu %2$s."
 msgid "Please upgrade and try again."
 msgstr "Aktualizujte a skúste to znova."
 
-#: includes/Content/Block_Styles.php:99
+#: includes/Content/Block_Styles.php:98
 msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr "Tieň"
 
-#: includes/Content/Block_Styles.php:112
+#: includes/Content/Block_Styles.php:111
 msgctxt "Block style label."
 msgid "Overlap gradient"
 msgstr "Postupné prekrytie"
 
-#: includes/Content/Block_Styles.php:119
+#: includes/Content/Block_Styles.php:118
 msgctxt "Block style label."
 msgid "Hide caption"
 msgstr "Skryť popis"
 
-#: includes/Content/Block_Styles.php:126
+#: includes/Content/Block_Styles.php:125
 msgctxt "Block style label."
 msgid "Inner shadow"
 msgstr "Vnútorný tieň"
 
-#: includes/Content/Block_Styles.php:135
+#: includes/Content/Block_Styles.php:134
 msgctxt "Block style label."
 msgid "Media on top"
 msgstr "Médiá hore"
 
-#: includes/Content/Block_Styles.php:142
+#: includes/Content/Block_Styles.php:141
 msgctxt "Block style label."
 msgid "Outline items"
 msgstr "Obrysové položky"
 
-#: includes/Content/Block_Styles.php:149
+#: includes/Content/Block_Styles.php:148
 #, fuzzy
 msgctxt "Block style label."
 msgid "Uppercase"
@@ -597,46 +597,46 @@ msgstr "Nasledujúci %s"
 msgid "Published in"
 msgstr "Uverejnené v"
 
-#: includes/Entry/Page_Template.php:163
+#: includes/Entry/Page_Template.php:162
 msgid "Logo variation: light"
 msgstr "Variácia loga: svetlé"
 
-#: includes/Entry/Page_Template.php:164
+#: includes/Entry/Page_Template.php:163
 msgid "This logo image will be displayed in overlaid header with light color."
 msgstr "Tento obrázok loga sa zobrazí v prekrytej hlavičke svetlej farby."
 
-#: includes/Entry/Page_Template.php:172 includes/Entry/Page_Template.php:177
-#: includes/Entry/Page_Template.php:221 includes/Entry/Page_Template.php:226
+#: includes/Entry/Page_Template.php:171 includes/Entry/Page_Template.php:176
+#: includes/Entry/Page_Template.php:220 includes/Entry/Page_Template.php:225
 msgid "Select logo"
 msgstr "Vybrať logo"
 
-#: includes/Entry/Page_Template.php:173 includes/Entry/Page_Template.php:222
+#: includes/Entry/Page_Template.php:172 includes/Entry/Page_Template.php:221
 msgid "Change logo"
 msgstr "Zmeniť logo"
 
-#: includes/Entry/Page_Template.php:174 includes/Entry/Page_Template.php:223
+#: includes/Entry/Page_Template.php:173 includes/Entry/Page_Template.php:222
 #, fuzzy
 msgid "Remove"
 msgstr "Odstrániť"
 
-#: includes/Entry/Page_Template.php:175 includes/Entry/Page_Template.php:224
+#: includes/Entry/Page_Template.php:174 includes/Entry/Page_Template.php:223
 #, fuzzy
 msgid "Default"
 msgstr "Pôvodná"
 
-#: includes/Entry/Page_Template.php:176 includes/Entry/Page_Template.php:225
+#: includes/Entry/Page_Template.php:175 includes/Entry/Page_Template.php:224
 msgid "No logo selected"
 msgstr "Logo nebolo vybrané"
 
-#: includes/Entry/Page_Template.php:178 includes/Entry/Page_Template.php:227
+#: includes/Entry/Page_Template.php:177 includes/Entry/Page_Template.php:226
 msgid "Choose logo"
 msgstr "Zvoliť logo"
 
-#: includes/Entry/Page_Template.php:212
+#: includes/Entry/Page_Template.php:211
 msgid "Logo variation: dark"
 msgstr "Variácia loga: tmavé"
 
-#: includes/Entry/Page_Template.php:213
+#: includes/Entry/Page_Template.php:212
 msgid "This logo image will be displayed in overlaid header with dark color."
 msgstr "Tento obrázok loga sa zobrazí v prekrytej hlavičke tmavej farby."
 
@@ -650,7 +650,7 @@ msgstr "Tento obsah je chránený heslom."
 msgid "Enter the password to view it."
 msgstr "Zadajte heslo pre jeho zobrazenie."
 
-#: includes/Header/Component.php:288
+#: includes/Header/Component.php:258
 #, fuzzy
 msgctxt "Form submit button text."
 msgid "Search"
@@ -974,83 +974,52 @@ msgstr "Roztiahnuť oblasť obsahu, žiadne odsadenie"
 msgid "Keep content area width, just remove padding"
 msgstr "Zachovať šírku obsahovej oblasti, ale odstrániť odsadenie"
 
-#: includes/Tool/Starter_Content.php:119
+#: includes/Tool/Starter_Content.php:118
 #, fuzzy
 msgctxt "Theme starter content"
 msgid "Welcome!"
 msgstr "Vitajte!"
 
-#: includes/Tool/Starter_Content.php:131
+#: includes/Tool/Starter_Content.php:130
 #, fuzzy
 msgctxt "Theme starter content"
 msgid "About us"
 msgstr "O nás"
 
-#: includes/Tool/Starter_Content.php:138
-#, fuzzy
+#: includes/Tool/Starter_Content.php:137 includes/Tool/Starter_Content.php:177
 msgctxt "Theme starter content"
-msgid "Frequently Asked Questions"
-msgstr "Často kladené otázky"
+msgid "Services"
+msgstr "Služby"
 
-#: includes/Tool/Starter_Content.php:145
+#: includes/Tool/Starter_Content.php:144
 #, fuzzy
 msgctxt "Theme starter content"
 msgid "Contact us"
 msgstr "Kontaktujte nás"
 
-#: includes/Tool/Starter_Content.php:168
+#: includes/Tool/Starter_Content.php:167
 #, fuzzy
 msgctxt "Theme starter content"
 msgid "Primary Menu"
 msgstr "Primárne menu"
 
-#: includes/Tool/Starter_Content.php:172 includes/Tool/Starter_Content.php:202
+#: includes/Tool/Starter_Content.php:171
 #, fuzzy
 msgctxt "Theme starter content"
 msgid "About"
 msgstr "O nás"
 
-#: includes/Tool/Starter_Content.php:178 includes/Tool/Starter_Content.php:208
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "FAQ"
-msgstr "FAQ"
-
-#: includes/Tool/Starter_Content.php:184 includes/Tool/Starter_Content.php:214
+#: includes/Tool/Starter_Content.php:183
 #, fuzzy
 msgctxt "Theme starter content"
 msgid "Blog"
 msgstr "Blog"
 
-#: includes/Tool/Starter_Content.php:190 includes/Tool/Starter_Content.php:220
+#: includes/Tool/Starter_Content.php:189
 #, fuzzy
 msgctxt "Theme starter content"
 msgid "Contact"
 msgstr "Kontakt"
-
-#: includes/Tool/Starter_Content.php:199
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Footer Links"
-msgstr "Odkazy v pätke"
-
-#: includes/Tool/Starter_Content.php:229
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Social Links"
-msgstr "Odkazy sociálnych sietí"
-
-#: includes/Tool/Starter_Content.php:232
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Facebook"
-msgstr "Facebook"
-
-#: includes/Tool/Starter_Content.php:236
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Twitter"
-msgstr "Twitter"
 
 #: includes/Welcome/Component.php:137 includes/Welcome/Component.php:138
 #, fuzzy
@@ -1620,11 +1589,6 @@ msgstr "Nenašli sa žiadne záznamy"
 msgid "Search Results for: %s"
 msgstr "Výsledky vyhľadávania pre: %s"
 
-#: templates/parts/component/section-breadcrumbs.php:39
-#, fuzzy
-msgid "Breadcrumbs navigation"
-msgstr "Omrvinková navigácia"
-
 #: templates/parts/content/content-attachment-image.php:31
 #, fuzzy
 msgctxt "Attachment page image info table caption."
@@ -1760,9 +1724,8 @@ msgid "Tagged as:"
 msgstr "Označené ako:"
 
 #: templates/parts/plugin/content-ocdi-info.php:18
-#, fuzzy
-msgid "Theme demo information"
-msgstr "Informácie o demo obsahu témy"
+msgid "Manual import procedure"
+msgstr "Postup manuálneho importu"
 
 #: templates/parts/plugin/content-ocdi-info.php:21
 #, fuzzy
@@ -1778,12 +1741,22 @@ msgstr ""
 msgid "Preview the theme demo website &raquo;"
 msgstr "Prezrieť demo webstránku témy &raquo;"
 
-#: templates/parts/plugin/content-ocdi-info.php:28
+#: templates/parts/plugin/content-ocdi-info.php:25
+msgid ""
+"For instructions on importing theme demo content please visit GitHub "
+"repository."
+msgstr "Inštrukcie pre import demo obsahu témy nájdete v GitHub depozitári."
+
+#: templates/parts/plugin/content-ocdi-info.php:26
+msgid "GitHub repository instructions &raquo;"
+msgstr "Inštrukcie v GitHub depozitári &raquo;"
+
+#: templates/parts/plugin/content-ocdi-info.php:32
 #, fuzzy
 msgid "Media files quality"
 msgstr "Kvalita súborov médií"
 
-#: templates/parts/plugin/content-ocdi-info.php:31
+#: templates/parts/plugin/content-ocdi-info.php:35
 #, fuzzy
 msgid ""
 "Please note that imported media files (such as images, video and audio "
@@ -1792,7 +1765,7 @@ msgstr ""
 "Upozorňujeme, že importované súbory médií (napríklad obrázky, video a audio "
 "súbory) majú nízku kvalitu, aby sa zabránilo porušovaniu autorských práv."
 
-#: templates/parts/plugin/content-ocdi-info.php:32
+#: templates/parts/plugin/content-ocdi-info.php:36
 #, fuzzy
 msgid ""
 "Please read \"Credits\" section of theme documentation for reference where "
@@ -1801,17 +1774,17 @@ msgstr ""
 "Zoznam zdrojov multimediálnych súborov nájdete v sekcii \"Credits\" v "
 "dokumentácii témy."
 
-#: templates/parts/plugin/content-ocdi-info.php:35
+#: templates/parts/plugin/content-ocdi-info.php:39
 #, fuzzy
 msgid "Get media for your website &raquo;"
 msgstr "Získať médiá pre vaše webové stránky &raquo;"
 
-#: templates/parts/plugin/content-ocdi-info.php:41
+#: templates/parts/plugin/content-ocdi-info.php:45
 #, fuzzy
 msgid "Install demo required plugins!"
 msgstr "Nainštalujte vyžadované demo pluginy!"
 
-#: templates/parts/plugin/content-ocdi-info.php:44
+#: templates/parts/plugin/content-ocdi-info.php:48
 #, fuzzy
 msgid ""
 "Please read the information about the theme demo required plugins first."
@@ -1819,7 +1792,7 @@ msgstr ""
 "Najskôr si prečítajte informácie o pluginoch vyžadovaných pre demo obsah "
 "témy."
 
-#: templates/parts/plugin/content-ocdi-info.php:45
+#: templates/parts/plugin/content-ocdi-info.php:49
 #, fuzzy
 msgid ""
 "If you do not install and activate the demo required plugins, some of the "
@@ -1828,19 +1801,19 @@ msgstr ""
 "Ak pluginy vyžadované pre demo obsah témy nebudú nainštalované a aktivované, "
 "časti demo obsahu nebudú importované."
 
-#: templates/parts/plugin/content-ocdi-info.php:47
+#: templates/parts/plugin/content-ocdi-info.php:51
 #, fuzzy
 msgid ""
 "Read the information before you run the theme demo content import process."
 msgstr ""
 "Preštudujte si informácie predtým, než spustíte proces importu demo obsahu."
 
-#: templates/parts/plugin/content-ocdi-info.php:48
+#: templates/parts/plugin/content-ocdi-info.php:52
 #, fuzzy
 msgid "View the list of required plugins &raquo;"
 msgstr "Zobraziť zoznam požadovaných pluginov &raquo;"
 
-#: templates/parts/plugin/content-ocdi-info.php:53
+#: templates/parts/plugin/content-ocdi-info.php:57
 #, fuzzy
 msgid ""
 "(Note that this set of plugins may differ from plugins recommended under "
@@ -2387,12 +2360,3 @@ msgstr "Všetky inštalácie boli skompletizované."
 #, fuzzy, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Inštalácia modulu %1$s (%2$d/%3$d)"
-
-#~ msgid ""
-#~ "Get priority support, more customization options and editor palette "
-#~ "colors, sidebars and widgets, true one click demo content import, and "
-#~ "even more by purchasing a paid theme."
-#~ msgstr ""
-#~ "Získajte prioritnú podporu, viac možností prispôsobenia a farieb palety "
-#~ "editora, bočné panely a widgety, skutočný import demo obsahu jedným "
-#~ "kliknutím a ešte viac zakúpením platenej témy."

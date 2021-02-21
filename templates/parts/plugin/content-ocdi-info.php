@@ -13,13 +13,17 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-<div class="theme-demo-info">
+<div class="manual-import-info">
 
-	<h2><?php esc_html_e( 'Theme demo information', 'michelle' ); ?></h2>
+	<h2><?php esc_html_e( 'Manual import procedure', 'michelle' ); ?></h2>
 
 	<p>
 		<?php esc_html_e( 'By importing this demo content you get the exact copy of the theme demo website.', 'michelle' ); ?>
 		(<a href="https://themedemos.webmandesign.eu/michelle/"><?php esc_html_e( 'Preview the theme demo website &raquo;', 'michelle' ); ?></a>)
+		<br>
+
+		<?php esc_html_e( 'For instructions on importing theme demo content please visit GitHub repository.', 'michelle' ); ?>
+		(<a href="https://github.com/webmandesign/demo-content/blob/master/michelle/readme.md#what-is-this"><?php esc_html_e( 'GitHub repository instructions &raquo;', 'michelle' ); ?></a>)
 	</p>
 
 </div>

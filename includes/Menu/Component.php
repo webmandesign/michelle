@@ -201,7 +201,6 @@ class Component implements Component_Interface {
 
 				// Depth indication class.
 				$classes[] = 'menu-item-is-depth-' . absint( $depth );
-
 			}
 
 

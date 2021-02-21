@@ -46,9 +46,8 @@ class Page_Template implements Component_Interface {
 
 				add_filter( 'theme_templates', __CLASS__ . '::post_templates', 5, 4 );
 
-				add_filter( 'michelle/header/is_disabled',      __CLASS__ . '::is_content_only' );
-				add_filter( 'michelle/footer/is_disabled',      __CLASS__ . '::is_content_only' );
-				add_filter( 'michelle/breadcrumbs/is_disabled', __CLASS__ . '::is_content_only' );
+				add_filter( 'michelle/header/is_disabled', __CLASS__ . '::is_content_only' );
+				add_filter( 'michelle/footer/is_disabled', __CLASS__ . '::is_content_only' );
 
 	} // /init
 

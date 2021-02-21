@@ -82,7 +82,7 @@ class Options implements Component_Interface {
 			$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 			// Default background color control.
-			$wp_customize->get_control( 'background_color' )->section = 'colors_general';
+			$wp_customize->get_control( 'background_color' )->section  = 'colors_general';
 			$wp_customize->get_control( 'background_color' )->priority = 0;
 
 			// Remove obsolete custom header controls (only, not setting!).

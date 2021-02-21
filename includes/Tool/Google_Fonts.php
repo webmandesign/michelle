@@ -305,6 +305,7 @@ class Google_Fonts implements Component_Interface {
 					'headings' => (string) Mod::get( 'typography_font_headings' ),
 					'body'     => (string) Mod::get( 'typography_font_global' ),
 					'logo'     => (string) Mod::get( 'typography_font_site_title' ),
+					'alt'      => (string) Mod::get( 'typography_font_alt' ),
 				)
 			) ) );
 

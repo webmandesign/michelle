@@ -41,7 +41,6 @@ class Starter_Content implements Component_Interface {
 
 			// Loading
 
-				self::attachments();
 				self::pages();
 				self::options();
 				self::nav_menus();
@@ -133,10 +132,10 @@ class Starter_Content implements Component_Interface {
 					'post_excerpt' => self::get_content( 'excerpt' ),
 				),
 
-				'faq' => array(
+				'services' => array(
 					'post_type'    => 'page',
-					'post_title'   => esc_html_x( 'Frequently Asked Questions', 'Theme starter content', 'michelle' ),
-					'post_content' => self::get_content( 'faq' ),
+					'post_title'   => esc_html_x( 'Services', 'Theme starter content', 'michelle' ),
+					'post_content' => self::get_content( 'services' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
 				),
 
@@ -174,11 +173,11 @@ class Starter_Content implements Component_Interface {
 							'object'    => 'page',
 							'object_id' => '{{about}}',
 						),
-						'link_faq' => array(
-							'title'     => esc_html_x( 'FAQ', 'Theme starter content', 'michelle' ),
+						'link_services' => array(
+							'title'     => esc_html_x( 'Services', 'Theme starter content', 'michelle' ),
 							'type'      => 'post_type',
 							'object'    => 'page',
-							'object_id' => '{{faq}}',
+							'object_id' => '{{services}}',
 						),
 						'link_blog' => array(
 							'title'     => esc_html_x( 'Blog', 'Theme starter content', 'michelle' ),
@@ -192,51 +191,6 @@ class Starter_Content implements Component_Interface {
 							'object'    => 'page',
 							'object_id' => '{{contact}}',
 						),
-					),
-				),
-
-				'footer' => array(
-					'name' => esc_html_x( 'Footer Links', 'Theme starter content', 'michelle' ),
-					'items' => array(
-						'link_about' => array(
-							'title'     => esc_html_x( 'About', 'Theme starter content', 'michelle' ),
-							'type'      => 'post_type',
-							'object'    => 'page',
-							'object_id' => '{{about}}',
-						),
-						'link_faq' => array(
-							'title'     => esc_html_x( 'FAQ', 'Theme starter content', 'michelle' ),
-							'type'      => 'post_type',
-							'object'    => 'page',
-							'object_id' => '{{faq}}',
-						),
-						'link_blog' => array(
-							'title'     => esc_html_x( 'Blog', 'Theme starter content', 'michelle' ),
-							'type'      => 'post_type',
-							'object'    => 'page',
-							'object_id' => '{{blog}}',
-						),
-						'link_contact' => array(
-							'title'     => esc_html_x( 'Contact', 'Theme starter content', 'michelle' ),
-							'type'      => 'post_type',
-							'object'    => 'page',
-							'object_id' => '{{contact}}',
-						),
-					),
-				),
-
-				'social' => array(
-					'name' => esc_html_x( 'Social Links', 'Theme starter content', 'michelle' ),
-					'items' => array(
-						'link_facebook' => array(
-							'title' => esc_html_x( 'Facebook', 'Theme starter content', 'michelle' ),
-							'url'   => 'https://www.facebook.com/',
-						),
-						'link_twitter' => array(
-							'title' => esc_html_x( 'Twitter', 'Theme starter content', 'michelle' ),
-							'url'   => 'https://twitter.com/',
-						),
-						'link_email',
 					),
 				),
 
@@ -264,24 +218,5 @@ class Starter_Content implements Component_Interface {
 			);
 
 	} // /options
-
-	/**
-	 * Attachments.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @return  void
-	 */
-	public static function attachments() {
-
-		// Output
-
-			self::$content['attachments'] = array(
-				'attachment-image-landscape' => array(
-					'file' => 'assets/images/starter/3to2.jpg',
-				),
-			);
-
-	} // /attachments
 
 }

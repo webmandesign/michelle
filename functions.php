@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 
 // Check that the site meets the minimum requirements:
 
-	define( 'MICHELLE_WP_VERSION', '5.2' );
+	define( 'MICHELLE_WP_VERSION', '5.4' );
 	define( 'MICHELLE_PHP_VERSION', '7.0' );
 
 	if (

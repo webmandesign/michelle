@@ -68,8 +68,8 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","className":"has-no-margin-bottom"} -->
-<div class="wp-block-column is-vertically-aligned-center has-no-margin-bottom"><!-- wp:list {"className":"has-outline-style has-right-text-align"} -->
-<ul class="has-outline-style has-right-text-align"><li><a href="#0">Facebook</a></li><li><a href="#0">Twitter</a></li><li><a href="#0">Instagram</a></li><li><a href="#0">GitHub</a></li></ul>
+<div class="wp-block-column is-vertically-aligned-center has-no-margin-bottom"><!-- wp:list {"className":"has-right-text-align is-style-outline-items"} -->
+<ul class="has-right-text-align is-style-outline-items"><li><a href="#0">Facebook</a></li><li><a href="#0">Twitter</a></li><li><a href="#0">Instagram</a></li><li><a href="#0">GitHub</a></li></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>

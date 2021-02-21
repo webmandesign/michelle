@@ -216,36 +216,6 @@ class Component implements Component_Interface {
 
 	} // /search_form
 
-		/**
-		 * Search form wrapper: open.
-		 *
-		 * @since  1.0.0
-		 *
-		 * @return  void
-		 */
-		public static function search_form_container_open() {
-
-			// Output
-
-				echo '<div class="search-form-container">';
-
-		} // /search_form_container_open
-
-		/**
-		 * Search form wrapper: close.
-		 *
-		 * @since  1.0.0
-		 *
-		 * @return  void
-		 */
-		public static function search_form_container_close() {
-
-			// Output
-
-				echo '</div>';
-
-		} // /search_form_container_close
-
 	/**
 	 * Search form modification, only in header.
 	 *

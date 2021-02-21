@@ -37,10 +37,6 @@ class Component implements Component_Interface {
 
 				add_action( 'michelle/postslist/before', __CLASS__ . '::search_form' );
 
-			// Filters
-
-				add_filter( 'michelle/entry/media/get_image_size', __CLASS__ . '::image_size', 99 );
-
 	} // /init
 
 	/**
@@ -64,29 +60,5 @@ class Component implements Component_Interface {
 			get_search_form( true );
 
 	} // /search_form
-
-	/**
-	 * Product image size.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @param  string $image_size
-	 *
-	 * @return  string
-	 */
-	public static function image_size( string $image_size ): string {
-
-		// Processing
-
-			if ( is_search() ) {
-				$image_size = 'michelle-square';
-			}
-
-
-		// Output
-
-			return $image_size;
-
-	} // /image_size
 
 }

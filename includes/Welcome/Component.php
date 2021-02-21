@@ -73,7 +73,7 @@ class Component implements Component_Interface {
 			 */
 			$sections = (array) apply_filters( 'michelle/welcome/render/sections', array(
 				0   => 'header',
-				5  => 'features',
+				5   => 'features',
 				10  => 'quickstart',
 				20  => 'accessibility',
 				30  => 'demo',

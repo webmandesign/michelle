@@ -37,7 +37,6 @@ class Component implements Component_Interface {
 				add_action( 'admin_enqueue_scripts', __CLASS__ . '::styles', 99 );
 
 				add_action( 'pt-ocdi/before_content_import', __CLASS__ . '::before' );
-				add_action( 'pt-ocdi/before_widgets_import', __CLASS__ . '::before_widgets_import' );
 				add_action( 'pt-ocdi/after_import',          __CLASS__ . '::after' );
 
 			// Filters
@@ -163,21 +162,6 @@ class Component implements Component_Interface {
 	} // /menu_locations
 
 	/**
-	 * Remove all widgets from sidebars first.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @return  void
-	 */
-	public static function before_widgets_import() {
-
-		// Processing
-
-			delete_option( 'sidebars_widgets' );
-
-	} // /before_widgets_import
-
-	/**
 	 * OCDI plugin admin page styles.
 	 *
 	 * @since  1.0.0
@@ -190,7 +174,7 @@ class Component implements Component_Interface {
 
 			wp_add_inline_style(
 				'ocdi-main-css',
-				'.ocdi.about-wrap { max-width: 66em; }'
+				'.ocdi.about-wrap { max-width: 66em; } .ocdi__file-upload + .ocdi__file-upload { display: none; }'
 			);
 
 	} // /styles
