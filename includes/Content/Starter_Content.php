@@ -10,7 +10,7 @@
  * @since  1.0.0
  */
 
-namespace WebManDesign\Michelle\Tool;
+namespace WebManDesign\Michelle\Content;
 
 use WebManDesign\Michelle\Component_Interface;
 
@@ -139,6 +139,13 @@ class Starter_Content implements Component_Interface {
 					'post_excerpt' => self::get_content( 'excerpt' ),
 				),
 
+				'faq' => array(
+					'post_type'    => 'page',
+					'post_title'   => esc_html_x( 'Frequently Asked Question', 'Theme starter content', 'michelle' ),
+					'post_content' => self::get_content( 'faq' ),
+					'post_excerpt' => self::get_content( 'excerpt' ),
+				),
+
 				'contact' => array(
 					'post_type'    => 'page',
 					'post_title'   => esc_html_x( 'Contact us', 'Theme starter content', 'michelle' ),
@@ -179,17 +186,23 @@ class Starter_Content implements Component_Interface {
 							'object'    => 'page',
 							'object_id' => '{{services}}',
 						),
-						'link_blog' => array(
-							'title'     => esc_html_x( 'Blog', 'Theme starter content', 'michelle' ),
+						'link_faq' => array(
+							'title'     => esc_html_x( 'FAQ', 'Theme starter content', 'michelle' ),
 							'type'      => 'post_type',
 							'object'    => 'page',
-							'object_id' => '{{blog}}',
+							'object_id' => '{{faq}}',
 						),
 						'link_contact' => array(
 							'title'     => esc_html_x( 'Contact', 'Theme starter content', 'michelle' ),
 							'type'      => 'post_type',
 							'object'    => 'page',
 							'object_id' => '{{contact}}',
+						),
+						'link_blog' => array(
+							'title'     => esc_html_x( 'Blog', 'Theme starter content', 'michelle' ),
+							'type'      => 'post_type',
+							'object'    => 'page',
+							'object_id' => '{{blog}}',
 						),
 					),
 				),

@@ -35,6 +35,8 @@ class Component implements Component_Interface {
 			Blocks::init();
 			Block_Patterns::init();
 			Block_Styles::init();
+			// Starter content.
+			Starter_Content::init();
 
 	} // /init
 

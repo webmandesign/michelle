@@ -33,7 +33,6 @@ class Component implements Component_Interface {
 			Google_Fonts::init();
 			KSES::init();
 			Page_Builder::init();
-			Starter_Content::init();
 			Wrapper::init();
 
 	} // /init

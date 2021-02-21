@@ -61,6 +61,7 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 			'/Content/Blocks.php',
 			'/Content/Component.php',
 			'/Content/Container.php',
+			'/Content/Starter_Content.php',
 
 			'/Customize/Colors.php',
 			'/Customize/Component.php',
@@ -121,7 +122,6 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 			'/Tool/Google_Fonts.php',
 			'/Tool/KSES.php',
 			'/Tool/Page_Builder.php',
-			'/Tool/Starter_Content.php',
 			'/Tool/Wrapper.php',
 
 			'/Welcome/Component.php',

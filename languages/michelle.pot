@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-21 21:41+0100\n"
+"POT-Creation-Date: 2021-02-21 23:13+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -116,9 +116,60 @@ msgid "Uppercase"
 msgstr ""
 
 #. translators: Paginated content title suffix. %d: page number.
-#: includes/Content/Component.php:121
+#: includes/Content/Component.php:123
 #, php-format
 msgid "(page %d)"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:118
+msgctxt "Theme starter content"
+msgid "Welcome!"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:130
+msgctxt "Theme starter content"
+msgid "About us"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:137
+#: includes/Content/Starter_Content.php:184
+msgctxt "Theme starter content"
+msgid "Services"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:144
+msgctxt "Theme starter content"
+msgid "Frequently Asked Question"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:151
+msgctxt "Theme starter content"
+msgid "Contact us"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:174
+msgctxt "Theme starter content"
+msgid "Primary Menu"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:178
+msgctxt "Theme starter content"
+msgid "About"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:190
+msgctxt "Theme starter content"
+msgid "FAQ"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:196
+msgctxt "Theme starter content"
+msgid "Contact"
+msgstr ""
+
+#: includes/Content/Starter_Content.php:202
+msgctxt "Theme starter content"
+msgid "Blog"
 msgstr ""
 
 #: includes/Customize/Colors.php:160 includes/Customize/Options.php:301
@@ -829,47 +880,6 @@ msgstr ""
 msgid "Keep content area width, just remove padding"
 msgstr ""
 
-#: includes/Tool/Starter_Content.php:118
-msgctxt "Theme starter content"
-msgid "Welcome!"
-msgstr ""
-
-#: includes/Tool/Starter_Content.php:130
-msgctxt "Theme starter content"
-msgid "About us"
-msgstr ""
-
-#: includes/Tool/Starter_Content.php:137
-#: includes/Tool/Starter_Content.php:177
-msgctxt "Theme starter content"
-msgid "Services"
-msgstr ""
-
-#: includes/Tool/Starter_Content.php:144
-msgctxt "Theme starter content"
-msgid "Contact us"
-msgstr ""
-
-#: includes/Tool/Starter_Content.php:167
-msgctxt "Theme starter content"
-msgid "Primary Menu"
-msgstr ""
-
-#: includes/Tool/Starter_Content.php:171
-msgctxt "Theme starter content"
-msgid "About"
-msgstr ""
-
-#: includes/Tool/Starter_Content.php:183
-msgctxt "Theme starter content"
-msgid "Blog"
-msgstr ""
-
-#: includes/Tool/Starter_Content.php:189
-msgctxt "Theme starter content"
-msgid "Contact"
-msgstr ""
-
 #: includes/Welcome/Component.php:137 includes/Welcome/Component.php:138
 msgid "Welcome"
 msgstr ""
@@ -946,28 +956,6 @@ msgstr ""
 
 #: templates/parts/accessibility/menu-skip-links.php:26
 msgid "Skip to footer"
-msgstr ""
-
-#: templates/parts/admin/content-starter-contact.php:48
-msgctxt "Theme starter content"
-msgid "Your name"
-msgstr ""
-
-#: templates/parts/admin/content-starter-contact.php:49
-msgctxt "Theme starter content"
-msgid "Your email"
-msgstr ""
-
-#: templates/parts/admin/content-starter-contact.php:50
-msgctxt "Theme starter content"
-msgid "Your message"
-msgstr ""
-
-#: templates/parts/admin/content-starter-contact.php:51
-msgctxt "Theme starter content"
-msgid ""
-"This is only a dummy form placeholder. Use a plugin to add forms to your "
-"website."
 msgstr ""
 
 #: templates/parts/admin/content-starter-excerpt.php:21

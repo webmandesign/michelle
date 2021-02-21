@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-21 21:41+0100\n"
-"PO-Revision-Date: 2021-02-21 21:41+0100\n"
+"POT-Creation-Date: 2021-02-21 23:13+0100\n"
+"PO-Revision-Date: 2021-02-21 23:14+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -124,10 +124,68 @@ msgid "Uppercase"
 msgstr "Veľké písmo"
 
 #. translators: Paginated content title suffix. %d: page number.
-#: includes/Content/Component.php:121
+#: includes/Content/Component.php:123
 #, fuzzy, php-format
 msgid "(page %d)"
 msgstr "(strana %d)"
+
+#: includes/Content/Starter_Content.php:118
+#, fuzzy
+msgctxt "Theme starter content"
+msgid "Welcome!"
+msgstr "Vitajte!"
+
+#: includes/Content/Starter_Content.php:130
+#, fuzzy
+msgctxt "Theme starter content"
+msgid "About us"
+msgstr "O nás"
+
+#: includes/Content/Starter_Content.php:137
+#: includes/Content/Starter_Content.php:184
+msgctxt "Theme starter content"
+msgid "Services"
+msgstr "Služby"
+
+#: includes/Content/Starter_Content.php:144
+msgctxt "Theme starter content"
+msgid "Frequently Asked Question"
+msgstr "Najčastejšie otázky"
+
+#: includes/Content/Starter_Content.php:151
+#, fuzzy
+msgctxt "Theme starter content"
+msgid "Contact us"
+msgstr "Kontaktujte nás"
+
+#: includes/Content/Starter_Content.php:174
+#, fuzzy
+msgctxt "Theme starter content"
+msgid "Primary Menu"
+msgstr "Primárne menu"
+
+#: includes/Content/Starter_Content.php:178
+#, fuzzy
+msgctxt "Theme starter content"
+msgid "About"
+msgstr "O nás"
+
+#: includes/Content/Starter_Content.php:190
+msgctxt "Theme starter content"
+msgid "FAQ"
+msgstr "Otázky"
+
+#: includes/Content/Starter_Content.php:196
+#, fuzzy
+msgctxt "Theme starter content"
+msgid "Contact"
+msgstr "Kontakt"
+
+#: includes/Content/Starter_Content.php:202
+#, fuzzy
+msgctxt "Theme starter content"
+msgid "Blog"
+msgstr "Blog"
 
 #: includes/Customize/Colors.php:160 includes/Customize/Options.php:301
 #, fuzzy
@@ -974,53 +1032,6 @@ msgstr "Roztiahnuť oblasť obsahu, žiadne odsadenie"
 msgid "Keep content area width, just remove padding"
 msgstr "Zachovať šírku obsahovej oblasti, ale odstrániť odsadenie"
 
-#: includes/Tool/Starter_Content.php:118
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Welcome!"
-msgstr "Vitajte!"
-
-#: includes/Tool/Starter_Content.php:130
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "About us"
-msgstr "O nás"
-
-#: includes/Tool/Starter_Content.php:137 includes/Tool/Starter_Content.php:177
-msgctxt "Theme starter content"
-msgid "Services"
-msgstr "Služby"
-
-#: includes/Tool/Starter_Content.php:144
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Contact us"
-msgstr "Kontaktujte nás"
-
-#: includes/Tool/Starter_Content.php:167
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Primary Menu"
-msgstr "Primárne menu"
-
-#: includes/Tool/Starter_Content.php:171
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "About"
-msgstr "O nás"
-
-#: includes/Tool/Starter_Content.php:183
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Blog"
-msgstr "Blog"
-
-#: includes/Tool/Starter_Content.php:189
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Contact"
-msgstr "Kontakt"
-
 #: includes/Welcome/Component.php:137 includes/Welcome/Component.php:138
 #, fuzzy
 msgid "Welcome"
@@ -1108,34 +1119,6 @@ msgstr "Preskočiť na formulár vyhľadávania"
 #, fuzzy
 msgid "Skip to footer"
 msgstr "Preskočiť na pätičku"
-
-#: templates/parts/admin/content-starter-contact.php:48
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Your name"
-msgstr "Vaše meno"
-
-#: templates/parts/admin/content-starter-contact.php:49
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Your email"
-msgstr "Váš e-mail"
-
-#: templates/parts/admin/content-starter-contact.php:50
-#, fuzzy
-msgctxt "Theme starter content"
-msgid "Your message"
-msgstr "Správa"
-
-#: templates/parts/admin/content-starter-contact.php:51
-#, fuzzy
-msgctxt "Theme starter content"
-msgid ""
-"This is only a dummy form placeholder. Use a plugin to add forms to your "
-"website."
-msgstr ""
-"Toto je len fiktívny formulár. Pre formuláre na vašej webstránke použite "
-"plugin."
 
 #: templates/parts/admin/content-starter-excerpt.php:21
 #, fuzzy
