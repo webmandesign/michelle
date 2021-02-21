@@ -50,7 +50,8 @@ class Component implements Component_Interface {
 
 				add_filter( 'pre/michelle/accessibility/link_skip_to', __CLASS__ . '::skip_links_no_header', 10, 2 );
 
-				add_filter( 'get_search_form', __CLASS__ . '::get_search_form' );
+				add_filter( 'get_search_form',         __CLASS__ . '::get_search_form' );
+				add_filter( 'get_product_search_form', __CLASS__ . '::get_search_form' ); // WooCommerce
 
 	} // /init
 
@@ -219,11 +220,13 @@ class Component implements Component_Interface {
 	/**
 	 * Search form modification, only in header.
 	 *
+	 * Also compatible with WooCommerce product search form.
+	 *
 	 * @since  1.0.0
 	 *
 	 * @param  string $html
 	 *
-	 * @return  void
+	 * @return  string
 	 */
 	public static function get_search_form( string $html ): string {
 
@@ -240,8 +243,14 @@ class Component implements Component_Interface {
 			// Process only multiline HTML.
 			if ( 1 < count( $html ) ) {
 				$html[0] = str_replace(
-					'search-form',
-					'search-form has-submit-with-icon',
+					array(
+						'search-form',
+						'woocommerce-product-search',
+					),
+					array(
+						'search-form has-submit-with-icon',
+						'woocommerce-product-search has-submit-with-icon',
+					),
 					$html[0]
 				);
 
