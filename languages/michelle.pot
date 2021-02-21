@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-21 02:28+0100\n"
+"POT-Creation-Date: 2021-02-21 03:49+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -87,25 +87,30 @@ msgstr ""
 
 #: includes/Content/Block_Styles.php:112
 msgctxt "Block style label."
-msgid "Hide caption"
+msgid "Overlap gradient"
 msgstr ""
 
 #: includes/Content/Block_Styles.php:119
 msgctxt "Block style label."
-msgid "Inner shadow"
+msgid "Hide caption"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:128
+#: includes/Content/Block_Styles.php:126
 msgctxt "Block style label."
-msgid "Media on top"
+msgid "Inner shadow"
 msgstr ""
 
 #: includes/Content/Block_Styles.php:135
 msgctxt "Block style label."
-msgid "Outline items"
+msgid "Media on top"
 msgstr ""
 
 #: includes/Content/Block_Styles.php:142
+msgctxt "Block style label."
+msgid "Outline items"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:149
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr ""

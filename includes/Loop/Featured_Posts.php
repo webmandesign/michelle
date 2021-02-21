@@ -267,7 +267,7 @@ class Featured_Posts implements Component_Interface {
 			$options[ 400 . 'posts' . 230 ] = array(
 				'type'        => 'image',
 				'id'          => 'featured_posts_image',
-				'label'       => esc_html__( 'Fallback image', 'icelander' ),
+				'label'       => esc_html__( 'Fallback image', 'michelle' ),
 				'description' => esc_html__( 'This image will be displayed when post has no featured image set.', 'michelle' ),
 				'default'     => '',
 			);

@@ -108,6 +108,13 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
+				'overlap-gradient' => array(
+					'label'  => _x( 'Overlap gradient', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/media-text',
+					),
+				),
+
 				'hide-caption' => array(
 					'label'  => _x( 'Hide caption', 'Block style label.', 'michelle' ),
 					'blocks' => array(
