@@ -48,8 +48,6 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 </div>
 
-<hr>
-
 <div class="about__section is-feature" style="text-align: center; border: 4px solid rgba(0,0,0,.1);">
 	<?php echo Welcome\Component::get_info_like(); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>
 </div>

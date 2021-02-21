@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2020-08-06 16:21+0200\n"
+"POT-Creation-Date: 2021-02-21 02:28+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -11,11 +11,1935 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:48
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:54
+#, php-format
+msgctxt "Comments list title."
+msgid "%1$d thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$d thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:92
+msgid "Comments are closed."
+msgstr ""
+
+#: includes/Accessibility/Component.php:82
+msgid "Collapse child menu"
+msgstr ""
+
+#: includes/Accessibility/Component.php:83
+msgid "Expand child menu"
+msgstr ""
+
+#: includes/Accessibility/Component.php:181
+#: templates/parts/accessibility/menu-skip-links.php:24
+msgid "Skip to main content"
+msgstr ""
+
+#: includes/Accessibility/Component.php:229
+msgid "Skip back to main navigation"
+msgstr ""
+
+#. translators: 1: required WP version number, 2: available WP version number
+#: includes/Compatibility.php:56
+#, php-format
+msgid ""
+"This theme requires at least WordPress version %1$s. You are running "
+"version %2$s."
+msgstr ""
+
+#. translators: 1: required PHP version number, 2: available PHP version number
+#: includes/Compatibility.php:65
+#, php-format
+msgid ""
+"This theme requires at least PHP version %1$s. You are running version "
+"%2$s."
+msgstr ""
+
+#: includes/Compatibility.php:72
+msgid "Please upgrade and try again."
+msgstr ""
+
+#: includes/Content/Block_Styles.php:99
+msgctxt "Block style label."
+msgid "Drop shadow"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:112
+msgctxt "Block style label."
+msgid "Hide caption"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:119
+msgctxt "Block style label."
+msgid "Inner shadow"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:128
+msgctxt "Block style label."
+msgid "Media on top"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:135
+msgctxt "Block style label."
+msgid "Outline items"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:142
+msgctxt "Block style label."
+msgid "Uppercase"
+msgstr ""
+
+#. translators: Paginated content title suffix. %d: page number.
+#: includes/Content/Component.php:121
+#, php-format
+msgid "(page %d)"
+msgstr ""
+
+#: includes/Customize/Colors.php:160 includes/Customize/Options.php:301
+msgid "Accent color"
+msgstr ""
+
+#. translators: Customizer section title. %s = section name.
+#: includes/Customize/Colors.php:169 includes/Customize/Options.php:234
+#: includes/Customize/Options.php:292 includes/Customize/Options.php:358
+#: includes/Customize/Options.php:448
+#, php-format
+msgid "Colors: %s"
+msgstr ""
+
+#: includes/Customize/Colors.php:170
+msgctxt "Customizer color section title"
+msgid "Editor palette"
+msgstr ""
+
+#: includes/Customize/Colors.php:172 includes/Customize/Options.php:204
+#: includes/Customize/Options.php:237 includes/Customize/Options.php:295
+#: includes/Customize/Options.php:361 includes/Customize/Options.php:451
+#: includes/Customize/Options.php:504 includes/Customize/Options.php:577
+#: includes/Customize/Options.php:756 includes/Customize/Options.php:784
+#: includes/Tool/Page_Builder.php:124
+msgctxt "Customizer panel title."
+msgid "Theme Options"
+msgstr ""
+
+#: includes/Customize/Colors.php:177
+msgid ""
+"Accent color is also being conveniently added into editor color palette "
+"for you, so you don't need to duplicate it here."
+msgstr ""
+
+#. translators: Editor palette color label. %d: color number.
+#: includes/Customize/Colors.php:187
+#, php-format
+msgid "Palette color %d"
+msgstr ""
+
+#: includes/Customize/Control/HTML.php:56
+msgid "Please set the `content` parameter for the HTML control."
+msgstr ""
+
+#: includes/Customize/Control/Multiselect.php:127
+msgid "Press CTRL key for multiple selection."
+msgstr ""
+
+#: includes/Customize/Options.php:133
+msgctxt "Variable image height."
+msgid "variable height"
+msgstr ""
+
+#: includes/Customize/Options.php:135
+#: templates/parts/admin/media-image-sizes.php:59
+msgid "cropped"
+msgstr ""
+
+#: includes/Customize/Options.php:135
+#: templates/parts/admin/media-image-sizes.php:59
+msgid "scaled"
+msgstr ""
+
+#: includes/Customize/Options.php:147
+msgid "Select a block"
+msgstr ""
+
+#: includes/Customize/Options.php:166
+msgid "Logo image"
+msgstr ""
+
+#: includes/Customize/Options.php:167
+msgid "Do not forget to set the logo max height."
+msgstr ""
+
+#: includes/Customize/Options.php:167
+msgid ""
+"Upload twice as big image to make your logo ready for high DPI screens."
+msgstr ""
+
+#: includes/Customize/Options.php:175
+msgid "Max logo image height (px)"
+msgstr ""
+
+#: includes/Customize/Options.php:205
+msgid "Theme Credits"
+msgstr ""
+
+#. translators: 1: linked theme name, 2: theme author name.
+#: includes/Customize/Options.php:209
+#, php-format
+msgid "%1$s is a WordPress theme developed by %2$s."
+msgstr ""
+
+#. translators: %s: theme author link.
+#: includes/Customize/Options.php:217
+#, php-format
+msgid "You can obtain other professional WordPress themes at %s."
+msgstr ""
+
+#: includes/Customize/Options.php:222
+msgid "Thank you for using a theme by WebMan Design!"
+msgstr ""
+
+#: includes/Customize/Options.php:235
+msgctxt "Customizer color section title"
+msgid "General"
+msgstr ""
+
+#: includes/Customize/Options.php:243 includes/Customize/Options.php:338
+#: includes/Customize/Options.php:390 includes/Customize/Options.php:428
+#: includes/Customize/Options.php:471
+msgid "Text color"
+msgstr ""
+
+#: includes/Customize/Options.php:257
+msgid "Headings color"
+msgstr ""
+
+#: includes/Customize/Options.php:272
+msgid "Decorative border color"
+msgstr ""
+
+#: includes/Customize/Options.php:293
+msgctxt "Customizer color section title"
+msgid "Accents"
+msgstr ""
+
+#: includes/Customize/Options.php:318
+msgid "Button"
+msgstr ""
+
+#: includes/Customize/Options.php:324 includes/Customize/Options.php:376
+#: includes/Customize/Options.php:414 includes/Customize/Options.php:457
+msgid "Background color"
+msgstr ""
+
+#: includes/Customize/Options.php:359
+msgctxt "Customizer color section title"
+msgid "Header"
+msgstr ""
+
+#: includes/Customize/Options.php:369
+msgid "Site navigation"
+msgstr ""
+
+#: includes/Customize/Options.php:370
+msgid "Primary menu location sub-menu colors."
+msgstr ""
+
+#: includes/Customize/Options.php:407
+msgid "Search form"
+msgstr ""
+
+#: includes/Customize/Options.php:408
+msgid "Pop-up search form colors."
+msgstr ""
+
+#: includes/Customize/Options.php:449
+msgctxt "Customizer color section title"
+msgid "Footer"
+msgstr ""
+
+#: includes/Customize/Options.php:485
+msgid "Link color"
+msgstr ""
+
+#: includes/Customize/Options.php:503
+msgctxt "Customizer section title."
+msgid "Layout"
+msgstr ""
+
+#: includes/Customize/Options.php:512
+msgctxt "A website container."
+msgid "Site Container"
+msgstr ""
+
+#: includes/Customize/Options.php:518
+msgid "Content width"
+msgstr ""
+
+#: includes/Customize/Options.php:520 includes/Customize/Options.php:546
+#: includes/Customize/Options.php:672 includes/Customize/Options.php:685
+#: includes/Customize/Options.php:698 includes/Customize/Options.php:711
+msgid "Default value:"
+msgstr ""
+
+#: includes/Customize/Options.php:522
+msgid "This width is applied on archive pages, wide-aligned blocks&hellip;"
+msgstr ""
+
+#: includes/Customize/Options.php:544
+msgid "Entry content width"
+msgstr ""
+
+#: includes/Customize/Options.php:548
+msgid "This width is applied on post and page actual content elements."
+msgstr ""
+
+#: includes/Customize/Options.php:550
+msgid "Set this cautiously for the best readability."
+msgstr ""
+
+#: includes/Customize/Options.php:576
+msgctxt "Customizer section title."
+msgid "Typography"
+msgstr ""
+
+#: includes/Customize/Options.php:583
+msgid "Basic font size in px"
+msgstr ""
+
+#: includes/Customize/Options.php:584
+msgid ""
+"All other font sizes are calculated automatically from this basic font "
+"size."
+msgstr ""
+
+#: includes/Customize/Options.php:606
+msgid "Header font size in px"
+msgstr ""
+
+#: includes/Customize/Options.php:628
+msgid "Footer font size in px"
+msgstr ""
+
+#: includes/Customize/Options.php:652
+msgid "Font families setup"
+msgstr ""
+
+#. translators: %s: customizer option values.
+#: includes/Customize/Options.php:657
+#, php-format
+msgid "Values of %s set web safe system font families."
+msgstr ""
+
+#: includes/Customize/Options.php:662
+msgid "You can use any Google Fonts with this theme."
+msgstr ""
+
+#: includes/Customize/Options.php:664
+msgid ""
+"Just input the Google Fonts font family name into the fields below, choose "
+"language, and you are done!"
+msgstr ""
+
+#: includes/Customize/Options.php:671
+msgid "Global font"
+msgstr ""
+
+#: includes/Customize/Options.php:684
+msgid "Headings font"
+msgstr ""
+
+#: includes/Customize/Options.php:697
+msgid "Site title font"
+msgstr ""
+
+#: includes/Customize/Options.php:710
+msgid "Alternative font"
+msgstr ""
+
+#: includes/Customize/Options.php:711
+msgid "Used for quotes, for example."
+msgstr ""
+
+#: includes/Customize/Options.php:724
+msgid "Enable theme Google Fonts loading"
+msgstr ""
+
+#: includes/Customize/Options.php:725
+msgid "In case you are loading fonts via plugin, disable this option."
+msgstr ""
+
+#: includes/Customize/Options.php:731
+msgid "Languages"
+msgstr ""
+
+#: includes/Customize/Options.php:733
+msgid "Not all Google Fonts support all languages."
+msgstr ""
+
+#: includes/Customize/Options.php:735
+msgid "Please check on Google Fonts website to make sure."
+msgstr ""
+
+#: includes/Customize/Options.php:738
+msgid "Latin"
+msgstr ""
+
+#: includes/Customize/Options.php:739
+msgid "Latin Extended"
+msgstr ""
+
+#: includes/Customize/Options.php:740
+msgid "Cyrillic"
+msgstr ""
+
+#: includes/Customize/Options.php:741
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: includes/Customize/Options.php:742
+msgid "Greek"
+msgstr ""
+
+#: includes/Customize/Options.php:743
+msgid "Greek Extended"
+msgstr ""
+
+#: includes/Customize/Options.php:744
+msgid "Vietnamese"
+msgstr ""
+
+#: includes/Customize/Options.php:755
+msgctxt "Customizer section title."
+msgid "Posts"
+msgstr ""
+
+#: includes/Customize/Options.php:762
+msgid "Post thumbnail aspect ratio"
+msgstr ""
+
+#: includes/Customize/Options.php:763
+msgid ""
+"Note that if you already have images uploaded to your website, you need to "
+"regenerate their sizes to apply this change."
+msgstr ""
+
+#: includes/Customize/Options.php:763
+msgid "You can use a plugin for that &rarr;"
+msgstr ""
+
+#: includes/Customize/Options.php:763
+msgid "(This option can not be previewed here, only on your live website.)"
+msgstr ""
+
+#: includes/Customize/Options.php:766
+msgid "Keep original image aspect ratio"
+msgstr ""
+
+#: includes/Customize/Options.php:783
+msgctxt "Customizer section title."
+msgid "Others"
+msgstr ""
+
+#: includes/Customize/Options.php:790
+msgid "Show \"Welcome\" page"
+msgstr ""
+
+#: includes/Customize/Options.php:791
+msgid "Under \"Appearance\" WordPress dashboard menu."
+msgstr ""
+
+#: includes/Customize/Options.php:799
+msgid "Enable mobile navigation"
+msgstr ""
+
+#: includes/Customize/Options.php:800
+msgid ""
+"If your website navigation is very simple and you do not want to use the "
+"mobile navigation functionality, you can disable it here."
+msgstr ""
+
+#: includes/Customize/Options.php:807
+msgid "Footer content"
+msgstr ""
+
+#: includes/Customize/Options.php:808
+msgid "Edit or create your footer content in the Reusable Blocks manager."
+msgstr ""
+
+#: includes/Customize/Options.php:808
+msgid "Open Reusable Blocks manager in a new window now &rarr;"
+msgstr ""
+
+#. translators: %s: Custom post type singular label.
+#: includes/Entry/Navigation.php:93
+#, php-format
+msgid "Previous %s"
+msgstr ""
+
+#. translators: %s: Custom post type singular label.
+#: includes/Entry/Navigation.php:100
+#, php-format
+msgid "Next %s"
+msgstr ""
+
+#: includes/Entry/Navigation.php:107
+msgid "Published in"
+msgstr ""
+
+#: includes/Entry/Summary.php:71
+msgid "This content is password protected."
+msgstr ""
+
+#: includes/Entry/Summary.php:73
+msgid "Enter the password to view it."
+msgstr ""
+
+#: includes/Header/Component.php:288
+msgctxt "Form submit button text."
+msgid "Search"
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:242
+msgid "Featured posts"
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:249
+msgid "Featured posts tag slug"
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:250
+msgid ""
+"3 latest posts assigned to this tag will be displayed as featured posts on "
+"blog page."
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:250
+msgid "Open tags manager in a new window now &rarr;"
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:255
+msgctxt "Form field placeholder. URL slug, no diacritic."
+msgid "featured"
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:262
+msgid "Remove from blog posts"
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:263
+msgid ""
+"Makes sure the featured posts will be removed from posts list on blog page."
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:270
+msgid "Fallback image"
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:271
+msgid "This image will be displayed when post has no featured image set."
+msgstr ""
+
+#: includes/Loop/Pagination.php:105 includes/Loop/Pagination.php:162
+msgctxt "Pagination text (visible): previous."
+msgid "&laquo;"
+msgstr ""
+
+#: includes/Loop/Pagination.php:106 includes/Loop/Pagination.php:163
+msgctxt "Pagination text (hidden): previous."
+msgid "Previous page"
+msgstr ""
+
+#: includes/Loop/Pagination.php:108 includes/Loop/Pagination.php:165
+msgctxt "Pagination text (hidden): next."
+msgid "Next page"
+msgstr ""
+
+#: includes/Loop/Pagination.php:109 includes/Loop/Pagination.php:166
+msgctxt "Pagination text (visible): next."
+msgid "&raquo;"
+msgstr ""
+
+#: includes/Loop/Pagination.php:124
+msgid "Posts navigation"
+msgstr ""
+
+#: includes/Menu/Component.php:58
+msgctxt "Navigational menu location"
+msgid "Primary"
+msgstr ""
+
+#: includes/Menu/Component.php:108 includes/Menu/Component.php:118
+msgid "Skip to menu toggle button"
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:84
+msgid ""
+"Easy to use drag-and-drop page builder for creating complex page layouts."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:84
+msgid "Feel free to use whatever page builder you are familiar with, though."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:84
+msgid "The theme will handle any page builder."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:84
+msgid ""
+"With full block editor compatibility you may not even need any page "
+"builder, actually :)"
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:92
+msgid "Extends block editor with advanced design controls and more features."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:99
+msgid "For installing theme demo content easily."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:106
+msgid "Adding e-commerce functionality."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:113
+msgid ""
+"When using WooCommerce plugin, this plugin helps integrate the e-shop into "
+"theme design."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:165
+msgid "Other useful plugins &raquo;"
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:189
+msgid "Why would you use this plugin?"
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:260
+msgctxt "Plugins."
+msgid "Recommended, not required"
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:263
+msgid ""
+"Please note that these are just recommended plugins, not required ones."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:264
+msgid "Install only those plugins you will use."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:265
+msgctxt "Plugins."
+msgid "Or install the ones you prefer."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:266
+msgid ""
+"For example, if you are not building an eCommerce website, there is no "
+"need to install WooCommerce plugin."
+msgstr ""
+
+#: includes/Setup/Editor.php:136
+msgctxt "Font size."
+msgid "Extra Small"
+msgstr ""
+
+#: includes/Setup/Editor.php:142
+msgctxt "Font size."
+msgid "Small"
+msgstr ""
+
+#: includes/Setup/Editor.php:148
+msgctxt "Font size."
+msgid "Normal"
+msgstr ""
+
+#: includes/Setup/Editor.php:154
+msgctxt "Font size."
+msgid "Large"
+msgstr ""
+
+#: includes/Setup/Editor.php:160
+msgctxt "Font size."
+msgid "Extra Large"
+msgstr ""
+
+#: includes/Setup/Editor.php:166
+msgctxt "Font size."
+msgid "Huge"
+msgstr ""
+
+#: includes/Setup/Media.php:164
+msgctxt "WordPress predefined image size name."
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/Setup/Media.php:165
+msgid "Not used by the theme."
+msgstr ""
+
+#: includes/Setup/Media.php:172
+msgctxt "WordPress predefined image size name."
+msgid "Medium"
+msgstr ""
+
+#: includes/Setup/Media.php:173
+msgid "In image attachment page preview."
+msgstr ""
+
+#: includes/Setup/Media.php:180
+msgctxt "WordPress predefined image size name."
+msgid "Large"
+msgstr ""
+
+#: includes/Setup/Media.php:181
+msgid "In featured posts."
+msgstr ""
+
+#: includes/Setup/Media.php:188
+msgctxt "Image size name"
+msgid "Post thumbnail"
+msgstr ""
+
+#: includes/Setup/Media.php:189
+msgid "Used in posts list."
+msgstr ""
+
+#: includes/Setup/Media.php:189
+msgid "Change this image &rarr;"
+msgstr ""
+
+#: includes/Tool/AMP.php:147
+msgid "New comment(s)"
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:123
+msgctxt "Customizer section title."
+msgid "Page builders"
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:130
+msgid "Enable \"Page builder\" page/post template"
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:131
+msgid ""
+"Use this page/post template when building a content with your page builder "
+"plugin."
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:131
+msgid "You can tweak the desired layout of this template below."
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:131
+msgid "How to assign a page/post template &rarr;"
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:138
+msgid "Page builder layout"
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:139
+msgid "Tweaks content area layout when using \"Page builder\" template."
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:139
+msgid ""
+"As every page builder plugin works differently, set this according to your "
+"needs."
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:142
+msgid "Full width content area, no padding"
+msgstr ""
+
+#: includes/Tool/Page_Builder.php:143
+msgid "Keep content area width, just remove padding"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:119
+msgctxt "Theme starter content"
+msgid "Welcome!"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:131
+msgctxt "Theme starter content"
+msgid "About us"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:138
+msgctxt "Theme starter content"
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:145
+msgctxt "Theme starter content"
+msgid "Contact us"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:168
+msgctxt "Theme starter content"
+msgid "Primary Menu"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:172
+#: includes/Tool/Starter_Content.php:202
+msgctxt "Theme starter content"
+msgid "About"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:178
+#: includes/Tool/Starter_Content.php:208
+msgctxt "Theme starter content"
+msgid "FAQ"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:184
+#: includes/Tool/Starter_Content.php:214
+msgctxt "Theme starter content"
+msgid "Blog"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:190
+#: includes/Tool/Starter_Content.php:220
+msgctxt "Theme starter content"
+msgid "Contact"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:199
+msgctxt "Theme starter content"
+msgid "Footer Links"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:229
+msgctxt "Theme starter content"
+msgid "Social Links"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:232
+msgctxt "Theme starter content"
+msgid "Facebook"
+msgstr ""
+
+#: includes/Tool/Starter_Content.php:236
+msgctxt "Theme starter content"
+msgid "Twitter"
+msgstr ""
+
+#: includes/Welcome/Component.php:137 includes/Welcome/Component.php:138
+msgid "Welcome"
+msgstr ""
+
+#. translators: %1$s: heart icon, %2$s: star icons.
+#: includes/Welcome/Component.php:198
+#, php-format
+msgid "If you %1$s love this theme don't forget to rate it %2$s."
+msgstr ""
+
+#: includes/Welcome/Component.php:205
+msgid "And/or please consider a donation."
+msgstr ""
+
+#: includes/Welcome/Component.php:208
+msgid "Thank you!"
+msgstr ""
+
+#: includes/Welcome/Component.php:224
+msgid ""
+"Have a suggestion for improvement or something is not working as it should?"
+msgstr ""
+
+#: includes/Welcome/Component.php:226
+msgid "&rarr; Contact support"
+msgstr ""
+
+#. translators: Custom page template name.
+#: templates/no-intro-content-only.php:21
+msgid "Content only"
+msgstr ""
+
+#. translators: Custom page template name.
+#: templates/no-intro-header-overlaid-dark.php:20
+msgid "Overlay header (dark)"
+msgstr ""
+
+#. translators: Custom page template name.
+#: templates/no-intro-header-overlaid-light.php:20
+msgid "Overlay header (light)"
+msgstr ""
+
+#. translators: Custom page template name.
+#: templates/no-intro.php:19
+msgid "No intro"
+msgstr ""
+
+#. translators: Custom page template name.
+#: templates/page-builder-header-overlaid-dark.php:21
+msgid "Page builder (overlay header dark)"
+msgstr ""
+
+#. translators: Custom page template name.
+#: templates/page-builder-header-overlaid-light.php:21
+msgid "Page builder (overlay header light)"
+msgstr ""
+
+#. translators: Custom page template name.
+#: templates/page-builder.php:20
+msgid "Page builder"
+msgstr ""
+
+#: templates/parts/accessibility/menu-skip-links.php:18
+msgid "Skip links"
+msgstr ""
+
+#: templates/parts/accessibility/menu-skip-links.php:23
+msgid "Skip to main navigation"
+msgstr ""
+
+#: templates/parts/accessibility/menu-skip-links.php:25
+msgid "Skip to search form"
+msgstr ""
+
+#: templates/parts/accessibility/menu-skip-links.php:26
+msgid "Skip to footer"
+msgstr ""
+
+#: templates/parts/admin/content-starter-contact.php:48
+msgctxt "Theme starter content"
+msgid "Your name"
+msgstr ""
+
+#: templates/parts/admin/content-starter-contact.php:49
+msgctxt "Theme starter content"
+msgid "Your email"
+msgstr ""
+
+#: templates/parts/admin/content-starter-contact.php:50
+msgctxt "Theme starter content"
+msgid "Your message"
+msgstr ""
+
+#: templates/parts/admin/content-starter-contact.php:51
+msgctxt "Theme starter content"
+msgid ""
+"This is only a dummy form placeholder. Use a plugin to add forms to your "
+"website."
+msgstr ""
+
+#: templates/parts/admin/content-starter-excerpt.php:21
+msgctxt "Theme starter content"
+msgid "This is a page/post excerpt text."
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:31
+msgid "Recommended image sizes"
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:34
+msgid ""
+"For the optimal theme display, please, set image sizes recommended below."
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:35
+msgid ""
+"If you already have images uploaded to your website you need to resize "
+"them after changing the sizes here."
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:36
+msgid "Resize images using plugin &rarr;"
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:43
+msgid "Size name"
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:44
+msgid "Size ID"
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:45
+msgid "Size parameters"
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:46
+msgid "Theme usage"
+msgstr ""
+
+#: templates/parts/admin/media-image-sizes.php:63
+msgid ""
+"Additional image size added by the theme. Can not be changed on this page."
+msgstr ""
+
+#. translators: 1: image width, 2: image height, 3: cropped or scaled?
+#: templates/parts/admin/media-image-sizes.php:91
+#, php-format
+msgid "%1$d &times; %2$d, %3$s"
+msgstr ""
+
+#. translators: %s: Theme name.
+#: templates/parts/admin/notice-welcome.php:31
+#, php-format
+msgid "Thank you for installing %s theme!"
+msgstr ""
+
+#: templates/parts/admin/notice-welcome.php:39
+msgid "Visit \"Welcome\" page for information on how to set up your website."
+msgstr ""
+
+#: templates/parts/admin/notice-welcome.php:47
+msgid "Let's Get Started &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:26
+msgid "Create an Accessible Website"
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:29
+msgid "Hierarchy"
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:30
+msgid ""
+"Keep proper headings hierarchy, do not skip heading levels: H2 should be "
+"followed by H3 and so on."
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:32
+msgid "Simplicity"
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:33
+msgid ""
+"Keep your text simple. Paragraphs with more than four lines are more "
+"difficult to read. Use lists and spacing in your content."
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:37
+msgid "Images"
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:38
+msgid ""
+"Adding images to posts and pages makes your content easier to remember."
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:40
+msgid "Alternatives"
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:42
+msgid ""
+"Add alt texts to images (you can do this in the media library or directly "
+"in post editor)."
+msgstr ""
+
+#: templates/parts/admin/welcome-accessibility.php:43
+msgid "Add text alternatives for videos and sound."
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:26
+msgid "Theme demo content"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:29
+msgid "WordPress starter content"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:32
+msgid "This theme contains a predefined starter content."
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:33
+msgid ""
+"So, if your WordPress installation is fresh and you haven't created any "
+"content yet, just open website customizer to preview the starter content."
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:34
+msgid ""
+"Once you publish your customizer settings, the starter content will be "
+"ported into your website automatically."
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:37
+#: templates/parts/admin/welcome-quickstart.php:47
+msgid "Customize your website &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:39
+msgid ""
+"(Note that WordPress starter content works only with fresh install of "
+"WordPress!)"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:43
+msgid "Full theme demo content"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:46
+msgid ""
+"Alternatively you can install a full theme demo content to match the theme "
+"demo website."
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:47
+msgid ""
+"This provides a more complex data and a great fresh start to build your "
+"own website."
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:51
+msgid "Install theme demo content &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:52
+msgid ""
+"Or head over to Appearance &raquo; Import Demo Data to start the import "
+"process."
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:54
+msgid "Use \"One Click Demo Import\" plugin &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:57
+msgid "Preview theme demo &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-features.php:24
+msgid "Theme Features"
+msgstr ""
+
+#: templates/parts/admin/welcome-features.php:27
+msgid "Templates"
+msgstr ""
+
+#: templates/parts/admin/welcome-features.php:29
+msgid "Modify a page or post layout swiftly using templates."
+msgstr ""
+
+#: templates/parts/admin/welcome-features.php:33
+msgid "Block Patterns"
+msgstr ""
+
+#: templates/parts/admin/welcome-features.php:35
+msgid "Create your content faster with block patterns library."
+msgstr ""
+
+#: templates/parts/admin/welcome-features.php:39
+msgid "Block Styles"
+msgstr ""
+
+#: templates/parts/admin/welcome-features.php:41
+msgid "Style your blocks immediately and easily without coding."
+msgstr ""
+
+#: templates/parts/admin/welcome-footer.php:40
+msgid ""
+"You can disable this page in Appearance &rarr; Customize &rarr; Theme "
+"Options &rarr; Others."
+msgstr ""
+
+#. translators: 1: theme name, 2: theme developer link.
+#: templates/parts/admin/welcome-header.php:36
+#, php-format
+msgid "Thank you for using %1$s theme by %2$s!"
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:43
+msgid "Please take time to read the steps below to set up your website."
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:45
+msgid "Read documentation &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:46
+msgid "Contact support &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-promo.php:28
+msgid "Fancy something more?"
+msgstr ""
+
+#: templates/parts/admin/welcome-promo.php:31
+msgid ""
+"Get priority support, more customization options and editor palette "
+"colors, sidebars and widgets, true one click demo content import, and even "
+"more by purchasing a paid theme."
+msgstr ""
+
+#: templates/parts/admin/welcome-promo.php:33
+msgid "Visit WebMan Design website now &rarr;"
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:24
+msgid "Quickstart Guide"
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:27
+msgid "New to WordPress?"
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:28
+msgid ""
+"If you are new to WordPress, please check out the introduction section in "
+"theme documentation."
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:29
+msgid "Get to know WordPress &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:33
+msgid "WordPress settings"
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:35
+msgid ""
+"Make sure you set up your site in \"Settings\" section of the dashboard."
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:36
+msgid ""
+"(Pay special attention to image sizes setup under Settings &rarr; Media.)"
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:38
+msgid "Set up WordPress &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:42
+msgid "Customize your website"
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:44
+msgid "You can customize your website using a live-preview editor."
+msgstr ""
+
+#: templates/parts/admin/welcome-quickstart.php:45
+msgid "Customization changes will go live only after you publish them."
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-bg-icon.php:18
+msgctxt "Block pattern title."
+msgid "Center aligned features with background, icon, text and button"
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-bg-image.php:18
+msgctxt "Block pattern title."
+msgid "Features with background, image, text and button"
+msgstr ""
+
+#: templates/parts/blocks/pattern-footer.php:18
+msgctxt "Block pattern title."
+msgid "Site footer"
+msgstr ""
+
+#: templates/parts/blocks/pattern-heading-hidden-accessibly.php:18
+msgctxt "Block pattern title."
+msgid "Accessibly hidden heading"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-fullscreen.php:18
+msgctxt "Block pattern title."
+msgid "Full-screen page title"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-with-description.php:18
+msgctxt "Block pattern title."
+msgid "Page title with description"
+msgstr ""
+
+#: templates/parts/blocks/pattern-parallax-columns.php:18
+msgctxt "Block pattern title."
+msgid "Parallax columns"
+msgstr ""
+
+#: templates/parts/blocks/pattern-parallax-cover.php:18
+msgctxt "Block pattern title."
+msgid "Parallax image background"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: templates/parts/component/link-more.php:26
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: templates/parts/component/link-more.php:35
+msgid "Continue reading&hellip;"
+msgstr ""
+
+#: templates/parts/component/page-header-404.php:35
+msgid "Oops! That page can not be found."
+msgstr ""
+
+#: templates/parts/component/page-header-none.php:35
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: %s: search query.
+#: templates/parts/component/page-header-search.php:39
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: templates/parts/component/section-breadcrumbs.php:39
+msgid "Breadcrumbs navigation"
+msgstr ""
+
+#: templates/parts/content/content-attachment-image.php:31
+msgctxt "Attachment page image info table caption."
+msgid "Image info"
+msgstr ""
+
+#: templates/parts/content/content-attachment-image.php:36
+msgctxt "Attachment page publish time."
+msgid "Image published on:"
+msgstr ""
+
+#: templates/parts/content/content-attachment-image.php:50
+msgid "Image size:"
+msgstr ""
+
+#: templates/parts/content/content-attachment-image.php:61
+msgid "Image file name:"
+msgstr ""
+
+#: templates/parts/content/content-attachment.php:27
+msgid "Download attachment file:"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: templates/parts/content/content-none.php:28
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: templates/parts/content/content-none.php:41
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: templates/parts/content/content-none.php:50
+msgid ""
+"It seems we can not find what you are looking for. Perhaps searching can "
+"help."
+msgstr ""
+
+#: templates/parts/footer/site-info.php:36
+msgid "Back to top of the page"
+msgstr ""
+
+#. translators: 1: linked CMS name (WordPress), 2: theme name.
+#: templates/parts/footer/site-info.php:49
+#, php-format
+msgid "Powered by %1$s and %2$s."
+msgstr ""
+
+#: templates/parts/footer/site-info.php:50
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: templates/parts/menu/menu-primary.php:30
+msgctxt "Navigational menu."
+msgid "Main menu"
+msgstr ""
+
+#: templates/parts/menu/menu-primary.php:76
+msgctxt "Mobile navigation toggle button title."
+msgid "Menu"
+msgstr ""
+
+#: templates/parts/meta/entry-meta-item-author.php:22
+msgctxt "Post meta info description: author name."
+msgid "Written by:"
+msgstr ""
+
+#. translators: Used between list items, there is a space after the comma.
+#: templates/parts/meta/entry-meta-item-category.php:18
+msgctxt "Categories list separator."
+msgid ", "
+msgstr ""
+
+#: templates/parts/meta/entry-meta-item-category.php:30
+msgctxt "Post meta info description: categories list."
+msgid "Categorized in:"
+msgstr ""
+
+#. translators: %d: number of comments.
+#: templates/parts/meta/entry-meta-item-comments.php:37
+#, php-format
+msgid "Comments: %d"
+msgstr ""
+
+#: templates/parts/meta/entry-meta-item-comments.php:40
+msgctxt "Post meta info description: comments count."
+msgid "Comments:"
+msgstr ""
+
+#: templates/parts/meta/entry-meta-item-date.php:22
+#: templates/parts/meta/entry-meta-item-date.php:23
+msgctxt "Post meta info description: publish date."
+msgid "Posted on:"
+msgstr ""
+
+#: templates/parts/meta/entry-meta-item-date.php:25
+#: templates/parts/meta/entry-meta-item-date.php:26
+msgctxt "Post meta info description: update date."
+msgid "Last updated on:"
+msgstr ""
+
+#. translators: Used between list items, there is a space after the comma.
+#: templates/parts/meta/entry-meta-item-tags.php:18
+msgctxt "Tags list separator."
+msgid ", "
+msgstr ""
+
+#: templates/parts/meta/entry-meta-item-tags.php:33
+msgctxt "Post meta info description: tags list."
+msgid "Tagged as:"
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:18
+msgid "Theme demo information"
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:21
+msgid ""
+"By importing this demo content you get the exact copy of the theme demo "
+"website."
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:22
+msgid "Preview the theme demo website &raquo;"
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:28
+msgid "Media files quality"
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:31
+msgid ""
+"Please note that imported media files (such as images, video and audio "
+"files) are of low quality to prevent copyright infringement."
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:32
+msgid ""
+"Please read \"Credits\" section of theme documentation for reference where "
+"the demo media files were obtained from."
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:35
+msgid "Get media for your website &raquo;"
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:41
+msgid "Install demo required plugins!"
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:44
+msgid ""
+"Please read the information about the theme demo required plugins first."
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:45
+msgid ""
+"If you do not install and activate the demo required plugins, some of the "
+"content will not be imported."
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:47
+msgid ""
+"Read the information before you run the theme demo content import process."
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:48
+msgid "View the list of required plugins &raquo;"
+msgstr ""
+
+#: templates/parts/plugin/content-ocdi-info.php:53
+msgid ""
+"(Note that this set of plugins may differ from plugins recommended under "
+"Appearance &rarr; Install Plugins!)"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:344
+msgid "Install Required Plugins"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:345
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:347
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:350
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: vendor/tgmpa/class-tgm-plugin-activation.php:353
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: vendor/tgmpa/class-tgm-plugin-activation.php:359
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: vendor/tgmpa/class-tgm-plugin-activation.php:365
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: vendor/tgmpa/class-tgm-plugin-activation.php:371
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: vendor/tgmpa/class-tgm-plugin-activation.php:377
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: vendor/tgmpa/class-tgm-plugin-activation.php:383
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural ""
+"The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:388
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:393
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:398
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:402
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:403
+#: vendor/tgmpa/class-tgm-plugin-activation.php:844
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2550
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3597
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:404
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3176
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:405
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2969
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:407
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:409
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:411
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:412
+msgid "Dismiss this notice"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:413
+msgid ""
+"There are one or more required or recommended plugins to install, update "
+"or activate."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:414
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:539
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:540
+msgid "Update Required"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:951
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:951
+#: vendor/tgmpa/class-tgm-plugin-activation.php:954
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:954
+msgid ""
+"The remote plugin package consists of more than one file, but the files "
+"are not packaged in a folder."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:1138
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2965
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: vendor/tgmpa/class-tgm-plugin-activation.php:1999
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2290
+msgid "Required"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2293
+msgid "Recommended"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2309
+msgid "WordPress Repository"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2312
+msgid "External Source"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Pre-Packaged"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2332
+msgid "Not Installed"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2336
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2338
+msgid "Active"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2344
+msgid "Required Update not Available"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2347
+msgid "Requires Update"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2350
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2359
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2405
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2409
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2413
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2417
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2499
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2507
+msgid "Installed version:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2515
+msgid "Minimum required version:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2527
+msgid "Available version:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2550
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2564
+msgid "Plugin"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2565
+msgid "Source"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2566
+msgid "Type"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2570
+msgid "Version"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2571
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2620
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2625
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2631
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2701
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2734
+msgid "Install"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2740
+msgid "Update"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2743
+msgid "Activate"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2774
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2776
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2817
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2819
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2925
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2951
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3175
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3515
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3518
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3524
+msgid ""
+"The installation and activation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3526
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3526
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3534
+msgid "Show Details"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3526
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3534
+msgid "Hide Details"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3527
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3529
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3532
+msgid ""
+"The installation process is starting. This process may take a while on "
+"some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3534
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3535
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3537
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""

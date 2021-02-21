@@ -128,9 +128,10 @@ class Block_Patterns implements Component_Interface {
 				'features-bg-image',
 				'footer',
 				'heading-hidden-accessibly',
-				'image-parallax',
 				'intro-fullscreen',
 				'intro-with-description',
+				'parallax-columns',
+				'parallax-cover',
 			);
 
 
