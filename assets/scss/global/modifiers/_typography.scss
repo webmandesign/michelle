@@ -91,3 +91,17 @@
 	}
 
 	$important_modifiers: null; // Required reset.
+
+// Text shadow
+
+	$important_modifiers: important( 'modifier_text_shadow' );
+
+	.has-dark-text-shadow {
+		text-shadow: 0 1px 1px #000 $important_modifiers;
+	}
+
+	.has-light-text-shadow {
+		text-shadow: 0 1px 1px #fff $important_modifiers;
+	}
+
+	$important_modifiers: null; // Required reset.

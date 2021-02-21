@@ -168,7 +168,7 @@
 		&:nth-child(1) {
 			margin-top: calc( -1 * var(--posts_list_gap) / 2 );
 			margin-bottom: calc( -1 * var(--posts_list_gap) / 2 );
-			box-shadow: 0 0 0 calc( var(--posts_list_gap) / 2 ) var(--color_body_background);
+			// box-shadow: 0 0 0 calc( var(--posts_list_gap) / 2 ) var(--color_body_background);
 			opacity: 1;
 			z-index: 5;
 		}
@@ -201,7 +201,7 @@
 		&:nth-child(1) {
 			margin-top: calc( -1 * var(--posts_list_gap) );
 			margin-bottom: calc( -1 * var(--posts_list_gap) );
-			box-shadow: 0 0 0 var(--posts_list_gap) var(--color_body_background);
+			// box-shadow: 0 0 0 var(--posts_list_gap) var(--color_body_background);
 		}
 
 	}
@@ -226,7 +226,7 @@
 				&:focus-within {
 					margin-top: calc( -1 * var(--posts_list_gap) / 2 );
 					margin-bottom: calc( -1 * var(--posts_list_gap) / 2 );
-					box-shadow: 0 0 0 calc( var(--posts_list_gap) / 2 ) var(--color_body_background);
+					// box-shadow: 0 0 0 calc( var(--posts_list_gap) / 2 ) var(--color_body_background);
 				}
 
 			}
@@ -246,7 +246,7 @@
 				&:focus-within {
 					margin-top: calc( -1 * var(--posts_list_gap) );
 					margin-bottom: calc( -1 * var(--posts_list_gap) );
-					box-shadow: 0 0 0 var(--posts_list_gap) var(--color_body_background);
+					// box-shadow: 0 0 0 var(--posts_list_gap) var(--color_body_background);
 				}
 
 			}

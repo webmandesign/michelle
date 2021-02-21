@@ -156,7 +156,7 @@ class Options implements Component_Interface {
 			$options = array(
 
 				/**
-				 * Site identity: Logo image size
+				 * Site identity: Logo image size.
 				 */
 				'0' . 10 . 'logo' . 10 => array(
 					'id'          => 'custom_logo_dimenstions_info',

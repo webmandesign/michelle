@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-21 03:49+0100\n"
+"POT-Creation-Date: 2021-02-21 18:37+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -512,6 +512,48 @@ msgstr ""
 msgid "Published in"
 msgstr ""
 
+#: includes/Entry/Page_Template.php:163
+msgid "Logo variation: light"
+msgstr ""
+
+#: includes/Entry/Page_Template.php:164
+msgid ""
+"This logo image will be displayed in overlaid header with light color."
+msgstr ""
+
+#: includes/Entry/Page_Template.php:172 includes/Entry/Page_Template.php:177
+#: includes/Entry/Page_Template.php:221 includes/Entry/Page_Template.php:226
+msgid "Select logo"
+msgstr ""
+
+#: includes/Entry/Page_Template.php:173 includes/Entry/Page_Template.php:222
+msgid "Change logo"
+msgstr ""
+
+#: includes/Entry/Page_Template.php:174 includes/Entry/Page_Template.php:223
+msgid "Remove"
+msgstr ""
+
+#: includes/Entry/Page_Template.php:175 includes/Entry/Page_Template.php:224
+msgid "Default"
+msgstr ""
+
+#: includes/Entry/Page_Template.php:176 includes/Entry/Page_Template.php:225
+msgid "No logo selected"
+msgstr ""
+
+#: includes/Entry/Page_Template.php:178 includes/Entry/Page_Template.php:227
+msgid "Choose logo"
+msgstr ""
+
+#: includes/Entry/Page_Template.php:212
+msgid "Logo variation: dark"
+msgstr ""
+
+#: includes/Entry/Page_Template.php:213
+msgid "This logo image will be displayed in overlaid header with dark color."
+msgstr ""
+
 #: includes/Entry/Summary.php:71
 msgid "This content is password protected."
 msgstr ""
@@ -731,7 +773,7 @@ msgid "Post thumbnail"
 msgstr ""
 
 #: includes/Setup/Media.php:189
-msgid "Used in posts list."
+msgid "In posts list."
 msgstr ""
 
 #: includes/Setup/Media.php:189
@@ -1197,10 +1239,16 @@ msgstr ""
 msgid ""
 "Get priority support, more customization options and editor palette "
 "colors, sidebars and widgets, true one click demo content import, and even "
-"more by purchasing a paid theme."
+"more by purchasing one of my paid themes."
 msgstr ""
 
 #: templates/parts/admin/welcome-promo.php:33
+msgid ""
+"(Note that the theme you are using now is fully functional and free "
+"without any paid upgrade.)"
+msgstr ""
+
+#: templates/parts/admin/welcome-promo.php:35
 msgid "Visit WebMan Design website now &rarr;"
 msgstr ""
 

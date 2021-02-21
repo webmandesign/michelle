@@ -41,10 +41,6 @@ class Component implements Component_Interface {
 					Beaver_Builder\Component::init();
 				}
 
-				if ( function_exists( 'bcn_display' ) ) {
-					Breadcrumb_NavXT\Component::init();
-				}
-
 	} // /init
 
 }

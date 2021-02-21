@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-21 03:49+0100\n"
-"PO-Revision-Date: 2021-02-21 03:49+0100\n"
+"POT-Creation-Date: 2021-02-21 18:37+0100\n"
+"PO-Revision-Date: 2021-02-21 18:45+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -33,13 +33,13 @@ msgstr "Jeden komentár k &ldquo;%1$s&rdquo;"
 
 #. translators: 1: comment count number, 2: title.
 #: comments.php:54
-#, fuzzy, php-format
+#, php-format
 msgctxt "Comments list title."
 msgid "%1$d thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$d thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$d komentár k &ldquo;%2$s&rdquo;"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "%1$d komentáre k &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$d komentárov k &ldquo;%2$s&rdquo;"
 
 #: comments.php:92
 #, fuzzy
@@ -90,32 +90,32 @@ msgstr "Aktualizujte a skúste to znova."
 #: includes/Content/Block_Styles.php:99
 msgctxt "Block style label."
 msgid "Drop shadow"
-msgstr ""
+msgstr "Tieň"
 
 #: includes/Content/Block_Styles.php:112
 msgctxt "Block style label."
 msgid "Overlap gradient"
-msgstr ""
+msgstr "Postupné prekrytie"
 
 #: includes/Content/Block_Styles.php:119
 msgctxt "Block style label."
 msgid "Hide caption"
-msgstr ""
+msgstr "Skryť popis"
 
 #: includes/Content/Block_Styles.php:126
 msgctxt "Block style label."
 msgid "Inner shadow"
-msgstr ""
+msgstr "Vnútorný tieň"
 
 #: includes/Content/Block_Styles.php:135
 msgctxt "Block style label."
 msgid "Media on top"
-msgstr ""
+msgstr "Médiá hore"
 
 #: includes/Content/Block_Styles.php:142
 msgctxt "Block style label."
 msgid "Outline items"
-msgstr ""
+msgstr "Obrysové položky"
 
 #: includes/Content/Block_Styles.php:149
 #, fuzzy
@@ -204,7 +204,7 @@ msgstr "zmenšený"
 
 #: includes/Customize/Options.php:147
 msgid "Select a block"
-msgstr ""
+msgstr "Zvoliť blok"
 
 #: includes/Customize/Options.php:166
 #, fuzzy
@@ -298,11 +298,11 @@ msgstr "Záhlavie"
 
 #: includes/Customize/Options.php:369
 msgid "Site navigation"
-msgstr ""
+msgstr "Navigácia webstránky"
 
 #: includes/Customize/Options.php:370
 msgid "Primary menu location sub-menu colors."
-msgstr ""
+msgstr "Farby vnoreného menu primárneho menu umiestnenia."
 
 #: includes/Customize/Options.php:407
 #, fuzzy
@@ -311,7 +311,7 @@ msgstr "Formulár vyhľadávania"
 
 #: includes/Customize/Options.php:408
 msgid "Pop-up search form colors."
-msgstr ""
+msgstr "Farby vyskakovacieho formulára vyhľadávania."
 
 #: includes/Customize/Options.php:449
 #, fuzzy
@@ -360,7 +360,7 @@ msgstr "Šírka obsahu stránky"
 
 #: includes/Customize/Options.php:548
 msgid "This width is applied on post and page actual content elements."
-msgstr ""
+msgstr "Táto šírka sa aplikuje na samotné prvky obsahu stránky."
 
 #: includes/Customize/Options.php:550
 #, fuzzy
@@ -388,11 +388,11 @@ msgstr ""
 
 #: includes/Customize/Options.php:606
 msgid "Header font size in px"
-msgstr ""
+msgstr "Veľkosť písma hlavičky v px"
 
 #: includes/Customize/Options.php:628
 msgid "Footer font size in px"
-msgstr ""
+msgstr "Veľkosť písma pätičky v px"
 
 #: includes/Customize/Options.php:652
 #, fuzzy
@@ -437,11 +437,11 @@ msgstr "Typ písma názvu stránky"
 
 #: includes/Customize/Options.php:710
 msgid "Alternative font"
-msgstr ""
+msgstr "Alternatívne písmo"
 
 #: includes/Customize/Options.php:711
 msgid "Used for quotes, for example."
-msgstr ""
+msgstr "Používa sa napríklad v citáciách."
 
 #: includes/Customize/Options.php:724
 #, fuzzy
@@ -512,25 +512,28 @@ msgstr "Články"
 
 #: includes/Customize/Options.php:762
 msgid "Post thumbnail aspect ratio"
-msgstr ""
+msgstr "Pomer strán prezentačného obrázka príspevku"
 
 #: includes/Customize/Options.php:763
 msgid ""
 "Note that if you already have images uploaded to your website, you need to "
 "regenerate their sizes to apply this change."
 msgstr ""
+"Upozorňujeme, že ak už máte obrázky na webstránke nahrané, musíte "
+"regenerovať ich veľkosti, aby sa táto zmena aplikovala."
 
 #: includes/Customize/Options.php:763
 msgid "You can use a plugin for that &rarr;"
-msgstr ""
+msgstr "Môžete na to využiť plugin &rarr;"
 
 #: includes/Customize/Options.php:763
 msgid "(This option can not be previewed here, only on your live website.)"
 msgstr ""
+"(Náhľad tohto nastavenia je možné prezrieť iba na živej webstránke, nie tu.)"
 
 #: includes/Customize/Options.php:766
 msgid "Keep original image aspect ratio"
-msgstr ""
+msgstr "Zachovať pôvodný pomer strán obrázka"
 
 #: includes/Customize/Options.php:783
 #, fuzzy
@@ -570,10 +573,12 @@ msgstr "Obsah pätičky"
 #: includes/Customize/Options.php:808
 msgid "Edit or create your footer content in the Reusable Blocks manager."
 msgstr ""
+"Upravte alebo vytvorte obsah pätičky v správcovi opakovane použiteľných "
+"blokov."
 
 #: includes/Customize/Options.php:808
 msgid "Open Reusable Blocks manager in a new window now &rarr;"
-msgstr ""
+msgstr "Otvoriť správcu opakovane použiteľných blokov v novom okne &rarr;"
 
 #. translators: %s: Custom post type singular label.
 #: includes/Entry/Navigation.php:93
@@ -591,6 +596,49 @@ msgstr "Nasledujúci %s"
 #, fuzzy
 msgid "Published in"
 msgstr "Uverejnené v"
+
+#: includes/Entry/Page_Template.php:163
+msgid "Logo variation: light"
+msgstr "Variácia loga: svetlé"
+
+#: includes/Entry/Page_Template.php:164
+msgid "This logo image will be displayed in overlaid header with light color."
+msgstr "Tento obrázok loga sa zobrazí v prekrytej hlavičke svetlej farby."
+
+#: includes/Entry/Page_Template.php:172 includes/Entry/Page_Template.php:177
+#: includes/Entry/Page_Template.php:221 includes/Entry/Page_Template.php:226
+msgid "Select logo"
+msgstr "Vybrať logo"
+
+#: includes/Entry/Page_Template.php:173 includes/Entry/Page_Template.php:222
+msgid "Change logo"
+msgstr "Zmeniť logo"
+
+#: includes/Entry/Page_Template.php:174 includes/Entry/Page_Template.php:223
+#, fuzzy
+msgid "Remove"
+msgstr "Odstrániť"
+
+#: includes/Entry/Page_Template.php:175 includes/Entry/Page_Template.php:224
+#, fuzzy
+msgid "Default"
+msgstr "Pôvodná"
+
+#: includes/Entry/Page_Template.php:176 includes/Entry/Page_Template.php:225
+msgid "No logo selected"
+msgstr "Logo nebolo vybrané"
+
+#: includes/Entry/Page_Template.php:178 includes/Entry/Page_Template.php:227
+msgid "Choose logo"
+msgstr "Zvoliť logo"
+
+#: includes/Entry/Page_Template.php:212
+msgid "Logo variation: dark"
+msgstr "Variácia loga: tmavé"
+
+#: includes/Entry/Page_Template.php:213
+msgid "This logo image will be displayed in overlaid header with dark color."
+msgstr "Tento obrázok loga sa zobrazí v prekrytej hlavičke tmavej farby."
 
 #: includes/Entry/Summary.php:71
 #, fuzzy
@@ -610,43 +658,49 @@ msgstr "Vyhľadávanie"
 
 #: includes/Loop/Featured_Posts.php:242
 msgid "Featured posts"
-msgstr ""
+msgstr "Odporúčané príspevky"
 
 #: includes/Loop/Featured_Posts.php:249
 msgid "Featured posts tag slug"
-msgstr ""
+msgstr "Slug značky odporúčaných príspevkov"
 
 #: includes/Loop/Featured_Posts.php:250
 msgid ""
 "3 latest posts assigned to this tag will be displayed as featured posts on "
 "blog page."
 msgstr ""
+"3 najnovšie príspevky priradené k tejto značke sa zobrazia ako odporúčané "
+"príspevky na stránke blogu."
 
 #: includes/Loop/Featured_Posts.php:250
 msgid "Open tags manager in a new window now &rarr;"
-msgstr ""
+msgstr "Otvoriť správcu značiek v novom okne &rarr;"
 
 #: includes/Loop/Featured_Posts.php:255
 msgctxt "Form field placeholder. URL slug, no diacritic."
 msgid "featured"
-msgstr ""
+msgstr "odporucane"
 
 #: includes/Loop/Featured_Posts.php:262
 msgid "Remove from blog posts"
-msgstr ""
+msgstr "Odstrániť z blogových príspevkov"
 
 #: includes/Loop/Featured_Posts.php:263
 msgid ""
 "Makes sure the featured posts will be removed from posts list on blog page."
 msgstr ""
+"Zabezpečuje, aby sa odporúčané príspevky odstránili zo zoznamu príspevkov na "
+"stránke blogu."
 
 #: includes/Loop/Featured_Posts.php:270
 msgid "Fallback image"
-msgstr ""
+msgstr "Záložný obrázok"
 
 #: includes/Loop/Featured_Posts.php:271
 msgid "This image will be displayed when post has no featured image set."
 msgstr ""
+"Tento obrázok sa zobrazí, keď príspevok nemá nastavený žiadny prezentačný "
+"obrázok."
 
 #: includes/Loop/Pagination.php:105 includes/Loop/Pagination.php:162
 #, fuzzy
@@ -828,7 +882,7 @@ msgstr "Prezentačný obrázok"
 
 #: includes/Setup/Media.php:165
 msgid "Not used by the theme."
-msgstr ""
+msgstr "Nepoužíva sa v téme."
 
 #: includes/Setup/Media.php:172
 #, fuzzy
@@ -849,20 +903,20 @@ msgstr "Veľký"
 
 #: includes/Setup/Media.php:181
 msgid "In featured posts."
-msgstr ""
+msgstr "V odporúčaných príspevkoch."
 
 #: includes/Setup/Media.php:188
 msgctxt "Image size name"
 msgid "Post thumbnail"
-msgstr ""
+msgstr "Prezentačný obrázok príspevku"
 
 #: includes/Setup/Media.php:189
-msgid "Used in posts list."
-msgstr ""
+msgid "In posts list."
+msgstr "V zozname príspevkov."
 
 #: includes/Setup/Media.php:189
 msgid "Change this image &rarr;"
-msgstr ""
+msgstr "Zmeniť tento obrázok &rarr;"
 
 #: includes/Tool/AMP.php:147
 #, fuzzy
@@ -877,21 +931,21 @@ msgstr "Editory stránok"
 
 #: includes/Tool/Page_Builder.php:130
 msgid "Enable \"Page builder\" page/post template"
-msgstr ""
+msgstr "Povoliť šablónu \"Editor stránok\""
 
 #: includes/Tool/Page_Builder.php:131
 msgid ""
 "Use this page/post template when building a content with your page builder "
 "plugin."
-msgstr ""
+msgstr "Použite túto šablónu pri tvorbe obsahu pluginom editora stránok."
 
 #: includes/Tool/Page_Builder.php:131
 msgid "You can tweak the desired layout of this template below."
-msgstr ""
+msgstr "Požadované rozloženie tejto šablóny môžete vyladiť nižšie."
 
 #: includes/Tool/Page_Builder.php:131
 msgid "How to assign a page/post template &rarr;"
-msgstr ""
+msgstr "Ako použiť šablóny &rarr;"
 
 #: includes/Tool/Page_Builder.php:138
 #, fuzzy
@@ -900,7 +954,7 @@ msgstr "Rozloženie editora stránok"
 
 #: includes/Tool/Page_Builder.php:139
 msgid "Tweaks content area layout when using \"Page builder\" template."
-msgstr ""
+msgstr "Vyladí rozloženie obsahu pri použití šablóny \"Editor stránok\"."
 
 #: includes/Tool/Page_Builder.php:139
 #, fuzzy
@@ -1011,7 +1065,7 @@ msgstr "Ak sa vám %1$s páči táto téma, nezabudnite ju hodnotiť %2$s."
 
 #: includes/Welcome/Component.php:205
 msgid "And/or please consider a donation."
-msgstr ""
+msgstr "Zvážte prosím podporu."
 
 #: includes/Welcome/Component.php:208
 #, fuzzy
@@ -1038,12 +1092,12 @@ msgstr "Iba obsah"
 #. translators: Custom page template name.
 #: templates/no-intro-header-overlaid-dark.php:20
 msgid "Overlay header (dark)"
-msgstr ""
+msgstr "Prekrytá hlavička (tmavá)"
 
 #. translators: Custom page template name.
 #: templates/no-intro-header-overlaid-light.php:20
 msgid "Overlay header (light)"
-msgstr ""
+msgstr "Prekrytá hlavička (svetlá)"
 
 #. translators: Custom page template name.
 #: templates/no-intro.php:19
@@ -1054,12 +1108,12 @@ msgstr "Bez úvodu"
 #. translators: Custom page template name.
 #: templates/page-builder-header-overlaid-dark.php:21
 msgid "Page builder (overlay header dark)"
-msgstr ""
+msgstr "Editor stránok (prekrytá hlavička tmavá)"
 
 #. translators: Custom page template name.
 #: templates/page-builder-header-overlaid-light.php:21
 msgid "Page builder (overlay header light)"
-msgstr ""
+msgstr "Editor stránok (prekrytá hlavička svetlá)"
 
 #. translators: Custom page template name.
 #: templates/page-builder.php:20
@@ -1079,7 +1133,7 @@ msgstr "Preskočiť na hlavnú navigáciu"
 
 #: templates/parts/accessibility/menu-skip-links.php:25
 msgid "Skip to search form"
-msgstr ""
+msgstr "Preskočiť na formulár vyhľadávania"
 
 #: templates/parts/accessibility/menu-skip-links.php:26
 #, fuzzy
@@ -1128,17 +1182,19 @@ msgstr "Odporúčané rozmery obrázkov"
 #: templates/parts/admin/media-image-sizes.php:34
 msgid ""
 "For the optimal theme display, please, set image sizes recommended below."
-msgstr ""
+msgstr "Pre optimálne zobrazenie témy nastavte odporúčané veľkosti obrázkov."
 
 #: templates/parts/admin/media-image-sizes.php:35
 msgid ""
 "If you already have images uploaded to your website you need to resize them "
 "after changing the sizes here."
 msgstr ""
+"Ak už máte obrázky nahrané na vašej webovej stránke, musíte ich po zmene "
+"veľkostí regenerovať."
 
 #: templates/parts/admin/media-image-sizes.php:36
 msgid "Resize images using plugin &rarr;"
-msgstr ""
+msgstr "Regenerovať obrázky pomocou pluginu &rarr;"
 
 #: templates/parts/admin/media-image-sizes.php:43
 #, fuzzy
@@ -1194,11 +1250,11 @@ msgstr "Začíname &raquo;"
 
 #: templates/parts/admin/welcome-accessibility.php:26
 msgid "Create an Accessible Website"
-msgstr ""
+msgstr "Vytvorte prístupnú webstránku"
 
 #: templates/parts/admin/welcome-accessibility.php:29
 msgid "Hierarchy"
-msgstr ""
+msgstr "Hierarchia"
 
 #: templates/parts/admin/welcome-accessibility.php:30
 #, fuzzy
@@ -1211,7 +1267,7 @@ msgstr ""
 
 #: templates/parts/admin/welcome-accessibility.php:32
 msgid "Simplicity"
-msgstr ""
+msgstr "Jednoduchosť"
 
 #: templates/parts/admin/welcome-accessibility.php:33
 #, fuzzy
@@ -1235,7 +1291,7 @@ msgstr ""
 
 #: templates/parts/admin/welcome-accessibility.php:40
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternatívy"
 
 #: templates/parts/admin/welcome-accessibility.php:42
 #, fuzzy
@@ -1349,7 +1405,7 @@ msgstr "Ukážka dema témy &raquo;"
 
 #: templates/parts/admin/welcome-features.php:24
 msgid "Theme Features"
-msgstr ""
+msgstr "Vybrané vlastnosti témy"
 
 #: templates/parts/admin/welcome-features.php:27
 #, fuzzy
@@ -1358,23 +1414,23 @@ msgstr "Šablóny"
 
 #: templates/parts/admin/welcome-features.php:29
 msgid "Modify a page or post layout swiftly using templates."
-msgstr ""
+msgstr "Upravte rozloženie strany alebo príspevku rýchlo pomocou šablón."
 
 #: templates/parts/admin/welcome-features.php:33
 msgid "Block Patterns"
-msgstr ""
+msgstr "Vzory blokov"
 
 #: templates/parts/admin/welcome-features.php:35
 msgid "Create your content faster with block patterns library."
-msgstr ""
+msgstr "Vytvorte obsah rýchlejšie pomocou knižnice vzorov blokov."
 
 #: templates/parts/admin/welcome-features.php:39
 msgid "Block Styles"
-msgstr ""
+msgstr "Štýly blokov"
 
 #: templates/parts/admin/welcome-features.php:41
 msgid "Style your blocks immediately and easily without coding."
-msgstr ""
+msgstr "Naštýlujte bloky okamžite a jednoducho bez kódovania."
 
 #: templates/parts/admin/welcome-footer.php:40
 #, fuzzy
@@ -1410,18 +1466,29 @@ msgstr "Kontaktovať podporu &raquo;"
 
 #: templates/parts/admin/welcome-promo.php:28
 msgid "Fancy something more?"
-msgstr ""
+msgstr "Máte chuť na niečo viac?"
 
 #: templates/parts/admin/welcome-promo.php:31
 msgid ""
 "Get priority support, more customization options and editor palette colors, "
 "sidebars and widgets, true one click demo content import, and even more by "
-"purchasing a paid theme."
+"purchasing one of my paid themes."
 msgstr ""
+"Získajte prioritnú podporu, viac možností prispôsobenia a farieb palety "
+"editora, bočné panely a widgety, skutočný import demo obsahu jedným "
+"kliknutím a ešte viac zakúpením niektorej z mojich platených tém."
 
 #: templates/parts/admin/welcome-promo.php:33
-msgid "Visit WebMan Design website now &rarr;"
+msgid ""
+"(Note that the theme you are using now is fully functional and free without "
+"any paid upgrade.)"
 msgstr ""
+"(Téma, ktorú práve teraz používate, je plne funkčná a bezplatná, bez "
+"akejkoľvek platenej inovácie alebo nadstavby.)"
+
+#: templates/parts/admin/welcome-promo.php:35
+msgid "Visit WebMan Design website now &rarr;"
+msgstr "Navštíviť webstránku WebMan Design &rarr;"
 
 #: templates/parts/admin/welcome-quickstart.php:24
 #, fuzzy
@@ -1489,42 +1556,42 @@ msgstr "Zmeny prispôsobenia sa aplikujú až keď ich publikujete."
 #: templates/parts/blocks/pattern-features-bg-icon.php:18
 msgctxt "Block pattern title."
 msgid "Center aligned features with background, icon, text and button"
-msgstr ""
+msgstr "Vlastnosti zarovnané do stredu s pozadím, ikonkou, textom a tlačidlom"
 
 #: templates/parts/blocks/pattern-features-bg-image.php:18
 msgctxt "Block pattern title."
 msgid "Features with background, image, text and button"
-msgstr ""
+msgstr "Vlastnosti s pozadím, obrázkom, textom a tlačidlom"
 
 #: templates/parts/blocks/pattern-footer.php:18
 msgctxt "Block pattern title."
 msgid "Site footer"
-msgstr ""
+msgstr "Pätička"
 
 #: templates/parts/blocks/pattern-heading-hidden-accessibly.php:18
 msgctxt "Block pattern title."
 msgid "Accessibly hidden heading"
-msgstr ""
+msgstr "Prístupne skrytý nadpis"
 
 #: templates/parts/blocks/pattern-intro-fullscreen.php:18
 msgctxt "Block pattern title."
 msgid "Full-screen page title"
-msgstr ""
+msgstr "Nadpis stránky na celú obrazovku"
 
 #: templates/parts/blocks/pattern-intro-with-description.php:18
 msgctxt "Block pattern title."
 msgid "Page title with description"
-msgstr ""
+msgstr "Nadpis stránky s popisom"
 
 #: templates/parts/blocks/pattern-parallax-columns.php:18
 msgctxt "Block pattern title."
 msgid "Parallax columns"
-msgstr ""
+msgstr "Paralaxové stĺpce"
 
 #: templates/parts/blocks/pattern-parallax-cover.php:18
 msgctxt "Block pattern title."
 msgid "Parallax image background"
-msgstr ""
+msgstr "Paralaxový obrázok na pozadí"
 
 #. translators: %s: Name of current post
 #: templates/parts/component/link-more.php:26
@@ -1611,7 +1678,7 @@ msgstr "Nemôžeme nájsť, čo hľadáte. Skúste vyhľadávacie pole."
 
 #: templates/parts/footer/site-info.php:36
 msgid "Back to top of the page"
-msgstr ""
+msgstr "Späť na začiatok stránky"
 
 #. translators: 1: linked CMS name (WordPress), 2: theme name.
 #: templates/parts/footer/site-info.php:49
@@ -1646,7 +1713,7 @@ msgstr "Autor:"
 #: templates/parts/meta/entry-meta-item-category.php:18
 msgctxt "Categories list separator."
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: templates/parts/meta/entry-meta-item-category.php:30
 #, fuzzy
@@ -1684,7 +1751,7 @@ msgstr "Naposledy aktualizované:"
 #: templates/parts/meta/entry-meta-item-tags.php:18
 msgctxt "Tags list separator."
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: templates/parts/meta/entry-meta-item-tags.php:33
 #, fuzzy
@@ -1811,25 +1878,25 @@ msgstr "Chyba v API modulov."
 
 #. translators: 1: plugin name(s).
 #: vendor/tgmpa/class-tgm-plugin-activation.php:353
-#, fuzzy, php-format
+#, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] "Táto téma vyžaduje nasledujúci modul: %1$s."
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Táto téma vyžaduje nasledujúci plugin: %1$s."
+msgstr[1] "Táto téma vyžaduje nasledujúce pluginy: %1$s."
+msgstr[2] "Táto téma vyžaduje nasledujúce pluginy: %1$s."
 
 #. translators: 1: plugin name(s).
 #: vendor/tgmpa/class-tgm-plugin-activation.php:359
-#, fuzzy, php-format
+#, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "Táto téma odporúča nasledujúci modul: %1$s."
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Táto téma odporúča nasledujúci plugin: %1$s."
+msgstr[1] "Táto téma odporúča nasledujúce pluginy: %1$s."
+msgstr[2] "Táto téma odporúča nasledujúce pluginy: %1$s."
 
 #. translators: 1: plugin name(s).
 #: vendor/tgmpa/class-tgm-plugin-activation.php:365
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
 "maximum compatibility with this theme: %1$s."
@@ -1837,61 +1904,62 @@ msgid_plural ""
 "The following plugins need to be updated to their latest version to ensure "
 "maximum compatibility with this theme: %1$s."
 msgstr[0] ""
-"Tento modul je nutné aktualizovať pre zaručenie maximálnej kompatibility s "
+"Tento plugin je nutné aktualizovať pre zaručenie maximálnej kompatibility s "
 "témou: %1$s."
 msgstr[1] ""
+"Tieto pluginy je nutné aktualizovať pre zaručenie maximálnej kompatibility s "
+"témou: %1$s."
 msgstr[2] ""
+"Tieto pluginy je nutné aktualizovať pre zaručenie maximálnej kompatibility s "
+"témou: %1$s."
 
 #. translators: 1: plugin name(s).
 #: vendor/tgmpa/class-tgm-plugin-activation.php:371
-#, fuzzy, php-format
+#, php-format
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] "Je k dispozícii aktualizácia pre: %1$s."
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "Sú k dispozícii aktualizácie pre: %1$s."
+msgstr[2] "Sú k dispozícii aktualizácie pre: %1$s."
 
 #. translators: 1: plugin name(s).
 #: vendor/tgmpa/class-tgm-plugin-activation.php:377
-#, fuzzy, php-format
+#, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] "Tento vyžadovaný modul je v súčasnosti neaktívny: %1$s."
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Tento vyžadovaný plugin je v súčasnosti neaktívny: %1$s."
+msgstr[1] "Tieto vyžadované pluginy sú v súčasnosti neaktívne: %1$s."
+msgstr[2] "Tieto vyžadované pluginy sú v súčasnosti neaktívne: %1$s."
 
 #. translators: 1: plugin name(s).
 #: vendor/tgmpa/class-tgm-plugin-activation.php:383
-#, fuzzy, php-format
+#, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] "Tento odporúčaný modul je v súčasnosti neaktívny: %1$s."
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Tento odporúčaný plugin je v súčasnosti neaktívny: %1$s."
+msgstr[1] "Tieto odporúčané pluginy sú v súčasnosti neaktívne: %1$s."
+msgstr[2] "Tieto odporúčané pluginy sú v súčasnosti neaktívne: %1$s."
 
 #: vendor/tgmpa/class-tgm-plugin-activation.php:388
-#, fuzzy
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
-msgstr[0] "Spustiť inštaláciu modulu"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Spustiť inštaláciu pluginu"
+msgstr[1] "Spustiť inštaláciu pluginov"
+msgstr[2] "Spustiť inštaláciu pluginov"
 
 #: vendor/tgmpa/class-tgm-plugin-activation.php:393
-#, fuzzy
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
-msgstr[0] "Spustiť aktualizáciu modulu"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Spustiť aktualizáciu pluginu"
+msgstr[1] "Spustiť aktualizáciu pluginov"
+msgstr[2] "Spustiť aktualizáciu pluginov"
 
 #: vendor/tgmpa/class-tgm-plugin-activation.php:398
-#, fuzzy
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
-msgstr[0] "Spustiť aktiváciu modulu"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Spustiť aktiváciu pluginu"
+msgstr[1] "Spustiť aktiváciu pluginov"
+msgstr[2] "Spustiť aktiváciu pluginov"
 
 #: vendor/tgmpa/class-tgm-plugin-activation.php:402
 #, fuzzy
@@ -1914,12 +1982,11 @@ msgstr "Modul bol úspešne aktivovaný."
 
 #: vendor/tgmpa/class-tgm-plugin-activation.php:405
 #: vendor/tgmpa/class-tgm-plugin-activation.php:2969
-#, fuzzy
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
-msgstr[0] "Tento modul bol úspešne aktivovaný:"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Tento plugin bol úspešne aktivovaný:"
+msgstr[1] "Tieto pluginy boli úspešne aktivované:"
+msgstr[2] "Tieto pluginy boli úspešne aktivované:"
 
 #. translators: 1: plugin name.
 #: vendor/tgmpa/class-tgm-plugin-activation.php:407
@@ -2005,7 +2072,7 @@ msgstr ""
 #: vendor/tgmpa/class-tgm-plugin-activation.php:2965
 msgctxt "plugin A *and* plugin B"
 msgid "and"
-msgstr ""
+msgstr "a"
 
 #. translators: %s: version number
 #: vendor/tgmpa/class-tgm-plugin-activation.php:1999
@@ -2077,40 +2144,40 @@ msgstr "%1$s, %2$s"
 
 #. translators: 1: number of plugins.
 #: vendor/tgmpa/class-tgm-plugin-activation.php:2405
-#, fuzzy, php-format
+#, php-format
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] "Všetok <span class=\"count\">(%s)</span>"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "Všetky <span class=\"count\">(%s)</span>"
+msgstr[2] "Všetky <span class=\"count\">(%s)</span>"
 
 #. translators: 1: number of plugins.
 #: vendor/tgmpa/class-tgm-plugin-activation.php:2409
-#, fuzzy, php-format
+#, php-format
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] "Inštalovať <span class=\"count\">(%s)</span>"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "Inštalovať <span class=\"count\">(%s)</span>"
+msgstr[2] "Inštalovať <span class=\"count\">(%s)</span>"
 
 #. translators: 1: number of plugins.
 #: vendor/tgmpa/class-tgm-plugin-activation.php:2413
-#, fuzzy, php-format
+#, php-format
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] "Aktualizácia k dispozícii <span class=\"count\">(%s)</span>"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "Aktualizácie k dispozícii <span class=\"count\">(%s)</span>"
+msgstr[2] "Aktualizácie k dispozícii <span class=\"count\">(%s)</span>"
 
 #. translators: 1: number of plugins.
 #: vendor/tgmpa/class-tgm-plugin-activation.php:2417
-#, fuzzy, php-format
+#, php-format
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] "Aktivovať <span class=\"count\">(%s)</span>"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "Aktivovať <span class=\"count\">(%s)</span>"
+msgstr[2] "Aktivovať <span class=\"count\">(%s)</span>"
 
 #: vendor/tgmpa/class-tgm-plugin-activation.php:2499
 #, fuzzy
@@ -2320,3 +2387,12 @@ msgstr "Všetky inštalácie boli skompletizované."
 #, fuzzy, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Inštalácia modulu %1$s (%2$d/%3$d)"
+
+#~ msgid ""
+#~ "Get priority support, more customization options and editor palette "
+#~ "colors, sidebars and widgets, true one click demo content import, and "
+#~ "even more by purchasing a paid theme."
+#~ msgstr ""
+#~ "Získajte prioritnú podporu, viac možností prispôsobenia a farieb palety "
+#~ "editora, bočné panely a widgety, skutočný import demo obsahu jedným "
+#~ "kliknutím a ešte viac zakúpením platenej témy."

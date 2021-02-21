@@ -70,6 +70,15 @@
 		z-index: 100;
 	}
 
+	&-custom_logo_light,
+	&-custom_logo_dark {
+
+		+ .customize-partial-edit-shortcut-custom_logo {
+			display: none;
+		}
+
+	}
+
 }
 
 .site-branding,

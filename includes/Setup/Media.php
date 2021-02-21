@@ -186,7 +186,7 @@ class Media implements Component_Interface {
 
 				'michelle-thumbnail' => array(
 					'name'        => esc_html_x( 'Post thumbnail', 'Image size name', 'michelle' ),
-					'description' => esc_html__( 'Used in posts list.', 'michelle' ) . ' <a href="' . esc_url( admin_url( 'customize.php?autofocus[control]=thumbnail_aspect_ratio' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Change this image &rarr;', 'michelle' ) . '</a>',
+					'description' => esc_html__( 'In posts list.', 'michelle' ) . ' <a href="' . esc_url( admin_url( 'customize.php?autofocus[control]=thumbnail_aspect_ratio' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Change this image &rarr;', 'michelle' ) . '</a>',
 					'width'       => $thumbnail_size[0],
 					'height'      => $thumbnail_size[1],
 					'crop'        => $thumbnail_size[2],
