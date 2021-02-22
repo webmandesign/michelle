@@ -14,11 +14,6 @@
 		padding-right: 2em;
 	}
 
-	@include media( map_get( $breakpoint, 'xl' ) ) {
-		padding-left: 3em;
-		padding-right: 3em;
-	}
-
 	&:not(.is-style-solid-color) {
 		border-top: 2px solid;
 		border-bottom: 2px solid;
@@ -33,11 +28,6 @@
 	}
 
 	&.is-style-solid-color {
-
-		@include media( map_get( $breakpoint, 'xl' ) ) {
-			padding-top: 3em;
-			padding-bottom: 3em;
-		}
 
 		blockquote {
 			max-width: none;

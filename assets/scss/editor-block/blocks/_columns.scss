@@ -6,7 +6,7 @@
 }
 
 .block-editor-block-list__block.wp-block-column.wp-block-column {
-	margin-bottom: calc( 1.618 * var(--typography_size_html) );
+	margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } );
 }
 
 .wp-block-column > .wp-block {

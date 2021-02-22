@@ -1,21 +1,5 @@
 /* FILE: global/modifiers/_box-model.scss */
 
-$important_modifiers: important( 'modifier_has_background' );
-
-.has-background.has-background {
-	// Need to use absolute units due to possible
-	// custom font size set on the paragraph block.
-	padding: calc( var(--typography_size_html) * #{ $golden } ) $important_modifiers;
-
-	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-		padding-left: 6vw;
-		padding-right: 6vw;
-	}
-
-}
-
-$important_modifiers: null; // Required reset.
-
 // Width
 
 	.has-wide-content-width {
@@ -222,7 +206,7 @@ $important_modifiers: null; // Required reset.
 	}
 
 	.has-regular-margin-bottom {
-		margin-bottom: calc( var(--typography_size_html) * #{ $golden } ) $important_modifiers;
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ) $important_modifiers;
 	}
 
 	$important_modifiers: null; // Required reset.

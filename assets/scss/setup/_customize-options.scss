@@ -41,7 +41,7 @@ $customize_options: (
 	'typography_font_global': ( -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif ),
 	'typography_font_headings': var(--typography_font_global),
 	'typography_font_site_title': var(--typography_font_global),
-	'typography_font_alt': ( Georgia, sans-serif ),
+	'typography_font_alt': ( Georgia, serif ),
 
 );
 

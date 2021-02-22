@@ -25,7 +25,7 @@ hr:not(.is-style-dots),
 		width: percentage( $golden_minor );
 		margin-left: 0;
 		margin-right: 0;
-		margin-bottom: calc( var(--typography_size_html) * #{ $golden } ); // Simulating rem unit for block editor.
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
 	}
 
 	&.alignleft {

@@ -27,10 +27,6 @@ form[role="search"],
 
 	}
 
-	select {
-		margin-#{$right}: .25em;
-	}
-
 	> label:not([for]) {
 		flex: 1 1 auto;
 		padding: 0;
@@ -41,10 +37,6 @@ form[role="search"],
 		height: 1.5em;
 		margin: -.25em 0;
 		vertical-align: middle;
-	}
-
-	.main-navigation & {
-		font-size: 1rem;
 	}
 
 	&.has-submit-with-icon {
@@ -136,11 +128,18 @@ form[role="search"],
 			left: calc( 50vw - var(--scrollbar_width) / 2 );
 			top: 50vh;
 			margin-#{$left}: 0;
-			font-size: 2em;
 			background: none;
 			color: var(--color_search_text);
 			transform: translateX(-50%) translateY(-50%);
 			z-index: 999; // Above mobile menu toggle button.
+
+			@include media( map_get( $breakpoint, 'm' ) ) {
+				font-size: 1.5em;
+			}
+
+			@include media( map_get( $breakpoint, 'xl' ) ) {
+				font-size: 2em;
+			}
 
 			&::before {
 				width: calc( 100vw - var(--scrollbar_width) );
@@ -202,7 +201,7 @@ form[role="search"],
 .wp-block-search {
 
 	&:not(:last-child) {
-		margin-bottom: calc( var(--typography_size_html) * #{ $golden } );
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } );
 	}
 
 	&__label {

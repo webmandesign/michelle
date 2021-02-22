@@ -21,7 +21,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 ?>
 
-<hr>
+<hr class="is-large">
 
 <div class="about__section is-feature" style="text-align: center; background: #fbce2f; border: 4px solid rgba(0,0,0,.1);">
 	<h2 style="font-size: 2.175em; color: #000;">

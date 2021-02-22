@@ -1,6 +1,6 @@
 /* FILE: global/modifiers/_decorations.scss */
 
-// Sticky element within container.
+// Sticky element within container
 
 	// This will not work if any of the parents has overflow
 	// styles set. We are using `--scrollbar_width` CSS variable
@@ -17,7 +17,7 @@
 		}
 	}
 
-// Shadow.
+// Shadow
 
 	$spread : 6vh;
 	$indent : 1vh;
@@ -65,7 +65,7 @@
 		box-shadow: var(--drop_shadow);
 	}
 
-// Lists.
+// Lists
 
 	ul.has-outline-items,
 	ol.has-outline-items,
@@ -103,7 +103,7 @@
 
 	}
 
-// Others.
+// Others
 
 	.invert,
 	.has-invert-filter {

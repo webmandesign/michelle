@@ -2,8 +2,11 @@
 
 .site-header {
 	position: relative;
-	font-size: var(--typography_size_header);
 	z-index: 998;
+
+	@include media( map_get( $breakpoint, 'xl' ) ) {
+		font-size: var(--typography_size_header);
+	}
 
 	&-section {
 		position: relative;

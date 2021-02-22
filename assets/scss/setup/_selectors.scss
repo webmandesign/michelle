@@ -21,4 +21,7 @@ $selectors_button: (
 	'[type="submit"]',
 	'.page-numbers:not(.current):not(.dots)',
 	'.post-page-numbers:not(.current):not(.dots)',
+
+	// WooCommerce
+	'.cart_totals .checkout-button',
 );

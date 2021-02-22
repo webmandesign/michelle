@@ -1,7 +1,10 @@
 /* FILE: global/footer/_base.scss */
 
 .site-footer {
-	font-size: var(--typography_size_footer);
+
+	@include media( map_get( $breakpoint, 'xl' ) ) {
+		font-size: var(--typography_size_footer);
+	}
 
 	&-section {
 		position: relative;

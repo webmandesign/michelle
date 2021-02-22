@@ -11,16 +11,12 @@
 		// margin of children elements.
 		display: flex;
 		flex-direction: column;
-		padding: var(--posts_list_gap);
+		padding: var(--posts_list_entry_padding_vertical) var(--posts_list_entry_padding_horizontal);
 		background: var(--color_body_background);
 		border-width: 1px;
 		border-style: solid;
 		border-top: var(--border_decorative_width) solid var(--color_border_decorative);
 		transition: box-shadow .3s;
-
-		@include media( map_get( $breakpoint, 'xxl' ) ) {
-			padding: 6vh;
-		}
 
 		&:hover,
 		&:focus-within {
@@ -49,15 +45,9 @@
 
 	li .wp-block-latest-posts__featured-image {
 		float: none; // If `alignleft/right` class is applied via block settings.
-		margin-top: calc( -1 * var(--posts_list_gap) );
-		margin-left: calc( -1 * var(--posts_list_gap) );
-		margin-right: calc( -1 * var(--posts_list_gap) );
-
-		@include media( map_get( $breakpoint, 'xxl' ) ) {
-			margin-top: -6vh;
-			margin-left: -6vh;
-			margin-right: -6vh;
-		}
+		margin-top: calc( -1 * var(--posts_list_entry_padding_vertical) );
+		margin-left: calc( -1 * var(--posts_list_entry_padding_horizontal) );
+		margin-right: calc( -1 * var(--posts_list_entry_padding_horizontal) );
 
 		img {
 			width: 100%;
@@ -102,14 +92,25 @@
 	&.is-grid {
 		// align-items: flex-start; // To prevent equal column height.
 
-		&:not(.alignwide):not(.alignfull) {
-			width: calc( 100% + var(--posts_list_gap) );
-			margin: calc( var(--posts_list_gap) / 2 * -1 );
+		li {
+			margin: calc( var(--posts_list_gap) / 2 ) 0;
 		}
 
-		li {
-			width: calc( 100% - var(--posts_list_gap) );
-			margin: calc( var(--posts_list_gap) / 2 );
+		@include media( map_get( $breakpoint, 'm' ) ) {
+
+			&:not(.alignwide):not(.alignfull) {
+				width: calc( 100% + var(--posts_list_gap) );
+				margin: calc( var(--posts_list_gap) / 2 * -1 );
+			}
+
+			li {
+				width: calc( 100% - var(--posts_list_gap) );
+			}
+
+			&[class*=columns-] li {
+				margin: calc( var(--posts_list_gap) / 2 );
+			}
+
 		}
 
 		a:not(.link-more) { // Post title.
@@ -125,7 +126,7 @@
 	// Columns.
 
 		&[class*="columns-"] li {
-			@extend %posts_list_columns_1;
+			width: 100%;
 		}
 
 		@for $i from 2 through 6 {

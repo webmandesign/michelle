@@ -21,9 +21,9 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 ?>
 
-<div class="about__section is-feature" style="text-align: center; border: 4px solid rgba(0,0,0,.1);">
+<div class="about__header about__section is-feature" style="text-align: center;">
 
-	<h1 style="font-size: 2.5em; font-weight: 700;">
+	<h1 class="about__header-title">
 		<?php echo wp_get_theme( 'michelle' )->display( 'Name' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>
 		<small style="font-size: .5em; font-weight: 400;"><?php echo MICHELLE_THEME_VERSION; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></small>
 	</h1>
@@ -51,5 +51,3 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 <div class="about__section is-feature" style="text-align: center; border: 4px solid rgba(0,0,0,.1);">
 	<?php echo Welcome\Component::get_info_like(); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>
 </div>
-
-<hr>

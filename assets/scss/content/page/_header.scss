@@ -66,9 +66,15 @@
 	}
 
 	.page-meta {
-		order: -1;
 		width: 100%;
-		margin-bottom: $golden_major +rem;
+		margin-top: $golden +rem;
+
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			order: -1;
+			margin-top: 0;
+			margin-bottom: $golden_major +rem;
+		}
+
 	}
 
 	&.not-found,

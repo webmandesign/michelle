@@ -91,16 +91,12 @@
 		width: 100%;
 		max-height: 100%;
 		bottom: 0;
-		padding: 40px 10px 9px;
+		padding: 4%;
 		font-size: 13px;
 		text-align: center;
-		background: linear-gradient(
-			to top,
-			rgba( #000, .7 ),
-			rgba( #000, .3 ) 70%,
-			rgba( #000, 0 ) // Do not use `transparent` due to Safari bug!
-		);
+		background: rgba( #000, .66 );
 		color: #fff;
+		backdrop-filter: blur( 10px );
 		overflow: auto;
 	}
 

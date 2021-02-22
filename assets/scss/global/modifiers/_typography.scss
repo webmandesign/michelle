@@ -1,5 +1,28 @@
 /* FILE: global/modifiers/_typography.scss */
 
+// Font family
+
+	$important_modifiers: important( 'modifier_font_family' );
+
+	.has-root-font-family,
+	.has-global-font-family {
+		font-family: var(--typography_font_global);
+	}
+
+	.has-headings-font-family {
+		font-family: var(--typography_font_headings);
+	}
+
+	.has-site-title-font-family {
+		font-family: var(--typography_font_site_title);
+	}
+
+	.has-inherited-font-family {
+		font-family: inherit;
+	}
+
+	$important_modifiers: null; // Required reset.
+
 // Font size
 
 	$important_modifiers: important( 'modifier_font_size' );

@@ -1,10 +1,7 @@
 /* FILE: editor-block/_post-title.scss */
 
 #{ $selector_editor_title } {
-
-	@include media( map_get( $breakpoint, 's' ) ) {
-		font-size: var(--typography_size_html);
-	}
+	font-size: var(--typography_font_size_base);
 
 	& &__block,
 	&__block.wp-block,

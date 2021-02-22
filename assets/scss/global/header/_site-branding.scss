@@ -86,6 +86,10 @@
 		max-height: 3em;
 	}
 
+	@include media( ( map_get( $breakpoint, 'l' ), 'max-width' ) ) {
+		max-height: 4em;
+	}
+
 	&-link {
 		display: inline-block;
 

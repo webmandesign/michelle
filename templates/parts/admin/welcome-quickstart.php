@@ -19,32 +19,37 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 ?>
 
-<div class="about__section has-3-columns">
+<div class="has-background-image" style="background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%201035%20884%22%3E%3Ccircle%20cx%3D%22503%22%20cy%3D%22434%22%20r%3D%22310%22%20fill%3D%22%23E3DAD1%22%2F%3E%3Ccircle%20cx%3D%22831%22%20cy%3D%22204%22%20r%3D%22204%22%20fill%3D%22%23D1CFE4%22%2F%3E%3Ccircle%20cx%3D%22113.5%22%20cy%3D%22770.5%22%20r%3D%22113.5%22%20fill%3D%22%23D1DEE4%22%2F%3E%3C%2Fsvg%3E');">
 
-	<h2 class="is-section-header"><?php esc_html_e( 'Quickstart Guide', 'michelle' ); ?></h2>
-
-	<div class="column">
-		<h3><?php esc_html_e( 'New to WordPress?', 'michelle' ); ?></h3>
-		<p><?php esc_html_e( 'If you are new to WordPress, please check out the introduction section in theme documentation.', 'michelle' ); ?></p>
-		<p><a class="button" href="https://webmandesign.github.io/docs/michelle/#wordpress"><?php esc_html_e( 'Get to know WordPress &raquo;', 'michelle' ); ?></a></p>
+	<div class="about__section has-2-columns is-wider-left has-transparent-background-color">
+		<div class="column">
+			<h2><?php esc_html_e( 'New to WordPress?', 'michelle' ); ?></h2>
+			<p><?php esc_html_e( 'If you are new to WordPress, please check out the introduction section in theme documentation.', 'michelle' ); ?></p>
+			<p><a class="button button-hero" href="https://webmandesign.github.io/docs/michelle/#wordpress"><?php esc_html_e( 'Get to know WordPress &raquo;', 'michelle' ); ?></a></p>
+		</div>
 	</div>
 
-	<div class="column">
-		<h3><?php esc_html_e( 'WordPress settings', 'michelle' ); ?></h3>
-		<p>
-			<?php esc_html_e( 'Make sure you set up your site in "Settings" section of the dashboard.', 'michelle' ); ?>
-			<?php esc_html_e( '(Pay special attention to image sizes setup under Settings &rarr; Media.)', 'michelle' ); ?>
-		</p>
-		<p><a class="button" href="<?php echo esc_url( admin_url( 'options-general.php' ) ); ?>"><?php esc_html_e( 'Set up WordPress &raquo;', 'michelle' ); ?></a></p>
+	<div class="about__section has-2-columns is-wider-right has-transparent-background-color">
+		<div class="column"><!-- space for alignment. --></div>
+		<div class="column">
+			<h2><?php esc_html_e( 'WordPress settings', 'michelle' ); ?></h2>
+			<p>
+				<?php esc_html_e( 'Make sure you set up your site in "Settings" section of the dashboard.', 'michelle' ); ?>
+				<?php esc_html_e( '(Pay special attention to image sizes setup under Settings &rarr; Media.)', 'michelle' ); ?>
+			</p>
+			<p><a class="button button-hero" href="<?php echo esc_url( admin_url( 'options-general.php' ) ); ?>"><?php esc_html_e( 'Set up WordPress &raquo;', 'michelle' ); ?></a></p>
+		</div>
 	</div>
 
-	<div class="column">
-		<h3><?php esc_html_e( 'Customize your website', 'michelle' ); ?></h3>
-		<p>
-			<?php esc_html_e( 'You can customize your website using a live-preview editor.', 'michelle' ); ?>
-			<?php esc_html_e( 'Customization changes will go live only after you publish them.', 'michelle' ); ?>
-		</p>
-		<p><a href="<?php echo esc_url( admin_url( 'customize.php' ) ); ?>" class="button"><?php esc_html_e( 'Customize your website &raquo;', 'michelle' ); ?></a></p>
+	<div class="about__section has-2-columns is-wider-left has-transparent-background-color">
+		<div class="column">
+			<h2><?php esc_html_e( 'Customize your website', 'michelle' ); ?></h2>
+			<p>
+				<?php esc_html_e( 'You can customize your website using a live-preview editor.', 'michelle' ); ?>
+				<?php esc_html_e( 'Customization changes will go live only after you publish them.', 'michelle' ); ?>
+			</p>
+			<p><a href="<?php echo esc_url( admin_url( 'customize.php' ) ); ?>" class="button button-hero"><?php esc_html_e( 'Customize your website &raquo;', 'michelle' ); ?></a></p>
+		</div>
 	</div>
 
 </div>

@@ -19,7 +19,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 ?>
 
-<hr>
+<hr class="is-large">
 
 <div class="about__section has-2-columns has-subtle-background-color">
 

@@ -4,7 +4,7 @@
 	margin: 0;
 
 	&:not(:first-child) {
-		margin-top: calc( 1.618 * var(--typography_size_html) * -1 );
+		margin-top: calc( var(--typography_font_size_base) * #{ $golden } * -1 );
 	}
 
 	+ h1,

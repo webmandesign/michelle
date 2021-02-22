@@ -1,39 +1,59 @@
 /* FILE: global/modifiers/_colors.scss */
 
-$specificity : ':root [class]';
+// Color classes
 
-@if variable-exists( 'selector_editor_wrapper' ) {
-	$specificity : '[class]';
-}
+	$specificity : ':root [class]';
 
-@each $option, $value in $customize_options {
-	@if str-index( #{ $option }, 'color_' ) or str-index( #{ $option }, 'palette_' ) {
-		$selector: str_replace( 'color_', '', $option );
-		$selector: str_replace( '_', '-', $selector );
+	@if variable-exists( 'selector_editor_wrapper' ) {
+		$specificity : '[class]';
+	}
 
-		#{ $specificity }.has-#{ $selector }-color {
+	@each $option, $value in $customize_options {
+		@if str-index( #{ $option }, 'color_' ) or str-index( #{ $option }, 'palette_' ) {
+			$selector: str_replace( 'color_', '', $option );
+			$selector: str_replace( '_', '-', $selector );
 
-			&,
-			&:hover,
-			&:focus,
-			&:active,
-			&:visited {
-				color: var(--#{ $option });
+			#{ $specificity }.has-#{ $selector }-color {
+
+				&,
+				&:hover,
+				&:focus,
+				&:active,
+				&:visited {
+					color: var(--#{ $option });
+				}
+
 			}
 
-		}
+			#{ $specificity }.has-#{ $selector }-background-color {
+				background-color: var(--#{ $option });
+			}
 
-		#{ $specificity }.has-#{ $selector }-background-color {
-			background-color: var(--#{ $option });
-		}
-
-		#{ $specificity }.has-#{ $selector }-border-color {
-			border-color: var(--#{ $option });
+			#{ $specificity }.has-#{ $selector }-border-color {
+				border-color: var(--#{ $option });
+			}
 		}
 	}
-}
 
-// Force link color inheritance.
+// Has background
+
+	$important_modifiers: important( 'modifier_has_background' );
+
+	.has-background.has-background {
+		// Need to use absolute units due to possible
+		// custom font size set on the paragraph block.
+		padding: calc( var(--typography_font_size_base) * #{ $golden } ) $important_modifiers;
+
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			padding-left: 6vw;
+			padding-right: 6vw;
+		}
+
+	}
+
+	$important_modifiers: null; // Required reset.
+
+// Force link color inheritance
 
 	.link-color-inherit a,
 	.has-inherit-link-color a,
