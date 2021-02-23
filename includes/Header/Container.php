@@ -67,7 +67,7 @@ class Container implements Component_Interface {
 		// Output
 
 			if ( doing_action( 'tha_header_top' ) ) {
-				echo PHP_EOL.PHP_EOL . '<header id="masthead" class="site-header">' . PHP_EOL;
+				echo PHP_EOL.PHP_EOL . '<header id="masthead" class="site-header" role="banner">' . PHP_EOL;
 			} elseif ( doing_action( 'tha_header_bottom' ) ) {
 				echo PHP_EOL . '</header><!-- /#masthead.site-header -->' . PHP_EOL.PHP_EOL;
 			}

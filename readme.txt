@@ -1,6 +1,6 @@
 === Michelle ===
 Contributors: webmandesign
-Requires at least: 5.4
+Requires at least: 5.5
 Tested up to: 5.6
 Requires PHP: 7.0
 License: GPL-3.0-or-later
@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 
 == Description ==
-Michelle is accessibility ready WordPress theme for creating inclusive, accessible websites.
+Michelle is accessibility ready WordPress theme for creating inclusive, accessible websites. You get the power of full customization and block editor (Gutenberg) compatibility. Useful templates, block patterns, block styles and featured posts functionality alow you to build a beautiful website easily and in no time. It works with Beaver Builder, Elementor, or any other page builder. Michelle is multi-purpose and just elevates your business, eCommerce, portfolio, or blog website.
 
 
 == Frequently Asked Questions ==
@@ -41,5 +41,6 @@ Please see `changelog.md` file.
 * Normalize.css © Nicolas Gallagher and Jonathan Neal, MIT
 * a11y-menu.js ©  WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * images/background-pattern.png ©  https://cc0textures.com/view?id=Paper001, CC0
-* images/starter/*.jpg ©  https://www.pexels.com/, CC0
+* images/starter/*.* ©  https://www.pexels.com/, CC0
+* images/welcome/*.* ©  WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * screenshot.jpg images ©  http://www.pexels.com/, CC0

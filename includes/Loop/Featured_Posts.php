@@ -119,69 +119,6 @@ class Featured_Posts implements Component_Interface {
 	} // /get_posts
 
 	/**
-	 * Gets featured post fallback media.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @param  mixed $pre
-	 *
-	 * @return  mixed
-	 */
-	public static function get_media_fallback( $pre ) {
-
-		// Requirements check
-
-			if ( has_post_thumbnail() ) {
-				return $pre;
-			}
-
-
-		// Variables
-
-			$image = Mod::get( 'featured_posts_image' );
-
-
-		// Processing
-
-			if ( ! empty( $image ) ) {
-				return
-					'<div class="entry-media">'
-					. '<a href="' . esc_url( get_permalink() ) . '">'
-					. '<img src="' . esc_url_raw( $image ) . '" alt="" aria-hidden="true" />'
-					. '</a>'
-					. '</div>';
-			}
-
-
-		// Output
-
-			return $pre;
-
-	} // /get_media_fallback
-
-	/**
-	 * Gets featured post fallback media image size.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @return  string
-	 */
-	public static function get_image_size(): string {
-
-		// Output
-
-			/**
-			 * Filters featured posts image size.
-			 *
-			 * @since  1.0.0
-			 *
-			 * @param  string $image_size
-			 */
-			return (string) apply_filters( 'michelle/loop/featured_posts/get_image_size', 'large' );
-
-	} // /get_image_size
-
-	/**
 	 * Sets featured post fallback media.
 	 *
 	 * @since  1.0.0
@@ -210,6 +147,69 @@ class Featured_Posts implements Component_Interface {
 			}
 
 	} // /set_image
+
+	/**
+	 * Gets featured post fallback media image size.
+	 *
+	 * @since  1.0.0
+	 *
+	 * @return  string
+	 */
+	public static function get_image_size(): string {
+
+		// Output
+
+			/**
+			 * Filters featured posts image size.
+			 *
+			 * @since  1.0.0
+			 *
+			 * @param  string $image_size
+			 */
+			return (string) apply_filters( 'michelle/loop/featured_posts/get_image_size', 'large' );
+
+	} // /get_image_size
+
+	/**
+	 * Gets featured post fallback media.
+	 *
+	 * @since  1.0.0
+	 *
+	 * @param  mixed $pre
+	 *
+	 * @return  mixed
+	 */
+	public static function get_media_fallback( $pre ) {
+
+		// Requirements check
+
+			if ( has_post_thumbnail() ) {
+				return $pre;
+			}
+
+
+		// Variables
+
+			$image_id = absint( Mod::get( 'featured_posts_image' ) );
+
+
+		// Processing
+
+			if ( ! empty( $image_id ) ) {
+				return
+					'<div class="entry-media">'
+					. '<a href="' . esc_url( get_permalink() ) . '">'
+					. wp_get_attachment_image( $image_id, self::get_image_size() )
+					. '</a>'
+					. '</div>';
+			}
+
+
+		// Output
+
+			return $pre;
+
+	} // /get_media_fallback
 
 	/**
 	 * Theme options.
@@ -269,7 +269,8 @@ class Featured_Posts implements Component_Interface {
 				'id'          => 'featured_posts_image',
 				'label'       => esc_html__( 'Fallback image', 'michelle' ),
 				'description' => esc_html__( 'This image will be displayed when post has no featured image set.', 'michelle' ),
-				'default'     => '',
+				'return'      => 'id',
+				'default'     => 0,
 			);
 
 

@@ -13,6 +13,7 @@ namespace WebManDesign\Michelle\Customize;
 use WebManDesign\Michelle\Component_Interface;
 use WP_Customize_Color_Control;
 use WP_Customize_Image_Control;
+use WP_Customize_Media_Control;
 use WP_Customize_Manager;
 
 // Exit if accessed directly.
@@ -135,6 +136,8 @@ class Control implements Component_Interface {
 
 			if ( isset( $option['sanitize_callback'] ) ) {
 				$sanitize = $option['sanitize_callback'];
+			} elseif ( isset( $option['return'] ) && 'id' === $option['return'] ) {
+				$sanitize = 'absint';
 			} elseif ( isset( self::$sanitize[ $option['type'] ] ) ) {
 				$sanitize = self::$sanitize[ $option['type'] ];
 			} else {
@@ -272,18 +275,38 @@ class Control implements Component_Interface {
 
 		// Processing
 
-			$wp_customize->add_control(
-				new WP_Customize_Image_Control(
-					$wp_customize,
-					$option['id'],
-					array_merge(
-						self::get_args( $option ),
-						array(
-							'context' => $option['id'],
+			if (
+				isset( $option['return'] )
+				&& 'id' === $option['return']
+			) {
+				$wp_customize->add_control(
+					new WP_Customize_Media_Control(
+						$wp_customize,
+						$option['id'],
+						array_merge(
+							self::get_args( $option ),
+							array(
+								'type'      => 'media',
+								'context'   => $option['id'],
+								'mime_type' => 'image',
+							)
 						)
 					)
-				)
-			);
+				);
+			} else {
+				$wp_customize->add_control(
+					new WP_Customize_Image_Control(
+						$wp_customize,
+						$option['id'],
+						array_merge(
+							self::get_args( $option ),
+							array(
+								'context' => $option['id'],
+							)
+						)
+					)
+				);
+			}
 
 	} // /add_control_image
 

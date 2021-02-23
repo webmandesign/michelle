@@ -87,13 +87,6 @@ class TGMPA implements Component_Interface {
 					'is_callable' => 'FLBuilder::init',
 				),
 
-				'editorplus' => array(
-					'name'        => 'EditorPlus',
-					'description' => __( 'Extends block editor with advanced design controls and more features.', 'michelle' ),
-					'slug'        => 'editorplus',
-					'required'    => false,
-				),
-
 				'one-click-demo-import' => array(
 					'name'        => 'One Click Demo Import',
 					'description' => __( 'For installing theme demo content easily.', 'michelle' ),

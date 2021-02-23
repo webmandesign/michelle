@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-21 23:13+0100\n"
-"PO-Revision-Date: 2021-02-21 23:14+0100\n"
+"POT-Creation-Date: 2021-02-23 14:51+0100\n"
+"PO-Revision-Date: 2021-02-23 14:51+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -708,7 +708,7 @@ msgstr "Tento obsah je chránený heslom."
 msgid "Enter the password to view it."
 msgstr "Zadajte heslo pre jeho zobrazenie."
 
-#: includes/Header/Component.php:258
+#: includes/Header/Component.php:267
 #, fuzzy
 msgctxt "Form submit button text."
 msgid "Search"
@@ -830,22 +830,15 @@ msgstr ""
 
 #: includes/Plugin/TGMPA.php:92
 #, fuzzy
-msgid "Extends block editor with advanced design controls and more features."
-msgstr ""
-"Rozširuje editor blokov dodatočnými ovládacími prvkami dizajnu a ďalšími "
-"funkciami."
-
-#: includes/Plugin/TGMPA.php:99
-#, fuzzy
 msgid "For installing theme demo content easily."
 msgstr "Pre jednoduchú inštaláciu demo obsahu témy."
 
-#: includes/Plugin/TGMPA.php:106
+#: includes/Plugin/TGMPA.php:99
 #, fuzzy
 msgid "Adding e-commerce functionality."
 msgstr "Pridáva funkcionalitu e-shopu."
 
-#: includes/Plugin/TGMPA.php:113
+#: includes/Plugin/TGMPA.php:106
 #, fuzzy
 msgid ""
 "When using WooCommerce plugin, this plugin helps integrate the e-shop into "
@@ -854,40 +847,40 @@ msgstr ""
 "Pri použití pluginu WooCommerce, pomáha tento plugin integrovať e-shop do "
 "dizajnu témy."
 
-#: includes/Plugin/TGMPA.php:165
+#: includes/Plugin/TGMPA.php:158
 #, fuzzy
 msgid "Other useful plugins &raquo;"
 msgstr "Ďalšie užitočné moduly &raquo;"
 
-#: includes/Plugin/TGMPA.php:189
+#: includes/Plugin/TGMPA.php:182
 #, fuzzy
 msgid "Why would you use this plugin?"
 msgstr "Prečo by ste použili tento plugin?"
 
-#: includes/Plugin/TGMPA.php:260
+#: includes/Plugin/TGMPA.php:253
 #, fuzzy
 msgctxt "Plugins."
 msgid "Recommended, not required"
 msgstr "Odporúčané, nie vyžadované"
 
-#: includes/Plugin/TGMPA.php:263
+#: includes/Plugin/TGMPA.php:256
 #, fuzzy
 msgid "Please note that these are just recommended plugins, not required ones."
 msgstr ""
 "Upozorňujeme, že toto je zoznam odporúčaných pluginov, nie vyžadovaných."
 
-#: includes/Plugin/TGMPA.php:264
+#: includes/Plugin/TGMPA.php:257
 #, fuzzy
 msgid "Install only those plugins you will use."
 msgstr "Nainštalujte iba tie pluginy, ktoré budete používať."
 
-#: includes/Plugin/TGMPA.php:265
+#: includes/Plugin/TGMPA.php:258
 #, fuzzy
 msgctxt "Plugins."
 msgid "Or install the ones you prefer."
 msgstr "Alebo nainštalujte tie, ktoré uprednostňujete."
 
-#: includes/Plugin/TGMPA.php:266
+#: includes/Plugin/TGMPA.php:259
 #, fuzzy
 msgid ""
 "For example, if you are not building an eCommerce website, there is no need "
@@ -1002,8 +995,8 @@ msgid "You can tweak the desired layout of this template below."
 msgstr "Požadované rozloženie tejto šablóny môžete vyladiť nižšie."
 
 #: includes/Tool/Page_Builder.php:131
-msgid "How to assign a page/post template &rarr;"
-msgstr "Ako použiť šablóny &rarr;"
+msgid "Open a page/post template instructions in new window &rarr;"
+msgstr "Otvoriť inštrukcie o šablónach v novom okne &rarr;"
 
 #: includes/Tool/Page_Builder.php:138
 #, fuzzy
@@ -1294,7 +1287,7 @@ msgstr ""
 "automaticky inštalovaný do vašej webovej stránky."
 
 #: templates/parts/admin/welcome-demo.php:37
-#: templates/parts/admin/welcome-quickstart.php:47
+#: templates/parts/admin/welcome-quickstart.php:51
 #, fuzzy
 msgid "Customize your website &raquo;"
 msgstr "Prispôsobiť stránku &raquo;"
@@ -1355,32 +1348,32 @@ msgstr "Použiť plugin \"One Click Demo Import\" &raquo;"
 msgid "Preview theme demo &raquo;"
 msgstr "Ukážka dema témy &raquo;"
 
-#: templates/parts/admin/welcome-features.php:24
+#: templates/parts/admin/welcome-features.php:26
 msgid "Theme Features"
 msgstr "Vybrané vlastnosti témy"
 
-#: templates/parts/admin/welcome-features.php:27
+#: templates/parts/admin/welcome-features.php:31
 #, fuzzy
 msgid "Templates"
 msgstr "Šablóny"
 
-#: templates/parts/admin/welcome-features.php:29
+#: templates/parts/admin/welcome-features.php:33
 msgid "Modify a page or post layout swiftly using templates."
 msgstr "Upravte rozloženie strany alebo príspevku rýchlo pomocou šablón."
 
-#: templates/parts/admin/welcome-features.php:33
+#: templates/parts/admin/welcome-features.php:37
 msgid "Block Patterns"
 msgstr "Vzory blokov"
 
-#: templates/parts/admin/welcome-features.php:35
+#: templates/parts/admin/welcome-features.php:39
 msgid "Create your content faster with block patterns library."
 msgstr "Vytvorte obsah rýchlejšie pomocou knižnice vzorov blokov."
 
-#: templates/parts/admin/welcome-features.php:39
+#: templates/parts/admin/welcome-features.php:43
 msgid "Block Styles"
 msgstr "Štýly blokov"
 
-#: templates/parts/admin/welcome-features.php:41
+#: templates/parts/admin/welcome-features.php:45
 msgid "Style your blocks immediately and easily without coding."
 msgstr "Naštýlujte bloky okamžite a jednoducho bez kódovania."
 
@@ -1442,17 +1435,12 @@ msgstr ""
 msgid "Visit WebMan Design website now &rarr;"
 msgstr "Navštíviť webstránku WebMan Design &rarr;"
 
-#: templates/parts/admin/welcome-quickstart.php:24
-#, fuzzy
-msgid "Quickstart Guide"
-msgstr "Inštalačná príručka"
-
-#: templates/parts/admin/welcome-quickstart.php:27
+#: templates/parts/admin/welcome-quickstart.php:26
 #, fuzzy
 msgid "New to WordPress?"
 msgstr "Je pre vás WordPress novinkou?"
 
-#: templates/parts/admin/welcome-quickstart.php:28
+#: templates/parts/admin/welcome-quickstart.php:27
 #, fuzzy
 msgid ""
 "If you are new to WordPress, please check out the introduction section in "
@@ -1461,23 +1449,23 @@ msgstr ""
 "Ak nie ste dostatočne zoznámený so systémom WordPress, preštudujte si úvodnú "
 "sekciu dokumentácie témy."
 
-#: templates/parts/admin/welcome-quickstart.php:29
+#: templates/parts/admin/welcome-quickstart.php:28
 #, fuzzy
 msgid "Get to know WordPress &raquo;"
 msgstr "Spoznajte WordPress &raquo;"
 
-#: templates/parts/admin/welcome-quickstart.php:33
+#: templates/parts/admin/welcome-quickstart.php:35
 #, fuzzy
 msgid "WordPress settings"
 msgstr "Nastavenia WordPress"
 
-#: templates/parts/admin/welcome-quickstart.php:35
+#: templates/parts/admin/welcome-quickstart.php:37
 #, fuzzy
 msgid ""
 "Make sure you set up your site in \"Settings\" section of the dashboard."
 msgstr "Nastavte stránku v časti \"Nastavenia\" v administrácii."
 
-#: templates/parts/admin/welcome-quickstart.php:36
+#: templates/parts/admin/welcome-quickstart.php:38
 #, fuzzy
 msgid ""
 "(Pay special attention to image sizes setup under Settings &rarr; Media.)"
@@ -1485,22 +1473,22 @@ msgstr ""
 "(Venujte osobitnú pozornosť nastaveniu veľkosti obrázkov v sekcii Nastavenia "
 "&rarr; Médiá.)"
 
-#: templates/parts/admin/welcome-quickstart.php:38
+#: templates/parts/admin/welcome-quickstart.php:40
 #, fuzzy
 msgid "Set up WordPress &raquo;"
 msgstr "Nastaviť WordPress &raquo;"
 
-#: templates/parts/admin/welcome-quickstart.php:42
+#: templates/parts/admin/welcome-quickstart.php:46
 #, fuzzy
 msgid "Customize your website"
 msgstr "Prispôsobenie stránky"
 
-#: templates/parts/admin/welcome-quickstart.php:44
+#: templates/parts/admin/welcome-quickstart.php:48
 #, fuzzy
 msgid "You can customize your website using a live-preview editor."
 msgstr "Stránku si môžete prispôsobiť použitím editora so živím náhľadom."
 
-#: templates/parts/admin/welcome-quickstart.php:45
+#: templates/parts/admin/welcome-quickstart.php:49
 #, fuzzy
 msgid "Customization changes will go live only after you publish them."
 msgstr "Zmeny prispôsobenia sa aplikujú až keď ich publikujete."

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-21 23:13+0100\n"
+"POT-Creation-Date: 2021-02-23 14:51+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -613,7 +613,7 @@ msgstr ""
 msgid "Enter the password to view it."
 msgstr ""
 
-#: includes/Header/Component.php:258
+#: includes/Header/Component.php:267
 msgctxt "Form submit button text."
 msgid "Search"
 msgstr ""
@@ -711,51 +711,47 @@ msgid ""
 msgstr ""
 
 #: includes/Plugin/TGMPA.php:92
-msgid "Extends block editor with advanced design controls and more features."
-msgstr ""
-
-#: includes/Plugin/TGMPA.php:99
 msgid "For installing theme demo content easily."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:106
+#: includes/Plugin/TGMPA.php:99
 msgid "Adding e-commerce functionality."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:113
+#: includes/Plugin/TGMPA.php:106
 msgid ""
 "When using WooCommerce plugin, this plugin helps integrate the e-shop into "
 "theme design."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:165
+#: includes/Plugin/TGMPA.php:158
 msgid "Other useful plugins &raquo;"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:189
+#: includes/Plugin/TGMPA.php:182
 msgid "Why would you use this plugin?"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:260
+#: includes/Plugin/TGMPA.php:253
 msgctxt "Plugins."
 msgid "Recommended, not required"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:263
+#: includes/Plugin/TGMPA.php:256
 msgid ""
 "Please note that these are just recommended plugins, not required ones."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:264
+#: includes/Plugin/TGMPA.php:257
 msgid "Install only those plugins you will use."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:265
+#: includes/Plugin/TGMPA.php:258
 msgctxt "Plugins."
 msgid "Or install the ones you prefer."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:266
+#: includes/Plugin/TGMPA.php:259
 msgid ""
 "For example, if you are not building an eCommerce website, there is no "
 "need to install WooCommerce plugin."
@@ -855,7 +851,7 @@ msgid "You can tweak the desired layout of this template below."
 msgstr ""
 
 #: includes/Tool/Page_Builder.php:131
-msgid "How to assign a page/post template &rarr;"
+msgid "Open a page/post template instructions in new window &rarr;"
 msgstr ""
 
 #: includes/Tool/Page_Builder.php:138
@@ -1095,7 +1091,7 @@ msgid ""
 msgstr ""
 
 #: templates/parts/admin/welcome-demo.php:37
-#: templates/parts/admin/welcome-quickstart.php:47
+#: templates/parts/admin/welcome-quickstart.php:51
 msgid "Customize your website &raquo;"
 msgstr ""
 
@@ -1139,31 +1135,31 @@ msgstr ""
 msgid "Preview theme demo &raquo;"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:24
+#: templates/parts/admin/welcome-features.php:26
 msgid "Theme Features"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:27
+#: templates/parts/admin/welcome-features.php:31
 msgid "Templates"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:29
+#: templates/parts/admin/welcome-features.php:33
 msgid "Modify a page or post layout swiftly using templates."
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:33
+#: templates/parts/admin/welcome-features.php:37
 msgid "Block Patterns"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:35
+#: templates/parts/admin/welcome-features.php:39
 msgid "Create your content faster with block patterns library."
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:39
+#: templates/parts/admin/welcome-features.php:43
 msgid "Block Styles"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:41
+#: templates/parts/admin/welcome-features.php:45
 msgid "Style your blocks immediately and easily without coding."
 msgstr ""
 
@@ -1212,51 +1208,47 @@ msgstr ""
 msgid "Visit WebMan Design website now &rarr;"
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:24
-msgid "Quickstart Guide"
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:27
+#: templates/parts/admin/welcome-quickstart.php:26
 msgid "New to WordPress?"
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:28
+#: templates/parts/admin/welcome-quickstart.php:27
 msgid ""
 "If you are new to WordPress, please check out the introduction section in "
 "theme documentation."
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:29
+#: templates/parts/admin/welcome-quickstart.php:28
 msgid "Get to know WordPress &raquo;"
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:33
+#: templates/parts/admin/welcome-quickstart.php:35
 msgid "WordPress settings"
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:35
+#: templates/parts/admin/welcome-quickstart.php:37
 msgid ""
 "Make sure you set up your site in \"Settings\" section of the dashboard."
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:36
+#: templates/parts/admin/welcome-quickstart.php:38
 msgid ""
 "(Pay special attention to image sizes setup under Settings &rarr; Media.)"
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:38
+#: templates/parts/admin/welcome-quickstart.php:40
 msgid "Set up WordPress &raquo;"
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:42
+#: templates/parts/admin/welcome-quickstart.php:46
 msgid "Customize your website"
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:44
+#: templates/parts/admin/welcome-quickstart.php:48
 msgid "You can customize your website using a live-preview editor."
 msgstr ""
 
-#: templates/parts/admin/welcome-quickstart.php:45
+#: templates/parts/admin/welcome-quickstart.php:49
 msgid "Customization changes will go live only after you publish them."
 msgstr ""
 

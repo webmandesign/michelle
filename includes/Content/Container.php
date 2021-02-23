@@ -90,7 +90,7 @@ class Container implements Component_Interface {
 		// Output
 
 			if ( doing_action( 'tha_content_top' ) ) {
-				echo PHP_EOL . "\t\t" . '<main id="main" class="site-main">' . PHP_EOL.PHP_EOL;
+				echo PHP_EOL . "\t\t" . '<main id="main" class="site-main" role="main">' . PHP_EOL.PHP_EOL;
 			} elseif ( doing_action( 'tha_content_bottom' ) ) {
 				echo PHP_EOL.PHP_EOL . "\t\t" . '</main><!-- /#main.site-main -->';
 			}

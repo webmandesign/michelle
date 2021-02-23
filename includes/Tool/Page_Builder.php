@@ -128,7 +128,7 @@ class Page_Builder implements Component_Interface {
 				'type'        => 'checkbox',
 				'id'          => 'page_builder_template',
 				'label'       => esc_html__( 'Enable "Page builder" page/post template', 'michelle' ),
-				'description' => esc_html__( 'Use this page/post template when building a content with your page builder plugin.', 'michelle' ) . ' ' . esc_html__( 'You can tweak the desired layout of this template below.', 'michelle' ) . '<br>(<a href="https://support.webmandesign.eu/page-template/" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'How to assign a page/post template &rarr;', 'michelle' ) . '</a>)',
+				'description' => esc_html__( 'Use this page/post template when building a content with your page builder plugin.', 'michelle' ) . ' ' . esc_html__( 'You can tweak the desired layout of this template below.', 'michelle' ) . '<br>(<a href="https://support.webmandesign.eu/page-template/" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Open a page/post template instructions in new window &rarr;', 'michelle' ) . '</a>)',
 				'default'     => self::$is_page_builder_plugin_active,
 			);
 

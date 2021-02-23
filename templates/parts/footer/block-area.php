@@ -26,7 +26,10 @@ $site_footer_query = new WP_Query( array(
 	'post_type' => 'wp_block',
 ) );
 
-if ( ! $site_footer_query->have_posts() ) {
+if (
+	! $site_footer_query->have_posts()
+	|| empty( trim( (string) $site_footer_query->post->post_content ) )
+) {
 	return;
 }
 
