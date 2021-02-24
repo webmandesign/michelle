@@ -68,6 +68,7 @@
 					> .wp-block-media-text__content {
 						padding-left: 0; // No RTL here.
 						margin-left: calc( -1 * var(--media_text_overlap_size) ); // No RTL here.
+						margin-right: 0; // No RTL here.
 					}
 
 					&.has-background > .wp-block-media-text__content {
@@ -85,6 +86,7 @@
 					> .wp-block-media-text__content {
 						padding-right: 0; // No RTL here.
 						margin-right: calc( -1 * var(--media_text_overlap_size) ); // No RTL here.
+						margin-left: 0; // No RTL here.
 					}
 
 					&.has-background > .wp-block-media-text__content {

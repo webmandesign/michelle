@@ -1,0 +1,41 @@
+<?php
+/**
+ * Block pattern setup file.
+ *
+ * Default pattern categories: buttons, columns, gallery, header, text.
+ *
+ * @package    Michelle
+ * @copyright  WebMan Design, Oliver Juhas
+ *
+ * @since  1.0.0
+ */
+
+namespace WebManDesign\Michelle\Content;
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+// Add block pattern setup args.
+Block_Patterns::add_pattern_args( __FILE__, array(
+	'title'      => _x( 'Intro: With image and background image', 'Block pattern title.', 'michelle' ),
+	'categories' => array( 'header' ),
+) );
+
+// Block pattern content:
+
+$image1 = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
+$image2 = get_theme_file_uri( 'assets/images/starter/1to1.jpg' );
+
+?>
+
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999999,"dimRatio":90,"overlayColor":"palette-2","minHeight":100,"minHeightUnit":"vh","contentPosition":"center center","align":"full","className":"has-no-padding"} -->
+<div class="wp-block-cover alignfull has-background-dim-90 has-palette-2-background-color has-background-dim has-no-padding" style="background-image:url(<?php echo esc_url_raw( $image1 ); ?>);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"className":"has-30-percent-screen-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-30-percent-screen-min-height"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","verticalAlignment":"top"} -->
+<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image2 ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
+<h1>Lorem ipsum dolor sit amet </h1>
+<!-- /wp:heading --></div></div>
+<!-- /wp:media-text --></div></div>
+<!-- /wp:cover -->

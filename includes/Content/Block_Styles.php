@@ -94,6 +94,13 @@ class Block_Styles implements Component_Interface {
 
 			$styles = array(
 
+				'display-on-desktop' => array(
+					'label'  => _x( 'Display on large screens only', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/spacer',
+					),
+				),
+
 				'drop-shadow' => array(
 					'label'  => _x( 'Drop shadow', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -158,6 +165,13 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
+				'has-padding' => array(
+					'label'  => _x( 'Has padding', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/columns',
+					),
+				),
+
 				'padding-left' => array(
 					'label'  => _x( 'Padding left', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -169,6 +183,13 @@ class Block_Styles implements Component_Interface {
 					'label'  => _x( 'Padding right', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/image',
+					),
+				),
+
+				'simple' => array(
+					'label'  => _x( 'Simple', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/pullquote',
 					),
 				),
 

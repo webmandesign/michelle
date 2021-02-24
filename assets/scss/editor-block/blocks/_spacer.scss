@@ -23,3 +23,31 @@
 [data-align="wide"] + [data-type="core/spacer"] {
 	margin-top: 0;
 }
+
+.wp-block-spacer {
+	border: 3px dotted;
+
+	&:not(.is-selected):not(:hover):not(:focus) {
+		opacity: .15;
+	}
+
+	&[class*="-min-height"]::before {
+		content: 'CSS min-height';
+		width: auto;
+		height: auto;
+		#{$left}: 0;
+		#{$right}: auto;
+		padding: 0 5px;
+		font-family: monospace;
+		font-size: .75em;
+		background: #b00;
+		color: #fff;
+		transform: none;
+		z-index: 2;
+	}
+
+}
+
+	.block-editor-block-preview__content .wp-block-spacer:not(.is-selected):not(:hover):not(:focus) {
+		opacity: 0;
+	}

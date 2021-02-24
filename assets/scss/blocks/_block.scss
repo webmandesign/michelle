@@ -1,14 +1,5 @@
 /* FILE: blocks/_block.scss */
 
-[class^="wp-block-"]:empty {
-
-	&,
-	&:last-child {
-		margin-bottom: 0;
-	}
-
-}
-
 [class^="wp-block-"] + figcaption {
 	margin-top: -1rem;
 }

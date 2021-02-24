@@ -2,6 +2,8 @@
 /**
  * Block pattern setup file.
  *
+ * Default pattern categories: buttons, columns, gallery, header, text.
+ *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -15,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'         => _x( 'Accessibly hidden heading', 'Block pattern title.', 'michelle' ),
+	'title'         => _x( 'Heading: Accessibly hidden', 'Block pattern title.', 'michelle' ),
 	'categories'    => array( 'header' ),
 	'viewportWidth' => 400,
 ) );

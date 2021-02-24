@@ -2,6 +2,8 @@
 /**
  * Block pattern setup file.
  *
+ * Default pattern categories: buttons, columns, gallery, header, text.
+ *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -15,13 +17,13 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Parallax image background', 'Block pattern title.', 'michelle' ),
+	'title'      => _x( 'Image: Parallax background', 'Block pattern title.', 'michelle' ),
 	'categories' => array( 'gallery' ),
 ) );
 
 // Block pattern content:
 
-$image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
+$image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 
 ?>
 

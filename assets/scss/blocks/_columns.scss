@@ -20,6 +20,15 @@
 		margin-bottom: $golden +em;
 	}
 
+	&:empty {
+
+		&,
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+
 	&::after {
 		content: '';
 		clear: both;

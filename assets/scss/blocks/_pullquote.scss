@@ -41,6 +41,12 @@
 
 	}
 
+	&.is-style-simple {
+		padding: 0;
+		border: 0;
+		text-align: inherit;
+	}
+
 }
 
 .wp-block-pullquote.alignleft,

@@ -2,6 +2,8 @@
 /**
  * Block pattern setup file.
  *
+ * Default pattern categories: buttons, columns, gallery, header, text.
+ *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -15,13 +17,13 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'         => _x( 'Features with background, image, text and button', 'Block pattern title.', 'michelle' ),
-	'categories'    => array( 'columns' ),
+	'title'      => _x( 'Features: With background and image', 'Block pattern title.', 'michelle' ),
+	'categories' => array( 'columns' ),
 ) );
 
 // Block pattern content:
 
-$image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
+$image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 
 ?>
 
@@ -29,7 +31,7 @@ $image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
 <div class="wp-block-columns alignwide">
 <!-- wp:column {"className":"has-accent-background-color"} -->
 <div class="wp-block-column has-accent-background-color"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none","className":"has-no-margin"} -->
-<figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
+<figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"has-large-padding","textColor":"palette-3"} -->
@@ -51,7 +53,7 @@ $image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
 
 <!-- wp:column {"className":"has-accent-background-color"} -->
 <div class="wp-block-column has-accent-background-color"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none","className":"has-no-margin"} -->
-<figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
+<figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"has-large-padding","textColor":"palette-3"} -->
@@ -73,7 +75,7 @@ $image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
 
 <!-- wp:column {"className":"has-accent-background-color"} -->
 <div class="wp-block-column has-accent-background-color"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none","className":"has-no-margin"} -->
-<figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
+<figure class="wp-block-image has-no-margin"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"has-large-padding","textColor":"palette-3"} -->

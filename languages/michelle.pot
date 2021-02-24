@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-23 14:51+0100\n"
+"POT-Creation-Date: 2021-02-24 21:32+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -82,12 +82,12 @@ msgstr ""
 
 #: includes/Content/Block_Styles.php:98
 msgctxt "Block style label."
-msgid "Drop shadow"
+msgid "Display on large screens only"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:111
+#: includes/Content/Block_Styles.php:105
 msgctxt "Block style label."
-msgid "Overlap gradient"
+msgid "Drop shadow"
 msgstr ""
 
 #: includes/Content/Block_Styles.php:118
@@ -107,10 +107,45 @@ msgstr ""
 
 #: includes/Content/Block_Styles.php:141
 msgctxt "Block style label."
-msgid "Outline items"
+msgid "Narrow content"
 msgstr ""
 
 #: includes/Content/Block_Styles.php:148
+msgctxt "Block style label."
+msgid "No gaps"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:155
+msgctxt "Block style label."
+msgid "Outline items"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:162
+msgctxt "Block style label."
+msgid "Overlap gradient"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:169
+msgctxt "Block style label."
+msgid "Has padding"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:176
+msgctxt "Block style label."
+msgid "Padding left"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:183
+msgctxt "Block style label."
+msgid "Padding right"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:190
+msgctxt "Block style label."
+msgid "Simple"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:197
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr ""
@@ -1252,44 +1287,227 @@ msgstr ""
 msgid "Customization changes will go live only after you publish them."
 msgstr ""
 
-#: templates/parts/blocks/pattern-features-bg-icon.php:18
+#: templates/parts/blocks/pattern-blog.php:20
 msgctxt "Block pattern title."
-msgid "Center aligned features with background, icon, text and button"
+msgid "Blog"
 msgstr ""
 
-#: templates/parts/blocks/pattern-features-bg-image.php:18
+#: templates/parts/blocks/pattern-centered-background.php:20
 msgctxt "Block pattern title."
-msgid "Features with background, image, text and button"
+msgid "Intro: Centered with background"
 msgstr ""
 
-#: templates/parts/blocks/pattern-footer.php:18
+#: templates/parts/blocks/pattern-contact-image.php:20
 msgctxt "Block pattern title."
-msgid "Site footer"
+msgid "Contact: With image and hours"
 msgstr ""
 
-#: templates/parts/blocks/pattern-heading-hidden-accessibly.php:18
-msgctxt "Block pattern title."
-msgid "Accessibly hidden heading"
+#: templates/parts/blocks/pattern-contact-image.php:47
+#: templates/parts/blocks/pattern-cta-large.php:31
+#: templates/parts/blocks/pattern-features-bg-icon.php:33
+#: templates/parts/blocks/pattern-features-bg-icon.php:53
+#: templates/parts/blocks/pattern-features-bg-icon.php:73
+#: templates/parts/blocks/pattern-features-bg-image.php:34
+#: templates/parts/blocks/pattern-features-bg-image.php:56
+#: templates/parts/blocks/pattern-features-bg-image.php:78
+#: templates/parts/blocks/pattern-features-single-large.php:31
+#: templates/parts/blocks/pattern-footer.php:38
+#: templates/parts/blocks/pattern-gallery-no-gap.php:33
+#: templates/parts/blocks/pattern-image-padding-left.php:31
+#: templates/parts/blocks/pattern-image-padding-right.php:31
+#: templates/parts/blocks/pattern-intro-bg-image.php:37
+#: templates/parts/blocks/pattern-intro-color-image-large.php:48
+#: templates/parts/blocks/pattern-intro-color-image.php:36
+#: templates/parts/blocks/pattern-intro-images.php:46
+#: templates/parts/blocks/pattern-intro-overlap.php:31
+#: templates/parts/blocks/pattern-logos.php:48
+#: templates/parts/blocks/pattern-team.php:48
+msgid "Image alt text"
 msgstr ""
 
-#: templates/parts/blocks/pattern-intro-fullscreen.php:18
+#: templates/parts/blocks/pattern-contact-quote.php:20
 msgctxt "Block pattern title."
-msgid "Full-screen page title"
+msgid "Contact: With quote"
 msgstr ""
 
-#: templates/parts/blocks/pattern-intro-with-description.php:18
+#: templates/parts/blocks/pattern-contact-shadow.php:20
 msgctxt "Block pattern title."
-msgid "Page title with description"
+msgid "Contact: With drop shadow"
 msgstr ""
 
-#: templates/parts/blocks/pattern-parallax-columns.php:18
+#: templates/parts/blocks/pattern-contact-social.php:20
 msgctxt "Block pattern title."
-msgid "Parallax columns"
+msgid "Contact: With social links"
 msgstr ""
 
-#: templates/parts/blocks/pattern-parallax-cover.php:18
+#: templates/parts/blocks/pattern-cta-bg.php:20
 msgctxt "Block pattern title."
-msgid "Parallax image background"
+msgid "Call to action: With background"
+msgstr ""
+
+#: templates/parts/blocks/pattern-cta-centered.php:20
+msgctxt "Block pattern title."
+msgid "Call to action: Centered"
+msgstr ""
+
+#: templates/parts/blocks/pattern-cta-large.php:20
+msgctxt "Block pattern title."
+msgid "Call to action: Large"
+msgstr ""
+
+#: templates/parts/blocks/pattern-cta-quote.php:20
+msgctxt "Block pattern title."
+msgid "Call to action: With quote"
+msgstr ""
+
+#: templates/parts/blocks/pattern-cta.php:20
+msgctxt "Block pattern title."
+msgid "Call to action"
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-bg-icon.php:20
+msgctxt "Block pattern title."
+msgid "Features: Center aligned with icon"
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-bg-image.php:20
+msgctxt "Block pattern title."
+msgid "Features: With background and image"
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-fullwidth-bg.php:20
+msgctxt "Block pattern title."
+msgid "Features: With background image"
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-large-image.php:20
+msgctxt "Block pattern title."
+msgid "Features: With large image"
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-parallax.php:20
+msgctxt "Block pattern title."
+msgid "Features: Parallax"
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-simple.php:20
+msgctxt "Block pattern title."
+msgid "Features"
+msgstr ""
+
+#: templates/parts/blocks/pattern-features-single-large.php:20
+msgctxt "Block pattern title."
+msgid "Features: A large feature"
+msgstr ""
+
+#: templates/parts/blocks/pattern-footer-form.php:20
+msgctxt "Block pattern title."
+msgid "Site footer: With subscription form example"
+msgstr ""
+
+#: templates/parts/blocks/pattern-footer.php:20
+msgctxt "Block pattern title."
+msgid "Site footer: With logo, links, description and social links"
+msgstr ""
+
+#: templates/parts/blocks/pattern-gallery-no-gap.php:20
+msgctxt "Block pattern title."
+msgid "Gallery: Full-width with no gaps"
+msgstr ""
+
+#: templates/parts/blocks/pattern-heading-hidden-accessibly.php:20
+msgctxt "Block pattern title."
+msgid "Heading: Accessibly hidden"
+msgstr ""
+
+#: templates/parts/blocks/pattern-image-padding-left.php:20
+msgctxt "Block pattern title."
+msgid "Image: Fullwidth with left padding"
+msgstr ""
+
+#: templates/parts/blocks/pattern-image-padding-right.php:20
+msgctxt "Block pattern title."
+msgid "Image: Fullwidth with right padding"
+msgstr ""
+
+#: templates/parts/blocks/pattern-image-parallax.php:20
+msgctxt "Block pattern title."
+msgid "Image: Parallax background"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-bg-image.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With image and background image"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-bg-links.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With page links and background"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-bg-text-left.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With background and text on the left"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-color-image-large.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Colored, with large image"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-color-image.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Colored, with image"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-fullscreen-bottom-text.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Full-screen with bottom text"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-images.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With 3 images"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-overlap.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Overlapped"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-with-description.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Simple, with description"
+msgstr ""
+
+#: templates/parts/blocks/pattern-logos.php:20
+msgctxt "Block pattern title."
+msgid "Logos"
+msgstr ""
+
+#: templates/parts/blocks/pattern-question-answer.php:20
+msgctxt "Block pattern title."
+msgid "Question and answer"
+msgstr ""
+
+#: templates/parts/blocks/pattern-team.php:20
+msgctxt "Block pattern title."
+msgid "Team"
+msgstr ""
+
+#: templates/parts/blocks/pattern-testimonials-single.php:20
+msgctxt "Block pattern title."
+msgid "Testimonial"
+msgstr ""
+
+#: templates/parts/blocks/pattern-testimonials.php:20
+msgctxt "Block pattern title."
+msgid "Testimonials"
+msgstr ""
+
+#: templates/parts/blocks/pattern-text-heading-columns.php:20
+msgctxt "Block pattern title."
+msgid "Text with heading in columns"
 msgstr ""
 
 #. translators: %s: Name of current post

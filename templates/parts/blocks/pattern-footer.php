@@ -2,6 +2,8 @@
 /**
  * Block pattern setup file.
  *
+ * Default pattern categories: buttons, columns, gallery, header, text.
+ *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -15,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Site footer', 'Block pattern title.', 'michelle' ),
+	'title'      => _x( 'Site footer: With logo, links, description and social links', 'Block pattern title.', 'michelle' ),
 	'categories' => array( 'columns' ),
 ) );
 
@@ -33,7 +35,7 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $image ); ?>" alt="" /></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

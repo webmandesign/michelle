@@ -32,4 +32,22 @@
 		outline-color: var(--color_accent);
 	}
 
+	&.is-style-outline {
+		padding-left: 1.5em / $button_font_size;
+		padding-right: 1.5em / $button_font_size;
+		color: inherit;
+		border: 1px solid;
+
+		&:not(.has-text-color) {
+			color: currentColor;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: none;
+		}
+
+	}
+
 }

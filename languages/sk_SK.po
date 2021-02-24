@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-23 14:51+0100\n"
-"PO-Revision-Date: 2021-02-23 14:51+0100\n"
+"POT-Creation-Date: 2021-02-24 21:32+0100\n"
+"PO-Revision-Date: 2021-02-24 21:34+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -89,13 +89,13 @@ msgstr "Aktualizujte a skúste to znova."
 
 #: includes/Content/Block_Styles.php:98
 msgctxt "Block style label."
+msgid "Display on large screens only"
+msgstr "Zobraziť len na veľkých obrazovkách"
+
+#: includes/Content/Block_Styles.php:105
+msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr "Tieň"
-
-#: includes/Content/Block_Styles.php:111
-msgctxt "Block style label."
-msgid "Overlap gradient"
-msgstr "Postupné prekrytie"
 
 #: includes/Content/Block_Styles.php:118
 msgctxt "Block style label."
@@ -114,10 +114,45 @@ msgstr "Médiá hore"
 
 #: includes/Content/Block_Styles.php:141
 msgctxt "Block style label."
+msgid "Narrow content"
+msgstr "Úzky obsah"
+
+#: includes/Content/Block_Styles.php:148
+msgctxt "Block style label."
+msgid "No gaps"
+msgstr "Žiadne medzery"
+
+#: includes/Content/Block_Styles.php:155
+msgctxt "Block style label."
 msgid "Outline items"
 msgstr "Obrysové položky"
 
-#: includes/Content/Block_Styles.php:148
+#: includes/Content/Block_Styles.php:162
+msgctxt "Block style label."
+msgid "Overlap gradient"
+msgstr "Postupné prekrytie"
+
+#: includes/Content/Block_Styles.php:169
+msgctxt "Block style label."
+msgid "Has padding"
+msgstr "Vnútorné odsadenie"
+
+#: includes/Content/Block_Styles.php:176
+msgctxt "Block style label."
+msgid "Padding left"
+msgstr "Odsadenie vľavo"
+
+#: includes/Content/Block_Styles.php:183
+msgctxt "Block style label."
+msgid "Padding right"
+msgstr "Odsadenie vpravo"
+
+#: includes/Content/Block_Styles.php:190
+msgctxt "Block style label."
+msgid "Simple"
+msgstr "Jednoduchý"
+
+#: includes/Content/Block_Styles.php:197
 #, fuzzy
 msgctxt "Block style label."
 msgid "Uppercase"
@@ -1493,45 +1528,228 @@ msgstr "Stránku si môžete prispôsobiť použitím editora so živím náhľa
 msgid "Customization changes will go live only after you publish them."
 msgstr "Zmeny prispôsobenia sa aplikujú až keď ich publikujete."
 
-#: templates/parts/blocks/pattern-features-bg-icon.php:18
+#: templates/parts/blocks/pattern-blog.php:20
 msgctxt "Block pattern title."
-msgid "Center aligned features with background, icon, text and button"
-msgstr "Vlastnosti zarovnané do stredu s pozadím, ikonkou, textom a tlačidlom"
+msgid "Blog"
+msgstr "Blog"
 
-#: templates/parts/blocks/pattern-features-bg-image.php:18
+#: templates/parts/blocks/pattern-centered-background.php:20
 msgctxt "Block pattern title."
-msgid "Features with background, image, text and button"
-msgstr "Vlastnosti s pozadím, obrázkom, textom a tlačidlom"
+msgid "Intro: Centered with background"
+msgstr "Úvod: Centrovaný s pozadím"
 
-#: templates/parts/blocks/pattern-footer.php:18
+#: templates/parts/blocks/pattern-contact-image.php:20
 msgctxt "Block pattern title."
-msgid "Site footer"
-msgstr "Pätička"
+msgid "Contact: With image and hours"
+msgstr "Kontakt: S obrázkom a hodinami"
 
-#: templates/parts/blocks/pattern-heading-hidden-accessibly.php:18
-msgctxt "Block pattern title."
-msgid "Accessibly hidden heading"
-msgstr "Prístupne skrytý nadpis"
+#: templates/parts/blocks/pattern-contact-image.php:47
+#: templates/parts/blocks/pattern-cta-large.php:31
+#: templates/parts/blocks/pattern-features-bg-icon.php:33
+#: templates/parts/blocks/pattern-features-bg-icon.php:53
+#: templates/parts/blocks/pattern-features-bg-icon.php:73
+#: templates/parts/blocks/pattern-features-bg-image.php:34
+#: templates/parts/blocks/pattern-features-bg-image.php:56
+#: templates/parts/blocks/pattern-features-bg-image.php:78
+#: templates/parts/blocks/pattern-features-single-large.php:31
+#: templates/parts/blocks/pattern-footer.php:38
+#: templates/parts/blocks/pattern-gallery-no-gap.php:33
+#: templates/parts/blocks/pattern-image-padding-left.php:31
+#: templates/parts/blocks/pattern-image-padding-right.php:31
+#: templates/parts/blocks/pattern-intro-bg-image.php:37
+#: templates/parts/blocks/pattern-intro-color-image-large.php:48
+#: templates/parts/blocks/pattern-intro-color-image.php:36
+#: templates/parts/blocks/pattern-intro-images.php:46
+#: templates/parts/blocks/pattern-intro-overlap.php:31
+#: templates/parts/blocks/pattern-logos.php:48
+#: templates/parts/blocks/pattern-team.php:48
+msgid "Image alt text"
+msgstr "Alternatívny text obrázka"
 
-#: templates/parts/blocks/pattern-intro-fullscreen.php:18
+#: templates/parts/blocks/pattern-contact-quote.php:20
 msgctxt "Block pattern title."
-msgid "Full-screen page title"
-msgstr "Nadpis stránky na celú obrazovku"
+msgid "Contact: With quote"
+msgstr "Kontakt: S citátom"
 
-#: templates/parts/blocks/pattern-intro-with-description.php:18
+#: templates/parts/blocks/pattern-contact-shadow.php:20
 msgctxt "Block pattern title."
-msgid "Page title with description"
-msgstr "Nadpis stránky s popisom"
+msgid "Contact: With drop shadow"
+msgstr "Kontakt: S tieňom"
 
-#: templates/parts/blocks/pattern-parallax-columns.php:18
+#: templates/parts/blocks/pattern-contact-social.php:20
 msgctxt "Block pattern title."
-msgid "Parallax columns"
-msgstr "Paralaxové stĺpce"
+msgid "Contact: With social links"
+msgstr "Kontakt: So sociálnymi odkazmi"
 
-#: templates/parts/blocks/pattern-parallax-cover.php:18
+#: templates/parts/blocks/pattern-cta-bg.php:20
 msgctxt "Block pattern title."
-msgid "Parallax image background"
-msgstr "Paralaxový obrázok na pozadí"
+msgid "Call to action: With background"
+msgstr "Výzva k akcii: S pozadím"
+
+#: templates/parts/blocks/pattern-cta-centered.php:20
+msgctxt "Block pattern title."
+msgid "Call to action: Centered"
+msgstr "Výzva k akcii: Centrovaná"
+
+#: templates/parts/blocks/pattern-cta-large.php:20
+msgctxt "Block pattern title."
+msgid "Call to action: Large"
+msgstr "Výzva k akcii: Veľká"
+
+#: templates/parts/blocks/pattern-cta-quote.php:20
+msgctxt "Block pattern title."
+msgid "Call to action: With quote"
+msgstr "Výzva k akcii: S citátom"
+
+#: templates/parts/blocks/pattern-cta.php:20
+msgctxt "Block pattern title."
+msgid "Call to action"
+msgstr "Výzva k akcii"
+
+#: templates/parts/blocks/pattern-features-bg-icon.php:20
+msgctxt "Block pattern title."
+msgid "Features: Center aligned with icon"
+msgstr "Vlastnosti: Zarovnané na stred s ikonou"
+
+#: templates/parts/blocks/pattern-features-bg-image.php:20
+msgctxt "Block pattern title."
+msgid "Features: With background and image"
+msgstr "Vlastnosti: S pozadím a obrázkom"
+
+#: templates/parts/blocks/pattern-features-fullwidth-bg.php:20
+msgctxt "Block pattern title."
+msgid "Features: With background image"
+msgstr "Vlastnosti: S obrázkom na pozadí"
+
+#: templates/parts/blocks/pattern-features-large-image.php:20
+msgctxt "Block pattern title."
+msgid "Features: With large image"
+msgstr "Vlastnosti: S veľkým obrázkom"
+
+#: templates/parts/blocks/pattern-features-parallax.php:20
+msgctxt "Block pattern title."
+msgid "Features: Parallax"
+msgstr "Vlastnosti: Paralaxa"
+
+#: templates/parts/blocks/pattern-features-simple.php:20
+msgctxt "Block pattern title."
+msgid "Features"
+msgstr "Vlastnosti"
+
+#: templates/parts/blocks/pattern-features-single-large.php:20
+msgctxt "Block pattern title."
+msgid "Features: A large feature"
+msgstr "Vlastnosti: Veľká vlastnosť"
+
+#: templates/parts/blocks/pattern-footer-form.php:20
+msgctxt "Block pattern title."
+msgid "Site footer: With subscription form example"
+msgstr "Pätička: S príkladom formulára odberu"
+
+#: templates/parts/blocks/pattern-footer.php:20
+msgctxt "Block pattern title."
+msgid "Site footer: With logo, links, description and social links"
+msgstr "Pätička: S logom, odkazmi, popisom a sociálnymi odkazmi"
+
+#: templates/parts/blocks/pattern-gallery-no-gap.php:20
+msgctxt "Block pattern title."
+msgid "Gallery: Full-width with no gaps"
+msgstr "Galéria: Plná šírka bez medzier"
+
+#: templates/parts/blocks/pattern-heading-hidden-accessibly.php:20
+msgctxt "Block pattern title."
+msgid "Heading: Accessibly hidden"
+msgstr "Nadpis: Prístupne skrytý"
+
+#: templates/parts/blocks/pattern-image-padding-left.php:20
+msgctxt "Block pattern title."
+msgid "Image: Fullwidth with left padding"
+msgstr "Obrázok: Plná šírka s odsadením vľavo"
+
+#: templates/parts/blocks/pattern-image-padding-right.php:20
+msgctxt "Block pattern title."
+msgid "Image: Fullwidth with right padding"
+msgstr "Obrázok: Plná šírka s odsadením vpravo"
+
+#: templates/parts/blocks/pattern-image-parallax.php:20
+msgctxt "Block pattern title."
+msgid "Image: Parallax background"
+msgstr "Obrázok: Paralaxa pozadia"
+
+#: templates/parts/blocks/pattern-intro-bg-image.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With image and background image"
+msgstr "Úvod: S obrázkom a obrázkom na pozadí"
+
+#: templates/parts/blocks/pattern-intro-bg-links.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With page links and background"
+msgstr "Úvod: S odkazmi na stránky a pozadím"
+
+#: templates/parts/blocks/pattern-intro-bg-text-left.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With background and text on the left"
+msgstr "Úvod: S pozadím a textom vľavo"
+
+#: templates/parts/blocks/pattern-intro-color-image-large.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Colored, with large image"
+msgstr "Úvod: Farebný, s veľkým obrázkom"
+
+#: templates/parts/blocks/pattern-intro-color-image.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Colored, with image"
+msgstr "Úvod: Farebný, s obrázkom"
+
+#: templates/parts/blocks/pattern-intro-fullscreen-bottom-text.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Full-screen with bottom text"
+msgstr "Úvod: Na celú obrazovku s textom dole"
+
+#: templates/parts/blocks/pattern-intro-images.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With 3 images"
+msgstr "Úvod: S 3 obrázkami"
+
+#: templates/parts/blocks/pattern-intro-overlap.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Overlapped"
+msgstr "Úvod: Prekrývajúci sa"
+
+#: templates/parts/blocks/pattern-intro-with-description.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Simple, with description"
+msgstr "Úvod: Jednoduchý, s popisom"
+
+#: templates/parts/blocks/pattern-logos.php:20
+msgctxt "Block pattern title."
+msgid "Logos"
+msgstr "Logá"
+
+#: templates/parts/blocks/pattern-question-answer.php:20
+msgctxt "Block pattern title."
+msgid "Question and answer"
+msgstr "Otázka a odpoveď"
+
+#: templates/parts/blocks/pattern-team.php:20
+msgctxt "Block pattern title."
+msgid "Team"
+msgstr "Tím"
+
+#: templates/parts/blocks/pattern-testimonials-single.php:20
+msgctxt "Block pattern title."
+msgid "Testimonial"
+msgstr "Referencia"
+
+#: templates/parts/blocks/pattern-testimonials.php:20
+msgctxt "Block pattern title."
+msgid "Testimonials"
+msgstr "Referencie"
+
+#: templates/parts/blocks/pattern-text-heading-columns.php:20
+msgctxt "Block pattern title."
+msgid "Text with heading in columns"
+msgstr "Text s nadpisom v stĺpcoch"
 
 #. translators: %s: Name of current post
 #: templates/parts/component/link-more.php:26

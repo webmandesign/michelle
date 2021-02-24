@@ -18,10 +18,9 @@
 
 }
 
-.gallery,
 .wp-block-gallery {
 
-	.site & figure figcaption {
+	&.wp-block-gallery figure figcaption {
 		padding: 4%;
 		background: rgba( #000, .66 );
 		color: #fff;

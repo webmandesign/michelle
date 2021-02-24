@@ -136,23 +136,34 @@ class Body_Class implements Component_Interface {
 
 		// Processing
 
-			$content_color = sanitize_hex_color_no_hash( get_background_color() );
+			// Dark editor theme class.
 
-			/**
-			 * Color darkness code inspiration:
-			 * @link  https://github.com/mexitek/phpColors
-			 */
-			if ( 6 === strlen( $content_color ) ) {
-				$r = hexdec( $content_color[0] . $content_color[1] );
-				$g = hexdec( $content_color[2] . $content_color[3] );
-				$b = hexdec( $content_color[4] . $content_color[5] );
+				$content_color = sanitize_hex_color_no_hash( get_background_color() );
 
-				$content_color_darkness = ( $r * 299 + $g * 587 + $b * 114 ) / 1000;
+				/**
+				 * Color darkness code inspiration:
+				 * @link  https://github.com/mexitek/phpColors
+				 */
+				if ( 6 === strlen( $content_color ) ) {
+					$r = hexdec( $content_color[0] . $content_color[1] );
+					$g = hexdec( $content_color[2] . $content_color[3] );
+					$b = hexdec( $content_color[4] . $content_color[5] );
 
-				if ( 130 >= $content_color_darkness ) {
-					$classes .= ' is-dark-theme';
+					$content_color_darkness = ( $r * 299 + $g * 587 + $b * 114 ) / 1000;
+
+					if ( 130 >= $content_color_darkness ) {
+						$classes .= ' is-dark-theme';
+					}
 				}
-			}
+
+			// "Editing footer" reusable block class.
+
+				if (
+					'wp_block' === get_post_type( $post )
+					&& get_the_ID( $post ) == get_theme_mod( 'block_area_site_footer' )
+				) {
+					$classes .= ' editing-block-area-site-footer';
+				}
 
 
 		// Output

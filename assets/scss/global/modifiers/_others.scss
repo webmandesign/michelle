@@ -1,5 +1,18 @@
 /* FILE: global/modifiers/_others.scss */
 
+// Responsive
+
+	$important_modifiers: important( 'modifier_responsive' );
+
+	.is-displayed-on-desktop,
+	.is-style-display-on-desktop {
+		@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+			display: none !important;
+		}
+	}
+
+	$important_modifiers: null; // Required reset.
+
 // Overflow
 
 	$important_modifiers: important( 'modifier_overflow' );

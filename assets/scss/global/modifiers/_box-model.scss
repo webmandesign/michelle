@@ -2,14 +2,22 @@
 
 // Width
 
+	$important_modifiers: important( 'modifier_width' );
+
+	.has-narrow-max-width {
+		max-width: var(--layout_width_entry_content) $important_modifiers;
+	}
+
 	.has-wide-content-width {
 
 		.wp-block-cover__inner-container,
 		.wp-block-group__inner-container {
-			max-width: var(--layout_width_content);
+			max-width: var(--layout_width_content) $important_modifiers;
 		}
 
 	}
+
+	$important_modifiers: null; // Required reset.
 
 // Height
 
@@ -57,6 +65,10 @@
 // Padding
 
 	$important_modifiers: important( 'modifier_padding' );
+
+	.is-style-has-padding {
+		padding: 4% $important_modifiers;
+	}
 
 	.has-phi-padding,
 	.has-golden-padding {
@@ -185,6 +197,15 @@
 	$important_modifiers: null; // Required reset.
 
 // Flexbox
+
+	.has-flex-display {
+		display: flex;
+
+		> * {
+			flex: 1 0 auto;
+		}
+
+	}
 
 	$important_modifiers: important( 'modifier_flex_order' );
 

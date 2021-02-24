@@ -15,7 +15,7 @@ if ( ! is_admin() ) {
 	return;
 }
 
-$image = get_theme_file_uri( 'assets/images/starter/3to2.jpg' );
+$image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 $icon  = get_theme_file_uri( 'assets/images/starter/icon.png' );
 
 ?>

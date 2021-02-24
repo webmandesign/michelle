@@ -18,3 +18,7 @@ h2, h3, h4, h5, h6 {
 	}
 
 }
+
+.editing-block-area-site-footer #{ $selector_editor_wrapper } {
+	font-size: var(--typography_size_footer);
+}

@@ -55,6 +55,10 @@
 
 // Force link color inheritance
 
+	.has-text-color a {
+		color: inherit;
+	}
+
 	.link-color-inherit a,
 	.has-inherit-link-color a,
 	a.link-color-inherit

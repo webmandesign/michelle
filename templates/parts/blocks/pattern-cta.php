@@ -2,6 +2,8 @@
 /**
  * Block pattern setup file.
  *
+ * Default pattern categories: buttons, columns, gallery, header, text.
+ *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -15,9 +17,11 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'         => _x( 'Call to action', 'Block pattern title.', 'michelle' ),
-	'categories'    => array( 'buttons' ),
+	'title'      => _x( 'Call to action', 'Block pattern title.', 'michelle' ),
+	'categories' => array( 'buttons' ),
 ) );
+
+// Block pattern content:
 
 ?>
 
