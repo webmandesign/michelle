@@ -123,6 +123,8 @@ class Block_Patterns implements Component_Interface {
 		// Variables
 
 			$pattern_ids = array(
+				'cta',
+				'cta-fullscreen',
 				'features-bg-icon',
 				'features-bg-image',
 				'footer',

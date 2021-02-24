@@ -31,45 +31,18 @@
 			@extend .has-phi-screen-min-height;
 		}
 
-	.has-70-percent-screen-min-height {
-		min-height: 70vh $important_modifiers;
-	}
+	@for $i from 5 through 19 {
+		$h : $i * 5;
 
-		[class^="wp-block-"].has-70-percent-screen-min-height {
-			@extend .has-70-percent-screen-min-height;
+		.has-#{ $h }-percent-screen-min-height {
+			min-height: $h +vh $important_modifiers;
 		}
 
-	.has-75-percent-screen-min-height {
-		min-height: 75vh $important_modifiers;
+			[class^="wp-block-"].has-#{ $h }-percent-screen-min-height {
+				@extend .has-#{ $h }-percent-screen-min-height;
+			}
+
 	}
-
-		[class^="wp-block-"].has-75-percent-screen-min-height {
-			@extend .has-75-percent-screen-min-height;
-		}
-
-	.has-80-percent-screen-min-height {
-		min-height: 80vh $important_modifiers;
-	}
-
-		[class^="wp-block-"].has-80-percent-screen-min-height {
-			@extend .has-80-percent-screen-min-height;
-		}
-
-	.has-90-percent-screen-min-height {
-		min-height: 90vh $important_modifiers;
-	}
-
-		[class^="wp-block-"].has-90-percent-screen-min-height {
-			@extend .has-90-percent-screen-min-height;
-		}
-
-	.has-95-percent-screen-min-height {
-		min-height: 95vh $important_modifiers;
-	}
-
-		[class^="wp-block-"].has-95-percent-screen-min-height {
-			@extend .has-95-percent-screen-min-height;
-		}
 
 	.has-full-screen-min-height {
 		min-height: 100vh $important_modifiers;

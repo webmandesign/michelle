@@ -33,3 +33,7 @@
 .is-style-hide-caption figcaption {
 	display:none;
 }
+
+.wp-block-gallery.wp-block-gallery.is-style-no-gaps .blocks-gallery-item {
+	margin: 0;
+}

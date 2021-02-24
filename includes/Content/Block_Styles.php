@@ -107,13 +107,6 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
-				'overlap-gradient' => array(
-					'label'  => _x( 'Overlap gradient', 'Block style label.', 'michelle' ),
-					'blocks' => array(
-						'core/media-text',
-					),
-				),
-
 				'hide-caption' => array(
 					'label'  => _x( 'Hide caption', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -137,10 +130,45 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
+				'narrow-content' => array(
+					'label'  => _x( 'Narrow content', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/media-text',
+					),
+				),
+
+				'no-gaps' => array(
+					'label'  => _x( 'No gaps', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/gallery',
+					),
+				),
+
 				'outline-items' => array(
 					'label'  => _x( 'Outline items', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/list',
+					),
+				),
+
+				'overlap-gradient' => array(
+					'label'  => _x( 'Overlap gradient', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/media-text',
+					),
+				),
+
+				'padding-left' => array(
+					'label'  => _x( 'Padding left', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/image',
+					),
+				),
+
+				'padding-right' => array(
+					'label'  => _x( 'Padding right', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/image',
 					),
 				),
 
