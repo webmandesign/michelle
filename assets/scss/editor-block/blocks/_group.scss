@@ -39,3 +39,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.wp-block-group.has-background > .wp-block-group__inner-container > [data-align="full"],
+[data-align="full"] .wp-block-group.has-background > .wp-block-group__inner-container > [data-align="full"] {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}

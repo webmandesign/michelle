@@ -2,6 +2,8 @@
 
 .site-header {
 	position: relative;
+	background: var(--color_header_background);
+	color: var(--color_header_text);
 	z-index: 998;
 
 	@include media( map_get( $breakpoint, 'xl' ) ) {
@@ -37,11 +39,12 @@
 		}
 
 		.has-scrolled:not(.has-navigation-toggled) & {
+			--color_header_background: var(--color_body_background);
+
 			position: sticky;
 			top: 0;
-			background: var(--color_body_background);
 			transform: translateY( -100% );
-			transition: transform .6s;
+			transition: transform .3s;
 		}
 
 			.has-scrolled[class*="-header-overlaid"]:not(.has-navigation-toggled) & {
@@ -49,11 +52,11 @@
 			}
 
 			.has-scrolled[class*="-header-overlaid-light"]:not(.has-navigation-toggled) & {
-				background: var(--color_overlaid_header_light_background);
+				--color_header_background: var(--color_overlaid_header_light_background);
 			}
 
 			.has-scrolled[class*="-header-overlaid-dark"]:not(.has-navigation-toggled) & {
-				background: var(--color_overlaid_header_dark_background);
+				--color_header_background: var(--color_overlaid_header_dark_background);
 			}
 
 		.has-scrolled-up:not(.has-navigation-toggled) & {
@@ -71,15 +74,16 @@
 		position: relative;
 
 		.site-header {
+			--color_header_text: var(--color_overlaid_header_dark);
+
 			position: absolute;
 			width: 100%;
 			#{$left}: 0;
 			top: 0;
-			color: var(--color_overlaid_header_dark);
 		}
 
 	}
 
 	body[class*="-header-overlaid-light"] .site-header {
-		color: var(--color_overlaid_header_light);
+		--color_header_text: var(--color_overlaid_header_light);
 	}

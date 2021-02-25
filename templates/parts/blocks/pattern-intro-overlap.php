@@ -19,6 +19,7 @@ defined( 'ABSPATH' ) || exit;
 Block_Patterns::add_pattern_args( __FILE__, array(
 	'title'      => _x( 'Intro: Overlapped', 'Block pattern title.', 'michelle' ),
 	'categories' => array( 'header' ),
+	'keywords'   => array( esc_html__( 'title', 'michelle' ), esc_html__( 'heading', 'michelle' ), 'h1' ),
 ) );
 
 // Block pattern content:

@@ -87,7 +87,7 @@
 
 }
 
-.search-results .page-title span {
+.search-results .page-title span:not(.page-number) {
 	display: block;
 	text-transform: none;
 	quotes: '“' '”' '‘' '’';

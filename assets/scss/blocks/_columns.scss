@@ -14,6 +14,15 @@
 			padding-bottom: 0;
 		}
 
+		&.is-style-no-gaps {
+			padding: 0;
+
+			.wp-block-column {
+				margin: 0;
+			}
+
+		}
+
 	}
 
 	&:last-child {
@@ -36,9 +45,14 @@
 		table-layout: fixed;
 	}
 
-	&.is-style-drop-shadow,
-	&.is-style-inner-shadow {
-		padding: $golden +em;
+	&,
+	&s {
+
+		&.is-style-drop-shadow,
+		&.is-style-inner-shadow {
+			padding: $golden +em;
+		}
+
 	}
 
 }
