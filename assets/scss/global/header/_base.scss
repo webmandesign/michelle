@@ -44,6 +44,18 @@
 			transition: transform .6s;
 		}
 
+			.has-scrolled[class*="-header-overlaid"]:not(.has-navigation-toggled) & {
+				position: fixed;
+			}
+
+			.has-scrolled[class*="-header-overlaid-light"]:not(.has-navigation-toggled) & {
+				background: var(--color_overlaid_header_light_background);
+			}
+
+			.has-scrolled[class*="-header-overlaid-dark"]:not(.has-navigation-toggled) & {
+				background: var(--color_overlaid_header_dark_background);
+			}
+
 		.has-scrolled-up:not(.has-navigation-toggled) & {
 			box-shadow: var(--drop_shadow);
 			transform: translateY( 0 );
@@ -54,7 +66,6 @@
 }
 
 // Overlaid header.
-@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 
 	body[class*="-header-overlaid"] {
 		position: relative;
@@ -64,13 +75,11 @@
 			width: 100%;
 			#{$left}: 0;
 			top: 0;
-			color: #000;
+			color: var(--color_overlaid_header_dark);
 		}
 
 	}
 
 	body[class*="-header-overlaid-light"] .site-header {
-		color: #fff;
+		color: var(--color_overlaid_header_light);
 	}
-
-}

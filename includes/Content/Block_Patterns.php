@@ -95,10 +95,15 @@ class Block_Patterns implements Component_Interface {
 					)
 				);
 
-				// Why bother if we have no content?
-				if ( empty( $args['content'] ) ) {
+				// Why bother if we have no content or title?
+				if (
+					empty( $args['content'] )
+					|| empty( $args['title'] )
+				) {
 					continue;
 				}
+
+				$args['title'] = esc_html( $args['title'] );
 
 				register_block_pattern(
 					'michelle/' . $id,

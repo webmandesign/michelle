@@ -24,7 +24,7 @@
 		top: 0;
 		padding: 1em;
 		margin-#{$right}: 0;
-		transform: translateX(-50%);
+		transform: translateX( $rtl_multiplier * -50%);
 	}
 
 	.svg-icon {
@@ -88,6 +88,10 @@
 		.main-navigation {
 			margin: 0;
 
+			&.toggled {
+				color: var(--color_navigation_text); // For menu toggle button.
+			}
+
 			li {
 				display: flex;
 				align-items: center;
@@ -109,7 +113,8 @@
 				top: 0;
 				padding: 6em 6% 3em;
 				margin-bottom: 0;
-				background: var(--color_body_background);
+				background: var(--color_navigation_background);
+				color: var(--color_navigation_text);
 				overflow-y: auto;
 				z-index: 998;
 			}

@@ -28,6 +28,13 @@
 			--#{ $option_rgba }--a#{ $alpha }: #{ $value + '' };
 		}
 
+		// Overlaid header colors:
+		// "Light/dark" refers to overlaid header text color.
+		--color_overlaid_header_light_background: #030507;
+		--color_overlaid_header_light: #fff;
+		--color_overlaid_header_dark_background: #fff;
+		--color_overlaid_header_dark: #030507;
+
 	// Typography.
 
 		--typography_font_size_base: 16px;

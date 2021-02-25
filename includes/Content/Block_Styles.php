@@ -73,7 +73,7 @@ class Block_Styles implements Component_Interface {
 						$block,
 						array(
 							'name'  => sanitize_html_class( $class ),
-							'label' => $args['label'],
+							'label' => esc_html( $args['label'] ),
 						)
 					);
 				}

@@ -34,9 +34,5 @@ $image = get_theme_file_uri( 'assets/images/starter/1to1.jpg' );
 
 <!-- wp:paragraph {"className":"has-narrow-max-width","fontSize":"large"} -->
 <p class="has-narrow-max-width has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit nisi, velit aptent neque pharetra natoque convallis vestibulum eros, penatibus vitae augue himenaeos.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:spacer {"height":68} -->
-<div style="height:68px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div></div>
+<!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text -->

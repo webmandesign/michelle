@@ -16,9 +16,9 @@
 	&.pagination::before {
 		content: attr(data-current) " / " attr(data-total);
 		position: absolute;
-		left: 50%;
+		left: 50%; // No RTL needed here.
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%); // No RTL needed here.
 
 		@include media( map_get( $breakpoint, 'm' ) ) {
 			display: none;

@@ -178,7 +178,7 @@
 
 			&:hover,
 			&:focus-within {
-				transform: translateX( -50% );
+				transform: translateX( $rtl_multiplier * -50% );
 			}
 
 		}
@@ -189,7 +189,7 @@
 
 			&:hover,
 			&:focus-within {
-				transform: translateX( 50% );
+				transform: translateX( $rtl_multiplier * 50% );
 			}
 
 		}

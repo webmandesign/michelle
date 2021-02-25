@@ -125,17 +125,14 @@ form[role="search"],
 
 		&:focus-within {
 			position: fixed;
-			left: calc( 50vw - var(--scrollbar_width) / 2 );
+			left: calc( 50vw - var(--scrollbar_width) / 2 ); // No RTL needed here.
 			top: 50vh;
 			margin-#{$left}: 0;
+			font-size: 1.5em;
 			background: none;
 			color: var(--color_search_text);
-			transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%); // No RTL needed here.
 			z-index: 999; // Above mobile menu toggle button.
-
-			@include media( map_get( $breakpoint, 'm' ) ) {
-				font-size: 1.5em;
-			}
 
 			@include media( map_get( $breakpoint, 'xl' ) ) {
 				font-size: 2em;
@@ -163,7 +160,7 @@ form[role="search"],
 				content: '\00d7'; // &times;
 				position: absolute;
 				#{$right}: 0;
-				bottom: 100%;
+				bottom: calc( 100% + .5em );
 				width: 1.5em;
 				font-size: calc( 2 * var(--typography_font_size_small) );
 				text-align: center;
