@@ -33,8 +33,8 @@ $image = get_theme_file_uri( 'assets/images/starter/1to1.jpg' );
 <h2 class="has-palette-3-color has-text-color"><strong>Lorem ipsum dolor</strong><br><strong>sit amet consectetur</strong></h2>
 <!-- /wp:heading -->
 
-<!-- wp:spacer {"className":"has-40-percent-screen-min-height"} -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-40-percent-screen-min-height"></div>
+<!-- wp:spacer {"className":"has-40vmin-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-40vmin-min-height"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"fontSize":"large"} -->

@@ -29,12 +29,12 @@ $image = get_theme_file_uri( 'assets/images/starter/3to4.jpg' );
 ?>
 
 <!-- wp:group {"align":"full","className":"has-no-padding","backgroundColor":"accent","textColor":"palette-3"} -->
-<div class="wp-block-group alignfull has-no-padding has-palette-3-color has-accent-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-30-percent-screen-min-height"} -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-30-percent-screen-min-height"></div>
+<div class="wp-block-group alignfull has-no-padding has-palette-3-color has-accent-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":40,"overlayColor":"accent","minHeight":75,"minHeightUnit":"vh","contentPosition":"bottom center","align":"wide","className":"is-style-scale-image"} -->
-<div class="wp-block-cover alignwide has-background-dim-40 has-accent-background-color has-background-dim has-custom-content-position is-position-bottom-center is-style-scale-image" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:75vh"><div class="wp-block-cover__inner-container"><!-- wp:spacer -->
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":40,"overlayColor":"accent","minHeight":70,"minHeightUnit":"vh","contentPosition":"bottom center","align":"wide","className":"is-style-scale-image"} -->
+<div class="wp-block-cover alignwide has-background-dim-40 has-accent-background-color has-background-dim has-custom-content-position is-position-bottom-center is-style-scale-image" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:70vh"><div class="wp-block-cover__inner-container"><!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 

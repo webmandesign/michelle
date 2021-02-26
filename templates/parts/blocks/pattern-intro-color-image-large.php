@@ -29,8 +29,8 @@ $image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 ?>
 
 <!-- wp:group {"align":"full","className":"has-no-padding","backgroundColor":"accent"} -->
-<div class="wp-block-group alignfull has-no-padding has-accent-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-30-percent-screen-min-height"} -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-30-percent-screen-min-height"></div>
+<div class="wp-block-group alignfull has-no-padding has-accent-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:columns {"align":"wide"} -->

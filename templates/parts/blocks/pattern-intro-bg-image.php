@@ -30,8 +30,8 @@ $image2 = get_theme_file_uri( 'assets/images/starter/1to1.jpg' );
 ?>
 
 <!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999999,"dimRatio":90,"overlayColor":"palette-2","minHeight":100,"minHeightUnit":"vh","contentPosition":"center center","align":"full","className":"has-no-padding"} -->
-<div class="wp-block-cover alignfull has-background-dim-90 has-palette-2-background-color has-background-dim has-no-padding" style="background-image:url(<?php echo esc_url_raw( $image1 ); ?>);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"className":"has-30-percent-screen-min-height"} -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-30-percent-screen-min-height"></div>
+<div class="wp-block-cover alignfull has-background-dim-90 has-palette-2-background-color has-background-dim has-no-padding" style="background-image:url(<?php echo esc_url_raw( $image1 ); ?>);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","verticalAlignment":"top"} -->

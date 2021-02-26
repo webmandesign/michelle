@@ -12,7 +12,12 @@
 
 		.wp-block-cover__inner-container,
 		.wp-block-group__inner-container {
-			max-width: var(--layout_width_content) $important_modifiers;
+
+			&,
+			> * {
+				max-width: var(--layout_width_content) $important_modifiers;
+			}
+
 		}
 
 	}
@@ -23,42 +28,46 @@
 
 	$important_modifiers: important( 'modifier_screen_min_height' );
 
-	.has-half-screen-min-height {
-		min-height: 50vh $important_modifiers;
-	}
-
-		[class^="wp-block-"].has-half-screen-min-height {
-			@extend .has-half-screen-min-height;
-		}
-
-	.has-phi-screen-min-height {
-		min-height: ( $golden_major * 100vh ) $important_modifiers;
-	}
-
-		[class^="wp-block-"].has-phi-screen-min-height {
-			@extend .has-phi-screen-min-height;
-		}
-
-	@for $i from 5 through 19 {
+	@for $i from 2 through 20 {
 		$h : $i * 5;
 
-		.has-#{ $h }-percent-screen-min-height {
+		.has-#{ $h }vh-min-height {
 			min-height: $h +vh $important_modifiers;
 		}
+			[class^="wp-block-"].has-#{ $h }vh-min-height {
+				@extend .has-#{ $h }vh-min-height;
+			}
 
-			[class^="wp-block-"].has-#{ $h }-percent-screen-min-height {
-				@extend .has-#{ $h }-percent-screen-min-height;
+		.has-#{ $h }vmin-min-height {
+			min-height: $h +vmin $important_modifiers;
+		}
+			[class^="wp-block-"].has-#{ $h }vmin-min-height {
+				@extend .has-#{ $h }vmin-min-height;
+			}
+
+		.has-#{ $h }vmax-min-height {
+			min-height: $h +vmax $important_modifiers;
+		}
+			[class^="wp-block-"].has-#{ $h }vmax-min-height {
+				@extend .has-#{ $h }vmax-min-height;
 			}
 
 	}
 
-	.has-full-screen-min-height {
-		min-height: 100vh $important_modifiers;
+	.has-phi-vh-min-height {
+		min-height: ( $golden_major * 100vh ) $important_modifiers;
 	}
 
-		[class^="wp-block-"].has-full-screen-min-height {
-			@extend .has-full-screen-min-height;
+		[class^="wp-block-"].has-phi-vh-min-height,
+		.has-phi-screen-min-height,
+		[class^="wp-block-"].has-phi-screen-min-height {
+			@extend .has-phi-vh-min-height;
 		}
+
+	.has-full-screen-min-height,
+	[class^="wp-block-"].has-full-screen-min-height {
+		@extend .has-100vh-min-height;
+	}
 
 	$important_modifiers: null; // Required reset.
 

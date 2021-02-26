@@ -31,8 +31,8 @@ $image3 = get_theme_file_uri( 'assets/images/starter/3to4.jpg' );
 ?>
 
 <!-- wp:group {"align":"full","backgroundColor":"palette-1","textColor":"palette-2"} -->
-<div class="wp-block-group alignfull has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-30-percent-screen-min-height"} -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-30-percent-screen-min-height"></div>
+<div class="wp-block-group alignfull has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"center","level":1} -->

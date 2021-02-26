@@ -30,8 +30,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:separator {"color":"palette-2","className":"is-style-default"} -->
-<hr class="wp-block-separator has-text-color has-background has-palette-2-background-color has-palette-2-color is-style-default"/>
+<!-- wp:separator {"color":"palette-2","className":"is-style-dots"} -->
+<hr class="wp-block-separator has-text-color has-background has-palette-2-background-color has-palette-2-color is-style-dots"/>
 <!-- /wp:separator -->
 
 <!-- wp:heading {"textAlign":"center","className":"has-no-margin-top is-style-uppercase"} -->
@@ -56,8 +56,8 @@ Use a plugin to add newsletter form.
 <p class="has-text-align-center">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse, habitasse nam quis aenean malesuada magnis imperdiet senectus, torquent nibh inceptos.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:separator {"color":"palette-2","className":"is-style-default"} -->
-<hr class="wp-block-separator has-text-color has-background has-palette-2-background-color has-palette-2-color is-style-default"/>
+<!-- wp:separator {"color":"palette-2","className":"is-style-dots"} -->
+<hr class="wp-block-separator has-text-color has-background has-palette-2-background-color has-palette-2-color is-style-dots"/>
 <!-- /wp:separator -->
 
 <!-- wp:spacer {"height":70} -->
