@@ -52,6 +52,15 @@
 				}
 			}
 
+			// Matching WordPress block media query:
+			@media (max-width: 600px) {
+
+				> .wp-block-media-text__media {
+					mask-image: linear-gradient( to top, rgba( #000, 0 ), #000 var(--media_text_overlap_size) );
+				}
+
+			}
+
 			@media (min-width: 601px) {
 
 				> .wp-block-media-text__content {
@@ -118,6 +127,7 @@
 	padding-right: 10%; // No RTL here.
 }
 
+// Matching WordPress block media query:
 @media (max-width: 600px) {
 
 	.wp-block-media-text:not(.has-background) > .wp-block-media-text__content {

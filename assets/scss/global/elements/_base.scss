@@ -12,65 +12,37 @@ body {
 	border-color: var(--color_body_border);
 }
 
-hr:not(.is-style-dots),
-.wp-block-separator:not(.is-style-dots) {
+hr {
 	clear: both;
-	max-width: percentage( $golden_minor );
+	max-width: var(--hr_width) !important; // Unfortunately, it's much easier to use important here...
+	margin-left: auto;
+	margin-right: auto;
 	border-width: 0;
-	border-bottom: 2px solid;
+	border-bottom: 1px solid;
 
 	&.alignleft,
 	&.alignright {
 		float: none;
-		width: percentage( $golden_minor );
-		margin-left: 0;
-		margin-right: 0;
 		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
 	}
 
 	&.alignleft {
+		margin-left: 0;
 		margin-right: auto;
 	}
 
 	&.alignright {
 		margin-left: auto;
+		margin-right: 0;
+	}
+
+	&[class*="-wide"],
+	&.alignwide,
+	&.alignfull {
+		--hr_width: none;
 	}
 
 }
-
-	@supports ( mask-image: url('') ) {
-		// @see  setup/_others.scss for mask images.
-		// @link  https://developer.mozilla.org/en-US/docs/Web/CSS/mask
-		// @link  https://caniuse.com/#feat=css-masks
-
-		hr:not(.is-style-dots),
-		.wp-block-separator:not(.is-style-dots) {
-			height: var(--hr_zigzag_height);
-			width: calc( 8/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
-			max-width: 100%;
-			background: var(--color_accent);
-			border-width: 0;
-			mask-image: url('data:image/svg+xml;utf8,#{ encode_url( map_get( $zigzag_mask, '8/5' ) ) }');
-
-			&.alignleft,
-			&.alignright {
-				width: calc( 8/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
-			}
-
-		}
-
-		// Override default block styles:
-		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
-			height: var(--hr_zigzag_height);
-		}
-
-	}
-
-	hr,
-	.wp-block-separator {
-		margin-left: auto;
-		margin-right: auto;
-	}
 
 abbr[title],
 acronym[title],

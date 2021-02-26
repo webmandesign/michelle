@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-25 21:26+0100\n"
-"PO-Revision-Date: 2021-02-25 21:28+0100\n"
+"POT-Creation-Date: 2021-02-26 11:35+0100\n"
+"PO-Revision-Date: 2021-02-26 11:37+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -94,69 +94,94 @@ msgstr "Zobraziť len na veľkých obrazovkách"
 
 #: includes/Content/Block_Styles.php:105
 msgctxt "Block style label."
+msgid "Double-line"
+msgstr "Dvojitá čiara"
+
+#: includes/Content/Block_Styles.php:112
+msgctxt "Block style label."
+msgid "Double-line wide"
+msgstr "Široká dvojitá čiara"
+
+#: includes/Content/Block_Styles.php:119
+msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr "Tieň"
 
-#: includes/Content/Block_Styles.php:118
-msgctxt "Block style label."
-msgid "Hide caption"
-msgstr "Skryť popis"
-
-#: includes/Content/Block_Styles.php:125
-msgctxt "Block style label."
-msgid "Inner shadow"
-msgstr "Vnútorný tieň"
-
-#: includes/Content/Block_Styles.php:134
-msgctxt "Block style label."
-msgid "Media on top"
-msgstr "Médiá hore"
-
-#: includes/Content/Block_Styles.php:141
-msgctxt "Block style label."
-msgid "Narrow content"
-msgstr "Úzky obsah"
-
-#: includes/Content/Block_Styles.php:148
-msgctxt "Block style label."
-msgid "No gaps"
-msgstr "Žiadne medzery"
-
-#: includes/Content/Block_Styles.php:156
-msgctxt "Block style label."
-msgid "Outline items"
-msgstr "Obrysové položky"
-
-#: includes/Content/Block_Styles.php:163
-msgctxt "Block style label."
-msgid "Overlap gradient"
-msgstr "Postupné prekrytie"
-
-#: includes/Content/Block_Styles.php:170
+#: includes/Content/Block_Styles.php:132
 msgctxt "Block style label."
 msgid "Has padding"
 msgstr "Vnútorné odsadenie"
 
+#: includes/Content/Block_Styles.php:139
+msgctxt "Block style label."
+msgid "Hide caption"
+msgstr "Skryť popis"
+
+#: includes/Content/Block_Styles.php:146
+msgctxt "Block style label."
+msgid "Inner shadow"
+msgstr "Vnútorný tieň"
+
+#: includes/Content/Block_Styles.php:155
+msgctxt "Block style label."
+msgid "Media on top"
+msgstr "Médiá hore"
+
+#: includes/Content/Block_Styles.php:162
+msgctxt "Block style label."
+msgid "Narrow content"
+msgstr "Úzky obsah"
+
+#: includes/Content/Block_Styles.php:169
+msgctxt "Block style label."
+msgid "No gaps"
+msgstr "Žiadne medzery"
+
 #: includes/Content/Block_Styles.php:177
+msgctxt "Block style label."
+msgid "Outline items"
+msgstr "Obrysové položky"
+
+#: includes/Content/Block_Styles.php:184
+msgctxt "Block style label."
+msgid "Overlap gradient"
+msgstr "Postupné prekrytie"
+
+#: includes/Content/Block_Styles.php:191
 msgctxt "Block style label."
 msgid "Padding left"
 msgstr "Odsadenie vľavo"
 
-#: includes/Content/Block_Styles.php:184
+#: includes/Content/Block_Styles.php:198
 msgctxt "Block style label."
 msgid "Padding right"
 msgstr "Odsadenie vpravo"
 
-#: includes/Content/Block_Styles.php:191
+#: includes/Content/Block_Styles.php:205
+msgctxt "Block style label."
+msgid "Scale image"
+msgstr "Prispôsobiť veľkosť obrázka"
+
+#: includes/Content/Block_Styles.php:212
 msgctxt "Block style label."
 msgid "Simple"
 msgstr "Jednoduchý"
 
-#: includes/Content/Block_Styles.php:198
+#: includes/Content/Block_Styles.php:219
 #, fuzzy
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr "Veľké písmo"
+
+#: includes/Content/Block_Styles.php:227
+msgctxt "Block style label."
+msgid "Zig-zag"
+msgstr "Cik-cak"
+
+#: includes/Content/Block_Styles.php:234
+msgctxt "Block style label."
+msgid "Zig-zag wide"
+msgstr "Široký cik-cak"
 
 #. translators: Paginated content title suffix. %d: page number.
 #: includes/Content/Component.php:123
@@ -1689,6 +1714,7 @@ msgstr "Nadpis: Prístupne skrytý"
 #: templates/parts/blocks/pattern-intro-color-image.php:22
 #: templates/parts/blocks/pattern-intro-fullscreen-bottom-text.php:22
 #: templates/parts/blocks/pattern-intro-images.php:22
+#: templates/parts/blocks/pattern-intro-overflow.php:22
 #: templates/parts/blocks/pattern-intro-overlap.php:22
 #: templates/parts/blocks/pattern-intro-with-description.php:22
 msgid "title"
@@ -1722,6 +1748,7 @@ msgstr "Úvod: S obrázkom a obrázkom na pozadí"
 #: templates/parts/blocks/pattern-intro-color-image.php:22
 #: templates/parts/blocks/pattern-intro-fullscreen-bottom-text.php:22
 #: templates/parts/blocks/pattern-intro-images.php:22
+#: templates/parts/blocks/pattern-intro-overflow.php:22
 #: templates/parts/blocks/pattern-intro-overlap.php:22
 #: templates/parts/blocks/pattern-intro-with-description.php:22
 msgid "heading"
@@ -1761,6 +1788,11 @@ msgstr "Úvod: Na celú obrazovku s textom dole"
 msgctxt "Block pattern title."
 msgid "Intro: With 3 images"
 msgstr "Úvod: S 3 obrázkami"
+
+#: templates/parts/blocks/pattern-intro-overflow.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Overflown heading"
+msgstr "Úvod: Pretečený nadpis"
 
 #: templates/parts/blocks/pattern-intro-overlap.php:20
 msgctxt "Block pattern title."

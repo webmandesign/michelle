@@ -101,6 +101,20 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
+				'double-line' => array(
+					'label'  => _x( 'Double-line', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/separator',
+					),
+				),
+
+				'double-line-wide' => array(
+					'label'  => _x( 'Double-line wide', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/separator',
+					),
+				),
+
 				'drop-shadow' => array(
 					'label'  => _x( 'Drop shadow', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -111,6 +125,13 @@ class Block_Styles implements Component_Interface {
 						'core/image',
 						'core/media-text',
 						'core/video',
+					),
+				),
+
+				'has-padding' => array(
+					'label'  => _x( 'Has padding', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/columns',
 					),
 				),
 
@@ -166,13 +187,6 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
-				'has-padding' => array(
-					'label'  => _x( 'Has padding', 'Block style label.', 'michelle' ),
-					'blocks' => array(
-						'core/columns',
-					),
-				),
-
 				'padding-left' => array(
 					'label'  => _x( 'Padding left', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -184,6 +198,13 @@ class Block_Styles implements Component_Interface {
 					'label'  => _x( 'Padding right', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/image',
+					),
+				),
+
+				'scale-image' => array(
+					'label'  => _x( 'Scale image', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/cover',
 					),
 				),
 
@@ -199,6 +220,20 @@ class Block_Styles implements Component_Interface {
 					'blocks' => array(
 						'core/heading',
 						'core/paragraph',
+					),
+				),
+
+				'zigzag' => array(
+					'label'  => _x( 'Zig-zag', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/separator',
+					),
+				),
+
+				'zigzag-wide' => array(
+					'label'  => _x( 'Zig-zag wide', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/separator',
 					),
 				),
 

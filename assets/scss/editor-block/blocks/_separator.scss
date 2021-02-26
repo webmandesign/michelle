@@ -1,5 +1,20 @@
 /* FILE: editor-block/blocks/_separator.scss */
 
+#{ $selector_editor_wrapper } {
+	--hr_width: calc( #{ $golden_minor } * var(--layout_width_entry_content) );
+
+	[data-align="wide"],
+	[data-align="full"] {
+
+		&,
+		.is-style-zigzag {
+			--hr_width: none;
+		}
+
+	}
+
+}
+
 [data-type="core/separator"] {
 	clear: both;
 }
@@ -7,12 +22,8 @@
 #{ $selector_editor_wrapper } .wp-block-separator {
 	opacity: 1;
 
-	&:not(.is-style-dots) {
-		max-width: calc( #{ $golden_minor } * var(--layout_width_entry_content) );
-	}
-
-	&.is-style-wide {
-		max-width: $max_width_entry_content;
+	&[class*="-wide"] {
+		--hr_width: #{ $max_width_entry_content };
 	}
 
 	&.is-style-dots.has-background::before {

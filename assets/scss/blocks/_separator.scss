@@ -2,31 +2,51 @@
 
 .wp-block-separator {
 
-	&.is-style-wide {
-		width: 100%;
-		max-width: none;
-	}
-
-	&.is-style-dots::before {
-		content: ' \2022 \2022 \2022'; // &bull;
-		speak: none;
-		padding-#{$left}: $golden_major +em;
-		font-size: 2em;
-		letter-spacing: $golden_major +em;
-		color: var(--color_accent);
-	}
-
 	&.has-background {
 		padding: 0;
 	}
 
 	&.has-text-color {
 		background: currentColor;
+	}
 
-		&.is-style-dots::before {
-			color: currentColor;
+	&.is-style-dots {
+
+		&::before {
+			content: ' ***'; // &bull;
+			speak: none;
+			padding-#{$left}: $golden_major +em;
+			font-size: $golden +em;
+			letter-spacing: $golden_major +em;
 		}
 
+	}
+
+	&[class*="is-style-double-line"] {
+		border-bottom: 4px double;
+	}
+
+	&.is-style-zigzag {
+		// @see  setup/_others.scss for mask images.
+		// @link  https://developer.mozilla.org/en-US/docs/Web/CSS/mask
+		// @link  https://caniuse.com/#feat=css-masks
+		@supports ( mask-image: url('') ) {
+			--hr_width: calc( 8/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
+
+			&.alignwide,
+			&.alignfull {
+				--hr_width: none;
+			}
+
+			&,
+			&-wide {
+				height: var(--hr_zigzag_height);
+				background: currentColor;
+				border: 0;
+				mask-image: url('data:image/svg+xml;utf8,#{ encode_url( map_get( $zigzag_mask, '8/5' ) ) }');
+			}
+
+		}
 	}
 
 }

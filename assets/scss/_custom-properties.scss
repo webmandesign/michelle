@@ -122,10 +122,11 @@
 
 		--letter_spacing: .05em;
 
-		--hr_zigzag_height: 20px;
-		--hr_zigzag_segments: 3;
+		--hr_width: #{ percentage( $golden_minor ) };
+		--hr_zigzag_height: 10px;
+		--hr_zigzag_segments: 6;
 		@include media( map_get( $breakpoint, 'm' ) ) {
-			--hr_zigzag_segments: 5;
+			--hr_zigzag_segments: 10;
 		}
 
 		--border_decorative_width: 10px;

@@ -22,6 +22,11 @@
 		margin-bottom: 0;
 	}
 
+	&.is-style-scale-image {
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
 	&::after {
 		content: '';
 		clear: both;

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-25 21:26+0100\n"
+"POT-Creation-Date: 2021-02-26 11:35+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -87,67 +87,92 @@ msgstr ""
 
 #: includes/Content/Block_Styles.php:105
 msgctxt "Block style label."
+msgid "Double-line"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:112
+msgctxt "Block style label."
+msgid "Double-line wide"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:119
+msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:118
-msgctxt "Block style label."
-msgid "Hide caption"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:125
-msgctxt "Block style label."
-msgid "Inner shadow"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:134
-msgctxt "Block style label."
-msgid "Media on top"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:141
-msgctxt "Block style label."
-msgid "Narrow content"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:148
-msgctxt "Block style label."
-msgid "No gaps"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:156
-msgctxt "Block style label."
-msgid "Outline items"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:163
-msgctxt "Block style label."
-msgid "Overlap gradient"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:170
+#: includes/Content/Block_Styles.php:132
 msgctxt "Block style label."
 msgid "Has padding"
 msgstr ""
 
+#: includes/Content/Block_Styles.php:139
+msgctxt "Block style label."
+msgid "Hide caption"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:146
+msgctxt "Block style label."
+msgid "Inner shadow"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:155
+msgctxt "Block style label."
+msgid "Media on top"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:162
+msgctxt "Block style label."
+msgid "Narrow content"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:169
+msgctxt "Block style label."
+msgid "No gaps"
+msgstr ""
+
 #: includes/Content/Block_Styles.php:177
 msgctxt "Block style label."
-msgid "Padding left"
+msgid "Outline items"
 msgstr ""
 
 #: includes/Content/Block_Styles.php:184
 msgctxt "Block style label."
-msgid "Padding right"
+msgid "Overlap gradient"
 msgstr ""
 
 #: includes/Content/Block_Styles.php:191
 msgctxt "Block style label."
-msgid "Simple"
+msgid "Padding left"
 msgstr ""
 
 #: includes/Content/Block_Styles.php:198
 msgctxt "Block style label."
+msgid "Padding right"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:205
+msgctxt "Block style label."
+msgid "Scale image"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:212
+msgctxt "Block style label."
+msgid "Simple"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:219
+msgctxt "Block style label."
 msgid "Uppercase"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:227
+msgctxt "Block style label."
+msgid "Zig-zag"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:234
+msgctxt "Block style label."
+msgid "Zig-zag wide"
 msgstr ""
 
 #. translators: Paginated content title suffix. %d: page number.
@@ -1448,6 +1473,7 @@ msgstr ""
 #: templates/parts/blocks/pattern-intro-color-image.php:22
 #: templates/parts/blocks/pattern-intro-fullscreen-bottom-text.php:22
 #: templates/parts/blocks/pattern-intro-images.php:22
+#: templates/parts/blocks/pattern-intro-overflow.php:22
 #: templates/parts/blocks/pattern-intro-overlap.php:22
 #: templates/parts/blocks/pattern-intro-with-description.php:22
 msgid "title"
@@ -1481,6 +1507,7 @@ msgstr ""
 #: templates/parts/blocks/pattern-intro-color-image.php:22
 #: templates/parts/blocks/pattern-intro-fullscreen-bottom-text.php:22
 #: templates/parts/blocks/pattern-intro-images.php:22
+#: templates/parts/blocks/pattern-intro-overflow.php:22
 #: templates/parts/blocks/pattern-intro-overlap.php:22
 #: templates/parts/blocks/pattern-intro-with-description.php:22
 msgid "heading"
@@ -1519,6 +1546,11 @@ msgstr ""
 #: templates/parts/blocks/pattern-intro-images.php:20
 msgctxt "Block pattern title."
 msgid "Intro: With 3 images"
+msgstr ""
+
+#: templates/parts/blocks/pattern-intro-overflow.php:20
+msgctxt "Block pattern title."
+msgid "Intro: Overflown heading"
 msgstr ""
 
 #: templates/parts/blocks/pattern-intro-overlap.php:20

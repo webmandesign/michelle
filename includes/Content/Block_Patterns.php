@@ -160,6 +160,7 @@ class Block_Patterns implements Component_Interface {
 				'intro-color-image-large',
 				'intro-fullscreen-bottom-text',
 				'intro-images',
+				'intro-overflow',
 				'intro-overlap',
 				'intro-with-description',
 				'logos',
