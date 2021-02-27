@@ -34,7 +34,7 @@ $image = get_theme_file_uri( 'assets/images/starter/3to4.jpg' );
 <!-- /wp:spacer -->
 
 <!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image"} -->
-<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:paragraph {"className":"has-no-margin is-style-uppercase"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:paragraph {"className":"has-no-margin is-style-uppercase"} -->
 <p class="has-no-margin is-style-uppercase"><strong>Lorem ipsum</strong></p>
 <!-- /wp:paragraph -->
 

@@ -11,7 +11,8 @@
 		}
 
 		&.has-background {
-			padding-bottom: 0;
+			padding: 4%;
+			padding-bottom: calc( 4% - #{ $golden +em } );
 		}
 
 		&.is-style-no-gaps {

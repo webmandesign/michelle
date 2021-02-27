@@ -27,8 +27,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"","className":"is-style-drop-shadow"} -->
-<div class="wp-block-column is-style-drop-shadow"><!-- wp:heading {"textAlign":"center"} -->
-<h2 class="has-text-align-center">Lorem Ipsum</h2>
+<div class="wp-block-column is-style-drop-shadow"><!-- wp:heading {"textAlign":"center","className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="has-text-align-center is-style-uppercase has-normal-font-size"><strong>Lorem Ipsum</strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -37,8 +37,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"","className":"is-style-drop-shadow"} -->
-<div class="wp-block-column is-style-drop-shadow"><!-- wp:heading {"textAlign":"center"} -->
-<h2 class="has-text-align-center">Lorem Ipsum</h2>
+<div class="wp-block-column is-style-drop-shadow"><!-- wp:heading {"textAlign":"center","className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="has-text-align-center is-style-uppercase has-normal-font-size"><strong>Lorem Ipsum</strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -47,12 +47,12 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"","className":"is-style-drop-shadow"} -->
-<div class="wp-block-column is-style-drop-shadow"><!-- wp:heading {"textAlign":"center"} -->
-<h2 class="has-text-align-center">Lorem Ipsum</h2>
+<div class="wp-block-column is-style-drop-shadow"><!-- wp:heading {"textAlign":"center","className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="has-text-align-center is-style-uppercase has-normal-font-size"><strong>Lorem Ipsum</strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><a href="#0">Facebook</a><br><a href="#0">Instagram</a><br><a href="#0">YouTube</a></p>
+<p class="has-text-align-center"><a href="#0">Facebook</a><br><a href="#0">Instagram</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

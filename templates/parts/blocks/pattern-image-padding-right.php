@@ -28,5 +28,5 @@ $image = get_theme_file_uri( 'assets/images/starter/21to9.jpg' );
 ?>
 
 <!-- wp:image {"align":"full","id":999999,"sizeSlug":"large","linkDestination":"none","className":"is-style-padding-right"} -->
-<figure class="wp-block-image alignfull size-large is-style-padding-right"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999"/></figure>
+<figure class="wp-block-image alignfull size-large is-style-padding-right"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999"/></figure>
 <!-- /wp:image -->

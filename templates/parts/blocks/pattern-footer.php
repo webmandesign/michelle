@@ -35,7 +35,7 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"sizeSlug":"thumbnail","linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" /></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

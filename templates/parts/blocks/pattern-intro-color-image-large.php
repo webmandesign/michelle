@@ -46,6 +46,6 @@ $image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 <!-- /wp:columns -->
 
 <!-- wp:image {"align":"wide","id":999999,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-large"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php echo esc_attr__( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999"/></figure>
+<figure class="wp-block-image alignwide size-large"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999"/></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:group -->

@@ -151,6 +151,63 @@ class Blocks implements Component_Interface {
 				$block_content = preg_replace( $re, '<div class="entry-meta">$0</div>', $block_content );
 			}
 
+			// Media & Text block card style modifications.
+			if (
+				'core/media-text' === $block['blockName']
+				&& false !== stripos( $attrs['className'], 'is-style-card' )
+			) {
+				if ( ! empty( $attrs['backgroundColor'] ) ) {
+				// Background color class.
+
+					$background = ' has-' . $attrs['backgroundColor'] . '-background-color';
+
+					$block_content = str_replace(
+						array(
+							'background-color',
+							'wp-block-media-text__content',
+						),
+						array(
+							'no-background-color',
+							'wp-block-media-text__content has-background' . $background,
+						),
+						$block_content
+					);
+				} elseif ( ! empty( $attrs['style']['color']['background'] ) ) {
+				// Specific background color.
+
+					$background = maybe_hash_hex_color( $attrs['style']['color']['background'] );
+
+					$block_content = str_replace(
+						array(
+							$background,
+							'class="wp-block-media-text__content',
+						),
+						array(
+							'transparent',
+							'style="background:' . $background . '" class="wp-block-media-text__content',
+						),
+						$block_content
+					);
+				} elseif ( ! empty( $attrs['style']['color']['gradient'] ) ) {
+				// Background gradient.
+
+					$background = $attrs['style']['color']['gradient'];
+
+					$block_content = str_replace(
+						array(
+							$background,
+							'class="wp-block-media-text__content',
+						),
+						array(
+							'none',
+							'style="background:' . $background . '" class="wp-block-media-text__content',
+						),
+						$block_content
+					);
+				}
+
+			}
+
 
 		// Output
 

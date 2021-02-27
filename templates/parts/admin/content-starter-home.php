@@ -45,7 +45,7 @@ $icon  = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt=""/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
@@ -65,7 +65,7 @@ $icon  = get_theme_file_uri( 'assets/images/starter/icon.png' );
 
 <!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt=""/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
@@ -85,7 +85,7 @@ $icon  = get_theme_file_uri( 'assets/images/starter/icon.png' );
 
 <!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
 <div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt=""/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->

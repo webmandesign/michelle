@@ -48,7 +48,7 @@ $image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3} -->
-<h3 class="has-text-align-center">Lorem Ipsum</h3>
+<h3 class="has-text-align-center"><strong>Lorem Ipsum</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Write title…"} -->
@@ -58,7 +58,7 @@ $image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3} -->
-<h3 class="has-text-align-center">Lorem Ipsum</h3>
+<h3 class="has-text-align-center"><strong>Lorem Ipsum</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Write title…"} -->
@@ -68,7 +68,7 @@ $image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3} -->
-<h3 class="has-text-align-center">Lorem Ipsum</h3>
+<h3 class="has-text-align-center"><strong>Lorem Ipsum</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Write title…"} -->
@@ -78,7 +78,7 @@ $image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3} -->
-<h3 class="has-text-align-center">Lorem Ipsum</h3>
+<h3 class="has-text-align-center"><strong>Lorem Ipsum</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Write title…"} -->

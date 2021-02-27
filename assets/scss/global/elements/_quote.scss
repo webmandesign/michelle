@@ -34,6 +34,10 @@ blockquote {
 
 }
 
+	.has-text-color blockquote {
+		color: inherit;
+	}
+
 cite {
 	font-family: var(--typography_font_global);
 	font-style: normal;
