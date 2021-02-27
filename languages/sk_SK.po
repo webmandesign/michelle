@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-26 11:35+0100\n"
-"PO-Revision-Date: 2021-02-26 11:37+0100\n"
+"POT-Creation-Date: 2021-02-27 01:13+0100\n"
+"PO-Revision-Date: 2021-02-27 01:15+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -1179,6 +1179,44 @@ msgctxt "Theme starter content"
 msgid "This is a page/post excerpt text."
 msgstr "Toto je text výňatku stránky/článku."
 
+#: templates/parts/admin/content-starter-home.php:48
+#: templates/parts/admin/content-starter-home.php:68
+#: templates/parts/admin/content-starter-home.php:88
+#: templates/parts/admin/content-starter-services.php:26
+#: templates/parts/admin/content-starter-services.php:46
+#: templates/parts/admin/content-starter-services.php:66
+#: templates/parts/admin/content-starter-services.php:88
+#: templates/parts/admin/content-starter-services.php:108
+#: templates/parts/admin/content-starter-services.php:128
+#: templates/parts/blocks/pattern-contact-image-middle.php:47
+#: templates/parts/blocks/pattern-contact-image-side.php:31
+#: templates/parts/blocks/pattern-cta-large.php:32
+#: templates/parts/blocks/pattern-features-bg-icon.php:34
+#: templates/parts/blocks/pattern-features-bg-icon.php:54
+#: templates/parts/blocks/pattern-features-bg-icon.php:74
+#: templates/parts/blocks/pattern-features-bg-image.php:34
+#: templates/parts/blocks/pattern-features-bg-image.php:52
+#: templates/parts/blocks/pattern-features-bg-image.php:70
+#: templates/parts/blocks/pattern-features-single-large.php:32
+#: templates/parts/blocks/pattern-footer.php:38
+#: templates/parts/blocks/pattern-gallery-no-gap.php:34
+#: templates/parts/blocks/pattern-image-padding-left.php:31
+#: templates/parts/blocks/pattern-image-padding-right.php:31
+#: templates/parts/blocks/pattern-intro-2-images.php:40
+#: templates/parts/blocks/pattern-intro-2-images.php:58
+#: templates/parts/blocks/pattern-intro-bg-image.php:38
+#: templates/parts/blocks/pattern-intro-color-image-large.php:49
+#: templates/parts/blocks/pattern-intro-color-image.php:37
+#: templates/parts/blocks/pattern-intro-images.php:47
+#: templates/parts/blocks/pattern-intro-overlap.php:32
+#: templates/parts/blocks/pattern-logos.php:49
+#: templates/parts/blocks/pattern-portfolio-project-gallery.php:34
+#: templates/parts/blocks/pattern-portfolio-project-image.php:31
+#: templates/parts/blocks/pattern-team.php:49
+#: templates/parts/blocks/pattern-testimonials-single-bg.php:60
+msgid "Image alt text"
+msgstr "Alternatívny text obrázka"
+
 #: templates/parts/admin/media-image-sizes.php:31
 #, fuzzy
 msgid "Recommended image sizes"
@@ -1558,33 +1596,25 @@ msgctxt "Block pattern title."
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/parts/blocks/pattern-contact-image.php:20
+#: templates/parts/blocks/pattern-contact-bg.php:20
 msgctxt "Block pattern title."
-msgid "Contact: With image and hours"
-msgstr "Kontakt: S obrázkom a hodinami"
+msgid "Contact: With background image"
+msgstr "Kontakt: S obrázkom na pozadí"
 
-#: templates/parts/blocks/pattern-contact-image.php:47
-#: templates/parts/blocks/pattern-cta-large.php:32
-#: templates/parts/blocks/pattern-features-bg-icon.php:34
-#: templates/parts/blocks/pattern-features-bg-icon.php:54
-#: templates/parts/blocks/pattern-features-bg-icon.php:74
-#: templates/parts/blocks/pattern-features-bg-image.php:35
-#: templates/parts/blocks/pattern-features-bg-image.php:57
-#: templates/parts/blocks/pattern-features-bg-image.php:79
-#: templates/parts/blocks/pattern-features-single-large.php:32
-#: templates/parts/blocks/pattern-footer.php:38
-#: templates/parts/blocks/pattern-gallery-no-gap.php:34
-#: templates/parts/blocks/pattern-image-padding-left.php:31
-#: templates/parts/blocks/pattern-image-padding-right.php:31
-#: templates/parts/blocks/pattern-intro-bg-image.php:38
-#: templates/parts/blocks/pattern-intro-color-image-large.php:49
-#: templates/parts/blocks/pattern-intro-color-image.php:37
-#: templates/parts/blocks/pattern-intro-images.php:47
-#: templates/parts/blocks/pattern-intro-overlap.php:32
-#: templates/parts/blocks/pattern-logos.php:49
-#: templates/parts/blocks/pattern-team.php:49
-msgid "Image alt text"
-msgstr "Alternatívny text obrázka"
+#: templates/parts/blocks/pattern-contact-description.php:20
+msgctxt "Block pattern title."
+msgid "Contact: With description"
+msgstr "Kontakt: S popisom"
+
+#: templates/parts/blocks/pattern-contact-image-middle.php:20
+msgctxt "Block pattern title."
+msgid "Contact: With image in the middle"
+msgstr "Kontakt: S obrázkom v strede"
+
+#: templates/parts/blocks/pattern-contact-image-side.php:20
+msgctxt "Block pattern title."
+msgid "Contact: With image on side"
+msgstr "Kontakt: S obrázkom na boku"
 
 #: templates/parts/blocks/pattern-contact-quote.php:20
 msgctxt "Block pattern title."
@@ -1607,12 +1637,18 @@ msgid "Call to action: With background"
 msgstr "Výzva k akcii: S pozadím"
 
 #: templates/parts/blocks/pattern-cta-bg.php:22
+#: templates/parts/blocks/pattern-cta-box.php:22
 #: templates/parts/blocks/pattern-cta-centered.php:22
 #: templates/parts/blocks/pattern-cta-large.php:22
 #: templates/parts/blocks/pattern-cta-quote.php:22
 #: templates/parts/blocks/pattern-cta.php:22
 msgid "button"
 msgstr "tlačidlo"
+
+#: templates/parts/blocks/pattern-cta-box.php:20
+msgctxt "Block pattern title."
+msgid "Call to action: Boxed"
+msgstr "Výzva k akcii: Box"
 
 #: templates/parts/blocks/pattern-cta-centered.php:20
 msgctxt "Block pattern title."
@@ -1706,6 +1742,7 @@ msgid "Heading: Accessibly hidden"
 msgstr "Nadpis: Prístupne skrytý"
 
 #: templates/parts/blocks/pattern-heading-hidden-accessibly.php:22
+#: templates/parts/blocks/pattern-intro-2-images.php:22
 #: templates/parts/blocks/pattern-intro-bg-image.php:22
 #: templates/parts/blocks/pattern-intro-bg-links.php:22
 #: templates/parts/blocks/pattern-intro-bg-text-left.php:22
@@ -1735,11 +1772,12 @@ msgctxt "Block pattern title."
 msgid "Image: Parallax background"
 msgstr "Obrázok: Paralaxa pozadia"
 
-#: templates/parts/blocks/pattern-intro-bg-image.php:20
+#: templates/parts/blocks/pattern-intro-2-images.php:20
 msgctxt "Block pattern title."
-msgid "Intro: With image and background image"
-msgstr "Úvod: S obrázkom a obrázkom na pozadí"
+msgid "Intro: With 2 images and description"
+msgstr "Úvod: S 2 obrázkami a popisom"
 
+#: templates/parts/blocks/pattern-intro-2-images.php:22
 #: templates/parts/blocks/pattern-intro-bg-image.php:22
 #: templates/parts/blocks/pattern-intro-bg-links.php:22
 #: templates/parts/blocks/pattern-intro-bg-text-left.php:22
@@ -1753,6 +1791,16 @@ msgstr "Úvod: S obrázkom a obrázkom na pozadí"
 #: templates/parts/blocks/pattern-intro-with-description.php:22
 msgid "heading"
 msgstr "nadpis"
+
+#: templates/parts/blocks/pattern-intro-2-images.php:22
+#: templates/parts/blocks/pattern-team.php:22
+msgid "gallery"
+msgstr "galéria"
+
+#: templates/parts/blocks/pattern-intro-bg-image.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With image and background image"
+msgstr "Úvod: S obrázkom a obrázkom na pozadí"
 
 #: templates/parts/blocks/pattern-intro-bg-links.php:20
 msgctxt "Block pattern title."
@@ -1809,6 +1857,16 @@ msgctxt "Block pattern title."
 msgid "Logos"
 msgstr "Logá"
 
+#: templates/parts/blocks/pattern-portfolio-project-gallery.php:20
+msgctxt "Block pattern title."
+msgid "Portfolio: Project with gallery"
+msgstr "Portfólio: Projekt s galériou"
+
+#: templates/parts/blocks/pattern-portfolio-project-image.php:20
+msgctxt "Block pattern title."
+msgid "Portfolio: Project with image"
+msgstr "Portfólio: Projekt s obrázkom"
+
 #: templates/parts/blocks/pattern-question-answer.php:20
 msgctxt "Block pattern title."
 msgid "Question and answer"
@@ -1831,19 +1889,21 @@ msgstr "zamestnanci"
 msgid "people"
 msgstr "ľudia"
 
-#: templates/parts/blocks/pattern-team.php:22
-msgid "gallery"
-msgstr "galéria"
+#: templates/parts/blocks/pattern-testimonials-single-bg.php:20
+msgctxt "Block pattern title."
+msgid "Testimonial: With background image"
+msgstr "Referencia: S obrázkom na pozadí"
+
+#: templates/parts/blocks/pattern-testimonials-single-bg.php:22
+#: templates/parts/blocks/pattern-testimonials-single.php:22
+#: templates/parts/blocks/pattern-testimonials.php:22
+msgid "quote"
+msgstr "citát"
 
 #: templates/parts/blocks/pattern-testimonials-single.php:20
 msgctxt "Block pattern title."
 msgid "Testimonial"
 msgstr "Referencia"
-
-#: templates/parts/blocks/pattern-testimonials-single.php:22
-#: templates/parts/blocks/pattern-testimonials.php:22
-msgid "quote"
-msgstr "citát"
 
 #: templates/parts/blocks/pattern-testimonials.php:20
 msgctxt "Block pattern title."

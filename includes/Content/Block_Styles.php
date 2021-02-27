@@ -94,13 +94,6 @@ class Block_Styles implements Component_Interface {
 
 			$styles = array(
 
-				'card' => array(
-					'label'  => _x( 'Card', 'Block style label.', 'michelle' ),
-					'blocks' => array(
-						'core/media-text',
-					),
-				),
-
 				'display-on-desktop' => array(
 					'label'  => _x( 'Display on large screens only', 'Block style label.', 'michelle' ),
 					'blocks' => array(
