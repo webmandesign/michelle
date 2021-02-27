@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-02-27 01:13+0100\n"
-"PO-Revision-Date: 2021-02-27 01:15+0100\n"
+"POT-Creation-Date: 2021-02-27 10:06+0100\n"
+"PO-Revision-Date: 2021-02-27 10:06+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -1677,6 +1677,7 @@ msgstr "Vlastnosti: Zarovnané na stred s ikonou"
 
 #: templates/parts/blocks/pattern-features-bg-icon.php:22
 #: templates/parts/blocks/pattern-features-bg-image.php:22
+#: templates/parts/blocks/pattern-features-bg-shadow.php:22
 #: templates/parts/blocks/pattern-features-fullwidth-bg.php:22
 #: templates/parts/blocks/pattern-features-large-image.php:22
 #: templates/parts/blocks/pattern-features-parallax.php:22
@@ -1689,6 +1690,11 @@ msgstr "služby"
 msgctxt "Block pattern title."
 msgid "Features: With background and image"
 msgstr "Vlastnosti: S pozadím a obrázkom"
+
+#: templates/parts/blocks/pattern-features-bg-shadow.php:20
+msgctxt "Block pattern title."
+msgid "Features: With background image and drop shadow"
+msgstr "Vlastnosti: S obrázkom na pozadí a tieňom"
 
 #: templates/parts/blocks/pattern-features-fullwidth-bg.php:20
 msgctxt "Block pattern title."

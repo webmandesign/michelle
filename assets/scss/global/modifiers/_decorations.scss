@@ -63,6 +63,7 @@
 	.has-drop-shadow,
 	.is-style-drop-shadow {
 		box-shadow: var(--drop_shadow);
+		z-index: 1;
 	}
 
 // Lists

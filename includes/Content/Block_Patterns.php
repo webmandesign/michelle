@@ -144,6 +144,7 @@ class Block_Patterns implements Component_Interface {
 				'cta-quote',
 				'features-bg-icon',
 				'features-bg-image',
+				'features-bg-shadow',
 				'features-fullwidth-bg',
 				'features-large-image',
 				'features-parallax',

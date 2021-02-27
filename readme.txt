@@ -42,5 +42,4 @@ Please see `changelog.md` file.
 * a11y-menu.js ©  WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * images/background-pattern.png ©  https://cc0textures.com/view?id=Paper001, CC0
 * images/starter/*.* ©  https://www.pexels.com/, CC0
-* images/welcome/*.* ©  WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * screenshot.jpg images ©  http://www.pexels.com/, CC0
