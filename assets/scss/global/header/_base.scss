@@ -23,6 +23,16 @@
 		max-width: var(--max_width_header_content);
 		margin-left: auto;
 		margin-right: auto;
+
+		> :last-child {
+			margin-#{$left}: auto;
+
+			.has-site-title-last & {
+				margin-#{$left}: 0;
+			}
+
+		}
+
 	}
 
 	a {

@@ -101,6 +101,9 @@ class Body_Class implements Component_Interface {
 				$classes[] = 'no-primary-title';
 			}
 
+			// Site title position.
+			$classes[] = sanitize_html_class( 'has-site-title-' . Mod::get( 'site_title_position' ) );
+
 			// Sort classes alphabetically.
 			asort( $classes );
 

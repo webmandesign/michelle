@@ -14,6 +14,7 @@ body {
 
 hr {
 	clear: both;
+	width: 100%;
 	max-width: var(--hr_width) !important; // Unfortunately, it's much easier to use important here...
 	margin-left: auto;
 	margin-right: auto;
@@ -40,6 +41,11 @@ hr {
 	&.alignwide,
 	&.alignfull {
 		--hr_width: none;
+		width: 100%;
+	}
+
+	&.alignfull {
+		width: calc( 100vw - var(--scrollbar_width) );
 	}
 
 }

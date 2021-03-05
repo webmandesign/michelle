@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 Block_Patterns::add_pattern_args( __FILE__, array(
 	'title'      => _x( 'Testimonial: With background image', 'Block pattern title.', 'michelle' ),
 	'categories' => array( 'text' ),
-	'keywords'   => array( esc_html__( 'quote', 'michelle' ) ),
+	'keywords'   => array( esc_html__( 'quote', 'michelle' ), esc_html__( 'photo', 'michelle' ) ),
 ) );
 
 // Block pattern content:

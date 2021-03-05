@@ -156,23 +156,16 @@ class Options implements Component_Interface {
 			$options = array(
 
 				/**
-				 * Site identity: Logo image size.
+				 * Site identity: Logo.
 				 */
-				'0' . 10 . 'logo' . 10 => array(
-					'id'          => 'custom_logo_dimenstions_info',
-					'section'     => 'title_tagline',
-					'priority'    => 100,
-					'type'        => 'html',
-					'content'     => '<h3>' . esc_html__( 'Logo image', 'michelle' ) . '</h3>',
-					'description' => esc_html__( 'Do not forget to set the logo max height.', 'michelle' ) . ' ' . esc_html__( 'Upload twice as big image to make your logo ready for high DPI screens.', 'michelle' ),
-				),
 
-					'0' . 10 . 'logo' . 20 => array(
+					'0' . 10 . 'logo' . 10 => array(
 						'section'           => 'title_tagline',
-						'priority'          => 101,
+						'priority'          => 9,
 						'type'              => 'number',
 						'id'                => 'custom_logo_height',
 						'label'             => esc_html__( 'Max logo image height (px)', 'michelle' ),
+						'description'       => esc_html__( 'Do not forget to set the logo max height.', 'michelle' ) . ' ' . esc_html__( 'Upload twice as big image to make your logo ready for high DPI screens.', 'michelle' ),
 						'default'           => 100,
 						'sanitize_callback' => 'absint',
 						'input_attrs'       => array(
@@ -191,6 +184,22 @@ class Options implements Component_Interface {
 									),
 								),
 							),
+						),
+					),
+
+					'0' . 10 . 'logo' . 20 => array(
+						'section'    => 'title_tagline',
+						'priority'   => 10,
+						'type'       => 'select',
+						'id'         => 'site_title_position',
+						'label'      => esc_html__( 'Site title display', 'michelle' ),
+						'default'    => 'last',
+						'choices'    => array(
+							'first' => esc_html__( 'First item in header', 'michelle' ),
+							'last'  => esc_html__( 'Last item in header', 'michelle' ),
+						),
+						'preview_js' => array(
+							'custom' => "jQuery( 'body' ).toggleClass( 'has-site-title-first has-site-title-last' );",
 						),
 					),
 

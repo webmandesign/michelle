@@ -1,16 +1,21 @@
 /* FILE: global/header/_site-branding.scss */
 
 .site-branding {
-	order: 10;
 	display: flex;
 	align-items: flex-end;
 	padding: 0;
-	margin-#{$left}: auto;
+	margin-#{$right}: 6vmin;
 	color: var(--color_body_headings);
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		padding-top: 6vh;
 		padding-bottom: 6vh;
+	}
+
+	.has-site-title-last & {
+		order: 10;
+		margin-#{$left}: auto;
+		margin-#{$right}: 0;
 	}
 
 	&-text {

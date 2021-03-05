@@ -9,7 +9,7 @@
 
 	&,
 	&:last-child {
-		margin-bottom: 1em;
+		margin-bottom: var(--typography_font_size_base);
 	}
 
 }
@@ -19,10 +19,10 @@
 
 	&,
 	[class^=wp-block-] & {
-		margin-right: 1em;
+		margin-right: var(--typography_font_size_base);
 
 		@include media( map_get( $breakpoint, 'l' ) ) {
-			margin-right: 2em;
+			margin-right: calc( var(--typography_font_size_base) * 2 );
 		}
 
 	}
@@ -34,10 +34,10 @@
 
 	&,
 	[class^=wp-block-] & {
-		margin-left: 1em;
+		margin-left: var(--typography_font_size_base);
 
 		@include media( map_get( $breakpoint, 'l' ) ) {
-			margin-left: 2em;
+			margin-left: calc( var(--typography_font_size_base) * 2 );
 		}
 
 	}
