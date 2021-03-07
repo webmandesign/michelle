@@ -38,13 +38,13 @@ hr {
 	}
 
 	&[class*="-wide"],
-	&.alignwide,
-	&.alignfull {
-		--hr_width: none;
+	&.alignwide {
+		--hr_width: var(--layout_width_content);
 		width: 100%;
 	}
 
 	&.alignfull {
+		--hr_width: none;
 		width: calc( 100vw - var(--scrollbar_width) );
 	}
 

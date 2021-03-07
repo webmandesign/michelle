@@ -76,7 +76,12 @@
 	$important_modifiers: important( 'modifier_padding' );
 
 	.is-style-has-padding {
-		padding: 4% $important_modifiers;
+		padding: 2em $important_modifiers;
+
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			padding: 4% $important_modifiers;
+		}
+
 	}
 
 	.has-phi-padding,

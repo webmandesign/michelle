@@ -11,8 +11,14 @@
 		}
 
 		&.has-background {
-			padding: 4%;
-			padding-bottom: calc( 4% - #{ $golden +em } );
+			padding: $golden +em;
+			padding-bottom: 0;
+
+			@include media( map_get( $breakpoint, 'xl' ) ) {
+				padding: 4%;
+				padding-bottom: calc( 4% - #{ $golden +em } );
+			}
+
 		}
 
 		&.is-style-no-gaps {
