@@ -39,7 +39,13 @@ Please see `changelog.md` file.
 == Resources ==
 * TGM-Plugin-Activation © Thomas Griffin, GPL v2 or later
 * Normalize.css © Nicolas Gallagher and Jonathan Neal, MIT
-* a11y-menu.js ©  WebMan Design, Oliver Juhas, GPL-3.0-or-later
+* a11y-menu.js © WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * images/background-pattern.png ©  https://cc0textures.com/view?id=Paper001, CC0
-* images/starter/*.* ©  https://www.pexels.com/, CC0
-* screenshot.jpg images ©  http://www.pexels.com/, CC0
+* images/starter/icon.png © WebMan Design, Oliver Juhas, GPL-3.0-or-later
+* images/starter/*.jpg © https://www.pexels.com/@scottwebb, license: https://www.pexels.com/
+  - https://www.pexels.com/photo/1931155/
+  - https://www.pexels.com/photo/978821/
+  - https://www.pexels.com/photo/993018/
+* screenshot.jpg images © https://www.pexels.com/@daria, license: https://www.pexels.com/license/
+  - https://www.pexels.com/photo/887767/
+  - https://www.pexels.com/photo/916339/
