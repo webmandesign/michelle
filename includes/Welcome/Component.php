@@ -40,6 +40,8 @@ class Component implements Component_Interface {
 
 			// Actions
 
+				add_action( 'admin_enqueue_scripts', __CLASS__ . '::styles' );
+
 				add_action( 'admin_menu', __CLASS__ . '::admin_menu' );
 
 				add_action( 'load-themes.php', __CLASS__ . '::activation_notice_display' );
@@ -121,6 +123,113 @@ class Component implements Component_Interface {
 			<?php
 
 	} // /render
+
+	/**
+	 * Welcome screen CSS styles.
+	 *
+	 * @since  1.0.0
+	 *
+	 * @param  string $hook
+	 *
+	 * @return  void
+	 */
+	public static function styles( string $hook ) {
+
+		// Requirements check
+
+			if ( 'appearance_page_michelle-welcome' !== $hook ) {
+				return;
+			}
+
+
+		// Processing
+
+			wp_add_inline_style( 'about', '
+
+				.welcome-wrap h3 {
+					margin-bottom: 10px;
+				}
+
+				.welcome-wrap h3:not(:first-child) {
+					margin-top: 30px;
+				}
+
+				.welcome-wrap h3 + p {
+					margin-top: 0;
+				}
+
+				.about__header.welcome--header {
+					padding-top: 15vh;
+					padding-bottom: 15vh;
+					margin-bottom: 0;
+					text-align: center;
+				}
+
+					.welcome--header,
+					.welcome--footer {
+						background: #222;
+						color: #fff;
+					}
+
+					.welcome--header a,
+					.welcome--header a:hover,
+					.welcome--header a:focus,
+					.welcome--header a:active,
+					.welcome--footer a,
+					.welcome--footer a:hover,
+					.welcome--footer a:focus,
+					.welcome--footer a:active {
+						color: inherit;
+					}
+
+					.welcome--header small {
+						font-size: .5em;
+						font-weight: 400;
+					}
+
+				.welcome--like {
+					text-align: center;
+				}
+
+				.about__section.welcome--promo {
+					padding: 15vh 2em;
+					margin-bottom: 0;
+					text-align: center;
+					background: #fbce2f;
+					color: #222;
+				}
+
+					.welcome--promo h2 {
+						font-size: 2.175em;
+						color: #000;
+					}
+
+				.welcome--features h2 {
+					margin-bottom: .618em;
+					text-align: center;
+				}
+
+				.welcome--quickstart {
+					background-image: url("' . get_theme_file_uri( 'assets/images/welcome.svg' ) . '");
+				}
+
+				.welcome--footer {
+					padding-top: 32px;
+				}
+
+				body .welcome-wrap .button.welcome--button-outline,
+				body .welcome-wrap .button.welcome--button-outline:hover,
+				body .welcome-wrap .button.welcome--button-outline:focus,
+				body .welcome-wrap .button.welcome--button-outline:active {
+					font-size: .75em;
+					background: none;
+					color: inherit;
+					border: 2px solid;
+				}
+
+			' );
+
+	} // /styles
 
 	/**
 	 * Add screen to WordPress admin menu.

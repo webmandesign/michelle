@@ -21,7 +21,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 <hr class="is-large">
 
-<div class="about__section has-2-columns has-subtle-background-color">
+<div class="about__section has-2-columns">
 
 	<h2 class="is-section-header"><?php esc_html_e( 'Theme demo content', 'michelle' ); ?></h2>
 

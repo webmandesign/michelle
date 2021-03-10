@@ -42,10 +42,5 @@ Please see `changelog.md` file.
 * a11y-menu.js © WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * images/background-pattern.png ©  https://cc0textures.com/view?id=Paper001, CC0
 * images/starter/icon.png © WebMan Design, Oliver Juhas, GPL-3.0-or-later
-* images/starter/*.jpg © https://www.pexels.com/@scottwebb, license: https://www.pexels.com/
-  - https://www.pexels.com/photo/1931155/
-  - https://www.pexels.com/photo/978821/
-  - https://www.pexels.com/photo/993018/
-* screenshot.jpg images © https://www.pexels.com/@daria, license: https://www.pexels.com/license/
-  - https://www.pexels.com/photo/887767/
-  - https://www.pexels.com/photo/916339/
+* images/starter/*.jpg © https://stocksnap.io/author/kellyishmael, https://stocksnap.io/photo/table-wood-PEOPPBXLWR, CC0
+* screenshot.jpg images © https://stocksnap.io/author/kristinhardwick, https://stocksnap.io/photo/interior-design-WP7CVEDSVY, https://stocksnap.io/photo/coffee-table-L4SNGYZWL4, CC0

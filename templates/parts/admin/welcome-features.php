@@ -21,9 +21,9 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 <hr class="is-large">
 
-<div class="about__section has-transparent-background-color">
+<div class="about__section has-transparent-background-color welcome--features">
 
-	<h2 style="margin-bottom: .618em; text-align: center;"><?php esc_html_e( 'Theme Features', 'michelle' ); ?></h2>
+	<h2><?php esc_html_e( 'Theme Features', 'michelle' ); ?></h2>
 
 	<div class="about__section has-3-columns has-gutters has-transparent-background-color">
 

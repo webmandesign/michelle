@@ -87,6 +87,7 @@ class Options implements Component_Interface {
 
 			// Remove obsolete custom header controls (only, not setting!).
 			$wp_customize->remove_control( 'header_textcolor' );
+			$wp_customize->remove_control( 'header_image' );
 
 			// Option pointers only:
 

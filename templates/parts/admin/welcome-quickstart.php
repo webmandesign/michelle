@@ -19,7 +19,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 ?>
 
-<div class="has-background-image" style="background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%201035%20884%22%3E%3Ccircle%20cx%3D%22503%22%20cy%3D%22434%22%20r%3D%22310%22%20fill%3D%22%23E3DAD1%22%2F%3E%3Ccircle%20cx%3D%22831%22%20cy%3D%22204%22%20r%3D%22204%22%20fill%3D%22%23D1CFE4%22%2F%3E%3Ccircle%20cx%3D%22113.5%22%20cy%3D%22770.5%22%20r%3D%22113.5%22%20fill%3D%22%23D1DEE4%22%2F%3E%3C%2Fsvg%3E');">
+<div class="has-background-image welcome--quickstart">
 
 	<div class="about__section has-2-columns is-wider-left has-transparent-background-color">
 		<div class="column">

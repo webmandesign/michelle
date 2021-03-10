@@ -21,9 +21,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 ?>
 
-<hr>
-
-<div class="about__section has-2-columns has-subtle-background-color">
+<div class="about__section has-2-columns welcome--footer">
 
 	<div class="column">
 		<?php echo Welcome\Component::get_info_like(); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>

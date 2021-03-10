@@ -21,7 +21,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 <hr class="is-large">
 
-<div class="about__section has-2-columns section-accessibility">
+<div class="about__section has-2-columns welcome--accessibility">
 
 	<h2 class="is-section-header"><?php esc_html_e( 'Create an Accessible Website', 'michelle' ); ?></h2>
 
@@ -45,15 +45,3 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 	</div>
 
 </div>
-
-<style>
-	.section-accessibility h3 {
-		margin-bottom: 10px;
-	}
-	.section-accessibility h3:not(:first-child) {
-		margin-top: 30px;
-	}
-	.section-accessibility p {
-		margin-top: 0;
-	}
-</style>
