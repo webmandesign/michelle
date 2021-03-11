@@ -146,6 +146,13 @@ class Component implements Component_Interface {
 
 			wp_add_inline_style( 'about', '
 
+				.welcome-wrap {
+					--wp-color-dark: #1d2327;
+					--wp-color-dark-text: #f0f0f1;
+					--wp-color-primary: #2271b1;
+					--wp-color-primary-text: #fff;
+				}
+
 				.welcome-wrap h3 {
 					margin-bottom: 10px;
 				}
@@ -167,8 +174,8 @@ class Component implements Component_Interface {
 
 					.welcome--header,
 					.welcome--footer {
-						background: #222;
-						color: #fff;
+						background: var(--wp-color-dark);
+						color: var(--wp-color-dark-text);
 					}
 
 					.welcome--header a,
@@ -195,19 +202,28 @@ class Component implements Component_Interface {
 					padding: 15vh 2em;
 					margin-bottom: 0;
 					text-align: center;
-					background: #fbce2f;
-					color: #222;
+					background: var(--wp-color-primary);
+					color: var(--wp-color-primary-text);
 				}
 
 					.welcome--promo h2 {
 						font-size: 2.175em;
-						color: #000;
+						color: inherit;
 					}
 
-				.welcome--features h2 {
-					margin-bottom: .618em;
+				.welcome--features {
 					text-align: center;
 				}
+
+					.welcome--features h2 {
+						margin-bottom: .618em;
+					}
+
+					.welcome--features .column {
+						padding: 10%;
+						background: var(--background, #fff);
+						border: 1px solid rgba(0,0,0,.2);
+					}
 
 				.welcome--quickstart {
 					background-image: url("' . get_theme_file_uri( 'assets/images/welcome.svg' ) . '");

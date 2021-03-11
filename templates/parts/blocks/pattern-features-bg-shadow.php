@@ -24,14 +24,16 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 // Block pattern content:
 
-$image = get_theme_file_uri( 'assets/images/starter/3to4.jpg' );
+$image1 = get_theme_file_uri( 'assets/images/starter/2to3.jpg' );
+$image2 = get_theme_file_uri( 'assets/images/starter/1to1.jpg' );
+$image3 = get_theme_file_uri( 'assets/images/starter/3to4.jpg' );
 
 ?>
 
 <!-- wp:columns {"align":"full","className":"is-style-no-gaps"} -->
 <div class="wp-block-columns alignfull is-style-no-gaps"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
-<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
+<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image1 ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
 <h2>Lorem ipsum</h2>
 <!-- /wp:heading -->
 
@@ -48,8 +50,8 @@ $image = get_theme_file_uri( 'assets/images/starter/3to4.jpg' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
-<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image2 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
+<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image2 ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
 <h2>Lorem ipsum</h2>
 <!-- /wp:heading -->
 
@@ -66,8 +68,8 @@ $image = get_theme_file_uri( 'assets/images/starter/3to4.jpg' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
-<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image3 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
+<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image3 ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
 <h2>Lorem ipsum</h2>
 <!-- /wp:heading -->
 

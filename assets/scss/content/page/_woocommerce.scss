@@ -1,6 +1,7 @@
 /* FILE: content/page/_woocommerce.scss */
 
 .woocommerce-products-header {
+	max-width: none;
 	margin-bottom: var(--content_padding);
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {

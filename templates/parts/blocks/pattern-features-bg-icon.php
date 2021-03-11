@@ -42,8 +42,8 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<!-- wp:buttons {"contentJustification":"center"} -->
+<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
@@ -62,8 +62,8 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<!-- wp:buttons {"contentJustification":"center"} -->
+<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
@@ -82,8 +82,8 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<!-- wp:buttons {"contentJustification":"center"} -->
+<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>

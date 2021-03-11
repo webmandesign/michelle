@@ -45,8 +45,12 @@
 }
 
 .aligncenter {
+	float: none;
+	clear: both;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 .alignnone {

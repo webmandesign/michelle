@@ -26,7 +26,7 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:group {"align":"full","className":"is-style-default","backgroundColor":"palette-1"} -->
+<!-- wp:group {"align":"full","backgroundColor":"palette-1","className":"is-style-default"} -->
 <div class="wp-block-group alignfull is-style-default has-palette-1-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
@@ -42,14 +42,18 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"38.2%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:38.2%"><!-- wp:buttons {"className":"has-right-text-align"} -->
-<div class="wp-block-buttons has-right-text-align"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","className":"has-large-font-size"} -->
-<div class="wp-block-button has-large-font-size"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Lorem →</a></div>
+<!-- wp:column {"width":"2%"} -->
+<div class="wp-block-column" style="flex-basis:2%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"36.2%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:36.2%"><!-- wp:buttons {"contentJustification":"left","className":"has-right-text-align"} -->
+<div class="wp-block-buttons is-content-justification-left has-right-text-align"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":50,"className":"has-large-font-size"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-50 has-large-font-size"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Lorem →</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"textColor":"palette-2","className":"has-large-font-size is-style-outline"} -->
-<div class="wp-block-button has-large-font-size is-style-outline"><a class="wp-block-button__link has-palette-2-color has-text-color" href="#0">Ipsum →</a></div>
+<!-- wp:button {"textColor":"palette-2","width":50,"className":"has-large-font-size is-style-outline"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-50 has-large-font-size is-style-outline"><a class="wp-block-button__link has-palette-2-color has-text-color" href="#0">Ipsum →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

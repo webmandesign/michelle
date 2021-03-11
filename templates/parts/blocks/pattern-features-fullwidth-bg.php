@@ -28,8 +28,8 @@ $image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":80,"align":"full"} -->
-<div class="wp-block-cover alignfull has-background-dim-80 has-background-dim" style="background-image:url(<?php echo esc_url_raw( $image ); ?>)"><div class="wp-block-cover__inner-container"><!-- wp:spacer -->
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":90,"align":"full"} -->
+<div class="wp-block-cover alignfull has-background-dim-90 has-background-dim" style="background-image:url(<?php echo esc_url_raw( $image ); ?>)"><div class="wp-block-cover__inner-container"><!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 

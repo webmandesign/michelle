@@ -25,6 +25,11 @@
 	&.is-style-scale-image {
 		background-repeat: no-repeat;
 		background-size: contain;
+
+		img.wp-block-cover__image-background {
+			object-fit: contain;
+		}
+
 	}
 
 	&::after {

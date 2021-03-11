@@ -38,8 +38,8 @@ $image = get_theme_file_uri( 'assets/images/starter/1to1.jpg' );
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"has-large-font-size"} -->
-<div class="wp-block-button has-large-font-size"><a class="wp-block-button__link" href="#0">Lorem →</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"palette-1","textColor":"palette-2","className":"has-large-font-size"} -->
+<div class="wp-block-button has-large-font-size"><a class="wp-block-button__link has-palette-2-color has-palette-1-background-color has-text-color has-background" href="#0">Lorem →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:media-text -->

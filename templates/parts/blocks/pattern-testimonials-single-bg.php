@@ -29,8 +29,8 @@ $image2 = get_theme_file_uri( 'assets/images/starter/1to1.jpg' );
 
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999991,"hasParallax":true,"dimRatio":80,"overlayColor":"palette-2","align":"full"} -->
-<div class="wp-block-cover alignfull has-background-dim-80 has-palette-2-background-color has-background-dim has-parallax" style="background-image:url(<?php echo esc_url_raw( $image1 ); ?>)"><div class="wp-block-cover__inner-container"><!-- wp:spacer -->
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999991,"hasParallax":true,"dimRatio":90,"overlayColor":"palette-2","align":"full"} -->
+<div class="wp-block-cover alignfull has-background-dim-90 has-palette-2-background-color has-background-dim has-parallax" style="background-image:url(<?php echo esc_url_raw( $image1 ); ?>)"><div class="wp-block-cover__inner-container"><!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 

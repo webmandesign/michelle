@@ -13,6 +13,10 @@
 	max-width: none !important;
 }
 
+#{ $selector_editor_wrapper } .wp-block-columns.is-style-no-gaps > .wp-block-column.wp-block-column {
+	margin: 0;
+}
+
 // Matching front-end styles as these are mismatched in WordPress!
 // There is `2em` used on front-end and `32px` in editor, which is not correct
 // if the theme's base font size is not 16px default.

@@ -173,13 +173,6 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
-				'outline-items' => array(
-					'label'  => _x( 'Outline items', 'Block style label.', 'michelle' ),
-					'blocks' => array(
-						'core/list',
-					),
-				),
-
 				'overlap-gradient' => array(
 					'label'  => _x( 'Overlap gradient', 'Block style label.', 'michelle' ),
 					'blocks' => array(

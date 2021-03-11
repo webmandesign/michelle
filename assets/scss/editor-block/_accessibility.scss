@@ -2,17 +2,17 @@
 
 #{ $selector_editor_wrapper } .wp-block.screen-reader-text,
 #{ $selector_editor_wrapper } .wp-block > .screen-reader-text {
-	position: relative;
-	clip: auto;
-	clip-path: none;
-	width: auto;
-	height: auto;
-	min-height: 40px;
-	font-size: 1em;
-	font-weight: 700;
-	text-transform: none;
-	letter-spacing: 0;
-	opacity: .5;
+	position: relative !important;
+	clip: auto !important;
+	clip-path: none !important;
+	width: auto !important;
+	height: auto !important;
+	min-height: 40px !important;
+	font-size: 1em !important;
+	font-weight: 700 !important;
+	text-transform: none !important;
+	letter-spacing: 0 !important;
+	opacity: .5 !important;
 
 	&::before {
 		content: '\f530'; // https://developer.wordpress.org/resource/dashicons/#hidden

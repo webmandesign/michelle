@@ -28,7 +28,7 @@ $image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
 ?>
 
 <!-- wp:media-text {"mediaId":999999,"mediaLink":"#0","mediaType":"image","className":"is-style-media-on-top"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-style-media-on-top"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>g" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:columns -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-style-media-on-top"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"extra-large"} -->
 <h2 class="is-style-uppercase has-extra-large-font-size"><strong>Lorem Ipsum</strong></h2>

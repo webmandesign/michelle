@@ -70,9 +70,15 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","className":"has-no-margin-bottom"} -->
-<div class="wp-block-column is-vertically-aligned-center has-no-margin-bottom"><!-- wp:list {"className":"has-right-text-align is-style-outline-items"} -->
-<ul class="has-right-text-align is-style-outline-items"><li><a href="#0">Facebook</a></li><li><a href="#0">Twitter</a></li><li><a href="#0">Instagram</a></li><li><a href="#0">GitHub</a></li></ul>
-<!-- /wp:list --></div>
+<div class="wp-block-column is-vertically-aligned-center has-no-margin-bottom"><!-- wp:social-links {"iconColor":"palette-3","iconColorValue":"#ffffff","size":"has-large-icon-size","align":"right","className":"has-no-margin-bottom is-style-logos-only"} -->
+<ul class="wp-block-social-links alignright has-large-icon-size has-icon-color has-no-margin-bottom is-style-logos-only"><!-- wp:social-link {"url":"#0","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"#0","service":"youtube"} /-->
+
+<!-- wp:social-link {"url":"#0","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"#0","service":"twitter"} /--></ul>
+<!-- /wp:social-links --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
 <!-- /wp:group -->
