@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-11 20:17+0100\n"
+"POT-Creation-Date: 2021-03-12 23:32+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -792,34 +792,44 @@ msgstr ""
 msgid "For installing theme demo content easily."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:143
+#: includes/Plugin/TGMPA.php:99
+msgid "Adding e-commerce functionality."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:106
+msgid ""
+"When using WooCommerce plugin, this plugin helps integrate the e-shop into "
+"theme design."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:157
 msgid "Other useful plugins &raquo;"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:167
+#: includes/Plugin/TGMPA.php:181
 msgid "Why would you use this plugin?"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:238
+#: includes/Plugin/TGMPA.php:252
 msgctxt "Plugins."
 msgid "Recommended, not required"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:241
+#: includes/Plugin/TGMPA.php:255
 msgid ""
 "Please note that these are just recommended plugins, not required ones."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:242
+#: includes/Plugin/TGMPA.php:256
 msgid "Install only those plugins you will use."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:243
+#: includes/Plugin/TGMPA.php:257
 msgctxt "Plugins."
 msgid "Or install the ones you prefer."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:244
+#: includes/Plugin/TGMPA.php:258
 msgid ""
 "For example, if you are not building an eCommerce website, there is no "
 "need to install WooCommerce plugin."

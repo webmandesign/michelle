@@ -94,6 +94,20 @@ class TGMPA implements Component_Interface {
 					'required'    => false,
 				),
 
+				'woocommerce' => array(
+					'name'        => 'WooCommerce',
+					'description' => __( 'Adding e-commerce functionality.', 'michelle' ),
+					'slug'        => 'woocommerce',
+					'required'    => false,
+				),
+
+				'wc-theme-integration' => array(
+					'name'        => 'Theme Integration for WooCommerce',
+					'description' => esc_html__( 'When using WooCommerce plugin, this plugin helps integrate the e-shop into theme design.', 'michelle' ),
+					'slug'        => 'wc-theme-integration',
+					'required'    => false,
+				),
+
 			);
 
 			/**

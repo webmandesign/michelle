@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-11 20:17+0100\n"
-"PO-Revision-Date: 2021-03-11 20:17+0100\n"
+"POT-Creation-Date: 2021-03-12 10:01+0100\n"
+"PO-Revision-Date: 2021-03-12 10:01+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -910,40 +910,52 @@ msgstr ""
 msgid "For installing theme demo content easily."
 msgstr "Pre jednoduchú inštaláciu demo obsahu témy."
 
-#: includes/Plugin/TGMPA.php:143
+#: includes/Plugin/TGMPA.php:99
+msgid "Adding e-commerce functionality."
+msgstr "Pridáva funkcionalitu e-shopu."
+
+#: includes/Plugin/TGMPA.php:106
+msgid ""
+"When using WooCommerce plugin, this plugin helps integrate the e-shop into "
+"theme design."
+msgstr ""
+"Pri použití pluginu WooCommerce, pomáha tento plugin integrovať e-shop do "
+"dizajnu témy."
+
+#: includes/Plugin/TGMPA.php:157
 #, fuzzy
 msgid "Other useful plugins &raquo;"
 msgstr "Ďalšie užitočné moduly &raquo;"
 
-#: includes/Plugin/TGMPA.php:167
+#: includes/Plugin/TGMPA.php:181
 #, fuzzy
 msgid "Why would you use this plugin?"
 msgstr "Prečo by ste použili tento plugin?"
 
-#: includes/Plugin/TGMPA.php:238
+#: includes/Plugin/TGMPA.php:252
 #, fuzzy
 msgctxt "Plugins."
 msgid "Recommended, not required"
 msgstr "Odporúčané, nie vyžadované"
 
-#: includes/Plugin/TGMPA.php:241
+#: includes/Plugin/TGMPA.php:255
 #, fuzzy
 msgid "Please note that these are just recommended plugins, not required ones."
 msgstr ""
 "Upozorňujeme, že toto je zoznam odporúčaných pluginov, nie vyžadovaných."
 
-#: includes/Plugin/TGMPA.php:242
+#: includes/Plugin/TGMPA.php:256
 #, fuzzy
 msgid "Install only those plugins you will use."
 msgstr "Nainštalujte iba tie pluginy, ktoré budete používať."
 
-#: includes/Plugin/TGMPA.php:243
+#: includes/Plugin/TGMPA.php:257
 #, fuzzy
 msgctxt "Plugins."
 msgid "Or install the ones you prefer."
 msgstr "Alebo nainštalujte tie, ktoré uprednostňujete."
 
-#: includes/Plugin/TGMPA.php:244
+#: includes/Plugin/TGMPA.php:258
 #, fuzzy
 msgid ""
 "For example, if you are not building an eCommerce website, there is no need "
