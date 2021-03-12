@@ -6,7 +6,7 @@
 	svg {
 		fill: currentColor;
 		width: auto !important;
-		height: 1.5rem !important;
+		height: calc( var(--typography_font_size_base) * 1.5 ) !important;
 		vertical-align: middle;
 	}
 
@@ -18,11 +18,11 @@
 	}
 
 	&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
-		padding: .25rem;
+		padding: calc( var(--typography_font_size_base) * .25 );
 
 		.wp-block-search__input,
 		.wp-block-search__button {
-			padding: calc( #{ $form_field_padding_vertical } - .25rem ) 0;
+			padding: calc( #{ $form_field_padding_vertical } - var(--typography_font_size_base) * .25 ) 0;
 		}
 
 		.has-icon {

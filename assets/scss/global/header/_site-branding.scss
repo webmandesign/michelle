@@ -103,8 +103,10 @@
 			margin-#{$right}: 2em;
 		}
 
-		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			order: 10;
+		.has-site-title-last & {
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				order: 10;
+			}
 		}
 
 	}

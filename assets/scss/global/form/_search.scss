@@ -109,7 +109,7 @@ form[role="search"],
 				position: relative;
 
 				@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-					width: 4rem;
+					width: 5em;
 					padding-top: 6vh;
 					padding-bottom: 6vh;
 					line-height: 1.25;

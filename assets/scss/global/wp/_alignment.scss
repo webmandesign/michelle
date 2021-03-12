@@ -9,7 +9,7 @@
 
 	&,
 	&:last-child {
-		margin-bottom: var(--typography_font_size_base);
+		margin-bottom: var(--typography_font_size_base); // Simulating rem unit for block editor.
 	}
 
 }
@@ -19,10 +19,10 @@
 
 	&,
 	[class^=wp-block-] & {
-		margin-right: var(--typography_font_size_base);
+		margin-right: var(--typography_font_size_base); // Simulating rem unit for block editor.
 
 		@include media( map_get( $breakpoint, 'l' ) ) {
-			margin-right: calc( var(--typography_font_size_base) * 2 );
+			margin-right: calc( var(--typography_font_size_base) * 2 ); // Simulating rem unit for block editor.
 		}
 
 	}
@@ -34,10 +34,10 @@
 
 	&,
 	[class^=wp-block-] & {
-		margin-left: var(--typography_font_size_base);
+		margin-left: var(--typography_font_size_base); // Simulating rem unit for block editor.
 
 		@include media( map_get( $breakpoint, 'l' ) ) {
-			margin-left: calc( var(--typography_font_size_base) * 2 );
+			margin-left: calc( var(--typography_font_size_base) * 2 ); // Simulating rem unit for block editor.
 		}
 
 	}
@@ -79,7 +79,7 @@
 		padding-right: 6vw;
 
 		&:not(:last-child) .alignwide {
-			margin-bottom: $golden +rem;
+			margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
 		}
 
 	}

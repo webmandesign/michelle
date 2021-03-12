@@ -24,8 +24,8 @@
 		}
 
 		> * {
-			margin-top: 1rem;
-			margin-bottom: 1rem;
+			margin-top: var(--typography_font_size_base);
+			margin-bottom: var(--typography_font_size_base);
 
 			&:first-child {
 				margin-top: 0;
@@ -116,7 +116,7 @@
 		a:not(.link-more) { // Post title.
 
 			+ div {
-				margin-top: 1rem;
+				margin-top: var(--typography_font_size_base);
 			}
 
 		}
