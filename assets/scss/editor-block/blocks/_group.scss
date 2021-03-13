@@ -46,3 +46,7 @@
 	margin-left: 0;
 	margin-right: 0;
 }
+
+.wp-block-group.has-background:not(:last-child) {
+	margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Don't understand why WP sets this to zero...
+}

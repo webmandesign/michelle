@@ -20,6 +20,11 @@
 			letter-spacing: $golden_major +em;
 		}
 
+		&.alignleft,
+		&.alignright {
+			--hr_width: calc( #{ $golden } * 4em );
+		}
+
 	}
 
 	&[class*="is-style-double-line"] {

@@ -94,6 +94,13 @@ class TGMPA implements Component_Interface {
 					'required'    => false,
 				),
 
+				'improving-search-form-accessibility' => array(
+					'name'        => 'Improving Search Form Accessibility',
+					'description' => __( 'Fixes common accessibility issue with WordPress search form.', 'michelle' ),
+					'slug'        => 'improving-search-form-accessibility',
+					'required'    => false,
+				),
+
 				'woocommerce' => array(
 					'name'        => 'WooCommerce',
 					'description' => __( 'Adding e-commerce functionality.', 'michelle' ),

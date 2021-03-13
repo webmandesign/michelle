@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-12 23:32+0100\n"
+"POT-Creation-Date: 2021-03-13 19:04+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -43,36 +43,21 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: includes/Accessibility/Component.php:84
+#: includes/Accessibility/Component.php:82
 msgid "Collapse child menu"
 msgstr ""
 
-#: includes/Accessibility/Component.php:85
+#: includes/Accessibility/Component.php:83
 msgid "Expand child menu"
 msgstr ""
 
-#: includes/Accessibility/Component.php:183
+#: includes/Accessibility/Component.php:181
 #: templates/parts/accessibility/menu-skip-links.php:24
 msgid "Skip to main content"
 msgstr ""
 
-#: includes/Accessibility/Component.php:231
+#: includes/Accessibility/Component.php:229
 msgid "Skip back to main navigation"
-msgstr ""
-
-#: includes/Accessibility/Component.php:263
-msgctxt "label"
-msgid "Search for:"
-msgstr ""
-
-#: includes/Accessibility/Component.php:264
-msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr ""
-
-#: includes/Accessibility/Component.php:265
-msgctxt "submit button"
-msgid "Search"
 msgstr ""
 
 #. translators: 1: required WP version number, 2: available WP version number
@@ -793,43 +778,47 @@ msgid "For installing theme demo content easily."
 msgstr ""
 
 #: includes/Plugin/TGMPA.php:99
-msgid "Adding e-commerce functionality."
+msgid "Fixes common accessibility issue with WordPress search form."
 msgstr ""
 
 #: includes/Plugin/TGMPA.php:106
+msgid "Adding e-commerce functionality."
+msgstr ""
+
+#: includes/Plugin/TGMPA.php:113
 msgid ""
 "When using WooCommerce plugin, this plugin helps integrate the e-shop into "
 "theme design."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:157
+#: includes/Plugin/TGMPA.php:164
 msgid "Other useful plugins &raquo;"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:181
+#: includes/Plugin/TGMPA.php:188
 msgid "Why would you use this plugin?"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:252
+#: includes/Plugin/TGMPA.php:259
 msgctxt "Plugins."
 msgid "Recommended, not required"
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:255
+#: includes/Plugin/TGMPA.php:262
 msgid ""
 "Please note that these are just recommended plugins, not required ones."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:256
+#: includes/Plugin/TGMPA.php:263
 msgid "Install only those plugins you will use."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:257
+#: includes/Plugin/TGMPA.php:264
 msgctxt "Plugins."
 msgid "Or install the ones you prefer."
 msgstr ""
 
-#: includes/Plugin/TGMPA.php:258
+#: includes/Plugin/TGMPA.php:265
 msgid ""
 "For example, if you are not building an eCommerce website, there is no "
 "need to install WooCommerce plugin."

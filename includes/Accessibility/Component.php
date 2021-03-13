@@ -42,8 +42,6 @@ class Component implements Component_Interface {
 				add_action( 'tha_body_top',     __CLASS__ . '::skip_links_body' );
 				add_action( 'tha_entry_bottom', __CLASS__ . '::skip_links_entry', 999 );
 
-				add_filter( 'get_search_form', __CLASS__ . '::get_search_form', 0, 2 );
-
 	} // /init
 
 	/**
@@ -232,39 +230,5 @@ class Component implements Component_Interface {
 			);
 
 	} // /skip_links_entry
-
-	/**
-	 * Improving search form accessibility.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @param  string $form
-	 * @param  array  $args
-	 *
-	 * @return  string
-	 */
-	public static function get_search_form( string $form, array $args ): string {
-
-		// Variables
-
-			if ( $args['aria_label'] ) {
-				$aria_label = 'aria-label="' . esc_attr( $args['aria_label'] ) . '" ';
-			} else {
-				$aria_label = '';
-			}
-
-			$id = uniqid();
-
-
-		// Output
-
-			return
-				'<form role="search" ' . $aria_label . 'method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
-					<label for="' . esc_attr( $id ) . '" class="screen-reader-text">' . esc_html_x( 'Search for:', 'label', 'michelle' ) . '</label>
-					<input id="' . esc_attr( $id ) . '" type="search" class="search-field" placeholder="' . esc_html_x( 'Search &hellip;', 'placeholder', 'michelle' ) . '" value="' . get_search_query() . '" name="s" />
-					<input type="submit" class="search-submit" value="' . esc_html_x( 'Search', 'submit button', 'michelle' ) . '" />
-				</form>';
-
-	} // /get_search_form
 
 }

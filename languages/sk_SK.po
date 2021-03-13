@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-12 10:01+0100\n"
-"PO-Revision-Date: 2021-03-12 10:01+0100\n"
+"POT-Creation-Date: 2021-03-13 19:04+0100\n"
+"PO-Revision-Date: 2021-03-13 19:05+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -46,41 +46,26 @@ msgstr[2] "%1$d komentárov k &ldquo;%2$s&rdquo;"
 msgid "Comments are closed."
 msgstr "Komentáre sú uzavreté."
 
-#: includes/Accessibility/Component.php:84
+#: includes/Accessibility/Component.php:82
 #, fuzzy
 msgid "Collapse child menu"
 msgstr "Zbaliť vnorené menu"
 
-#: includes/Accessibility/Component.php:85
+#: includes/Accessibility/Component.php:83
 #, fuzzy
 msgid "Expand child menu"
 msgstr "Rozbaliť vnorené menu"
 
-#: includes/Accessibility/Component.php:183
+#: includes/Accessibility/Component.php:181
 #: templates/parts/accessibility/menu-skip-links.php:24
 #, fuzzy
 msgid "Skip to main content"
 msgstr "Preskočiť na hlavný obsah"
 
-#: includes/Accessibility/Component.php:231
+#: includes/Accessibility/Component.php:229
 #, fuzzy
 msgid "Skip back to main navigation"
 msgstr "Preskočiť späť na hlavnú navigáciu"
-
-#: includes/Accessibility/Component.php:263
-msgctxt "label"
-msgid "Search for:"
-msgstr "Vyhľadaj:"
-
-#: includes/Accessibility/Component.php:264
-msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr "Hľadaj &hellip;"
-
-#: includes/Accessibility/Component.php:265
-msgctxt "submit button"
-msgid "Search"
-msgstr "Hľadať"
 
 #. translators: 1: required WP version number, 2: available WP version number
 #: includes/Compatibility.php:56
@@ -911,10 +896,15 @@ msgid "For installing theme demo content easily."
 msgstr "Pre jednoduchú inštaláciu demo obsahu témy."
 
 #: includes/Plugin/TGMPA.php:99
+msgid "Fixes common accessibility issue with WordPress search form."
+msgstr ""
+"Opravuje bežný problém s prístupnosťou formulára vyhľadávania WordPress."
+
+#: includes/Plugin/TGMPA.php:106
 msgid "Adding e-commerce functionality."
 msgstr "Pridáva funkcionalitu e-shopu."
 
-#: includes/Plugin/TGMPA.php:106
+#: includes/Plugin/TGMPA.php:113
 msgid ""
 "When using WooCommerce plugin, this plugin helps integrate the e-shop into "
 "theme design."
@@ -922,40 +912,40 @@ msgstr ""
 "Pri použití pluginu WooCommerce, pomáha tento plugin integrovať e-shop do "
 "dizajnu témy."
 
-#: includes/Plugin/TGMPA.php:157
+#: includes/Plugin/TGMPA.php:164
 #, fuzzy
 msgid "Other useful plugins &raquo;"
 msgstr "Ďalšie užitočné moduly &raquo;"
 
-#: includes/Plugin/TGMPA.php:181
+#: includes/Plugin/TGMPA.php:188
 #, fuzzy
 msgid "Why would you use this plugin?"
 msgstr "Prečo by ste použili tento plugin?"
 
-#: includes/Plugin/TGMPA.php:252
+#: includes/Plugin/TGMPA.php:259
 #, fuzzy
 msgctxt "Plugins."
 msgid "Recommended, not required"
 msgstr "Odporúčané, nie vyžadované"
 
-#: includes/Plugin/TGMPA.php:255
+#: includes/Plugin/TGMPA.php:262
 #, fuzzy
 msgid "Please note that these are just recommended plugins, not required ones."
 msgstr ""
 "Upozorňujeme, že toto je zoznam odporúčaných pluginov, nie vyžadovaných."
 
-#: includes/Plugin/TGMPA.php:256
+#: includes/Plugin/TGMPA.php:263
 #, fuzzy
 msgid "Install only those plugins you will use."
 msgstr "Nainštalujte iba tie pluginy, ktoré budete používať."
 
-#: includes/Plugin/TGMPA.php:257
+#: includes/Plugin/TGMPA.php:264
 #, fuzzy
 msgctxt "Plugins."
 msgid "Or install the ones you prefer."
 msgstr "Alebo nainštalujte tie, ktoré uprednostňujete."
 
-#: includes/Plugin/TGMPA.php:258
+#: includes/Plugin/TGMPA.php:265
 #, fuzzy
 msgid ""
 "For example, if you are not building an eCommerce website, there is no need "
