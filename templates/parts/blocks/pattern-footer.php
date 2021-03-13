@@ -40,8 +40,8 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"25%"} -->
-<div class="wp-block-column" style="flex-basis:25%"><!-- wp:heading {"fontSize":"small"} -->
-<h2 class="has-small-font-size"><strong>LOREM IPSUM</strong></h2>
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="is-style-uppercase has-normal-font-size"><strong>Lorem Ipsum</strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -50,8 +50,8 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"25%"} -->
-<div class="wp-block-column" style="flex-basis:25%"><!-- wp:heading {"fontSize":"small"} -->
-<h2 class="has-small-font-size"><strong>LOREM IPSUM</strong></h2>
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="is-style-uppercase has-normal-font-size"><strong>Lorem Ipsum</strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -64,8 +64,8 @@ $image = get_theme_file_uri( 'assets/images/starter/icon.png' );
 <!-- wp:group {"align":"full","backgroundColor":"accent","textColor":"palette-3"} -->
 <div class="wp-block-group alignfull has-palette-3-color has-accent-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"33.33%","className":"has-no-margin-bottom"} -->
-<div class="wp-block-column is-vertically-aligned-center has-no-margin-bottom" style="flex-basis:33.33%"><!-- wp:heading {"textColor":"palette-3","fontSize":"small"} -->
-<h2 class="has-palette-3-color has-text-color has-small-font-size"><strong>CONNECT WITH US</strong></h2>
+<div class="wp-block-column is-vertically-aligned-center has-no-margin-bottom" style="flex-basis:33.33%"><!-- wp:heading {"textColor":"palette-3","className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="is-style-uppercase has-palette-3-color has-text-color has-normal-font-size"><strong>Lorem Ipsum</strong></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 

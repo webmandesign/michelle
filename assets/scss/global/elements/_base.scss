@@ -21,6 +21,10 @@ hr {
 	border-width: 0;
 	border-bottom: 1px solid;
 
+	&.has-background.has-background {
+		background: none;
+	}
+
 	&.alignleft,
 	&.alignright {
 		float: none;
