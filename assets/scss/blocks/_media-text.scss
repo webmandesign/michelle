@@ -133,7 +133,7 @@
 // Matching WordPress block media query:
 @media (max-width: 600px) {
 
-	.wp-block-media-text:not(.has-background) > .wp-block-media-text__content {
+	.wp-block-media-text:not(.has-background):not(.alignfull) > .wp-block-media-text__content {
 		padding-left: 0; // No RTL here.
 		padding-right: 0; // No RTL here.
 	}
