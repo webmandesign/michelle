@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-13 19:04+0100\n"
-"PO-Revision-Date: 2021-03-13 19:05+0100\n"
+"POT-Creation-Date: 2021-03-15 21:10+0100\n"
+"PO-Revision-Date: 2021-03-15 21:10+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -1466,6 +1466,7 @@ msgstr "Vytvorte obsah rýchlejšie pomocou integrovanej knižnice vzorov blokov
 #: templates/parts/admin/welcome-features.php:33
 #: templates/parts/admin/welcome-features.php:39
 #: templates/parts/admin/welcome-features.php:45
+#: templates/parts/admin/welcome-features.php:52
 msgid "Watch instructions in new window &rarr;"
 msgstr "Pozrieť inštrukcie v novom okne &rarr;"
 
@@ -1500,7 +1501,7 @@ msgstr ""
 "Vaše odporúčané príspevky si zaslúžia špeciálne zobrazenie v hornej časti "
 "stránky blogu."
 
-#: templates/parts/admin/welcome-features.php:51
+#: templates/parts/admin/welcome-features.php:54
 msgid "Set featured posts tag now &rarr;"
 msgstr "Nastaviť značku odporúčaných príspevkov &rarr;"
 
@@ -1710,6 +1711,7 @@ msgstr "Vlastnosti: Zarovnané na stred s ikonou"
 #: templates/parts/blocks/pattern-features-fullwidth-bg.php:22
 #: templates/parts/blocks/pattern-features-large-image.php:22
 #: templates/parts/blocks/pattern-features-parallax.php:22
+#: templates/parts/blocks/pattern-features-shadow.php:22
 #: templates/parts/blocks/pattern-features-simple.php:22
 #: templates/parts/blocks/pattern-features-single-large.php:22
 msgid "services"
@@ -1739,6 +1741,11 @@ msgstr "Vlastnosti: S veľkým obrázkom"
 msgctxt "Block pattern title."
 msgid "Features: Parallax"
 msgstr "Vlastnosti: Paralaxa"
+
+#: templates/parts/blocks/pattern-features-shadow.php:20
+msgctxt "Block pattern title."
+msgid "Features: With drop shadow"
+msgstr "Vlastnosti: S tieňom"
 
 #: templates/parts/blocks/pattern-features-simple.php:20
 msgctxt "Block pattern title."

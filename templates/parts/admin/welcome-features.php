@@ -48,7 +48,11 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 		<div class="column">
 			<h3><?php esc_html_e( 'Featured Posts', 'michelle' ); ?></h3>
 			<p><?php esc_html_e( 'Your featured posts deserve special display on top of blog page.', 'michelle' ); ?></p>
-			<p><a href="<?php echo esc_url( admin_url( 'customize.php?autofocus[control]=featured_posts_tag' ) ); ?>"><small><em><?php esc_html_e( 'Set featured posts tag now &rarr;', 'michelle' ); ?></em></small></a></p>
+			<p>
+				<a href="https://vimeo.com/webmandesigneu/featured-posts" target="_blank"  rel="noopener noreferrer"><small><em><?php esc_html_e( 'Watch instructions in new window &rarr;', 'michelle' ); ?></em></small></a>
+				<br>
+				<a href="<?php echo esc_url( admin_url( 'customize.php?autofocus[control]=featured_posts_tag' ) ); ?>"><small><em><?php esc_html_e( 'Set featured posts tag now &rarr;', 'michelle' ); ?></em></small></a>
+			</p>
 		</div>
 
 	</div>

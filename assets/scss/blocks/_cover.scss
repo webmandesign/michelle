@@ -18,6 +18,10 @@
 
 	}
 
+		&.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+			width: 88%;
+		}
+
 	&__gradient-background {
 		margin-bottom: 0;
 	}

@@ -252,3 +252,15 @@
 	}
 
 	$important_modifiers: null; // Required reset.
+
+// Z-index
+
+	$important_modifiers: important( 'modifier_z-index' );
+
+	@for $i from 1 through 10 {
+		.has-#{$i}-z-index {
+			z-index: $i $important_modifiers;
+		}
+	}
+
+	$important_modifiers: null; // Required reset.

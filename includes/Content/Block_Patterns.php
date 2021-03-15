@@ -148,6 +148,7 @@ class Block_Patterns implements Component_Interface {
 				'features-fullwidth-bg',
 				'features-large-image',
 				'features-parallax',
+				'features-shadow',
 				'features-simple',
 				'features-single-large',
 				'footer',

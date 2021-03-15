@@ -5,7 +5,13 @@
 }
 
 .blocks-gallery-caption,
+.blocks-gallery-item__caption,
 .wp-block-embed figcaption,
 .wp-block-image figcaption {
 	color: inherit;
+
+	a {
+		color: inherit;
+	}
+
 }
