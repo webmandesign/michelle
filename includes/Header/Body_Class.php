@@ -104,6 +104,9 @@ class Body_Class implements Component_Interface {
 			// Site title position.
 			$classes[] = sanitize_html_class( 'has-site-title-' . Mod::get( 'site_title_position' ) );
 
+			// Enable header search form modal.
+			$classes[] = 'has-search-form-modal';
+
 			// Sort classes alphabetically.
 			asort( $classes );
 

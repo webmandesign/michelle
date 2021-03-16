@@ -1,6 +1,6 @@
 /* FILE: blocks/_gallery.scss */
 
-.wp-block-gallery:not(.alignfull),
+.wp-block-gallery:not(.alignfull):not(.alignwide),
 .blocks-gallery-grid {
 	max-width: 100%;
 }

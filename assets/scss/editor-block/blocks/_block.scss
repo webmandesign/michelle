@@ -50,28 +50,10 @@
 
 	}
 
-	&[data-align="wide"] {
-		// Matching .alignwide-wrap styles.
-		max-width: none;
-		padding-left: 6%;
-		padding-right: 6%;
-		margin: 0;
-
-		[data-align="wide"] {
-			padding-left: 0;
-			padding-right: 0;
-		}
-
-		> * {
-			max-width: $max_width_content;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-	}
-
 	&[data-align="wide"],
 	&[data-align="full"] {
+		max-width: none;
+		margin: 0;
 
 		&:not(:last-child) > * {
 			margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
@@ -81,13 +63,23 @@
 			margin-bottom: 0;
 		}
 
-		// @see global/modifiers/_box-model.scss
-		> .has-no-margin,
-		> .has-no-margin-vertical,
-		> .has-no-margin-bottom {
-			// Simulate no margin between wide/full aligned blocks
-			// with specific margin removal modifier classes applied.
-			margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } * -1 ) important( 'modifier_margin' );
+	}
+
+	&[data-align="wide"] {
+		// Matching .alignwide-wrap styles, basically.
+		padding-left: 6%;
+		padding-right: 6%;
+
+		[data-align="wide"] {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		> * {
+			max-width: $max_width_content;
+			// Unfortunately, it's easier to use !important here to override WP styles for image block, for example.
+			margin-left: auto !important;
+			margin-right: auto !important;
 		}
 
 	}

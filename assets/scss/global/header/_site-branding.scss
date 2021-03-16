@@ -21,8 +21,10 @@
 	&-text {
 		line-height: 1.25;
 
-		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			text-align: center;
+		.has-site-title-last & {
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				text-align: center;
+			}
 		}
 
 		.is-hidden-site-title & {

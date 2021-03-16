@@ -68,6 +68,20 @@ form[role="search"],
 	}
 
 	.site-header-content > & {
+
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			width: 100%;
+		}
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			margin-bottom: 6vh;
+		}
+
+	}
+
+	.has-search-form-modal .site-header-content > & {
+		width: auto;
+		margin-bottom: 0;
 		z-index: 1;
 
 		&::before {
