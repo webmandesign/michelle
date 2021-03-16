@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-15 21:10+0100\n"
+"POT-Creation-Date: 2021-03-16 21:58+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -132,40 +132,45 @@ msgstr ""
 
 #: includes/Content/Block_Styles.php:177
 msgctxt "Block style label."
+msgid "Has no padding"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:185
+msgctxt "Block style label."
 msgid "Overlap gradient"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:184
+#: includes/Content/Block_Styles.php:192
 msgctxt "Block style label."
 msgid "Padding left"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:191
+#: includes/Content/Block_Styles.php:199
 msgctxt "Block style label."
 msgid "Padding right"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:198
+#: includes/Content/Block_Styles.php:206
 msgctxt "Block style label."
 msgid "Scale image"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:205
+#: includes/Content/Block_Styles.php:213
 msgctxt "Block style label."
 msgid "Simple"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:212
+#: includes/Content/Block_Styles.php:220
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:220
+#: includes/Content/Block_Styles.php:228
 msgctxt "Block style label."
 msgid "Zig-zag"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:227
+#: includes/Content/Block_Styles.php:235
 msgctxt "Block style label."
 msgid "Zig-zag wide"
 msgstr ""

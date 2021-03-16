@@ -173,6 +173,14 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
+				'no-padding' => array(
+					'label'  => _x( 'Has no padding', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/cover',
+						'core/group',
+					),
+				),
+
 				'overlap-gradient' => array(
 					'label'  => _x( 'Overlap gradient', 'Block style label.', 'michelle' ),
 					'blocks' => array(
