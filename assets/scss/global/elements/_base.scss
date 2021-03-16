@@ -41,13 +41,16 @@ hr {
 		margin-right: 0;
 	}
 
-	&[class*="-wide"],
-	&.alignwide {
+	&[class*="-wide"] {
 		--hr_width: var(--layout_width_content);
 		width: 100%;
 	}
 
-	&.alignfull {
+	&.alignwide.alignwide {
+		--hr_width: var(--layout_width_content);
+	}
+
+	&.alignfull.alignfull {
 		--hr_width: none;
 		width: calc( 100vw - var(--scrollbar_width) );
 	}

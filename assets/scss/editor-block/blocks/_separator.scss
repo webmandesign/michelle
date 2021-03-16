@@ -7,16 +7,6 @@
 #{ $selector_editor_wrapper } {
 	--hr_width: calc( #{ $golden_minor } * var(--layout_width_entry_content) );
 
-	[data-align="wide"],
-	[data-align="full"] {
-
-		> .wp-block-separator,
-		> .is-style-zigzag {
-			--hr_width: none;
-		}
-
-	}
-
 	.wp-block-separator {
 		opacity: 1;
 
@@ -28,6 +18,14 @@
 			color: inherit;
 		}
 
+	}
+
+	[data-align="wide"] > .wp-block-separator {
+		--hr_width: var(--layout_width_content);
+	}
+
+	[data-align="full"] > .wp-block-separator {
+		--hr_width: none;
 	}
 
 }

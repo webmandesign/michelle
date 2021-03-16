@@ -4,9 +4,9 @@
 // These are custom predefined CSS classes.
 //
 
+@import 'colors'; // Must be first so others can override padding.
 @import 'alignment';
 @import 'box-model';
-@import 'colors';
 @import 'others';
 @import 'typography';
 @import 'decorations';

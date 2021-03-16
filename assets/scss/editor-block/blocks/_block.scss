@@ -50,39 +50,38 @@
 
 	}
 
-	&[data-align="left"],
-	&[data-align="right"] {
+	&[data-align="wide"] {
+		// Matching .alignwide-wrap styles.
+		max-width: none;
+		padding-left: 6%;
+		padding-right: 6%;
+		margin: 0;
 
-		.block-editor-block-list__layout & > .is-block-content,
-		#{ $selector_editor_wrapper } & .block-editor-block-list__block-edit {
+		[data-align="wide"] {
+			padding-left: 0;
+			padding-right: 0;
+		}
 
-			.block-editor-block-list__block {
-				padding-left: 0;
-				padding-right: 0;
-
-				&-edit {
-					float: none;
-					width: auto;
-					max-width: none;
-					margin-left: 0;
-					margin-right: 0;
-					margin-bottom: 0;
-				}
-
-			}
-
+		> * {
+			max-width: $max_width_content;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 	}
 
-	&[data-align="wide"] {
-		max-width: $max_width_content;
-	}
-
-	// @see global/modifiers/_box-model.scss
 	&[data-align="wide"],
 	&[data-align="full"] {
 
+		&:not(:last-child) > * {
+			margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
+		}
+
+		&:last-child > * {
+			margin-bottom: 0;
+		}
+
+		// @see global/modifiers/_box-model.scss
 		> .has-no-margin,
 		> .has-no-margin-vertical,
 		> .has-no-margin-bottom {

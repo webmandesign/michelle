@@ -2,8 +2,16 @@
 
 .wp-block-cover {
 	height: auto;
-	padding: 0;
+	padding: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
 	color: #fff;
+
+	&[class*="is-position-top-"] {
+		padding-top: 0;
+	}
+
+	&[class*="is-position-bottom-"] {
+		padding-bottom: 0;
+	}
 
 	.wp-block-cover__inner-container {
 		width: 88%;

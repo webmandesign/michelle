@@ -3,15 +3,18 @@
 .wp-block-column {
 
 	&s {
-		margin-bottom: 0;
+
+		&.wp-block-columns.wp-block-columns {
+			margin-bottom: 0;
+		}
 
 		&.alignfull {
-			padding-left: $golden +em;
-			padding-right: $golden +em;
+			padding-left: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
+			padding-right: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
 		}
 
 		&.has-background {
-			padding: $golden +em;
+			padding: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
 			padding-bottom: 0;
 
 			@include media( map_get( $breakpoint, 'xl' ) ) {

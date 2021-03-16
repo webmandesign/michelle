@@ -11,10 +11,6 @@
 		max-width: $max_width_entry_content;
 	}
 
-	.wp-block[data-align="wide"] {
-		max-width: $max_width_content;
-	}
-
 }
 
 .wp-block[data-align="wide"],
@@ -35,6 +31,10 @@
 
 }
 
+.wp-block-group__inner-container > .wp-block:last-child {
+	margin-bottom: 0;
+}
+
 .wp-block-group .wp-block-group__inner-container .block-list-appender {
 	margin-left: auto;
 	margin-right: auto;
@@ -49,4 +49,16 @@
 
 .wp-block-group.has-background:not(:last-child) {
 	margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Don't understand why WP sets this to zero...
+}
+
+[data-align=full] .wp-block-group > .wp-block-group__inner-container > .has-background {
+	// Need to use absolute units due to possible
+	// custom font size set on the paragraph block.
+	padding: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
+
+	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+		padding-left: 6vw;
+		padding-right: 6vw;
+	}
+
 }

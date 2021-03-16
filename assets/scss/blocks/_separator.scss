@@ -38,11 +38,6 @@
 		@supports ( mask-image: url('') ) {
 			--hr_width: calc( 8/5 * var(--hr_zigzag_segments) * var(--hr_zigzag_height) );
 
-			&.alignwide,
-			&.alignfull {
-				--hr_width: none;
-			}
-
 			&,
 			&-wide {
 				height: var(--hr_zigzag_height);
