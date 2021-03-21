@@ -30,9 +30,9 @@ $image = Starter::get_image_url( '16to9' );
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:media-text {"align":"","mediaId":999999,"mediaLink":"#0","mediaType":"image","className":"is-style-media-on-top","backgroundColor":"accent","textColor":"palette-3"} -->
-<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top has-palette-3-color has-accent-background-color has-text-color has-background"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-3"} -->
-<h2 class="has-no-margin-top has-palette-3-color has-text-color">Lorem ipsum</h2>
+<div class="wp-block-column"><!-- wp:media-text {"align":"","mediaId":999999,"mediaLink":"#0","mediaType":"image","backgroundColor":"accent","textColor":"palette-3","className":"is-style-media-on-top"} -->
+<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top has-palette-3-color has-accent-background-color has-text-color has-background"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"palette-3"} -->
+<h2 class="has-palette-3-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -48,9 +48,9 @@ $image = Starter::get_image_url( '16to9' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:media-text {"align":"","mediaId":999999,"mediaLink":"#0","mediaType":"image","className":"is-style-media-on-top","backgroundColor":"accent","textColor":"palette-3"} -->
-<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top has-palette-3-color has-accent-background-color has-text-color has-background"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-3"} -->
-<h2 class="has-no-margin-top has-palette-3-color has-text-color">Lorem ipsum</h2>
+<div class="wp-block-column"><!-- wp:media-text {"align":"","mediaId":999999,"mediaLink":"#0","mediaType":"image","backgroundColor":"accent","textColor":"palette-3","className":"is-style-media-on-top"} -->
+<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top has-palette-3-color has-accent-background-color has-text-color has-background"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"palette-3"} -->
+<h2 class="has-palette-3-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -66,9 +66,9 @@ $image = Starter::get_image_url( '16to9' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:media-text {"align":"","mediaId":999999,"mediaLink":"#0","mediaType":"image","className":"is-style-media-on-top","backgroundColor":"accent","textColor":"palette-3"} -->
-<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top has-palette-3-color has-accent-background-color has-text-color has-background"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-3"} -->
-<h2 class="has-no-margin-top has-palette-3-color has-text-color">Lorem ipsum</h2>
+<div class="wp-block-column"><!-- wp:media-text {"align":"","mediaId":999999,"mediaLink":"#0","mediaType":"image","backgroundColor":"accent","textColor":"palette-3","className":"is-style-media-on-top"} -->
+<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top has-palette-3-color has-accent-background-color has-text-color has-background"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"palette-3"} -->
+<h2 class="has-palette-3-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

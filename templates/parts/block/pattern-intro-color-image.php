@@ -28,14 +28,14 @@ $image = Starter::get_image_url( '3to4' );
 
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"palette-1","textColor":"palette-2"} -->
-<div class="wp-block-group alignfull has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:group {"align":"full","backgroundColor":"palette-1","textColor":"palette-2","className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image"} -->
-<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:paragraph {"className":"has-no-margin is-style-uppercase"} -->
-<p class="has-no-margin is-style-uppercase"><strong>Lorem ipsum</strong></p>
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:paragraph {"className":"is-style-no-margin-vertical"} -->
+<p class="is-style-no-margin-vertical"><strong>DOLOR SIT AMET</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1} -->
@@ -47,7 +47,7 @@ $image = Starter::get_image_url( '3to4' );
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div></div>
 <!-- /wp:group -->

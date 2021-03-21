@@ -20,15 +20,15 @@
 
 }
 
-[data-align="wide"] + [data-type="core/spacer"] {
+[data-align="wide"] + .wp-block-spacer {
 	margin-top: 0;
 }
 
 .wp-block-spacer {
-	border: 3px dotted;
+	border: 1px dashed;
 
 	&:not(.is-selected):not(:hover):not(:focus) {
-		opacity: .15;
+		opacity: .1;
 	}
 
 	&[class*="-min-height"]::before {

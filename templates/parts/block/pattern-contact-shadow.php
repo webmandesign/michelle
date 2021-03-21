@@ -51,8 +51,12 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <h2 class="has-text-align-center is-style-uppercase has-normal-font-size"><strong>Lorem Ipsum</strong></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><a href="#0">Facebook</a><br><a href="#0">Instagram</a></p>
-<!-- /wp:paragraph --></div>
+<!-- wp:social-links {"size":"has-normal-icon-size","align":"center"} -->
+<ul class="wp-block-social-links aligncenter has-normal-icon-size"><!-- wp:social-link {"url":"#0","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"#0","service":"instagram"} /-->
+
+<!-- wp:social-link {"url":"#0","service":"youtube"} /--></ul>
+<!-- /wp:social-links --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

@@ -28,14 +28,14 @@ $image = Starter::get_image_url( '16to9' );
 
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":90,"overlayColor":"palette-2","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full"} -->
-<div class="wp-block-cover alignfull has-background-dim-90 has-palette-2-background-color has-background-dim has-custom-content-position is-position-bottom-center" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":90,"overlayColor":"palette-2","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full","className":"is-style-no-padding"} -->
+<div class="wp-block-cover alignfull has-background-dim-90 has-palette-2-background-color has-background-dim has-custom-content-position is-position-bottom-center is-style-no-padding" style="min-height:100vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"className":"is-style-default","textColor":"palette-3","fontSize":"huge"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"textColor":"palette-3","className":"is-style-default","fontSize":"huge"} -->
 <h2 class="is-style-default has-palette-3-color has-text-color has-huge-font-size">Lorem ipsum dolor sit amet fusce libero</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
@@ -65,7 +65,7 @@ $image = Starter::get_image_url( '16to9' );
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:spacer {"height":68} -->
-<div style="height:68px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div></div>
 <!-- /wp:cover -->

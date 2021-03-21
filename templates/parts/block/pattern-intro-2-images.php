@@ -29,12 +29,12 @@ $image2 = Starter::get_image_url( '3to4' );
 
 ?>
 
-<!-- wp:group {"align":"full","className":"has-no-padding","backgroundColor":"accent","textColor":"palette-3"} -->
-<div class="wp-block-group alignfull has-no-padding has-palette-3-color has-accent-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-15vmax-min-height"} -->
+<!-- wp:group {"align":"full","backgroundColor":"accent","textColor":"palette-3","className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-palette-3-color has-accent-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-15vmax-min-height"} -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer has-15vmax-min-height"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"verticalAlignment":null,"align":"wide"} -->
+<!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":999991,"width":480,"height":788,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large is-resized"><img src="<?php echo esc_url_raw( $image1 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999991" width="480" height="788"/></figure>
@@ -55,18 +55,14 @@ $image2 = Starter::get_image_url( '3to4' );
 <!-- /wp:spacer -->
 
 <!-- wp:media-text {"align":"","mediaId":999992,"mediaLink":"#0","mediaType":"image"} -->
-<div class="wp-block-media-text is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image2 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999992 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-uppercase","textColor":"palette-3","fontSize":"normal"} -->
-<h2 class="is-style-uppercase has-palette-3-color has-text-color has-normal-font-size"><strong>Lorem ipsum</strong></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi, suscipit commodo congue fames nisl eget.</p>
+<div class="wp-block-media-text is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image2 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999992 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Lorem ipsum dolor sit amet adipiscing elit facilisi, suscipit fames.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div></div>
 <!-- /wp:group -->

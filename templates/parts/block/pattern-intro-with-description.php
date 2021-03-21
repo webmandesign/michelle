@@ -28,8 +28,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 <!-- wp:columns {"verticalAlignment":null,"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"h1"} -->
-<h1 class="h1">Lorem ipsum dolor</h1>
+<div class="wp-block-column"><!-- wp:heading {"level":1} -->
+<h1>Lorem ipsum dolor</h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
@@ -39,3 +39,7 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->

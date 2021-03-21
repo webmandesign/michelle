@@ -28,8 +28,8 @@ $image = Starter::get_image_url( '16to9' );
 
 ?>
 
-<!-- wp:group {"align":"full","className":"has-no-padding","backgroundColor":"accent"} -->
-<div class="wp-block-group alignfull has-no-padding has-accent-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
+<!-- wp:group {"align":"full","backgroundColor":"accent","className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-accent-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 

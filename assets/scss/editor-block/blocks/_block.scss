@@ -102,3 +102,13 @@
 		}
 	}
 }
+
+// Block previews in patterns and styles.
+
+	.block-editor-block-preview__content .has-parallax {
+		background-attachment: scroll;
+	}
+
+	.block-editor-block-styles__item-preview [class*="-min-height"] {
+		min-height: 100px !important;
+	}

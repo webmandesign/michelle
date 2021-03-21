@@ -23,9 +23,9 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 // Block pattern content:
 
-$image1 = Starter::get_image_url( '2to3' );
-$image2 = Starter::get_image_url( '1to1' );
-$image3 = Starter::get_image_url( '3to4' );
+$image1 = Starter::get_image_url( '3to4' );
+$image2 = Starter::get_image_url( '2to3' );
+$image3 = Starter::get_image_url( '1to1' );
 
 ?>
 
@@ -34,8 +34,8 @@ $image3 = Starter::get_image_url( '3to4' );
 <figure class="wp-block-gallery alignwide columns-3 is-cropped is-style-no-gaps has-no-margin-bottom"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image1 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" data-id="999991" data-full-url="<?php echo esc_url_raw( $image1 ); ?>" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image2 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" data-id="999992" data-full-url="<?php echo esc_url_raw( $image2 ); ?>" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image3 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" data-id="999993" data-full-url="<?php echo esc_url_raw( $image3 ); ?>" data-link="#0" class="wp-image-999993"/></figure></li></ul></figure>
 <!-- /wp:gallery -->
 
-<!-- wp:columns {"align":"wide","style":{"color":{"background":"#eeeeee"}}} -->
-<div class="wp-block-columns alignwide has-background" style="background-color:#eeeeee"><!-- wp:column {"width":"66.66%"} -->
+<!-- wp:columns {"align":"wide","style":{"color":{"background":"#f3f5f7"}}} -->
+<div class="wp-block-columns alignwide has-background" style="background-color:#f3f5f7"><!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"extra-large"} -->
 <h2 class="is-style-uppercase has-extra-large-font-size"><strong><a href="#0">Lorem Ipsum</a></strong></h2>
 <!-- /wp:heading -->

@@ -28,7 +28,7 @@ $image = Starter::get_image_url( '16to9' );
 ?>
 
 <!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":50,"overlayColor":"palette-1","minHeight":62,"minHeightUnit":"vh","align":"full","className":"is-style-inner-shadow"} -->
-<div class="wp-block-cover alignfull has-background-dim-50 has-palette-1-background-color has-background-dim has-parallax is-style-inner-shadow" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size"></p>
-<!-- /wp:paragraph --></div></div>
+<div class="wp-block-cover alignfull has-background-dim-50 has-palette-1-background-color has-background-dim has-parallax is-style-inner-shadow" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div></div>
 <!-- /wp:cover -->

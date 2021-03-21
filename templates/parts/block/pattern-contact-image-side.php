@@ -28,24 +28,24 @@ $image = Starter::get_image_url( '2to3' );
 ?>
 
 <!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","mediaWidth":38} -->
-<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile" style="grid-template-columns:auto 38%"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-default","fontSize":"large"} -->
-<h2 class="is-style-default has-large-font-size"><strong>Lorem</strong></h2>
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile" style="grid-template-columns:auto 38%"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="is-style-uppercase has-normal-font-size"><strong>Lorem</strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p>Lorem ipsum 1234<br>Dolor Sit, 900 00</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"className":"is-style-default","fontSize":"large"} -->
-<h2 class="is-style-default has-large-font-size"><strong>Ipsum</strong></h2>
+<!-- wp:heading {"className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="is-style-uppercase has-normal-font-size"><strong>Ipsum</strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p>Mon - Fri ... 09:00 - 16:00<br>Sat ... 10:00 - 12:00<br>Sun ... Closed</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"className":"is-style-default","fontSize":"large"} -->
-<h2 class="is-style-default has-large-font-size"><strong>Dolor</strong></h2>
+<!-- wp:heading {"className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="is-style-uppercase has-normal-font-size"><strong>Dolor</strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

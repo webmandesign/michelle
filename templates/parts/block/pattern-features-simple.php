@@ -26,18 +26,22 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:group {"align":"full","style":{"color":{"background":"#eeeeee"}}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#eeeeee"><div class="wp-block-group__inner-container"><!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:group {"align":"full","style":{"color":{"background":"#eeeeee"}},"className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-background" style="background-color:#eeeeee"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"textAlign":"center","className":"is-style-uppercase"} -->
-<h2 class="has-text-align-center is-style-uppercase">Lorem Ipsum</h2>
+<!-- wp:heading {"textAlign":"center","className":"is-style-default"} -->
+<h2 class="has-text-align-center is-style-default">Lorem Ipsum</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing, elit montes rutrum feugiat dictumst, justo.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator is-style-dots"/>
+<!-- /wp:separator -->
 
 <!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -53,8 +57,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <p class="has-text-align-center">Lorem ipsum dolor sit amet consectetur adipiscing elit purus, varius augue dapibus.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"align":"center"} -->
-<div class="wp-block-buttons aligncenter"><!-- wp:button -->
+<!-- wp:buttons {"contentJustification":"center"} -->
+<div class="wp-block-buttons is-content-justification-center"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link">Lorem ipsum</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
@@ -69,8 +73,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <p class="has-text-align-center">Lorem ipsum dolor sit amet consectetur adipiscing elit purus, varius augue dapibus.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"align":"center"} -->
-<div class="wp-block-buttons aligncenter"><!-- wp:button -->
+<!-- wp:buttons {"contentJustification":"center"} -->
+<div class="wp-block-buttons is-content-justification-center"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link">Lorem ipsum</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
@@ -85,15 +89,15 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <p class="has-text-align-center">Lorem ipsum dolor sit amet consectetur adipiscing elit purus, varius augue dapibus.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"align":"center"} -->
-<div class="wp-block-buttons aligncenter"><!-- wp:button -->
+<!-- wp:buttons {"contentJustification":"center"} -->
+<div class="wp-block-buttons is-content-justification-center"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link">Lorem ipsum</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div></div>
 <!-- /wp:group -->

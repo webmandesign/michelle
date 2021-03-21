@@ -27,6 +27,6 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:heading {"level":1,"className":"screen-reader-text"} -->
-<h1 class="screen-reader-text">Lorem ipsum dolor</h1>
+<!-- wp:heading {"className":"is-style-screen-reader-text"} -->
+<h2 class="is-style-screen-reader-text">Lorem ipsum</h2>
 <!-- /wp:heading -->

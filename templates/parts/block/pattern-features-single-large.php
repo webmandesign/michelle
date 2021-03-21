@@ -28,9 +28,9 @@ $image = Starter::get_image_url( '1to1' );
 
 ?>
 
-<!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":true,"className":"is-style-default","backgroundColor":"palette-2","textColor":"palette-3"} -->
-<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-image-fill is-style-default has-palette-3-color has-palette-2-background-color has-text-color has-background"><figure class="wp-block-media-text__media" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);background-position:50% 50%"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"palette-3"} -->
-<h2 class="has-palette-3-color has-text-color"><strong>Lorem ipsum dolor</strong><br><strong>sit amet consectetur</strong></h2>
+<!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":true,"backgroundColor":"palette-2","textColor":"palette-3"} -->
+<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-image-fill has-palette-3-color has-palette-2-background-color has-text-color has-background"><figure class="wp-block-media-text__media" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);background-position:50% 50%"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"palette-3"} -->
+<h2 class="has-palette-3-color has-text-color">Lorem ipsum dolor<br>sit amet consectetur</h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"className":"has-40vmin-min-height"} -->

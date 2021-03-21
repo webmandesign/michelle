@@ -32,8 +32,8 @@ $image3 = Starter::get_image_url( '3to4' );
 
 <!-- wp:columns {"align":"full","className":"is-style-no-gaps"} -->
 <div class="wp-block-columns alignfull is-style-no-gaps"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
-<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image1 ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow","style":{"spacing":{"padding":{"top":"50px","right":"50px","bottom":"50px","left":"50px"}}}} -->
+<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px;min-height:62vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image1 ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading -->
 <h2>Lorem ipsum</h2>
 <!-- /wp:heading -->
 
@@ -50,8 +50,8 @@ $image3 = Starter::get_image_url( '3to4' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image2 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
-<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image2 ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image2 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow","style":{"spacing":{"padding":{"top":"50px","right":"50px","bottom":"50px","left":"50px"}}}} -->
+<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px;min-height:62vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image2 ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading -->
 <h2>Lorem ipsum</h2>
 <!-- /wp:heading -->
 
@@ -68,8 +68,8 @@ $image3 = Starter::get_image_url( '3to4' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image3 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow has-extra-large-padding"} -->
-<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow has-extra-large-padding" style="background-image:url(<?php echo esc_url_raw( $image3 ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image3 ); ?>","id":999999,"dimRatio":90,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","contentPosition":"top left","className":"is-style-drop-shadow","style":{"spacing":{"padding":{"top":"50px","right":"50px","bottom":"50px","left":"50px"}}}} -->
+<div class="wp-block-cover has-background-dim-90 has-accent-background-color has-background-dim has-custom-content-position is-position-top-left is-style-drop-shadow" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px;min-height:62vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image3 ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading -->
 <h2>Lorem ipsum</h2>
 <!-- /wp:heading -->
 

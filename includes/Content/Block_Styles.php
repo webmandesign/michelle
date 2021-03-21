@@ -144,6 +144,13 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
+				'large' => array(
+					'label'  => _x( 'Large buttons', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/buttons',
+					),
+				),
+
 				'media-on-top' => array(
 					'label'  => _x( 'Media on top', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -169,6 +176,7 @@ class Block_Styles implements Component_Interface {
 				'no-margin-vertical' => array(
 					'label'  => _x( 'Has no vertical margin', 'Block style label.', 'michelle' ),
 					'blocks' => array(
+						'core/column',
 						'core/cover',
 						'core/group',
 						'core/heading',
@@ -214,10 +222,33 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
+				'screen-reader-text' => array(
+					'label'  => _x( 'Accessibly hidden', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/heading',
+					),
+				),
+
 				'simple' => array(
 					'label'  => _x( 'Simple', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/pullquote',
+					),
+				),
+
+				'text-shadow-dark' => array(
+					'label'  => _x( 'Dark text shadow', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/heading',
+						'core/paragraph',
+					),
+				),
+
+				'text-shadow-light' => array(
+					'label'  => _x( 'Light text shadow', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/heading',
+						'core/paragraph',
 					),
 				),
 

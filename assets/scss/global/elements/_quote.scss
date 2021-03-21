@@ -35,8 +35,13 @@ blockquote {
 
 }
 
-	.has-text-color blockquote {
-		color: inherit;
+	.has-text-color,
+	.wp-block-cover {
+
+		blockquote {
+			color: inherit;
+		}
+
 	}
 
 cite {

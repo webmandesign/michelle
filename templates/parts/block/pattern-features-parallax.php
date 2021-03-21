@@ -30,8 +30,8 @@ $image = Starter::get_image_url( '16to9' );
 
 <!-- wp:columns {"align":"full"} -->
 <div class="wp-block-columns alignfull"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"hasParallax":true,"dimRatio":90,"overlayColor":"palette-2","minHeight":62,"minHeightUnit":"vh","className":"has-inner-shadow"} -->
-<div class="wp-block-cover has-background-dim-90 has-palette-2-background-color has-background-dim has-parallax has-inner-shadow" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"hasParallax":true,"dimRatio":90,"overlayColor":"palette-2","minHeight":62,"minHeightUnit":"vh"} -->
+<div class="wp-block-cover has-background-dim-90 has-palette-2-background-color has-background-dim has-parallax" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="has-text-align-center">Lorem Ipsum</h2>
 <!-- /wp:heading -->
 
@@ -48,8 +48,8 @@ $image = Starter::get_image_url( '16to9' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"hasParallax":true,"dimRatio":90,"overlayColor":"palette-2","minHeight":62,"minHeightUnit":"vh","className":"has-inner-shadow"} -->
-<div class="wp-block-cover has-background-dim-90 has-palette-2-background-color has-background-dim has-parallax has-inner-shadow" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"hasParallax":true,"dimRatio":90,"overlayColor":"palette-2","minHeight":62,"minHeightUnit":"vh"} -->
+<div class="wp-block-cover has-background-dim-90 has-palette-2-background-color has-background-dim has-parallax" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="has-text-align-center">Lorem Ipsum</h2>
 <!-- /wp:heading -->
 
@@ -66,8 +66,8 @@ $image = Starter::get_image_url( '16to9' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"hasParallax":true,"dimRatio":90,"overlayColor":"palette-2","minHeight":62,"minHeightUnit":"vh","className":"has-inner-shadow"} -->
-<div class="wp-block-cover has-background-dim-90 has-palette-2-background-color has-background-dim has-parallax has-inner-shadow" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"hasParallax":true,"dimRatio":90,"overlayColor":"palette-2","minHeight":62,"minHeightUnit":"vh"} -->
+<div class="wp-block-cover has-background-dim-90 has-palette-2-background-color has-background-dim has-parallax" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="has-text-align-center">Lorem Ipsum</h2>
 <!-- /wp:heading -->
 

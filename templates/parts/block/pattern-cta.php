@@ -32,8 +32,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:spacer -->
 
 <!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"61.8%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:61.8%"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"extra-large"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"extra-large"} -->
 <h2 class="is-style-uppercase has-extra-large-font-size"><strong>Lorem ipsum dolor sit?</strong></h2>
 <!-- /wp:heading -->
 
@@ -42,18 +42,18 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"2%"} -->
-<div class="wp-block-column" style="flex-basis:2%"></div>
+<!-- wp:column {"width":"5%"} -->
+<div class="wp-block-column" style="flex-basis:5%"></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"36.2%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:36.2%"><!-- wp:buttons {"contentJustification":"left","className":"has-right-text-align"} -->
-<div class="wp-block-buttons is-content-justification-left has-right-text-align"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":50,"className":"has-large-font-size"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-50 has-large-font-size"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Lorem →</a></div>
+<!-- wp:column {"verticalAlignment":"center","width":"35%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:buttons {"contentJustification":"left","className":"is-style-large"} -->
+<div class="wp-block-buttons is-content-justification-left is-style-large"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":50} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-50"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Lorem →</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"textColor":"palette-2","width":50,"className":"has-large-font-size is-style-outline"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-50 has-large-font-size is-style-outline"><a class="wp-block-button__link has-palette-2-color has-text-color" href="#0">Ipsum →</a></div>
+<!-- wp:button {"textColor":"palette-2","width":50,"className":"is-style-outline"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-palette-2-color has-text-color" href="#0">Ipsum →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

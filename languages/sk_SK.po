@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-21 19:23+0100\n"
-"PO-Revision-Date: 2021-03-21 19:23+0100\n"
+"POT-Creation-Date: 2021-03-21 21:46+0100\n"
+"PO-Revision-Date: 2021-03-21 21:47+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -119,66 +119,86 @@ msgstr "Vnútorný tieň"
 
 #: includes/Content/Block_Styles.php:148
 msgctxt "Block style label."
+msgid "Large buttons"
+msgstr "Veľké tlačidlá"
+
+#: includes/Content/Block_Styles.php:155
+msgctxt "Block style label."
 msgid "Media on top"
 msgstr "Médiá hore"
 
-#: includes/Content/Block_Styles.php:155
+#: includes/Content/Block_Styles.php:162
 msgctxt "Block style label."
 msgid "Narrow content"
 msgstr "Úzky obsah"
 
-#: includes/Content/Block_Styles.php:162
+#: includes/Content/Block_Styles.php:169
 msgctxt "Block style label."
 msgid "No gaps"
 msgstr "Žiadne medzery"
 
-#: includes/Content/Block_Styles.php:170
+#: includes/Content/Block_Styles.php:177
 msgctxt "Block style label."
 msgid "Has no vertical margin"
 msgstr "Bez zvislého odsadenia"
 
-#: includes/Content/Block_Styles.php:182
+#: includes/Content/Block_Styles.php:190
 msgctxt "Block style label."
 msgid "Has no padding"
 msgstr "Bez vnútorného odsadenia"
 
-#: includes/Content/Block_Styles.php:190
+#: includes/Content/Block_Styles.php:198
 msgctxt "Block style label."
 msgid "Overlap gradient"
 msgstr "Postupné prekrytie"
 
-#: includes/Content/Block_Styles.php:197
+#: includes/Content/Block_Styles.php:205
 msgctxt "Block style label."
 msgid "Padding left"
 msgstr "Odsadenie vľavo"
 
-#: includes/Content/Block_Styles.php:204
+#: includes/Content/Block_Styles.php:212
 msgctxt "Block style label."
 msgid "Padding right"
 msgstr "Odsadenie vpravo"
 
-#: includes/Content/Block_Styles.php:211
+#: includes/Content/Block_Styles.php:219
 msgctxt "Block style label."
 msgid "Scale image"
 msgstr "Prispôsobiť veľkosť obrázka"
 
-#: includes/Content/Block_Styles.php:218
+#: includes/Content/Block_Styles.php:226
+msgctxt "Block style label."
+msgid "Accessibly hidden"
+msgstr "Prístupne skrytý"
+
+#: includes/Content/Block_Styles.php:233
 msgctxt "Block style label."
 msgid "Simple"
 msgstr "Jednoduchý"
 
-#: includes/Content/Block_Styles.php:225
+#: includes/Content/Block_Styles.php:240
+msgctxt "Block style label."
+msgid "Dark text shadow"
+msgstr "Tmavý tieň textu"
+
+#: includes/Content/Block_Styles.php:248
+msgctxt "Block style label."
+msgid "Light text shadow"
+msgstr "Svetlý tieň textu"
+
+#: includes/Content/Block_Styles.php:256
 #, fuzzy
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr "Veľké písmo"
 
-#: includes/Content/Block_Styles.php:233
+#: includes/Content/Block_Styles.php:264
 msgctxt "Block style label."
 msgid "Zig-zag"
 msgstr "Cik-cak"
 
-#: includes/Content/Block_Styles.php:240
+#: includes/Content/Block_Styles.php:271
 msgctxt "Block style label."
 msgid "Zig-zag wide"
 msgstr "Široký cik-cak"
@@ -1220,9 +1240,12 @@ msgstr "Toto je text výňatku stránky/článku."
 #: templates/parts/block/pattern-features-bg-image.php:34
 #: templates/parts/block/pattern-features-bg-image.php:52
 #: templates/parts/block/pattern-features-bg-image.php:70
+#: templates/parts/block/pattern-features-large-image.php:41
+#: templates/parts/block/pattern-features-large-image.php:59
+#: templates/parts/block/pattern-features-large-image.php:77
 #: templates/parts/block/pattern-features-shadow.php:34
-#: templates/parts/block/pattern-features-shadow.php:52
-#: templates/parts/block/pattern-features-shadow.php:70
+#: templates/parts/block/pattern-features-shadow.php:56
+#: templates/parts/block/pattern-features-shadow.php:78
 #: templates/parts/block/pattern-features-single-large.php:32
 #: templates/parts/block/pattern-footer.php:38
 #: templates/parts/block/pattern-gallery-no-gap.php:34

@@ -1,7 +1,9 @@
 /* FILE: editor-block/_accessibility.scss */
 
 #{ $selector_editor_wrapper } .wp-block.screen-reader-text,
-#{ $selector_editor_wrapper } .wp-block > .screen-reader-text {
+#{ $selector_editor_wrapper } .wp-block > .screen-reader-text,
+#{ $selector_editor_wrapper } .wp-block.is-style-screen-reader-text,
+#{ $selector_editor_wrapper } .wp-block > .is-style-screen-reader-text {
 	position: relative !important;
 	clip: auto !important;
 	clip-path: none !important;
@@ -40,6 +42,11 @@
 #{ $selector_editor_wrapper } .is-selected > .screen-reader-text,
 #{ $selector_editor_wrapper } .screen-reader-text:hover,
 #{ $selector_editor_wrapper } .screen-reader-text:focus,
-#{ $selector_editor_wrapper } .screen-reader-text:focus-within {
+#{ $selector_editor_wrapper } .screen-reader-text:focus-within,
+#{ $selector_editor_wrapper } .wp-block:hover > .is-style-screen-reader-text,
+#{ $selector_editor_wrapper } .is-selected > .is-style-screen-reader-text,
+#{ $selector_editor_wrapper } .is-style-screen-reader-text:hover,
+#{ $selector_editor_wrapper } .is-style-screen-reader-text:focus,
+#{ $selector_editor_wrapper } .is-style-screen-reader-text:focus-within {
 	opacity: 1 !important;
 }

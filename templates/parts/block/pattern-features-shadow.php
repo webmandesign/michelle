@@ -38,9 +38,13 @@ $image = Starter::get_image_url( 'icon' );
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"textColor":"palette-2","className":"has-no-margin-top"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
+<!-- wp:heading {"textColor":"palette-2","className":"is-style-no-margin-vertical"} -->
+<h2 class="is-style-no-margin-vertical has-palette-2-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
+
+<!-- wp:spacer {"height":30} -->
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"palette-2"} -->
 <p class="has-palette-2-color has-text-color">Lorem ipsum dolor sit amet consectetur adipiscing elit litora, mus neque taciti porta class in cursus netus, semper urna faucibus per mollis habitasse aliquet.</p>
@@ -56,9 +60,13 @@ $image = Starter::get_image_url( 'icon' );
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"textColor":"palette-2","className":"has-no-margin-top"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
+<!-- wp:heading {"textColor":"palette-2","className":"is-style-no-margin-vertical"} -->
+<h2 class="is-style-no-margin-vertical has-palette-2-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
+
+<!-- wp:spacer {"height":30} -->
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"palette-2"} -->
 <p class="has-palette-2-color has-text-color">Lorem ipsum dolor sit amet consectetur adipiscing elit litora, mus neque taciti porta class in cursus netus, semper urna faucibus per mollis habitasse aliquet.</p>
@@ -74,9 +82,13 @@ $image = Starter::get_image_url( 'icon' );
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"textColor":"palette-2","className":"has-no-margin-top"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
+<!-- wp:heading {"textColor":"palette-2","className":"is-style-no-margin-vertical"} -->
+<h2 class="is-style-no-margin-vertical has-palette-2-color has-text-color">Lorem ipsum</h2>
 <!-- /wp:heading -->
+
+<!-- wp:spacer {"height":30} -->
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
 
 <!-- wp:paragraph {"textColor":"palette-2"} -->
 <p class="has-palette-2-color has-text-color">Lorem ipsum dolor sit amet consectetur adipiscing elit litora, mus neque taciti porta class in cursus netus, semper urna faucibus per mollis habitasse aliquet.</p>

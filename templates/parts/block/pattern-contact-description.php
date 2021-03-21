@@ -28,7 +28,7 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading -->
-<h2><strong>Lorem ipsum dolor</strong></h2>
+<h2>Lorem ipsum dolor</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -41,16 +41,16 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"30%"} -->
-<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":3,"className":"has-no-margin","fontSize":"large"} -->
-<h3 class="has-no-margin has-large-font-size"><strong>Email</strong></h3>
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":3,"className":"has-no-margin is-style-uppercase","fontSize":"normal"} -->
+<h3 class="has-no-margin is-style-uppercase has-normal-font-size"><strong>Email</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"large"} -->
 <p class="has-large-font-size"><a href="mailto:lorem@ipsum.dolor">lorem@ipsum.dolor</a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3,"className":"has-no-margin","fontSize":"large"} -->
-<h3 class="has-no-margin has-large-font-size"><strong>Phone</strong></h3>
+<!-- wp:heading {"level":3,"className":"has-no-margin is-style-uppercase","fontSize":"normal"} -->
+<h3 class="has-no-margin is-style-uppercase has-normal-font-size"><strong>Phone</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"large"} -->

@@ -39,6 +39,10 @@
 		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } );
 	}
 
+	&.is-style-no-margin-vertical:last-child {
+		margin-bottom: 0;
+	}
+
 	&.wp-block-column:empty {
 
 		&,

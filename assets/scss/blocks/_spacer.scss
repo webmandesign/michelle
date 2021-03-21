@@ -16,3 +16,14 @@
 	}
 
 }
+
+.has-no-margin, .m-0,
+.has-no-margin-bottom, .mb-0,
+.has-no-margin-vertical, .mtb-0,
+.is-style-no-margin-vertical {
+
+	+ .wp-block-spacer {
+		margin-top: 0;
+	}
+
+}

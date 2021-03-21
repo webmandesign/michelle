@@ -26,9 +26,9 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"palette-1"} -->
-<div class="wp-block-group alignfull has-palette-1-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:group {"align":"full","backgroundColor":"palette-1","className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-palette-1-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"align":"wide"} -->
@@ -53,7 +53,7 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:spacer {"height":80} -->
-<div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div></div>
 <!-- /wp:group -->

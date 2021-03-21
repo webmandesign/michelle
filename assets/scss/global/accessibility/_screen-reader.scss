@@ -1,7 +1,8 @@
 /* FILE: global/accessibility/_screen-reader.scss */
 
 // Text meant only for screen readers.
-.screen-reader-text {
+.screen-reader-text,
+.is-style-screen-reader-text {
 	@extend %screen_reader_hiding;
 	padding: 0;
 	margin: -1px;
