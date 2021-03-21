@@ -40,7 +40,5 @@ Please see `changelog.md` file.
 * TGM-Plugin-Activation © Thomas Griffin, GPL v2 or later
 * Normalize.css © Nicolas Gallagher and Jonathan Neal, MIT
 * a11y-menu.js © WebMan Design, Oliver Juhas, GPL-3.0-or-later
-* images/background-pattern.png ©  https://cc0textures.com/view?id=Paper001, CC0
-* images/starter/icon.png © WebMan Design, Oliver Juhas, GPL-3.0-or-later
-* images/starter/*.jpg © https://stocksnap.io/author/kellyishmael, https://stocksnap.io/photo/table-wood-PEOPPBXLWR, CC0
+* images/starter/*.png © WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * screenshot.jpg images © https://stocksnap.io/author/kristinhardwick, https://stocksnap.io/photo/interior-design-WP7CVEDSVY, https://stocksnap.io/photo/coffee-table-L4SNGYZWL4, CC0

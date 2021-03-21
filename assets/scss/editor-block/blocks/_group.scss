@@ -23,12 +23,12 @@
 			padding-right: 0;
 		}
 
-		&:not([class*="is-position-"]) > .wp-block-group__inner-container {
-			width: 100%;
-		}
-
 	}
 
+}
+
+[data-align="full"] > .wp-block-group > .wp-block-group__inner-container {
+	width: 88%;
 }
 
 .wp-block-group__inner-container > .wp-block:last-child {

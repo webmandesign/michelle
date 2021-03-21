@@ -41,13 +41,10 @@ hr {
 		margin-right: 0;
 	}
 
-	&[class*="-wide"] {
-		--hr_width: var(--layout_width_content);
-		width: 100%;
-	}
-
+	&[class*="-wide"],
 	&.alignwide.alignwide {
 		--hr_width: var(--layout_width_content);
+		width: 100%;
 	}
 
 	&.alignfull.alignfull {

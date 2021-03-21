@@ -63,17 +63,21 @@
 			margin-bottom: 0;
 		}
 
+		[data-align="wide"] {
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 	}
 
 	&[data-align="wide"] {
 		// Matching .alignwide-wrap styles, basically.
-		padding-left: 6%;
-		padding-right: 6%;
-
-		[data-align="wide"] {
-			padding-left: 0;
-			padding-right: 0;
-		}
+		padding-left: 6vw;
+		padding-right: 6vw;
+		margin-left: -10px;
+		margin-right: -10px;
 
 		> * {
 			max-width: $max_width_content;

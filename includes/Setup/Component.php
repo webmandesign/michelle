@@ -90,10 +90,7 @@ class Component implements Component_Interface {
 
 			// Custom background.
 			add_theme_support( 'custom-background', array(
-				'default-color'      => 'ffffff',
-				'default-image'      => get_theme_file_uri( 'assets/images/background-pattern.png' ),
-				'default-position-x' => 'center',
-				'default-position-y' => 'center',
+				'default-color' => 'ffffff',
 			) );
 
 			/**

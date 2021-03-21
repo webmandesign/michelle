@@ -8,6 +8,8 @@
  * @since  1.0.0
  */
 
+namespace WebManDesign\Michelle\Content;
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
@@ -15,8 +17,8 @@ if ( ! is_admin() ) {
 	return;
 }
 
-$image = get_theme_file_uri( 'assets/images/starter/16to9.jpg' );
-$icon  = get_theme_file_uri( 'assets/images/starter/icon.png' );
+$image = Starter::get_image_url( '16to9' );
+$icon  = Starter::get_image_url( 'icon' );
 
 ?>
 

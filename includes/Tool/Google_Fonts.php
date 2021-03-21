@@ -123,6 +123,7 @@ class Google_Fonts implements Component_Interface {
 			'Patua One',
 			'Playfair Display',
 			'Poppins',
+			'Public Sans',
 			'PT Sans Caption',
 			'PT Sans',
 			'PT Serif Caption',

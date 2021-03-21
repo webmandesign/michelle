@@ -93,7 +93,7 @@ class Block_Patterns implements Component_Interface {
 			foreach ( $patterns as $id ) {
 
 				ob_start();
-				get_template_part( 'templates/parts/blocks/pattern', $id );
+				get_template_part( 'templates/parts/block/pattern', $id );
 				$content = ob_get_clean();
 
 				// Why bother if we have no patter setup args?
@@ -132,7 +132,7 @@ class Block_Patterns implements Component_Interface {
 	/**
 	 * Gets array of block pattern IDs/slugs to load.
 	 *
-	 * The theme will look for a `templates/parts/blocks/pattern-{{$id}}.php` file
+	 * The theme will look for a `templates/parts/block/pattern-{{$id}}.php` file
 	 * based on the array values (the `$id` in the filename).
 	 *
 	 * @since  1.0.0

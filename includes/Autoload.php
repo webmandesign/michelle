@@ -56,12 +56,12 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 			'/Assets/Scripts.php',
 			'/Assets/Styles.php',
 
+			'/Content/Block.php',
 			'/Content/Block_Patterns.php',
 			'/Content/Block_Styles.php',
-			'/Content/Blocks.php',
 			'/Content/Component.php',
 			'/Content/Container.php',
-			'/Content/Starter_Content.php',
+			'/Content/Starter.php',
 
 			'/Customize/Colors.php',
 			'/Customize/Component.php',

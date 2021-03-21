@@ -94,13 +94,6 @@ class Block_Styles implements Component_Interface {
 
 			$styles = array(
 
-				'display-on-desktop' => array(
-					'label'  => _x( 'Display on large screens only', 'Block style label.', 'michelle' ),
-					'blocks' => array(
-						'core/spacer',
-					),
-				),
-
 				'double-line' => array(
 					'label'  => _x( 'Double-line', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -170,6 +163,18 @@ class Block_Styles implements Component_Interface {
 					'blocks' => array(
 						'core/columns',
 						'core/gallery',
+					),
+				),
+
+				'no-margin-vertical' => array(
+					'label'  => _x( 'Has no vertical margin', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/cover',
+						'core/group',
+						'core/heading',
+						'core/image',
+						'core/media-text',
+						'core/paragraph',
 					),
 				),
 

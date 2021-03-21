@@ -32,13 +32,11 @@ class Component implements Component_Interface {
 			// Containers.
 			Container::init();
 			// Blocks.
-			Blocks::init();
+			Block::init();
 			Block_Patterns::init();
 			Block_Styles::init();
 			// Starter content.
-			if ( is_customize_preview() ) {
-				Starter_Content::init();
-			}
+			Starter::init();
 
 	} // /init
 
