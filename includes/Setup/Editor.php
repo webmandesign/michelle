@@ -59,7 +59,9 @@ class Editor implements Component_Interface {
 			// Others.
 			add_theme_support( 'custom-units' );
 			add_theme_support( 'custom-spacing' );
-			add_theme_support( 'experimental-link-color' );
+
+			// Experimental
+			add_theme_support( 'experimental-link-color' ); // Check `--wp--style--color--link` CSS variable.
 
 	} // /after_setup_theme
 

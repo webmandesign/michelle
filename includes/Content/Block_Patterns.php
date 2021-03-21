@@ -52,9 +52,25 @@ class Block_Patterns implements Component_Interface {
 
 			// Actions
 
+				add_action( 'after_setup_theme', __CLASS__ . '::remove_core_patterns' );
 				add_action( 'after_setup_theme', __CLASS__ . '::register' );
 
 	} // /init
+
+	/**
+	 * Remove core block patterns.
+	 *
+	 * @since  1.0.0
+	 *
+	 * @return  void
+	 */
+	public static function remove_core_patterns() {
+
+		// Processing
+
+			remove_theme_support( 'core-block-patterns' );
+
+	} // /remove_core_patterns
 
 	/**
 	 * Register block patterns.
