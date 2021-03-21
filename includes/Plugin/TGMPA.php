@@ -81,7 +81,7 @@ class TGMPA implements Component_Interface {
 
 				'beaver-builder' => array(
 					'name'        => 'Beaver Builder',
-					'description' => __( 'Easy to use drag-and-drop page builder for creating complex page layouts.', 'michelle' ) . ' ' . __( 'Feel free to use whatever page builder you are familiar with, though.', 'michelle' ) . ' ' . __( 'The theme will handle any page builder.', 'michelle' ) . '<br><br><em>' . __( 'With full block editor compatibility you may not even need any page builder, actually :)', 'michelle' ) . '</em>',
+					'description' => esc_html__( 'Easy to use drag-and-drop page builder for creating complex page layouts.', 'michelle' ) . ' ' . esc_html__( 'Feel free to use whatever page builder you are familiar with, though.', 'michelle' ) . ' ' . esc_html__( 'The theme will handle any page builder.', 'michelle' ) . '<br><br><em>' . esc_html__( 'With full block editor compatibility you may not even need any page builder, actually :)', 'michelle' ) . '</em>',
 					'slug'        => 'beaver-builder-lite-version',
 					'required'    => false,
 					'is_callable' => 'FLBuilder::init',
@@ -89,21 +89,21 @@ class TGMPA implements Component_Interface {
 
 				'one-click-demo-import' => array(
 					'name'        => 'One Click Demo Import',
-					'description' => __( 'For installing theme demo content easily.', 'michelle' ),
+					'description' => esc_html__( 'For installing theme demo content easily.', 'michelle' ),
 					'slug'        => 'one-click-demo-import',
 					'required'    => false,
 				),
 
 				'improving-search-form-accessibility' => array(
 					'name'        => 'Improving Search Form Accessibility',
-					'description' => __( 'Fixes common accessibility issue with WordPress search form.', 'michelle' ),
+					'description' => esc_html__( 'Fixes common accessibility issue with WordPress search form.', 'michelle' ),
 					'slug'        => 'improving-search-form-accessibility',
 					'required'    => false,
 				),
 
 				'woocommerce' => array(
 					'name'        => 'WooCommerce',
-					'description' => __( 'Adding e-commerce functionality.', 'michelle' ),
+					'description' => esc_html__( 'Adding e-commerce functionality.', 'michelle' ),
 					'slug'        => 'woocommerce',
 					'required'    => false,
 				),

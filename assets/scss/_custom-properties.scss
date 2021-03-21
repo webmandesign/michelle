@@ -72,7 +72,8 @@
 		--typography_font_size_small: .75em;
 		--typography_font_size_large: var(--typography_heading_size_4);
 		--typography_font_size_extra_large: var(--typography_heading_size_3);
-		--typography_font_size_huge: 5.063em;
+		--typography_font_size_huge: calc( var(--typography_heading_size_multiplier) * var(--typography_heading_size_1) );
+		--typography_font_size_gigantic: calc( var(--typography_heading_size_multiplier) * 5.61em );
 
 	// Spacing and size.
 

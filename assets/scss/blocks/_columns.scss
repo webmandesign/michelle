@@ -19,7 +19,7 @@
 
 			@include media( map_get( $breakpoint, 'xl' ) ) {
 				padding: 4%;
-				padding-bottom: calc( 4% - #{ $golden +em } );
+				padding-bottom: calc( 4% - var(--typography_font_size_base) * #{ $golden } );
 			}
 
 		}
@@ -36,7 +36,7 @@
 	}
 
 	&.wp-block-column:last-child {
-		margin-bottom: $golden +em;
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } );
 	}
 
 	&.wp-block-column:empty {

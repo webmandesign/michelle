@@ -36,7 +36,9 @@ class Component implements Component_Interface {
 			Block_Patterns::init();
 			Block_Styles::init();
 			// Starter content.
-			Starter_Content::init();
+			if ( is_customize_preview() ) {
+				Starter_Content::init();
+			}
 
 	} // /init
 

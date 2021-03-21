@@ -58,6 +58,8 @@ class Editor implements Component_Interface {
 
 			// Others.
 			add_theme_support( 'custom-units' );
+			add_theme_support( 'custom-spacing' );
+			add_theme_support( 'experimental-link-color' );
 
 	} // /after_setup_theme
 
@@ -164,8 +166,14 @@ class Editor implements Component_Interface {
 
 				array(
 					'name' => esc_html_x( 'Huge', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * 5.063 ),
+					'size' => round( $base_font_size * 4.209 ),
 					'slug' => 'huge',
+				),
+
+				array(
+					'name' => esc_html_x( 'Gigantic', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * 5.61 ),
+					'slug' => 'gigantic',
 				),
 
 			);

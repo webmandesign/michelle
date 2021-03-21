@@ -62,10 +62,6 @@ class Media implements Component_Interface {
 				'attachment:video',
 			) );
 
-			// Custom header.
-
-				$image_sizes = self::get_image_sizes();
-
 	} // /after_setup_theme
 
 	/**

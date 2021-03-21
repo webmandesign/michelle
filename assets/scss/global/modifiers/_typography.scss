@@ -49,7 +49,11 @@
 	}
 
 	.has-huge-font-size {
-		font-size: calc( var(--typography_heading_size_multiplier) * var(--typography_font_size_huge) ) $important_modifiers;
+		font-size: var(--typography_font_size_huge) $important_modifiers;
+	}
+
+	.has-gigantic-font-size {
+		font-size: var(--typography_font_size_gigantic) $important_modifiers;
 	}
 
 	$important_modifiers: null; // Required reset.

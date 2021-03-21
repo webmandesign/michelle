@@ -3,18 +3,15 @@
 #{ $selector_editor_title } {
 	font-size: var(--typography_font_size_base);
 
-	& &__block,
-	&__block.wp-block,
-	&__block.wp-block:last-child {
+	&__block.wp-block {
 		max-width: $max_width_content;
-		padding: 2em 0;
+		padding: 3em 0;
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
 		font-size: inherit;
 	}
 
 	& &__input {
-		max-width: calc( #{ $golden_major } * var(--layout_width_content) );
 		padding-top: 0;
 		padding-bottom: 0;
 		margin-left: auto;
@@ -23,7 +20,6 @@
 		font-size: 2.5em;
 		font-weight: 700;
 		line-height: 1.25;
-		text-align: center;
 
 		&,
 		&:focus {
@@ -34,7 +30,6 @@
 
 	& &__input:focus,
 	.is-selected .editor-post-title__input {
-		padding-top: .25em;
 		text-transform: none;
 		letter-spacing: 0;
 	}

@@ -59,6 +59,8 @@ class Component implements Component_Interface {
 
 			get_search_form( true );
 
+			get_template_part( 'templates/parts/component/search-result-count' );
+
 	} // /search_form
 
 }

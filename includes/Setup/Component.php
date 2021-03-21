@@ -84,6 +84,8 @@ class Component implements Component_Interface {
 				'gallery',
 				'navigation-widgets',
 				'search-form',
+				'script',
+				'style',
 			) );
 
 			// Custom background.
@@ -92,11 +94,6 @@ class Component implements Component_Interface {
 				'default-image'      => get_theme_file_uri( 'assets/images/background-pattern.png' ),
 				'default-position-x' => 'center',
 				'default-position-y' => 'center',
-			) );
-
-			// Custom header. Required for site title hiding.
-			add_theme_support( 'custom-header', array(
-				'default-text-color' => 'ffffff',
 			) );
 
 			/**

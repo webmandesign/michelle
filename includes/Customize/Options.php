@@ -79,15 +79,10 @@ class Options implements Component_Interface {
 			// Set live preview for predefined controls.
 			$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 			$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-			$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 			// Default background color control.
 			$wp_customize->get_control( 'background_color' )->section  = 'colors_general';
 			$wp_customize->get_control( 'background_color' )->priority = 0;
-
-			// Remove obsolete custom header controls (only, not setting!).
-			$wp_customize->remove_control( 'header_textcolor' );
-			$wp_customize->remove_control( 'header_image' );
 
 			// Option pointers only:
 
@@ -191,9 +186,21 @@ class Options implements Component_Interface {
 					'0' . 10 . 'logo' . 20 => array(
 						'section'    => 'title_tagline',
 						'priority'   => 10,
-						'type'       => 'select',
+						'type'       => 'checkbox',
+						'id'         => 'display_site_title',
+						'label'      => esc_html__( 'Display site title & tagline', 'michelle' ),
+						'default'    => true,
+						'preview_js' => array(
+							'custom' => "jQuery( 'body' ).toggleClass( 'is-hidden-site-title' );",
+						),
+					),
+
+					'0' . 10 . 'logo' . 30 => array(
+						'section'    => 'title_tagline',
+						'priority'   => 11,
+						'type'       => 'radio',
 						'id'         => 'site_title_position',
-						'label'      => esc_html__( 'Site title display', 'michelle' ),
+						'label'      => esc_html__( 'Site title position', 'michelle' ),
 						'default'    => 'last',
 						'choices'    => array(
 							'first' => esc_html__( 'First item in header', 'michelle' ),

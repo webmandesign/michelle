@@ -62,7 +62,7 @@ form[role="search"],
 
 	}
 
-	.page-header + & {
+	.site-main > & {
 		max-width: var(--layout_width_entry_content);
 		margin: 0 auto var(--white_space);
 	}

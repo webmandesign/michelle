@@ -71,7 +71,7 @@ class Body_Class implements Component_Interface {
 			}
 
 			// Is site title text hidden?
-			if ( 'blank' === get_header_textcolor() ) {
+			if ( ! Mod::get( 'display_site_title' ) ) {
 				$classes[] = 'is-hidden-site-title';
 			}
 

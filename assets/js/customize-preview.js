@@ -27,19 +27,6 @@
 			} );
 	} );
 
-	wp.customize( 'header_textcolor', function( value ) {
-		value
-			.bind( function( to ) {
-				if ( 'blank' === to ) {
-					$( 'body' )
-						.addClass( 'is-hidden-site-title' );
-				} else {
-					$( 'body' )
-						.removeClass( 'is-hidden-site-title' );
-				}
-			} );
-	} );
-
 } )( jQuery );
 
 /**

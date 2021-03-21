@@ -199,7 +199,7 @@ class Page_Builder implements Component_Interface {
 
 		// Variables
 
-			$check_body_class = stripos( implode( ' ', Body_Class::get_body_class( $body_classes ) ), '-page-builder' );
+			$check_body_class = stripos( implode( ' ', Body_Class::get_body_class( $body_classes ) ), 'template-page-builder' );
 
 
 		// Output
@@ -216,7 +216,7 @@ class Page_Builder implements Component_Interface {
 	} // /is_enabled
 
 	/**
-	 * Remove "Page builder" page/post template [builder.php].
+	 * Remove "Page builder" page/post template [page-builder(-*).php].
 	 *
 	 * @since  1.0.0
 	 *
@@ -321,8 +321,11 @@ class Page_Builder implements Component_Interface {
 		// Processing
 
 			if (
-				$beaver_builder
-				|| $elementor
+				is_singular()
+				&& (
+					$beaver_builder
+					|| $elementor
+				)
 			) {
 				return true;
 			}

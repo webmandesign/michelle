@@ -52,6 +52,10 @@ class Component implements Component_Interface {
 				add_action( 'tha_entry_top',    __CLASS__ . '::meta', 30 );
 				add_action( 'tha_entry_bottom', __CLASS__ . '::meta' );
 
+			// Filters
+
+				add_filter( 'the_title', __CLASS__ . '::the_title' );
+
 	} // /init
 
 	/**
@@ -220,5 +224,22 @@ class Component implements Component_Interface {
 			return $output;
 
 	} // /has_more_tag
+
+	/**
+	 * Add a title to posts that are missing titles.
+	 *
+	 * @since  1.0.0
+	 *
+	 * @param  string $title
+	 *
+	 * @return  string
+	 */
+	public static function the_title( string $title ): string {
+
+		// Output
+
+			return ( '' === $title ) ? ( esc_html_x( 'Untitled', 'Added to posts and pages that are missing titles.', 'michelle' ) ) :  ( $title );
+
+	} // /the_title
 
 }
