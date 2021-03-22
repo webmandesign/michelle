@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 Block_Patterns::add_pattern_args( __FILE__, array(
 	'title'      => _x( 'Features: Parallax', 'Block pattern title.', 'michelle' ),
 	'categories' => array( 'columns' ),
-	'keywords'   => array( esc_html__( 'services', 'michelle' ) ),
+	'keywords'   => array( esc_html__( 'services', 'michelle' ), esc_html__( 'image', 'michelle' ) ),
 ) );
 
 // Block pattern content:

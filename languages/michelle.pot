@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-21 23:55+0100\n"
+"POT-Creation-Date: 2021-03-22 11:17+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -135,62 +135,62 @@ msgctxt "Block style label."
 msgid "Has no vertical margin"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:190
+#: includes/Content/Block_Styles.php:191
 msgctxt "Block style label."
 msgid "Has no padding"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:198
+#: includes/Content/Block_Styles.php:199
 msgctxt "Block style label."
 msgid "Overlap gradient"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:205
+#: includes/Content/Block_Styles.php:206
 msgctxt "Block style label."
 msgid "Padding left"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:212
+#: includes/Content/Block_Styles.php:213
 msgctxt "Block style label."
 msgid "Padding right"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:219
+#: includes/Content/Block_Styles.php:220
 msgctxt "Block style label."
 msgid "Scale image"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:226
+#: includes/Content/Block_Styles.php:227
 msgctxt "Block style label."
 msgid "Accessibly hidden"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:233
+#: includes/Content/Block_Styles.php:234
 msgctxt "Block style label."
 msgid "Simple"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:240
+#: includes/Content/Block_Styles.php:241
 msgctxt "Block style label."
 msgid "Dark text shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:248
+#: includes/Content/Block_Styles.php:249
 msgctxt "Block style label."
 msgid "Light text shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:256
+#: includes/Content/Block_Styles.php:257
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:264
+#: includes/Content/Block_Styles.php:265
 msgctxt "Block style label."
 msgid "Zig-zag"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:271
+#: includes/Content/Block_Styles.php:272
 msgctxt "Block style label."
 msgid "Zig-zag wide"
 msgstr ""
@@ -206,47 +206,47 @@ msgctxt "Theme starter content"
 msgid "Welcome!"
 msgstr ""
 
-#: includes/Content/Starter.php:137
+#: includes/Content/Starter.php:138
 msgctxt "Theme starter content"
 msgid "About us"
 msgstr ""
 
-#: includes/Content/Starter.php:144 includes/Content/Starter.php:191
+#: includes/Content/Starter.php:146 includes/Content/Starter.php:195
 msgctxt "Theme starter content"
 msgid "Services"
 msgstr ""
 
-#: includes/Content/Starter.php:151
+#: includes/Content/Starter.php:154
 msgctxt "Theme starter content"
 msgid "Frequently Asked Question"
 msgstr ""
 
-#: includes/Content/Starter.php:158
+#: includes/Content/Starter.php:162
 msgctxt "Theme starter content"
 msgid "Contact us"
 msgstr ""
 
-#: includes/Content/Starter.php:181
+#: includes/Content/Starter.php:185
 msgctxt "Theme starter content"
 msgid "Primary Menu"
 msgstr ""
 
-#: includes/Content/Starter.php:185
+#: includes/Content/Starter.php:189
 msgctxt "Theme starter content"
 msgid "About"
 msgstr ""
 
-#: includes/Content/Starter.php:197
+#: includes/Content/Starter.php:201
 msgctxt "Theme starter content"
 msgid "FAQ"
 msgstr ""
 
-#: includes/Content/Starter.php:203
+#: includes/Content/Starter.php:207
 msgctxt "Theme starter content"
 msgid "Contact"
 msgstr ""
 
-#: includes/Content/Starter.php:209
+#: includes/Content/Starter.php:213
 msgctxt "Theme starter content"
 msgid "Blog"
 msgstr ""
@@ -1064,50 +1064,6 @@ msgctxt "Theme starter content"
 msgid "This is a page/post excerpt text."
 msgstr ""
 
-#: templates/parts/admin/content-starter-home.php:50
-#: templates/parts/admin/content-starter-home.php:70
-#: templates/parts/admin/content-starter-home.php:90
-#: templates/parts/admin/content-starter-services.php:28
-#: templates/parts/admin/content-starter-services.php:48
-#: templates/parts/admin/content-starter-services.php:68
-#: templates/parts/admin/content-starter-services.php:90
-#: templates/parts/admin/content-starter-services.php:110
-#: templates/parts/admin/content-starter-services.php:130
-#: templates/parts/block/pattern-contact-image-middle.php:47
-#: templates/parts/block/pattern-contact-image-side.php:31
-#: templates/parts/block/pattern-cta-large.php:32
-#: templates/parts/block/pattern-features-bg-icon.php:34
-#: templates/parts/block/pattern-features-bg-icon.php:62
-#: templates/parts/block/pattern-features-bg-icon.php:90
-#: templates/parts/block/pattern-features-bg-image.php:34
-#: templates/parts/block/pattern-features-bg-image.php:52
-#: templates/parts/block/pattern-features-bg-image.php:70
-#: templates/parts/block/pattern-features-large-image.php:41
-#: templates/parts/block/pattern-features-large-image.php:59
-#: templates/parts/block/pattern-features-large-image.php:77
-#: templates/parts/block/pattern-features-shadow.php:34
-#: templates/parts/block/pattern-features-shadow.php:56
-#: templates/parts/block/pattern-features-shadow.php:78
-#: templates/parts/block/pattern-features-single-large.php:32
-#: templates/parts/block/pattern-footer.php:38
-#: templates/parts/block/pattern-gallery-no-gap.php:34
-#: templates/parts/block/pattern-image-padding-left.php:31
-#: templates/parts/block/pattern-image-padding-right.php:31
-#: templates/parts/block/pattern-intro-2-images.php:40
-#: templates/parts/block/pattern-intro-2-images.php:58
-#: templates/parts/block/pattern-intro-bg-image.php:38
-#: templates/parts/block/pattern-intro-color-image-large.php:49
-#: templates/parts/block/pattern-intro-color-image.php:37
-#: templates/parts/block/pattern-intro-images.php:47
-#: templates/parts/block/pattern-intro-overlap.php:32
-#: templates/parts/block/pattern-logos.php:49
-#: templates/parts/block/pattern-portfolio-project-gallery.php:34
-#: templates/parts/block/pattern-portfolio-project-image.php:31
-#: templates/parts/block/pattern-team.php:52
-#: templates/parts/block/pattern-testimonials-single-bg.php:60
-msgid "Image alt text"
-msgstr ""
-
 #: templates/parts/admin/media-image-sizes.php:31
 msgid "Recommended image sizes"
 msgstr ""
@@ -1427,9 +1383,48 @@ msgctxt "Block pattern title."
 msgid "Blog"
 msgstr ""
 
-#: templates/parts/block/pattern-contact-bg.php:20
+#: templates/parts/block/pattern-cards.php:20
+msgctxt "Block pattern title."
+msgid "Cards"
+msgstr ""
+
+#: templates/parts/block/pattern-cards.php:22
+#: templates/parts/block/pattern-features-bg-image.php:22
+#: templates/parts/block/pattern-features-bg-shadow.php:22
+#: templates/parts/block/pattern-features-center-icon-1.php:22
+#: templates/parts/block/pattern-features-center-icon-2.php:22
+#: templates/parts/block/pattern-features-fullwidth-bg.php:22
+#: templates/parts/block/pattern-features-large-image.php:22
+#: templates/parts/block/pattern-features-parallax.php:22
+#: templates/parts/block/pattern-features-shadow.php:22
+#: templates/parts/block/pattern-features-simple.php:22
+#: templates/parts/block/pattern-features-single-large.php:22
+#: templates/parts/block/pattern-features-single.php:22
+msgid "services"
+msgstr ""
+
+#: templates/parts/block/pattern-cards.php:22
+msgid "features"
+msgstr ""
+
+#: templates/parts/block/pattern-cards.php:22
+#: templates/parts/block/pattern-features-center-icon-1.php:22
+#: templates/parts/block/pattern-features-single.php:22
+msgid "price"
+msgstr ""
+
+#: templates/parts/block/pattern-cards.php:22
+msgid "food menu"
+msgstr ""
+
+#: templates/parts/block/pattern-contact-bg-1.php:20
 msgctxt "Block pattern title."
 msgid "Contact: With background image"
+msgstr ""
+
+#: templates/parts/block/pattern-contact-bg-2.php:20
+msgctxt "Block pattern title."
+msgid "Contact: Columns with background"
 msgstr ""
 
 #: templates/parts/block/pattern-contact-description.php:20
@@ -1440,6 +1435,50 @@ msgstr ""
 #: templates/parts/block/pattern-contact-image-middle.php:20
 msgctxt "Block pattern title."
 msgid "Contact: With image in the middle"
+msgstr ""
+
+#: templates/parts/block/pattern-contact-image-middle.php:47
+#: templates/parts/block/pattern-contact-image-side.php:31
+#: templates/parts/block/pattern-cta-large.php:32
+#: templates/parts/block/pattern-features-bg-image.php:34
+#: templates/parts/block/pattern-features-bg-image.php:52
+#: templates/parts/block/pattern-features-bg-image.php:70
+#: templates/parts/block/pattern-features-center-icon-1.php:34
+#: templates/parts/block/pattern-features-center-icon-1.php:62
+#: templates/parts/block/pattern-features-center-icon-1.php:90
+#: templates/parts/block/pattern-features-center-icon-2.php:39
+#: templates/parts/block/pattern-features-center-icon-2.php:57
+#: templates/parts/block/pattern-features-center-icon-2.php:75
+#: templates/parts/block/pattern-features-large-image.php:41
+#: templates/parts/block/pattern-features-large-image.php:59
+#: templates/parts/block/pattern-features-large-image.php:77
+#: templates/parts/block/pattern-features-shadow.php:34
+#: templates/parts/block/pattern-features-shadow.php:56
+#: templates/parts/block/pattern-features-shadow.php:78
+#: templates/parts/block/pattern-features-single-large.php:32
+#: templates/parts/block/pattern-features-single.php:33
+#: templates/parts/block/pattern-footer.php:38
+#: templates/parts/block/pattern-gallery-captions.php:35
+#: templates/parts/block/pattern-gallery-captions.php:36
+#: templates/parts/block/pattern-gallery-no-gap.php:34
+#: templates/parts/block/pattern-image-padding-left.php:31
+#: templates/parts/block/pattern-image-padding-right.php:31
+#: templates/parts/block/pattern-intro-2-images.php:40
+#: templates/parts/block/pattern-intro-2-images.php:58
+#: templates/parts/block/pattern-intro-bg-image.php:38
+#: templates/parts/block/pattern-intro-color-image-large.php:49
+#: templates/parts/block/pattern-intro-color-image.php:37
+#: templates/parts/block/pattern-intro-images.php:47
+#: templates/parts/block/pattern-intro-overlap.php:32
+#: templates/parts/block/pattern-logos.php:49
+#: templates/parts/block/pattern-portfolio-project-gallery.php:34
+#: templates/parts/block/pattern-portfolio-project-image.php:31
+#: templates/parts/block/pattern-team-2.php:43
+#: templates/parts/block/pattern-team-2.php:59
+#: templates/parts/block/pattern-team.php:52
+#: templates/parts/block/pattern-testimonials-single-bg.php:60
+#: templates/parts/block/pattern-text-with-image.php:32
+msgid "Image alt text"
 msgstr ""
 
 #: templates/parts/block/pattern-contact-image-side.php:20
@@ -1501,27 +1540,6 @@ msgctxt "Block pattern title."
 msgid "Call to action"
 msgstr ""
 
-#: templates/parts/block/pattern-features-bg-icon.php:20
-msgctxt "Block pattern title."
-msgid "Features: Center aligned with icon"
-msgstr ""
-
-#: templates/parts/block/pattern-features-bg-icon.php:22
-#: templates/parts/block/pattern-features-bg-image.php:22
-#: templates/parts/block/pattern-features-bg-shadow.php:22
-#: templates/parts/block/pattern-features-fullwidth-bg.php:22
-#: templates/parts/block/pattern-features-large-image.php:22
-#: templates/parts/block/pattern-features-parallax.php:22
-#: templates/parts/block/pattern-features-shadow.php:22
-#: templates/parts/block/pattern-features-simple.php:22
-#: templates/parts/block/pattern-features-single-large.php:22
-msgid "services"
-msgstr ""
-
-#: templates/parts/block/pattern-features-bg-icon.php:22
-msgid "price"
-msgstr ""
-
 #: templates/parts/block/pattern-features-bg-image.php:20
 msgctxt "Block pattern title."
 msgid "Features: With background and image"
@@ -1530,6 +1548,16 @@ msgstr ""
 #: templates/parts/block/pattern-features-bg-shadow.php:20
 msgctxt "Block pattern title."
 msgid "Features: With background image and drop shadow"
+msgstr ""
+
+#: templates/parts/block/pattern-features-center-icon-1.php:20
+msgctxt "Block pattern title."
+msgid "Features: Center aligned with icon 1"
+msgstr ""
+
+#: templates/parts/block/pattern-features-center-icon-2.php:20
+msgctxt "Block pattern title."
+msgid "Features: Center aligned with icon 2"
 msgstr ""
 
 #: templates/parts/block/pattern-features-fullwidth-bg.php:20
@@ -1547,6 +1575,17 @@ msgctxt "Block pattern title."
 msgid "Features: Parallax"
 msgstr ""
 
+#: templates/parts/block/pattern-features-parallax.php:22
+#: templates/parts/block/pattern-gallery-captions.php:22
+#: templates/parts/block/pattern-gallery-no-gap.php:22
+#: templates/parts/block/pattern-logos.php:22
+#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team.php:22
+#: templates/parts/block/pattern-text-parallax.php:22
+#: templates/parts/block/pattern-text-with-image.php:22
+msgid "image"
+msgstr ""
+
 #: templates/parts/block/pattern-features-shadow.php:20
 msgctxt "Block pattern title."
 msgid "Features: With drop shadow"
@@ -1558,6 +1597,7 @@ msgid "Features"
 msgstr ""
 
 #: templates/parts/block/pattern-features-single-large.php:20
+#: templates/parts/block/pattern-features-single.php:20
 msgctxt "Block pattern title."
 msgid "Features: A large feature"
 msgstr ""
@@ -1572,15 +1612,14 @@ msgctxt "Block pattern title."
 msgid "Site footer: With logo, links, description and social links"
 msgstr ""
 
+#: templates/parts/block/pattern-gallery-captions.php:20
+msgctxt "Block pattern title."
+msgid "Gallery: With captions"
+msgstr ""
+
 #: templates/parts/block/pattern-gallery-no-gap.php:20
 msgctxt "Block pattern title."
 msgid "Gallery: Full-width with no gaps"
-msgstr ""
-
-#: templates/parts/block/pattern-gallery-no-gap.php:22
-#: templates/parts/block/pattern-logos.php:22
-#: templates/parts/block/pattern-team.php:22
-msgid "image"
 msgstr ""
 
 #: templates/parts/block/pattern-heading-hidden-accessibly.php:20
@@ -1640,6 +1679,7 @@ msgid "heading"
 msgstr ""
 
 #: templates/parts/block/pattern-intro-2-images.php:22
+#: templates/parts/block/pattern-team-2.php:22
 #: templates/parts/block/pattern-team.php:22
 msgid "gallery"
 msgstr ""
@@ -1719,26 +1759,35 @@ msgctxt "Block pattern title."
 msgid "Question and answer"
 msgstr ""
 
-#: templates/parts/block/pattern-team.php:20
+#: templates/parts/block/pattern-team-2.php:20
 msgctxt "Block pattern title."
-msgid "Team"
+msgid "Team: 2 large descriptions"
 msgstr ""
 
+#: templates/parts/block/pattern-team-2.php:22
 #: templates/parts/block/pattern-team.php:22
 msgid "staff"
 msgstr ""
 
+#: templates/parts/block/pattern-team-2.php:22
 #: templates/parts/block/pattern-team.php:22
 msgid "employees"
 msgstr ""
 
+#: templates/parts/block/pattern-team-2.php:22
 #: templates/parts/block/pattern-team.php:22
 msgid "people"
 msgstr ""
 
+#: templates/parts/block/pattern-team-2.php:22
 #: templates/parts/block/pattern-team.php:22
 #: templates/parts/block/pattern-testimonials-single-bg.php:22
 msgid "photo"
+msgstr ""
+
+#: templates/parts/block/pattern-team.php:20
+msgctxt "Block pattern title."
+msgid "Team: 4 members"
 msgstr ""
 
 #: templates/parts/block/pattern-testimonials-single-bg.php:20
@@ -1765,6 +1814,16 @@ msgstr ""
 #: templates/parts/block/pattern-text-heading-columns.php:20
 msgctxt "Block pattern title."
 msgid "Text with heading in columns"
+msgstr ""
+
+#: templates/parts/block/pattern-text-parallax.php:20
+msgctxt "Block pattern title."
+msgid "Text with parallax background"
+msgstr ""
+
+#: templates/parts/block/pattern-text-with-image.php:20
+msgctxt "Block pattern title."
+msgid "Text with image"
 msgstr ""
 
 #. translators: %s: Name of current post

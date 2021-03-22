@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Team', 'Block pattern title.', 'michelle' ),
+	'title'      => _x( 'Team: 4 members', 'Block pattern title.', 'michelle' ),
 	'categories' => array( 'gallery' ),
 	'keywords'   => array( esc_html__( 'staff', 'michelle' ), esc_html__( 'employees', 'michelle' ), esc_html__( 'people', 'michelle' ), esc_html__( 'image', 'michelle' ), esc_html__( 'photo', 'michelle' ), esc_html__( 'gallery', 'michelle' ) ),
 ) );
