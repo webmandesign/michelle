@@ -8,99 +8,137 @@
  * @since  1.0.0
  */
 
-namespace WebManDesign\Michelle\Content;
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! is_admin() ) {
+if ( ! is_customize_preview() ) {
 	return;
 }
 
-$image = Starter::get_image_url( '16to9' );
-
 ?>
 
-<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit semper leo ante pharetra. Ad habitant accumsan quisque risus nec orci nunc, primis nisl aliquet mus enim maecenas, morbi fringilla donec torquent.</p>
-<!-- /wp:paragraph --></div>
+<!-- wp:group {"align":"full","backgroundColor":"palette-2","textColor":"palette-3","className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-palette-3-color has-palette-2-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-15vmax-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-15vmax-min-height"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"id":999991,"width":480,"height":788,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-helena-lopes-3895277.jpg" alt="Image alt text" class="wp-image-999991" width="480" height="788"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit semper leo ante pharetra. Ad habitant accumsan quisque risus nec orci nunc, primis nisl aliquet mus enim maecenas, morbi fringilla donec torquent.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
+<!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:heading {"level":1,"textColor":"palette-3"} -->
+<h1 class="has-palette-3-color has-text-color">Our Story</h1>
+<!-- /wp:heading -->
 
 <!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"align":"full"} -->
-<div class="wp-block-columns alignfull"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":0,"minHeight":62,"minHeightUnit":"vh","className":"has-inner-shadow"} -->
-<div class="wp-block-cover has-parallax has-inner-shadow" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size"></p>
+<!-- wp:media-text {"align":"","mediaId":999992,"mediaLink":"#0","mediaType":"image"} -->
+<div class="wp-block-media-text is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-josh-hild-3009442.jpg" alt="Image alt text" class="wp-image-999992 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi, suscipit commodo congue fames.</p>
 <!-- /wp:paragraph --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":0,"minHeight":62,"minHeightUnit":"vh","className":"has-inner-shadow"} -->
-<div class="wp-block-cover has-parallax has-inner-shadow" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size"></p>
-<!-- /wp:paragraph --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":0,"minHeight":62,"minHeightUnit":"vh","className":"has-inner-shadow"} -->
-<div class="wp-block-cover has-parallax has-inner-shadow" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size"></p>
-<!-- /wp:paragraph --></div></div>
-<!-- /wp:cover --></div>
+<!-- /wp:media-text --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"className":"has-no-margin-top"} -->
-<h2 class="has-no-margin-top">Lorem ipsum dolor</h2>
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading -->
+<h2>How it all started</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et. Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pullquote {"align":"wide","className":"is-style-simple"} -->
+<figure class="wp-block-pullquote alignwide is-style-simple"><blockquote><p>Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, ac hac ullamcorper class rutrum condimentum molestie mi, et suspendisse ante pulvinar praesent rhoncus taciti. Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, ac hac ullamcorper class rutrum condimentum molestie mi, et suspendisse ante pulvinar praesent rhoncus taciti.</p><cite>John Doe</cite></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":true,"backgroundColor":"palette-2","textColor":"palette-3"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-image-fill has-palette-3-color has-palette-2-background-color has-text-color has-background"><figure class="wp-block-media-text__media" style="background-image:url(https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-aloïs-moubax-3523317.jpg);background-position:50% 50%"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-aloïs-moubax-3523317.jpg" alt="Image alt text" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"palette-3"} -->
+<h2 class="has-palette-3-color has-text-color">Today and to the future</h2>
+<!-- /wp:heading -->
+
+<!-- wp:spacer {"className":"has-40vmin-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-40vmin-min-height"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur elit vitae, conubia ligula faucibus fusce class nisi eu commodo, aliquam convallis nulla libero torquent gravida facilisi.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Lorem ipsum dolor sit amet elit, enim quis proin aliquam non lectus tellus blandit, vivamus vulputate donec semper dapibus.</p><cite>John Doe</cite></blockquote>
+<!-- /wp:quote --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"10%"} -->
+<div class="wp-block-column" style="flex-basis:10%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:heading -->
+<h2>Get in touch</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nulla varius dignissim molestie potenti, eget suscipit posuere hac mattis feugiat ullamcorper praesent cum mus tempus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit erat, at nostra bibendum aenean quisque vivamus dis sociosqu, vestibulum maecenas inceptos auctor sapien nisl tincidunt.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","align":"full","className":"is-style-default"} -->
-<div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax is-style-default" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"textColor":"palette-3"} -->
-<h2 class="has-palette-3-color has-text-color">Lorem ipsum dolor?</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"textColor":"palette-3","fontSize":"normal"} -->
-<p class="has-palette-3-color has-text-color has-normal-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit dis varius id per, gravida dictum condimentum vestibulum commodo facilisis felis ut sed.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link" href="#0">Lorem ipsum</a></div>
+<!-- wp:buttons {"className":"is-style-large"} -->
+<div class="wp-block-buttons is-style-large"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#0">contact →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div></div>
-<!-- /wp:cover -->
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:gallery {"ids":[999991,999992,999993],"linkTo":"none","align":"full","className":"is-style-no-gaps"} -->
+<figure class="wp-block-gallery alignfull columns-3 is-cropped is-style-no-gaps"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-charles-1851188.jpg" alt="Image alt text" data-id="999991" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-charles-1851188.jpg" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-marco-de-groot-1557178.jpg" alt="Image alt text" data-id="999992" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-marco-de-groot-1557178.jpg" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-joan-montaner-1694838.jpg" alt="Image alt text" data-id="999993" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__animals--pexels-joan-montaner-1694838.jpg" data-link="#0" class="wp-image-999993"/></figure></li></ul></figure>
+<!-- /wp:gallery -->

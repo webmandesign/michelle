@@ -8,141 +8,28 @@
  * @since  1.0.0
  */
 
-namespace WebManDesign\Michelle\Content;
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! is_admin() ) {
+if ( ! is_customize_preview() ) {
 	return;
 }
-
-$image = Starter::get_image_url( '16to9' );
-$icon  = Starter::get_image_url( 'icon' );
 
 ?>
 
 <!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
-<div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":1} -->
+<h1>We offer professional services</h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit vulputate vehicula montes tortor nunc, varius curae ac tristique parturient sociis etiam duis mauris eros mollis.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
-<div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
-<div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
-<div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
-<div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"className":"has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"} -->
-<div class="wp-block-column has-palette-1-background-color has-palette-2-color has-center-text-align has-large-padding"><!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url_raw( $icon ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"className":"has-no-margin-top","textColor":"palette-2"} -->
-<h2 class="has-no-margin-top has-palette-2-color has-text-color">Lorem ipsum</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer, arcu vivamus.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#0">Lorem ipsum →</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
+<!-- wp:column {"width":""} -->
+<div class="wp-block-column"></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
@@ -150,26 +37,98 @@ $icon  = Starter::get_image_url( 'icon' );
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","align":"full","className":"is-style-default"} -->
-<div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax is-style-default" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
+<!-- wp:image {"align":"full","id":999999,"sizeSlug":"large","linkDestination":"none","className":"is-style-padding-right"} -->
+<figure class="wp-block-image alignfull size-large is-style-padding-right"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5970616.jpg" alt="Image alt text" class="wp-image-999999"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"textColor":"palette-3"} -->
-<h2 class="has-palette-3-color has-text-color">Lorem ipsum dolor?</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"textColor":"palette-3","fontSize":"normal"} -->
-<p class="has-palette-3-color has-text-color has-normal-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit dis varius id per, gravida dictum condimentum vestibulum commodo facilisis felis ut sed.</p>
+<div class="wp-block-column"><!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum, facilisi dictumst mi habitasse primis pulvinar arcu vel, volutpat enim nisl blandit vitae erat nostra.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link" href="#0">Lorem ipsum</a></div>
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum, facilisi dictumst mi habitasse primis pulvinar arcu vel, volutpat enim nisl blandit vitae erat nostra.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaType":"image","verticalAlignment":"top","className":"is-style-no-margin-vertical"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990154.jpg" alt="Image alt text here" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
+<h2>Accessible Themes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…","fontSize":"large"} -->
+<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas, mi facilisis sollicitudin sem litora lectus vitae luctus, proin fames risus gravida convallis netus euismod.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"is-style-large"} -->
+<div class="wp-block-buttons is-style-large"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://www.webmandesign.eu/project-tag/accessibility-ready/">Get themes</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:media-text {"mediaId":999999,"mediaType":"image","verticalAlignment":"bottom"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-bottom"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990049.jpg" alt="Image alt text here" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
+<h2>First-class Support</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Content…","fontSize":"large"} -->
+<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas, mi facilisis sollicitudin sem litora lectus vitae luctus, proin fames risus gravida convallis netus euismod.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"is-style-large"} -->
+<div class="wp-block-buttons is-style-large"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://www.webmandesign.eu/">Get support</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:media-text -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns {"verticalAlignment":"center","align":"wide","backgroundColor":"palette-1","textColor":"palette-2"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center has-palette-2-color has-palette-1-background-color has-text-color has-background"><!-- wp:column {"verticalAlignment":"center","width":"65%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:65%"><!-- wp:heading {"className":"is-style-screen-reader-text"} -->
+<h2 class="is-style-screen-reader-text">Lorem ipsum</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit ac, vitae aptent phasellus mauris tristique platea felis.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"10%"} -->
+<div class="wp-block-column" style="flex-basis:10%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"25%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:buttons {"className":"is-style-large"} -->
+<div class="wp-block-buttons is-style-large"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0"><strong>GET IN TOUCH →</strong></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div></div>
-<!-- /wp:cover -->
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:gallery {"ids":[999991,999992,999993],"linkTo":"none","align":"full","className":"is-style-no-gaps"} -->
+<figure class="wp-block-gallery alignfull columns-3 is-cropped is-style-no-gaps"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990261.jpg" alt="Image alt text" data-id="999991" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990261.jpg" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5971247.jpg" alt="Image alt text" data-id="999992" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5971247.jpg" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990263.jpg" alt="Image alt text" data-id="999993" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990263.jpg" data-link="#0" class="wp-image-999993"/></figure></li></ul></figure>
+<!-- /wp:gallery -->

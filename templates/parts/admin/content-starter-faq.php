@@ -8,89 +8,199 @@
  * @since  1.0.0
  */
 
-namespace WebManDesign\Michelle\Content;
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! is_admin() ) {
+if ( ! is_customize_preview() ) {
 	return;
 }
 
-$image = Starter::get_image_url( '16to9' );
-
 ?>
 
+<!-- wp:group {"align":"full","backgroundColor":"palette-1","textColor":"palette-2","className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
+<!-- /wp:spacer -->
+
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"className":"h4"} -->
-<h2 class="h4"><strong>Lorem ipsum dolor sit amet adipiscing?</strong></h2>
+<div class="wp-block-column"><!-- wp:heading {"level":1,"textColor":"palette-2"} -->
+<h1 class="has-palette-2-color has-text-color">Frequently<br>Asked<br>Questions</h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"dropCap":true} -->
-<p class="has-drop-cap">Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula ad morbi nunc viverra, aenean duis nascetur at lacus conubia tincidunt curae volutpat pellentesque orci.  Semper nullam pellentesque curae quisque massa aptent suspendisse. Auctor aliquet accumsan conubia, morbi dui. </p>
-<!-- /wp:paragraph --></div>
+<div class="wp-block-column"></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:image {"align":"wide","id":999999,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image alignwide size-large"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-august-de-richelieu-4427816.jpg" alt="Image alt text" class="wp-image-999999"/></figure>
+<!-- /wp:image --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:group {"align":"full","className":"is-style-no-margin-vertical"} -->
+<div class="wp-block-group alignfull is-style-no-margin-vertical"><div class="wp-block-group__inner-container"><!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"62%"} -->
+<div class="wp-block-column" style="flex-basis:62%"><!-- wp:heading -->
+<h2>1. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus lacinia?</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
 <!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"className":"h4"} -->
-<h2 class="h4"><strong>Natoque euismod netus eu tincidunt?</strong></h2>
-<!-- /wp:heading --></div>
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":""} -->
+<div class="wp-block-column"></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"dropCap":true} -->
-<p class="has-drop-cap">Dolor sit amet consectetur adipiscing elit vehicula ad morbi nunc viverra, aenean duis nascetur at lacus conubia tincidunt curae volutpat pellentesque orci.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit fames, placerat maecenas gravida natoque euismod netus eu tincidunt, faucibus ante massa potenti pretium iaculis tristique.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"className":"h4"} -->
-<h2 class="h4"><strong>Dolor sit amet adipiscing?</strong></h2>
-<!-- /wp:heading --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"dropCap":true} -->
-<p class="has-drop-cap">Sit amet consectetur adipiscing elit primis egestas, semper nullam pellentesque curae quisque massa aptent suspendisse. Auctor aliquet accumsan conubia, morbi dui ad morbi nunc viverra, aenean duis nascetur at lacus conubia tincidunt curae volutpat pellentesque orci.</p>
+<!-- wp:column {"width":""} -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
 <!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+<!-- /wp:spacer --></div></div>
+<!-- /wp:group -->
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","hasParallax":true,"dimRatio":80,"overlayColor":"accent","minHeight":62,"minHeightUnit":"vh","align":"full","className":"is-style-default"} -->
-<div class="wp-block-cover alignfull has-background-dim-80 has-accent-background-color has-background-dim has-parallax is-style-default" style="background-image:url(<?php echo esc_url_raw( $image ); ?>);min-height:62vh"><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<!-- wp:group {"align":"full","className":"is-style-no-margin-vertical"} -->
+<div class="wp-block-group alignfull is-style-no-margin-vertical"><div class="wp-block-group__inner-container"><!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"62%"} -->
+<div class="wp-block-column" style="flex-basis:62%"><!-- wp:heading -->
+<h2>2. Dolor sit amet consectetur adipiscing elit ridiculus lacinia?</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":""} -->
 <div class="wp-block-column"></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"textColor":"palette-3"} -->
-<h2 class="has-palette-3-color has-text-color">Lorem ipsum dolor?</h2>
-<!-- /wp:heading -->
+<!-- wp:column {"width":""} -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Conubia, purus donec dui bibendum parturient varius et. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
 
-<!-- wp:paragraph {"textColor":"palette-3","fontSize":"normal"} -->
-<p class="has-palette-3-color has-text-color has-normal-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit dis varius id per, gravida dictum condimentum vestibulum commodo facilisis felis ut sed.</p>
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"is-style-no-margin-vertical"} -->
+<div class="wp-block-group alignfull is-style-no-margin-vertical"><div class="wp-block-group__inner-container"><!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"62%"} -->
+<div class="wp-block-column" style="flex-basis:62%"><!-- wp:heading -->
+<h2>3. Adipiscing elit ridiculus lacinia?</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":""} -->
+<div class="wp-block-column"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":""} -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link" href="#0">Lorem ipsum</a></div>
+<!-- wp:paragraph -->
+<p>Dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"is-style-no-margin-vertical"} -->
+<div class="wp-block-group alignfull is-style-no-margin-vertical"><div class="wp-block-group__inner-container"><!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"62%"} -->
+<div class="wp-block-column" style="flex-basis:62%"><!-- wp:heading -->
+<h2>4. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus lacinia?</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"38%"} -->
+<div class="wp-block-column" style="flex-basis:38%"></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":""} -->
+<div class="wp-block-column"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":""} -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","backgroundColor":"palette-1","className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-palette-1-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%"><!-- wp:heading {"className":"is-style-default"} -->
+<h2 class="is-style-default">Haven't found the answer?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"palette-2","fontSize":"large"} -->
+<p class="has-palette-2-color has-text-color has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit ac, vitae aptent phasellus mauris tristique platea felis.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"5%"} -->
+<div class="wp-block-column" style="flex-basis:5%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"35%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:buttons {"contentJustification":"left","className":"is-style-large"} -->
+<div class="wp-block-buttons is-content-justification-left is-style-large"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":50} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-50"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Contact →</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"textColor":"palette-2","width":50,"className":"is-style-outline"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-palette-2-color has-text-color" href="#0">About →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div></div>
-<!-- /wp:cover -->
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div></div>
+<!-- /wp:group -->

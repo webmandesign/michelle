@@ -125,6 +125,7 @@ class Starter implements Component_Interface {
 					'post_title'   => esc_html_x( 'Welcome!', 'Theme starter content', 'michelle' ),
 					'post_content' => self::get_content( 'home' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
+					'template'     => 'templates/no-intro-header-overlaid-dark.php',
 				),
 
 				'blog' => array(
@@ -137,6 +138,7 @@ class Starter implements Component_Interface {
 					'post_title'   => esc_html_x( 'About us', 'Theme starter content', 'michelle' ),
 					'post_content' => self::get_content( 'about' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
+					'template'     => 'templates/no-intro-header-overlaid-light.php',
 				),
 
 				'services' => array(
@@ -144,6 +146,7 @@ class Starter implements Component_Interface {
 					'post_title'   => esc_html_x( 'Services', 'Theme starter content', 'michelle' ),
 					'post_content' => self::get_content( 'services' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
+					'template'     => 'templates/no-intro.php',
 				),
 
 				'faq' => array(
@@ -151,6 +154,7 @@ class Starter implements Component_Interface {
 					'post_title'   => esc_html_x( 'Frequently Asked Question', 'Theme starter content', 'michelle' ),
 					'post_content' => self::get_content( 'faq' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
+					'template'     => 'templates/no-intro-header-overlaid-dark.php',
 				),
 
 				'contact' => array(

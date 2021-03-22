@@ -204,7 +204,9 @@
 		margin-bottom: 0 $important_modifiers;
 	}
 
-	.has-regular-margin-bottom {
+	.has-regular-margin-bottom,
+	.has-normal-margin-bottom,
+	.is-style-has-margin-bottom {
 		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ) $important_modifiers;
 	}
 

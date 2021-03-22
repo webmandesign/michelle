@@ -28,7 +28,7 @@
 	border: 1px dashed;
 
 	&:not(.is-selected):not(:hover):not(:focus) {
-		opacity: .1;
+		opacity: .15;
 	}
 
 	&[class*="-min-height"]::before {

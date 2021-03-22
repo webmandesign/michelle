@@ -178,6 +178,7 @@ class Block_Styles implements Component_Interface {
 					'blocks' => array(
 						'core/column',
 						'core/cover',
+						'core/gallery',
 						'core/group',
 						'core/heading',
 						'core/image',

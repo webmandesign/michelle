@@ -11,13 +11,13 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! is_admin() ) {
+if ( ! is_customize_preview() ) {
 	return;
 }
 
 ?>
 
 <p>
-	<?php echo esc_html_x( 'This is a page/post excerpt text.', 'Theme starter content', 'michelle' ); ?>
-	Lorem ipsum dolor sit amet consectetur, adipiscing elit phasellus posuere nulla, nostra eget platea dapibus.
+	<a href="https://themedemos.webmandesign.eu/michelle/page-excerpt/"><?php echo esc_html_x( 'This is a page/post excerpt text.', 'Theme starter content', 'michelle' ); ?></a>
+	Lorem ipsum dolor sit amet consectetur adipiscing elit gravida, enim curabitur sagittis magna molestie rutrum nostra viverra, libero posuere commodo class consequat iaculis.
 </p>
