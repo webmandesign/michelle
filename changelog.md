@@ -1,5 +1,5 @@
 # Michelle Changelog
 
-## 1.0.0, 2020MMDD @TODO
+## 1.0.0, 20210322
 
 - Initial release.

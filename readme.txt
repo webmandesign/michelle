@@ -33,7 +33,7 @@ Please see `changelog.md` file.
 == Upgrade Notice ==
 
 = 1.0.0 =
-2021MMDD Initial release. @TODO
+20210322 Initial release.
 
 
 == Resources ==
