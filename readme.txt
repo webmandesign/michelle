@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-20210322 Initial release.
+= 1.0.1 =
+20210325 Reintroducing `accessibility-ready` tag so the theme can undergo a11y review, updating starter theme images.
 
 
 == Resources ==

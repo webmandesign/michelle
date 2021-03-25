@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.1
  */
 
 // Exit if accessed directly.
@@ -18,7 +19,7 @@ if ( ! is_customize_preview() ) {
 ?>
 
 <!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","mediaWidth":56,"verticalAlignment":"bottom","imageFill":true,"focalPoint":{"x":"0.01","y":"0.42"},"style":{"color":{"background":"#f0f1e9"}},"textColor":"palette-2","className":"has-full-screen-min-height has-no-margin-bottom is-style-overlap-gradient"} -->
-<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-bottom is-image-fill has-full-screen-min-height has-no-margin-bottom is-style-overlap-gradient has-palette-2-color has-text-color has-background" style="background-color:#f0f1e9;grid-template-columns:auto 56%"><figure class="wp-block-media-text__media" style="background-image:url(https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__plants--pexels-daria-shevtsova-887767.jpg);background-position:1% 42%"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__plants--pexels-daria-shevtsova-887767.jpg" alt="Image alt text" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1,"backgroundColor":"palette-1","textColor":"palette-2"} -->
+<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-bottom is-image-fill has-full-screen-min-height has-no-margin-bottom is-style-overlap-gradient has-palette-2-color has-text-color has-background" style="background-color:#f0f1e9;grid-template-columns:auto 56%"><figure class="wp-block-media-text__media" style="background-image:url(https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_plants--pexels-daria-shevtsova-887767.jpg);background-position:1% 42%"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_plants--pexels-daria-shevtsova-887767.jpg" alt="Image alt text" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1,"backgroundColor":"palette-1","textColor":"palette-2"} -->
 <h1 class="has-palette-2-color has-palette-1-background-color has-text-color has-background">Interior Designer</h1>
 <!-- /wp:heading -->
 
@@ -28,7 +29,7 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:media-text -->
 
 <!-- wp:media-text {"mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":false,"focalPoint":{"x":"0.96","y":"0.69"},"className":"is-style-no-margin-vertical"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__plants--pexels-daria-shevtsova-916339.jpg" alt="" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_plants--pexels-daria-shevtsova-916339.jpg" alt="" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
 <h2>Transform Your Home</h2>
 <!-- /wp:heading -->
 
@@ -52,7 +53,7 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:media-text -->
 
 <!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":false,"focalPoint":{"x":"0.96","y":"0.69"},"className":"is-style-no-margin-vertical"} -->
-<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__plants--pexels-daria-shevtsova-916337.jpg" alt="" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"small"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_plants--pexels-daria-shevtsova-916337.jpg" alt="" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"small"} -->
 <h2 class="is-style-uppercase has-small-font-size"><strong>Testimonial</strong></h2>
 <!-- /wp:heading -->
 

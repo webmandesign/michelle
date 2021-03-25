@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.1
  */
 
 // Exit if accessed directly.
@@ -38,7 +39,7 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:spacer -->
 
 <!-- wp:image {"align":"full","id":999999,"sizeSlug":"large","linkDestination":"none","className":"is-style-padding-right"} -->
-<figure class="wp-block-image alignfull size-large is-style-padding-right"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5970616.jpg" alt="Image alt text" class="wp-image-999999"/></figure>
+<figure class="wp-block-image alignfull size-large is-style-padding-right"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5970616.jpg" alt="Image alt text" class="wp-image-999999"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer -->
@@ -66,7 +67,7 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:spacer -->
 
 <!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaType":"image","verticalAlignment":"top","className":"is-style-no-margin-vertical"} -->
-<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990154.jpg" alt="Image alt text here" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5990154.jpg" alt="Image alt text here" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
 <h2>Accessible Themes</h2>
 <!-- /wp:heading -->
 
@@ -82,7 +83,7 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:media-text -->
 
 <!-- wp:media-text {"mediaId":999999,"mediaType":"image","verticalAlignment":"bottom"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-bottom"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990049.jpg" alt="Image alt text here" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-bottom"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5990049.jpg" alt="Image alt text here" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
 <h2>First-class Support</h2>
 <!-- /wp:heading -->
 
@@ -130,5 +131,5 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:spacer -->
 
 <!-- wp:gallery {"ids":[999991,999992,999993],"linkTo":"none","align":"full","className":"is-style-no-gaps"} -->
-<figure class="wp-block-gallery alignfull columns-3 is-cropped is-style-no-gaps"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990261.jpg" alt="Image alt text" data-id="999991" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990261.jpg" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5971247.jpg" alt="Image alt text" data-id="999992" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5971247.jpg" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990263.jpg" alt="Image alt text" data-id="999993" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__people--pexels-cottonbro-5990263.jpg" data-link="#0" class="wp-image-999993"/></figure></li></ul></figure>
+<figure class="wp-block-gallery alignfull columns-3 is-cropped is-style-no-gaps"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5990261.jpg" alt="Image alt text" data-id="999991" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5990261.jpg" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5971247.jpg" alt="Image alt text" data-id="999992" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5971247.jpg" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5990263.jpg" alt="Image alt text" data-id="999993" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-cottonbro-5990263.jpg" data-link="#0" class="wp-image-999993"/></figure></li></ul></figure>
 <!-- /wp:gallery -->

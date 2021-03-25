@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.1
  */
 
 // Exit if accessed directly.
@@ -18,7 +19,7 @@ if ( ! is_customize_preview() ) {
 ?>
 
 <!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","mediaWidth":47} -->
-<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile" style="grid-template-columns:auto 47%"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__living--pexels-maria-orlova-4906241.jpg" alt="Image alt text" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"normal"} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile" style="grid-template-columns:auto 47%"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_living--pexels-maria-orlova-4906241.jpg" alt="Image alt text" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"normal"} -->
 <h2 class="is-style-uppercase has-normal-font-size"><strong>Address</strong></h2>
 <!-- /wp:heading -->
 
