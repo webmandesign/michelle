@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.1 =
-20210325 Reintroducing `accessibility-ready` tag so the theme can undergo a11y review, updating starter theme images.
+= 1.0.2 =
+20210325 Removing the `accessibility-ready` tag as the a11y theme is aware of this theme review needs.
 
 
 == Resources ==

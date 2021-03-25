@@ -1,5 +1,16 @@
 # Michelle Changelog
 
+## 1.0.2, 20210325
+
+### Updated
+- Removing `accessibility-ready` tag as a11y team is aware of this theme review
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+
+
 ## 1.0.1, 20210325
 
 ### Updated
