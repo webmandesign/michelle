@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.1
+ * @version  1.0.4
  */
 
 // Exit if accessed directly.
@@ -18,70 +18,102 @@ if ( ! is_customize_preview() ) {
 
 ?>
 
-<!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","mediaWidth":56,"verticalAlignment":"bottom","imageFill":true,"focalPoint":{"x":"0.01","y":"0.42"},"style":{"color":{"background":"#f0f1e9"}},"textColor":"palette-2","className":"has-full-screen-min-height has-no-margin-bottom is-style-overlap-gradient"} -->
-<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-bottom is-image-fill has-full-screen-min-height has-no-margin-bottom is-style-overlap-gradient has-palette-2-color has-text-color has-background" style="background-color:#f0f1e9;grid-template-columns:auto 56%"><figure class="wp-block-media-text__media" style="background-image:url(https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_plants--pexels-daria-shevtsova-887767.jpg);background-position:1% 42%"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_plants--pexels-daria-shevtsova-887767.jpg" alt="Image alt text" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1,"backgroundColor":"palette-1","textColor":"palette-2"} -->
-<h1 class="has-palette-2-color has-palette-1-background-color has-text-color has-background">Interior Designer</h1>
-<!-- /wp:heading -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#cc2a1b"},"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"textColor":"palette-3","className":"is-style-no-margin-vertical"} -->
+<div class="wp-block-group alignfull is-style-no-margin-vertical has-palette-3-color has-text-color has-background" style="background-color:#cc2a1b;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-15vmax-min-height"} -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer has-15vmax-min-height"></div>
+<!-- /wp:spacer -->
 
-<!-- wp:paragraph {"className":"has-narrow-max-width","fontSize":"large"} -->
-<p class="has-narrow-max-width has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit nisi, velit aptent neque pharetra natoque convallis vestibulum eros, penatibus vitae augue himenaeos.</p>
-<!-- /wp:paragraph --></div></div>
-<!-- /wp:media-text -->
-
-<!-- wp:media-text {"mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":false,"focalPoint":{"x":"0.96","y":"0.69"},"className":"is-style-no-margin-vertical"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_plants--pexels-daria-shevtsova-916339.jpg" alt="" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading -->
-<h2>Transform Your Home</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"dropCap":true} -->
-<p class="has-drop-cap">Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur, inceptos ac commodo porttitor habitasse arcu malesuada suscipit, aenean non maecenas semper euismod massa natoque.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit id, ultrices montes dapibus dui ante primis porta magna, commodo facilisi fusce faucibus ac porttitor magnis.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit id, ultrices montes dapibus dui ante primis porta magna, commodo facilisi fusce faucibus ac porttitor magnis.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div></div>
-<!-- /wp:media-text -->
-
-<!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":false,"focalPoint":{"x":"0.96","y":"0.69"},"className":"is-style-no-margin-vertical"} -->
-<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-style-no-margin-vertical"><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_plants--pexels-daria-shevtsova-916337.jpg" alt="" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"small"} -->
-<h2 class="is-style-uppercase has-small-font-size"><strong>Testimonial</strong></h2>
-<!-- /wp:heading -->
-
-<!-- wp:quote {"className":"is-style-large"} -->
-<blockquote class="wp-block-quote is-style-large"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit, rutrum nostra curabitur ornare condimentum pulvinar. Litora fringilla cras fames facilisi ultricies, laoreet orci eget.</p><cite><a href="#0">Jane Doe</a>, happy customer</cite></blockquote>
-<!-- /wp:quote --></div></div>
-<!-- /wp:media-text -->
-
-<!-- wp:group {"align":"full","backgroundColor":"palette-1","textColor":"palette-2","className":"is-style-no-padding"} -->
-<div class="wp-block-group alignfull is-style-no-padding has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":150} -->
+<!-- wp:cover {"url":"https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165724_1--gray.jpg","id":999999,"dimRatio":0,"customOverlayColor":"#cc2a1b","minHeight":70,"minHeightUnit":"vh","contentPosition":"bottom center","align":"wide","className":"is-style-scale-image","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+<div class="wp-block-cover alignwide has-custom-content-position is-position-bottom-center is-style-scale-image" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;background-color:#cc2a1b;min-height:70vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165724_1--gray.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":150} -->
 <div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"textAlign":"center","textColor":"palette-2"} -->
-<h2 class="has-text-align-center has-palette-2-color has-text-color">Ask For Enquiry</h2>
+<!-- wp:heading {"textAlign":"center","level":1,"align":"wide","textColor":"palette-3","className":"is-style-text-shadow-dark"} -->
+<h1 class="alignwide has-text-align-center is-style-text-shadow-dark has-palette-3-color has-text-color"><strong>Hello! I'm Michelle,<br>your block editor love.</strong></h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit euismod tristique aliquet nisl torquent.</p>
-<!-- /wp:paragraph -->
+<!-- wp:spacer {"height":50} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
 
 <!-- wp:buttons {"contentJustification":"center","className":"is-style-large"} -->
-<div class="wp-block-buttons is-content-justification-center is-style-large"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Get in touch →</a></div>
+<div class="wp-block-buttons is-content-justification-center is-style-large"><!-- wp:button {"backgroundColor":"palette-1","textColor":"palette-2"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-palette-2-color has-palette-1-background-color has-text-color has-background" href="#0">Get in touch →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
 <!-- wp:spacer {"height":150} -->
 <div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div></div>
+<!-- /wp:cover --></div></div>
 <!-- /wp:group -->
+
+<!-- wp:gallery {"ids":[999991,999992,999993],"linkTo":"none","align":"wide","className":"is-style-no-gaps"} -->
+<figure class="wp-block-gallery alignwide columns-3 is-cropped is-style-no-gaps"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165696_1--gray.jpg" alt="Image alt text" data-id="999991" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165696_1--gray.jpg" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165717_1--gray.jpg" alt="Image alt text" data-id="999992" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165717_1--gray.jpg" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165723_1--gray.jpg" alt="Image alt text" data-id="999993" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165723_1--gray.jpg" data-link="#0" class="wp-image-999993"/></figure></li></ul></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading -->
+<h2>About Me</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading -->
+<h2>Education</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:list -->
+<ul><li><strong>Lorem ipsum dolor sit amet consectetur<br></strong><em>Adipiscing elit ridiculus, lacinia laoreet</em></li><li><strong>Convallis taciti integer augue cum<br></strong><em>Conubia, purus donec dui bibendum</em></li><li><strong>Parturient varius et</strong></li></ul>
+<!-- /wp:list --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"align":"wide","className":"is-style-uppercase","fontSize":"normal"} -->
+<h2 class="alignwide is-style-uppercase has-normal-font-size">Testimony</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:quote {"className":"is-style-large"} -->
+<blockquote class="wp-block-quote is-style-large"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit nulla auctor, arcu dictumst ullamcorper duis senectus lectus feugiat.</p><cite>Jane Doe</cite></blockquote>
+<!-- /wp:quote --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:quote {"className":"is-style-large"} -->
+<blockquote class="wp-block-quote is-style-large"><p>Adipiscing elit nulla auctor, arcu dictumst ullamcorper duis senectus lectus feugiat. Velit metus venenatis euismod aenean, eget fames.</p><cite>John Roe</cite></blockquote>
+<!-- /wp:quote --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":150} -->
+<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:gallery {"ids":[999991,999992,999993,999994],"linkTo":"none","align":"full","className":"is-style-no-gaps"} -->
+<figure class="wp-block-gallery alignfull columns-4 is-cropped is-style-no-gaps"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165696_1--gray.jpg" alt="Image alt text" data-id="999991" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165696_1--gray.jpg" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165717_1--gray.jpg" alt="Image alt text" data-id="999992" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165717_1--gray.jpg" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165723_1--gray.jpg" alt="Image alt text" data-id="999993" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165723_1--gray.jpg" data-link="#0" class="wp-image-999993"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165724_1--gray.jpg" alt="Image alt text" data-id="999994" data-full-url="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165724_1--gray.jpg" data-link="#0" class="wp-image-999994"/></figure></li></ul></figure>
+<!-- /wp:gallery -->

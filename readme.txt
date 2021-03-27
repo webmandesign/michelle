@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.2 =
-20210325 Removing the `accessibility-ready` tag as the a11y theme is aware of this theme review needs.
+= 1.0.4 =
+20210327 Updating theme URL and starter content.
 
 
 == Resources ==
@@ -41,4 +41,4 @@ Please see `changelog.md` file.
 * Normalize.css © Nicolas Gallagher and Jonathan Neal, MIT
 * a11y-menu.js © WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * images/starter/*.png © WebMan Design, Oliver Juhas, GPL-3.0-or-later
-* screenshot.jpg images © https://stocksnap.io/author/kristinhardwick, https://stocksnap.io/photo/interior-design-WP7CVEDSVY, https://stocksnap.io/photo/coffee-table-L4SNGYZWL4, CC0
+* screenshot.jpg images © https://www.si.edu/object/russian-man:saam_1985.66.165_724, https://www.si.edu/object/swedish-lady:saam_1985.66.165_696, https://www.si.edu/object/japanese-man:saam_1985.66.165_717, https://www.si.edu/object/italian-woman:saam_1985.66.165_723, CC0

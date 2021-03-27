@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.4
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -48,6 +49,7 @@ class Starter implements Component_Interface {
 
 			// Loading
 
+				self::attachments();
 				self::pages();
 				self::options();
 				self::nav_menus();
@@ -110,7 +112,8 @@ class Starter implements Component_Interface {
 	/**
 	 * Pages.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.4
 	 *
 	 * @return  void
 	 */
@@ -122,10 +125,10 @@ class Starter implements Component_Interface {
 
 				'home' => array(
 					'post_type'    => 'page',
-					'post_title'   => esc_html_x( 'Welcome!', 'Theme starter content', 'michelle' ),
+					'post_title'   => esc_html_x( 'Home', 'Theme starter content', 'michelle' ),
 					'post_content' => self::get_content( 'home' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
-					'template'     => 'templates/no-intro-header-overlaid-dark.php',
+					'template'     => 'templates/no-intro-header-overlaid-light.php',
 				),
 
 				'blog' => array(
@@ -135,7 +138,7 @@ class Starter implements Component_Interface {
 
 				'about' => array(
 					'post_type'    => 'page',
-					'post_title'   => esc_html_x( 'About us', 'Theme starter content', 'michelle' ),
+					'post_title'   => esc_html_x( 'About', 'Theme starter content', 'michelle' ),
 					'post_content' => self::get_content( 'about' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
 					'template'     => 'templates/no-intro-header-overlaid-light.php',
@@ -151,7 +154,7 @@ class Starter implements Component_Interface {
 
 				'faq' => array(
 					'post_type'    => 'page',
-					'post_title'   => esc_html_x( 'Frequently Asked Question', 'Theme starter content', 'michelle' ),
+					'post_title'   => esc_html_x( 'FAQ', 'Theme starter content', 'michelle' ),
 					'post_content' => self::get_content( 'faq' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
 					'template'     => 'templates/no-intro-header-overlaid-dark.php',
@@ -159,7 +162,7 @@ class Starter implements Component_Interface {
 
 				'contact' => array(
 					'post_type'    => 'page',
-					'post_title'   => esc_html_x( 'Contact us', 'Theme starter content', 'michelle' ),
+					'post_title'   => esc_html_x( 'Contact', 'Theme starter content', 'michelle' ),
 					'post_content' => self::get_content( 'contact' ),
 					'post_excerpt' => self::get_content( 'excerpt' ),
 				),
@@ -225,7 +228,8 @@ class Starter implements Component_Interface {
 	/**
 	 * WordPress options.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.4
 	 *
 	 * @return  void
 	 */
@@ -234,11 +238,15 @@ class Starter implements Component_Interface {
 		// Output
 
 			self::$content['options'] = array(
+				'blogdescription'     => 'Inclusive Theme',
 				'show_on_front'       => 'page',
 				'page_on_front'       => '{{home}}',
 				'page_for_posts'      => '{{blog}}',
 				'posts_per_page'      => 6,
 				'permalink_structure' => '/%postname%/',
+				'custom_logo'         => '{{image-logo-dark}}',
+				'custom_logo_light'   => '{{image-logo-light}}',
+				'display_site_title'  => false,
 			);
 
 	} // /options
@@ -260,5 +268,27 @@ class Starter implements Component_Interface {
 			return get_theme_file_uri( 'assets/images/starter/' . $filename . '.' . $extension . '?v' . MICHELLE_THEME_VERSION );
 
 	} // /get_image_url
+
+	/**
+	 * Attachments.
+	 *
+	 * @since  1.0.4
+	 *
+	 * @return  void
+	 */
+	public static function attachments() {
+
+		// Output
+
+			self::$content['attachments'] = array(
+				'image-logo-dark' => array(
+					'file' => 'assets/images/logo-michelle-dark.png',
+				),
+				'image-logo-light' => array(
+					'file' => 'assets/images/logo-michelle-light.png',
+				),
+			);
+
+	} // /attachments
 
 }

@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.1
+ * @version  1.0.4
  */
 
 // Exit if accessed directly.
@@ -36,7 +36,7 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:columns -->
 
 <!-- wp:image {"align":"wide","id":999999,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-large"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/SAMPLE/_people--pexels-august-de-richelieu-4427816.jpg" alt="Image alt text" class="wp-image-999999"/></figure>
+<figure class="wp-block-image alignwide size-large"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165695_1--gray.jpg" alt="Image alt text" class="wp-image-999999"/></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:group -->
 
@@ -191,11 +191,11 @@ if ( ! is_customize_preview() ) {
 <!-- wp:column {"verticalAlignment":"center","width":"35%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:buttons {"contentJustification":"left","className":"is-style-large"} -->
 <div class="wp-block-buttons is-content-justification-left is-style-large"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":50} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-50"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Contact →</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-50"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Contact</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"textColor":"palette-2","width":50,"className":"is-style-outline"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-palette-2-color has-text-color" href="#0">About →</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-palette-2-color has-text-color" href="#0">About</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

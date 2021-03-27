@@ -1,5 +1,36 @@
 # Michelle Changelog
 
+## 1.0.4, 20210327
+
+### Updated
+- Theme URL
+- Starter content
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	includes/Content/Starter.php
+	templates/parts/admin/content-starter-about.php
+	templates/parts/admin/content-starter-contact.php
+	templates/parts/admin/content-starter-excerpt.php
+	templates/parts/admin/content-starter-faq.php
+	templates/parts/admin/content-starter-home.php
+	templates/parts/admin/content-starter-services.php
+
+
+## 1.0.3, 20210326
+
+### Updated
+- Screenshot
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	screenshot.jpg
+
+
 ## 1.0.2, 20210325
 
 ### Updated
