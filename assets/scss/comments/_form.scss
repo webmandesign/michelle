@@ -3,7 +3,7 @@
 .comment-respond {
 
 	.comment-list & {
-		margin: ( $golden +em ) 0;
+		margin: ( $ratio +em ) 0;
 	}
 
 	textarea,
@@ -15,11 +15,11 @@
 
 	label:first-child {
 		display: block;
-		margin-bottom: $golden_minor +em;
+		margin-bottom: $ratio_min +em;
 	}
 
 	textarea:invalid {
-		max-height: 2em * $golden + 2 * $golden_major; // 2x line height + vertical textarea padding.
+		max-height: 2em * $ratio + 2 * $ratio_maj; // 2x line height + vertical textarea padding.
 		overflow-y: hidden;
 	}
 

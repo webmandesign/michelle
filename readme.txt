@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.4 =
-20210327 Updating theme URL and starter content.
+= 1.0.5 =
+20210328 Updating styles, removing plugins suggestions.
 
 
 == Resources ==

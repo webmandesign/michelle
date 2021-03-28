@@ -26,7 +26,7 @@
 	}
 
 	.svg-icon {
-		font-size: $golden +em;
+		font-size: $ratio +em;
 		vertical-align: middle;
 	}
 
@@ -100,7 +100,7 @@
 			a {
 				flex: 1 1 auto;
 				display: block;
-				padding: $golden_major +em;
+				padding: $ratio_maj +em;
 			}
 
 			&-container {
@@ -123,7 +123,7 @@
 				#{$left}: auto;
 				top: auto;
 				padding: 0;
-				padding-#{$left}: $golden_major +em;
+				padding-#{$left}: $ratio_maj +em;
 				background: transparent;
 				box-shadow: none;
 

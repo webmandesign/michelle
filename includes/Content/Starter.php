@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.4
+ * @version  1.0.5
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -229,7 +229,7 @@ class Starter implements Component_Interface {
 	 * WordPress options.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.4
+	 * @version  1.0.5
 	 *
 	 * @return  void
 	 */
@@ -238,12 +238,10 @@ class Starter implements Component_Interface {
 		// Output
 
 			self::$content['options'] = array(
-				'blogdescription'     => 'Inclusive Theme',
 				'show_on_front'       => 'page',
 				'page_on_front'       => '{{home}}',
 				'page_for_posts'      => '{{blog}}',
 				'posts_per_page'      => 6,
-				'permalink_structure' => '/%postname%/',
 				'custom_logo'         => '{{image-logo-dark}}',
 				'custom_logo_light'   => '{{image-logo-light}}',
 				'display_site_title'  => false,

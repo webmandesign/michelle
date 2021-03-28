@@ -4,7 +4,7 @@
 	clear: both;
 	display: block;
 	position: relative;
-	padding: ( $golden +em ) 0;
+	padding: ( $ratio +em ) 0;
 	margin: 0;
 
 	&::after {
@@ -16,7 +16,7 @@
 
 	a {
 		display: inline-block;
-		padding: ( $golden_major +em ) 1em;
+		padding: ( $ratio_maj +em ) 1em;
 		line-height: normal;
 		cursor: pointer;
 

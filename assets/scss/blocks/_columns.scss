@@ -9,17 +9,17 @@
 		}
 
 		&.alignfull {
-			padding-left: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
-			padding-right: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
+			padding-left: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+			padding-right: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
 		}
 
 		&.has-background {
-			padding: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
+			padding: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
 			padding-bottom: 0;
 
 			@include media( map_get( $breakpoint, 'xl' ) ) {
 				padding: 4%;
-				padding-bottom: calc( 4% - var(--typography_font_size_base) * #{ $golden } );
+				padding-bottom: calc( 4% - var(--typography_font_size_base) * #{ $ratio } );
 			}
 
 		}
@@ -36,7 +36,7 @@
 	}
 
 	&.wp-block-column:last-child {
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } );
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
 	}
 
 	&.is-style-no-margin-vertical:last-child {
@@ -64,7 +64,7 @@
 
 		&.is-style-drop-shadow,
 		&.is-style-inner-shadow {
-			padding: $golden +em;
+			padding: $ratio +em;
 		}
 
 	}

@@ -10,7 +10,7 @@
 		flex-wrap: wrap;
 
 		> a {
-			padding-#{$right}: $golden_minor +em;
+			padding-#{$right}: $ratio_min +em;
 		}
 
 	}

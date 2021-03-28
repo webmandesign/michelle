@@ -28,7 +28,7 @@ hr {
 	&.alignleft,
 	&.alignright {
 		float: none;
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
 	}
 
 	&.alignleft {
@@ -116,7 +116,7 @@ ol {
 
 	ul,
 	ol {
-		margin-#{$left}: $golden +em;
+		margin-#{$left}: $ratio +em;
 	}
 
 	li > ul,

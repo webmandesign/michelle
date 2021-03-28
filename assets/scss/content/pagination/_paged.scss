@@ -33,7 +33,7 @@
 		padding: ( $form_field_padding_vertical / $button_font_size ) 0;
 		margin: .15em;
 		font-size: $button_font_size +em;
-		line-height: $golden / $button_font_size;
+		line-height: $ratio / $button_font_size;
 		text-align: center;
 		text-decoration: none;
 		vertical-align: top;

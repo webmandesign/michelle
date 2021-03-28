@@ -1,6 +1,6 @@
-$golden:       1.618;
-$golden_major:  .618;
-$golden_minor:  .382;
+$ratio:     1.618;
+$ratio_maj:  .618;
+$ratio_min:  .382;
 
 $button_font_size: .75; // in em;
-$form_field_padding_vertical: .618em; // Do not use $golden_major here! Causes calculation issues!
+$form_field_padding_vertical: .618em; // Do not use $ratio_maj here! Causes calculation issues!

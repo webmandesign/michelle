@@ -19,7 +19,7 @@
 		}
 
 		.page-title {
-			max-width: calc( #{ $golden_major } * var(--layout_width_content) );
+			max-width: calc( #{ $ratio_maj } * var(--layout_width_content) );
 			margin-bottom: 0;
 		}
 
@@ -31,7 +31,7 @@
 	}
 
 	.page-title {
-		max-width: calc( #{ $golden_major } * var(--layout_width_content) );
+		max-width: calc( #{ $ratio_maj } * var(--layout_width_content) );
 
 		&:last-child {
 			margin-left: auto;

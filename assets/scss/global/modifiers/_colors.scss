@@ -42,7 +42,7 @@
 	.has-background.has-background {
 		// Need to use absolute units due to possible
 		// custom font size set on the paragraph block.
-		padding: calc( var(--typography_font_size_base) * #{ $golden } ) $important_modifiers; // Simulating rem unit for block editor.
+		padding: calc( var(--typography_font_size_base) * #{ $ratio } ) $important_modifiers; // Simulating rem unit for block editor.
 
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
 			padding-left: 6vw $important_modifiers;

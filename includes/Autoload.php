@@ -9,7 +9,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.5
  */
 
 // Exit if accessed directly.
@@ -103,7 +104,6 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 			'/Menu/Component.php',
 
 			'/Plugin/Component.php',
-			'/Plugin/TGMPA.php',
 
 				'/Plugin/Beaver_Builder/Component.php',
 

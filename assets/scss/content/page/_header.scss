@@ -17,7 +17,7 @@
 	}
 
 	&-text:not(.has-page-summary) {
-		max-width: calc( #{ $golden_major } * var(--layout_width_content) );
+		max-width: calc( #{ $ratio_maj } * var(--layout_width_content) );
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
@@ -46,7 +46,7 @@
 		}
 
 		.page-title {
-			max-width: calc( #{ $golden_major } * var(--layout_width_content) );
+			max-width: calc( #{ $ratio_maj } * var(--layout_width_content) );
 			margin-bottom: 0;
 		}
 
@@ -67,12 +67,12 @@
 
 	.page-meta {
 		width: 100%;
-		margin-top: $golden +rem;
+		margin-top: $ratio +rem;
 
 		@include media( map_get( $breakpoint, 'xl' ) ) {
 			order: -1;
 			margin-top: 0;
-			margin-bottom: $golden_major +rem;
+			margin-bottom: $ratio_maj +rem;
 		}
 
 	}

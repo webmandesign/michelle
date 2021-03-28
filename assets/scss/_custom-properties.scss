@@ -20,15 +20,7 @@
 
 	// Colors.
 
-		// RGBA colors.
-
-			// As all of the RGBA options use the same alpha value,
-			// we just set it here directly.
-			$alpha: 20;
-			@each $option_rgba in $customize_options_rgba {
-				$value: rgba( map_get( $customize_options, $option_rgba ), $alpha / 100 );
-				--#{ $option_rgba }--a#{ $alpha }: #{ $value + '' };
-			}
+		--border_opacity: .2;
 
 		// Editor color styles.
 
@@ -143,7 +135,7 @@
 			--max_width_header_content: var(--layout_width_content);
 			--max_width_footer_content: var(--layout_width_content);
 
-			--hr_width: #{ percentage( $golden_minor ) };
+			--hr_width: #{ percentage( $ratio_min ) };
 			--hr_zigzag_height: 10px;
 			--hr_zigzag_segments: 6;
 			@include media( map_get( $breakpoint, 'm' ) ) {

@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.5
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -65,7 +66,7 @@ $image = Starter::get_image_url( '1to1' );
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"dropCap":true} -->
-<p class="has-drop-cap">Dolor sit amet consectetur adipiscing elit tellus, odio sem hendrerit pretium euismod vulputate vivamus primis, ante dictum praesent auctor etiam platea mauris. Lorem ipsum dolor sit amet consectetur adipiscing elit tellus, odio sem hendrerit pretium euismod vulputate vivamus primis, ante dictum praesent auctor.</p>
+<p class="has-drop-cap">Dolor sit amet consectetur elit tellus, odio sem hendrerit pretium euismod vulputate vivamus primis, ante dictum praesent auctor etiam platea mauris. Lorem ipsum dolor sit amet consectetur adipiscing elit tellus, odio sem hendrerit pretium euismod vulputate vivamus primis.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:column --></div>

@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.5
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -101,7 +102,8 @@ class Options implements Component_Interface {
 	/**
 	 * Sets theme options array.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.5
 	 *
 	 * @param  array $options
 	 *
@@ -599,7 +601,7 @@ class Options implements Component_Interface {
 						'id'                => 'typography_size_html',
 						'label'             => esc_html__( 'Basic font size in px', 'michelle' ),
 						'description'       => esc_html__( 'All other font sizes are calculated automatically from this basic font size.', 'michelle' ),
-						'default'           => 20,
+						'default'           => 19,
 						'min'               => 16,
 						'max'               => 28,
 						'step'              => 1,
@@ -686,8 +688,8 @@ class Options implements Component_Interface {
 							'type'              => 'text',
 							'id'                => 'typography_font_global',
 							'label'             => esc_html__( 'Global font', 'michelle' ),
-							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
-							'default'           => 'system',
+							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>Inter, sans-serif</code>',
+							'default'           => 'Inter, sans-serif',
 							'datalist'          => $font_families,
 							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
 							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
@@ -699,8 +701,8 @@ class Options implements Component_Interface {
 							'type'              => 'text',
 							'id'                => 'typography_font_headings',
 							'label'             => esc_html__( 'Headings font', 'michelle' ),
-							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
-							'default'           => 'system',
+							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>Inter, sans-serif</code>',
+							'default'           => 'Inter, sans-serif',
 							'datalist'          => $font_families,
 							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
 							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
@@ -712,8 +714,8 @@ class Options implements Component_Interface {
 							'type'              => 'text',
 							'id'                => 'typography_font_site_title',
 							'label'             => esc_html__( 'Site title font', 'michelle' ),
-							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>system</code>',
-							'default'           => 'system',
+							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>Inter, sans-serif</code>',
+							'default'           => 'Inter, sans-serif',
 							'datalist'          => $font_families,
 							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
 							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',

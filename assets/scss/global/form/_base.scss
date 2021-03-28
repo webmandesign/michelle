@@ -11,7 +11,7 @@ fieldset {
 }
 
 legend {
-	margin: 0 0 ( $golden +em );
+	margin: 0 0 ( $ratio +em );
 	font-size: var(--typography_font_size_small);
 	font-weight: 700;
 	text-transform: uppercase;

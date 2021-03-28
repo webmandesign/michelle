@@ -55,7 +55,7 @@
 	}
 
 	.has-phi-vh-min-height {
-		min-height: ( $golden_major * 100vh ) $important_modifiers;
+		min-height: ( $ratio_maj * 100vh ) $important_modifiers;
 	}
 
 		[class^="wp-block-"].has-phi-vh-min-height,
@@ -86,7 +86,7 @@
 
 	.has-phi-padding,
 	.has-golden-padding {
-		padding: ( $golden +em ) $important_modifiers;
+		padding: 1.618em $important_modifiers;
 	}
 
 	.has-no-padding,
@@ -207,7 +207,7 @@
 	.has-regular-margin-bottom,
 	.has-normal-margin-bottom,
 	.is-style-has-margin-bottom {
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ) $important_modifiers;
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ) $important_modifiers;
 	}
 
 	$important_modifiers: null; // Required reset.

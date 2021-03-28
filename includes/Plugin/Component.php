@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.5
  */
 
 namespace WebManDesign\Michelle\Plugin;
@@ -20,16 +21,14 @@ class Component implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.5
 	 *
 	 * @return  void
 	 */
 	public static function init() {
 
 		// Processing
-
-			// Plugin recommendations.
-			TGMPA::init();
 
 			// Loading plugins:
 

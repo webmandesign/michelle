@@ -3,7 +3,7 @@
 .comment-list {
 	clear: both;
 	padding: 0;
-	margin: 0 0 ( $golden +em );
+	margin: 0 0 ( $ratio +em );
 
 	&,
 	.children {
@@ -11,13 +11,13 @@
 	}
 
 	.comments-closed + & {
-		margin-top: $golden +em;
+		margin-top: $ratio +em;
 	}
 
 	> li,
 	.children > li {
 		position: relative;
-		padding: ( $golden +em ) 0 0;
+		padding: ( $ratio +em ) 0 0;
 		margin: 0;
 		background: none;
 
@@ -33,7 +33,7 @@
 		margin-#{$left}: 1em;
 
 		@include media( map_get( $breakpoint, 'm' ) ) {
-			margin-#{$left}: -$golden +em;
+			margin-#{$left}: -$ratio +em;
 		}
 
 	}

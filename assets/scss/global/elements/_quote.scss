@@ -22,7 +22,7 @@ blockquote {
 
 		> cite {
 			display: block;
-			margin-top: calc( var(--typography_font_size_base) * #{ $golden_major } );
+			margin-top: calc( var(--typography_font_size_base) * #{ $ratio_maj } );
 		}
 
 	blockquote {
@@ -30,7 +30,7 @@ blockquote {
 	}
 
 	p {
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden_major } );
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio_maj } );
 	}
 
 }

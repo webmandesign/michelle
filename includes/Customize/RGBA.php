@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.5
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -63,7 +64,8 @@ class RGBA implements Component_Interface {
 	/**
 	 * Sets alpha values (%) for CSS rgba() colors.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.5
 	 *
 	 * @param  array $alphas
 	 *
@@ -73,7 +75,10 @@ class RGBA implements Component_Interface {
 
 		// Processing
 
-			$alphas['color_body_text'] = 20;
+			$alphas['color_body_text'] = array(
+				'css_var_name' => '--color_body_border',
+				'alpha'        => 'var(--border_opacity)',
+			);
 
 
 		// Output
@@ -85,7 +90,8 @@ class RGBA implements Component_Interface {
 	/**
 	 * Customize preview RGBA colors.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.5
 	 *
 	 * @param  array $options
 	 *
@@ -105,10 +111,17 @@ class RGBA implements Component_Interface {
 					isset( $option['css_var'] )
 					&& isset( $alphas[ $option['id'] ] )
 				) {
+					$args = $alphas[ $option['id'] ];
+
+					$alpha = $args['alpha'];
+					if ( is_integer( $alpha ) ) {
+						$alpha = (float) ( absint( $alpha ) / 100 );
+					}
+
 					$options[ $key ]['preview_js']['css'][':root'][] = array(
-						'property'         => '--[[id]]--a' . absint( $alphas[ $option['id'] ] ),
+						'property'         => $args['css_var_name'],
 						'prefix'           => 'rgba(',
-						'suffix'           => ',' . (float) ( $alphas[ $option['id'] ] / 100 ) . ')',
+						'suffix'           => ',' . $alpha . ')',
 						'process_callback' => 'michelle.Customize.hexToRgb',
 					);
 				}
@@ -117,14 +130,15 @@ class RGBA implements Component_Interface {
 
 		// Output
 
-			return $options;
+			return (array) $options;
 
 	} // /customize_preview
 
 	/**
 	 * Adding RGBA CSS variables.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.5
 	 *
 	 * @param  array  $css_vars
 	 * @param  array  $option
@@ -145,10 +159,8 @@ class RGBA implements Component_Interface {
 				isset( $option['id'] )
 				&& isset( $alphas[ $option['id'] ] )
 			) {
-				$alphas = (array) $alphas[ $option['id'] ];
-				foreach ( $alphas as $alpha ) {
-					$css_vars[ '--' . sanitize_title( $option['id'] ) . '--a' . absint( $alpha ) ] = esc_attr( self::color_hex_to_rgba( (string) $value, absint( $alpha ) ) );
-				}
+				$args = $alphas[ $option['id'] ];
+				$css_vars[ $args['css_var_name'] ] = esc_attr( self::color_hex_to_rgba( (string) $value, $args['alpha'] ) );
 			}
 
 
@@ -161,21 +173,21 @@ class RGBA implements Component_Interface {
 	/**
 	 * Get rgb() or rgba() from hex color.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.5
 	 *
 	 * @link  http://php.net/manual/en/function.hexdec.php
 	 *
-	 * @param  string $hex
-	 * @param  int    $alpha  [0-100]
+	 * @param  string     $hex
+	 * @param  string|int $alpha  [0-100] or CSS variable.
 	 *
 	 * @return  string
 	 */
-	public static function color_hex_to_rgba( string $hex, int $alpha = 100 ): string {
+	public static function color_hex_to_rgba( string $hex, $alpha = 100 ): string {
 
 		// Variables
 
-			$alpha  = absint( $alpha );
-			$output = ( 100 === $alpha ) ? ( 'rgb(' ) : ( 'rgba(' );
+			$output = 'rgba(';
 
 			$rgb = array();
 
@@ -193,8 +205,10 @@ class RGBA implements Component_Interface {
 			$output  .= implode( ',', $rgb );
 
 			// Using alpha (rgba)?
-			if ( 100 > $alpha ) {
+			if ( is_integer( $alpha ) ) {
 				$output .= ',' . ( $alpha / 100 );
+			} else {
+				$output .= ',' . $alpha;
 			}
 
 			// Closing opening bracket.

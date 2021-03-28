@@ -5,7 +5,7 @@
 	margin-bottom: 0;
 
 	&:not(:first-child) {
-		margin-top: -$golden +em;
+		margin-top: -$ratio +em;
 	}
 
 	+ h1,

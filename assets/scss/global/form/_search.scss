@@ -199,8 +199,8 @@ form[role="search"],
 			cursor: text;
 
 			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-				width: $golden_major * 100 +vw;
-				max-width: $golden_major * 100 +vw;
+				width: $ratio_maj * 100 +vw;
+				max-width: $ratio_maj * 100 +vw;
 			}
 
 		}
@@ -212,7 +212,7 @@ form[role="search"],
 .wp-block-search {
 
 	&:not(:last-child) {
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } );
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
 	}
 
 	&__label {

@@ -3,7 +3,7 @@
 .wp-block-button__link {
 
 	&.has-background {
-		padding: ( $form_field_padding_vertical / $button_font_size * ( $golden / 1.25 ) ) 0;
+		padding: ( $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 ) ) 0;
 	}
 
 	&:not(.has-text-color) {

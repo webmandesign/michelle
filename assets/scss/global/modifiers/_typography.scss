@@ -94,16 +94,16 @@
 	}
 
 	.has-extra-small-line-height {
-		line-height: ( 1 + $golden_minor / 2 ) $important_modifiers;
+		line-height: ( 1 + $ratio_min / 2 ) $important_modifiers;
 	}
 
 	.has-small-line-height {
-		line-height: ( 1 + $golden_minor ) $important_modifiers;
+		line-height: ( 1 + $ratio_min ) $important_modifiers;
 	}
 
 	.has-regular-line-height,
 	.has-medium-line-height {
-		line-height: $golden $important_modifiers;
+		line-height: $ratio $important_modifiers;
 	}
 
 	$important_modifiers: null; // Required reset.

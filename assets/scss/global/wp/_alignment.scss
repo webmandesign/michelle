@@ -80,7 +80,7 @@
 		padding-right: 6vw;
 
 		&:not(:last-child) > .alignwide {
-			margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } ); // Simulating rem unit for block editor.
+			margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
 		}
 
 	}

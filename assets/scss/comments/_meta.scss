@@ -9,7 +9,7 @@
 
 	.avatar {
 		display: block;
-		width: 5em - $golden;
+		width: 5em - $ratio;
 		margin-bottom: 1em;
 		border-radius: 10em;
 
@@ -17,7 +17,7 @@
 			position: absolute;
 			width: 4em;
 			#{$left}: 0;
-			top: $golden +em;
+			top: $ratio +em;
 			margin-bottom: 0;
 		}
 

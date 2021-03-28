@@ -15,14 +15,14 @@
 		&::before {
 			content: ' ***'; // &bull;
 			speak: none;
-			padding-#{$left}: $golden_major +em;
-			font-size: $golden +em;
-			letter-spacing: $golden_major +em;
+			padding-#{$left}: $ratio_maj +em;
+			font-size: $ratio +em;
+			letter-spacing: $ratio_maj +em;
 		}
 
 		&.alignleft,
 		&.alignright {
-			--hr_width: calc( #{ $golden } * 4em );
+			--hr_width: calc( #{ $ratio } * 4em );
 		}
 
 	}

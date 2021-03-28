@@ -5,7 +5,7 @@
 }
 
 #{ $selector_editor_wrapper } {
-	--hr_width: calc( #{ $golden_minor } * var(--layout_width_entry_content) );
+	--hr_width: calc( #{ $ratio_min } * var(--layout_width_entry_content) );
 
 	.wp-block-separator {
 		opacity: 1;
@@ -31,5 +31,5 @@
 }
 
 hr {
-	margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } );
+	margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
 }
