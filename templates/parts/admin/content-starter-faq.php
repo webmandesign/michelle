@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.4
+ * @version  1.0.6
  */
 
 // Exit if accessed directly.
@@ -36,7 +36,7 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:columns -->
 
 <!-- wp:image {"align":"wide","id":999999,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-large"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/WMDEMO__cc0--SAAM-1985.66.165695_1--gray.jpg" alt="Image alt text" class="wp-image-999999"/></figure>
+<figure class="wp-block-image alignwide size-large"><img src="https://pic.webmandesign.eu/WMDEMO/cc0--SAAM-1985.66.165695_1--gray.jpg" alt="Image alt text" class="wp-image-999999"/></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:group -->
 

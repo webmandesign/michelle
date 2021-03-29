@@ -1,6 +1,6 @@
 <?php
 /**
- * Block styles registration component.
+ * Block styles component.
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas

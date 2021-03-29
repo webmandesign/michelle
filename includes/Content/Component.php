@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.6
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -21,7 +22,8 @@ class Component implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.6
 	 *
 	 * @return  void
 	 */
@@ -33,6 +35,7 @@ class Component implements Component_Interface {
 			Container::init();
 			// Blocks.
 			Block::init();
+			Block_Area::init();
 			Block_Patterns::init();
 			Block_Styles::init();
 			// Starter content.

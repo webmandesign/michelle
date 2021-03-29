@@ -13,8 +13,6 @@
 		flex-direction: column;
 		padding: var(--posts_list_entry_padding_vertical) var(--posts_list_entry_padding_horizontal);
 		background: var(--color_body_background);
-		border-width: 1px;
-		border-style: solid;
 		border-top: var(--border_decorative_width) solid var(--color_border_decorative);
 		transition: box-shadow .3s;
 
@@ -90,7 +88,7 @@
 	}
 
 	&.is-grid {
-		// align-items: flex-start; // To prevent equal column height.
+		align-items: flex-start; // Prevent equal column height.
 
 		li {
 			margin: calc( var(--posts_list_gap) / 2 ) 0;

@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.5
+ * @version  1.0.6
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -67,7 +67,8 @@ class Options implements Component_Interface {
 	/**
 	 * Modify native WordPress options and setup partial refresh pointers.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.6
 	 *
 	 * @param  WP_Customize_Manager $wp_customize
 	 *
@@ -92,6 +93,11 @@ class Options implements Component_Interface {
 					'selector' => '#posts',
 				) );
 
+				// Error 404 content.
+				$wp_customize->selective_refresh->add_partial( 'block_area_error_404', array(
+					'selector' => '.error404 .site-content',
+				) );
+
 				// Footer content.
 				$wp_customize->selective_refresh->add_partial( 'block_area_site_footer', array(
 					'selector' => '.site-footer-section:first-child .site-footer-content',
@@ -103,7 +109,7 @@ class Options implements Component_Interface {
 	 * Sets theme options array.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.5
+	 * @version  1.0.6
 	 *
 	 * @param  array $options
 	 *
@@ -820,11 +826,30 @@ class Options implements Component_Interface {
 						'default'     => true,
 					),
 
-					950 . 'others' . 120 => array(
+					950 . 'others' . 200 => array(
+						'type'        => 'html',
+						'content'     => '<h3>' . esc_html__( 'Content', 'michelle' ) . '</h3>',
+						'description' =>
+							esc_html__( 'Create and edit your content with block editor in Reusable Blocks manager.', 'michelle' )
+							. ' '
+							. '(<a href="' . esc_url( admin_url( 'edit.php?post_type=wp_block' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Open Reusable Blocks manager in a new window now &rarr;', 'michelle' ) . '</a>)'
+							. '<br><br>'
+							. esc_html__( 'Then assign created reusable blocks for display below.', 'michelle' ),
+					),
+
+					950 . 'others' . 210 => array(
 						'type'              => 'select',
 						'id'                => 'block_area_site_footer',
 						'label'             => esc_html__( 'Footer content', 'michelle' ),
-						'description'       => esc_html__( 'Edit or create your footer content in the Reusable Blocks manager.', 'michelle' ) . ' <a href="' . esc_url( admin_url( 'edit.php?post_type=wp_block' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Open Reusable Blocks manager in a new window now &rarr;', 'michelle' ) . '</a>',
+						'default'           => 0,
+						'choices'           => $blocks,
+						'sanitize_callback' => 'absint',
+					),
+
+					950 . 'others' . 220 => array(
+						'type'              => 'select',
+						'id'                => 'block_area_error_404',
+						'label'             => esc_html__( 'Error 404 content', 'michelle' ),
 						'default'           => 0,
 						'choices'           => $blocks,
 						'sanitize_callback' => 'absint',

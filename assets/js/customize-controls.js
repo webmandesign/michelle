@@ -7,13 +7,26 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.6
  */
 
 ( function( $ ) {
 	'use strict';
 
 	$( wp.customize ).ready( function() {
+
+		// Navigate to error 404 page when control is focused.
+
+			$( '[name="block_area_error_404"]' )
+				.on( 'focusin', function() {
+					var url = wp.customize.settings.url.home.replace( /\/+$/, '' );
+					// "error-404-page" @ http://www.md5.cz/
+					url += '/86a8820fe9ab96669c59a56f88d51b69';
+					if ( url !== wp.customize.previewer.previewUrl() ) {
+						wp.customize.previewer.previewUrl.set( url );
+					}
+				} );
 
 		// Range inputs.
 

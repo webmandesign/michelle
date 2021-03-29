@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.5 =
-20210328 Updating styles, removing plugins suggestions.
+= 1.0.6 =
+20210330 Adding error 404 customization option, updating styles and optimizing fonts loading.
 
 
 == Resources ==

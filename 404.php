@@ -7,20 +7,16 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.6
  */
-
-namespace WebManDesign\Michelle;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_template_part( 'templates/parts/component/page-header', '404' );
-
-?>
-
-<div class="page-content error-404 not-found">
-	<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'michelle' ); ?></p>
-
-	<?php get_search_form(); ?>
-</div>
+/**
+ * Displays error 404 page content.
+ *
+ * @since  1.0.6
+ */
+do_action( 'michelle/content/404' );

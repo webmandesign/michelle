@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.6
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -372,7 +373,8 @@ class Google_Fonts implements Component_Interface {
 	 *
 	 * Also applies Google Fonts font family styles.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.5
 	 *
 	 * @param  string $font_family
 	 * @param  string $context
@@ -397,7 +399,7 @@ class Google_Fonts implements Component_Interface {
 			 * @param  string $font_family
 			 * @param  string $context
 			 */
-			$styles = (string) apply_filters( 'michelle/tool/google_fonts/styles', ':300,400,700,900', $font_family, $context );
+			$styles = (string) apply_filters( 'michelle/tool/google_fonts/styles', ':300,400,700', $font_family, $context );
 
 
 		// Output

@@ -1,11 +1,12 @@
 <?php
 /**
- * Site footer area content.
+ * Block area: Site footer.
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.6
  */
 
 namespace WebManDesign\Michelle;
@@ -15,20 +16,20 @@ use WP_Query;
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$site_footer = Customize\Mod::get( 'block_area_site_footer' );
+$area = Customize\Mod::get( 'block_area_site_footer' );
 
-if ( empty( $site_footer ) ) {
+if ( empty( $area ) ) {
 	return;
 }
 
-$site_footer_query = new WP_Query( array(
-	'p'         => $site_footer,
+$area_query = new WP_Query( array(
+	'p'         => $area,
 	'post_type' => 'wp_block',
 ) );
 
 if (
-	! $site_footer_query->have_posts()
-	|| empty( trim( (string) $site_footer_query->post->post_content ) )
+	! $area_query->have_posts()
+	|| empty( trim( (string) $area_query->post->post_content ) )
 ) {
 	return;
 }
@@ -44,10 +45,10 @@ if (
 		 *
 		 * @since  1.0.0
 		 */
-		do_action( 'michelle/footer/block-area/before' );
+		do_action( 'michelle/block/area/footer/before' );
 
-		while ( $site_footer_query->have_posts() ) {
-			$site_footer_query->the_post();
+		while ( $area_query->have_posts() ) {
+			$area_query->the_post();
 
 			the_content();
 		}
@@ -59,7 +60,7 @@ if (
 		 *
 		 * @since  1.0.0
 		 */
-		do_action( 'michelle/footer/block-area/after' );
+		do_action( 'michelle/block/area/footer/after' );
 
 		?>
 	</div>

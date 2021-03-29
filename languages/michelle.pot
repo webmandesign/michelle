@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-28 15:45+0200\n"
+"POT-Creation-Date: 2021-03-29 23:49+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -19,10 +19,6 @@ msgstr ""
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: 404.php:23
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr ""
 
 #. translators: 1: title.
 #: comments.php:48
@@ -196,7 +192,7 @@ msgid "Zig-zag wide"
 msgstr ""
 
 #. translators: Paginated content title suffix. %d: page number.
-#: includes/Content/Component.php:123
+#: includes/Content/Component.php:126
 #, php-format
 msgid "(page %d)"
 msgstr ""
@@ -236,14 +232,14 @@ msgctxt "Theme starter content"
 msgid "Blog"
 msgstr ""
 
-#: includes/Customize/Colors.php:160 includes/Customize/Options.php:318
+#: includes/Customize/Colors.php:160 includes/Customize/Options.php:326
 msgid "Accent color"
 msgstr ""
 
 #. translators: Customizer section title. %s = section name.
-#: includes/Customize/Colors.php:169 includes/Customize/Options.php:251
-#: includes/Customize/Options.php:309 includes/Customize/Options.php:375
-#: includes/Customize/Options.php:465
+#: includes/Customize/Colors.php:169 includes/Customize/Options.php:259
+#: includes/Customize/Options.php:317 includes/Customize/Options.php:383
+#: includes/Customize/Options.php:473
 #, php-format
 msgid "Colors: %s"
 msgstr ""
@@ -253,11 +249,11 @@ msgctxt "Customizer color section title"
 msgid "Editor palette"
 msgstr ""
 
-#: includes/Customize/Colors.php:172 includes/Customize/Options.php:221
-#: includes/Customize/Options.php:254 includes/Customize/Options.php:312
-#: includes/Customize/Options.php:378 includes/Customize/Options.php:468
-#: includes/Customize/Options.php:521 includes/Customize/Options.php:594
-#: includes/Customize/Options.php:773 includes/Customize/Options.php:801
+#: includes/Customize/Colors.php:172 includes/Customize/Options.php:229
+#: includes/Customize/Options.php:262 includes/Customize/Options.php:320
+#: includes/Customize/Options.php:386 includes/Customize/Options.php:476
+#: includes/Customize/Options.php:529 includes/Customize/Options.php:602
+#: includes/Customize/Options.php:781 includes/Customize/Options.php:809
 #: includes/Tool/Page_Builder.php:124
 msgctxt "Customizer panel title."
 msgid "Theme Options"
@@ -283,344 +279,357 @@ msgstr ""
 msgid "Press CTRL key for multiple selection."
 msgstr ""
 
-#: includes/Customize/Options.php:129
+#: includes/Customize/Options.php:137
 msgctxt "Variable image height."
 msgid "variable height"
 msgstr ""
 
-#: includes/Customize/Options.php:131
+#: includes/Customize/Options.php:139
 #: templates/parts/admin/media-image-sizes.php:59
 msgid "cropped"
 msgstr ""
 
-#: includes/Customize/Options.php:131
+#: includes/Customize/Options.php:139
 #: templates/parts/admin/media-image-sizes.php:59
 msgid "scaled"
 msgstr ""
 
-#: includes/Customize/Options.php:143
+#: includes/Customize/Options.php:151
 msgid "Select a block"
 msgstr ""
 
-#: includes/Customize/Options.php:163
+#: includes/Customize/Options.php:171
 msgid "Max logo image height (px)"
 msgstr ""
 
-#: includes/Customize/Options.php:164
+#: includes/Customize/Options.php:172
 msgid "Do not forget to set the logo max height."
 msgstr ""
 
-#: includes/Customize/Options.php:164
+#: includes/Customize/Options.php:172
 msgid ""
 "Upload twice as big image to make your logo ready for high DPI screens."
 msgstr ""
 
-#: includes/Customize/Options.php:191
+#: includes/Customize/Options.php:199
 msgid "Display site title & tagline"
 msgstr ""
 
-#: includes/Customize/Options.php:203
+#: includes/Customize/Options.php:211
 msgid "Site title position"
 msgstr ""
 
-#: includes/Customize/Options.php:206
+#: includes/Customize/Options.php:214
 msgid "First item in header"
 msgstr ""
 
-#: includes/Customize/Options.php:207
+#: includes/Customize/Options.php:215
 msgid "Last item in header"
 msgstr ""
 
-#: includes/Customize/Options.php:222
+#: includes/Customize/Options.php:230
 msgid "Theme Credits"
 msgstr ""
 
 #. translators: 1: linked theme name, 2: theme author name.
-#: includes/Customize/Options.php:226
+#: includes/Customize/Options.php:234
 #, php-format
 msgid "%1$s is a WordPress theme developed by %2$s."
 msgstr ""
 
 #. translators: %s: theme author link.
-#: includes/Customize/Options.php:234
+#: includes/Customize/Options.php:242
 #, php-format
 msgid "You can obtain other professional WordPress themes at %s."
 msgstr ""
 
-#: includes/Customize/Options.php:239
+#: includes/Customize/Options.php:247
 msgid "Thank you for using a theme by WebMan Design!"
 msgstr ""
 
-#: includes/Customize/Options.php:252
+#: includes/Customize/Options.php:260
 msgctxt "Customizer color section title"
 msgid "General"
 msgstr ""
 
-#: includes/Customize/Options.php:260 includes/Customize/Options.php:355
-#: includes/Customize/Options.php:407 includes/Customize/Options.php:445
-#: includes/Customize/Options.php:488
+#: includes/Customize/Options.php:268 includes/Customize/Options.php:363
+#: includes/Customize/Options.php:415 includes/Customize/Options.php:453
+#: includes/Customize/Options.php:496
 msgid "Text color"
 msgstr ""
 
-#: includes/Customize/Options.php:274
+#: includes/Customize/Options.php:282
 msgid "Headings color"
 msgstr ""
 
-#: includes/Customize/Options.php:289
+#: includes/Customize/Options.php:297
 msgid "Decorative border color"
 msgstr ""
 
-#: includes/Customize/Options.php:310
+#: includes/Customize/Options.php:318
 msgctxt "Customizer color section title"
 msgid "Accents"
 msgstr ""
 
-#: includes/Customize/Options.php:335
+#: includes/Customize/Options.php:343
 msgid "Button"
 msgstr ""
 
-#: includes/Customize/Options.php:341 includes/Customize/Options.php:393
-#: includes/Customize/Options.php:431 includes/Customize/Options.php:474
+#: includes/Customize/Options.php:349 includes/Customize/Options.php:401
+#: includes/Customize/Options.php:439 includes/Customize/Options.php:482
 msgid "Background color"
 msgstr ""
 
-#: includes/Customize/Options.php:376
+#: includes/Customize/Options.php:384
 msgctxt "Customizer color section title"
 msgid "Header"
 msgstr ""
 
-#: includes/Customize/Options.php:386
+#: includes/Customize/Options.php:394
 msgid "Site navigation"
 msgstr ""
 
-#: includes/Customize/Options.php:387
+#: includes/Customize/Options.php:395
 msgid "Primary menu location sub-menu colors."
 msgstr ""
 
-#: includes/Customize/Options.php:424
+#: includes/Customize/Options.php:432
 msgid "Search form"
 msgstr ""
 
-#: includes/Customize/Options.php:425
+#: includes/Customize/Options.php:433
 msgid "Pop-up search form colors."
 msgstr ""
 
-#: includes/Customize/Options.php:466
+#: includes/Customize/Options.php:474
 msgctxt "Customizer color section title"
 msgid "Footer"
 msgstr ""
 
-#: includes/Customize/Options.php:502
+#: includes/Customize/Options.php:510
 msgid "Link color"
 msgstr ""
 
-#: includes/Customize/Options.php:520
+#: includes/Customize/Options.php:528
 msgctxt "Customizer section title."
 msgid "Layout"
 msgstr ""
 
-#: includes/Customize/Options.php:529
+#: includes/Customize/Options.php:537
 msgctxt "A website container."
 msgid "Site Container"
 msgstr ""
 
-#: includes/Customize/Options.php:535
+#: includes/Customize/Options.php:543
 msgid "Content width"
 msgstr ""
 
-#: includes/Customize/Options.php:537 includes/Customize/Options.php:563
-#: includes/Customize/Options.php:689 includes/Customize/Options.php:702
-#: includes/Customize/Options.php:715 includes/Customize/Options.php:728
+#: includes/Customize/Options.php:545 includes/Customize/Options.php:571
+#: includes/Customize/Options.php:697 includes/Customize/Options.php:710
+#: includes/Customize/Options.php:723 includes/Customize/Options.php:736
 msgid "Default value:"
 msgstr ""
 
-#: includes/Customize/Options.php:539
+#: includes/Customize/Options.php:547
 msgid "This width is applied on archive pages, wide-aligned blocks&hellip;"
 msgstr ""
 
-#: includes/Customize/Options.php:561
+#: includes/Customize/Options.php:569
 msgid "Entry content width"
 msgstr ""
 
-#: includes/Customize/Options.php:565
+#: includes/Customize/Options.php:573
 msgid "This width is applied on post and page actual content elements."
 msgstr ""
 
-#: includes/Customize/Options.php:567
+#: includes/Customize/Options.php:575
 msgid "Set this cautiously for the best readability."
 msgstr ""
 
-#: includes/Customize/Options.php:593
+#: includes/Customize/Options.php:601
 msgctxt "Customizer section title."
 msgid "Typography"
 msgstr ""
 
-#: includes/Customize/Options.php:600
+#: includes/Customize/Options.php:608
 msgid "Basic font size in px"
 msgstr ""
 
-#: includes/Customize/Options.php:601
+#: includes/Customize/Options.php:609
 msgid ""
 "All other font sizes are calculated automatically from this basic font "
 "size."
 msgstr ""
 
-#: includes/Customize/Options.php:623
+#: includes/Customize/Options.php:631
 msgid "Header font size in px"
 msgstr ""
 
-#: includes/Customize/Options.php:645
+#: includes/Customize/Options.php:653
 msgid "Footer font size in px"
 msgstr ""
 
-#: includes/Customize/Options.php:669
+#: includes/Customize/Options.php:677
 msgid "Font families setup"
 msgstr ""
 
 #. translators: %s: customizer option values.
-#: includes/Customize/Options.php:674
+#: includes/Customize/Options.php:682
 #, php-format
 msgid "Values of %s set web safe system font families."
 msgstr ""
 
-#: includes/Customize/Options.php:679
+#: includes/Customize/Options.php:687
 msgid "You can use any Google Fonts with this theme."
 msgstr ""
 
-#: includes/Customize/Options.php:681
+#: includes/Customize/Options.php:689
 msgid ""
 "Just input the Google Fonts font family name into the fields below, choose "
 "language, and you are done!"
 msgstr ""
 
-#: includes/Customize/Options.php:688
+#: includes/Customize/Options.php:696
 msgid "Global font"
 msgstr ""
 
-#: includes/Customize/Options.php:701
+#: includes/Customize/Options.php:709
 msgid "Headings font"
 msgstr ""
 
-#: includes/Customize/Options.php:714
+#: includes/Customize/Options.php:722
 msgid "Site title font"
 msgstr ""
 
-#: includes/Customize/Options.php:727
+#: includes/Customize/Options.php:735
 msgid "Alternative font"
 msgstr ""
 
-#: includes/Customize/Options.php:728
+#: includes/Customize/Options.php:736
 msgid "Used for quotes, for example."
 msgstr ""
 
-#: includes/Customize/Options.php:741
+#: includes/Customize/Options.php:749
 msgid "Enable theme Google Fonts loading"
 msgstr ""
 
-#: includes/Customize/Options.php:742
+#: includes/Customize/Options.php:750
 msgid "In case you are loading fonts via plugin, disable this option."
 msgstr ""
 
-#: includes/Customize/Options.php:748
+#: includes/Customize/Options.php:756
 msgid "Languages"
 msgstr ""
 
-#: includes/Customize/Options.php:750
+#: includes/Customize/Options.php:758
 msgid "Not all Google Fonts support all languages."
 msgstr ""
 
-#: includes/Customize/Options.php:752
+#: includes/Customize/Options.php:760
 msgid "Please check on Google Fonts website to make sure."
 msgstr ""
 
-#: includes/Customize/Options.php:755
+#: includes/Customize/Options.php:763
 msgid "Latin"
 msgstr ""
 
-#: includes/Customize/Options.php:756
+#: includes/Customize/Options.php:764
 msgid "Latin Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:757
+#: includes/Customize/Options.php:765
 msgid "Cyrillic"
 msgstr ""
 
-#: includes/Customize/Options.php:758
+#: includes/Customize/Options.php:766
 msgid "Cyrillic Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:759
+#: includes/Customize/Options.php:767
 msgid "Greek"
 msgstr ""
 
-#: includes/Customize/Options.php:760
+#: includes/Customize/Options.php:768
 msgid "Greek Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:761
+#: includes/Customize/Options.php:769
 msgid "Vietnamese"
 msgstr ""
 
-#: includes/Customize/Options.php:772
+#: includes/Customize/Options.php:780
 msgctxt "Customizer section title."
 msgid "Posts"
 msgstr ""
 
-#: includes/Customize/Options.php:779
+#: includes/Customize/Options.php:787
 msgid "Post thumbnail aspect ratio"
 msgstr ""
 
-#: includes/Customize/Options.php:780
+#: includes/Customize/Options.php:788
 msgid ""
 "Note that if you already have images uploaded to your website, you need to "
 "regenerate their sizes to apply this change."
 msgstr ""
 
-#: includes/Customize/Options.php:780
+#: includes/Customize/Options.php:788
 msgid "You can use a plugin for that &rarr;"
 msgstr ""
 
-#: includes/Customize/Options.php:780
+#: includes/Customize/Options.php:788
 msgid "(This option can not be previewed here, only on your live website.)"
 msgstr ""
 
-#: includes/Customize/Options.php:783
+#: includes/Customize/Options.php:791
 msgid "Keep original image aspect ratio"
 msgstr ""
 
-#: includes/Customize/Options.php:800
+#: includes/Customize/Options.php:808
 msgctxt "Customizer section title."
 msgid "Others"
 msgstr ""
 
-#: includes/Customize/Options.php:807
+#: includes/Customize/Options.php:815
 msgid "Show \"Welcome\" page"
 msgstr ""
 
-#: includes/Customize/Options.php:808
+#: includes/Customize/Options.php:816
 msgid "Under \"Appearance\" WordPress dashboard menu."
 msgstr ""
 
-#: includes/Customize/Options.php:816
+#: includes/Customize/Options.php:824
 msgid "Enable mobile navigation"
 msgstr ""
 
-#: includes/Customize/Options.php:817
+#: includes/Customize/Options.php:825
 msgid ""
 "If your website navigation is very simple and you do not want to use the "
 "mobile navigation functionality, you can disable it here."
 msgstr ""
 
-#: includes/Customize/Options.php:824
+#: includes/Customize/Options.php:831
+msgid "Content"
+msgstr ""
+
+#: includes/Customize/Options.php:833
+msgid ""
+"Create and edit your content with block editor in Reusable Blocks manager."
+msgstr ""
+
+#: includes/Customize/Options.php:835
+msgid "Open Reusable Blocks manager in a new window now &rarr;"
+msgstr ""
+
+#: includes/Customize/Options.php:837
+msgid "Then assign created reusable blocks for display below."
+msgstr ""
+
+#: includes/Customize/Options.php:843
 msgid "Footer content"
 msgstr ""
 
-#: includes/Customize/Options.php:825
-msgid "Edit or create your footer content in the Reusable Blocks manager."
-msgstr ""
-
-#: includes/Customize/Options.php:825
-msgid "Open Reusable Blocks manager in a new window now &rarr;"
+#: includes/Customize/Options.php:852
+msgid "Error 404 content"
 msgstr ""
 
 #: includes/Entry/Component.php:241
@@ -1373,8 +1382,8 @@ msgstr ""
 #: templates/parts/block/pattern-features-single-large.php:32
 #: templates/parts/block/pattern-features-single.php:33
 #: templates/parts/block/pattern-footer.php:38
-#: templates/parts/block/pattern-gallery-captions.php:35
 #: templates/parts/block/pattern-gallery-captions.php:36
+#: templates/parts/block/pattern-gallery-captions.php:37
 #: templates/parts/block/pattern-gallery-no-gap.php:34
 #: templates/parts/block/pattern-image-padding-left.php:31
 #: templates/parts/block/pattern-image-padding-right.php:31
@@ -1388,8 +1397,8 @@ msgstr ""
 #: templates/parts/block/pattern-logos.php:49
 #: templates/parts/block/pattern-portfolio-project-gallery.php:34
 #: templates/parts/block/pattern-portfolio-project-image.php:31
-#: templates/parts/block/pattern-team-2.php:43
-#: templates/parts/block/pattern-team-2.php:59
+#: templates/parts/block/pattern-team-2.php:44
+#: templates/parts/block/pattern-team-2.php:60
 #: templates/parts/block/pattern-team.php:52
 #: templates/parts/block/pattern-testimonials-single-bg.php:60
 #: templates/parts/block/pattern-text-with-image.php:32
@@ -1491,10 +1500,10 @@ msgid "Features: Parallax"
 msgstr ""
 
 #: templates/parts/block/pattern-features-parallax.php:22
-#: templates/parts/block/pattern-gallery-captions.php:22
+#: templates/parts/block/pattern-gallery-captions.php:23
 #: templates/parts/block/pattern-gallery-no-gap.php:22
 #: templates/parts/block/pattern-logos.php:22
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 #: templates/parts/block/pattern-text-parallax.php:22
 #: templates/parts/block/pattern-text-with-image.php:22
@@ -1527,7 +1536,7 @@ msgctxt "Block pattern title."
 msgid "Site footer: With logo, links, description and social links"
 msgstr ""
 
-#: templates/parts/block/pattern-gallery-captions.php:20
+#: templates/parts/block/pattern-gallery-captions.php:21
 msgctxt "Block pattern title."
 msgid "Gallery: With captions"
 msgstr ""
@@ -1594,7 +1603,7 @@ msgid "heading"
 msgstr ""
 
 #: templates/parts/block/pattern-intro-2-images.php:22
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 msgid "gallery"
 msgstr ""
@@ -1674,27 +1683,27 @@ msgctxt "Block pattern title."
 msgid "Question and answer"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:20
+#: templates/parts/block/pattern-team-2.php:21
 msgctxt "Block pattern title."
 msgid "Team: 2 large descriptions"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 msgid "staff"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 msgid "employees"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 msgid "people"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 #: templates/parts/block/pattern-testimonials-single-bg.php:22
 msgid "photo"
@@ -1771,6 +1780,10 @@ msgid "We found %d result for your search."
 msgid_plural "We found %d results for your search."
 msgstr[0] ""
 msgstr[1] ""
+
+#: templates/parts/content/content-404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
 
 #: templates/parts/content/content-attachment-image.php:31
 msgctxt "Attachment page image info table caption."

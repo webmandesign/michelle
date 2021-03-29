@@ -10,7 +10,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.5
+ * @version  1.0.6
  */
 
 // Exit if accessed directly.
@@ -58,6 +58,7 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 			'/Assets/Styles.php',
 
 			'/Content/Block.php',
+			'/Content/Block_Area.php',
 			'/Content/Block_Patterns.php',
 			'/Content/Block_Styles.php',
 			'/Content/Component.php',

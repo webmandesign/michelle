@@ -1,6 +1,6 @@
 <?php
 /**
- * Block patterns registration component.
+ * Block patterns component.
  *
  * Default pattern categories in WordPress:
  * - buttons

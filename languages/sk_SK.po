@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-28 15:45+0200\n"
-"PO-Revision-Date: 2021-03-28 15:45+0200\n"
+"POT-Creation-Date: 2021-03-29 23:49+0200\n"
+"PO-Revision-Date: 2021-03-29 23:52+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -18,12 +18,6 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: 404.php:23
-#, fuzzy
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr ""
-"Vyzerá to tak, že sa nenašli žiadne záznamy. Možno skúste vyhľadávanie?"
 
 #. translators: 1: title.
 #: comments.php:48
@@ -204,7 +198,7 @@ msgid "Zig-zag wide"
 msgstr "Široký cik-cak"
 
 #. translators: Paginated content title suffix. %d: page number.
-#: includes/Content/Component.php:123
+#: includes/Content/Component.php:126
 #, fuzzy, php-format
 msgid "(page %d)"
 msgstr "(strana %d)"
@@ -248,15 +242,15 @@ msgctxt "Theme starter content"
 msgid "Blog"
 msgstr "Blog"
 
-#: includes/Customize/Colors.php:160 includes/Customize/Options.php:318
+#: includes/Customize/Colors.php:160 includes/Customize/Options.php:326
 #, fuzzy
 msgid "Accent color"
 msgstr "Akcentovaná farba"
 
 #. translators: Customizer section title. %s = section name.
-#: includes/Customize/Colors.php:169 includes/Customize/Options.php:251
-#: includes/Customize/Options.php:309 includes/Customize/Options.php:375
-#: includes/Customize/Options.php:465
+#: includes/Customize/Colors.php:169 includes/Customize/Options.php:259
+#: includes/Customize/Options.php:317 includes/Customize/Options.php:383
+#: includes/Customize/Options.php:473
 #, fuzzy, php-format
 msgid "Colors: %s"
 msgstr "Farby: %s"
@@ -267,11 +261,11 @@ msgctxt "Customizer color section title"
 msgid "Editor palette"
 msgstr "Paleta editora"
 
-#: includes/Customize/Colors.php:172 includes/Customize/Options.php:221
-#: includes/Customize/Options.php:254 includes/Customize/Options.php:312
-#: includes/Customize/Options.php:378 includes/Customize/Options.php:468
-#: includes/Customize/Options.php:521 includes/Customize/Options.php:594
-#: includes/Customize/Options.php:773 includes/Customize/Options.php:801
+#: includes/Customize/Colors.php:172 includes/Customize/Options.php:229
+#: includes/Customize/Options.php:262 includes/Customize/Options.php:320
+#: includes/Customize/Options.php:386 includes/Customize/Options.php:476
+#: includes/Customize/Options.php:529 includes/Customize/Options.php:602
+#: includes/Customize/Options.php:781 includes/Customize/Options.php:809
 #: includes/Tool/Page_Builder.php:124
 #, fuzzy
 msgctxt "Customizer panel title."
@@ -303,212 +297,212 @@ msgstr "Nastavte parameter `content` pre pole HTML."
 msgid "Press CTRL key for multiple selection."
 msgstr "Pridržte klávesu CTRL pre viacnásobnú voľbu."
 
-#: includes/Customize/Options.php:129
+#: includes/Customize/Options.php:137
 #, fuzzy
 msgctxt "Variable image height."
 msgid "variable height"
 msgstr "variabilná výška"
 
-#: includes/Customize/Options.php:131
+#: includes/Customize/Options.php:139
 #: templates/parts/admin/media-image-sizes.php:59
 #, fuzzy
 msgid "cropped"
 msgstr "orezaný"
 
-#: includes/Customize/Options.php:131
+#: includes/Customize/Options.php:139
 #: templates/parts/admin/media-image-sizes.php:59
 #, fuzzy
 msgid "scaled"
 msgstr "zmenšený"
 
-#: includes/Customize/Options.php:143
+#: includes/Customize/Options.php:151
 msgid "Select a block"
 msgstr "Zvoliť blok"
 
-#: includes/Customize/Options.php:163
+#: includes/Customize/Options.php:171
 #, fuzzy
 msgid "Max logo image height (px)"
 msgstr "Maximálna výška obrázka loga (px)"
 
-#: includes/Customize/Options.php:164
+#: includes/Customize/Options.php:172
 #, fuzzy
 msgid "Do not forget to set the logo max height."
 msgstr "Nezabudnite nastaviť maximálnu výšku loga."
 
-#: includes/Customize/Options.php:164
+#: includes/Customize/Options.php:172
 #, fuzzy
 msgid "Upload twice as big image to make your logo ready for high DPI screens."
 msgstr ""
 "Nahrajte dvakrát tak veľký obrázok, aby bolo logo pripravené pre obrazovky s "
 "vysokým DPI."
 
-#: includes/Customize/Options.php:191
+#: includes/Customize/Options.php:199
 msgid "Display site title & tagline"
 msgstr "Zobraziť názov a slogan stránky"
 
-#: includes/Customize/Options.php:203
+#: includes/Customize/Options.php:211
 msgid "Site title position"
 msgstr "Pozícia názvu stránky"
 
-#: includes/Customize/Options.php:206
+#: includes/Customize/Options.php:214
 msgid "First item in header"
 msgstr "Prvá položka v hlavičke"
 
-#: includes/Customize/Options.php:207
+#: includes/Customize/Options.php:215
 msgid "Last item in header"
 msgstr "Posledná položka v hlavičke"
 
-#: includes/Customize/Options.php:222
+#: includes/Customize/Options.php:230
 #, fuzzy
 msgid "Theme Credits"
 msgstr "O téme"
 
 #. translators: 1: linked theme name, 2: theme author name.
-#: includes/Customize/Options.php:226
+#: includes/Customize/Options.php:234
 #, fuzzy, php-format
 msgid "%1$s is a WordPress theme developed by %2$s."
 msgstr "%1$s je WordPress téma vytvorená spoločnosťou %2$s."
 
 #. translators: %s: theme author link.
-#: includes/Customize/Options.php:234
+#: includes/Customize/Options.php:242
 #, fuzzy, php-format
 msgid "You can obtain other professional WordPress themes at %s."
 msgstr "Ďalšie profesionálne WordPress témy môžete získať na %s."
 
-#: includes/Customize/Options.php:239
+#: includes/Customize/Options.php:247
 #, fuzzy
 msgid "Thank you for using a theme by WebMan Design!"
 msgstr "Ďakujeme, že používate tému od WebMan Design!"
 
-#: includes/Customize/Options.php:252
+#: includes/Customize/Options.php:260
 #, fuzzy
 msgctxt "Customizer color section title"
 msgid "General"
 msgstr "Všeobecné"
 
-#: includes/Customize/Options.php:260 includes/Customize/Options.php:355
-#: includes/Customize/Options.php:407 includes/Customize/Options.php:445
-#: includes/Customize/Options.php:488
+#: includes/Customize/Options.php:268 includes/Customize/Options.php:363
+#: includes/Customize/Options.php:415 includes/Customize/Options.php:453
+#: includes/Customize/Options.php:496
 #, fuzzy
 msgid "Text color"
 msgstr "Farba textu"
 
-#: includes/Customize/Options.php:274
+#: includes/Customize/Options.php:282
 #, fuzzy
 msgid "Headings color"
 msgstr "Farba nadpisov"
 
-#: includes/Customize/Options.php:289
+#: includes/Customize/Options.php:297
 #, fuzzy
 msgid "Decorative border color"
 msgstr "Farba dekoratívneho okraja"
 
-#: includes/Customize/Options.php:310
+#: includes/Customize/Options.php:318
 #, fuzzy
 msgctxt "Customizer color section title"
 msgid "Accents"
 msgstr "Akcentované"
 
-#: includes/Customize/Options.php:335
+#: includes/Customize/Options.php:343
 #, fuzzy
 msgid "Button"
 msgstr "Tlačidlo"
 
-#: includes/Customize/Options.php:341 includes/Customize/Options.php:393
-#: includes/Customize/Options.php:431 includes/Customize/Options.php:474
+#: includes/Customize/Options.php:349 includes/Customize/Options.php:401
+#: includes/Customize/Options.php:439 includes/Customize/Options.php:482
 #, fuzzy
 msgid "Background color"
 msgstr "Farba pozadia"
 
-#: includes/Customize/Options.php:376
+#: includes/Customize/Options.php:384
 #, fuzzy
 msgctxt "Customizer color section title"
 msgid "Header"
 msgstr "Záhlavie"
 
-#: includes/Customize/Options.php:386
+#: includes/Customize/Options.php:394
 msgid "Site navigation"
 msgstr "Navigácia webstránky"
 
-#: includes/Customize/Options.php:387
+#: includes/Customize/Options.php:395
 msgid "Primary menu location sub-menu colors."
 msgstr "Farby vnoreného menu primárneho menu umiestnenia."
 
-#: includes/Customize/Options.php:424
+#: includes/Customize/Options.php:432
 #, fuzzy
 msgid "Search form"
 msgstr "Formulár vyhľadávania"
 
-#: includes/Customize/Options.php:425
+#: includes/Customize/Options.php:433
 msgid "Pop-up search form colors."
 msgstr "Farby vyskakovacieho formulára vyhľadávania."
 
-#: includes/Customize/Options.php:466
+#: includes/Customize/Options.php:474
 #, fuzzy
 msgctxt "Customizer color section title"
 msgid "Footer"
 msgstr "Pätka"
 
-#: includes/Customize/Options.php:502
+#: includes/Customize/Options.php:510
 #, fuzzy
 msgid "Link color"
 msgstr "Farba odkazu"
 
-#: includes/Customize/Options.php:520
+#: includes/Customize/Options.php:528
 #, fuzzy
 msgctxt "Customizer section title."
 msgid "Layout"
 msgstr "Rozloženie"
 
-#: includes/Customize/Options.php:529
+#: includes/Customize/Options.php:537
 #, fuzzy
 msgctxt "A website container."
 msgid "Site Container"
 msgstr "Kontajner webovej stránky"
 
-#: includes/Customize/Options.php:535
+#: includes/Customize/Options.php:543
 #, fuzzy
 msgid "Content width"
 msgstr "Šírka obsahu"
 
-#: includes/Customize/Options.php:537 includes/Customize/Options.php:563
-#: includes/Customize/Options.php:689 includes/Customize/Options.php:702
-#: includes/Customize/Options.php:715 includes/Customize/Options.php:728
+#: includes/Customize/Options.php:545 includes/Customize/Options.php:571
+#: includes/Customize/Options.php:697 includes/Customize/Options.php:710
+#: includes/Customize/Options.php:723 includes/Customize/Options.php:736
 #, fuzzy
 msgid "Default value:"
 msgstr "Predvolená hodnota:"
 
-#: includes/Customize/Options.php:539
+#: includes/Customize/Options.php:547
 #, fuzzy
 msgid "This width is applied on archive pages, wide-aligned blocks&hellip;"
 msgstr "Táto šírka sa aplikuje na stránky archívov, na široké bloky&hellip;"
 
-#: includes/Customize/Options.php:561
+#: includes/Customize/Options.php:569
 #, fuzzy
 msgid "Entry content width"
 msgstr "Šírka obsahu stránky"
 
-#: includes/Customize/Options.php:565
+#: includes/Customize/Options.php:573
 msgid "This width is applied on post and page actual content elements."
 msgstr "Táto šírka sa aplikuje na samotné prvky obsahu stránky."
 
-#: includes/Customize/Options.php:567
+#: includes/Customize/Options.php:575
 #, fuzzy
 msgid "Set this cautiously for the best readability."
 msgstr "Nastavte ju s ohľadom na najlepšiu čitateľnosť."
 
-#: includes/Customize/Options.php:593
+#: includes/Customize/Options.php:601
 #, fuzzy
 msgctxt "Customizer section title."
 msgid "Typography"
 msgstr "Písmo"
 
-#: includes/Customize/Options.php:600
+#: includes/Customize/Options.php:608
 #, fuzzy
 msgid "Basic font size in px"
 msgstr "Základná veľkosť písma v px"
 
-#: includes/Customize/Options.php:601
+#: includes/Customize/Options.php:609
 #, fuzzy
 msgid ""
 "All other font sizes are calculated automatically from this basic font size."
@@ -516,32 +510,32 @@ msgstr ""
 "Všetky ostatné veľkosti písma budú automaticky vypočítané z tejto základnej "
 "hodnoty."
 
-#: includes/Customize/Options.php:623
+#: includes/Customize/Options.php:631
 msgid "Header font size in px"
 msgstr "Veľkosť písma hlavičky v px"
 
-#: includes/Customize/Options.php:645
+#: includes/Customize/Options.php:653
 msgid "Footer font size in px"
 msgstr "Veľkosť písma pätičky v px"
 
-#: includes/Customize/Options.php:669
+#: includes/Customize/Options.php:677
 #, fuzzy
 msgid "Font families setup"
 msgstr "Nastavenie typov písma"
 
 #. translators: %s: customizer option values.
-#: includes/Customize/Options.php:674
+#: includes/Customize/Options.php:682
 #, fuzzy, php-format
 msgid "Values of %s set web safe system font families."
 msgstr ""
 "Hodnoty %s nastavia typy písma bezpečne použiteľné na webových stránkach."
 
-#: includes/Customize/Options.php:679
+#: includes/Customize/Options.php:687
 #, fuzzy
 msgid "You can use any Google Fonts with this theme."
 msgstr "S touto témou môžete použiť akýkoľvek z Google Fonts."
 
-#: includes/Customize/Options.php:681
+#: includes/Customize/Options.php:689
 #, fuzzy
 msgid ""
 "Just input the Google Fonts font family name into the fields below, choose "
@@ -550,101 +544,101 @@ msgstr ""
 "Jednoducho do poľa zadajte názov typu písma Google Fonts, zvoľte jazyk a ste "
 "hotoví!"
 
-#: includes/Customize/Options.php:688
+#: includes/Customize/Options.php:696
 #, fuzzy
 msgid "Global font"
 msgstr "Globálny typ písma"
 
-#: includes/Customize/Options.php:701
+#: includes/Customize/Options.php:709
 #, fuzzy
 msgid "Headings font"
 msgstr "Písmo nadpisov"
 
-#: includes/Customize/Options.php:714
+#: includes/Customize/Options.php:722
 #, fuzzy
 msgid "Site title font"
 msgstr "Typ písma názvu stránky"
 
-#: includes/Customize/Options.php:727
+#: includes/Customize/Options.php:735
 msgid "Alternative font"
 msgstr "Alternatívne písmo"
 
-#: includes/Customize/Options.php:728
+#: includes/Customize/Options.php:736
 msgid "Used for quotes, for example."
 msgstr "Používa sa napríklad v citáciách."
 
-#: includes/Customize/Options.php:741
+#: includes/Customize/Options.php:749
 #, fuzzy
 msgid "Enable theme Google Fonts loading"
 msgstr "Povoliť načítavanie Google Fonts témou"
 
-#: includes/Customize/Options.php:742
+#: includes/Customize/Options.php:750
 #, fuzzy
 msgid "In case you are loading fonts via plugin, disable this option."
 msgstr ""
 "V prípade, že načítavate typy písma pomocou pluginu, vypnite túto možnosť."
 
-#: includes/Customize/Options.php:748
+#: includes/Customize/Options.php:756
 #, fuzzy
 msgid "Languages"
 msgstr "Jazyky"
 
-#: includes/Customize/Options.php:750
+#: includes/Customize/Options.php:758
 #, fuzzy
 msgid "Not all Google Fonts support all languages."
 msgstr "Nie všetky Google Fonts podporujú všetky jazyky."
 
-#: includes/Customize/Options.php:752
+#: includes/Customize/Options.php:760
 #, fuzzy
 msgid "Please check on Google Fonts website to make sure."
 msgstr "Skontrolujte podporu na stránkach Google Fonts."
 
-#: includes/Customize/Options.php:755
+#: includes/Customize/Options.php:763
 #, fuzzy
 msgid "Latin"
 msgstr "Latinka"
 
-#: includes/Customize/Options.php:756
+#: includes/Customize/Options.php:764
 #, fuzzy
 msgid "Latin Extended"
 msgstr "Rozšírená latinka"
 
-#: includes/Customize/Options.php:757
+#: includes/Customize/Options.php:765
 #, fuzzy
 msgid "Cyrillic"
 msgstr "Cyrilika"
 
-#: includes/Customize/Options.php:758
+#: includes/Customize/Options.php:766
 #, fuzzy
 msgid "Cyrillic Extended"
 msgstr "Rozšírená cyrilika"
 
-#: includes/Customize/Options.php:759
+#: includes/Customize/Options.php:767
 #, fuzzy
 msgid "Greek"
 msgstr "Gréčtina"
 
-#: includes/Customize/Options.php:760
+#: includes/Customize/Options.php:768
 #, fuzzy
 msgid "Greek Extended"
 msgstr "Rozšírená gréčtina"
 
-#: includes/Customize/Options.php:761
+#: includes/Customize/Options.php:769
 #, fuzzy
 msgid "Vietnamese"
 msgstr "Vietnamčina"
 
-#: includes/Customize/Options.php:772
+#: includes/Customize/Options.php:780
 #, fuzzy
 msgctxt "Customizer section title."
 msgid "Posts"
 msgstr "Články"
 
-#: includes/Customize/Options.php:779
+#: includes/Customize/Options.php:787
 msgid "Post thumbnail aspect ratio"
 msgstr "Pomer strán prezentačného obrázka príspevku"
 
-#: includes/Customize/Options.php:780
+#: includes/Customize/Options.php:788
 msgid ""
 "Note that if you already have images uploaded to your website, you need to "
 "regenerate their sizes to apply this change."
@@ -652,41 +646,41 @@ msgstr ""
 "Upozorňujeme, že ak už máte obrázky na webstránke nahrané, musíte "
 "regenerovať ich veľkosti, aby sa táto zmena aplikovala."
 
-#: includes/Customize/Options.php:780
+#: includes/Customize/Options.php:788
 msgid "You can use a plugin for that &rarr;"
 msgstr "Môžete na to využiť plugin &rarr;"
 
-#: includes/Customize/Options.php:780
+#: includes/Customize/Options.php:788
 msgid "(This option can not be previewed here, only on your live website.)"
 msgstr ""
 "(Náhľad tohto nastavenia je možné prezrieť iba na živej webstránke, nie tu.)"
 
-#: includes/Customize/Options.php:783
+#: includes/Customize/Options.php:791
 msgid "Keep original image aspect ratio"
 msgstr "Zachovať pôvodný pomer strán obrázka"
 
-#: includes/Customize/Options.php:800
+#: includes/Customize/Options.php:808
 #, fuzzy
 msgctxt "Customizer section title."
 msgid "Others"
 msgstr "Ostatné"
 
-#: includes/Customize/Options.php:807
+#: includes/Customize/Options.php:815
 #, fuzzy
 msgid "Show \"Welcome\" page"
 msgstr "Zobraziť stránku \"Vitajte\""
 
-#: includes/Customize/Options.php:808
+#: includes/Customize/Options.php:816
 #, fuzzy
 msgid "Under \"Appearance\" WordPress dashboard menu."
 msgstr "V administračnom menu \"Vzhľad\"."
 
-#: includes/Customize/Options.php:816
+#: includes/Customize/Options.php:824
 #, fuzzy
 msgid "Enable mobile navigation"
 msgstr "Povoliť mobilnú navigáciu"
 
-#: includes/Customize/Options.php:817
+#: includes/Customize/Options.php:825
 #, fuzzy
 msgid ""
 "If your website navigation is very simple and you do not want to use the "
@@ -695,20 +689,34 @@ msgstr ""
 "V prípade, že je navigácia vašej webstránky veľmi jednoduchá, je možné "
 "vypnúť funkcionalitu mobilnej navigácie."
 
-#: includes/Customize/Options.php:824
+#: includes/Customize/Options.php:831
+msgid "Content"
+msgstr "Obsah"
+
+#: includes/Customize/Options.php:833
+msgid ""
+"Create and edit your content with block editor in Reusable Blocks manager."
+msgstr ""
+"Vytvorte alebo upravte obsah editorom blokov v správcovi opakovane "
+"použiteľných blokov."
+
+#: includes/Customize/Options.php:835
+msgid "Open Reusable Blocks manager in a new window now &rarr;"
+msgstr "Otvoriť správcu opakovane použiteľných blokov v novom okne &rarr;"
+
+#: includes/Customize/Options.php:837
+msgid "Then assign created reusable blocks for display below."
+msgstr ""
+"Následne zobrazte vytvorené opakovane použiteľné bloky priradením nižšie."
+
+#: includes/Customize/Options.php:843
 #, fuzzy
 msgid "Footer content"
 msgstr "Obsah pätičky"
 
-#: includes/Customize/Options.php:825
-msgid "Edit or create your footer content in the Reusable Blocks manager."
-msgstr ""
-"Upravte alebo vytvorte obsah pätičky v správcovi opakovane použiteľných "
-"blokov."
-
-#: includes/Customize/Options.php:825
-msgid "Open Reusable Blocks manager in a new window now &rarr;"
-msgstr "Otvoriť správcu opakovane použiteľných blokov v novom okne &rarr;"
+#: includes/Customize/Options.php:852
+msgid "Error 404 content"
+msgstr "Obsah chyby 404"
 
 #: includes/Entry/Component.php:241
 msgctxt "Added to posts and pages that are missing titles."
@@ -1591,8 +1599,8 @@ msgstr "Kontakt: S obrázkom v strede"
 #: templates/parts/block/pattern-features-single-large.php:32
 #: templates/parts/block/pattern-features-single.php:33
 #: templates/parts/block/pattern-footer.php:38
-#: templates/parts/block/pattern-gallery-captions.php:35
 #: templates/parts/block/pattern-gallery-captions.php:36
+#: templates/parts/block/pattern-gallery-captions.php:37
 #: templates/parts/block/pattern-gallery-no-gap.php:34
 #: templates/parts/block/pattern-image-padding-left.php:31
 #: templates/parts/block/pattern-image-padding-right.php:31
@@ -1606,8 +1614,8 @@ msgstr "Kontakt: S obrázkom v strede"
 #: templates/parts/block/pattern-logos.php:49
 #: templates/parts/block/pattern-portfolio-project-gallery.php:34
 #: templates/parts/block/pattern-portfolio-project-image.php:31
-#: templates/parts/block/pattern-team-2.php:43
-#: templates/parts/block/pattern-team-2.php:59
+#: templates/parts/block/pattern-team-2.php:44
+#: templates/parts/block/pattern-team-2.php:60
 #: templates/parts/block/pattern-team.php:52
 #: templates/parts/block/pattern-testimonials-single-bg.php:60
 #: templates/parts/block/pattern-text-with-image.php:32
@@ -1709,10 +1717,10 @@ msgid "Features: Parallax"
 msgstr "Vlastnosti: Paralaxa"
 
 #: templates/parts/block/pattern-features-parallax.php:22
-#: templates/parts/block/pattern-gallery-captions.php:22
+#: templates/parts/block/pattern-gallery-captions.php:23
 #: templates/parts/block/pattern-gallery-no-gap.php:22
 #: templates/parts/block/pattern-logos.php:22
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 #: templates/parts/block/pattern-text-parallax.php:22
 #: templates/parts/block/pattern-text-with-image.php:22
@@ -1745,7 +1753,7 @@ msgctxt "Block pattern title."
 msgid "Site footer: With logo, links, description and social links"
 msgstr "Pätička: S logom, odkazmi, popisom a sociálnymi odkazmi"
 
-#: templates/parts/block/pattern-gallery-captions.php:20
+#: templates/parts/block/pattern-gallery-captions.php:21
 msgctxt "Block pattern title."
 msgid "Gallery: With captions"
 msgstr "Galéria: S popiskami"
@@ -1812,7 +1820,7 @@ msgid "heading"
 msgstr "nadpis"
 
 #: templates/parts/block/pattern-intro-2-images.php:22
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 msgid "gallery"
 msgstr "galéria"
@@ -1892,27 +1900,27 @@ msgctxt "Block pattern title."
 msgid "Question and answer"
 msgstr "Otázka a odpoveď"
 
-#: templates/parts/block/pattern-team-2.php:20
+#: templates/parts/block/pattern-team-2.php:21
 msgctxt "Block pattern title."
 msgid "Team: 2 large descriptions"
 msgstr "Tím: 2 veľké popisy"
 
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 msgid "staff"
 msgstr "zamestnanci"
 
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 msgid "employees"
 msgstr "zamestnanci"
 
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 msgid "people"
 msgstr "ľudia"
 
-#: templates/parts/block/pattern-team-2.php:22
+#: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
 #: templates/parts/block/pattern-testimonials-single-bg.php:22
 msgid "photo"
@@ -1993,6 +2001,12 @@ msgid_plural "We found %d results for your search."
 msgstr[0] "Našli sme %d výsledok vášho vyhľadávania."
 msgstr[1] "Našli sme %d výsledky vášho vyhľadávania."
 msgstr[2] "Našli sme %d výsledkov vášho vyhľadávania."
+
+#: templates/parts/content/content-404.php:19
+#, fuzzy
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Vyzerá to tak, že sa nenašli žiadne záznamy. Možno skúste vyhľadávanie?"
 
 #: templates/parts/content/content-attachment-image.php:31
 #, fuzzy

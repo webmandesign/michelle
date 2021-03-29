@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.6
  */
 
 namespace WebManDesign\Michelle\Footer;
@@ -20,7 +21,8 @@ class Component implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.6
 	 *
 	 * @return  void
 	 */
@@ -33,7 +35,6 @@ class Component implements Component_Interface {
 
 			// Actions
 
-				add_action( 'tha_footer_top', __CLASS__ . '::footer' );
 				add_action( 'tha_footer_bottom', __CLASS__ . '::site_info', 100 );
 
 				add_action( 'wp', __CLASS__ . '::disable', 30 );
@@ -153,21 +154,6 @@ class Component implements Component_Interface {
 			return $pre;
 
 	} // /skip_links_no_footer
-
-	/**
-	 * Site footer content.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @return  void
-	 */
-	public static function footer() {
-
-		// Output
-
-			get_template_part( 'templates/parts/footer/block-area', 'footer' );
-
-	} // /footer
 
 	/**
 	 * Site info.
