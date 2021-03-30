@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.0.7
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -109,7 +109,7 @@ class Options implements Component_Interface {
 	 * Sets theme options array.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.6
+	 * @version  1.0.7
 	 *
 	 * @param  array $options
 	 *
@@ -733,8 +733,8 @@ class Options implements Component_Interface {
 							'type'              => 'text',
 							'id'                => 'typography_font_alt',
 							'label'             => esc_html__( 'Alternative font', 'michelle' ),
-							'description'       => esc_html__( 'Used for quotes, for example.', 'michelle' ) . ' ' . esc_html__( 'Default value:', 'michelle' ) . ' <code>Georgia, serif</code>',
-							'default'           => 'Georgia, serif',
+							'description'       => esc_html__( 'Used for quotes, for example.', 'michelle' ) . ' ' . esc_html__( 'Default value:', 'michelle' ) . ' <code>Inter, sans-serif</code>',
+							'default'           => 'Inter, sans-serif',
 							'datalist'          => $font_families,
 							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
 							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',

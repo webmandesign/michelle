@@ -4,12 +4,8 @@
 
 	&.is-style-large {
 		padding: 0;
-		font-size: 1.5em;
+		font-size: var(--typography_heading_size_3);
 		line-height: 1.25;
-
-		@include media( map_get( $breakpoint, 'l' ) ) {
-			font-size: 2em;
-		}
 
 		p {
 			font-size: 1em;

@@ -1,5 +1,21 @@
 # Michelle Changelog
 
+## 1.0.7, 20210330
+
+### Updated
+- Quote styles
+- Entry meta in posts list styles
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/content.scss
+	assets/scss/global.scss
+	includes/Customize/Options.php
+
+
 ## 1.0.6, 20210330
 
 ### Added

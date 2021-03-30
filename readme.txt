@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.6 =
-20210330 Adding error 404 customization option, updating styles and optimizing fonts loading.
+= 1.0.7 =
+20210330 Updating quote and posts list styles.
 
 
 == Resources ==
