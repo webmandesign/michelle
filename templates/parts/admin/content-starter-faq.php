@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.0.9
  */
 
 // Exit if accessed directly.
@@ -48,7 +48,7 @@ if ( ! is_customize_preview() ) {
 <div class="wp-block-group alignfull is-style-no-margin-vertical"><div class="wp-block-group__inner-container"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"62%"} -->
 <div class="wp-block-column" style="flex-basis:62%"><!-- wp:heading -->
-<h2>1. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus lacinia?</h2>
+<h2>1. Lorem ipsum dolor sit amet elit ridiculus lacinia?</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
@@ -142,7 +142,7 @@ if ( ! is_customize_preview() ) {
 <div class="wp-block-group alignfull is-style-no-margin-vertical"><div class="wp-block-group__inner-container"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"62%"} -->
 <div class="wp-block-column" style="flex-basis:62%"><!-- wp:heading -->
-<h2>4. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus lacinia?</h2>
+<h2>4. Lorem ipsum dolor sit amet elit ridiculus lacinia?</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 

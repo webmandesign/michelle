@@ -1,5 +1,22 @@
 # Michelle Changelog
 
+## 1.0.9, 20210330
+
+### Fixed
+- Post meta styles on single post page
+
+### Updated
+- Starter content
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/content.scss
+	templates/parts/admin/content-starter-excerpt.php
+	templates/parts/admin/content-starter-faq.php
+
+
 ## 1.0.8, 20210330
 
 ### Fixed

@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.8 =
-20210330 Fixing styles and block patterns.
+= 1.0.9 =
+20210330 Fixing styles and updating starter content.
 
 
 == Resources ==
