@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.7 =
-20210330 Updating quote and posts list styles.
+= 1.0.8 =
+20210330 Fixing styles and block patterns.
 
 
 == Resources ==

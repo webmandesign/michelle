@@ -1,5 +1,22 @@
 # Michelle Changelog
 
+## 1.0.8, 20210330
+
+### Fixed
+- Quote styles
+- Entry meta in featured posts list styles
+- Removing `<em>` from testimonial block pattern
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/content.scss
+	assets/scss/global.scss
+	templates/parts/block/pattern-testimonials-single-bg.php
+
+
 ## 1.0.7, 20210330
 
 ### Updated

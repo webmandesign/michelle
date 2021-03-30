@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.8
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -41,7 +42,7 @@ $image2 = Starter::get_image_url( '1to1' );
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"80%"} -->
 <div class="wp-block-column" style="flex-basis:80%"><!-- wp:quote {"className":"is-style-large"} -->
-<blockquote class="wp-block-quote is-style-large"><p><em>Lorem ipsum dolor sit amet consectetur adipiscing elit vulputate, sociis per ultricies dictum tincidunt class tempus mi, tristique ligula nostra natoque pretium.</em></p></blockquote>
+<blockquote class="wp-block-quote is-style-large"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit vulputate, sociis per ultricies dictum tincidunt class tempus mi, tristique ligula nostra natoque pretium.</p></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column -->
 
