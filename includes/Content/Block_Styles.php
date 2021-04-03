@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.10
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -84,7 +85,8 @@ class Block_Styles implements Component_Interface {
 	/**
 	 * Gets theme block styles setup array.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.10
 	 *
 	 * @return  array
 	 */
@@ -258,6 +260,13 @@ class Block_Styles implements Component_Interface {
 					'blocks' => array(
 						'core/heading',
 						'core/paragraph',
+					),
+				),
+
+				'variable' => array(
+					'label'  => _x( 'Variable', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/gallery',
 					),
 				),
 

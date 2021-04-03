@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-03-29 23:49+0200\n"
+"POT-Creation-Date: 2021-04-03 20:42+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -76,117 +76,122 @@ msgstr ""
 msgid "Please upgrade and try again."
 msgstr ""
 
-#: includes/Content/Block_Styles.php:98
+#: includes/Content/Block_Styles.php:100
 msgctxt "Block style label."
 msgid "Double-line"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:105
+#: includes/Content/Block_Styles.php:107
 msgctxt "Block style label."
 msgid "Double-line wide"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:112
+#: includes/Content/Block_Styles.php:114
 msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:125
+#: includes/Content/Block_Styles.php:127
 msgctxt "Block style label."
 msgid "Has padding"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:132
+#: includes/Content/Block_Styles.php:134
 msgctxt "Block style label."
 msgid "Hide caption"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:139
+#: includes/Content/Block_Styles.php:141
 msgctxt "Block style label."
 msgid "Inner shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:148
+#: includes/Content/Block_Styles.php:150
 msgctxt "Block style label."
 msgid "Large buttons"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:155
+#: includes/Content/Block_Styles.php:157
 msgctxt "Block style label."
 msgid "Media on top"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:162
+#: includes/Content/Block_Styles.php:164
 msgctxt "Block style label."
 msgid "Narrow content"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:169
+#: includes/Content/Block_Styles.php:171
 msgctxt "Block style label."
 msgid "No gaps"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:177
+#: includes/Content/Block_Styles.php:179
 msgctxt "Block style label."
 msgid "Has no vertical margin"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:191
+#: includes/Content/Block_Styles.php:193
 msgctxt "Block style label."
 msgid "Has no padding"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:199
+#: includes/Content/Block_Styles.php:201
 msgctxt "Block style label."
 msgid "Overlap gradient"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:206
+#: includes/Content/Block_Styles.php:208
 msgctxt "Block style label."
 msgid "Padding left"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:213
+#: includes/Content/Block_Styles.php:215
 msgctxt "Block style label."
 msgid "Padding right"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:220
+#: includes/Content/Block_Styles.php:222
 msgctxt "Block style label."
 msgid "Scale image"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:227
+#: includes/Content/Block_Styles.php:229
 msgctxt "Block style label."
 msgid "Accessibly hidden"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:234
+#: includes/Content/Block_Styles.php:236
 msgctxt "Block style label."
 msgid "Simple"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:241
+#: includes/Content/Block_Styles.php:243
 msgctxt "Block style label."
 msgid "Dark text shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:249
+#: includes/Content/Block_Styles.php:251
 msgctxt "Block style label."
 msgid "Light text shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:257
+#: includes/Content/Block_Styles.php:259
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:265
+#: includes/Content/Block_Styles.php:267
+msgctxt "Block style label."
+msgid "Variable"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:274
 msgctxt "Block style label."
 msgid "Zig-zag"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:272
+#: includes/Content/Block_Styles.php:281
 msgctxt "Block style label."
 msgid "Zig-zag wide"
 msgstr ""
@@ -653,45 +658,45 @@ msgstr ""
 msgid "Published in"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:162
+#: includes/Entry/Page_Template.php:255
 msgid "Logo variation: light"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:163
+#: includes/Entry/Page_Template.php:256
 msgid ""
 "This logo image will be displayed in overlaid header with light color."
 msgstr ""
 
-#: includes/Entry/Page_Template.php:171 includes/Entry/Page_Template.php:176
-#: includes/Entry/Page_Template.php:220 includes/Entry/Page_Template.php:225
+#: includes/Entry/Page_Template.php:264 includes/Entry/Page_Template.php:269
+#: includes/Entry/Page_Template.php:313 includes/Entry/Page_Template.php:318
 msgid "Select logo"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:172 includes/Entry/Page_Template.php:221
+#: includes/Entry/Page_Template.php:265 includes/Entry/Page_Template.php:314
 msgid "Change logo"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:173 includes/Entry/Page_Template.php:222
+#: includes/Entry/Page_Template.php:266 includes/Entry/Page_Template.php:315
 msgid "Remove"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:174 includes/Entry/Page_Template.php:223
+#: includes/Entry/Page_Template.php:267 includes/Entry/Page_Template.php:316
 msgid "Default"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:175 includes/Entry/Page_Template.php:224
+#: includes/Entry/Page_Template.php:268 includes/Entry/Page_Template.php:317
 msgid "No logo selected"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:177 includes/Entry/Page_Template.php:226
+#: includes/Entry/Page_Template.php:270 includes/Entry/Page_Template.php:319
 msgid "Choose logo"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:211
+#: includes/Entry/Page_Template.php:304
 msgid "Logo variation: dark"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:212
+#: includes/Entry/Page_Template.php:305
 msgid "This logo image will be displayed in overlaid header with dark color."
 msgstr ""
 
@@ -1324,6 +1329,7 @@ msgstr ""
 #: templates/parts/block/pattern-features-simple.php:22
 #: templates/parts/block/pattern-features-single-large.php:22
 #: templates/parts/block/pattern-features-single.php:22
+#: templates/parts/block/pattern-features-steps.php:22
 msgid "services"
 msgstr ""
 
@@ -1334,6 +1340,7 @@ msgstr ""
 #: templates/parts/block/pattern-cards.php:22
 #: templates/parts/block/pattern-features-center-icon-1.php:22
 #: templates/parts/block/pattern-features-single.php:22
+#: templates/parts/block/pattern-food-menu.php:22
 msgid "price"
 msgstr ""
 
@@ -1385,6 +1392,7 @@ msgstr ""
 #: templates/parts/block/pattern-gallery-captions.php:36
 #: templates/parts/block/pattern-gallery-captions.php:37
 #: templates/parts/block/pattern-gallery-no-gap.php:34
+#: templates/parts/block/pattern-gallery-variable-with-description.php:38
 #: templates/parts/block/pattern-image-padding-left.php:31
 #: templates/parts/block/pattern-image-padding-right.php:31
 #: templates/parts/block/pattern-intro-2-images.php:40
@@ -1400,7 +1408,7 @@ msgstr ""
 #: templates/parts/block/pattern-team-2.php:44
 #: templates/parts/block/pattern-team-2.php:60
 #: templates/parts/block/pattern-team.php:52
-#: templates/parts/block/pattern-testimonials-single-bg.php:60
+#: templates/parts/block/pattern-testimonials-single-bg.php:61
 #: templates/parts/block/pattern-text-with-image.php:32
 msgid "Image alt text"
 msgstr ""
@@ -1435,6 +1443,7 @@ msgstr ""
 #: templates/parts/block/pattern-cta-centered.php:22
 #: templates/parts/block/pattern-cta-large.php:22
 #: templates/parts/block/pattern-cta-quote.php:22
+#: templates/parts/block/pattern-cta-simple.php:22
 #: templates/parts/block/pattern-cta.php:22
 msgid "button"
 msgstr ""
@@ -1457,6 +1466,11 @@ msgstr ""
 #: templates/parts/block/pattern-cta-quote.php:20
 msgctxt "Block pattern title."
 msgid "Call to action: With quote"
+msgstr ""
+
+#: templates/parts/block/pattern-cta-simple.php:20
+msgctxt "Block pattern title."
+msgid "Call to action: Simple"
 msgstr ""
 
 #: templates/parts/block/pattern-cta.php:20
@@ -1502,6 +1516,7 @@ msgstr ""
 #: templates/parts/block/pattern-features-parallax.php:22
 #: templates/parts/block/pattern-gallery-captions.php:23
 #: templates/parts/block/pattern-gallery-no-gap.php:22
+#: templates/parts/block/pattern-gallery-variable-with-description.php:23
 #: templates/parts/block/pattern-logos.php:22
 #: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
@@ -1526,6 +1541,16 @@ msgctxt "Block pattern title."
 msgid "Features: A large feature"
 msgstr ""
 
+#: templates/parts/block/pattern-features-steps.php:20
+msgctxt "Block pattern title."
+msgid "Features: Steps"
+msgstr ""
+
+#: templates/parts/block/pattern-food-menu.php:20
+msgctxt "Block pattern title."
+msgid "Food menu"
+msgstr ""
+
 #: templates/parts/block/pattern-footer-form.php:20
 msgctxt "Block pattern title."
 msgid "Site footer: With subscription form example"
@@ -1546,12 +1571,18 @@ msgctxt "Block pattern title."
 msgid "Gallery: Full-width with no gaps"
 msgstr ""
 
+#: templates/parts/block/pattern-gallery-variable-with-description.php:21
+msgctxt "Block pattern title."
+msgid "Gallery: Variable, with description"
+msgstr ""
+
 #: templates/parts/block/pattern-heading-hidden-accessibly.php:20
 msgctxt "Block pattern title."
 msgid "Heading: Accessibly hidden"
 msgstr ""
 
 #: templates/parts/block/pattern-heading-hidden-accessibly.php:22
+#: templates/parts/block/pattern-intro-2-columns-text.php:22
 #: templates/parts/block/pattern-intro-2-images.php:22
 #: templates/parts/block/pattern-intro-bg-image.php:22
 #: templates/parts/block/pattern-intro-bg-links.php:22
@@ -1582,11 +1613,12 @@ msgctxt "Block pattern title."
 msgid "Image: Parallax background"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-2-images.php:20
+#: templates/parts/block/pattern-intro-2-columns-text.php:20
 msgctxt "Block pattern title."
-msgid "Intro: With 2 images and description"
+msgid "Intro: Centered heading with 2 columns text"
 msgstr ""
 
+#: templates/parts/block/pattern-intro-2-columns-text.php:22
 #: templates/parts/block/pattern-intro-2-images.php:22
 #: templates/parts/block/pattern-intro-bg-image.php:22
 #: templates/parts/block/pattern-intro-bg-links.php:22
@@ -1600,6 +1632,11 @@ msgstr ""
 #: templates/parts/block/pattern-intro-overlap.php:22
 #: templates/parts/block/pattern-intro-with-description.php:22
 msgid "heading"
+msgstr ""
+
+#: templates/parts/block/pattern-intro-2-images.php:20
+msgctxt "Block pattern title."
+msgid "Intro: With 2 images and description"
 msgstr ""
 
 #: templates/parts/block/pattern-intro-2-images.php:22
@@ -1705,7 +1742,7 @@ msgstr ""
 
 #: templates/parts/block/pattern-team-2.php:23
 #: templates/parts/block/pattern-team.php:22
-#: templates/parts/block/pattern-testimonials-single-bg.php:22
+#: templates/parts/block/pattern-testimonials-single-bg.php:23
 msgid "photo"
 msgstr ""
 
@@ -1714,12 +1751,12 @@ msgctxt "Block pattern title."
 msgid "Team: 4 members"
 msgstr ""
 
-#: templates/parts/block/pattern-testimonials-single-bg.php:20
+#: templates/parts/block/pattern-testimonials-single-bg.php:21
 msgctxt "Block pattern title."
 msgid "Testimonial: With background image"
 msgstr ""
 
-#: templates/parts/block/pattern-testimonials-single-bg.php:22
+#: templates/parts/block/pattern-testimonials-single-bg.php:23
 #: templates/parts/block/pattern-testimonials-single.php:22
 #: templates/parts/block/pattern-testimonials.php:22
 msgid "quote"
@@ -1735,9 +1772,24 @@ msgctxt "Block pattern title."
 msgid "Testimonials"
 msgstr ""
 
+#: templates/parts/block/pattern-text-2-columns-wider-heading.php:20
+msgctxt "Block pattern title."
+msgid "Text in 2 columns with wider heading"
+msgstr ""
+
+#: templates/parts/block/pattern-text-extra-hierarchy.php:20
+msgctxt "Block pattern title."
+msgid "Text with extra hierarchy"
+msgstr ""
+
 #: templates/parts/block/pattern-text-heading-columns.php:20
 msgctxt "Block pattern title."
 msgid "Text with heading in columns"
+msgstr ""
+
+#: templates/parts/block/pattern-text-large-lead.php:20
+msgctxt "Block pattern title."
+msgid "Text with large subheading"
 msgstr ""
 
 #: templates/parts/block/pattern-text-parallax.php:20

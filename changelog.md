@@ -1,5 +1,43 @@
 # Michelle Changelog
 
+## 1.0.10, 20210403
+
+### Added
+- New block patterns
+- New block styles
+- Allowing page templates to set custom body classes
+
+### Updated
+- Search results page title font size
+- Localization
+
+### Fixed
+- Outlined button block padding
+- Gallery block max width in editor
+- Last child fullwidth block covering post meta on single post pages
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/content.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	includes/Content/Block_Patterns.php
+	includes/Content/Block_Styles.php
+	includes/Entry/Page_Template.php
+	languages/*.*
+	templates/parts/block/pattern-cta-simple.php
+	templates/parts/block/pattern-features-steps.php
+	templates/parts/block/pattern-food-menu.php
+	templates/parts/block/pattern-gallery-variable-with-description.php
+	templates/parts/block/pattern-intro-2-columns-text.php
+	templates/parts/block/pattern-text-2-columns-wider-heading.php
+	templates/parts/block/pattern-text-extra-hierarchy.php
+	templates/parts/block/pattern-text-large-lead.php
+
+
 ## 1.0.9, 20210330
 
 ### Fixed

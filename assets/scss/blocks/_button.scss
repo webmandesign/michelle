@@ -40,8 +40,13 @@
 
 }
 
-.is-style-outline .wp-block-button__link,
+.is-style-outline > .wp-block-button__link,
 .wp-block-button__link.is-style-outline {
+	$button_padding_vertical : $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 );
+	$border_width : 1px;
+
+	padding-top: calc( #{$button_padding_vertical} - #{$border_width} );
+	padding-bottom: calc( #{$button_padding_vertical} - #{$border_width} );
 	color: inherit;
 }
 

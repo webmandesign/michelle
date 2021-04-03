@@ -92,7 +92,7 @@
 	margin-top: var(--content_padding_negative);
 }
 
-.is-singular:not([class*="-content-only"]) .entry-content-singular > .alignfull:last-child,
+.is-singular:not([class*="-content-only"]):not(.single-post) .entry-content-singular > .alignfull:last-child,
 .error-404-content > .alignfull:last-child {
 	margin-bottom: var(--content_padding_negative);
 }

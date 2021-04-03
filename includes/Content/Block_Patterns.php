@@ -13,7 +13,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.10
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -135,7 +136,8 @@ class Block_Patterns implements Component_Interface {
 	 * The theme will look for a `templates/parts/block/pattern-{{$id}}.php` file
 	 * based on the array values (the `$id` in the filename).
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.10
 	 *
 	 * @return  array
 	 */
@@ -160,6 +162,7 @@ class Block_Patterns implements Component_Interface {
 				'cta-centered',
 				'cta-large',
 				'cta-quote',
+				'cta-simple',
 				'features-bg-image',
 				'features-bg-shadow',
 				'features-center-icon-1',
@@ -171,14 +174,18 @@ class Block_Patterns implements Component_Interface {
 				'features-simple',
 				'features-single',
 				'features-single-large',
+				'features-steps',
+				'food-menu',
 				'footer',
 				'footer-form',
 				'gallery-captions',
 				'gallery-no-gap',
+				'gallery-variable-with-description',
 				'heading-hidden-accessibly',
 				'image-padding-left',
 				'image-padding-right',
 				'image-parallax',
+				'intro-2-columns-text',
 				'intro-2-images',
 				'intro-bg-image',
 				'intro-bg-links',
@@ -200,7 +207,10 @@ class Block_Patterns implements Component_Interface {
 				'testimonials',
 				'testimonials-single',
 				'testimonials-single-bg',
+				'text-2-columns-wider-heading',
+				'text-extra-hierarchy',
 				'text-heading-columns',
+				'text-large-lead',
 				'text-parallax',
 				'text-with-image',
 			);

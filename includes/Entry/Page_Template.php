@@ -9,7 +9,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.10
  */
 
 namespace WebManDesign\Michelle\Entry;
@@ -26,9 +27,19 @@ defined( 'ABSPATH' ) || exit;
 class Page_Template implements Component_Interface {
 
 	/**
+	 * Name of cached data transient.
+	 *
+	 * @since   1.0.10
+	 * @access  public
+	 * @var     string
+	 */
+	public static $transient_cache_body_class = 'michelle_cache_template_body_class';
+
+	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.10
 	 *
 	 * @return  void
 	 */
@@ -38,11 +49,15 @@ class Page_Template implements Component_Interface {
 
 			// Actions
 
+				add_action( 'michelle/upgrade', __CLASS__ . '::body_class_cache_flush' );
+
 				add_action( 'customize_register', __CLASS__ . '::customize_register', 100 );
 
 				add_action( 'tha_header_before', __CLASS__ . '::set_custom_logo' );
 
 			// Filters
+
+				add_filter( 'body_class', __CLASS__ . '::body_class' );
 
 				add_filter( 'theme_templates', __CLASS__ . '::post_templates', 5, 4 );
 
@@ -88,6 +103,84 @@ class Page_Template implements Component_Interface {
 			return array_filter( array_merge( $post_templates, $registered_post_templates ) );
 
 	} // /post_templates
+
+	/**
+	 * HTML body classes.
+	 *
+	 * Allows setting up page template custom body class(es).
+	 *
+	 * To set body class(es) for the page template, put similar code
+	 * before actual page template content output:
+	 * @example
+	 * 	if ( doing_filter( 'body_class' ) ) {
+	 *  	$body_classes = array( 'template-body-class-name' );
+	 *   	return;
+	 *  }
+	 *
+	 * @since  1.0.10
+	 *
+	 * @param  array $classes
+	 *
+	 * @return  array
+	 */
+	public static function body_class( array $classes ): array {
+
+		// Processing
+
+			if (
+				is_singular()
+				&& is_page_template()
+			) {
+
+				$template         = get_page_template_slug( get_the_ID() );
+				$template_classes = array_filter( (array) get_transient( self::$transient_cache_body_class ) );
+
+				if ( ! isset( $template_classes[ $template ] ) ) {
+					// This variable should be set in the page template file!
+					$body_classes = array();
+
+					// Using buffer to prevent page content rendering.
+					ob_start();
+					include_once get_theme_file_path( $template );
+					$_not_used = ob_get_clean();
+
+					$template_classes[ $template ] = array_filter( (array) $body_classes );
+
+					// Caching classes to speed things up.
+					set_transient( self::$transient_cache_body_class, $template_classes );
+				}
+
+				// Why bother if the page template has no body classes set.
+				if ( empty( $template_classes[ $template ] ) ) {
+					return $classes;
+				}
+
+				foreach ( $template_classes[ $template ] as $class ) {
+					$classes[] = sanitize_html_class( $class );
+				}
+			}
+
+
+		// Output
+
+			return array_unique( $classes );
+
+	} // /body_class
+
+	/**
+	 * Flush templates body classes transient cache.
+	 *
+	 * @since  1.0.10
+	 *
+	 * @return  void
+	 */
+	public static function body_class_cache_flush() {
+
+		// Processing
+
+			delete_transient( self::$transient_cache_body_class );
+
+	} // /body_class_cache_flush
 
 	// Page templates with content only.
 
