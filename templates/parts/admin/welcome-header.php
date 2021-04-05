@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.11
  */
 
 namespace WebManDesign\Michelle;
@@ -43,7 +44,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 		<?php esc_html_e( 'Please take time to read the steps below to set up your website.', 'michelle' ); ?>
 		<br><br>
 		<a href="https://webmandesign.github.io/docs/michelle/" class="button button-hero button-primary"><?php esc_html_e( 'Read documentation &raquo;', 'michelle' ); ?></a>
-		<a href="https://support.webmandesign.eu/" class="button button-hero button-primary"><?php esc_html_e( 'Contact support &raquo;', 'michelle' ); ?></a>
+		<a href="https://support.webmandesign.eu/forums/forum/michelle/" class="button button-hero button-primary"><?php esc_html_e( 'Contact support &raquo;', 'michelle' ); ?></a>
 	</p>
 
 </div>

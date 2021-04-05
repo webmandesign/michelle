@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-04-03 20:42+0200\n"
+"POT-Creation-Date: 2021-04-05 17:50+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -910,30 +910,31 @@ msgstr ""
 msgid "Keep content area width, just remove padding"
 msgstr ""
 
-#: includes/Welcome/Component.php:262 includes/Welcome/Component.php:263
+#: includes/Welcome/Component.php:271 includes/Welcome/Component.php:272
 msgid "Welcome"
 msgstr ""
 
 #. translators: %1$s: heart icon, %2$s: star icons.
-#: includes/Welcome/Component.php:323
+#: includes/Welcome/Component.php:333
 #, php-format
 msgid "If you %1$s love this theme don't forget to rate it %2$s."
 msgstr ""
 
-#: includes/Welcome/Component.php:330
+#: includes/Welcome/Component.php:340
 msgid "And/or please consider a donation."
 msgstr ""
 
-#: includes/Welcome/Component.php:333
+#: includes/Welcome/Component.php:343
+#: templates/parts/admin/welcome-promo.php:34
 msgid "Thank you!"
 msgstr ""
 
-#: includes/Welcome/Component.php:349
+#: includes/Welcome/Component.php:360
 msgid ""
 "Have a suggestion for improvement or something is not working as it should?"
 msgstr ""
 
-#: includes/Welcome/Component.php:351
+#: includes/Welcome/Component.php:362
 msgid "&rarr; Contact support"
 msgstr ""
 
@@ -1053,50 +1054,50 @@ msgstr ""
 msgid "Let's Get Started &raquo;"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:26
+#: templates/parts/admin/welcome-accessibility.php:27
 msgid "Create an Accessible Website"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:29
+#: templates/parts/admin/welcome-accessibility.php:30
 msgid "Hierarchy"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:30
+#: templates/parts/admin/welcome-accessibility.php:31
 msgid ""
 "Keep proper headings hierarchy, do not skip heading levels: H2 should be "
 "followed by H3 and so on."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:32
+#: templates/parts/admin/welcome-accessibility.php:33
 msgid "Simplicity"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:33
+#: templates/parts/admin/welcome-accessibility.php:34
 msgid ""
 "Keep your text simple. Paragraphs with more than four lines are more "
 "difficult to read. Use lists and spacing in your content."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:37
+#: templates/parts/admin/welcome-accessibility.php:38
 msgid "Images"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:38
+#: templates/parts/admin/welcome-accessibility.php:39
 msgid ""
 "Adding images to posts and pages makes your content easier to remember."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:40
+#: templates/parts/admin/welcome-accessibility.php:41
 msgid "Alternatives"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:42
+#: templates/parts/admin/welcome-accessibility.php:43
 msgid ""
 "Add alt texts to images (you can do this in the media library or directly "
 "in post editor)."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:43
+#: templates/parts/admin/welcome-accessibility.php:44
 msgid "Add text alternatives for videos and sound."
 msgstr ""
 
@@ -1225,41 +1226,42 @@ msgid ""
 msgstr ""
 
 #. translators: 1: theme name, 2: theme developer link.
-#: templates/parts/admin/welcome-header.php:36
+#: templates/parts/admin/welcome-header.php:37
 #, php-format
 msgid "Thank you for using %1$s theme by %2$s!"
 msgstr ""
 
-#: templates/parts/admin/welcome-header.php:43
+#: templates/parts/admin/welcome-header.php:44
 msgid "Please take time to read the steps below to set up your website."
 msgstr ""
 
-#: templates/parts/admin/welcome-header.php:45
+#: templates/parts/admin/welcome-header.php:46
 msgid "Read documentation &raquo;"
 msgstr ""
 
-#: templates/parts/admin/welcome-header.php:46
+#: templates/parts/admin/welcome-header.php:47
 msgid "Contact support &raquo;"
 msgstr ""
 
-#: templates/parts/admin/welcome-promo.php:28
-msgid "Fancy something more?"
+#: templates/parts/admin/welcome-promo.php:29
+msgid "Like the theme?"
 msgstr ""
 
-#: templates/parts/admin/welcome-promo.php:31
+#: templates/parts/admin/welcome-promo.php:32
+#, php-format
 msgid ""
-"Get priority support, more customization options and editor palette "
-"colors, sidebars and widgets, true one click demo content import, and even "
-"more by purchasing one of my paid themes."
+"You are using a fully functional 100% free WordPress theme without any "
+"paid upgrade."
 msgstr ""
 
 #: templates/parts/admin/welcome-promo.php:33
 msgid ""
-"(Note that the theme you are using now is fully functional and free "
-"without any paid upgrade.)"
+"If you find it helpful, please support its updates and technical support "
+"service with a donation or by purchasing one of paid products at "
+"WebManDesign.eu."
 msgstr ""
 
-#: templates/parts/admin/welcome-promo.php:35
+#: templates/parts/admin/welcome-promo.php:36
 msgid "Visit WebMan Design website now &rarr;"
 msgstr ""
 

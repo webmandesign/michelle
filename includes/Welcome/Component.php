@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.11
  */
 
 namespace WebManDesign\Michelle\Welcome;
@@ -127,7 +128,8 @@ class Component implements Component_Interface {
 	/**
 	 * Welcome screen CSS styles.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.11
 	 *
 	 * @param  string $hook
 	 *
@@ -205,6 +207,13 @@ class Component implements Component_Interface {
 					background: var(--wp-color-primary);
 					color: var(--wp-color-primary-text);
 				}
+
+					.welcome-wrap .welcome--promo > h2,
+					.welcome-wrap .welcome--promo > p {
+						max-width: 640px;
+						margin-left: auto;
+						margin-right: auto;
+					}
 
 					.welcome--promo h2 {
 						font-size: 2.175em;
@@ -309,7 +318,8 @@ class Component implements Component_Interface {
 	/**
 	 * Info text: Rate the theme.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.11
 	 *
 	 * @return  string
 	 */
@@ -326,7 +336,7 @@ class Component implements Component_Interface {
 				)
 				. ' '
 				. '<br>'
-				. '<a href="https://www.webmandesign.eu/contact/?utm_source=michelle">'
+				. '<a href="https://www.webmandesign.eu/contact/#donation">'
 				. esc_html__( 'And/or please consider a donation.', 'michelle' )
 				. '</a>'
 				. ' '
@@ -337,7 +347,8 @@ class Component implements Component_Interface {
 	/**
 	 * Info text: Contact support.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.11
 	 *
 	 * @return  string
 	 */
@@ -347,7 +358,7 @@ class Component implements Component_Interface {
 
 			return
 				esc_html__( 'Have a suggestion for improvement or something is not working as it should?', 'michelle' )
-				. ' <a href="https://support.webmandesign.eu/">'
+				. ' <a href="https://support.webmandesign.eu/forums/forum/michelle/">'
 				. esc_html__( '&rarr; Contact support', 'michelle' )
 				. '</a>';
 

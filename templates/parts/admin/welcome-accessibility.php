@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.11
  */
 
 // Exit if accessed directly.
@@ -23,7 +24,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 <div class="about__section has-2-columns welcome--accessibility">
 
-	<h2 class="is-section-header"><?php esc_html_e( 'Create an Accessible Website', 'michelle' ); ?></h2>
+	<h2 class="is-section-header"><a href="https://webmandesign.github.io/docs/michelle/#accessibility"><?php esc_html_e( 'Create an Accessible Website', 'michelle' ); ?></a></h2>
 
 	<div class="column">
 		<h3><?php esc_html_e( 'Hierarchy', 'michelle' ); ?></h3>

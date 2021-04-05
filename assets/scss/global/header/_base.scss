@@ -55,6 +55,11 @@
 			top: 0;
 			transform: translateY( -100% );
 			transition: transform .3s;
+
+			.site-branding {
+				display: none;
+			}
+
 		}
 
 			.has-scrolled[class*="-header-overlaid"]:not(.has-navigation-toggled) & {
@@ -72,6 +77,10 @@
 		.has-scrolled-up:not(.has-navigation-toggled) & {
 			box-shadow: var(--drop_shadow);
 			transform: translateY( 0 );
+		}
+
+		.has-scrolled:not(.has-navigation-toggled) &-content > :last-child {
+			margin-#{$left}: auto;
 		}
 
 	}

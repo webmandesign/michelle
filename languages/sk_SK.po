@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-04-03 20:42+0200\n"
-"PO-Revision-Date: 2021-04-03 20:42+0200\n"
+"POT-Creation-Date: 2021-04-05 17:50+0200\n"
+"PO-Revision-Date: 2021-04-05 17:54+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -1031,33 +1031,34 @@ msgstr "Roztiahnuť oblasť obsahu, žiadne odsadenie"
 msgid "Keep content area width, just remove padding"
 msgstr "Zachovať šírku obsahovej oblasti, ale odstrániť odsadenie"
 
-#: includes/Welcome/Component.php:262 includes/Welcome/Component.php:263
+#: includes/Welcome/Component.php:271 includes/Welcome/Component.php:272
 #, fuzzy
 msgid "Welcome"
 msgstr "Vitajte"
 
 #. translators: %1$s: heart icon, %2$s: star icons.
-#: includes/Welcome/Component.php:323
+#: includes/Welcome/Component.php:333
 #, fuzzy, php-format
 msgid "If you %1$s love this theme don't forget to rate it %2$s."
 msgstr "Ak sa vám %1$s páči táto téma, nezabudnite ju hodnotiť %2$s."
 
-#: includes/Welcome/Component.php:330
+#: includes/Welcome/Component.php:340
 msgid "And/or please consider a donation."
 msgstr "Zvážte prosím podporu."
 
-#: includes/Welcome/Component.php:333
+#: includes/Welcome/Component.php:343
+#: templates/parts/admin/welcome-promo.php:34
 #, fuzzy
 msgid "Thank you!"
 msgstr "Vďaka!"
 
-#: includes/Welcome/Component.php:349
+#: includes/Welcome/Component.php:360
 #, fuzzy
 msgid ""
 "Have a suggestion for improvement or something is not working as it should?"
 msgstr "Máte návrh na zlepšenie, alebo niečo nefunguje tak, ako by malo?"
 
-#: includes/Welcome/Component.php:351
+#: includes/Welcome/Component.php:362
 #, fuzzy
 msgid "&rarr; Contact support"
 msgstr "&rarr; Kontaktujte technickú podporu"
@@ -1199,15 +1200,15 @@ msgstr ""
 msgid "Let's Get Started &raquo;"
 msgstr "Začíname &raquo;"
 
-#: templates/parts/admin/welcome-accessibility.php:26
+#: templates/parts/admin/welcome-accessibility.php:27
 msgid "Create an Accessible Website"
 msgstr "Vytvorte prístupnú webstránku"
 
-#: templates/parts/admin/welcome-accessibility.php:29
+#: templates/parts/admin/welcome-accessibility.php:30
 msgid "Hierarchy"
 msgstr "Hierarchia"
 
-#: templates/parts/admin/welcome-accessibility.php:30
+#: templates/parts/admin/welcome-accessibility.php:31
 #, fuzzy
 msgid ""
 "Keep proper headings hierarchy, do not skip heading levels: H2 should be "
@@ -1216,11 +1217,11 @@ msgstr ""
 "Udržujte správnu hierarchiu nadpisov, nepreskakujte úrovne nadpisov: po H2 "
 "by mal nasledovať H3 a tak ďalej."
 
-#: templates/parts/admin/welcome-accessibility.php:32
+#: templates/parts/admin/welcome-accessibility.php:33
 msgid "Simplicity"
 msgstr "Jednoduchosť"
 
-#: templates/parts/admin/welcome-accessibility.php:33
+#: templates/parts/admin/welcome-accessibility.php:34
 #, fuzzy
 msgid ""
 "Keep your text simple. Paragraphs with more than four lines are more "
@@ -1229,22 +1230,22 @@ msgstr ""
 "Udržujte text jednoduchý. Odseky s viac ako štyrmi riadkami textu sú ťažšie "
 "čitateľné. Používajte zoznamy a dostatok priestoru v obsahu stránok."
 
-#: templates/parts/admin/welcome-accessibility.php:37
+#: templates/parts/admin/welcome-accessibility.php:38
 #, fuzzy
 msgid "Images"
 msgstr "Obrázky"
 
-#: templates/parts/admin/welcome-accessibility.php:38
+#: templates/parts/admin/welcome-accessibility.php:39
 #, fuzzy
 msgid "Adding images to posts and pages makes your content easier to remember."
 msgstr ""
 "Pridávaním obrázkov do príspevkov a stránok uľahčíte zapamätanie obsahu."
 
-#: templates/parts/admin/welcome-accessibility.php:40
+#: templates/parts/admin/welcome-accessibility.php:41
 msgid "Alternatives"
 msgstr "Alternatívy"
 
-#: templates/parts/admin/welcome-accessibility.php:42
+#: templates/parts/admin/welcome-accessibility.php:43
 #, fuzzy
 msgid ""
 "Add alt texts to images (you can do this in the media library or directly in "
@@ -1253,7 +1254,7 @@ msgstr ""
 "Do obrázkov pridajte alternatívne texty (môžete to urobiť v knižnici médií "
 "alebo priamo v editore obsahu)."
 
-#: templates/parts/admin/welcome-accessibility.php:43
+#: templates/parts/admin/welcome-accessibility.php:44
 #, fuzzy
 msgid "Add text alternatives for videos and sound."
 msgstr "Pridajte textové alternatívy pre videá a zvuk."
@@ -1418,51 +1419,52 @@ msgstr ""
 "témy &rarr; Iné."
 
 #. translators: 1: theme name, 2: theme developer link.
-#: templates/parts/admin/welcome-header.php:36
+#: templates/parts/admin/welcome-header.php:37
 #, fuzzy, php-format
 msgid "Thank you for using %1$s theme by %2$s!"
 msgstr "Vďaka za používanie témy %1$s od %2$s!"
 
-#: templates/parts/admin/welcome-header.php:43
+#: templates/parts/admin/welcome-header.php:44
 #, fuzzy
 msgid "Please take time to read the steps below to set up your website."
 msgstr ""
 "Venujte prosím čas doleuvedeným inštrukciám pre nastavenie vašej webovej "
 "stránky."
 
-#: templates/parts/admin/welcome-header.php:45
+#: templates/parts/admin/welcome-header.php:46
 #, fuzzy
 msgid "Read documentation &raquo;"
 msgstr "Čítať dokumentáciu &raquo;"
 
-#: templates/parts/admin/welcome-header.php:46
+#: templates/parts/admin/welcome-header.php:47
 #, fuzzy
 msgid "Contact support &raquo;"
 msgstr "Kontaktovať podporu &raquo;"
 
-#: templates/parts/admin/welcome-promo.php:28
-msgid "Fancy something more?"
-msgstr "Máte chuť na niečo viac?"
+#: templates/parts/admin/welcome-promo.php:29
+msgid "Like the theme?"
+msgstr "Páči sa vám téma?"
 
-#: templates/parts/admin/welcome-promo.php:31
+#: templates/parts/admin/welcome-promo.php:32
+#, php-format
 msgid ""
-"Get priority support, more customization options and editor palette colors, "
-"sidebars and widgets, true one click demo content import, and even more by "
-"purchasing one of my paid themes."
+"You are using a fully functional 100% free WordPress theme without any paid "
+"upgrade."
 msgstr ""
-"Získajte prioritnú podporu, viac možností prispôsobenia a farieb palety "
-"editora, bočné panely a widgety, skutočný import demo obsahu jedným "
-"kliknutím a ešte viac zakúpením niektorej z mojich platených tém."
+"Používate plne funkčnú a bezplatnú WordPress tému bez akejkoľvek platenej "
+"nadstavby."
 
 #: templates/parts/admin/welcome-promo.php:33
 msgid ""
-"(Note that the theme you are using now is fully functional and free without "
-"any paid upgrade.)"
+"If you find it helpful, please support its updates and technical support "
+"service with a donation or by purchasing one of paid products at "
+"WebManDesign.eu."
 msgstr ""
-"(Téma, ktorú práve teraz používate, je plne funkčná a bezplatná, bez "
-"akejkoľvek platenej inovácie alebo nadstavby.)"
+"Ak ju považujete za užitočnú, podporte jej aktualizácie a službu technickej "
+"pomoci darom alebo zakúpením jedného z platených produktov na stránke "
+"WebManDesign.eu."
 
-#: templates/parts/admin/welcome-promo.php:35
+#: templates/parts/admin/welcome-promo.php:36
 msgid "Visit WebMan Design website now &rarr;"
 msgstr "Navštíviť webstránku WebMan Design &rarr;"
 

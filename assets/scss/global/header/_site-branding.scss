@@ -22,9 +22,7 @@
 		line-height: 1.25;
 
 		.has-site-title-last & {
-			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-				text-align: center;
-			}
+			text-align: center;
 		}
 
 		.is-hidden-site-title & {
@@ -34,7 +32,7 @@
 		}
 
 		.wp-custom-logo & {
-			@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+			@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
 				@include screen_reader_hiding();
 			}
 		}
@@ -61,11 +59,19 @@
 .site-title {
 	display: inline-block;
 	margin-bottom: 0;
-	font-size: 1.777em;
+	font-size: 1.15em;
 	font-weight: 700;
 	color: inherit;
 	white-space: nowrap;
 	vertical-align: top;
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
+		font-size: 1.333em;
+	}
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		font-size: 1.777em;
+	}
 
 	@include media( map_get( $breakpoint, 'xxl' ) ) {
 		font-size: 2.369em;
@@ -74,9 +80,15 @@
 }
 
 .site-description {
+	display: none;
 	font-size: .875em;
 	text-transform: uppercase;
 	letter-spacing: var(--letter_spacing);
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
+		display: block;
+	}
+
 }
 
 .custom-logo {
@@ -105,9 +117,7 @@
 		}
 
 		.has-site-title-last & {
-			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-				order: 10;
-			}
+			order: 10;
 		}
 
 	}

@@ -19,10 +19,10 @@
 
 	.toggled & {
 		position: fixed;
-		#{$right}: 6%;
+		#{$left}: 6%;
 		top: 0;
 		padding: 1em;
-		margin-#{$right}: 0;
+		margin-#{$left}: 0;
 	}
 
 	.svg-icon {

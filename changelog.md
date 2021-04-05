@@ -1,5 +1,25 @@
 # Michelle Changelog
 
+## 1.0.11, 20210405
+
+### Updated
+- Welcome page info
+
+### Fixed
+- Mobile screens site title and logo display
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/global.scss
+	includes/Welcome/Component.php
+	languages/*.*
+	templates/parts/admin/welcome-accessibility.php
+	templates/parts/admin/welcome-header.php
+	templates/parts/admin/welcome-promo.php
+
+
 ## 1.0.10, 20210403
 
 ### Added

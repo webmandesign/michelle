@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.10 =
-20210403 Adding block patterns and styles, fixing styles.
+= 1.0.11 =
+20210405 Fixing site title on mobile screens, updating Welcome page info.
 
 
 == Resources ==
