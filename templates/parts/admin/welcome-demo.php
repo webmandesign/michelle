@@ -7,7 +7,7 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since  1.0.12
  */
 
 // Exit if accessed directly.
@@ -51,7 +51,7 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 			<p><a href="<?php echo esc_url( 'themes.php?page=pt-one-click-demo-import' ); ?>" class="button"><?php esc_html_e( 'Install theme demo content &raquo;', 'michelle' ); ?></a></p>
 			<p><em><?php esc_html_e( 'Or head over to Appearance &raquo; Import Demo Data to start the import process.', 'michelle' ); ?></em></p>
 		<?php else : ?>
-			<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=tgmpa-install-plugins' ) ); ?>" class="button"><?php esc_html_e( 'Use "One Click Demo Import" plugin &raquo;', 'michelle' ); ?></a></p>
+			<p><a href="https://webmandesign.github.io/docs/michelle/#demo-content" class="button"><?php esc_html_e( 'How to import demo content &raquo;', 'michelle' ); ?></a></p>
 		<?php endif; ?>
 
 		<p><a href="https://themedemos.webmandesign.eu/michelle/"><?php esc_html_e( 'Preview theme demo &raquo;', 'michelle' ); ?></a></p>

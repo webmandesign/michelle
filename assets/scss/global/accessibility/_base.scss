@@ -1,6 +1,6 @@
 /* FILE: global/accessibility/_base.scss */
 
-:focus {
+.site :focus {
 	outline-width: 2px;
 	outline-style: dashed;
 	outline-offset: 1px;

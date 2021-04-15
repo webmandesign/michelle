@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.7
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -109,7 +109,7 @@ class Options implements Component_Interface {
 	 * Sets theme options array.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.7
+	 * @version  1.0.12
 	 *
 	 * @param  array $options
 	 *
@@ -148,7 +148,7 @@ class Options implements Component_Interface {
 				'numberposts' => 100,
 			) );
 			$blocks = array(
-				0 => esc_html__( 'Select a block', 'michelle' ),
+				0 => esc_html__( '&mdash; no block', 'michelle' ),
 			);
 			foreach ( $blocks_reusable as $block ) {
 				$blocks[ $block->ID ] = $block->post_title;
@@ -192,13 +192,14 @@ class Options implements Component_Interface {
 					),
 
 					'0' . 10 . 'logo' . 20 => array(
-						'section'    => 'title_tagline',
-						'priority'   => 10,
-						'type'       => 'checkbox',
-						'id'         => 'display_site_title',
-						'label'      => esc_html__( 'Display site title & tagline', 'michelle' ),
-						'default'    => true,
-						'preview_js' => array(
+						'section'     => 'title_tagline',
+						'priority'    => 10,
+						'type'        => 'checkbox',
+						'id'          => 'display_site_title',
+						'label'       => esc_html__( 'Display site title & tagline', 'michelle' ),
+						'description' => esc_html__( 'Tagline longer than 40 characters gets accessibly hidden automatically on your live website.', 'michelle' ),
+						'default'     => true,
+						'preview_js'  => array(
 							'custom' => "jQuery( 'body' ).toggleClass( 'is-hidden-site-title' );",
 						),
 					),

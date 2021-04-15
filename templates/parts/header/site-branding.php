@@ -35,8 +35,9 @@ if (
 		<?php
 
 		if ( $description || is_customize_preview() ) :
+			$class = ( ! is_customize_preview() && 40 < strlen( $description ) ) ? ( ' screen-reader-text' ) : ( '' );
 			?>
-			<p class="site-description"><?php
+			<p class="site-description<?php echo esc_attr( $class ); ?>"><?php
 				echo $description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			?></p>
 			<?php

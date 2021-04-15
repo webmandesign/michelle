@@ -6,6 +6,12 @@
 	color: var(--color_header_text);
 	z-index: 998;
 
+	.admin-bar & {
+		@media screen and (max-width: 600px) {
+			z-index: 99999;
+		}
+	}
+
 	@include media( map_get( $breakpoint, 'xl' ) ) {
 		font-size: var(--typography_size_header);
 	}
@@ -17,12 +23,15 @@
 
 	&-content {
 		display: flex;
-		flex-wrap: wrap;
 		align-items: flex-end;
 		min-width: 240px;
 		max-width: var(--max_width_header_content);
 		margin-left: auto;
 		margin-right: auto;
+
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			flex-wrap: wrap;
+		}
 
 		> :last-child {
 			margin-#{$left}: auto;
@@ -84,6 +93,17 @@
 		}
 
 	}
+
+		.admin-bar.has-scrolled:not(.has-navigation-toggled) & {
+			@media screen and (min-width: 601px) and (max-width: 782px) {
+				top: 46px;
+			}
+		}
+		.admin-bar.has-scrolled:not(.has-navigation-toggled) & {
+			@media screen and (min-width: 783px) and (max-width: #{ map_get( $breakpoint, $mobile_menu_breakpoint ) +px }) {
+				top: 32px;
+			}
+		}
 
 }
 

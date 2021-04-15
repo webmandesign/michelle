@@ -11,7 +11,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle;
@@ -27,6 +28,7 @@ $is_amp = Tool\AMP::is_amp();
 <nav
 	id="site-navigation"
 	class="main-navigation"
+	role="navigation"
 	aria-label="<?php echo esc_attr_x( 'Main menu', 'Navigational menu.', 'michelle' ); ?>"
 	<?php
 

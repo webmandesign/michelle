@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle\Loop;
@@ -42,7 +43,8 @@ class Component implements Component_Interface {
 	/**
 	 * Output search form on top of search results page.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.12
 	 *
 	 * @return  void
 	 */
@@ -59,7 +61,7 @@ class Component implements Component_Interface {
 
 			get_search_form( true );
 
-			get_template_part( 'templates/parts/component/search-result-count' );
+			get_template_part( 'templates/parts/component/search-results-count' );
 
 	} // /search_form
 

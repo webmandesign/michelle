@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle;
@@ -15,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-<p class="search-result-count">
+<p class="search-results-count">
 	<?php
 
 	printf(

@@ -8,8 +8,13 @@
 	color: var(--color_body_headings);
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		max-width: 50%;
 		padding-top: 6vh;
 		padding-bottom: 6vh;
+	}
+
+	@include media( map_get( $breakpoint, 'xxl' ) ) {
+		max-width: percentage( $ratio_min );
 	}
 
 	.has-site-title-last & {

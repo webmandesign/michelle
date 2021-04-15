@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle\Accessibility;
@@ -24,7 +25,8 @@ class Component implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.12
 	 *
 	 * @return  void
 	 */
@@ -39,7 +41,7 @@ class Component implements Component_Interface {
 
 				add_action( 'tha_body_top', __CLASS__ . '::anchor_top_of_page', -10 );
 
-				add_action( 'tha_body_top',     __CLASS__ . '::skip_links_body' );
+				add_action( 'tha_body_top',     __CLASS__ . '::skip_links_body', 20 );
 				add_action( 'tha_entry_bottom', __CLASS__ . '::skip_links_entry', 999 );
 
 	} // /init

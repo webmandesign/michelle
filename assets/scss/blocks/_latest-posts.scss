@@ -66,9 +66,8 @@
 	}
 
 	.entry-meta {
-		order: -5;
-		margin-top: 0;
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio_min } );
+		margin-top: -1rem;
+		margin-bottom: 1rem;
 		opacity: .75;
 
 		&:hover,
@@ -114,11 +113,6 @@
 				margin: calc( var(--posts_list_gap) / 2 );
 			}
 
-		}
-
-		.wp-block-latest-posts__featured-image + a + .entry-meta {
-			margin-top: 1rem;
-			margin-bottom: calc( var(--typography_font_size_base) * #{ -$ratio_maj } );
 		}
 
 	}

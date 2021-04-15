@@ -30,13 +30,20 @@
 }
 
 .comment-metadata {
-	order: -1;
 	font-size: var(--typography_font_size_small);
 	font-style: italic;
 
 	a {
 		text-decoration: none;
 		color: inherit;
+
+		&:hover {
+			text-decoration: underline;
+			text-underline-offset: .15em;
+			text-decoration-style: dotted;
+			text-decoration-skip-ink: none;
+		}
+
 	}
 
 	.edit-link {

@@ -1,9 +1,8 @@
 /* FILE: content/loop/_meta.scss */
 
 .posts .entry-meta {
-	order: -5;
-	margin-top: 0;
-	margin-bottom: $ratio_min +rem;
+	margin-top: -2rem;
+	margin-bottom: 2rem;
 	opacity: .75;
 
 	&:hover,
@@ -15,9 +14,4 @@
 		display: none;
 	}
 
-}
-
-.posts .has-post-thumbnail .entry-meta {
-	margin-top: 1rem;
-	margin-bottom: -$ratio_maj +rem;
 }
