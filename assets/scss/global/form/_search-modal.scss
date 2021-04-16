@@ -81,6 +81,7 @@
 
 		}
 
+		.no-js &,
 		&:not(.toggled) form,
 		&.toggled .modal-search-open,
 		&:not(.toggled) .modal-search-close {

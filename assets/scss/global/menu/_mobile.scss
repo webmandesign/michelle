@@ -17,6 +17,10 @@
 		box-shadow: none;
 	}
 
+	.no-js & {
+		display: none;
+	}
+
 	.toggled & {
 		position: fixed;
 		width: 100%;

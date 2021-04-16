@@ -1,5 +1,48 @@
 # Michelle Changelog
 
+## 1.0.12, 20210416
+
+### Updated
+- Theme options description
+- Starter content menu
+- Improved accessibility
+- Improved site header styles
+- Improved site branding styles
+- Improved responsive navigation functionality and styles
+- Improved search modal functionality and styles
+- Localization
+
+### Fixed
+- Welcome page demo content links
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/js/modal-search.js
+	assets/js/navigation-mobile.js
+	assets/js/scroll.js
+	assets/scss/blocks.scss
+	assets/scss/comments.scss
+	assets/scss/content.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	includes/Accessibility/Component.php
+	includes/Assets/Scripts.php
+	includes/Content/Starter.php
+	includes/Customize/CSS_Variables.php
+	includes/Customize/Options.php
+	includes/Customize/Styles.php
+	includes/Header/Component.php
+	includes/Loop/Component.php
+	includes/Loop/Pagination.php
+	languages/*.*
+	templates/parts/accessibility/menu-skip-links.php
+	templates/parts/admin/welcome-demo.php
+	templates/parts/component/search-results-count.php
+	templates/parts/menu/menu-primary.php
+
+
 ## 1.0.11, 20210405
 
 ### Updated

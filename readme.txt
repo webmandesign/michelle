@@ -32,12 +32,11 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.11 =
-20210405 Fixing site title on mobile screens, updating Welcome page info.
+= 1.0.12 =
+20210416 Improving accessibility, improving styles, fixing bugs.
 
 
 == Resources ==
-* TGM-Plugin-Activation © Thomas Griffin, GPL v2 or later
 * Normalize.css © Nicolas Gallagher and Jonathan Neal, MIT
 * a11y-menu.js © WebMan Design, Oliver Juhas, GPL-3.0-or-later
 * images/starter/*.png © WebMan Design, Oliver Juhas, GPL-3.0-or-later
