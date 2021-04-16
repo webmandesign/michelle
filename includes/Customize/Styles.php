@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -21,7 +22,8 @@ class Styles implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.12
 	 *
 	 * @return  void
 	 */
@@ -31,7 +33,7 @@ class Styles implements Component_Interface {
 
 			// Actions
 
-				add_action( 'wp_enqueue_scripts', __CLASS__ . '::inline_styles', MICHELLE_ENQUEUE_PRIORITY + 10 );
+				add_action( 'wp_enqueue_scripts', __CLASS__ . '::inline_styles', MICHELLE_ENQUEUE_PRIORITY + 9 );
 
 				add_action( 'customize_save_after', __CLASS__ . '::customize_timestamp' );
 

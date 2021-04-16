@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -34,7 +35,8 @@ class CSS_Variables implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.12
 	 *
 	 * @return  void
 	 */
@@ -44,7 +46,7 @@ class CSS_Variables implements Component_Interface {
 
 			// Actions
 
-				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_inline_scrollbar_width', 999 );
+				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_inline_scrollbar_width', MICHELLE_ENQUEUE_PRIORITY );
 
 				add_action( 'switch_theme',         __CLASS__ . '::transient_cache_flush' );
 				add_action( 'customize_save_after', __CLASS__ . '::transient_cache_flush' );

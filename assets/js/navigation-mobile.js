@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 ( function() {
@@ -35,18 +36,76 @@
 
 	menu.setAttribute( 'aria-expanded', 'false' );
 
-	button.onclick = function() {
+	function michelleToggleMenu() {
+		container.classList.toggle( 'toggled' );
+		document.body.classList.toggle( 'has-navigation-toggled' );
+		document.documentElement.classList.toggle( 'lock-scroll' );
+
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
 			menu.setAttribute( 'aria-expanded', 'false' );
-			document.body.classList.remove( 'has-navigation-toggled' );
 		} else {
-			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
-			document.body.classList.add( 'has-navigation-toggled' );
 		}
+	}
+
+	button.onclick = function() {
+		michelleToggleMenu();
 	};
 
+	/**
+	 * Trap focus inside mobile menu modal.
+	 * Code adapted from Twenty Twenty-One theme.
+	 */
+	document.addEventListener( 'keydown', function( event ) {
+		if ( ! container.classList.contains( 'toggled' ) ) {
+			return;
+		}
+
+		var
+			elements,
+			firstEl,
+			lastEl,
+			activeEl = document.activeElement,
+			tabKey   = ( 9 === event.keyCode ),
+			escKey   = ( 27 === event.keyCode ),
+			shiftKey = event.shiftKey;
+
+		elements = container.querySelectorAll( 'a, button, input' );
+		elements = Array.prototype.slice.call( elements );
+		firstEl  = elements[0];
+		lastEl   = elements[ elements.length - 1 ];
+
+		if ( escKey ) {
+			event.preventDefault();
+			michelleToggleMenu();
+			button.focus();
+		}
+
+		if (
+			! shiftKey
+			&& tabKey
+			&& lastEl === activeEl
+		) {
+			event.preventDefault();
+			firstEl.focus();
+		}
+
+		if (
+			shiftKey
+			&& tabKey
+			&& firstEl === activeEl
+		) {
+			event.preventDefault();
+			lastEl.focus();
+		}
+
+		if (
+			tabKey
+			&& firstEl === lastEl
+		) {
+			event.preventDefault();
+		}
+	} );
 } )();

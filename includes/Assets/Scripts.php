@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -23,7 +24,8 @@ class Scripts implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.12
 	 *
 	 * @return  void
 	 */
@@ -34,8 +36,8 @@ class Scripts implements Component_Interface {
 			// Actions
 
 				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_inline', 0 );
+				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_inline_no_js_class', MICHELLE_ENQUEUE_PRIORITY );
 				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_inline_nav_mobile', MICHELLE_ENQUEUE_PRIORITY + 9 );
-				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_inline_no_js_class', MICHELLE_ENQUEUE_PRIORITY + 9 );
 				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_inline_scroll', MICHELLE_ENQUEUE_PRIORITY + 9 );
 
 				add_action( 'comment_form_before', __CLASS__ . '::enqueue_comment_reply' );
@@ -104,7 +106,8 @@ class Scripts implements Component_Interface {
 	 * For unminified script:
 	 * @see  assets/js/navigation-mobile.js
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.12
 	 *
 	 * @return  void
 	 */
@@ -125,7 +128,7 @@ class Scripts implements Component_Interface {
 
 			wp_add_inline_script(
 				'michelle-scripts-footer',
-				'"use strict";!function(){var e,t,a;(e=document.getElementById("site-navigation"))&&void 0!==(t=document.getElementById("menu-toggle"))&&(void 0!==(a=document.getElementById("menu-primary"))?(a.setAttribute("aria-expanded","false"),t.onclick=function(){-1!==e.className.indexOf("toggled")?(e.className=e.className.replace(" toggled",""),t.setAttribute("aria-expanded","false"),a.setAttribute("aria-expanded","false"),document.body.classList.remove("has-navigation-toggled")):(e.className+=" toggled",t.setAttribute("aria-expanded","true"),a.setAttribute("aria-expanded","true"),document.body.classList.add("has-navigation-toggled"))}):t.style.display="none")}();'
+				'"use strict";!function(){function d(){u.classList.toggle("toggled"),document.body.classList.toggle("has-navigation-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==u.className.indexOf("toggled")?(c.setAttribute("aria-expanded","false"),e.setAttribute("aria-expanded","false")):(c.setAttribute("aria-expanded","true"),e.setAttribute("aria-expanded","true"))}var u,c,e;(u=document.getElementById("site-navigation"))&&void 0!==(c=document.getElementById("menu-toggle"))&&(void 0!==(e=document.getElementById("menu-primary"))?(e.setAttribute("aria-expanded","false"),c.onclick=function(){d()},document.addEventListener("keydown",function(e){if(u.classList.contains("toggled")){var t,n,a,o=document.activeElement,l=9===e.keyCode,i=27===e.keyCode,s=e.shiftKey;t=u.querySelectorAll("a, button, input"),n=(t=Array.prototype.slice.call(t))[0],a=t[t.length-1],i&&(e.preventDefault(),d(),c.focus()),!s&&l&&a===o&&(e.preventDefault(),n.focus()),s&&l&&n===o&&(e.preventDefault(),a.focus()),l&&n===a&&e.preventDefault()}})):c.style.display="none")}();'
 			);
 
 	} // /enqueue_inline_nav_mobile
@@ -167,7 +170,14 @@ class Scripts implements Component_Interface {
 	/**
 	 * Has user scrolled the page?
 	 *
-	 * @since  1.0.0
+	 * Minified script is copied from `assets/js/scroll.min.js`
+	 * and enqueued inline in the footer to prevent external file load.
+	 *
+	 * For unminified script:
+	 * @see  assets/js/scroll.js
+	 *
+	 * @since    1.0.0
+	 * @version  1.0.12
 	 *
 	 * @return  void
 	 */
@@ -184,46 +194,7 @@ class Scripts implements Component_Interface {
 
 			wp_add_inline_script(
 				'michelle-scripts-footer',
-				Factory::strip( "
-					( function() {
-						'use strict';
-
-						var
-							lastScrollTop = window.scrollY,
-							ticking       = false;
-
-						function michelleScroll() {
-							var scrolledY = window.scrollY;
-
-							if ( scrolledY < lastScrollTop ) {
-								document.body.classList.add( 'has-scrolled-up' );
-							} else {
-								document.body.classList.remove( 'has-scrolled-up' );
-							}
-
-							if ( scrolledY > 1 ) {
-								document.body.classList.add( 'has-scrolled' );
-							} else {
-								document.body.classList.remove( 'has-scrolled' );
-								document.body.classList.remove( 'has-scrolled-up' );
-							}
-
-							lastScrollTop = scrolledY;
-						}
-
-						michelleScroll();
-
-						window.addEventListener( 'scroll', function( e ) {
-							if ( ! ticking ) {
-								window.requestAnimationFrame( function() {
-									michelleScroll();
-									ticking = false;
-								} );
-								ticking = true;
-							}
-						} );
-					} )();
-				" )
+				'"use strict";!function(){function o(){var s=window.scrollY;s<d?document.body.classList.add("has-scrolled-up"):document.body.classList.remove("has-scrolled-up"),1<s?document.body.classList.add("has-scrolled"):(document.body.classList.remove("has-scrolled"),document.body.classList.remove("has-scrolled-up")),d=s}var d=window.scrollY,c=!1;o(),window.addEventListener("scroll",function(s){c||(window.requestAnimationFrame(function(){o(),c=!1}),c=!0)})}();'
 			);
 
 	} // /enqueue_inline_scroll

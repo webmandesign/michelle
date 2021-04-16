@@ -19,10 +19,16 @@
 
 	.toggled & {
 		position: fixed;
-		#{$left}: 6%;
+		width: 100%;
+		#{$left}: 0;
 		top: 0;
 		padding: 1em;
 		margin-#{$left}: 0;
+
+		.site & {
+			background: var(--color_navigation_background);
+			box-shadow: var(--drop_shadow);
+		}
 
 		.admin-bar & {
 			@media screen and (min-width: 601px) and (max-width: 782px) {
@@ -115,7 +121,7 @@
 
 			&-container {
 				position: fixed;
-				width: calc( 100vw - var(--scrollbar_width) );
+				width: 100vw; // No need to mitigate for scrollbar width here.
 				height: 100vh;
 				#{$left}: 0;
 				top: 0;
@@ -191,4 +197,10 @@
 		}
 	}
 
+}
+
+.lock-scroll {
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+		overflow-y: hidden;
+	}
 }
