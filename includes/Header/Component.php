@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.0.12
  */
 
 namespace WebManDesign\Michelle\Header;
@@ -222,7 +223,8 @@ class Component implements Component_Interface {
 	 *
 	 * Also compatible with WooCommerce product search form.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.0.12
 	 *
 	 * @param  string $html
 	 *
@@ -230,52 +232,45 @@ class Component implements Component_Interface {
 	 */
 	public static function get_search_form( string $html ): string {
 
+		// Requirements check
+
+			if ( ! doing_action( 'tha_header_top' ) ) {
+				return $html;
+			}
+
+
 		// Variables
 
-			$icon_search = '<svg class="svg-icon" width="1.5em" aria-hidden="true" role="img" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><path d="M14.7,13.3L11,9.6c0.6-0.9,1-2,1-3.1C12,3.5,9.5,1,6.5,1S1,3.5,1,6.5S3.5,12,6.5,12c1.2,0,2.2-0.4,3.1-1l3.7,3.7L14.7,13.3z
-	 M2.5,6.5c0-2.2,1.8-4,4-4s4,1.8,4,4s-1.8,4-4,4S2.5,8.7,2.5,6.5z" /></svg>';
+			$button  = '<button id="modal-search-toggle" class="modal-search-toggle" aria-controls="modal-search" aria-expanded="false">';
+			$button .= '<svg class="svg-icon modal-search-open" width="1.5em" aria-hidden="true" role="img" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><path d="M14.7,13.3L11,9.6c0.6-0.9,1-2,1-3.1C12,3.5,9.5,1,6.5,1S1,3.5,1,6.5S3.5,12,6.5,12c1.2,0,2.2-0.4,3.1-1l3.7,3.7L14.7,13.3z M2.5,6.5c0-2.2,1.8-4,4-4s4,1.8,4,4s-1.8,4-4,4S2.5,8.7,2.5,6.5z" /></svg>';
+			$button .= '<svg class="svg-icon modal-search-close" width="1.5em" aria-hidden="true" role="img" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><polygon points="14.7,2.7 13.3,1.3 8,6.6 2.7,1.3 1.3,2.7 6.6,8 1.3,13.3 2.7,14.7 8,9.4 13.3,14.7 14.7,13.3 9.4,8"/></svg>';
+			$button .= '<span class="screen-reader-text">';
+			$button .= esc_html_x( 'Toggle search form modal box', 'Search form modal toggle button label.', 'michelle' );
+			$button .= '</span>';
+			$button .= '</button>';
 
 
 		// Processing
 
-			$html = explode( PHP_EOL, $html );
+			$html = str_replace(
+				'<form ',
+				'<form id="modal-search" ',
+				$html
+			);
 
-			// Process only multiline HTML.
-			if ( 1 < count( $html ) ) {
-				$html[0] = str_replace(
-					array(
-						'search-form',
-						'woocommerce-product-search',
-					),
-					array(
-						'search-form has-submit-with-icon',
-						'woocommerce-product-search has-submit-with-icon',
-					),
-					$html[0]
-				);
-
-				if ( doing_action( 'tha_header_top' ) ) {
-					$html[0] = str_replace(
-						'<form ',
-						'<form id="site-header-search-form" ',
-						$html[0]
-					);
-				}
-
-				foreach ( $html as $key => $code ) {
-					if ( stripos( $code, '"submit"' ) ) {
-						$html[ $key ] = '<button type="submit" class="search-submit search-submit-with-icon">' . $icon_search . '<span class="screen-reader-text"> ' . esc_html_x( 'Search', 'Form submit button text.', 'michelle' ) . '</span></button>';
-						break;
-					}
-				}
-			}
-
-			ksort( $html );
+			wp_add_inline_script(
+				'michelle-scripts-footer',
+				'"use strict";!function(){function c(){r.classList.toggle("toggled"),document.body.classList.toggle("has-modal-search-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==r.className.indexOf("toggled")?(i.setAttribute("aria-expanded","false"),e.setAttribute("aria-expanded","false")):(i.setAttribute("aria-expanded","true"),e.setAttribute("aria-expanded","true"))}var r=document.getElementById("search-form-modal"),i=document.getElementById("modal-search-toggle"),e=document.getElementById("modal-search");void 0!==e?(e.setAttribute("aria-expanded","false"),i.onclick=function(){c()},document.addEventListener("keydown",function(e){if(r.classList.contains("toggled")){var t,a,l,n=document.activeElement,o=9===e.keyCode,s=27===e.keyCode,d=e.shiftKey;t=r.querySelectorAll("a, button, input, select"),a=(t=Array.prototype.slice.call(t))[0],l=t[t.length-1],s&&(e.preventDefault(),c(),i.focus()),!d&&o&&l===n&&(e.preventDefault(),a.focus()),d&&o&&a===n&&(e.preventDefault(),l.focus()),o&&a===l&&e.preventDefault()}})):r.style.display="none"}();'
+			);
 
 
 		// Output
 
-			return implode( PHP_EOL, $html );
+			return
+				'<div id="search-form-modal" class="modal-search-container">'
+				. $button
+				. $html
+				. '</div>';
 
 	} // /get_search_form
 

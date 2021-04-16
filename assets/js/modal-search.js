@@ -1,62 +1,54 @@
 /**
- * Mobile navigation toggling.
+ * Search form modal toggling.
  *
- * This is actually being enqueued inline in `WebManDesign\Michelle\Assets\Scripts::enqueue_inline_nav_mobile()`.
+ * This is actually being enqueued inline in `WebManDesign\Michelle\Header\Component::get_search_form()`.
  * Keeping this file (and its minified version) for reference.
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since    1.0.0
- * @version  1.0.12
+ * @since  1.0.12
  */
 
 ( function() {
 	'use strict';
 
 	var
-		button, menu,
-		container = document.getElementById( 'site-navigation' );
+		container = document.getElementById( 'search-form-modal' ),
+		button    = document.getElementById( 'modal-search-toggle' ),
+		modal     = document.getElementById( 'modal-search' );
 
-	if ( ! container ) {
+	/**
+	 * No need to check for `container` and `button` as those exist for sure.
+	 * Otherwise this script is not even being enqueued.
+	 */
+	if ( 'undefined' === typeof modal ) {
+		container.style.display = 'none';
 		return;
 	}
 
-	button = document.getElementById( 'menu-toggle' );
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
+	modal.setAttribute( 'aria-expanded', 'false' );
 
-	menu = document.getElementById( 'menu-primary' );
-
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
-
-	menu.setAttribute( 'aria-expanded', 'false' );
-
-	function michelleToggleMenu() {
+	function michelleToggleSearch() {
 		container.classList.toggle( 'toggled' );
-		document.body.classList.toggle( 'has-navigation-toggled' );
+		document.body.classList.toggle( 'has-modal-search-toggled' );
 		document.documentElement.classList.toggle( 'lock-scroll' );
 
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
+			modal.setAttribute( 'aria-expanded', 'false' );
 		} else {
 			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
+			modal.setAttribute( 'aria-expanded', 'true' );
 		}
 	}
 
 	button.onclick = function() {
-		michelleToggleMenu();
+		michelleToggleSearch();
 	};
 
 	/**
-	 * Trap focus inside mobile menu modal.
+	 * Trap focus inside search modal.
 	 * Code adapted from Twenty Twenty-One theme.
 	 */
 	document.addEventListener( 'keydown', function( event ) {
@@ -71,14 +63,14 @@
 			escKey   = ( 27 === event.keyCode ),
 			shiftKey = event.shiftKey;
 
-		elements = container.querySelectorAll( 'a, button, input' );
+		elements = container.querySelectorAll( 'a, button, input, select' );
 		elements = Array.prototype.slice.call( elements );
 		firstEl  = elements[0];
 		lastEl   = elements[ elements.length - 1 ];
 
 		if ( escKey ) {
 			event.preventDefault();
-			michelleToggleMenu();
+			michelleToggleSearch();
 			button.focus();
 		}
 

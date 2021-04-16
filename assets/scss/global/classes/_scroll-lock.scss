@@ -1,0 +1,7 @@
+/* FILE: global/classes/_scroll-lock.scss */
+
+.lock-scroll {
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+		overflow-y: hidden;
+	}
+}
