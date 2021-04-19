@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.0.13
  */
 
 namespace WebManDesign\Michelle\Header;
@@ -224,7 +224,7 @@ class Component implements Component_Interface {
 	 * Also compatible with WooCommerce product search form.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.12
+	 * @version  1.0.13
 	 *
 	 * @param  string $html
 	 *
@@ -260,7 +260,7 @@ class Component implements Component_Interface {
 
 			wp_add_inline_script(
 				'michelle-scripts-footer',
-				'"use strict";!function(){function c(){r.classList.toggle("toggled"),document.body.classList.toggle("has-modal-search-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==r.className.indexOf("toggled")?(i.setAttribute("aria-expanded","false"),e.setAttribute("aria-expanded","false")):(i.setAttribute("aria-expanded","true"),e.setAttribute("aria-expanded","true"))}var r=document.getElementById("search-form-modal"),i=document.getElementById("modal-search-toggle"),e=document.getElementById("modal-search");void 0!==e?(e.setAttribute("aria-expanded","false"),i.onclick=function(){c()},document.addEventListener("keydown",function(e){if(r.classList.contains("toggled")){var t,a,l,n=document.activeElement,o=9===e.keyCode,s=27===e.keyCode,d=e.shiftKey;t=r.querySelectorAll("a, button, input, select"),a=(t=Array.prototype.slice.call(t))[0],l=t[t.length-1],s&&(e.preventDefault(),c(),i.focus()),!d&&o&&l===n&&(e.preventDefault(),a.focus()),d&&o&&a===n&&(e.preventDefault(),l.focus()),o&&a===l&&e.preventDefault()}})):r.style.display="none"}();'
+				'"use strict";!function(){function d(){r.classList.toggle("toggled"),document.body.classList.toggle("has-modal-search-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==r.className.indexOf("toggled")?(u.setAttribute("aria-expanded","true"),t.setAttribute("aria-expanded","true"),e&&(e.focus(),console.log(e))):(u.setAttribute("aria-expanded","false"),t.setAttribute("aria-expanded","false"))}var e,r=document.getElementById("search-form-modal"),u=document.getElementById("modal-search-toggle"),t=document.getElementById("modal-search");void 0!==t?(t.setAttribute("aria-expanded","false"),e=r.querySelector("[type=search]"),u.onclick=function(){d()},document.addEventListener("keydown",function(e){if(r.classList.contains("toggled")){var t,a,o,l=document.activeElement,n=9===e.keyCode,s=27===e.keyCode,c=e.shiftKey;t=r.querySelectorAll("a, button, input, select"),a=(t=Array.prototype.slice.call(t))[0],o=t[t.length-1],s&&(e.preventDefault(),d(),u.focus()),!c&&n&&o===l&&(e.preventDefault(),a.focus()),c&&n&&a===l&&(e.preventDefault(),o.focus()),n&&a===o&&e.preventDefault()}})):r.style.display="none"}();'
 			);
 
 

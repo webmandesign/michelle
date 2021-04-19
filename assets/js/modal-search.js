@@ -7,13 +7,14 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.12
+ * @since  1.0.13
  */
 
 ( function() {
 	'use strict';
 
 	var
+		searchField,
 		container = document.getElementById( 'search-form-modal' ),
 		button    = document.getElementById( 'modal-search-toggle' ),
 		modal     = document.getElementById( 'modal-search' );
@@ -29,17 +30,24 @@
 
 	modal.setAttribute( 'aria-expanded', 'false' );
 
+	searchField = container.querySelector( '[type=search]' );
+
 	function michelleToggleSearch() {
 		container.classList.toggle( 'toggled' );
 		document.body.classList.toggle( 'has-modal-search-toggled' );
 		document.documentElement.classList.toggle( 'lock-scroll' );
 
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			button.setAttribute( 'aria-expanded', 'false' );
-			modal.setAttribute( 'aria-expanded', 'false' );
-		} else {
 			button.setAttribute( 'aria-expanded', 'true' );
 			modal.setAttribute( 'aria-expanded', 'true' );
+
+			if ( searchField ) {
+				searchField.focus();
+				console.log(searchField);
+			}
+		} else {
+			button.setAttribute( 'aria-expanded', 'false' );
+			modal.setAttribute( 'aria-expanded', 'false' );
 		}
 	}
 

@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.0.13
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -107,7 +107,7 @@ class Scripts implements Component_Interface {
 	 * @see  assets/js/navigation-mobile.js
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.12
+	 * @version  1.0.13
 	 *
 	 * @return  void
 	 */
@@ -128,7 +128,7 @@ class Scripts implements Component_Interface {
 
 			wp_add_inline_script(
 				'michelle-scripts-footer',
-				'"use strict";!function(){function d(){c.classList.toggle("toggled"),document.body.classList.toggle("has-navigation-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==c.className.indexOf("toggled")?(u.setAttribute("aria-expanded","false"),e.setAttribute("aria-expanded","false")):(u.setAttribute("aria-expanded","true"),e.setAttribute("aria-expanded","true"))}var u,e,c=document.getElementById("site-navigation");c&&void 0!==(u=document.getElementById("menu-toggle"))&&(void 0!==(e=document.getElementById("menu-primary"))?(e.setAttribute("aria-expanded","false"),u.onclick=function(){d()},document.addEventListener("keydown",function(e){if(c.classList.contains("toggled")){var t,n,a,o=document.activeElement,l=9===e.keyCode,i=27===e.keyCode,s=e.shiftKey;t=c.querySelectorAll("a, button, input"),n=(t=Array.prototype.slice.call(t))[0],a=t[t.length-1],i&&(e.preventDefault(),d(),u.focus()),!s&&l&&a===o&&(e.preventDefault(),n.focus()),s&&l&&n===o&&(e.preventDefault(),a.focus()),l&&n===a&&e.preventDefault()}})):u.style.display="none")}();'
+				'"use strict";!function(){function d(){c.classList.toggle("toggled"),document.body.classList.toggle("has-navigation-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==c.className.indexOf("toggled")?(u.setAttribute("aria-expanded","true"),e.setAttribute("aria-expanded","true")):(u.setAttribute("aria-expanded","false"),e.setAttribute("aria-expanded","false"))}var u,e,c=document.getElementById("site-navigation");c&&void 0!==(u=document.getElementById("menu-toggle"))&&(void 0!==(e=document.getElementById("menu-primary"))?(e.setAttribute("aria-expanded","false"),u.onclick=function(){d()},document.addEventListener("keydown",function(e){if(c.classList.contains("toggled")){var t,n,a,o=document.activeElement,l=9===e.keyCode,i=27===e.keyCode,s=e.shiftKey;t=c.querySelectorAll("a, button, input"),n=(t=Array.prototype.slice.call(t))[0],a=t[t.length-1],i&&(e.preventDefault(),d(),u.focus()),!s&&l&&a===o&&(e.preventDefault(),n.focus()),s&&l&&n===o&&(e.preventDefault(),a.focus()),l&&n===a&&e.preventDefault()}})):u.style.display="none")}();'
 			);
 
 	} // /enqueue_inline_nav_mobile

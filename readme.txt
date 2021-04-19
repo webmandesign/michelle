@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.12 =
-20210416 Improving accessibility, improving styles, fixing bugs.
+= 1.0.13 =
+20210419 Allowing smaller font size in theme options, improving search modal and fixing accessibility bug.
 
 
 == Resources ==

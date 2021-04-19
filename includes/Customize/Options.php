@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.0.13
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -109,7 +109,7 @@ class Options implements Component_Interface {
 	 * Sets theme options array.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.12
+	 * @version  1.0.13
 	 *
 	 * @param  array $options
 	 *
@@ -609,7 +609,7 @@ class Options implements Component_Interface {
 						'label'             => esc_html__( 'Basic font size in px', 'michelle' ),
 						'description'       => esc_html__( 'All other font sizes are calculated automatically from this basic font size.', 'michelle' ),
 						'default'           => 19,
-						'min'               => 16,
+						'min'               => 13,
 						'max'               => 28,
 						'step'              => 1,
 						'suffix'            => 'px',
@@ -631,7 +631,7 @@ class Options implements Component_Interface {
 						'id'                => 'typography_size_header',
 						'label'             => esc_html__( 'Header font size in px', 'michelle' ),
 						'default'           => 16,
-						'min'               => 16,
+						'min'               => 13,
 						'max'               => 28,
 						'step'              => 1,
 						'suffix'            => 'px',
@@ -653,7 +653,7 @@ class Options implements Component_Interface {
 						'id'                => 'typography_size_footer',
 						'label'             => esc_html__( 'Footer font size in px', 'michelle' ),
 						'default'           => 16,
-						'min'               => 16,
+						'min'               => 13,
 						'max'               => 28,
 						'step'              => 1,
 						'suffix'            => 'px',

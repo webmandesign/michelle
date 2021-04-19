@@ -1,5 +1,25 @@
 # Michelle Changelog
 
+## 1.0.13, 20210419
+
+### Updated
+- Moving focus to search field when search modal is open
+- Allowing font size lower than 16px in theme options
+
+### Fixed
+- Accessibility: aria attribute values for mobile menu and search modal toggle
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/js/modal-search.js
+	assets/js/navigation-mobile.js
+	includes/Assets/Scripts.php
+	includes/Customize/Options.php
+	includes/Header/Component.php
+
+
 ## 1.0.12, 20210416
 
 ### Updated

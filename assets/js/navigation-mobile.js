@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.0.13
  */
 
 ( function() {
@@ -43,11 +43,11 @@
 		document.documentElement.classList.toggle( 'lock-scroll' );
 
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
-		} else {
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
+		} else {
+			button.setAttribute( 'aria-expanded', 'false' );
+			menu.setAttribute( 'aria-expanded', 'false' );
 		}
 	}
 
