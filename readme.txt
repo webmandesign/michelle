@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 
 == Description ==
-Michelle is accessibility ready WordPress theme for creating inclusive, accessible websites. You get the power of full customization and block editor (Gutenberg) compatibility. Useful templates, block patterns, block styles and featured posts functionality alow you to build a beautiful website easily and in no time. It works with Beaver Builder, Elementor, or any other page builder. Michelle is multi-purpose and just elevates your business, eCommerce, portfolio, or blog website.
+Michelle is accessibility ready WordPress theme for creating inclusive websites easily and with fun using block editor. Useful block patterns, block styles, templates and featured posts functionality allow you to build an eyecatching website in no time. Customize site footer and error 404 page content with block editor! The theme also works with Beaver Builder, Elementor, or any other page builder. It also supports theme builders! Michelle elevates your business, eCommerce, portfolio, or blog website.
 
 
 == Frequently Asked Questions ==
@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.0.13 =
-20210419 Allowing smaller font size in theme options, improving search modal and fixing accessibility bug.
+= 1.1.0 =
+20210421 Passing accessibility review and fixing search button height on mobile screens.
 
 
 == Resources ==

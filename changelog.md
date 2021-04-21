@@ -1,5 +1,20 @@
 # Michelle Changelog
 
+## 1.1.0, 20210421
+
+### Updated
+- Passing accessibility review and adding `accessibility-ready` tag
+
+### Fixed
+- Search button height on mobile screens
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/global.scss
+
+
 ## 1.0.13, 20210419
 
 ### Updated
