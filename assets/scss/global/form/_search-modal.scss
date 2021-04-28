@@ -112,7 +112,7 @@
 
 		.svg-icon {
 			width: auto;
-			height: 1.5em;
+			height: $ratio +em;
 			margin: -.25em 0 0;
 			vertical-align: middle;
 		}
@@ -122,6 +122,7 @@
 			width: 100%;
 			left: 0; // No RTL needed here.
 			top: 0;
+			padding: 1em;
 			z-index: 1;
 
 			&,

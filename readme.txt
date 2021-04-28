@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.1.0 =
-20210421 Passing accessibility review and fixing search button height on mobile screens.
+= 1.1.1 =
+20210428 Fixing style bugs.
 
 
 == Resources ==

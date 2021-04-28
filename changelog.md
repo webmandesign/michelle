@@ -1,5 +1,19 @@
 # Michelle Changelog
 
+## 1.1.1, 20210428
+
+### Fixed
+- Search form modal button size when modal is open
+- Overlaid header position on mobile screens when WordPress admin bar is displayed
+- Mobile menu and search form toggle buttons spacing on mobile screens
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/global.scss
+
+
 ## 1.1.0, 20210421
 
 ### Updated
