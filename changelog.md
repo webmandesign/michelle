@@ -1,5 +1,17 @@
 # Michelle Changelog
 
+## 1.1.2, 20210502
+
+### Fixed
+- Search form modal button padding when modal is open on large screens
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/global.scss
+
+
 ## 1.1.1, 20210428
 
 ### Fixed

@@ -125,6 +125,11 @@
 			padding: 1em;
 			z-index: 1;
 
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			padding-top: 6vh;
+			padding-bottom: 6vh;
+		}
+
 			&,
 			&:hover,
 			&:focus,

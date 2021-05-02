@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.1.1 =
-20210428 Fixing style bugs.
+= 1.1.2 =
+20210502 Fixing style bugs.
 
 
 == Resources ==
