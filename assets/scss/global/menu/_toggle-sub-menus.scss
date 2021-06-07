@@ -3,7 +3,7 @@
 // A11yMenu JS accessible menu.
 .toggle-sub-menus {
 
-	[aria-haspopup] {
+	.menu-item-has-children {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -64,14 +64,16 @@
 	}
 
 	.has-expanded-sub-menu > .sub-menu {
+		// See below for AMP styles.
 		display: block;
 	}
 
 	.has-expanded-sub-menu > .button-toggle-sub-menu::after {
+		// See below for AMP styles.
 		transform: translateX(-50%) translateY(-50%) rotate(0); // No RTL needed here.
 	}
 
-	[aria-haspopup]:hover > .button-toggle-sub-menu {
+	.menu-item-has-children:hover > .button-toggle-sub-menu {
 		opacity: 1;
 
 		&::after {
@@ -82,4 +84,22 @@
 
 	}
 
+}
+
+// AMP.
+[amp] .button-toggle-sub-menu.toggled {
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+		// With AMP we need to make this toggled only for mobile menu
+		// as otherwise it looks weird on large screens
+		// On large screens the CSS :focus-within takes charge.
+
+		~ .sub-menu {
+			display: block;
+		}
+
+		&::after {
+			transform: translateX(-50%) translateY(-50%) rotate(0); // No RTL needed here.
+		}
+
+	}
 }

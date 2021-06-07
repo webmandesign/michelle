@@ -6,12 +6,13 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.13
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Header;
 
 use WebManDesign\Michelle\Component_Interface;
+use WebManDesign\Michelle\Tool\AMP;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -224,7 +225,7 @@ class Component implements Component_Interface {
 	 * Also compatible with WooCommerce product search form.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.13
+	 * @version  1.2.0
 	 *
 	 * @param  string $html
 	 *
@@ -241,7 +242,15 @@ class Component implements Component_Interface {
 
 		// Variables
 
-			$button  = '<button id="modal-search-toggle" class="modal-search-toggle" aria-controls="modal-search" aria-expanded="false">';
+			$amp = wp_parse_args(
+				AMP::get_atts_search_modal(),
+				array(
+					'button'    => '',
+					'container' => '',
+				)
+			);
+
+			$button  = '<button id="modal-search-toggle" class="modal-search-toggle" aria-controls="modal-search" aria-expanded="false"' . $amp['button'] . '>';
 			$button .= '<svg class="svg-icon modal-search-open" width="1.5em" aria-hidden="true" role="img" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><path d="M14.7,13.3L11,9.6c0.6-0.9,1-2,1-3.1C12,3.5,9.5,1,6.5,1S1,3.5,1,6.5S3.5,12,6.5,12c1.2,0,2.2-0.4,3.1-1l3.7,3.7L14.7,13.3z M2.5,6.5c0-2.2,1.8-4,4-4s4,1.8,4,4s-1.8,4-4,4S2.5,8.7,2.5,6.5z" /></svg>';
 			$button .= '<svg class="svg-icon modal-search-close" width="1.5em" aria-hidden="true" role="img" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><polygon points="14.7,2.7 13.3,1.3 8,6.6 2.7,1.3 1.3,2.7 6.6,8 1.3,13.3 2.7,14.7 8,9.4 13.3,14.7 14.7,13.3 9.4,8"/></svg>';
 			$button .= '<span class="screen-reader-text">';
@@ -259,16 +268,17 @@ class Component implements Component_Interface {
 			);
 
 			wp_add_inline_script(
-				'michelle-scripts-footer',
-				'"use strict";!function(){function d(){r.classList.toggle("toggled"),document.body.classList.toggle("has-modal-search-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==r.className.indexOf("toggled")?(u.setAttribute("aria-expanded","true"),t.setAttribute("aria-expanded","true"),e&&(e.focus(),console.log(e))):(u.setAttribute("aria-expanded","false"),t.setAttribute("aria-expanded","false"))}var e,r=document.getElementById("search-form-modal"),u=document.getElementById("modal-search-toggle"),t=document.getElementById("modal-search");void 0!==t?(t.setAttribute("aria-expanded","false"),e=r.querySelector("[type=search]"),u.onclick=function(){d()},document.addEventListener("keydown",function(e){if(r.classList.contains("toggled")){var t,a,o,l=document.activeElement,n=9===e.keyCode,s=27===e.keyCode,c=e.shiftKey;t=r.querySelectorAll("a, button, input, select"),a=(t=Array.prototype.slice.call(t))[0],o=t[t.length-1],s&&(e.preventDefault(),d(),u.focus()),!c&&n&&o===l&&(e.preventDefault(),a.focus()),c&&n&&a===l&&(e.preventDefault(),o.focus()),n&&a===o&&e.preventDefault()}})):r.style.display="none"}();'
+				'michelle-scripts-footer', // -> AMP ready.
+				'"use strict";!function(){function d(){u.classList.toggle("toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==u.className.indexOf("toggled")?(r.setAttribute("aria-expanded","true"),e&&(e.focus(),console.log(e))):r.setAttribute("aria-expanded","false")}var e,u=document.getElementById("search-form-modal"),r=document.getElementById("modal-search-toggle");void 0!==document.getElementById("modal-search")?(e=u.querySelector("[type=search]"),r.onclick=function(){d()},document.addEventListener("keydown",function(e){if(u.classList.contains("toggled")){var t,o,l,n=document.activeElement,c=9===e.keyCode,s=27===e.keyCode,a=e.shiftKey;t=u.querySelectorAll("a, button, input, select"),o=(t=Array.prototype.slice.call(t))[0],l=t[t.length-1],s&&(e.preventDefault(),d(),r.focus()),!a&&c&&l===n&&(e.preventDefault(),o.focus()),a&&c&&o===n&&(e.preventDefault(),l.focus()),c&&o===l&&e.preventDefault()}})):u.style.display="none"}();'
 			);
 
 
 		// Output
 
 			return
-				'<div id="search-form-modal" class="modal-search-container">'
+				'<div id="search-form-modal" class="modal-search-container"' . $amp['container'] . '>'
 				. $button
+				. ' '
 				. $html
 				. '</div>';
 

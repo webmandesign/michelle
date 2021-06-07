@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -220,18 +220,12 @@ class CSS_Variables implements Component_Interface {
 	/**
 	 * Scrollbar width via JavaScript.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
 	public static function enqueue_inline_scrollbar_width() {
-
-		// Requirements check
-
-			if ( AMP::is_amp() ) {
-				return;
-			}
-
 
 		// Processing
 

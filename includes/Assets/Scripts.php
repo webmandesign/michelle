@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.13
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -47,11 +47,19 @@ class Scripts implements Component_Interface {
 	/**
 	 * Placeholders for adding inline scripts.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
 	public static function enqueue_inline() {
+
+		// Requirements check
+
+			if ( AMP::is_amp() ) {
+				return;
+			}
+
 
 		// Processing
 
@@ -107,7 +115,7 @@ class Scripts implements Component_Interface {
 	 * @see  assets/js/navigation-mobile.js
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.13
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -116,8 +124,7 @@ class Scripts implements Component_Interface {
 		// Requirements check
 
 			if (
-				AMP::is_amp()
-				|| ! Header::is_enabled()
+				! Header::is_enabled()
 				|| ! Mod::get( 'navigation_mobile' )
 			) {
 				return;
@@ -128,7 +135,7 @@ class Scripts implements Component_Interface {
 
 			wp_add_inline_script(
 				'michelle-scripts-footer',
-				'"use strict";!function(){function d(){c.classList.toggle("toggled"),document.body.classList.toggle("has-navigation-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==c.className.indexOf("toggled")?(u.setAttribute("aria-expanded","true"),e.setAttribute("aria-expanded","true")):(u.setAttribute("aria-expanded","false"),e.setAttribute("aria-expanded","false"))}var u,e,c=document.getElementById("site-navigation");c&&void 0!==(u=document.getElementById("menu-toggle"))&&(void 0!==(e=document.getElementById("menu-primary"))?(e.setAttribute("aria-expanded","false"),u.onclick=function(){d()},document.addEventListener("keydown",function(e){if(c.classList.contains("toggled")){var t,n,a,o=document.activeElement,l=9===e.keyCode,i=27===e.keyCode,s=e.shiftKey;t=c.querySelectorAll("a, button, input"),n=(t=Array.prototype.slice.call(t))[0],a=t[t.length-1],i&&(e.preventDefault(),d(),u.focus()),!s&&l&&a===o&&(e.preventDefault(),n.focus()),s&&l&&n===o&&(e.preventDefault(),a.focus()),l&&n===a&&e.preventDefault()}})):u.style.display="none")}();'
+				'"use strict";!function(){function c(){u.classList.toggle("toggled"),document.body.classList.toggle("has-navigation-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==u.className.indexOf("toggled")?d.setAttribute("aria-expanded","true"):d.setAttribute("aria-expanded","false")}var d,u=document.getElementById("site-navigation");u&&void 0!==(d=document.getElementById("menu-toggle"))&&(void 0!==document.getElementById("menu-primary")?(d.onclick=function(){c()},document.addEventListener("keydown",function(e){if(u.classList.contains("toggled")){var t,n,o,l=document.activeElement,a=9===e.keyCode,i=27===e.keyCode,s=e.shiftKey;t=u.querySelectorAll("a, button, input"),n=(t=Array.prototype.slice.call(t))[0],o=t[t.length-1],i&&(e.preventDefault(),c(),d.focus()),!s&&a&&o===l&&(e.preventDefault(),n.focus()),s&&a&&n===l&&(e.preventDefault(),o.focus()),a&&n===o&&e.preventDefault()}})):d.style.display="none")}();'
 			);
 
 	} // /enqueue_inline_nav_mobile
@@ -136,18 +143,12 @@ class Scripts implements Component_Interface {
 	/**
 	 * Remove "no-js" class from elements.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
 	public static function enqueue_inline_no_js_class() {
-
-		// Requirements check
-
-			if ( AMP::is_amp() ) {
-				return;
-			}
-
 
 		// Processing
 
@@ -177,18 +178,11 @@ class Scripts implements Component_Interface {
 	 * @see  assets/js/scroll.js
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.12
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
 	public static function enqueue_inline_scroll() {
-
-		// Requirements check
-
-			if ( AMP::is_amp() ) {
-				return;
-			}
-
 
 		// Processing
 

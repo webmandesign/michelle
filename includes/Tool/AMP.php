@@ -10,7 +10,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -42,7 +43,8 @@ class AMP implements Component_Interface {
 	/**
 	 * After setup theme.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -51,7 +53,23 @@ class AMP implements Component_Interface {
 		// Processing
 
 			add_theme_support( 'amp', array(
-				'comments_live_list' => true,
+
+				// https://amp-wp.org/documentation/playbooks/toggling-hamburger-menus/
+				'nav_menu_toggle' => array(
+					'nav_container_id'           => 'site-navigation',
+					'nav_container_toggle_class' => 'toggled',
+					'menu_button_id'             => 'menu-toggle',
+					'menu_button_toggle_class'   => 'toggled',
+				),
+
+				// https://amp-wp.org/documentation/playbooks/navigation-sub-menu-buttons/
+				'nav_menu_dropdown' => array(
+					'sub_menu_button_class'        => 'button-toggle-sub-menu',
+					'sub_menu_button_toggle_class' => 'toggled',
+					'expand_text'                  => esc_html__( 'Expand child menu', 'michelle' ),
+					'collapse_text'                => esc_html__( 'Collapse child menu', 'michelle' ),
+				),
+
 			) );
 
 	} // /after_setup_theme
@@ -74,108 +92,62 @@ class AMP implements Component_Interface {
 	} // /is_amp
 
 	/**
-	 * Determines whether `amp-live-list` should be used for the comment list.
+	 * Filter AMP attributes.
 	 *
-	 * @since  1.0.0
+	 * @since  1.2.0
+	 *
+	 * @param  array  $atts
+	 * @param  string $context
 	 *
 	 * @return  array
 	 */
-	public static function using_amp_live_list_comments(): bool {
-
-		// Requirements check
-
-			if ( ! self::is_amp() ) {
-				return false;
-			}
-
-
-		// Variables
-
-			$amp_theme_support = get_theme_support( 'amp' );
-
+	public static function filter_atts( array $atts, string $context = '' ): array {
 
 		// Output
 
-			return ! empty( $amp_theme_support[0]['comments_live_list'] );
+			/**
+			 * Filters AMP attributes.
+			 *
+			 * @since  1.2.0
+			 *
+			 * @param  array  $atts
+			 * @param  string $context
+			 */
+			return (array) apply_filters( 'michelle/AMP/attributes', $atts, $context );
 
-	} // /using_amp_live_list_comments
+	} // /is_amp
 
 	/**
-	 * Renders the wrapping `amp-live-list` element for the comments list.
+	 * Get AMP attributes: search modal.
 	 *
-	 * @since  1.0.0
+	 * @since  1.2.0
 	 *
-	 * @param  string $context  Markup context, such as 'open' and 'close'.
-	 *
-	 * @return  void
+	 * @return  array
 	 */
-	public static function the_amp_live_list_comments( string $context = 'open' ) {
+	public static function get_atts_search_modal(): array {
 
-		// Requirements check
+		// Variables
 
-			if ( ! self::using_amp_live_list_comments() ) {
-				return;
-			}
+			$atts = array();
 
 
 		// Processing
 
-			if ( 'open' === $context ) {
-				$comments_per_page = ( get_option( 'page_comments' ) ) ? ( (int) get_option( 'comments_per_page' ) ) : ( 10000 );
-
-				?>
-				<amp-live-list
-					id="amp-live-comments-list-<?php the_ID(); ?>"
-					<?php
-
-					if ( 'asc' === get_option( 'comment_order' ) ) {
-						echo ' sort="ascending" ';
-					}
-
-					?>
-					data-poll-interval="<?php echo esc_attr( MINUTE_IN_SECONDS * 1000 ); ?>"
-					data-max-items-per-page="<?php echo esc_attr( $comments_per_page ); ?>"
-				>
-				<?php
-
-				add_filter( 'navigation_markup_template', __CLASS__ . '::add_amp_live_list_pagination_attribute' );
-			} elseif ( 'close' === $context ) {
-				remove_filter( 'navigation_markup_template', __CLASS__ . '::add_amp_live_list_pagination_attribute' );
-
-				?>
-					<div update>
-						<button class="button" on="tap:amp-live-comments-list-<?php the_ID(); ?>.update"><?php esc_html_e( 'New comment(s)', 'michelle' ); ?></button>
-					</div>
-				</amp-live-list>
-				<?php
+			if ( self::is_amp() ) {
+				$atts = array(
+					'button' =>
+						' on="tap:AMP.setState( { searchMenu: ! searchMenu  } )"' .
+						' [aria-expanded]="searchMenu ? \'true\' : \'false\'"',
+					'container' =>
+						' [class]="\'modal-search-container\' + ( searchMenu ? \' toggled\' : \'\' )"',
+				);
 			}
 
-	} // /the_amp_live_list_comments
-
-	/**
-	 * Adds a pagination reference point attribute for `amp-live-list` when theme supports AMP.
-	 *
-	 * This is used by the `navigation_markup_template` filter in the comments template.
-	 *
-	 * @link https://www.ampproject.org/docs/reference/components/amp-live-list#pagination
-	 *
-	 * @since  1.0.0
-	 *
-	 * @param  string $markup  Navigation markup.
-	 *
-	 * @return  string  Filtered markup.
-	 */
-	public static function add_amp_live_list_pagination_attribute(  string $markup ): string {
 
 		// Output
 
-			return preg_replace(
-				'/(\s*<[a-z0-9_-]+)/i',
-				'$1 pagination ',
-				$markup,
-				1
-			);
+			return (array) self::filter_atts( $atts, 'search-modal' );
 
-	} // /add_amp_live_list_pagination_attribute
+	} // /get_atts_search_modal
 
 }

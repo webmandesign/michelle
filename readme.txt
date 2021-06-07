@@ -1,5 +1,5 @@
 === Michelle ===
-Contributors: webmandesign
+Contributors: webmandesign, jamesosborne
 Requires at least: 5.5
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -32,8 +32,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.1.2 =
-20210502 Fixing style bugs.
+= 1.2.0 =
+20210608 Adding AMP compatibility.
 
 
 == Resources ==

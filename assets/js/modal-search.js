@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.13
+ * @since    1.0.13
+ * @version  1.2.0
  */
 
 ( function() {
@@ -28,18 +29,14 @@
 		return;
 	}
 
-	modal.setAttribute( 'aria-expanded', 'false' );
-
 	searchField = container.querySelector( '[type=search]' );
 
 	function michelleToggleSearch() {
 		container.classList.toggle( 'toggled' );
-		document.body.classList.toggle( 'has-modal-search-toggled' );
 		document.documentElement.classList.toggle( 'lock-scroll' );
 
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			button.setAttribute( 'aria-expanded', 'true' );
-			modal.setAttribute( 'aria-expanded', 'true' );
 
 			if ( searchField ) {
 				searchField.focus();
@@ -47,7 +44,6 @@
 			}
 		} else {
 			button.setAttribute( 'aria-expanded', 'false' );
-			modal.setAttribute( 'aria-expanded', 'false' );
 		}
 	}
 

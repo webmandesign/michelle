@@ -34,30 +34,32 @@
 		position: relative;
 
 		// Inaccessible menu fallback indicating submenu.
-		&:not([aria-haspopup]):not(.menu-item-is-depth-3) {
+		html:not([amp]) &:not([aria-haspopup]):not(.menu-item-is-depth-3) {
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 
-			> a {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
+				> a {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
 
-				&::after {
-					content: '\25bc';
-					padding-#{$left}: 1em;
-					margin-#{$left}: auto;
-					font-size: .5em;
+					&::after {
+						content: '\25bc';
+						padding-#{$left}: 1em;
+						margin-#{$left}: auto;
+						font-size: .5em;
+					}
+
+				}
+
+				.menu-item-has-children:not(.menu-item-is-depth-3) > a::after {
+					@if 'left' == $left {
+						content: '\25b6';
+					} @else {
+						content: '\25C0';
+					}
 				}
 
 			}
-
-			.menu-item-has-children:not(.menu-item-is-depth-3) > a::after {
-				@if 'left' == $left {
-					content: '\25b6';
-				} @else {
-					content: '\25C0';
-				}
-			}
-
 		}
 
 		&:hover > .sub-menu {
@@ -92,4 +94,10 @@
 
 	}
 
+}
+
+html:not([amp]) .no-js .sub-menu {
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+		display: block;
+	}
 }

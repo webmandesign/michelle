@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Accessibility;
@@ -98,7 +98,8 @@ class Component implements Component_Interface {
 	 * Since this will never need to be changed, it is minified.
 	 * @link https://git.io/vWdr2
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -106,10 +107,7 @@ class Component implements Component_Interface {
 
 		// Requirements check
 
-			if (
-				AMP::is_amp()
-				|| empty( $GLOBALS['is_IE'] )
-			) {
+			if ( empty( $GLOBALS['is_IE'] ) ) {
 				return;
 			}
 

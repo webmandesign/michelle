@@ -70,10 +70,10 @@
 			display: flex;
 		}
 
-		[aria-haspopup] {
+		.menu-item-has-children {
 			display: block;
 
-			[aria-haspopup] {
+			.menu-item-has-children {
 				display: flex;
 			}
 

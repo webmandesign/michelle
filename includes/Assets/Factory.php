@@ -48,7 +48,6 @@ class Factory {
 			 * Filters args for theme asset registration.
 			 *
 			 * The arguments array comes from wp_register_style() and wp_register_script() functions.
-			 * Plus additional `has_rtl` boolean argument is used to set stylesheet RTL support.
 			 *
 			 * @example
 			 *   array(

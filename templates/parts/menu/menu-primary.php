@@ -12,7 +12,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle;
@@ -21,7 +21,6 @@ namespace WebManDesign\Michelle;
 defined( 'ABSPATH' ) || exit;
 
 $is_mobile_nav_enabled = Customize\Mod::get( 'navigation_mobile' );
-$is_amp = Tool\AMP::is_amp();
 
 ?>
 
@@ -30,30 +29,9 @@ $is_amp = Tool\AMP::is_amp();
 	class="main-navigation"
 	role="navigation"
 	aria-label="<?php echo esc_attr_x( 'Main menu', 'Navigational menu.', 'michelle' ); ?>"
-	<?php
-
-	if ( $is_amp ) {
-		?>
-		[class]=" siteNavigationMenu.expanded ? 'main-navigation nav--toggled-on' : 'main-navigation' "
-		<?php
-	}
-
-	?>
-	>
+>
 
 	<?php
-
-	if ( $is_amp ) {
-		?>
-		<amp-state id="siteNavigationMenu">
-			<script type="application/json">
-				{
-					"expanded": false
-				}
-			</script>
-		</amp-state>
-		<?php
-	}
 
 	if ( $is_mobile_nav_enabled ) :
 		?>
@@ -62,16 +40,6 @@ $is_amp = Tool\AMP::is_amp();
 			class="menu-toggle"
 			aria-controls="menu-primary"
 			aria-expanded="false"
-			<?php
-
-			if ( $is_amp ) {
-				?>
-				on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
-				[aria-expanded]="siteNavigationMenu.expanded ? 'true' : 'false'"
-				<?php
-			}
-
-			?>
 		>
 			<svg class="svg-icon menu-open" width="1em" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d=" M0,2v2h16V2H0z M0,9h12V7H0V9z M0,14h14v-2H0V14z"/></svg>
 			<svg class="svg-icon menu-close" width="1em" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="14.7,2.7 13.3,1.3 8,6.6 2.7,1.3 1.3,2.7 6.6,8 1.3,13.3 2.7,14.7 8,9.4 13.3,14.7 14.7,13.3 9.4,8"/></svg>

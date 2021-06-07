@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.13
+ * @version  1.2.0
  */
 
 ( function() {
@@ -35,8 +35,6 @@
 		return;
 	}
 
-	menu.setAttribute( 'aria-expanded', 'false' );
-
 	function michelleToggleMenu() {
 		container.classList.toggle( 'toggled' );
 		document.body.classList.toggle( 'has-navigation-toggled' );
@@ -44,10 +42,8 @@
 
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
 		} else {
 			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
 		}
 	}
 

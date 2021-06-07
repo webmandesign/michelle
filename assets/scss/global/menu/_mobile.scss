@@ -16,11 +16,8 @@
 		box-shadow: none;
 	}
 
-	.no-js & {
-		display: none;
-	}
-
 	.toggled & {
+		// See below for .no-js. Basically, we are creating faux button for such case.
 		position: fixed;
 		width: 100%;
 		#{$left}: 0;
@@ -50,7 +47,8 @@
 
 		.menu-open {
 
-			.toggled & {
+			.toggled &,
+			html:not([amp]) .no-js .main-navigation:focus-within & {
 				display: none;
 			}
 
@@ -59,7 +57,8 @@
 		.menu-close {
 			display: none;
 
-			.toggled & {
+			.toggled &,
+			html:not([amp]) .no-js .main-navigation:focus-within & {
 				display: inline;
 			}
 
@@ -105,6 +104,7 @@
 			margin: 0;
 
 			&.toggled {
+				// See below for .no-js.
 				color: var(--color_navigation_text); // For menu toggle button.
 			}
 
@@ -185,6 +185,7 @@
 		}
 
 		.toggled .main-navigation-container {
+			// See below for .no-js.
 			display: block;
 		}
 
@@ -199,4 +200,32 @@
 		}
 	}
 
+}
+
+// No JavaScript.
+html:not([amp]) .no-js .main-navigation:focus-within .menu-toggle {
+	z-index: auto;
+}
+html:not([amp]) .no-js.has-navigation-mobile .main-navigation:focus-within {
+	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
+		color: var(--color_navigation_text); // For menu toggle button.
+
+		.main-navigation-container {
+			display: block;
+
+			// Faux un-focusable close button.
+			&::before {
+				content: '\00d7'; // &times;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: 0;
+				font-size: 3em;
+				text-align: center;
+				speak: none;
+			}
+
+		}
+
+	}
 }
