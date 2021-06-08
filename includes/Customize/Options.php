@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.13
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -109,7 +109,7 @@ class Options implements Component_Interface {
 	 * Sets theme options array.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.13
+	 * @version  1.2.0
 	 *
 	 * @param  array $options
 	 *
@@ -200,7 +200,7 @@ class Options implements Component_Interface {
 						'description' => esc_html__( 'Tagline longer than 40 characters gets accessibly hidden automatically on your live website.', 'michelle' ),
 						'default'     => true,
 						'preview_js'  => array(
-							'custom' => "jQuery( 'body' ).toggleClass( 'is-hidden-site-title' );",
+							'custom' => "$( 'body' ).toggleClass( 'is-hidden-site-title' );",
 						),
 					),
 
@@ -216,7 +216,7 @@ class Options implements Component_Interface {
 							'last'  => esc_html__( 'Last item in header', 'michelle' ),
 						),
 						'preview_js' => array(
-							'custom' => "jQuery( 'body' ).toggleClass( 'has-site-title-first has-site-title-last' );",
+							'custom' => "$( 'body' ).toggleClass( 'has-site-title-first has-site-title-last' );",
 						),
 					),
 

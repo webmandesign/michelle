@@ -10,7 +10,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle;
@@ -60,16 +61,9 @@ do_action( 'tha_comments_before' );
 			?>
 		</h2>
 
-		<?php
+		<?php the_comments_navigation(); ?>
 
-		Tool\AMP::the_amp_live_list_comments( 'open' );
-		the_comments_navigation();
-
-		$comment_list_atts = ( Tool\AMP::using_amp_live_list_comments() ) ? ( ' items' ) : ( '' );
-
-		?>
-
-		<ol class="comment-list"<?php echo $comment_list_atts; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>>
+		<ol class="comment-list">
 			<?php
 
 			wp_list_comments( array(
@@ -84,7 +78,6 @@ do_action( 'tha_comments_before' );
 		<?php
 
 		the_comments_navigation();
-		Tool\AMP::the_amp_live_list_comments( 'close' );
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :

@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -38,7 +39,8 @@ class Preview implements Component_Interface {
 	/**
 	 * Customizer preview assets enqueue.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -46,13 +48,17 @@ class Preview implements Component_Interface {
 
 		// Processing
 
-			Assets\Factory::style_enqueue( array(
-				'handle'   => 'michelle-customize-preview',
-				'src'      => get_theme_file_uri( 'assets/css/customize-preview.css' ),
-				'add_data' => array(
-					'precache' => true,
-				),
-			) );
+			// Using `wp_enqueue_scripts` action for late enqueue.
+			add_action( 'wp_enqueue_scripts', function() {
+				Assets\Factory::style_enqueue( array(
+					'handle'   => 'michelle-customize-preview',
+					'src'      => get_theme_file_uri( 'assets/css/customize-preview.css' ),
+					'inline'   => '/* JS CSS */', // Produces `#michelle-customize-preview-inline-css`.
+					'add_data' => array(
+						'precache' => true,
+					),
+				) );
+			}, 9999 );
 
 			Assets\Factory::script_enqueue( array(
 				'handle'   => 'michelle-customize-preview',
@@ -70,19 +76,11 @@ class Preview implements Component_Interface {
 	 *
 	 * This function automatically outputs theme customizer preview JavaScript for each theme option,
 	 * where the `preview_js` property is set.
-	 *
-	 * For CSS theme option change it works by inserting a `<style>` tag into a preview HTML head for
-	 * each theme option separately. This is to prevent inline styles on elements when applied with
-	 * pure JS.
-	 * Also, we need to create the `<style>` tag for each option separately so way we gain control
-	 * over the output. If we put all the CSS into a single `<style>` tag, it would be bloated with
-	 * CSS styles for every single subtle change in the theme option(s).
-	 *
+	 * Generated CSS styles are added to `#michelle-customize-preview-inline-css` inline style tag.
 	 * It is possible to set up a custom JS action, not just CSS styles change. That can be used
 	 * to trigger a class on an element, for example.
-	 *
-	 * If `preview_js => false` set, the change of the theme option won't trigger the customizer
-	 * preview refresh. This is useful to disable welcome page, for example.
+	 * If `preview_js => false` is set, the change of the theme option won't trigger the customizer
+	 * preview refresh. This is useful for theme options that are not front-end related.
 	 *
 	 * The actual JavaScript is outputted in the footer of the page.
 	 *
@@ -134,7 +132,8 @@ class Preview implements Component_Interface {
 	 *
 	 *   );
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -183,8 +182,7 @@ class Preview implements Component_Interface {
 						// CSS.
 						if ( isset( $option['preview_js']['css'] ) ) {
 
-							$output_single .= "\t\t\t" . "var newCss = '';" . PHP_EOL.PHP_EOL;
-							$output_single .= "\t\t\t" . "if ( $( '#jscss-" . $option_id . "' ).length ) { $( '#jscss-" . $option_id . "' ).remove() }" . PHP_EOL.PHP_EOL;
+							$output_single .= "\t\t\t" . "var newCSS = '';" . PHP_EOL;
 
 							foreach ( $option['preview_js']['css'] as $selector => $properties ) {
 								if ( is_array( $properties ) ) {
@@ -248,11 +246,11 @@ class Preview implements Component_Interface {
 
 									}
 
-									$output_single .= "\t\t\t" . "newCss += '" . $selector_before . $selector . " { " . $output_single_css . "}" . $selector_after . " ';" . PHP_EOL;
+									$output_single .= "\t\t\t" . "newCSS += '" . $selector_before . $selector . " { " . $output_single_css . "}" . $selector_after . " ';" . PHP_EOL;
 								}
 							}
 
-							$output_single .= PHP_EOL . "\t\t\t" . "$( document ).find( 'head' ).append( $( '<style id=\'jscss-" . $option_id . "\'> ' + newCss + '</style>' ) );" . PHP_EOL;
+							$output_single .= PHP_EOL . "\t\t\t" . "michellePreviewStyleTag.append( newCSS );" . PHP_EOL;
 						}
 
 						// Custom JS.
@@ -296,6 +294,7 @@ class Preview implements Component_Interface {
 				return (string) apply_filters( 'michelle/customize/preview/js',
 					'( function( $ ) {' . PHP_EOL.PHP_EOL
 					. '"use strict";' . PHP_EOL.PHP_EOL
+					. 'var michellePreviewStyleTag = $( "#michelle-customize-preview-inline-css" );' . PHP_EOL.PHP_EOL
 					. trim( $output ) . PHP_EOL.PHP_EOL // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					. '} )( jQuery );'
 				);

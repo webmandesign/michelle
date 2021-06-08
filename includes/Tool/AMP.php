@@ -24,9 +24,23 @@ defined( 'ABSPATH' ) || exit;
 class AMP implements Component_Interface {
 
 	/**
-	 * Initialization.
+	 * AMP attributes.
 	 *
 	 * @since  1.0.0
+	 *
+	 * @var array
+	 */
+	private static $atts = array(
+		'html'             => '[class]="( searchMenu || navMenuToggledOn ? \'lock-scroll\' : \'\' )"',
+		'search/container' => '[class]="\'modal-search-container\' + ( searchMenu ? \' toggled\' : \'\' )"',
+		'search/button'    => 'on="tap:AMP.setState( { searchMenu: ! searchMenu  } )" [aria-expanded]="searchMenu ? \'true\' : \'false\'"',
+	);
+
+	/**
+	 * Initialization.
+	 *
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -37,6 +51,10 @@ class AMP implements Component_Interface {
 			// Actions
 
 				add_action( 'after_setup_theme', __CLASS__ . '::after_setup_theme' );
+
+			// Filters
+
+				add_action( 'amp_dev_mode_element_xpaths', __CLASS__ . '::dev_mode_xpaths' );
 
 	} // /init
 
@@ -92,62 +110,74 @@ class AMP implements Component_Interface {
 	} // /is_amp
 
 	/**
-	 * Filter AMP attributes.
+	 * Get AMP attributes.
 	 *
 	 * @since  1.2.0
 	 *
-	 * @param  array  $atts
 	 * @param  string $context
+	 * @param  bool   $echo
 	 *
-	 * @return  array
+	 * @return  void  Either return or echo the string value.
 	 */
-	public static function filter_atts( array $atts, string $context = '' ): array {
+	public static function get_atts( string $context = '', bool $echo = false ) {
 
-		// Output
+		// Processing
+
+			if (
+				self::is_amp()
+				&& isset( self::$atts[ $context ] )
+			) {
+				$atts = ' ' . trim( self::$atts[ $context ] );
+			} else {
+				$atts = '';
+			}
 
 			/**
 			 * Filters AMP attributes.
 			 *
 			 * @since  1.2.0
 			 *
-			 * @param  array  $atts
+			 * @param  string $atts
 			 * @param  string $context
 			 */
-			return (array) apply_filters( 'michelle/AMP/attributes', $atts, $context );
+			$atts = (string) apply_filters( 'michelle/amp/get_atts', $atts, $context );
 
-	} // /is_amp
+
+		// Output
+
+			if ( $echo ) {
+				echo $atts;
+			} else {
+				return $atts;
+			}
+
+	} // /get_atts
 
 	/**
-	 * Get AMP attributes: search modal.
+	 * XPath queries for elements that should be enabled for AMP dev mode.
 	 *
 	 * @since  1.2.0
 	 *
+	 * @param  array $xpaths
+	 *
 	 * @return  array
 	 */
-	public static function get_atts_search_modal(): array {
-
-		// Variables
-
-			$atts = array();
-
+	public static function dev_mode_xpaths( array $xpaths ): array {
 
 		// Processing
 
-			if ( self::is_amp() ) {
-				$atts = array(
-					'button' =>
-						' on="tap:AMP.setState( { searchMenu: ! searchMenu  } )"' .
-						' [aria-expanded]="searchMenu ? \'true\' : \'false\'"',
-					'container' =>
-						' [class]="\'modal-search-container\' + ( searchMenu ? \' toggled\' : \'\' )"',
-				);
+			if ( is_customize_preview() ) {
+				/**
+				 * @see  WebManDesign\Michelle\Customize\Preview::assets()
+				 */
+				$xpaths[] = '//style[ @id = "michelle-customize-preview-inline-css" ]';
 			}
 
 
 		// Output
 
-			return (array) self::filter_atts( $atts, 'search-modal' );
+			return $xpaths;
 
-	} // /get_atts_search_modal
+	} // /dev_mode_xpaths
 
 }

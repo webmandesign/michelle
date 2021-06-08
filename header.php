@@ -10,6 +10,8 @@
  * @since  1.0.0
  */
 
+namespace WebManDesign\Michelle;
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
@@ -17,7 +19,7 @@ do_action( 'tha_html_before' );
 
 ?>
 
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); Tool\AMP::get_atts( 'html', true ) ?>>
 
 
 <head>
