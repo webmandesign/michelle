@@ -1,7 +1,21 @@
 /* FILE: global/classes/_scroll-lock.scss */
 
 .lock-scroll {
+
 	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
 		overflow-y: hidden;
 	}
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		.site-header::after {
+			content: '';
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			backdrop-filter: blur(10px);
+		}
+	}
+
 }

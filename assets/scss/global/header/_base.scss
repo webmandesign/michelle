@@ -73,6 +73,7 @@
 
 			.has-scrolled[class*="-header-overlaid"]:not(.has-navigation-toggled) & {
 				position: fixed;
+				margin-top: 0;
 			}
 
 			.has-scrolled[class*="-header-overlaid-light"]:not(.has-navigation-toggled) & {
