@@ -105,6 +105,15 @@
 			}
 		}
 
+	// Others.
+
+		// Elementor has row control buttons above and outside the row container.
+		// Those are getting covered with site header, rendering them inaccessible.
+		// Fixing the issue here.
+		.elementor-editor-active & {
+			z-index: 0;
+		}
+
 }
 
 // Overlaid header.

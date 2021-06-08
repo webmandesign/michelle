@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.10
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -47,7 +47,8 @@ class Block_Styles implements Component_Interface {
 	 *
 	 * @link  https://developer.wordpress.org/reference/functions/register_block_style/
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -70,7 +71,7 @@ class Block_Styles implements Component_Interface {
 				}
 
 				foreach ( (array) $args['blocks'] as $block ) {
-					register_block_style(
+					register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 						$block,
 						array(
 							'name'  => sanitize_html_class( $class ),

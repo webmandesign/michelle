@@ -141,7 +141,7 @@ class Page_Template implements Component_Interface {
 
 					// Using buffer to prevent page content rendering.
 					ob_start();
-					include_once get_theme_file_path( $template );
+					include_once get_theme_file_path( $template ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 					$_not_used = ob_get_clean();
 
 					$template_classes[ $template ] = array_filter( (array) $body_classes );
@@ -337,8 +337,6 @@ class Page_Template implements Component_Interface {
 		 * Set custom logo variation in header only.
 		 *
 		 * @since  1.0.0
-		 *
-		 * @param  mixed $value
 		 *
 		 * @return  mixed
 		 */

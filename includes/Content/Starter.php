@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -262,7 +262,8 @@ class Starter implements Component_Interface {
 	/**
 	 * Get starter content image URL.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @param  string $filename
 	 * @param  string $extension
@@ -273,7 +274,11 @@ class Starter implements Component_Interface {
 
 		// Output
 
-			return get_theme_file_uri( 'assets/images/starter/' . $filename . '.' . $extension . '?v' . MICHELLE_THEME_VERSION );
+			return add_query_arg(
+				'ver',
+				'v' . MICHELLE_THEME_VERSION,
+				get_theme_file_uri( 'assets/images/starter/' . $filename . '.' . trim( $extension ) )
+			);
 
 	} // /get_image_url
 

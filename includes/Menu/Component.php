@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Menu;
@@ -78,7 +79,8 @@ class Component implements Component_Interface {
 	/**
 	 * Get menu arguments: Primary.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @param  bool $mobile_nav  Is mobile navigation enabled?
 	 * @param  bool $fallback    Return arguments to set a `wp_page_menu()` fallback?
@@ -90,8 +92,9 @@ class Component implements Component_Interface {
 		// Variables
 
 			$args = array(
-				'container'    => 'div',
-				'menu_class'   => 'menu',
+				'container'    => '',
+				'menu_id'      => 'menu-primary',
+				'menu_class'   => 'menu menu-primary toggle-sub-menus',
 				'item_spacing' => 'preserve', // Required for `wp_page_menu()` is different than `wp_nav_menu()` one.
 			);
 
@@ -99,29 +102,15 @@ class Component implements Component_Interface {
 		// Processing
 
 			if ( ! $fallback ) {
-			// For `wp_nav_menu()`
-
+				// For `wp_nav_menu()`
 				$args['theme_location']  = 'primary';
 				$args['container_class'] = 'menu';
 				$args['depth']           = 4;
 				$args['fallback_cb']     = __CLASS__ . '::wp_page_menu';
-				$args['items_wrap']      = '<ul id="menu-primary" class="menu-primary toggle-sub-menus">%3$s<li class="menu-toggle-skip-link-container"><a href="#menu-toggle" class="menu-toggle-skip-link">' . esc_html__( 'Skip to menu toggle button', 'michelle' ) . '</a></li></ul>';
-
-				if ( ! $mobile_nav ) {
-					$args['items_wrap'] = '<ul id="menu-primary" class="menu-primary toggle-sub-menus">%3$s</ul>';
-				}
-
 			} else {
-			// For `wp_page_menu()`
-
-				$args['before'] = '<ul id="menu-primary" class="menu-primary toggle-sub-menus menu-fallback">';
-				$args['after']  = '<li class="menu-toggle-skip-link-container"><a href="#menu-toggle" class="menu-toggle-skip-link">' . esc_html__( 'Skip to menu toggle button', 'michelle' ) . '</a></li></ul>';
-
-				if ( ! $mobile_nav ) {
-					$args['before'] = '<ul id="menu-primary" class="menu-primary toggle-sub-menus menu-fallback">';
-					$args['after']  = '</ul>';
-				}
-
+				// For `wp_page_menu()`
+				$args['before'] = '<ul id="menu-primary" class="menu menu-primary toggle-sub-menus menu-fallback">';
+				$args['after']  = '</ul>';
 			}
 
 

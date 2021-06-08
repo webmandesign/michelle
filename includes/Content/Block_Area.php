@@ -5,13 +5,13 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.6
+ * @since    1.0.6
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Content;
 
 use WebManDesign\Michelle\Component_Interface;
-use WebManDesign\Michelle\Customize\Mod;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;

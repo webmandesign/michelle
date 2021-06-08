@@ -25,11 +25,11 @@
 
 	@media (min-width: 600px) {
 		#{ $selector_editor_wrapper } .block-editor-block-list__block.wp-block-column:nth-child(even) {
-			margin-left: $two_em;
+			margin-#{$left}: $two_em;
 		}
 	}
 	@media (min-width: 782px) {
 		#{ $selector_editor_wrapper } .block-editor-block-list__block.wp-block-column:not(:first-child) {
-			margin-left: $two_em;
+			margin-#{$left}: $two_em;
 		}
 	}

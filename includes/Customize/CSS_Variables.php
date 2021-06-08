@@ -26,11 +26,13 @@ class CSS_Variables implements Component_Interface {
 	/**
 	 * Name of cached data transient.
 	 *
-	 * @since   1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
+	 *
 	 * @access  public
 	 * @var     string
 	 */
-	public static $transient_cache_key = 'michelle_css_vars';
+	public static $transient_cache_key = 'michelle_cache_css_vars';
 
 	/**
 	 * Initialization.

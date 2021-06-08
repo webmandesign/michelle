@@ -10,7 +10,7 @@
 	}
 
 	&-section {
-		margin-top: calc( -1 * var(--content_padding) );
+		margin-top: var(--content_padding_negative);
 		margin-bottom: var(--white_space);
 		overflow-x: hidden;
 

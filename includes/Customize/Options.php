@@ -68,7 +68,7 @@ class Options implements Component_Interface {
 	 * Modify native WordPress options and setup partial refresh pointers.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.6
+	 * @version  1.2.0
 	 *
 	 * @param  WP_Customize_Manager $wp_customize
 	 *
@@ -84,7 +84,14 @@ class Options implements Component_Interface {
 
 			// Default background color control.
 			$wp_customize->get_control( 'background_color' )->section  = 'colors_general';
-			$wp_customize->get_control( 'background_color' )->priority = 0;
+			$wp_customize->get_control( 'background_color' )->priority = 10;
+
+			$wp_customize->get_control( 'background_image' )->section      = 'colors_general';
+			$wp_customize->get_control( 'background_preset' )->section     = 'colors_general';
+			$wp_customize->get_control( 'background_position' )->section   = 'colors_general';
+			$wp_customize->get_control( 'background_size' )->section       = 'colors_general';
+			$wp_customize->get_control( 'background_repeat' )->section     = 'colors_general';
+			$wp_customize->get_control( 'background_attachment' )->section = 'colors_general';
 
 			// Option pointers only:
 

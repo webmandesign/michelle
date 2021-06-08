@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -140,7 +140,8 @@ class Component implements Component_Interface {
 	 *
 	 * Used to enable/disable `#primary` section H1 title.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @param  mixed $body_classes  Optional forced array of body classes when using the method within `body_class` hook.
 	 *
@@ -151,7 +152,8 @@ class Component implements Component_Interface {
 		// Variables
 
 			$is_blog_homepage        = is_front_page() && is_home();
-			$has_no_intro_body_class = stripos( implode( ' ', Body_Class::get_body_class( $body_classes ) ), '-no-intro' );
+			$body_classes            = implode( ' ', Body_Class::get_body_class( $body_classes ) );
+			$has_no_intro_body_class = stripos( $body_classes, '-no-intro' ) || stripos( $body_classes, 'no-primary-title' );
 
 
 		// Output

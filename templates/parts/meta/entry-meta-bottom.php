@@ -1,6 +1,6 @@
 <?php
 /**
- * Post meta info: tags.
+ * Post meta info: categories and tags.
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas

@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Setup;
@@ -16,6 +17,15 @@ use WebManDesign\Michelle\Component_Interface;
 defined( 'ABSPATH' ) || exit;
 
 class Upgrade implements Component_Interface {
+
+	/**
+	 * Name of cached data transient.
+	 *
+	 * @since   1.2.0
+	 * @access  public
+	 * @var     string
+	 */
+	public static $transient_cache_version = 'michelle_cache_version';
 
 	/**
 	 * Initialization.
@@ -37,7 +47,8 @@ class Upgrade implements Component_Interface {
 	/**
 	 * Do action on theme version change.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -45,7 +56,7 @@ class Upgrade implements Component_Interface {
 
 		// Variables
 
-			$current_theme_version = get_transient( 'michelle_version' );
+			$current_theme_version = get_transient( self::$transient_cache_version );
 			$new_theme_version     = wp_get_theme( 'michelle' )->get( 'Version' );
 
 
@@ -65,7 +76,7 @@ class Upgrade implements Component_Interface {
 				 * @param  string $current_theme_version
 				 */
 				do_action( 'michelle/upgrade', $new_theme_version, $current_theme_version );
-				set_transient( 'michelle_version', $new_theme_version );
+				set_transient( self::$transient_cache_version, $new_theme_version );
 			}
 
 	} // /action

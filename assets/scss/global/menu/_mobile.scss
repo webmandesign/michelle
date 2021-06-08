@@ -68,22 +68,6 @@
 		display: none;
 	}
 
-	&-skip-link {
-
-		&:not(:focus) {
-			@extend %screen_reader_hiding;
-		}
-
-		&-container {
-
-			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-				display: none;
-			}
-
-		}
-
-	}
-
 }
 
 // Normal menu style overrides:

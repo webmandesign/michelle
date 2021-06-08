@@ -14,7 +14,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.10
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -76,7 +76,8 @@ class Block_Patterns implements Component_Interface {
 	/**
 	 * Register block patterns.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -122,7 +123,7 @@ class Block_Patterns implements Component_Interface {
 
 				$args['title'] = esc_html( $args['title'] );
 
-				register_block_pattern(
+				register_block_pattern( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_pattern
 					'michelle/' . $id,
 					$args
 				);

@@ -1,6 +1,6 @@
 <?php
 /**
- * Post meta info: categories, date, author, comments.
+ * Post meta info: date, author, categories.
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas

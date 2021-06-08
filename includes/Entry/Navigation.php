@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Entry;
@@ -57,7 +58,8 @@ class Navigation implements Component_Interface {
 	/**
 	 * Entry navigation.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -111,21 +113,17 @@ class Navigation implements Component_Interface {
 
 		// Output
 
-			echo str_replace( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				' role="navigation"',
-				'',
-				get_the_post_navigation(
-					/**
-					 * Filters get_the_post_navigation() args.
-					 *
-					 * @link  https://developer.wordpress.org/reference/functions/get_the_post_navigation/
-					 *
-					 * @since  1.0.0
-					 *
-					 * @param  array $args
-					 */
-					(array) apply_filters( 'michelle/entry/navigation/args', $args )
-				)
+			echo get_the_post_navigation(
+				/**
+				 * Filters get_the_post_navigation() args.
+				 *
+				 * @link  https://developer.wordpress.org/reference/functions/get_the_post_navigation/
+				 *
+				 * @since  1.0.0
+				 *
+				 * @param  array $args
+				 */
+				(array) apply_filters( 'michelle/entry/navigation/args', $args )
 			);
 
 	} // /navigation

@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.2.0
  */
 
 namespace WebManDesign\Michelle\Entry;
@@ -80,7 +81,8 @@ class Component implements Component_Interface {
 	/**
 	 * Entry meta top.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -94,7 +96,8 @@ class Component implements Component_Interface {
 		// Output
 
 			if ( self::is_singular() && doing_action( 'tha_entry_bottom' ) ) {
-				if ( stripos( implode( ' ', Body_Class::get_body_class() ), '-no-intro' ) ) {
+				$body_classes = implode( ' ', Body_Class::get_body_class() );
+				if ( stripos( $body_classes, '-no-intro' ) || stripos( $body_classes, 'no-primary-title' ) ) {
 					get_template_part( 'templates/parts/meta/entry-meta-top', $post_type );
 					get_template_part( 'templates/parts/meta/entry-meta-bottom', $post_type );
 				} else {

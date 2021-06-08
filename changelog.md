@@ -1,6 +1,6 @@
 # Michelle Changelog
 
-## 1.2.0, 20210608
+## 1.2.0, 20210609
 
 ### Added
 - AMP compatibility (thanks to https://profiles.wordpress.org/jamesosborne/ for contribution)
