@@ -23,18 +23,14 @@
 
 	// Top level menu items.
 	> li {
+		margin-#{$right}: 1em;
 
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 			padding-bottom: calc( 6vh - .25em );
 		}
 
-		&:not(:last-child) {
-			margin-#{$right}: 1em;
-
-			@include media( map_get( $breakpoint, 'xxl' ) ) {
-				margin-#{$right}: 1.5em;
-			}
-
+		@include media( map_get( $breakpoint, 'xxl' ) ) {
+			margin-#{$right}: 1.5em;
 		}
 
 		> a {

@@ -3,12 +3,52 @@
 ## 1.2.0, 20210609
 
 ### Added
-- AMP compatibility (thanks to https://profiles.wordpress.org/jamesosborne/ for contribution)
+- AMP compatibility (thanks to contribution of @jamesosborne)
+
+### Updated
+- A11y Menu script to version 1.1.0
+- Improving primary menu attributes
+- Removing obsolete `menu-toggle-skip-link` in primary menu
+- Moving background image control into "Theme Options" section in customizer
+- Styles
+- Localization
+
+### Fixed
+- Overlaid header top margin on mobile screens
+- RTL styles
+- Making demo images overridable via child theme
+- Elementor page builder inaccessible first row control buttons
 
 ### File updates
 	changelog.md
+	comments.php
+	header.php
 	readme.txt
 	style.css
+	assets/js/modal-search.js
+	assets/js/navigation-mobile.js
+	assets/scss/content.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	includes/Accessibility/Component.php
+	includes/Assets/Scripts.php
+	includes/Content/Block_Area.php
+	includes/Content/Block_Patterns.php
+	includes/Content/Block_Styles.php
+	includes/Content/Component.php
+	includes/Content/Starter.php
+	includes/Customize/CSS_Variables.php
+	includes/Customize/Options.php
+	includes/Customize/Preview.php
+	includes/Entry/Component.php
+	includes/Entry/Navigation.php
+	includes/Header/Component.php
+	includes/Menu/Component.php
+	includes/Setup/Upgrade.php
+	includes/Tool/AMP.php
+	languages/*.*
+	templates/parts/menu/menu-primary.php
+	vendor/a11y-menu/*.*
 
 
 ## 1.1.2, 20210502

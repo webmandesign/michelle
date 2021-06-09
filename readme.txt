@@ -33,7 +33,7 @@ Please see `changelog.md` file.
 == Upgrade Notice ==
 
 = 1.2.0 =
-20210609 Adding AMP compatibility.
+20210609 Adding AMP compatibility, improving accessibility, updating styles, fixing bugs.
 
 
 == Resources ==

@@ -146,7 +146,7 @@ class AMP implements Component_Interface {
 		// Output
 
 			if ( $echo ) {
-				echo $atts;
+				echo $atts; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			} else {
 				return $atts;
 			}

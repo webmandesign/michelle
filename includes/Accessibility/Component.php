@@ -16,6 +16,7 @@ use WebManDesign\Michelle\Assets;
 use WebManDesign\Michelle\Header;
 use WebManDesign\Michelle\Entry;
 use WebManDesign\Michelle\Tool\AMP;
+use WP_Post;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -26,7 +27,7 @@ class Component implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.12
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -44,12 +45,17 @@ class Component implements Component_Interface {
 				add_action( 'tha_body_top',     __CLASS__ . '::skip_links_body', 20 );
 				add_action( 'tha_entry_bottom', __CLASS__ . '::skip_links_entry', 999 );
 
+			// Filters
+
+				add_filter( 'walker_nav_menu_start_el', __CLASS__ . '::nav_menu_item_label', 20, 4 );
+
 	} // /init
 
 	/**
 	 * Enqueue assets.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -81,8 +87,10 @@ class Component implements Component_Interface {
 							'button_attributes' => array(
 								'class'      => 'button-toggle-sub-menu',
 								'aria-label' => array(
-									'collapse' => esc_html__( 'Collapse child menu', 'michelle' ),
-									'expand'   => esc_html__( 'Expand child menu', 'michelle' ),
+									/* translators: %s: menu item label. */
+									'collapse' => esc_html__( 'Collapse menu: %s', 'michelle' ),
+									/* translators: %s: menu item label. */
+									'expand'   => esc_html__( 'Expand menu: %s', 'michelle' ),
 								),
 							),
 						),
@@ -230,5 +238,55 @@ class Component implements Component_Interface {
 			);
 
 	} // /skip_links_entry
+
+	/**
+	 * Menu item modification: item label.
+	 *
+	 * Primary menu only.
+	 * This is for `a11y-menu` script improved accessibility.
+	 *
+	 * @since  1.2.0
+	 *
+	 * @param  string  $item_output Menu item output HTML (without closing `</li>`).
+	 * @param  WP_Post $item        The current menu item.
+	 * @param  int     $depth       Depth of menu item. Used for padding. Since WordPress 4.1.
+	 * @param  object  $args        An object of wp_nav_menu() arguments.
+	 *
+	 * @return  string
+	 */
+	public static function nav_menu_item_label( string $item_output, $item, int $depth, $args ): string {
+
+		// Requirements check
+
+			if ( ! $item instanceof WP_Post ) {
+				return $item_output;
+			}
+
+
+		// Processing
+
+			if (
+				'primary' == $args->theme_location
+				&& in_array( 'menu-item-has-children', $item->classes )
+			) {
+				// From https://developer.wordpress.org/reference/classes/walker_nav_menu/start_el/.
+				$title = apply_filters( 'the_title', $item->title, $item->ID );
+				$title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
+
+				// Unfortunately, there is no way of filtering menu item `<li>` tag, so we have to use
+				// the actual menu item `<a>` tag for this.
+				return str_replace(
+					'<a ',
+					'<a data-submenu-label="' . esc_attr( wp_strip_all_tags( $title ) ) . '" ',
+					$item_output
+				);
+			}
+
+
+		// Output
+
+			return $item_output;
+
+	} // /nav_menu_item_label
 
 }

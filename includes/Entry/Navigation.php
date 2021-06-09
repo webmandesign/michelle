@@ -113,7 +113,7 @@ class Navigation implements Component_Interface {
 
 		// Output
 
-			echo get_the_post_navigation(
+			echo get_the_post_navigation( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				/**
 				 * Filters get_the_post_navigation() args.
 				 *

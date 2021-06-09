@@ -1,7 +1,7 @@
 /**
  * @package      A11y Menu
  * @description  A keyboard accessible navigational menu script.
- * @version      1.0.1
+ * @version      1.1.0
  * @author       WebMan Design, Oliver Juhas, https://www.webmandesign.eu
  * @copyright    2019 WebMan Design, Oliver Juhas
  * @license      GPL-3.0-or-later, https://www.gnu.org/licenses/gpl-3.0-standalone.html
@@ -64,6 +64,8 @@
 						if ( null != button ) {
 							const childButton = button.cloneNode( true );
 							menuItem.insertBefore( childButton, childMenu );
+
+							_.changeButtonAttributes( menuItem );
 
 							// Watch for `click` event on the toggle button.
 							// (Can't actually use `click` as it triggers focus/blur first, messing things up.)
@@ -378,7 +380,9 @@
 					_ = this,
 					menuItem = ( 1 === eventOrNode.nodeType ) ? ( eventOrNode ) : ( eventOrNode.target.parentNode );
 
-				let button;
+				let
+					button,
+					menuItemLabel = '';
 
 				if ( null != menuItem ) {
 					button = menuItem.querySelector( 'button[aria-expanded]' );
@@ -389,6 +393,12 @@
 					return;
 				}
 
+				// Get menu item label.
+				const link = menuItem.querySelector( 'a[data-submenu-label]' );
+				if ( null != link ) {
+					menuItemLabel = link.dataset.submenuLabel;
+				}
+
 				const
 					isExpanded  = menuItem.classList.contains( _.getOption( 'expanded_class' ) ),
 					buttonLabel = _.getOption( 'button_attributes', 'aria-label' );
@@ -396,9 +406,9 @@
 				// Change `aria-label` value dynamically, if we should.
 				if ( 'string' !== typeof buttonLabel && null != buttonLabel ) {
 					if ( isExpanded && null != buttonLabel.collapse ) {
-						button.setAttribute( 'aria-label', buttonLabel.collapse );
+						button.setAttribute( 'aria-label', buttonLabel.collapse.replace( '%s', menuItemLabel ) );
 					} else if ( ! isExpanded && null != buttonLabel.expand ) {
-						button.setAttribute( 'aria-label', buttonLabel.expand );
+						button.setAttribute( 'aria-label', buttonLabel.expand.replace( '%s', menuItemLabel ) );
 					}
 				}
 
