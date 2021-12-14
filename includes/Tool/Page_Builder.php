@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -32,7 +33,8 @@ class Page_Builder implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -85,17 +87,17 @@ class Page_Builder implements Component_Interface {
 
 			// Filters
 
-				add_filter( 'michelle/customize/options/get', __CLASS__ . '::options' );
-
 				add_filter( 'body_class', __CLASS__ . '::body_class', 99 );
-
-				add_filter( 'pre/michelle/entry/media/display', __CLASS__ . '::return_empty_string_when_enabled', 100 );
-
-				add_filter( 'michelle/content/show_primary_title', __CLASS__ . '::return_false_when_enabled', 20 );
 
 				add_filter( 'theme_templates', __CLASS__ . '::remove_page_template' );
 
+				add_filter( 'michelle/customize/options/get', __CLASS__ . '::options' );
+
+				add_filter( 'michelle/content/show_primary_title', __CLASS__ . '::return_false_when_enabled', 20 );
+
 				add_filter( 'michelle/tool/page_builder/is_enabled', __CLASS__ . '::automatic_check' );
+
+				add_filter( 'pre/michelle/entry/media/display', __CLASS__ . '::return_empty_string_when_enabled', 100 );
 
 	} // /init
 

@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -73,7 +73,9 @@ class Google_Fonts implements Component_Interface {
 	/**
 	 * Suggested Google Fonts families.
 	 *
-	 * @since   1.0.0
+	 * @since     1.0.0
+	 * @version   1.3.0
+	 *
 	 * @access  private
 	 * @var     array
 	 * @param   KEY   string  Font families context, such as "generic", "body", "headings".
@@ -87,12 +89,14 @@ class Google_Fonts implements Component_Interface {
 			'Anton',
 			'Asap',
 			'Be Vietnam',
+			'Bitter',
 			'Bree Serif',
 			'Cabin',
 			'Catamaran',
 			'Cinzel Decorative',
 			'Crimson Text',
 			'DM Sans',
+			'DM Serif Display',
 			'Domine',
 			'EB Garamond',
 			'Exo 2',

@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Header;
@@ -122,7 +122,7 @@ class Body_Class implements Component_Interface {
 	 * HTML body classes in admin area.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.6
+	 * @version  1.3.0
 	 *
 	 * @param  string $classes
 	 *
@@ -166,11 +166,20 @@ class Body_Class implements Component_Interface {
 
 			// "Editing footer" reusable block class.
 
-				if ( 'wp_block' === get_post_type( $post ) ) {
-					if ( get_the_ID( $post ) == get_theme_mod( 'block_area_site_footer' ) ) {
-						$classes .= ' editing-block-area-footer';
-					} else if ( get_the_ID( $post ) == get_theme_mod( 'block_area_error_404' ) ) {
-						$classes .= ' editing-block-area-404';
+				if ( Content\Block_Area::get_post_type() === get_post_type( $post ) ) {
+					switch ( get_the_ID( $post ) ) {
+
+						case get_theme_mod( 'block_area_site_footer' ):
+							$classes .= ' editing-block-area-footer';
+							break;
+
+						case get_theme_mod( 'block_area_error_404' ):
+							$classes .= ' editing-block-area-404';
+							break;
+
+						default:
+							break;
+
 					}
 				}
 

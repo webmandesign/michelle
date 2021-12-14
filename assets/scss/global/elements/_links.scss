@@ -4,6 +4,7 @@ a {
 	// From @link  https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
 	overflow-wrap: break-word;
 	word-wrap: break-word;
+	text-decoration-thickness: 1px;
 	text-underline-offset: .15em;
 	color: var(--wp--style--color--link);
 
@@ -27,8 +28,17 @@ a {
 	white-space: nowrap;
 
 	@include media( map_get( $breakpoint, 'm' ) ) {
-		pointer-events: none;
 		text-decoration: none;
+		color: inherit;
+	}
+
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+
+	a {
+		text-underline-offset: .15em;
 		color: inherit;
 	}
 

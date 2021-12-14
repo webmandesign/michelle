@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.6
+ * @since    1.0.6
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle;
@@ -24,7 +25,7 @@ if ( empty( $area ) ) {
 
 $area_query = new WP_Query( array(
 	'p'         => $area,
-	'post_type' => 'wp_block',
+	'post_type' => Content\Block_Area::get_post_type(),
 ) );
 
 if (
@@ -37,7 +38,7 @@ if (
 
 ?>
 
-<div class="error-404-content">
+<div class="error-404-content error-404-blocks">
 	<?php
 
 	/**

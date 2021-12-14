@@ -7,14 +7,14 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Plugin\One_Click_Demo_Import;
 
 use WebManDesign\Michelle\Component_Interface;
 use WebManDesign\Michelle\Setup\Media;
-use WooCommerce;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -164,7 +164,8 @@ class Component implements Component_Interface {
 	/**
 	 * OCDI plugin admin page styles.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -174,7 +175,7 @@ class Component implements Component_Interface {
 
 			wp_add_inline_style(
 				'ocdi-main-css',
-				'.ocdi.about-wrap { max-width: 66em; } .ocdi__file-upload + .ocdi__file-upload { display: none; }'
+				'.ocdi__content-container { max-width: 1024px; }'
 			);
 
 	} // /styles

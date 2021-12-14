@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Footer;
@@ -123,7 +123,8 @@ class Component implements Component_Interface {
 	 *
 	 * When we display no footer, remove all related skip links.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  mixed  $pre  Pre output.
 	 * @param  string $id   Link target element ID.
@@ -140,9 +141,9 @@ class Component implements Component_Interface {
 				 *
 				 * @since  1.0.0
 				 *
-				 * @param  bool $disable  Default: Footer::is_disabled().
+				 * @param  bool $disable  Default: ! Footer::is_enabled().
 				 */
-				(bool) apply_filters( 'michelle/skip_links_no_footer', self::is_disabled() )
+				(bool) apply_filters( 'michelle/skip_links_no_footer', ! self::is_enabled() )
 				&& in_array( $id, array( 'colophon' ) )
 			) {
 				$pre = '';

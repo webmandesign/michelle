@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle;
@@ -42,7 +43,7 @@ $theme_name = wp_get_theme( 'michelle' )->display( 'Name' );
 	</p>
 
 	<p class="call-to-action">
-		<a href="<?php echo esc_url( admin_url( 'themes.php?page=michelle-welcome' ) ); ?>" class="button button-primary"><?php
+		<a href="<?php echo esc_url( admin_url( 'themes.php?page=michelle-welcome' ) ); ?>" class="button button-primary button-hero"><?php
 
 			echo esc_html__( 'Let\'s Get Started &raquo;', 'michelle' );
 
@@ -54,11 +55,16 @@ $theme_name = wp_get_theme( 'michelle' )->display( 'Name' );
 <style type="text/css" media="screen">
 
 	.theme-welcome-notice {
-		padding: 1.5em 1.5em 1em;
+		padding: 2em 2em 1.5em;
+		font-size: 1.25em;
 	}
 
 	.theme-welcome-notice h2 {
 		margin: 0 0 1em;
+	}
+
+	.theme-welcome-notice p {
+		font-size: inherit;
 	}
 
 	.theme-welcome-notice br:not(.linebreak) {
@@ -68,7 +74,7 @@ $theme_name = wp_get_theme( 'michelle' )->display( 'Name' );
 	.theme-welcome-notice .dashicons {
 		width: 1em;
 		height: 1em;
-		font-size: 1.191em;
+		font-size: 1.15em;
 	}
 
 </style>

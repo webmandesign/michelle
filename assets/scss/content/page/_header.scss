@@ -23,7 +23,9 @@
 		text-align: center;
 	}
 
-	.page-summary {
+	.page-summary,
+	.term-description,
+	.page-description {
 		font-size: 1.166em;
 
 		@include media( map_get( $breakpoint, 'xxl' ) ) {
@@ -41,7 +43,9 @@
 		}
 
 		.page-title,
-		.page-summary {
+		.page-summary,
+		.term-description,
+		.page-description {
 			flex: 1;
 		}
 
@@ -50,7 +54,9 @@
 			margin-bottom: 0;
 		}
 
-		.page-summary {
+		.page-summary,
+		.term-description,
+		.page-description {
 			align-self: flex-end;
 			margin-#{$left}: 6%;
 		}

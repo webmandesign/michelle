@@ -99,8 +99,8 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 			'/Header/Head.php',
 
 			'/Loop/Component.php',
-			'/Loop/Pagination.php',
 			'/Loop/Featured_Posts.php',
+			'/Loop/Pagination.php',
 
 			'/Menu/Component.php',
 

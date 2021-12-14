@@ -1,11 +1,12 @@
 <?php
 /**
- * Post meta info: date, author, categories.
+ * Post meta info: date, author, category.
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle;
@@ -22,10 +23,10 @@ if (
 
 ?>
 
-<footer class="entry-meta"><?php
+<div class="entry-meta"><?php // Must be `<div>`, as `<footer>` throws HTML error if displayed before `<header>`.
 
 	get_template_part( 'templates/parts/meta/entry-meta-item', 'date' );
 	get_template_part( 'templates/parts/meta/entry-meta-item', 'author' );
 	get_template_part( 'templates/parts/meta/entry-meta-item', 'category' );
 
-?></footer>
+?></div>

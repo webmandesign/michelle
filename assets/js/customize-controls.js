@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.3.0
  */
 
 ( function( $ ) {
@@ -20,7 +20,7 @@
 
 			$( '[name="block_area_error_404"]' )
 				.on( 'focusin', function() {
-					var url = wp.customize.settings.url.home.replace( /\/+$/, '' );
+					let url = wp.customize.settings.url.home.replace( /\/+$/, '' );
 					// "error-404-page" @ http://www.md5.cz/
 					url += '/86a8820fe9ab96669c59a56f88d51b69';
 					if ( url !== wp.customize.previewer.previewUrl() ) {
@@ -35,12 +35,13 @@
 				.after( '<span class="range-value" />' )
 				.on( 'input change', function() {
 
-					var
+					const
 						$this       = $( this ),
 						value       = $this.val() * $this.data( 'multiply' ),
-						decimals    = $this.data( 'decimals' ),
 						valuePrefix = $this.data( 'prefix' ),
 						valueSuffix = $this.data( 'suffix' );
+
+					let decimals = $this.data( 'decimals' );
 
 					if ( 1 > decimals ) {
 						decimals = 1;
@@ -57,13 +58,14 @@
 			$( '.range-value' )
 				.each( function() {
 
-					var
+					const
 						$this       = $( this ),
 						$inputField = $this.prev(),
 						value       = $inputField.val() * $inputField.data( 'multiply' ),
-						decimals    = $inputField.data( 'decimals' ),
 						valuePrefix = $inputField.data( 'prefix' ),
 						valueSuffix = $inputField.data( 'suffix' );
+
+					let decimals = $inputField.data( 'decimals' );
 
 					if ( 1 > decimals ) {
 						decimals = 1;
@@ -86,8 +88,7 @@
 			 * "_repeat", "_size" and also "_opacity" controls.
 			 */
 
-			var
-				backgroundImages = [];
+			let backgroundImages = [];
 
 			// Get all image control under theme options.
 			$.each( $( '.control-section-theme-options [id$="_image"]' ), function( i, o ) {
@@ -98,14 +99,13 @@
 			$.each( backgroundImages, function( i, settingId ) {
 				wp.customize( settingId, function( value ) {
 
-					var
-						selectors = [
-							'[id$="' + settingId + '_attachment"]',
-							'[id$="' + settingId + '_opacity"]',
-							'[id$="' + settingId + '_position"]',
-							'[id$="' + settingId + '_repeat"]',
-							'[id$="' + settingId + '_size"]',
-						];
+					const selectors = [
+						'[id$="' + settingId + '_attachment"]',
+						'[id$="' + settingId + '_opacity"]',
+						'[id$="' + settingId + '_position"]',
+						'[id$="' + settingId + '_repeat"]',
+						'[id$="' + settingId + '_size"]',
+					];
 
 					if ( ! _wpCustomizeSettings.settings[ settingId ].value ) {
 						$( selectors.join() )
@@ -131,7 +131,7 @@
 			$( '.customize-control-multicheckbox' )
 				.on( 'change', 'input[type="checkbox"]', function() {
 
-					var
+					const
 						$this   = $( this ),
 						$values = $this
 							.closest( '.customize-control' )

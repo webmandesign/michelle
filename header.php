@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle;
@@ -20,7 +20,7 @@ do_action( 'tha_html_before' );
 
 ?>
 
-<html <?php language_attributes(); Tool\AMP::get_atts( 'html', true ); ?>>
+<html <?php language_attributes(); Tool\AMP::the_atts( 'html' ); ?>>
 
 
 <head>

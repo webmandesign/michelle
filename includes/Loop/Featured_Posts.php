@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Loop;
@@ -30,7 +31,8 @@ class Featured_Posts implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -42,12 +44,14 @@ class Featured_Posts implements Component_Interface {
 
 				add_action( 'customize_register', __CLASS__ . '::option_pointers' );
 
-				add_action( 'michelle/postslist/before', __CLASS__ . '::display' );
+				add_filter( 'body_class', __CLASS__ . '::body_class', 99 );
+
+				add_action( 'pre_get_posts', __CLASS__ . '::pre_get_posts' );
 
 				add_action( 'tha_content_while_before', __CLASS__ . '::set_image' );
 				add_action( 'tha_content_while_after',  __CLASS__ . '::set_image' );
 
-				add_action( 'pre_get_posts', __CLASS__ . '::pre_get_posts' );
+				add_action( 'michelle/postslist/before', __CLASS__ . '::display' );
 
 			// Filters
 
@@ -58,11 +62,22 @@ class Featured_Posts implements Component_Interface {
 	/**
 	 * Display posts.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
 	public static function display() {
+
+		// Requirements
+
+			if (
+				! is_home()
+				|| is_paged()
+			) {
+				return;
+			}
+
 
 		// Output
 
@@ -214,7 +229,8 @@ class Featured_Posts implements Component_Interface {
 	/**
 	 * Theme options.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  array $options
 	 *
@@ -234,6 +250,15 @@ class Featured_Posts implements Component_Interface {
 
 
 		// Processing
+
+			if ( ! isset( $options[ 400 . 'posts' ] ) ) {
+				$options[ 400 . 'posts' ] = array(
+					'id'             => 'posts',
+					'type'           => 'section',
+					'create_section' => esc_html_x( 'Blog', 'Customizer section title.', 'michelle' ),
+					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
+				);
+			}
 
 			$options[ 400 . 'posts' . 200 ] = array(
 				'type'    => 'html',
@@ -335,5 +360,33 @@ class Featured_Posts implements Component_Interface {
 			}
 
 	} // /pre_get_posts
+
+	/**
+	 * HTML body classes.
+	 *
+	 * @since  1.3.0
+	 *
+	 * @param  array $classes
+	 *
+	 * @return  array
+	 */
+	public static function body_class( array $classes ): array {
+
+		// Processing
+
+			if (
+				is_home()
+				&& ! is_paged()
+				&& ! empty( self::get_posts() )
+			) {
+				$classes[] = 'has-featured-posts';
+			}
+
+
+		// Output
+
+			return $classes;
+
+	} // /body_class
 
 }

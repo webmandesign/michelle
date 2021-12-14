@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Header;
@@ -50,10 +50,10 @@ class Component implements Component_Interface {
 
 			// Filters
 
-				add_filter( 'pre/michelle/accessibility/link_skip_to', __CLASS__ . '::skip_links_no_header', 10, 2 );
-
 				add_filter( 'get_search_form',         __CLASS__ . '::get_search_form' );
 				add_filter( 'get_product_search_form', __CLASS__ . '::get_search_form' ); // WooCommerce
+
+				add_filter( 'pre/michelle/accessibility/link_skip_to', __CLASS__ . '::skip_links_no_header', 10, 2 );
 
 	} // /init
 
@@ -135,7 +135,8 @@ class Component implements Component_Interface {
 	 *
 	 * When we display no header, remove all related skip links.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  mixed  $pre  Pre output.
 	 * @param  string $id   Link target element ID.
@@ -152,9 +153,9 @@ class Component implements Component_Interface {
 				 *
 				 * @since  1.0.0
 				 *
-				 * @param  bool $disable  Default: Header::is_disabled().
+				 * @param  bool $disable  Default: ! Header::is_enabled().
 				 */
-				(bool) apply_filters( 'michelle/skip_links_no_header', self::is_disabled() )
+				(bool) apply_filters( 'michelle/skip_links_no_header', ! self::is_enabled() )
 				&& in_array( $id, array( 'site-navigation' ) )
 			) {
 				$pre = '';
@@ -225,7 +226,7 @@ class Component implements Component_Interface {
 	 * Also compatible with WooCommerce product search form.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.0
 	 *
 	 * @param  string $html
 	 *
@@ -261,7 +262,7 @@ class Component implements Component_Interface {
 
 			wp_add_inline_script(
 				'michelle-scripts-footer', // -> AMP ready.
-				'"use strict";!function(){function d(){u.classList.toggle("toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==u.className.indexOf("toggled")?(r.setAttribute("aria-expanded","true"),e&&(e.focus(),console.log(e))):r.setAttribute("aria-expanded","false")}var e,u=document.getElementById("search-form-modal"),r=document.getElementById("modal-search-toggle");void 0!==document.getElementById("modal-search")?(e=u.querySelector("[type=search]"),r.onclick=function(){d()},document.addEventListener("keydown",function(e){if(u.classList.contains("toggled")){var t,o,l,n=document.activeElement,c=9===e.keyCode,s=27===e.keyCode,a=e.shiftKey;t=u.querySelectorAll("a, button, input, select"),o=(t=Array.prototype.slice.call(t))[0],l=t[t.length-1],s&&(e.preventDefault(),d(),r.focus()),!a&&c&&l===n&&(e.preventDefault(),o.focus()),a&&c&&o===n&&(e.preventDefault(),l.focus()),c&&o===l&&e.preventDefault()}})):u.style.display="none"}();'
+				'"use strict";!function(){function a(){s.classList.toggle("toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==s.className.indexOf("toggled")?(n.setAttribute("aria-expanded","true"),e&&e.focus()):n.setAttribute("aria-expanded","false")}var s=document.getElementById("search-form-modal");if(document.getElementById("modal-search")){var n=document.getElementById("modal-search-toggle"),e=s.querySelector("[type=search]");n.onclick=function(){a()},document.addEventListener("keydown",function(e){if(s.classList.contains("toggled")){var t=s.querySelectorAll("a, button, input:not([type=hidden]), select"),l=t[0];lastEl=t[t.length-1],activeEl=document.activeElement,tabKey=9===e.keyCode,escKey=27===e.keyCode,shiftKey=e.shiftKey,escKey&&(e.preventDefault(),a(),n.focus()),!shiftKey&&tabKey&&lastEl===activeEl&&(e.preventDefault(),l.focus()),shiftKey&&tabKey&&l===activeEl&&(e.preventDefault(),lastEl.focus()),tabKey&&l===lastEl&&e.preventDefault()}})}else s.style.display="none"}();'
 			);
 
 
@@ -270,7 +271,6 @@ class Component implements Component_Interface {
 			return
 				'<div id="search-form-modal" class="modal-search-container"' . AMP::get_atts( 'search/container' ) . '>'
 				. $button
-				. ' '
 				. $html
 				. '</div>';
 

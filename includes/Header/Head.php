@@ -61,7 +61,10 @@ class Head implements Component_Interface {
 
 		// Output
 
-			if ( is_singular() && pings_open() ) {
+			if (
+				is_singular()
+				&& pings_open()
+			) {
 				echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 			}
 

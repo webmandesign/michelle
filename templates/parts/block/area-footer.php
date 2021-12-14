@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle;
@@ -24,7 +24,7 @@ if ( empty( $area ) ) {
 
 $area_query = new WP_Query( array(
 	'p'         => $area,
-	'post_type' => 'wp_block',
+	'post_type' => Content\Block_Area::get_post_type(),
 ) );
 
 if (
@@ -36,8 +36,8 @@ if (
 
 ?>
 
-<div class="site-footer-section">
-	<div class="site-footer-content">
+<div class="site-footer-section site-footer-blocks">
+	<div class="site-footer-content site-footer-blocks-content">
 		<?php
 
 		/**

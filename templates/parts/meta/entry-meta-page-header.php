@@ -1,6 +1,6 @@
 <?php
 /**
- * Post meta info in page header: category, date, author, comments.
+ * Post meta info in page header: date, author, comments.
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas

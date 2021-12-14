@@ -37,9 +37,9 @@ class Media implements Component_Interface {
 
 			// Filters
 
-				add_filter( 'michelle/setup/media/get_image_sizes', __CLASS__ . '::set_image_sizes' );
-
 				add_filter( 'image_size_names_choose', __CLASS__ . '::image_sizes_select' );
+
+				add_filter( 'michelle/setup/media/get_image_sizes', __CLASS__ . '::set_image_sizes' );
 
 	} // /init
 

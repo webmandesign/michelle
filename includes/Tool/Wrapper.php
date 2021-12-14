@@ -10,7 +10,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -69,7 +70,8 @@ class Wrapper implements Component_Interface {
 	/**
 	 * Use wrapper template before loading other templates.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  string $template  The path of the template to include.
 	 *
@@ -87,6 +89,18 @@ class Wrapper implements Component_Interface {
 
 		// Processing
 
+			// Apply custom CSS class for non-theme template.
+			if (
+				! stripos( $template, trailingslashit( get_stylesheet() ) )
+				&& ! stripos( $template, trailingslashit( get_template() ) )
+			) {
+				add_filter( 'body_class', function( $classes ) {
+					$classes[] = 'is-custom-template-file';
+					return $classes;
+				}, 0 );
+			}
+
+			// Main wrapper functionality.
 			if ( 'index' === self::$base ) {
 				self::$base = false;
 			} else {

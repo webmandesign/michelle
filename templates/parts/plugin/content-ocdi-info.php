@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 // Exit if accessed directly.
@@ -13,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-<div class="manual-import-info">
+<div class="theme-demo-info">
 
 	<h2><?php esc_html_e( 'Manual import procedure', 'michelle' ); ?></h2>
 

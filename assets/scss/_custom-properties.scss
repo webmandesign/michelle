@@ -6,7 +6,8 @@
 // @package    Michelle
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.3.0
 //
 
 :root {
@@ -109,8 +110,8 @@
 				--white_space: 150px;
 			}
 
-			--content_padding:          calc(  1 * var(--white_space) );
-			--content_padding_negative: calc( -1 * var(--white_space) );
+			--content_padding: var(--white_space);
+			--content_padding_negative: calc( -1 * var(--content_padding) );
 
 			--posts_list_gap: 1em;
 			@include media( map_get( $breakpoint, 'xl' ) ) {

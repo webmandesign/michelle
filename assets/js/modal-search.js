@@ -8,28 +8,24 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.13
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 ( function() {
 	'use strict';
 
-	var
-		searchField,
+	const
 		container = document.getElementById( 'search-form-modal' ),
-		button    = document.getElementById( 'modal-search-toggle' ),
 		modal     = document.getElementById( 'modal-search' );
 
-	/**
-	 * No need to check for `container` and `button` as those exist for sure.
-	 * Otherwise this script is not even being enqueued.
-	 */
-	if ( 'undefined' === typeof modal ) {
+	if ( ! modal ) {
 		container.style.display = 'none';
 		return;
 	}
 
-	searchField = container.querySelector( '[type=search]' );
+	const
+		button      = document.getElementById( 'modal-search-toggle' ),
+		searchField = container.querySelector( '[type=search]' );
 
 	function michelleToggleSearch() {
 		container.classList.toggle( 'toggled' );
@@ -40,7 +36,6 @@
 
 			if ( searchField ) {
 				searchField.focus();
-				console.log(searchField);
 			}
 		} else {
 			button.setAttribute( 'aria-expanded', 'false' );
@@ -60,17 +55,15 @@
 			return;
 		}
 
-		var
-			elements, firstEl, lastEl,
-			activeEl = document.activeElement,
-			tabKey   = ( 9 === event.keyCode ),
-			escKey   = ( 27 === event.keyCode ),
-			shiftKey = event.shiftKey;
-
-		elements = container.querySelectorAll( 'a, button, input, select' );
-		elements = Array.prototype.slice.call( elements );
-		firstEl  = elements[0];
-		lastEl   = elements[ elements.length - 1 ];
+		const
+			selectors = 'a, button, input:not([type=hidden]), select',
+			elements  = container.querySelectorAll( selectors ),
+			firstEl   = elements[0];
+			lastEl    = elements[ elements.length - 1 ],
+			activeEl  = document.activeElement,
+			tabKey    = ( 9 === event.keyCode ),
+			escKey    = ( 27 === event.keyCode ),
+			shiftKey  = event.shiftKey;
 
 		if ( escKey ) {
 			event.preventDefault();

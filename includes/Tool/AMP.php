@@ -11,7 +11,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -40,7 +40,7 @@ class AMP implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -53,6 +53,11 @@ class AMP implements Component_Interface {
 				add_action( 'after_setup_theme', __CLASS__ . '::after_setup_theme' );
 
 			// Filters
+
+				add_action( 'michelle/assets/is_js_disabled',                __CLASS__ . '::is_amp' );
+				add_action( 'michelle/assets/is_preloading_styles_disabled', __CLASS__ . '::is_amp' );
+
+				add_filter( 'body_class', __CLASS__ . '::body_class', 98 );
 
 				add_action( 'amp_dev_mode_element_xpaths', __CLASS__ . '::dev_mode_xpaths' );
 
@@ -110,16 +115,40 @@ class AMP implements Component_Interface {
 	} // /is_amp
 
 	/**
+	 * HTML body classes.
+	 *
+	 * @since  1.3.0
+	 *
+	 * @param  array $classes
+	 *
+	 * @return  array
+	 */
+	public static function body_class( array $classes ): array {
+
+		// Processing
+
+			if ( self::is_amp() ) {
+				$classes[] = 'is-amp';
+			}
+
+
+		// Output
+
+			return $classes;
+
+	} // /body_class
+
+	/**
 	 * Get AMP attributes.
 	 *
-	 * @since  1.2.0
+	 * @since    1.2.0
+	 * @version  1.3.0
 	 *
 	 * @param  string $context
-	 * @param  bool   $echo
 	 *
-	 * @return  void  Either return or echo the string value.
+	 * @return  string
 	 */
-	public static function get_atts( string $context = '', bool $echo = false ) {
+	public static function get_atts( string $context = '' ): string {
 
 		// Processing
 
@@ -145,13 +174,24 @@ class AMP implements Component_Interface {
 
 		// Output
 
-			if ( $echo ) {
-				echo $atts; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			} else {
-				return $atts;
-			}
+			return $atts;
 
 	} // /get_atts
+
+	/**
+	 * Print AMP attributes.
+	 *
+	 * @since  1.3.0
+	 *
+	 * @return  void
+	 */
+	public static function the_atts( string $context = '' ) {
+
+		// Output
+
+			echo self::get_atts( $context ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
+	} // /the_atts
 
 	/**
 	 * XPath queries for elements that should be enabled for AMP dev mode.

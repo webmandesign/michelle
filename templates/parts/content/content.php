@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle;
@@ -17,7 +18,7 @@ do_action( 'tha_entry_before' );
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article data-id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php do_action( 'tha_entry_top' ); ?>
 

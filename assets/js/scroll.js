@@ -7,18 +7,19 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.12
+ * @since    1.0.12
+ * @version  1.3.0
  */
 
 ( function() {
 	'use strict';
 
-	var
+	let
 		lastScrollTop = window.scrollY,
 		ticking       = false;
 
 	function michelleScroll() {
-		var scrolledY = window.scrollY;
+		const scrolledY = window.scrollY;
 
 		if ( scrolledY < lastScrollTop ) {
 			document.body.classList.add( 'has-scrolled-up' );

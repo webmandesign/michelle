@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Accessibility;
@@ -15,7 +15,6 @@ use WebManDesign\Michelle\Component_Interface;
 use WebManDesign\Michelle\Assets;
 use WebManDesign\Michelle\Header;
 use WebManDesign\Michelle\Entry;
-use WebManDesign\Michelle\Tool\AMP;
 use WP_Post;
 
 // Exit if accessed directly.
@@ -55,7 +54,7 @@ class Component implements Component_Interface {
 	 * Enqueue assets.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -63,7 +62,7 @@ class Component implements Component_Interface {
 
 		// Requirements check
 
-			if ( AMP::is_amp() ) {
+			if ( Assets\Factory::is_js_disabled() ) {
 				return;
 			}
 
@@ -217,7 +216,8 @@ class Component implements Component_Interface {
 	/**
 	 * Skip links: Entry bottom.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -232,10 +232,13 @@ class Component implements Component_Interface {
 
 		// Output
 
-			echo self::link_skip_to( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				'site-navigation',
-				esc_html__( 'Skip back to main navigation', 'michelle' )
-			);
+			echo
+				'<div class="entry-skip-links">'
+				. self::link_skip_to( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					'site-navigation',
+					esc_html__( 'Skip back to main navigation', 'theme-slug' )
+				)
+				. '</div>';
 
 	} // /skip_links_entry
 

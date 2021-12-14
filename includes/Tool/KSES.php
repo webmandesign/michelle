@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -39,7 +40,8 @@ class KSES implements Component_Interface {
 	 *
 	 * You can then use `wp_kses( $html, 'context' );`
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  array  $data
 	 * @param  string $context
@@ -52,8 +54,14 @@ class KSES implements Component_Interface {
 
 			switch ( $context ) {
 
-				case 'option_description':
+				case 'inline':
 					return array(
+						'br'     => array(),
+						'code'   => array(),
+						'em'     => array(),
+						'mark'   => array(),
+						'strong' => array(),
+
 						'a' => array(
 							'href'   => array(),
 							'class'  => array(),
@@ -62,9 +70,27 @@ class KSES implements Component_Interface {
 							'target' => array(),
 						),
 
+						'span' => array(
+							'class' => array(),
+							'style' => array(),
+						),
+					);
+
+				case 'option_description':
+					return array(
+						'big'  => array(),
 						'br'   => array(),
 						'code' => array(),
 						'em'   => array(),
+						'mark' => array(),
+
+						'a' => array(
+							'href'   => array(),
+							'class'  => array(),
+							'rel'    => array(),
+							'title'  => array(),
+							'target' => array(),
+						),
 
 						'h2' => array(
 							'class' => array(),
@@ -85,9 +111,13 @@ class KSES implements Component_Interface {
 
 						'span' => array(
 							'class' => array(),
+							'style' => array(),
 						),
 
-						'strong' => array(),
+						'strong' => array(
+							'class' => array(),
+							'style' => array(),
+						),
 					);
 
 				default:

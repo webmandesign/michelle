@@ -4,33 +4,35 @@
  * This is actually being enqueued inline in `WebManDesign\Michelle\Assets\Scripts::enqueue_inline_nav_mobile()`.
  * Keeping this file (and its minified version) for reference.
  *
+ * This script requires `.menu-toggle-skip-link` to be added into menu as last
+ * focusable child (can be hidden visibly, not for screen readers). This is to
+ * prevent focus going out of the menu container when last focusable selector is
+ * hidden with or in a container with `display: none;` which effectively renders
+ * the selector un-focusable.
+ *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 ( function() {
 	'use strict';
 
-	var
-		button, menu,
-		container = document.getElementById( 'site-navigation' );
-
+	const container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
 		return;
 	}
 
-	button = document.getElementById( 'menu-toggle' );
-	if ( 'undefined' === typeof button ) {
+	const button = document.getElementById( 'menu-toggle' );
+	if ( ! button ) {
 		return;
 	}
 
-	menu = document.getElementById( 'menu-primary' );
-
+	const menu = document.getElementById( 'menu-primary' );
 	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
+	if ( ! menu ) {
 		button.style.display = 'none';
 		return;
 	}
@@ -60,17 +62,15 @@
 			return;
 		}
 
-		var
-			elements, firstEl, lastEl,
-			activeEl = document.activeElement,
-			tabKey   = ( 9 === event.keyCode ),
-			escKey   = ( 27 === event.keyCode ),
-			shiftKey = event.shiftKey;
-
-		elements = container.querySelectorAll( 'a, button, input' );
-		elements = Array.prototype.slice.call( elements );
-		firstEl  = elements[0];
-		lastEl   = elements[ elements.length - 1 ];
+		const
+			selectors = 'a, button, input:not([type=hidden]), select',
+			elements  = container.querySelectorAll( selectors ),
+			firstEl   = elements[0];
+			lastEl    = elements[ elements.length - 1 ],
+			activeEl  = document.activeElement,
+			tabKey    = ( 9 === event.keyCode ),
+			escKey    = ( 27 === event.keyCode ),
+			shiftKey  = event.shiftKey;
 
 		if ( escKey ) {
 			event.preventDefault();
