@@ -9,12 +9,13 @@ $selectors_margin_bottom: (
 	'iframe',
 	'address',
 	'pre',
-	'[class^="wp-block-"]',
+	'[class*="wp-block-"]',
 );
 
 $selectors_button: (
 	'.button',
 	'.wp-block-button__link',
+	'.wp-block-search .wp-block-search__button',
 	'button',
 	'[type="button"]',
 	'[type="reset"]',

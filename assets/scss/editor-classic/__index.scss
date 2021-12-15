@@ -11,13 +11,8 @@ $selectors_button: (
 @import 'table';
 
 @import '../global/reset/_index';
-@import '../global/typography/base';
-@import '../global/typography/headings';
-@import '../global/elements/base';
-@import '../global/elements/links';
-@import '../global/elements/quote';
-@import '../global/elements/spacing';
-@import '../global/elements/table';
+@import '../global/typography/_index';
+@import '../global/elements/_index';
 @import '../global/form/base';
 @import '../global/form/button';
 @import '../global/wp/alignment';

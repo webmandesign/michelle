@@ -16,8 +16,8 @@ body {
 	unicode-bidi: embed;
 }
 
-@import 'tools/_index';
-@import 'setup/_index';
+@import '_tools/_index';
+@import '_setup/_index';
 
 @import 'custom-properties';
 

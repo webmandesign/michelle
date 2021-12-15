@@ -1,11 +1,12 @@
 //
 // Encode symbols for URL.
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.3.0
 //
 // @param  string $string
 //
-@function encode_url( $url ) {
+@function _encode_url( $url ) {
 
 	// Variables
 
@@ -39,7 +40,7 @@
 	// Processing
 
 		@each $search, $replace in $encodes {
-			$url: str_replace( $search, $replace, $url );
+			$url: _str_replace( $search, $replace, $url );
 		}
 
 

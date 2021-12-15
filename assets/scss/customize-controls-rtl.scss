@@ -9,5 +9,6 @@
 
 $left: right;
 $right: left;
+$rtl_multiplier: -1; // For `translateX` transform, for example.
 
 @import 'customize-controls/_index';

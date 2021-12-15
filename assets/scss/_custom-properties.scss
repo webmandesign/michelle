@@ -12,162 +12,17 @@
 
 :root {
 
-	// Theme/customize options.
+	// Unit is required in `calc()`.
+	// A non-zero value is required for minification process not to strip the unit.
+	--zero: 0.001px;
 
-		// `$value + ''` is converting values to string to prevent any issues.
-		@each $option, $value in $customize_options {
-			--#{ $option }: #{ $value + '' };
-		}
-
-	// Colors.
-
-		--border_opacity: .2;
-
-		// Editor color styles.
-
-			--wp--style--color--link: var(--color_accent);
-			--wp--preset--color--accent: var(--color_accent);
-			@each $option, $value in $customize_options_editor_palette {
-				$color_name: str_replace( 'color_', '', $option );
-				$color_name: str_replace( '_', '-', $color_name );
-				--wp--preset--color--#{ $color_name }: var(--#{ $option });
-			}
-
-		// Overlaid header colors.
-
-			// "Light/dark" refers to overlaid header text color.
-			--color_overlaid_header_light_background: linear-gradient( to bottom, #030507, #{ rgba( #030507, .8 ) } );
-			--color_overlaid_header_light: #fff;
-			--color_overlaid_header_dark_background: linear-gradient( to bottom, #fff, #{ rgba( #fff, .8 ) } );
-			--color_overlaid_header_dark: #030507;
-
-	// Typography.
-
-		// Base.
-
-			--typography_font_size_base: 16px;
-			// @include media( map_get( $breakpoint, 'l' ) ) {
-			// 	// Unfortunately, we can not use this in-between step as it uses calc()
-			// 	// and --typography_font_size_base var is being used within calc() elsewhere
-			// 	// so calc() within calc() does not work, obviously...
-			// 	--typography_font_size_base: calc( ( 1 - ( 1 - 16 / var(--typography_size_html) ) / 2 ) * var(--typography_size_html) );
-			// }
-			@include media( map_get( $breakpoint, 'xl' ) ) {
-				--typography_font_size_base: var(--typography_size_html);
-			}
-
-		// Headings.
-
-			--typography_heading_size_multiplier: .75;
-			@include media( map_get( $breakpoint, 'm' ) ) {
-				--typography_heading_size_multiplier: .875;
-			}
-			@include media( map_get( $breakpoint, 'l' ) ) {
-				--typography_heading_size_multiplier: 1;
-			}
-
-			// @link  https://www.modularscale.com/?1&em&1.333
-			$heading_sizes : ( 3.157, 2.369, 1.777, 1.333, 1, 1 );
-			@each $size in $heading_sizes {
-				$value : $size +em;
-				@if .98 < ( .75 * $size ) {
-					$value : calc( var(--typography_heading_size_multiplier) * #{ $value } );
-				}
-				--typography_heading_size_#{ index( $heading_sizes, $size ) }: #{ $value };
-			}
-			@include media( map_get( $breakpoint, 'xxl' ) ) {
-				--typography_heading_size_1: 4.209em;
-			}
-
-			--typography_heading_size_posts: var(--typography_heading_size_3);
-
-		// Modifiers.
-
-			--typography_font_size_extra_small: .618em;
-			--typography_font_size_small: .75em;
-			--typography_font_size_large: var(--typography_heading_size_4);
-			--typography_font_size_extra_large: var(--typography_heading_size_3);
-			--typography_font_size_huge: var(--typography_heading_size_1);
-			--typography_font_size_gigantic: calc( var(--typography_heading_size_multiplier) * 5.61em );
-
-	// Spacing and size.
-
-		// Helpers.
-
-			// Unit is required in `calc()`.
-			// A non-zero value is required for minification process not to strip the unit.
-			--zero: 0.001px;
-
-			--scrollbar_width: var(--zero);
-
-		// White spaces.
-
-			--white_space: 90px;
-			@include media( map_get( $breakpoint, 'l' ) ) {
-				--white_space: 120px;
-			}
-			@include media( map_get( $breakpoint, 'xl' ) ) {
-				--white_space: 150px;
-			}
-
-			--content_padding: var(--white_space);
-			--content_padding_negative: calc( -1 * var(--content_padding) );
-
-			--posts_list_gap: 1em;
-			@include media( map_get( $breakpoint, 'xl' ) ) {
-				--posts_list_gap: 2em;
-			}
-
-			--posts_list_entry_padding_horizontal: 1.5em;
-			--posts_list_entry_padding_vertical: 2em;
-			@include media( map_get( $breakpoint, 'xl' ) ) {
-				--posts_list_entry_padding_horizontal: 2em;
-			}
-			@include media(
-				( map_get( $breakpoint, 'xxl' ), 'min-width' ),
-				( 640, 'min-height' )
-			) {
-				--posts_list_entry_padding_horizontal: 6vh;
-				--posts_list_entry_padding_vertical: 6vh;
-			}
-
-		// Widths & heights.
-
-			--max_width_header_content: var(--layout_width_content);
-			--max_width_footer_content: var(--layout_width_content);
-
-			--hr_width: #{ percentage( $ratio_min ) };
-			--hr_zigzag_height: 10px;
-			--hr_zigzag_segments: 6;
-			@include media( map_get( $breakpoint, 'm' ) ) {
-				--hr_zigzag_segments: 10;
-			}
-
-			--border_decorative_width: 10px;
-
-		// Others.
-
-			--button_toggle_sub_menu_size: 10px;
-			// Touch enabled devices.
-			@media (hover: none) {
-				--button_toggle_sub_menu_size: 24px;
-			}
-
-			--letter_spacing: .05em;
-
-	// Miscellaneous.
-
-		--pseudo_background_opacity: .05;
-
-		--featured_posts_opacity_shaded: 1;
-		--featured_posts_transition_speed: .3s;
-
-		--drop_shadow: 0 1vh 6vh #{ rgba( #000, .2 ) };
+	// Overridden with JavaScript:
+	--scrollbar_width: var(--zero);
 
 }
 
-.has-navigation-mobile {
-	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
-		--button_toggle_sub_menu_size: 32px;
-	}
-}
+@import '_custom-properties/_theme-options';
+@import '_custom-properties/_colors';
+@import '_custom-properties/_typography';
+@import '_custom-properties/_box-model';
+@import '_custom-properties/_others';

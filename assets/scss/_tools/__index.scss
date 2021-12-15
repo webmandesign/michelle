@@ -1,8 +1,11 @@
-/* FILE: tools/__index.scss */
+/* FILE: _tools/__index.scss */
 
 @import 'function-encode-url';
 @import 'function-important';
+@import 'function-pow';
+@import 'function-round';
 @import 'function-str-replace';
 
+@import 'mixin-gallery-caption';
 @import 'mixin-media';
 @import 'mixin-screen-reader-hiding';

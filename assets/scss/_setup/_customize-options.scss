@@ -1,7 +1,13 @@
-// Colors:
-// @link  https://www.pantone.com/color-of-the-year-2021
-// @link  https://www.pantone.com/color-finder/13-0647-TCX
-// @link  https://www.pantone.com/color-finder/17-5104-TCX
+$color_palette: (
+	// @link  https://www.pantone.com/color-of-the-year-2021
+	// @link  https://www.pantone.com/color-finder/13-0647-TCX
+	// @link  https://www.pantone.com/color-finder/17-5104-TCX
+	'color_palette_1': #f5df4d,
+	'color_palette_2': #030507,
+
+	// Basic global colors.
+	'color_palette_3': #ffffff,
+);
 
 $customize_options: (
 	// @see  WebManDesign\Michelle\Customize\Options::set()
@@ -48,12 +54,4 @@ $customize_options: (
 
 );
 
-$customize_options_editor_palette: (
-	// @see  WebManDesign\Michelle\Customize\Colors::get()
-
-	'color_palette_1': #f5df4d,
-	'color_palette_2': #030507,
-	'color_palette_3': #ffffff,
-);
-
-$customize_options: map-merge( $customize_options, $customize_options_editor_palette );
+$customize_options: map-merge( $customize_options, $color_palette );
