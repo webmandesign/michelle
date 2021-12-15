@@ -8,15 +8,13 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Customize;
 
 use WebManDesign\Michelle\Component_Interface;
 use WebManDesign\Michelle\Assets;
-use WebManDesign\Michelle\Tool\AMP;
-use WP_Customize_Manager;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -59,7 +57,8 @@ class CSS_Variables implements Component_Interface {
 	/**
 	 * Get CSS variables from theme options in array.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  array
 	 */
@@ -107,6 +106,7 @@ class CSS_Variables implements Component_Interface {
 				if (
 					! empty( $mod )
 					|| 'checkbox' === $option['type']
+					|| ( 'color' === $option['type'] && '' === $mod )
 				) {
 					if ( 'color' === $option['type'] ) {
 						$value_check = maybe_hash_hex_color( $value );
@@ -122,6 +122,15 @@ class CSS_Variables implements Component_Interface {
 				} else {
 					// No need to output CSS var if it was not changed in customizer.
 					continue;
+				}
+
+				// Empty color value fix.
+				if (
+					'color' === $option['type']
+					&& '' === $value
+				) {
+					$value             = 'transparent';
+					$option['css_var'] = '[[value]]';
 				}
 
 				// Array value to string. Just in case.

@@ -14,7 +14,6 @@ namespace WebManDesign\Michelle\Assets;
 use WebManDesign\Michelle\Component_Interface;
 use WebManDesign\Michelle\Header\Component as Header;
 use WebManDesign\Michelle\Customize\Mod;
-use WebManDesign\Michelle\Tool\AMP;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -48,7 +47,7 @@ class Scripts implements Component_Interface {
 	 * Placeholders for adding inline scripts.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -56,7 +55,7 @@ class Scripts implements Component_Interface {
 
 		// Requirements check
 
-			if ( AMP::is_amp() ) {
+			if ( Factory::is_js_disabled() ) {
 				return;
 			}
 
@@ -76,7 +75,8 @@ class Scripts implements Component_Interface {
 	/**
 	 * Enqueue comment reply script the right way.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -84,7 +84,7 @@ class Scripts implements Component_Interface {
 
 		// Requirements check
 
-			if ( AMP::is_amp() ) {
+			if ( Factory::is_js_disabled() ) {
 				return;
 			}
 

@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -20,7 +21,8 @@ class Block implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -29,6 +31,8 @@ class Block implements Component_Interface {
 		// Processing
 
 			// Filters
+
+				add_filter( 'register_post_type_args', __CLASS__ . '::register_reusable_blocks_args', 10, 2 );
 
 				add_filter( 'render_block', __CLASS__ . '::render_block', 5, 2 );
 
@@ -157,5 +161,31 @@ class Block implements Component_Interface {
 			return $block_content;
 
 	} // /render_block
+
+	/**
+	 * Enable "Reusable blocks" in admin menu.
+	 *
+	 * @since  1.3.0
+	 *
+	 * @param  array  $args       Array of arguments for registering a post type.
+	 * @param  string $post_type  Post type key.
+	 *
+	 * @return  array
+	 */
+	public static function register_reusable_blocks_args( array $args, string $post_type ): array {
+
+		// Processing
+
+			if ( 'wp_block' === $post_type ) {
+				// Show under "Tools" menu item.
+				$args['show_in_menu'] = 'tools.php';
+			}
+
+
+    // Output
+
+			return $args;
+
+	} // /register_reusable_blocks_args
 
 }

@@ -100,7 +100,7 @@ class Component implements Component_Interface {
 			// -> produces `<ul id="menu-primary" class="menu menu-primary toggle-sub-menus">...</ul>`
 
 			// Accessibility helper: last accessible focusable element.
-			$a11y_link = '<li class="menu-toggle-skip-link-container"><a href="#menu-toggle" class="menu-toggle-skip-link">' . esc_html__( 'Skip to menu toggle button', 'theme-slug' ) . '</a></li>';
+			$a11y_link = '<li class="menu-toggle-skip-link-container"><a href="#menu-toggle" class="menu-toggle-skip-link">' . esc_html__( 'Skip to menu toggle button', 'michelle' ) . '</a></li>';
 
 
 		// Processing

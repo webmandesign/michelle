@@ -5,12 +5,11 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Assets;
-
-use WebManDesign\Michelle\Tool\AMP;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -20,14 +19,18 @@ class Factory {
 	/**
 	 * Contains an array of script handles registered by theme.
 	 *
-	 * @var array
+	 * @since   1.0.0
+	 * @access  private
+	 * @var     array
 	 */
 	private static $scripts = array();
 
 	/**
 	 * Contains an array of style handles registered by theme.
 	 *
-	 * @var array
+	 * @since   1.0.0
+	 * @access  private
+	 * @var     array
 	 */
 	private static $styles = array();
 
@@ -260,7 +263,8 @@ class Factory {
 	 *
 	 * If the `<link>` tag for a given stylesheet has already been printed, it will be skipped.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  string ...$handles  One or more stylesheet handles.
 	 *
@@ -271,7 +275,7 @@ class Factory {
 		// Requirements check
 
 			// If preloading styles is disabled (and thus they have already been enqueued), return early.
-			if ( ! self::preloading_styles_enabled() ) {
+			if ( self::is_preloading_styles_disabled() ) {
 				return;
 			}
 
@@ -296,30 +300,52 @@ class Factory {
 	} // /print_styles
 
 	/**
-	 * Whether to preload stylesheets and inject link tags directly into page content.
+	 * Whether not to preload stylesheets and inject link tags directly into page content.
 	 *
 	 * Using this technique generally improves performance, however may not be preferred
 	 * under certain circumstances. For example, since AMP will include all style rules
 	 * directly in the head, it must not be used in that context.
 	 *
-	 * @since  1.0.0
+	 * @since  1.3.0
 	 *
 	 * @return  bool
 	 */
-	public static function preloading_styles_enabled(): bool {
+	public static function is_preloading_styles_disabled(): bool {
 
 		// Output
 
 			/**
-			 * Filters whether to preload stylesheets and inject their link tags within the page content.
+			 * Filters whether not to preload stylesheets and inject their link tags within the page content.
 			 *
-			 * @since  1.0.0
+			 * @since  1.3.0
 			 *
-			 * @param  bool $enabled  By default, returns true unless the page is being served in AMP.
+			 * @param  bool $disabled  By default, returns false.
 			 */
-			return (bool) apply_filters( 'michelle/assets/preloading_styles_enabled', ! AMP::is_amp() );
+			return (bool) apply_filters( 'michelle/assets/is_preloading_styles_disabled', false );
 
-	} // /preloading_styles_enabled
+	} // /is_preloading_styles_disabled
+
+	/**
+	 * Check whether we should disable JavaScript output.
+	 *
+	 * @since  1.3.0
+	 *
+	 * @return  bool
+	 */
+	public static function is_js_disabled(): bool {
+
+		// Output
+
+			/**
+			 * Filters whether to disable outputting JavaScript into HTML.
+			 *
+			 * @since  1.3.0
+			 *
+			 * @param  bool $disabled  By default, returns false.
+			 */
+			return (bool) apply_filters( 'michelle/assets/scripts/is_js_disabled', false );
+
+	} // /is_js_disabled
 
 	/**
 	 * Escape CSS code.

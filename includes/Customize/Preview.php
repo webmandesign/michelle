@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -133,7 +133,7 @@ class Preview implements Component_Interface {
 	 *   );
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -177,12 +177,17 @@ class Preview implements Component_Interface {
 						$output_single  = "wp.customize("  . PHP_EOL;
 						$output_single .= "\t" . "'" . $option_id . "',"  . PHP_EOL;
 						$output_single .= "\t" . "function( value ) {"  . PHP_EOL;
-						$output_single .= "\t\t" . 'value.bind( function( to ) {' . PHP_EOL;
+						$output_single .= "\t\t" . 'value.bind( function( to, from ) {' . PHP_EOL;
 
 						// CSS.
 						if ( isset( $option['preview_js']['css'] ) ) {
 
 							$output_single .= "\t\t\t" . "var newCSS = '';" . PHP_EOL;
+
+							// Empty color value fix.
+							if ( 'color' === $option['type'] ) {
+								$output_single .= "\t\t\t" . "if ( '' === to ) to = 'transparent';" . PHP_EOL;
+							}
 
 							foreach ( $option['preview_js']['css'] as $selector => $properties ) {
 								if ( is_array( $properties ) ) {

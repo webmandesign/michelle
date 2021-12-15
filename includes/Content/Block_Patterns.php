@@ -2,19 +2,34 @@
 /**
  * Block patterns component.
  *
- * Default pattern categories in WordPress:
- * - buttons
- * - columns
- * - gallery
- * - header
- * - text
- * @link  https://developer.wordpress.org/reference/functions/register_block_pattern_category/
+ * For reference:
+ *   Default pattern categories in WordPress:
+ *   - buttons
+ *   - columns
+ *   - gallery
+ *   - header
+ *   - text
+ *   Additional WordPress.com pattern categories:
+ *   - featured
+ *   - about
+ *   - blog
+ *   - call-to-action
+ *   - coming-soon
+ *   - contact
+ *   - images
+ *   - link-in-bio
+ *   - list
+ *   - media
+ *   - podcast
+ *   - portfolio
+ *   - quotes
+ *   - subscribe
  *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -27,16 +42,46 @@ defined( 'ABSPATH' ) || exit;
 class Block_Patterns implements Component_Interface {
 
 	/**
+	 * Theme prefix for categories and patterns registration.
+	 *
+	 * @since   1.3.0
+	 * @access  private
+	 * @var     string
+	 */
+	private static $prefix = 'michelle/';
+
+	/**
 	 * Lists pattern setup arrays.
 	 *
-	 * @var array
+	 * @since   1.0.0
+	 * @access  private
+	 * @var     array
 	 */
 	private static $pattern_args = array();
 
 	/**
+	 * List of predefined pattern categories in WordPress.
+	 *
+	 * @since   1.3.0
+	 * @access  private
+	 * @var     array
+	 */
+	private static $default_cats = array( 'buttons', 'columns', 'gallery', 'header', 'text' );
+
+	/**
+	 * Fallback theme pattern category..
+	 *
+	 * @since   1.3.0
+	 * @access  private
+	 * @var     string
+	 */
+	private static $fallback_cat = 'michelle';
+
+	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -54,6 +99,7 @@ class Block_Patterns implements Component_Interface {
 			// Actions
 
 				add_action( 'after_setup_theme', __CLASS__ . '::remove_core_patterns' );
+				add_action( 'after_setup_theme', __CLASS__ . '::register_categories' );
 				add_action( 'after_setup_theme', __CLASS__ . '::register' );
 
 	} // /init
@@ -77,7 +123,7 @@ class Block_Patterns implements Component_Interface {
 	 * Register block patterns.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -87,58 +133,142 @@ class Block_Patterns implements Component_Interface {
 
 			global $content_width;
 
-			$patterns = self::get_pattern_ids();
+			$patterns_hierarchy = self::get_pattern_ids();
 
 
 		// Processing
 
-			foreach ( $patterns as $id ) {
+			foreach ( $patterns_hierarchy as $category => $patterns ) {
+				foreach ( $patterns as $id ) {
 
-				ob_start();
-				get_template_part( 'templates/parts/block/pattern', $id );
-				$content = ob_get_clean();
+					// Fallback category files are not in a subfolder.
+					if ( self::$fallback_cat !== $category ) {
+						$id = $category . '/' . $id;
+					}
 
-				// Why bother if we have no patter setup args?
-				if ( empty( self::$pattern_args[ $id ] ) ) {
-					continue;
+					ob_start();
+					get_template_part( 'templates/parts/block/pattern/' . $id );
+					$content = ob_get_clean();
+
+					// Why bother if we have no pattern setup args?
+					if ( empty( self::$pattern_args[ $id ] ) ) {
+						continue;
+					}
+
+					$args = wp_parse_args(
+						self::$pattern_args[ $id ],
+						array(
+							'title'         => '',
+							'content'       => trim( $content ),
+							'categories'    => null,
+							'blockTypes'    => array(),
+							'viewportWidth' => ( stripos( $content, 'alignfull' ) ) ? ( 1920 ) : ( absint( $content_width * 1.25 ) ),
+						)
+					);
+
+					// Why bother if we have no content or title?
+					if (
+						empty( $args['content'] )
+						|| empty( $args['title'] )
+					) {
+						continue;
+					}
+
+					$args['title'] = esc_html( $args['title'] );
+
+					// Automatic categories.
+					if ( empty( $args['categories'] ) ) {
+						if ( $category ) {
+							$args['categories'] = array( $category );
+						} else {
+							$args['categories'] = array( self::$fallback_cat ); // Fallback category.
+						}
+					}
+					$args['categories'] = array_map( function( $category ) {
+						if (
+							self::$fallback_cat === $category
+							|| in_array( $category, self::$default_cats )
+						) {
+							return $category;
+						} else {
+							return self::$prefix . $category;
+						}
+					}, $args['categories'] );
+
+					register_block_pattern( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_pattern
+						self::$prefix . $id,
+						/**
+						 * Filters array of block pattern registration arguments.
+						 *
+						 * @since  1.3.0
+						 *
+						 * @param  array  $args  Block pattern registration arguments.
+						 * @param  string $id    Block pattern registration ID.
+						 */
+						(array) apply_filters( 'michelle/content/block_patterns/register/args', $args, $id )
+					);
 				}
-
-				$args = wp_parse_args(
-					self::$pattern_args[ $id ],
-					array(
-						'title'         => '',
-						'content'       => trim( $content ),
-						'categories'    => array( 'text' ),
-						'viewportWidth' => absint( $content_width * 1.1 ),
-					)
-				);
-
-				// Why bother if we have no content or title?
-				if (
-					empty( $args['content'] )
-					|| empty( $args['title'] )
-				) {
-					continue;
-				}
-
-				$args['title'] = esc_html( $args['title'] );
-
-				register_block_pattern( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_pattern
-					'michelle/' . $id,
-					$args
-				);
 			}
 
 	} // /register
 
 	/**
-	 * Gets array of block pattern IDs/slugs to load.
+	 * Register custom block pattern categories.
 	 *
-	 * The theme will look for a `templates/parts/block/pattern-{{$id}}.php` file
-	 * based on the array values (the `$id` in the filename).
+	 * @since  1.3.0
+	 *
+	 * @return  void
+	 */
+	public static function register_categories() {
+
+		// Requirements check
+
+			if ( ! function_exists( 'register_block_pattern_category' ) ) {
+				return;
+			}
+
+
+		// Variables
+
+			$categories = array(
+				'cta'        => _x( 'Call to Action', 'Block pattern category label.', 'michelle' ),
+				'contact'    => _x( 'Contact', 'Block pattern category label.', 'michelle' ),
+				'cover'      => _x( 'Cover', 'Block pattern category label.', 'michelle' ),
+				'list'       => _x( 'Lists', 'Block pattern category label.', 'michelle' ),
+				'media-text' => _x( 'Media and Text', 'Block pattern category label.', 'michelle' ),
+				'number'     => _x( 'Numbers', 'Block pattern category label.', 'michelle' ),
+				'post'       => _x( 'Posts', 'Block pattern category label.', 'michelle' ),
+				'price'      => _x( 'Prices', 'Block pattern category label.', 'michelle' ),
+				'faq'        => _x( 'Question and Answer', 'Block pattern category label.', 'michelle' ),
+				'quote'      => _x( 'Quotes', 'Block pattern category label.', 'michelle' ),
+				'site'       => _x( 'Site', 'Website. Block pattern category label.', 'michelle' ),
+				'team'       => _x( 'Team', 'Block pattern category label.', 'michelle' ),
+			);
+
+
+		// Processing
+
+			// Add new categories with appropriate prefix.
+			foreach ( $categories as $id => $label ) {
+				register_block_pattern_category( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_pattern_category
+					self::$prefix . $id,
+					array( 'label' => esc_html( $label ) )
+				);
+			}
+
+			// Fallback category. Without prefix.
+			register_block_pattern_category( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_pattern_category
+				self::$fallback_cat,
+				array( 'label' => esc_html_x( 'Michelle theme', 'Block pattern category label.', 'michelle' ) )
+			);
+
+	} // /register_categories
+
+	/**
+	 * Gets array of block pattern IDs/slugs within categories to load.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.10
+	 * @version  1.3.0
 	 *
 	 * @return  array
 	 */
@@ -147,6 +277,55 @@ class Block_Patterns implements Component_Interface {
 		// Variables
 
 			$pattern_ids = array(
+
+				'contact' => array(
+				),
+
+				'cover' => array(
+				),
+
+				'cta' => array(
+				),
+
+				'faq' => array(
+				),
+
+				'gallery' => array(
+				),
+
+				'header' => array(
+				),
+
+				'list' => array(
+				),
+
+				'media-text' => array(
+				),
+
+				'number' => array(
+				),
+
+				'post' => array(
+				),
+
+				'price' => array(
+				),
+
+				'quote' => array(
+				),
+
+				'site' => array(
+				),
+
+				'team' => array(
+				),
+
+				'text' => array(
+				),
+
+			);
+
+			$___pattern_ids = array(
 				'blog',
 				'cards',
 				'contact-bg-1',
@@ -233,7 +412,8 @@ class Block_Patterns implements Component_Interface {
 	/**
 	 * Adds a block pattern setup array to list.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  string $file  Pattern setup file name/path.
 	 * @param  array  $args  Pattern setup arguments.
@@ -244,7 +424,8 @@ class Block_Patterns implements Component_Interface {
 
 		// Variables
 
-			$id = str_replace( 'pattern-', '', basename( $file, '.php' ) );
+			$dir = basename( dirname( $file ) ) . '/';
+			$id  = str_replace( 'pattern/', '', $dir . basename( $file, '.php' ) );
 
 
 		// Processing

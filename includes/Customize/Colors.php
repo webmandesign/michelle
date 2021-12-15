@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -29,22 +30,10 @@ class Colors implements Component_Interface {
 	public static $transient_cache_colors = 'michelle_cache_theme_colors';
 
 	/**
-	 * Editor palette colors.
-	 *
-	 * @since   1.0.0
-	 * @access  public
-	 * @var     array
-	 */
-	public static $editor_palette = array(
-		'#f5df4d',
-		'#030507',
-		'#ffffff',
-	);
-
-	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -55,10 +44,6 @@ class Colors implements Component_Interface {
 			// Actions
 
 				add_action( 'customize_save_after', __CLASS__ . '::transient_cache_flush', 100 );
-
-			// Filters
-
-				add_filter( 'michelle/customize/options/get', __CLASS__ . '::options', 15 );
 
 	} // /init
 
@@ -130,83 +115,5 @@ class Colors implements Component_Interface {
 			delete_transient( self::$transient_cache_colors );
 
 	} // /transient_cache_flush
-
-	/**
-	 * Add editor colors palette to theme options.
-	 *
-	 * @since  1.0.0
-	 *
-	 * @param  array $options
-	 *
-	 * @return  array
-	 */
-	public static function options( array $options ): array {
-
-		// Variables
-
-			/**
-			 * Filters predefined theme editor palette colors.
-			 *
-			 * @since  1.0.0
-			 *
-			 * @param  array $editor_palette  Array of hex color codes.
-			 */
-			$editor_palette = array_values( (array) apply_filters( 'michelle/customize/colors/editor_palette', self::$editor_palette ) );
-
-
-		// Processing
-
-			$options[ 110 . 'colors' . 100 ]['palette'] = array(
-				'name' => esc_html__( 'Accent color', 'michelle' ),
-				'slug' => 'accent',
-			);
-
-			$options[ 190 . 'colors' ] = array(
-				'id'             => 'colors_editor',
-				'type'           => 'section',
-				'create_section' => sprintf(
-					/* translators: Customizer section title. %s = section name. */
-					esc_html__( 'Colors: %s', 'michelle' ),
-					esc_html_x( 'Editor palette', 'Customizer color section title', 'michelle' )
-				),
-				'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
-			);
-
-			$options[ 190 . 'colors' . 100 ] = array(
-				'type'    => 'html',
-				'content' => '<p>' . esc_html__( 'Accent color is also being conveniently added into editor color palette for you, so you don\'t need to duplicate it here.', 'michelle' ) . '</p>',
-			);
-
-			foreach ( $editor_palette as $key => $color ) {
-				$key = absint( $key + 1 );
-				$options[ 190 . 'colors' . ( 100 + $key * 10 ) ] = array(
-					'type'       => 'color',
-					'id'         => 'color_palette_' . $key,
-					'label'      => sprintf(
-						/* translators: Editor palette color label. %d: color number. */
-						esc_html__( 'Palette color %d', 'michelle' ),
-						$key
-					),
-					'default'    => maybe_hash_hex_color( $color ),
-					'css_var'    => 'maybe_hash_hex_color',
-					'preview_js' => array(
-						'css' => array(
-							':root' => array(
-								'--[[id]]',
-							),
-						),
-					),
-					'palette' => array(
-						'slug' => 'palette-' . $key,
-					),
-				);
-			}
-
-
-		// Output
-
-			return $options;
-
-	} // /options
 
 }

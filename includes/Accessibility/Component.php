@@ -236,7 +236,7 @@ class Component implements Component_Interface {
 				'<div class="entry-skip-links">'
 				. self::link_skip_to( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'site-navigation',
-					esc_html__( 'Skip back to main navigation', 'theme-slug' )
+					esc_html__( 'Skip back to main navigation', 'michelle' )
 				)
 				. '</div>';
 

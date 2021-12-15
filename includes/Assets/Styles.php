@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -21,7 +22,9 @@ class Styles implements Component_Interface {
 	 * Associative array of CSS files, as `$handle => $data` pairs.
 	 * Do not access this property directly, instead use the `get_css_files()` method.
 	 *
-	 * @var array
+	 * @since   1.0.0
+	 * @access  private
+	 * @var     array
 	 */
 	private static $css_files;
 
@@ -157,7 +160,8 @@ class Styles implements Component_Interface {
 	 * Stylesheets that are global are enqueued.
 	 * All other stylesheets are only registered, to be enqueued later.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -180,7 +184,7 @@ class Styles implements Component_Interface {
 				 */
 				if (
 					$data['global']
-					|| ! Factory::preloading_styles_enabled()
+					|| Factory::is_preloading_styles_disabled()
 					&& is_callable( $data['preload_callback'] )
 					&& call_user_func( $data['preload_callback'] )
 				) {
@@ -285,7 +289,8 @@ class Styles implements Component_Interface {
 	 *
 	 * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -294,7 +299,7 @@ class Styles implements Component_Interface {
 		// Requirements check
 
 			// If preloading styles is disabled, return early.
-			if ( ! Factory::preloading_styles_enabled() ) {
+			if ( Factory::is_preloading_styles_disabled() ) {
 				return;
 			}
 

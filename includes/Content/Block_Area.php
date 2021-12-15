@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.6
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -36,6 +36,28 @@ class Block_Area implements Component_Interface {
 				add_action( 'tha_footer_top', __CLASS__ . '::footer' );
 
 	} // /init
+
+	/**
+	 * Get block area post type key.
+	 *
+	 * @since  1.3.0
+	 *
+	 * @return  string
+	 */
+	public static function get_post_type(): string {
+
+		// Output
+
+			/**
+			 * Filters block area post type key.
+			 *
+			 * @since  1.3.0
+			 *
+			 * @param  string $post_type
+			 */
+			return (string) apply_filters( 'michelle/content/block_area/get_post_type', 'wp_block' );
+
+	} // /get_post_type
 
 	/**
 	 * Error 404 page content.

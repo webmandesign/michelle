@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -29,7 +30,8 @@ class Mod {
 	 *
 	 * @link  https://developer.wordpress.org/reference/functions/get_theme_mod/
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  string $name
 	 * @param  array  $option_setup
@@ -125,14 +127,20 @@ class Mod {
 				if ( is_string( $output ) ) {
 					// Only run the replacement if an sprintf() string format pattern was found.
 					if ( preg_match( '#(?<!%)%(?:\d+\$?)?s#', $output ) ) {
-						$output = sprintf(
-							$output,
-							get_template_directory_uri(),
-							get_stylesheet_directory_uri()
-						);
+						// Remove a single trailing percent sign.
+						$output = preg_replace( '#(?<!%)%$#', '', $output );
+						$output = sprintf( $output, get_template_directory_uri(), get_stylesheet_directory_uri() );
 					}
 				}
 
+			}
+
+			// Empty color value fix.
+			if (
+				0 === strpos( $name, 'color_' )
+				&& '' === $output
+			) {
+				$output = 'transparent';
 			}
 
 

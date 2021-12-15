@@ -6,12 +6,13 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Customize;
 
 use WebManDesign\Michelle\Component_Interface;
+use WebManDesign\Michelle\Content\Block_Area;
 use WebManDesign\Michelle\Setup\Media;
 use WebManDesign\Michelle\Tool\Google_Fonts;
 use WP_Customize_Manager;
@@ -68,7 +69,7 @@ class Options implements Component_Interface {
 	 * Modify native WordPress options and setup partial refresh pointers.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.0
 	 *
 	 * @param  WP_Customize_Manager $wp_customize
 	 *
@@ -78,20 +79,24 @@ class Options implements Component_Interface {
 
 		// Processing
 
-			// Set live preview for predefined controls.
+			// Change options.
 			$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 			$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 
-			// Default background color control.
-			$wp_customize->get_control( 'background_color' )->section  = 'colors_general';
+			// Custom background options.
+			$cb_options = array(
+				'color',
+				'image',
+				'preset',
+				'position',
+				'size',
+				'repeat',
+				'attachment',
+			);
+			foreach ( $cb_options as $prop ) {
+				$wp_customize->get_control( 'background_' . $prop )->section = 'colors_general';
+			}
 			$wp_customize->get_control( 'background_color' )->priority = 10;
-
-			$wp_customize->get_control( 'background_image' )->section      = 'colors_general';
-			$wp_customize->get_control( 'background_preset' )->section     = 'colors_general';
-			$wp_customize->get_control( 'background_position' )->section   = 'colors_general';
-			$wp_customize->get_control( 'background_size' )->section       = 'colors_general';
-			$wp_customize->get_control( 'background_repeat' )->section     = 'colors_general';
-			$wp_customize->get_control( 'background_attachment' )->section = 'colors_general';
 
 			// Option pointers only:
 
@@ -116,7 +121,7 @@ class Options implements Component_Interface {
 	 * Sets theme options array.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.0
 	 *
 	 * @param  array $options
 	 *
@@ -151,7 +156,7 @@ class Options implements Component_Interface {
 
 			// Reusable blocks.
 			$blocks_reusable = get_posts( array(
-				'post_type'   => 'wp_block',
+				'post_type'   => Block_Area::get_post_type(),
 				'numberposts' => 100,
 			) );
 			$blocks = array(
@@ -341,6 +346,10 @@ class Options implements Component_Interface {
 								),
 							),
 						),
+						'palette' => array(
+							'name' => esc_html__( 'Accent color', 'michelle' ),
+							'slug' => 'accent',
+						),
 					),
 
 					/**
@@ -526,6 +535,90 @@ class Options implements Component_Interface {
 							),
 						),
 					),
+
+				/**
+				 * Colors: Editor palette.
+				 */
+				199 . 'colors' => array(
+					'id'             => 'colors_editor',
+					'type'           => 'section',
+					'create_section' => sprintf(
+						/* translators: Customizer section title. %s = section name. */
+						esc_html__( 'Colors: %s', 'michelle' ),
+						esc_html_x( 'Editor palette', 'Customizer color section title', 'michelle' )
+					),
+					'in_panel'       => esc_html_x( 'Theme Options', 'Customizer panel title.', 'michelle' ),
+				),
+
+					199 . 'colors' . 100 => array(
+						'type'    => 'html',
+						'content' => '<p>' . esc_html__( 'Accent color is also being conveniently added into editor color palette for you, so you don\'t need to duplicate it here.', 'michelle' ) . '</p>',
+					),
+
+					199 . 'colors' . 200 => array(
+						'type'       => 'color',
+						'id'         => 'color_palette_' . 1,
+						'label'      => sprintf(
+							/* translators: Editor palette color label. %d: color number. */
+							esc_html__( 'Palette color %d', 'michelle' ),
+							1
+						),
+						'default'    => '#f5df4d',
+						'css_var'    => 'maybe_hash_hex_color',
+						'preview_js' => array(
+							'css' => array(
+								':root' => array(
+									'--[[id]]',
+								),
+							),
+						),
+						'palette' => array(
+							'slug' => 'palette-' . 1,
+						),
+					),
+					199 . 'colors' . 210 => array(
+						'type'       => 'color',
+						'id'         => 'color_palette_' . 2,
+						'label'      => sprintf(
+							/* translators: Editor palette color label. %d: color number. */
+							esc_html__( 'Palette color %d', 'michelle' ),
+							2
+						),
+						'default'    => '#030507',
+						'css_var'    => 'maybe_hash_hex_color',
+						'preview_js' => array(
+							'css' => array(
+								':root' => array(
+									'--[[id]]',
+								),
+							),
+						),
+						'palette' => array(
+							'slug' => 'palette-' . 2,
+						),
+					),
+					199 . 'colors' . 220 => array(
+						'type'       => 'color',
+						'id'         => 'color_palette_' . 3,
+						'label'      => sprintf(
+							/* translators: Editor palette color label. %d: color number. */
+							esc_html__( 'Palette color %d', 'michelle' ),
+							3
+						),
+						'default'    => '#ffffff',
+						'css_var'    => 'maybe_hash_hex_color',
+						'preview_js' => array(
+							'css' => array(
+								':root' => array(
+									'--[[id]]',
+								),
+							),
+						),
+						'palette' => array(
+							'slug' => 'palette-' . 3,
+						),
+					),
+
 
 				/**
 				 * Layout.

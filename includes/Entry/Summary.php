@@ -5,13 +5,13 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Entry;
 
 use WebManDesign\Michelle\Component_Interface;
-use WebManDesign\Michelle\Content;
 use WebManDesign\Michelle\Setup;
 
 // Exit if accessed directly.
@@ -95,7 +95,6 @@ class Summary implements Component_Interface {
 				}
 
 				$post_excerpt = (string) apply_filters( 'the_content', $post_excerpt . get_the_content( '' ) . self::get_continue_reading_html() );
-
 			}
 
 

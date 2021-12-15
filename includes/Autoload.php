@@ -10,7 +10,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.3.0
  */
 
 // Exit if accessed directly.
@@ -25,14 +25,18 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 		/**
 		 * Theme PHP class namespace.
 		 *
-		 * @var string
+		 * @since   1.0.0
+		 * @access  private
+		 * @var     string
 		 */
 		private static $namespace = 'WebManDesign\Michelle';
 
 		/**
 		 * Directory to load PHP classes from.
 		 *
-		 * @var string
+		 * @since   1.0.0
+		 * @access  private
+		 * @var     string
 		 */
 		private static $directory = 'includes';
 
@@ -43,7 +47,11 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 		 * Can be obtained in code editor by searching for `namespace `
 		 * in `michelle/includes/*.php` files.
 		 *
-		 * @var array
+		 * @since    1.0.0
+		 * @version  1.3.0
+		 *
+		 * @access  private
+		 * @var     array
 		 */
 		private static $allowed_files = array(
 			'/Component_Interface.php',
@@ -69,6 +77,7 @@ if ( file_exists( MICHELLE_PATH_VENDOR . 'autoload.php' ) ) {
 			'/Customize/Component.php',
 			'/Customize/Control.php',
 			'/Customize/CSS_Variables.php',
+			'/Customize/Custom_Logo.php',
 			'/Customize/Mod.php',
 			'/Customize/Options.php',
 			'/Customize/Options_Conditional.php',

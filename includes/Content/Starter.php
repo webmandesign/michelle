@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -260,6 +260,28 @@ class Starter implements Component_Interface {
 	} // /options
 
 	/**
+	 * Attachments.
+	 *
+	 * @since  1.0.4
+	 *
+	 * @return  void
+	 */
+	public static function attachments() {
+
+		// Output
+
+			self::$content['attachments'] = array(
+				'image-logo-dark' => array(
+					'file' => 'assets/images/logo-michelle-dark.png',
+				),
+				'image-logo-light' => array(
+					'file' => 'assets/images/logo-michelle-light.png',
+				),
+			);
+
+	} // /attachments
+
+	/**
 	 * Get starter content image URL.
 	 *
 	 * @since    1.0.0
@@ -283,25 +305,144 @@ class Starter implements Component_Interface {
 	} // /get_image_url
 
 	/**
-	 * Attachments.
+	 * Get starter content texts.
 	 *
-	 * @since  1.0.4
+	 * @since  1.3.0
 	 *
-	 * @return  void
+	 * @param  string $scope
+	 *
+	 * @return  string
 	 */
-	public static function attachments() {
+	public static function get_text( string $scope ): string {
+
+		// Variables
+
+			$output = '---';
+			$scope  = explode( '/', $scope );
+
+			/**
+			 * Filters array of demo texts used in block patterns and starter content.
+			 *
+			 * @since  1.3.0
+			 *
+			 * @param  array $texts
+			 */
+			$texts = (array) apply_filters( 'michelle/demo_texts', array(
+
+				// Basic texts:
+					'xs' => _x( 'Some text', 'Demo text.', 'michelle' ),
+					's'  => _x( 'Just a short sentence', 'Demo text.', 'michelle' ),
+					'm'  => _x( 'Write your own copy text here', 'Demo text.', 'michelle' ),
+					'l'  => _x( 'This is just a demo text you should overwrite', 'Demo text.', 'michelle' ),
+
+				'title' => array(
+					's' => _x( 'This is title', 'Demo text.', 'michelle' ),
+					'm' => _x( 'Write some title text here', 'Demo text.', 'michelle' ),
+					'l' => _x( 'The ideal length of the title text in here should be maybe a bit longer', 'Demo text.', 'michelle' ),
+				),
+
+				'contact' => array(
+					'address' => _x( '123 Street Name<br>Cityname, 56789<br>COUNTRY', 'Demo text.', 'michelle' ),
+					'email'   => _x( 'example@example.com', 'Demo text.', 'michelle' ),
+					'phone'   => _x( '+1 (123) 456-7890', 'Demo text.', 'michelle' ),
+				),
+
+				'date' => array(
+					'event'   => _x( '10:30 am on Monday, July 1, 2021', 'Demo text.', 'michelle' ),
+					'weekday' => _x( 'Mon - Fri', 'Demo text. Week days.', 'michelle' ),
+					'weekend' => _x( 'Sat - Sun', 'Demo text. Weekend days.', 'michelle' ),
+					'mon'     => _x( 'Monday', 'Demo text.', 'michelle' ),
+					'tue'     => _x( 'Tuesday', 'Demo text.', 'michelle' ),
+					'wed'     => _x( 'Wednesday', 'Demo text.', 'michelle' ),
+					'thu'     => _x( 'Thursday', 'Demo text.', 'michelle' ),
+					'fri'     => _x( 'Friday', 'Demo text.', 'michelle' ),
+					'sat'     => _x( 'Saturday', 'Demo text.', 'michelle' ),
+					'sun'     => _x( 'Sunday', 'Demo text.', 'michelle' ),
+				),
+
+				'people' => array(
+					'name' => _x( 'Name Surname', 'Demo text.', 'michelle' ),
+					'job'  => _x( 'Designer', 'Demo text. A job title.', 'michelle' ),
+				),
+
+				// Others:
+					'alt'    => _x( 'Image alternative description text', 'Demo text. Image alt text.', 'michelle' ),
+					'button' => _x( 'Click here →', 'Demo text. Button label.', 'michelle' ),
+					'price'  => _x( '$19', 'Demo text. Price.', 'michelle' ),
+
+			) );
+
+
+		// Processing
+
+			foreach ( $scope as $category ) {
+				if ( isset( $texts[ $category ] ) ) {
+					$texts = $texts[ $category ];
+				}
+			}
+
+			if ( is_string( $texts ) ) {
+				$output = $texts;
+			}
+
 
 		// Output
 
-			self::$content['attachments'] = array(
-				'image-logo-dark' => array(
-					'file' => 'assets/images/logo-michelle-dark.png',
-				),
-				'image-logo-light' => array(
-					'file' => 'assets/images/logo-michelle-light.png',
-				),
-			);
+			return $output;
 
-	} // /attachments
+	} // /get_text
+
+	/**
+	 * Echos starter content texts.
+	 *
+	 * @since  1.3.0
+	 *
+	 * @param  string/array $scope
+	 * @param  string       $suffix
+	 *
+	 * @return  void
+	 */
+	public static function the_text( $scope, string $suffix = '' ) {
+
+		// Variables
+
+			$output = array();
+
+
+		// Processing
+
+			if ( is_string( $scope ) ) {
+
+				// Get direct text defined with string scope.
+				$output = array( self::get_text( $scope ) . $suffix );
+
+			} else if ( is_array( $scope ) ) {
+
+				// Get all texts defined with multiple scopes in an array.
+				foreach ( $scope as $text ) {
+					$output[] = self::get_text( $text ) . $suffix;
+				}
+
+			} else if ( is_numeric( $scope ) ) {
+
+				// Get specific number of various length sentences.
+				$sequence  = array( 's','l','m','l','m', 's','l','m','l','m', 's','l','m','l','m', 's','l','m','l','m', );
+				$sentences = array_slice(
+					$sequence,
+					0,
+					min( absint( $scope ), count( $sequence ) )
+				);
+				foreach ( $sentences as $text ) {
+					$output[] = self::get_text( $text ) . $suffix;
+				}
+
+			}
+
+
+		// Output
+
+			echo wp_kses( trim( implode( ' ', $output ) ), 'inline' );
+
+	} // /the_text
 
 }

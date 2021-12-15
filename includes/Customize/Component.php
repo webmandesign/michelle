@@ -35,6 +35,7 @@ class Component implements Component_Interface {
 			Preview::init();
 			// Theme options.
 			Options::init();
+			Custom_Logo::init();
 			RGBA::init();
 			Colors::init();
 			Options_Partial_Refresh::init();
