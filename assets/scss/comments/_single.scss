@@ -12,13 +12,7 @@
 	}
 
 	&-content {
-
-		&::after {
-			content: '';
-			clear: both;
-			display: table;
-			table-layout: fixed;
-		}
+		@extend %clearfix;
 
 		a {
 			word-wrap: break-word;
@@ -41,7 +35,7 @@
 		position: absolute;
 		#{$right}: 0;
 		top: $ratio +rem;
-		font-size: var(--typography_font_size_small);
+		font-size: var(--typography_font_size_S_em);
 		text-transform: uppercase;
 		letter-spacing: var(--letter_spacing);
 	}

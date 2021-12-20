@@ -1,17 +1,15 @@
 /* FILE: comments/_pagination.scss */
 
 .comment-navigation {
+	@extend %clearfix;
 	clear: both;
 	display: block;
 	position: relative;
 	padding: ( $ratio +em ) 0;
 	margin: 0;
 
-	&::after {
-		content: '';
-		clear: both;
-		display: table;
-		table-layout: fixed;
+	.comment-list + & {
+		padding: 0 0 ( $ratio * 2em );
 	}
 
 	a {
