@@ -2,7 +2,7 @@
 
 // Width
 
-	$important_modifiers: important( 'modifier_width' );
+	$important_modifiers: _important( 'modifier_width' );
 
 	.has-narrow-max-width {
 		max-width: var(--layout_width_entry_content) $important_modifiers;
@@ -26,7 +26,7 @@
 
 // Height
 
-	$important_modifiers: important( 'modifier_screen_min_height' );
+	$important_modifiers: _important( 'modifier_screen_min_height' );
 
 	@for $i from 2 through 20 {
 		$h : $i * 5;
@@ -34,21 +34,21 @@
 		.has-#{ $h }vh-min-height {
 			min-height: $h +vh $important_modifiers;
 		}
-			[class^="wp-block-"].has-#{ $h }vh-min-height {
+			[class*="wp-block-"].has-#{ $h }vh-min-height {
 				@extend .has-#{ $h }vh-min-height;
 			}
 
 		.has-#{ $h }vmin-min-height {
 			min-height: $h +vmin $important_modifiers;
 		}
-			[class^="wp-block-"].has-#{ $h }vmin-min-height {
+			[class*="wp-block-"].has-#{ $h }vmin-min-height {
 				@extend .has-#{ $h }vmin-min-height;
 			}
 
 		.has-#{ $h }vmax-min-height {
 			min-height: $h +vmax $important_modifiers;
 		}
-			[class^="wp-block-"].has-#{ $h }vmax-min-height {
+			[class*="wp-block-"].has-#{ $h }vmax-min-height {
 				@extend .has-#{ $h }vmax-min-height;
 			}
 
@@ -58,14 +58,14 @@
 		min-height: ( $ratio_maj * 100vh ) $important_modifiers;
 	}
 
-		[class^="wp-block-"].has-phi-vh-min-height,
+		[class*="wp-block-"].has-phi-vh-min-height,
 		.has-phi-screen-min-height,
-		[class^="wp-block-"].has-phi-screen-min-height {
+		[class*="wp-block-"].has-phi-screen-min-height {
 			@extend .has-phi-vh-min-height;
 		}
 
 	.has-full-screen-min-height,
-	[class^="wp-block-"].has-full-screen-min-height {
+	[class*="wp-block-"].has-full-screen-min-height {
 		@extend .has-100vh-min-height;
 	}
 
@@ -73,7 +73,7 @@
 
 // Padding
 
-	$important_modifiers: important( 'modifier_padding' );
+	$important_modifiers: _important( 'modifier_padding' );
 
 	.is-style-has-padding {
 		padding: 2em $important_modifiers;
@@ -85,64 +85,87 @@
 	}
 
 	.has-phi-padding,
-	.has-golden-padding {
+	.has-golden-padding,
+	.padding-phi,
+	.padding-golden {
 		padding: 1.618em $important_modifiers;
 	}
 
 	.has-no-padding,
+	.padding-none,
+	.p0,
 	.p-0 {
 		padding: 0 $important_modifiers;
 	}
 
 	.has-no-padding-top,
+	.padding-top-none,
+	.pt0,
 	.pt-0 {
 		padding-top: 0 $important_modifiers;
 	}
 
 	.has-no-padding-right,
+	.padding-right-none,
+	.pr0,
 	.pr-0 {
 		padding-right: 0 $important_modifiers;
 	}
 
 	.has-no-padding-bottom,
+	.padding-bottom-none,
+	.pb0,
 	.pb-0 {
 		padding-bottom: 0 $important_modifiers;
 	}
 
 	.has-no-padding-left,
+	.padding-left-none,
+	.pl0,
 	.pl-0 {
 		padding-left: 0 $important_modifiers;
 	}
 
 	.has-no-padding-horizontal,
+	.padding-horizontal-none,
+	.padding-left-right-none,
+	.plr0,
 	.plr-0 {
 		padding-left: 0 $important_modifiers;
 		padding-right: 0 $important_modifiers;
 	}
 
 	.has-no-padding-vertical,
+	.padding-vertical-none,
+	.padding-top-bottom-none,
+	.ptb0,
 	.ptb-0 {
 		padding-top: 0 $important_modifiers;
 		padding-bottom: 0 $important_modifiers;
 	}
 
+	.has-xs-padding,
 	.has-extra-small-padding {
 		padding: .8em $important_modifiers;
 	}
 
+	.has-s-padding,
 	.has-small-padding {
 		padding: 1em $important_modifiers;
 	}
 
+	.has-m-padding,
 	.has-regular-padding,
 	.has-medium-padding {
 		padding: 1.5em $important_modifiers;
 	}
 
+	.has-l-padding,
 	.has-large-padding {
 		padding: 2em $important_modifiers;
 	}
 
+	.has-xl-padding,
 	.has-huge-padding,
 	.has-extra-large-padding {
 		padding: 3em $important_modifiers;
@@ -150,9 +173,12 @@
 
 	.has-phi-padding,
 	.has-golden-padding,
+	.has-m-padding,
 	.has-regular-padding,
 	.has-medium-padding,
+	.has-l-padding,
 	.has-large-padding,
+	.has-xl-padding,
 	.has-huge-padding,
 	.has-extra-large-padding {
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
@@ -165,40 +191,70 @@
 
 // Margin
 
-	$important_modifiers: important( 'modifier_margin' );
+	$important_modifiers: _important( 'modifier_margin' );
 
 	.has-no-margin,
+	.margin-none,
+	.m0,
 	.m-0 {
 		margin: 0 $important_modifiers;
 	}
 
 	.has-no-margin-top,
+	.margin-top-none,
+	.mt0,
 	.mt-0 {
 		margin-top: 0 $important_modifiers;
 	}
 
 	.has-no-margin-right,
+	.margin-right-none,
+	.mr0,
 	.mr-0 {
 		margin-right: 0 $important_modifiers;
 	}
 
+	.has-auto-margin-right,
+	.margin-right-auto,
+	.mrauto,
+	.mr-auto {
+		margin-right: auto $important_modifiers;
+	}
+
 	.has-no-margin-bottom,
+	.margin-bottom-none,
+	.mb0,
 	.mb-0 {
 		margin-bottom: 0 $important_modifiers;
 	}
 
 	.has-no-margin-left,
+	.margin-left-none,
+	.ml0,
 	.ml-0 {
 		margin-left: 0 $important_modifiers;
 	}
 
+	.has-auto-margin-left,
+	.margin-left-auto,
+	.mlauto,
+	.ml-auto {
+		margin-left: auto $important_modifiers;
+	}
+
 	.has-no-margin-horizontal,
+	.margin-horizontal-none,
+	.margin-left-right-none,
+	.mlr0,
 	.mlr-0 {
 		margin-left: 0 $important_modifiers;
 		margin-right: 0 $important_modifiers;
 	}
 
 	.has-no-margin-vertical,
+	.margin-vertical-none,
+	.margin-top-bottom-none,
+	.mtb0,
 	.mtb-0 {
 		margin-top: 0 $important_modifiers;
 		margin-bottom: 0 $important_modifiers;
@@ -212,6 +268,11 @@
 
 	$important_modifiers: null; // Required reset.
 
+	.is-style-no-margin-vertical.is-style-no-margin-vertical.is-style-no-margin-vertical {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
 // Flexbox
 
 	.has-flex-display {
@@ -223,7 +284,7 @@
 
 	}
 
-	$important_modifiers: important( 'modifier_flex_order' );
+	$important_modifiers: _important( 'modifier_flex_order' );
 
 	@include media( map_get( $breakpoint, 'm' ) ) {
 
@@ -245,7 +306,7 @@
 
 	$important_modifiers: null; // Required reset.
 
-	$important_modifiers: important( 'modifier_flex_grow' );
+	$important_modifiers: _important( 'modifier_flex_grow' );
 
 	@for $i from 2 through 6 {
 		.has-#{$i}-flex-grow {
@@ -257,7 +318,7 @@
 
 // Z-index
 
-	$important_modifiers: important( 'modifier_z-index' );
+	$important_modifiers: _important( 'modifier_z-index' );
 
 	@for $i from 1 through 10 {
 		.has-#{$i}-z-index {

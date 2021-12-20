@@ -68,7 +68,10 @@
 
 // Others
 
-	.invert,
-	.has-invert-filter {
-		filter: invert(1);
-	}
+	// Invert colors filter.
+
+		.invert,
+		.is-inverted,
+		.has-invert-filter {
+			filter: invert(1);
+		}

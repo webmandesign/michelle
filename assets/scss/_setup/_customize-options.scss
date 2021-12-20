@@ -51,6 +51,8 @@ $customize_options: (
 	'typography_font_headings': var(--typography_font_global),
 	'typography_font_site_title': var(--typography_font_global),
 	'typography_font_alt': var(--typography_font_global),
+	// NOT CUSTOMIZABLE:
+	'typography_font_monospace': ( Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace ),
 
 );
 

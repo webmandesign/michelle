@@ -16,34 +16,34 @@ blockquote {
 	}
 
 	cite {
-		font-size: var(--typography_font_size_small);
+		font-size: var(--typography_font_size_base);
 		font-weight: 400;
 	}
 
 		> cite {
 			display: block;
-			margin-top: calc( var(--typography_font_size_base) * #{ $ratio_maj } );
+			margin-top: $ratio_maj +em;
 		}
 
 	blockquote {
 		font-size: 1em;
 	}
 
-	p {
+	p::before {
+		content: open-quote;
+		display: inline-block;
+		margin-#{$left}: -.2em;
+		margin-#{$right}: .1em;
+		font-size: 3em;
+		font-weight: 700;
+		line-height: .1;
+		vertical-align: bottom;
+		opacity: .2;
+	}
+
+	p,
+	p:last-child {
 		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio_maj } );
-
-		&::before {
-			content: open-quote;
-			display: inline-block;
-			margin-#{$left}: -.2em;
-			margin-#{$right}: .1em;
-			font-size: 3em;
-			font-weight: 700;
-			line-height: .1;
-			vertical-align: bottom;
-			opacity: .2;
-		}
-
 	}
 
 }
@@ -55,6 +55,12 @@ blockquote {
 			color: inherit;
 		}
 
+	}
+
+	blockquote.alignfull,
+	[data-align="full"] > blockquote {
+		padding-left: 6vw;
+		padding-right: 6vw;
 	}
 
 cite {

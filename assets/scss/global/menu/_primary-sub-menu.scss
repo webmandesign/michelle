@@ -16,16 +16,16 @@
 		box-shadow: var(--drop_shadow);
 		z-index: 1;
 
-		.sub-menu {
-			#{$left}: 100%;
-			top: calc( -6vh + .25em );
-			padding-top: calc( 6vh - .25em );
-		}
-
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 			#{$left}: -6vh;
 			padding-left: 6vh;
 			padding-right: 6vh;
+		}
+
+		.sub-menu {
+			#{$left}: 100%;
+			top: calc( -6vh + .25em );
+			padding-top: calc( 6vh - .25em );
 		}
 
 	}
@@ -34,7 +34,7 @@
 		position: relative;
 
 		// Inaccessible menu fallback indicating submenu.
-		html:not([amp]) &:not([aria-haspopup]):not(.menu-item-is-depth-3) {
+		.no-js:not(.is-amp) &:not([aria-haspopup]):not(.menu-item-is-depth-3) {
 			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 
 				> a {
@@ -62,7 +62,8 @@
 			}
 		}
 
-		&:hover > .sub-menu {
+		&:hover > .sub-menu,
+		.no-js &:focus-within > .sub-menu {
 
 			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 				display: block;
@@ -96,7 +97,7 @@
 
 }
 
-html:not([amp]) .no-js .sub-menu {
+.no-js:not(.is-amp) .sub-menu {
 	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
 		display: block;
 	}

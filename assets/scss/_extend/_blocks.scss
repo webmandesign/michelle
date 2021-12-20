@@ -43,7 +43,7 @@
 		> .alignfull,
 		> .alignwide-wrap {
 			width: 100%;
-			max-width: calc( var(--layout_width_content) + 2 * var(--body_padding) );
+			max-width: calc( var(--layout_width_content) + 2 * 6vw );
 			margin-left: auto;
 			margin-right: auto;
 		}

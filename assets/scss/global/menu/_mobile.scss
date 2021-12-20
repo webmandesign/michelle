@@ -48,7 +48,7 @@
 		.menu-open {
 
 			.toggled &,
-			html:not([amp]) .no-js .main-navigation:focus-within & {
+			.no-js:not(.is-amp) .main-navigation:focus-within & {
 				display: none;
 			}
 
@@ -58,7 +58,7 @@
 			display: none;
 
 			.toggled &,
-			html:not([amp]) .no-js .main-navigation:focus-within & {
+			.no-js:not(.is-amp) .main-navigation:focus-within & {
 				display: inline;
 			}
 
@@ -66,6 +66,25 @@
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		display: none;
+	}
+
+	// Accessibility helper: last accessible focusable element.
+	&-skip-link {
+		font-size: 16px !important;
+		font-weight: 400 !important;
+
+		&:not(:focus) {
+			@extend %screen_reader--hide;
+		}
+
+		&-container {
+
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				display: none !important;
+			}
+
+		}
+
 	}
 
 }
@@ -148,9 +167,15 @@
 
 			// Top level menu items.
 			> li {
+				font-size: $ratio +em;
 
+				&,
 				&:not(:last-child) {
 					margin-#{$right}: 0;
+				}
+
+				> .sub-menu {
+					font-size: $ratio_maj +em;
 				}
 
 			}
@@ -187,10 +212,10 @@
 }
 
 // No JavaScript.
-html:not([amp]) .no-js .main-navigation:focus-within .menu-toggle {
+.no-js:not(.is-amp) .main-navigation:focus-within .menu-toggle {
 	z-index: auto;
 }
-html:not([amp]) .no-js.has-navigation-mobile .main-navigation:focus-within {
+.no-js.has-navigation-mobile:not(.is-amp) .main-navigation:focus-within {
 	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
 		color: var(--color_navigation_text); // For menu toggle button.
 

@@ -2,7 +2,7 @@
 
 #{ $selectors_button } {
 	padding: ( $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 ) ) 0;
-	font-family: var(--typography_font_headings);
+	font-family: var(--typography_font_global);
 	font-size: $button_font_size +em;
 	font-weight: 700;
 	line-height: 1.25 / $button_font_size;
@@ -11,7 +11,7 @@
 	text-align: center;
 	letter-spacing: var(--letter_spacing);
 	background: var(--color_button_background);
-	color: var(--color_button_text);
+	color: var(--color_button_text); // See below for more precise style.
 	border: 0 solid transparent;
 	border-left-width: 1.5em / $button_font_size;
 	border-right-width: 1.5em / $button_font_size;
@@ -32,16 +32,18 @@
 		outline-color: var(--color_accent);
 	}
 
-	&.is-style-outline {
+	&.is-style-outline,
+	&.is-style-secondary {
 		padding-left: 1.5em / $button_font_size;
 		padding-right: 1.5em / $button_font_size;
 		color: inherit;
 		border: 1px solid;
 
 		&:not(.has-text-color) {
-			color: currentColor;
+			color: inherit;
 		}
 
+		&:not(.has-background),
 		&:hover,
 		&:focus,
 		&:active {
@@ -50,4 +52,10 @@
 
 	}
 
+}
+
+.has-text-color #{ $selectors_button } {
+	&:not(.has-text-color) {
+		color: var(--color_button_text);
+	}
 }

@@ -87,7 +87,7 @@
 }
 
 // AMP.
-[amp] .button-toggle-sub-menu.toggled {
+.is-amp .button-toggle-sub-menu.toggled {
 	@include media( ( map_get( $breakpoint, $mobile_menu_breakpoint ), 'max-width' ) ) {
 		// With AMP we need to make this toggled only for mobile menu
 		// as otherwise it looks weird on large screens

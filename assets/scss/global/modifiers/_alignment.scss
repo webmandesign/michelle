@@ -2,7 +2,7 @@
 
 // Text
 
-	$important_modifiers: important( 'modifier_align_text' );
+	$important_modifiers: _important( 'modifier_align_text' );
 
 	.has-#{ $left }-text-align,
 	.has-#{ $left }-content {
@@ -25,7 +25,7 @@
 
 // Vertical
 
-	$important_modifiers: important( 'modifier_align_vertical' );
+	$important_modifiers: _important( 'modifier_align_vertical' );
 
 	.has-top-vertical-align {
 		vertical-align: top $important_modifiers;

@@ -3,28 +3,21 @@
 // Text meant only for screen readers.
 .screen-reader-text,
 .is-style-screen-reader-text {
-	@extend %screen_reader_hiding;
+	@extend %screen_reader--hide;
 	padding: 0;
 	margin: -1px;
 	border: 0;
 
 	&:focus {
-		clip: auto;
-		clip-path: none;
-		width: auto;
-		height: auto;
-		line-height: normal;
-
+		@extend %screen_reader--show;
 		display: block;
-		#{$left}: 5px;
-		top: 5px;
+		margin: 5px;
 		padding: 1em 1.5em;
 		font-size: 14px;
-		font-size: .875rem;
-		font-weight: bold;
+		font-weight: 700;
 		text-decoration: none;
-		background-color: #36b;
-		color: #fff;
+		background: var( --color_button_background, #36b );
+		color: var( --color_button_text, #fff );
 		z-index: 100000; // Above WP toolbar.
 	}
 

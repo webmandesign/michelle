@@ -12,7 +12,7 @@ fieldset {
 
 legend {
 	margin: 0 0 ( $ratio +em );
-	font-size: var(--typography_font_size_small);
+	font-size: var(--typography_font_size_S_em);
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: var(--letter_spacing);
@@ -74,7 +74,7 @@ select {
 		max-width: 100%;
 		padding-#{$right}: calc( 14px + 1em );
 		background: none;
-		background-image: url('data:image/svg+xml;utf8,#{ encode_url( $dropdown_svg ) }');
+		background-image: url('data:image/svg+xml;utf8,#{ _encode_url( $dropdown_svg ) }');
 		background-size: $dropdown_svg_size auto;
 		background-position: $right 4px top 50%;
 		background-repeat: no-repeat;

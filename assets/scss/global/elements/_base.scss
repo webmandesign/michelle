@@ -12,48 +12,6 @@ body {
 	border-color: var(--color_body_border);
 }
 
-hr {
-	clear: both;
-	width: 100%;
-	max-width: var(--hr_width) !important; // Unfortunately, it's much easier to use important here...
-	margin-left: auto;
-	margin-right: auto;
-	border-width: 0;
-	border-bottom: 1px solid;
-
-	&.has-background.has-background {
-		background: none;
-	}
-
-	&.alignleft,
-	&.alignright {
-		float: none;
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
-	}
-
-	&.alignleft {
-		margin-left: 0;
-		margin-right: auto;
-	}
-
-	&.alignright {
-		margin-left: auto;
-		margin-right: 0;
-	}
-
-	&[class*="-wide"],
-	&.alignwide.alignwide {
-		--hr_width: var(--layout_width_content);
-		width: 100%;
-	}
-
-	&.alignfull.alignfull {
-		--hr_width: none;
-		width: calc( 100vw - var(--scrollbar_width) );
-	}
-
-}
-
 abbr[title],
 acronym[title],
 dfn {
@@ -89,7 +47,7 @@ figure {
 }
 
 figcaption {
-	font-size: var(--typography_font_size_small);
+	font-size: var(--typography_font_size_S_em);
 	text-align: center;
 }
 
@@ -101,48 +59,9 @@ img {
 pre {
 	position: relative;
 	padding: 1em;
-	font-size: var(--typography_font_size_small);
+	font-size: var(--typography_font_size_S_em);
 	overflow: auto;
 	tab-size: 2;
 	border-width: 1px;
 	border-style: solid;
-}
-
-menu,
-ul,
-ol {
-	padding: 0;
-}
-
-	ul,
-	ol {
-		margin-#{$left}: $ratio +em;
-	}
-
-	li > ul,
-	li > ol {
-		margin-bottom: 0;
-	}
-
-	ul {
-		list-style: disc;
-	}
-
-dl {
-	margin-top: 0;
-	margin-bottom: .5em;
-}
-
-dt {
-	margin-top: .5em;
-	font-weight: 700;
-
-	&:first-child {
-		margin-top: 0;
-	}
-
-}
-
-dd {
-	margin-#{$left}: 1.5em;
 }

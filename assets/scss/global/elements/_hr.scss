@@ -1,0 +1,57 @@
+/* FILE: global/elements/_hr.scss */
+
+hr {
+	clear: both;
+	box-sizing: inherit; // This is required due to Normalize.
+	width: 100%;
+	max-width: var(--layout_width_entry_content);
+	margin-left: auto;
+	margin-right: auto;
+	background: none !important;
+	border-width: 0;
+	border-bottom: 1px solid;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		width: var(--hr_width);
+		height: 100%;
+		background: currentColor;
+		border-radius: var(--border_radius);
+		vertical-align: top;
+		speak: none;
+	}
+
+	&.alignleft,
+	&.alignright {
+		float: none;
+		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+	}
+
+		&.alignleft.alignleft {
+			margin-right: 0;
+			text-align: left;
+		}
+
+		&.alignright.alignright {
+			margin-left: 0;
+			text-align: right;
+		}
+
+	&.aligncenter.aligncenter {
+		text-align: center;
+	}
+
+	&.alignwide.alignwide {
+		--hr_width: var(--layout_width_content);
+		width: 100%;
+		max-width: var(--layout_width_content);
+	}
+
+	&.alignfull.alignfull {
+		--hr_width: none;
+		width: calc( 100vw - var(--scrollbar_width) );
+		max-width: none;
+	}
+
+}

@@ -1,12 +1,5 @@
 /* FILE: global/classes/_clearing.scss */
 
 .clearfix {
-
-	&::after {
-		content: '';
-		clear: both;
-		display: table;
-		table-layout: fixed;
-	}
-
+	@extend %clearfix;
 }

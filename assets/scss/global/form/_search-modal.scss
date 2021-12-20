@@ -62,6 +62,21 @@
 					font-size: 2em;
 				}
 
+				@include media( ( map_get( $breakpoint, 'l' ), 'max-width' ) ) {
+
+					input,
+					select,
+					button {
+						width: 100%;
+						margin: .25em 0;
+					}
+
+				}
+
+			}
+
+			~ .main-navigation { // Do not use `+` here as AMP adds additional tag in between search modal and navigation.
+				display: none;
 			}
 
 		}
@@ -81,7 +96,7 @@
 
 		}
 
-		html:not([amp]) .no-js &,
+		.no-js:not(.is-amp) &,
 		&:not(.toggled) form,
 		&.toggled .modal-search-open,
 		&:not(.toggled) .modal-search-close {
@@ -100,7 +115,7 @@
 			line-height: 1.25;
 		}
 
-		&,
+		body &,
 		&:hover,
 		&:focus,
 		&:active {
@@ -113,7 +128,6 @@
 		.svg-icon {
 			width: auto;
 			height: $ratio +em;
-			margin: -.25em 0 0;
 			vertical-align: middle;
 		}
 
@@ -125,10 +139,10 @@
 			padding: 1em;
 			z-index: 1;
 
-		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			padding-top: 6vh;
-			padding-bottom: 6vh;
-		}
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				padding-top: 6vh;
+				padding-bottom: 6vh;
+			}
 
 			&,
 			&:hover,
@@ -144,14 +158,6 @@
 
 		}
 
-	}
-
-	&-open {
-		cursor: zoom-in;
-	}
-
-	&-close {
-		cursor: zoom-out;
 	}
 
 }

@@ -6,8 +6,8 @@
 	--wp--style--color--link: var(--color_accent);
 	--wp--preset--color--accent: var(--color_accent);
 	@each $option, $value in $color_palette {
-		$color_name: str_replace( 'color_', '', $option );
-		$color_name: str_replace( '_', '-', $color_name );
+		$color_name: _str_replace( 'color_', '', $option );
+		$color_name: _str_replace( '_', '-', $color_name );
 		--wp--preset--color--#{ $color_name }: var(--#{ $option });
 	}
 

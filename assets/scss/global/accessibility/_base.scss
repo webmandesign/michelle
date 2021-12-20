@@ -7,6 +7,10 @@
 	outline-color: currentColor;
 }
 
+.skip-link:focus {
+	outline-color: var( --color_button_background, #36b );
+}
+
 body:focus {
 	outline: none;
 }

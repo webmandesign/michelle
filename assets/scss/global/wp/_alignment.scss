@@ -62,11 +62,11 @@
 .alignfull,
 .alignwide-wrap {
 	clear: both;
-	position: relative;
+	// position: relative;
 	width: calc( 100vw - var(--scrollbar_width) );
 	max-width: calc( 100vw - var(--scrollbar_width) );
 	margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
-	z-index: 1; // This is for when using negative top margin to stack up over the Cover block overlay.
+	// z-index: 1; // This is for when using negative top margin to stack up over the Cover block overlay.
 }
 
 .alignwide {
@@ -92,7 +92,7 @@
 	margin-top: var(--content_padding_negative);
 }
 
-.is-singular:not([class*="-content-only"]):not(.single-post) .entry-content-singular > .alignfull:last-child,
-.error-404-content > .alignfull:last-child {
+.is-singular:not([class*="-content-only"]):not(.single-post) .entry-content-singular > .alignfull:not(.mb0):not(.is-style-no-margin-vertical):last-child,
+.error-404-content > .alignfull:not(.mb0):not(.is-style-no-margin-vertical):last-child {
 	margin-bottom: var(--content_padding_negative);
 }

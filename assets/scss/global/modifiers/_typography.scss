@@ -2,7 +2,7 @@
 
 // Font family
 
-	$important_modifiers: important( 'modifier_font_family' );
+	$important_modifiers: _important( 'modifier_font_family' );
 
 	.has-root-font-family,
 	.has-global-font-family {
@@ -17,6 +17,7 @@
 		font-family: var(--typography_font_site_title);
 	}
 
+	.has-inherit-font-family,
 	.has-inherited-font-family {
 		font-family: inherit;
 	}
@@ -25,42 +26,53 @@
 
 // Font size
 
-	$important_modifiers: important( 'modifier_font_size' );
+	$important_modifiers: _important( 'modifier_font_size' );
 
+	.has-xs-font-size,
 	.has-extra-small-font-size {
-		font-size: var(--typography_font_size_extra_small) $important_modifiers;
+		font-size: var(--typography_font_size_XS_em) $important_modifiers;
 	}
 
+	.has-s-font-size,
 	.has-small-font-size {
-		font-size: var(--typography_font_size_small) $important_modifiers;
+		font-size: var(--typography_font_size_S_em) $important_modifiers;
 	}
 
+	.has-m-font-size,
+	.has-medium-font-size,
 	.has-regular-font-size,
 	.has-normal-font-size {
 		font-size: 1em $important_modifiers;
+		line-height: inherit;
 	}
 
+	.has-l-font-size,
 	.has-large-font-size {
-		font-size: var(--typography_font_size_large) $important_modifiers;
+		font-size: var(--typography_font_size_L_em) $important_modifiers;
+		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_L) );
 	}
 
+	.has-xl-font-size,
 	.has-extra-large-font-size {
-		font-size: var(--typography_font_size_extra_large) $important_modifiers;
+		font-size: var(--typography_font_size_XL_em) $important_modifiers;
+		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_XL) );
 	}
 
 	.has-huge-font-size {
 		font-size: var(--typography_font_size_huge) $important_modifiers;
+		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_huge) );
 	}
 
 	.has-gigantic-font-size {
 		font-size: var(--typography_font_size_gigantic) $important_modifiers;
+		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_gigantic) );
 	}
 
 	$important_modifiers: null; // Required reset.
 
 // Font style
 
-	$important_modifiers: important( 'modifier_font_style' );
+	$important_modifiers: _important( 'modifier_font_style' );
 
 	.has-italic-font-style {
 		font-style: italic $important_modifiers;
@@ -74,7 +86,7 @@
 
 // Font weight
 
-	$important_modifiers: important( 'modifier_font_weight' );
+	$important_modifiers: _important( 'modifier_font_weight' );
 
 	// @link  https://developer.mozilla.org/en/docs/Web/CSS/font-weight
 	@for $i from 1 through 9 {
@@ -87,30 +99,34 @@
 
 // Line height
 
-	$important_modifiers: important( 'modifier_line_height' );
+	$important_modifiers: _important( 'modifier_line_height' );
 
 	.has-1-line-height {
 		line-height: 1 $important_modifiers;
 	}
 
+	.has-xs-line-height,
 	.has-extra-small-line-height {
 		line-height: ( 1 + $ratio_min / 2 ) $important_modifiers;
 	}
 
+	.has-s-line-height,
 	.has-small-line-height {
 		line-height: ( 1 + $ratio_min ) $important_modifiers;
 	}
 
+	.has-m-line-height,
 	.has-regular-line-height,
-	.has-medium-line-height {
-		line-height: $ratio $important_modifiers;
+	.has-medium-line-height,
+	.has-normal-line-height {
+		line-height: var(--typography_line_height) $important_modifiers;
 	}
 
 	$important_modifiers: null; // Required reset.
 
 // Text transform
 
-	$important_modifiers: important( 'modifier_text_transform' );
+	$important_modifiers: _important( 'modifier_text_transform' );
 
 	.has-uppercase-text-transform,
 	.is-style-uppercase {
@@ -121,7 +137,7 @@
 
 // Text shadow
 
-	$important_modifiers: important( 'modifier_text_shadow' );
+	$important_modifiers: _important( 'modifier_text_shadow' );
 
 	.has-dark-text-shadow,
 	.is-style-text-shadow-dark {

@@ -7,7 +7,6 @@ h1, h2, h3, h4, h5, h6,
 	margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
 	font-family: var(--typography_font_headings);
 	font-weight: 700;
-	line-height: 1.25;
 	word-wrap: break-word;
 	color: var(--color_body_headings);
 
@@ -35,11 +34,6 @@ h1, h2, h3,
 
 h1, .h1 {
 	text-transform: uppercase;
-
-	@include media( map_get( $breakpoint, 'xxl' ) ) {
-		line-height: 1.1;
-	}
-
 }
 
 h2, h3, h4, h5, h6 {
@@ -55,5 +49,20 @@ h2, h3, h4, h5, h6 {
 	h#{ $heading },
 	.h#{ $heading } {
 		font-size: var(--typography_heading_size_#{ $heading });
+	}
+}
+
+@for $heading from 1 through 6 {
+	h#{ $heading },
+	.h#{ $heading },
+	.has-heading-#{ $heading }-font-size {
+		font-size: var(--typography_heading_size_#{ $heading }_em);
+		line-height: calc( 1 + var(--typography_line_height_headings) / var(--typography_heading_size_#{ $heading }) / var(--responsive_scale) );
+	}
+
+	@if variable-exists( 'selector_editor_wrapper' ) {
+		.has-heading-#{ $heading }-font-size {
+			font-size: var(--typography_heading_size_#{ $heading }_em) _important( 'modifier_font_size' );
+		}
 	}
 }

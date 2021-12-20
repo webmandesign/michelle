@@ -10,8 +10,8 @@
 
 	@each $option, $value in $customize_options {
 		@if str-index( #{ $option }, 'color_' ) or str-index( #{ $option }, 'palette_' ) {
-			$selector: str_replace( 'color_', '', $option );
-			$selector: str_replace( '_', '-', $selector );
+			$selector: _str_replace( 'color_', '', $option );
+			$selector: _str_replace( '_', '-', $selector );
 
 			#{ $specificity }.has-#{ $selector }-color {
 
@@ -35,9 +35,15 @@
 		}
 	}
 
+	.has-initial-border-color,
+	.has-current-border-color,
+	.has-currentColor-border-color {
+		border-color: currentColor;
+	}
+
 // Has background
 
-	$important_modifiers: important( 'modifier_has_background' );
+	$important_modifiers: _important( 'modifier_has_background' );
 
 	.has-background.has-background {
 		// Need to use absolute units due to possible
@@ -52,6 +58,17 @@
 	}
 
 	$important_modifiers: null; // Required reset.
+
+// Has text color
+
+	.has-text-color {
+
+		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6 {
+			color: inherit;
+		}
+
+	}
 
 // Force link color inheritance
 

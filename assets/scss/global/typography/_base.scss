@@ -3,7 +3,7 @@
 html {
 	font-family: var(--typography_font_global);
 	font-size: var(--typography_font_size_base);
-	line-height: $ratio;
+	line-height: var(--typography_line_height);
 }
 
 .site-title {
@@ -11,7 +11,7 @@ html {
 }
 
 small {
-	font-size: var(--typography_font_size_small);
+	font-size: var(--typography_font_size_S_em);
 }
 
 pre,
@@ -19,12 +19,7 @@ code,
 kbd,
 tt,
 var {
-	font-family:
-		Monaco,
-		Consolas,
-		'Andale Mono',
-		'DejaVu Sans Mono',
-		monospace;
+	font-family: var(--typography_font_monospace);
 	font-size: 1em;
 	font-style: normal;
 	font-weight: 400;
