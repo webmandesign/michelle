@@ -15,17 +15,10 @@
 }
 
 .content-area {
+	@extend %clearfix;
 	max-width: var(--layout_width_content);
 	padding: var(--content_padding) 0;
 	margin: 0 auto;
-
-	&::after {
-		content: '';
-		clear: both;
-		display: table;
-		table-layout: fixed;
-	}
-
 }
 
 .site-main {
@@ -58,4 +51,14 @@
 	.has-content-layout-full-width .site-main,
 	.has-content-layout-no-padding .site-main {
 		max-width: none;
+	}
+
+// Custom templates from plugins.
+
+	.is-custom-template-file {
+
+		.site-main {
+			max-width: none;
+		}
+
 	}

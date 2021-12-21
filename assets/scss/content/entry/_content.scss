@@ -1,12 +1,9 @@
 /* FILE: content/entry/_content.scss */
 
 .entry-content {
+	@extend %clearfix;
+}
 
-	&::after {
-		content: '';
-		clear: both;
-		display: table;
-		table-layout: fixed;
-	}
-
+.entry-summary {
+	word-wrap: break-word;
 }

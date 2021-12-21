@@ -87,16 +87,11 @@
 	}
 
 	&-caption {
+		@include gallery_caption();
 		position: absolute;
 		width: 100%;
 		max-height: 100%;
 		bottom: 0;
-		padding: 4%;
-		font-size: 13px;
-		text-align: center;
-		background: rgba( #000, .66 );
-		color: #fff;
-		backdrop-filter: blur( 10px );
 		overflow: auto;
 	}
 

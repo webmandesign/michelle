@@ -1,17 +1,11 @@
 /* FILE: content/pagination/_paged.scss */
 
 .pagination {
+	@extend %clearfix;
 	clear: both;
 	position: relative;
 	margin-top: var(--white_space);
 	text-align: center;
-
-	&::after {
-		content: '';
-		clear: both;
-		display: table;
-		table-layout: fixed;
-	}
 
 	&.pagination::before {
 		content: attr(data-current) " / " attr(data-total);

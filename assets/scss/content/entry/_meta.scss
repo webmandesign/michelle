@@ -1,7 +1,7 @@
 /* FILE: content/entry/_meta.scss */
 
 .entry-meta {
-	font-size: var(--typography_font_size_small);
+	font-size: var(--typography_font_size_S_em);
 	text-transform: uppercase;
 	letter-spacing: var(--letter_spacing);
 
@@ -37,7 +37,7 @@
 	}
 
 	.entry-meta-item:not(.comments-link) &-description {
-		@extend %screen_reader_hiding;
+		@extend %screen_reader--hide;
 	}
 
 	.svg-icon {
@@ -60,6 +60,12 @@
 
 }
 
+.entry-date,
+.comments-link,
+.entry-meta .author {
+	white-space: nowrap;
+}
+
 .entry-date {
 
 	.label-updated,
@@ -69,12 +75,6 @@
 
 }
 
-.entry-date,
-.comments-link,
-.entry-meta .author {
-	white-space: nowrap;
-}
-
 body:not(.group-blog) .entry-meta .byline {
-	@extend %screen_reader_hiding;
+	@extend %screen_reader--hide;
 }

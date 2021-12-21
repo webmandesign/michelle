@@ -6,6 +6,7 @@
 @mixin gallery_caption() {
 	padding: 4%;
 	font-size: var(--typography_font_size_S_em);
+	text-align: center;
 	background: rgba( #000, .66 );
 	color: #fff;
 	backdrop-filter: blur( 10px );

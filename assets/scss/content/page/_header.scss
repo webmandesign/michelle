@@ -65,7 +65,7 @@
 
 	.page-number {
 		display: block;
-		font-size: 1.333rem;
+		font-size: calc( var(--typography_font_size_L) * 1rem );
 		font-weight: 400;
 		text-transform: none;
 		white-space: nowrap;
@@ -93,32 +93,34 @@
 
 }
 
-.search-results .page-title {
-	$font_size_coeficient : 1.333; // @see  `assets/scss/_custom-properties.scss` for coeficient.
+.search {
 
-	font-size: var(--typography_heading_size_2);
+	.page-title {
+		font-size: var(--typography_heading_size_2);
 
-	span:not(.page-number) {
-		display: block;
-		font-size: $font_size_coeficient +em;
-		text-transform: none;
-		quotes: '“' '”';
+		span:not(.page-number) {
+			display: block;
+			font-size: var(--typography_font_size_L_em);
+			text-transform: none;
+			quotes: '“' '”';
 
-		@include media( map_get( $breakpoint, 'xxl' ) ) {
-			font-size: $font_size_coeficient * $font_size_coeficient +em;
-		}
+			@include media( map_get( $breakpoint, 'xxl' ) ) {
+				font-size: var(--typography_font_size_XL_em);
+			}
 
-		&::before {
-			content: open-quote;
-		}
+			&::before {
+				content: open-quote;
+			}
 
-		&::after {
-			content: close-quote;
-		}
+			&::after {
+				content: close-quote;
+			}
 
-		&::before,
-		&::after {
-			display: inline-block; // Required for correct RTL display.
+			&::before,
+			&::after {
+				display: inline-block; // Required for correct RTL display.
+			}
+
 		}
 
 	}
