@@ -1,28 +1,31 @@
 /* FILE: blocks/_separator.scss */
 
 .wp-block-separator {
+	border-width: 0;
+
+	@if variable-exists( 'selector_editor_wrapper' ) {
+		&:not(.is-style-wide):not(.is-style-dots) {
+			width: 100%;
+		}
+	}
 
 	&.has-background {
 		padding: 0;
 	}
 
-	&.has-text-color {
-		background: currentColor;
-	}
-
 	&.is-style-dots {
+		--hr_width: calc( #{ $ratio } * 4em );
+		text-align: inherit;
+		overflow: visible;
 
 		&::before {
-			content: ' ***'; // &bull;
-			speak: none;
-			padding-#{$left}: $ratio_maj +em;
+			content: '★★★';
+			padding: 0;
 			font-size: $ratio +em;
 			letter-spacing: $ratio_maj +em;
-		}
-
-		&.alignleft,
-		&.alignright {
-			--hr_width: calc( #{ $ratio } * 4em );
+			white-space: nowrap;
+			background: none;
+			speak: none;
 		}
 
 	}

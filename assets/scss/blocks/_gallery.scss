@@ -29,10 +29,7 @@
 .wp-block-gallery {
 
 	&.wp-block-gallery figure figcaption {
-		padding: 4%;
-		background: rgba( #000, .66 );
-		color: #fff;
-		backdrop-filter: blur( 10px );
+		@include gallery_caption();
 	}
 
 }

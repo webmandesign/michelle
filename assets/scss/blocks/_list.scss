@@ -1,0 +1,16 @@
+/* FILE: blocks/_list.scss */
+
+ul,
+ol {
+
+	&.aligncenter {
+		margin-#{$left}: 0;
+		list-style: none;
+
+		li:not(:first-child) {
+			margin-top: .5em;
+		}
+
+	}
+
+}

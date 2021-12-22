@@ -3,10 +3,22 @@
 .wp-block-search {
 	flex-wrap: wrap;
 
+	.wp-block-search__input {
+		padding: $form_field_padding_vertical 1em;
+		padding-#{$left}: 1em !important; // It's easier to do it this way...
+		font-size: 1em;
+	}
+
+	.wp-block-search__button {
+		display: flex;
+		align-items: center;
+	}
+
 	svg {
 		fill: currentColor;
 		width: auto !important;
 		height: calc( var(--typography_font_size_base) * 1.5 ) !important;
+		margin: ( -$ratio_maj / 2 +em ) 0;
 		vertical-align: middle;
 	}
 
@@ -29,6 +41,7 @@
 			background: transparent;
 			color: inherit;
 			box-shadow: none;
+			animation: none;
 		}
 
 	}

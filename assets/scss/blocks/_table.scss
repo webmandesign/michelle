@@ -20,8 +20,26 @@ table.is-style-stripes,
 		border-color: inherit;
 	}
 
-	&.is-style-stripes tbody tr:nth-child(odd) {
-		background: rgba( #000, .07 );
+	&.is-style-stripes {
+
+		tbody tr {
+
+			&:nth-child(odd) {
+				background: transparent;
+			}
+
+			&:nth-child(even) {
+
+				th,
+				td {
+					@extend %shaded_background;
+					position: relative;
+				}
+
+			}
+
+		}
+
 	}
 
 	thead {
@@ -32,4 +50,8 @@ table.is-style-stripes,
 		border-top: 3px solid;
 	}
 
+}
+
+.has-text-color table {
+	border-color: currentColor;
 }

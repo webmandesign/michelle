@@ -1,18 +1,57 @@
 /* FILE: blocks/_button.scss */
 
-.wp-block-button__link {
+.wp-block-button {
 
-	&.has-background {
-		padding: ( $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 ) ) 0;
+	&s {
+		align-items: center;
+
+		.wp-block-button {
+			margin: calc( var(--typography_font_size_base) / 2 );
+			margin-#{$left}: 0;
+
+			&:last-child {
+				margin-#{$right}: 0;
+			}
+
+			&:only-child {
+				margin: 0;
+			}
+
+		}
+
 	}
 
-	&:not(.has-text-color) {
+	&__link {
 
-		&:hover,
-		&:focus,
-		&:active,
-		&:visited {
-			color: var(--color_button_text);
+		&.has-background {
+			padding: ( $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 ) ) 0;
+		}
+
+		&:not(.has-text-color) {
+
+			&:hover,
+			&:focus,
+			&:active,
+			&:visited {
+				color: var(--color_button_text);
+			}
+
+		}
+
+	}
+
+	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+
+		&.has-large-font-size {
+			font-size: calc( var(--typography_font_size_L_em) * .9 );
+		}
+
+		&.has-extra-large-font-size {
+			font-size: calc( var(--typography_font_size_XL_em) * .8 );
+		}
+
+		&.has-giant-font-size {
+			font-size: calc( var(--typography_font_size_XXL_em) * .7 );
 		}
 
 	}
@@ -50,20 +89,32 @@
 	color: inherit;
 }
 
-.wp-block-buttons .wp-block-button {
-	margin: .5em;
-	margin-#{$left}: 0;
-
-	&:last-child {
-		margin-#{$right}: 0;
-	}
-
-	&:first-child:last-child {
-		margin: 0;
-	}
-
-}
-
 .wp-block-buttons.is-style-large {
 	font-size: var(--typography_font_size_large);
+}
+
+.is-style-secondary {
+
+	.wp-block-button__link {
+		border-color: transparent;
+
+		&:not(.has-text-color) {
+			color: var(--color_accent);
+		}
+
+		&:hover,
+		&:focus {
+			background: none;
+			box-shadow: var(--drop_shadow);
+			animation: none;
+		}
+
+		&,
+		&:active {
+			background: none;
+			box-shadow: none;
+		}
+
+	}
+
 }

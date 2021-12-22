@@ -2,6 +2,7 @@
 
 .wp-block-pullquote {
 	padding: 2em .5em;
+	text-align: inherit;
 	color: inherit;
 
 	@include media( map_get( $breakpoint, 'm' ) ) {
@@ -23,8 +24,18 @@
 		padding: 0;
 	}
 
-	p {
+	&.wp-block-pullquote p {
 		font-size: 1em;
+	}
+
+	&.alignleft {
+		padding-left: 0;
+		text-align: left;
+	}
+
+	&.alignright {
+		padding-right: 0;
+		text-align: right;
 	}
 
 	&.is-style-solid-color {

@@ -3,17 +3,10 @@
 .wp-block-group {
 
 	&__inner-container {
+		@extend %clearfix;
 		max-width: var(--layout_width_entry_content);
 		margin-left: auto;
 		margin-right: auto;
-
-		&::after {
-			content: '';
-			clear: both;
-			display: table;
-			table-layout: fixed;
-		}
-
 	}
 
 }

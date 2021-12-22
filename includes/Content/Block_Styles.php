@@ -97,6 +97,19 @@ class Block_Styles implements Component_Interface {
 
 			$styles = array(
 
+				'alignleft' => array(
+					'label'  => _x( 'Single column: align left', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/column',
+					),
+				),
+				'alignright' => array(
+					'label'  => _x( 'Single column: align right', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/column',
+					),
+				),
+
 				'double-line' => array(
 					'label'  => _x( 'Double-line', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -131,10 +144,10 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
-				'hide-caption' => array(
-					'label'  => _x( 'Hide caption', 'Block style label.', 'michelle' ),
+				'hidden-on-tablet' => array(
+					'label'  => _x( 'Hide on tablet', 'Block style label.', 'michelle' ),
 					'blocks' => array(
-						'core/gallery',
+						'core/column',
 					),
 				),
 
@@ -147,22 +160,8 @@ class Block_Styles implements Component_Interface {
 					),
 				),
 
-				'large' => array(
-					'label'  => _x( 'Large buttons', 'Block style label.', 'michelle' ),
-					'blocks' => array(
-						'core/buttons',
-					),
-				),
-
 				'media-on-top' => array(
 					'label'  => _x( 'Media on top', 'Block style label.', 'michelle' ),
-					'blocks' => array(
-						'core/media-text',
-					),
-				),
-
-				'narrow-content' => array(
-					'label'  => _x( 'Narrow content', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/media-text',
 					),
@@ -177,9 +176,10 @@ class Block_Styles implements Component_Interface {
 				),
 
 				'no-margin-vertical' => array(
-					'label'  => _x( 'Has no vertical margin', 'Block style label.', 'michelle' ),
+					'label'  => _x( 'No vertical gap', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/column',
+						'core/columns',
 						'core/cover',
 						'core/gallery',
 						'core/group',
@@ -187,14 +187,13 @@ class Block_Styles implements Component_Interface {
 						'core/image',
 						'core/media-text',
 						'core/paragraph',
-					),
-				),
-
-				'no-padding' => array(
-					'label'  => _x( 'Has no padding', 'Block style label.', 'michelle' ),
-					'blocks' => array(
-						'core/cover',
-						'core/group',
+						'core/post-content',
+						'core/post-date',
+						'core/post-excerpt',
+						'core/post-featured-image',
+						'core/post-terms',
+						'core/post-title',
+						'core/query',
 					),
 				),
 
@@ -211,7 +210,6 @@ class Block_Styles implements Component_Interface {
 						'core/image',
 					),
 				),
-
 				'padding-right' => array(
 					'label'  => _x( 'Padding right', 'Block style label.', 'michelle' ),
 					'blocks' => array(
@@ -237,6 +235,14 @@ class Block_Styles implements Component_Interface {
 					'label'  => _x( 'Simple', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/pullquote',
+					),
+				),
+
+				'stacked-on-tablet' => array(
+					'label'  => _x( 'Stack on tablet', 'Block style label.', 'michelle' ),
+					'blocks' => array(
+						'core/columns',
+						'core/media-text',
 					),
 				),
 

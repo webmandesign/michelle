@@ -3,7 +3,10 @@
 .wp-block-cover {
 	height: auto;
 	padding: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
-	color: #fff;
+
+	&:not(.has-text-color) {
+		color: #fff;
+	}
 
 	&[class*="is-position-top-"] {
 		padding-top: 0;
@@ -14,16 +17,9 @@
 	}
 
 	.wp-block-cover__inner-container {
+		@extend %clearfix;
 		width: 88%;
 		max-width: var(--layout_width_entry_content);
-
-		&::after {
-			content: '';
-			clear: both;
-			display: table;
-			table-layout: fixed;
-		}
-
 	}
 
 		&.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
@@ -42,13 +38,6 @@
 			object-fit: contain;
 		}
 
-	}
-
-	&::after {
-		content: '';
-		clear: both;
-		display: table;
-		table-layout: fixed;
 	}
 
 }

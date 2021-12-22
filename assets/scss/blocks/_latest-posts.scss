@@ -63,6 +63,14 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		color: var(--color_body_headings);
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+			text-underline-offset: .15em;
+			text-decoration-thickness: 1px;
+		}
+
 	}
 
 	.entry-meta {
@@ -128,5 +136,16 @@
 				@extend %posts_list_columns_#{$i};
 			}
 		}
+
+}
+
+.has-text-color .wp-block-latest-posts,
+.wp-block-latest-posts.has-text-color,
+.wp-block-cover .wp-block-latest-posts {
+	border-color: currentColor;
+
+	a:not(.link-more) { // Post title.
+		color: inherit;
+	}
 
 }

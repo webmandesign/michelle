@@ -1,6 +1,6 @@
 /* FILE: blocks/_block.scss */
 
-[class^="wp-block-"] + figcaption {
+[class*="wp-block-"] + figcaption {
 	margin-top: -1em;
 }
 

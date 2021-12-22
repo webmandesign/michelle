@@ -1,6 +1,13 @@
 /* FILE: blocks/_image.scss */
 
-.wp-block-image {}
+.wp-block-image {
+
+	.alignleft,
+	.alignright {
+		margin-top: 0;
+	}
+
+}
 
 // No RTL here.
 .is-style-padding-left,
