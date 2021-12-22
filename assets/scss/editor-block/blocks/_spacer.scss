@@ -38,7 +38,7 @@
 		#{$left}: 0;
 		#{$right}: auto;
 		padding: 0 5px;
-		font-family: monospace;
+		font-family: var(--typography_font_monospace);
 		font-size: .75em;
 		background: #b00;
 		color: #fff;

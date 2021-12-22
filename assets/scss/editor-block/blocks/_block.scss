@@ -5,7 +5,7 @@
 	margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
 	z-index: 1; // In case of negative margin overlay.
 
-	&:not([style*="margin-bottom"]):not(.has-no-margin):not(.has-no-margin-bottom):not(.has-no-margin-vertical):not(.m-0):not(.mb-0) {
+	&:not([style*="margin-bottom"]):not(.has-no-margin):not(.has-no-margin-bottom):not(.has-no-margin-vertical):not(.margin-none):not(.margin-bottom-none):not(.margin-vertical-none):not(.m0):not(.mb0):not(.m-0):not(.mb-0) {
 		+ .block-list-appender {
 			margin-top: calc( var(--typography_font_size_base) * #{ $ratio } * -1 );
 		}
@@ -15,6 +15,11 @@
 		&.has-no-margin,
 		&.has-no-margin-bottom,
 		&.has-no-margin-vertical,
+		&.margin-none,
+		&.margin-bottom-none,
+		&.margin-vertical-none,
+		&.m0,
+		&.mb0,
 		&.m-0,
 		&.mb-0 {
 			> .block-list-appender.block-list-appender.block-list-appender.block-list-appender.block-list-appender:last-child {
@@ -38,6 +43,11 @@
 			margin-bottom: 1em;
 		}
 
+	}
+
+	&[data-align="center"] {
+		clear: both;
+		text-align: center;
 	}
 
 	&[data-align="right"] {
@@ -64,8 +74,6 @@
 		}
 
 		[data-align="wide"] {
-			padding-left: 0;
-			padding-right: 0;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -78,6 +86,13 @@
 		padding-right: 6vw;
 		margin-left: -10px;
 		margin-right: -10px;
+
+		.wp-block-widget-area & {
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
 		> * {
 			max-width: $max_width_content;
@@ -104,6 +119,10 @@
 }
 
 // Block previews in patterns and styles.
+
+	.block-editor-block-preview__container.editor-styles-wrapper {
+		background-image: none;
+	}
 
 	.block-editor-block-preview__content .has-parallax {
 		background-attachment: scroll;

@@ -26,20 +26,18 @@ $important_contexts: append( $important_contexts, 'modifier_font_size' );
 $important_contexts: append( $important_contexts, 'modifier_line_height' );
 
 
+@import 'custom-properties';
 @import 'ui';
 @import 'post-title';
 
 @import 'typography';
 @import 'base';
 @import 'accessibility';
+@import 'block-areas';
 
 #{ $selector_editor_wrapper } {
-	@import '../global/typography/base';
-	@import '../global/typography/headings';
-	@import '../global/elements/base';
-	@import '../global/elements/links';
-	@import '../global/elements/quote';
-	@import '../global/elements/table';
+	@import '../global/typography/_index';
+	@import '../global/elements/_index';
 	@import '../global/form/button';
 	@import '../global/modifiers/_index';
 

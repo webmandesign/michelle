@@ -14,7 +14,7 @@
 		margin-#{$right}: 0;
 	}
 
-	&:first-child:last-child {
+	&:only-child {
 		margin: 0;
 	}
 

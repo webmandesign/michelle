@@ -40,6 +40,10 @@
 
 }
 
-.wp-block-cover__inner-container > .wp-block:last-child {
-	margin-bottom: 0;
+.wp-block-cover {
+
+	&__inner-container > .wp-block:last-child {
+		margin-bottom: 0;
+	}
+
 }

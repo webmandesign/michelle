@@ -38,7 +38,7 @@
 
 		.wp-custom-logo & {
 			@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-				@include screen_reader_hiding();
+				@include screen_reader( 'hide' );
 			}
 		}
 

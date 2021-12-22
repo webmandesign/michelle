@@ -1,18 +1,12 @@
 /* FILE: editor-block/blocks/_separator.scss */
 
-[data-type="core/separator"] {
-	clear: both;
-}
-
 #{ $selector_editor_wrapper } {
-	--hr_width: calc( #{ $ratio_min } * var(--layout_width_entry_content) );
 
 	.wp-block-separator {
+		max-width: $max_width_entry_content !important;
+		height: var(--hr_height) !important;
+		line-height: var(--hr_height);
 		opacity: 1;
-
-		&[class*="-wide"] {
-			--hr_width: #{ $max_width_entry_content };
-		}
 
 		&.is-style-dots.has-background::before {
 			color: inherit;
@@ -20,16 +14,28 @@
 
 	}
 
+	[data-align="left"] > .wp-block-separator {
+		text-align: left;
+	}
+
+	[data-align="right"] > .wp-block-separator {
+		text-align: right;
+	}
+
+	[data-align="center"] > .wp-block-separator {
+		text-align: center;
+	}
+
 	[data-align="wide"] > .wp-block-separator {
-		--hr_width: var(--layout_width_content);
+		max-width: $max_width_content !important;
 	}
 
 	[data-align="full"] > .wp-block-separator {
-		--hr_width: none;
+		max-width: none !important;
 	}
 
 }
 
 hr {
-	margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
+	margin-bottom: $ratio +em;
 }

@@ -58,8 +58,8 @@
 
 		}
 
-		ul[class^="wp-block-"],
-		ol[class^="wp-block-"] {
+		ul[class*="wp-block-"],
+		ol[class*="wp-block-"] {
 			padding-#{$left}: 0;
 		}
 
