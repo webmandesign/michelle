@@ -279,24 +279,72 @@ class Block_Patterns implements Component_Interface {
 			$pattern_ids = array(
 
 				'contact' => array(
+					'bg-1',
+					'bg-2',
+					'description',
+					'image-middle',
+					'image-side',
+					'quote',
+					'shadow',
+					'social',
 				),
 
 				'cover' => array(
+					'2-images',
+					'bg-image',
+					'bg-links',
+					'bg-text-left',
+					'centered-background',
+					'color-image',
+					'color-image-large',
+					'fullscreen-bottom-text',
+					'images',
+					'overflow',
+					'overlap',
+					'with-description',
 				),
 
 				'cta' => array(
+					'bg',
+					'box',
+					'centered',
+					'cta',
+					'large',
+					'quote',
+					'simple',
 				),
 
 				'faq' => array(
+					'question-answer',
 				),
 
 				'gallery' => array(
+					'gallery-captions',
+					'gallery-no-gap',
+					'gallery-variable-with-description',
+					'image-padding-left',
+					'image-padding-right',
+					'image-parallax',
+					'logos',
 				),
 
 				'header' => array(
+					'hidden-accessibly',
 				),
 
 				'list' => array(
+					'features-bg-image',
+					'features-bg-shadow',
+					'features-center-icon-1',
+					'features-center-icon-2',
+					'features-fullwidth-bg',
+					'features-large-image',
+					'features-parallax',
+					'features-shadow',
+					'features-simple',
+					'features-single',
+					'features-single-large',
+					'features-steps',
 				),
 
 				'media-text' => array(
@@ -306,93 +354,42 @@ class Block_Patterns implements Component_Interface {
 				),
 
 				'post' => array(
+					'blog',
+					'project-gallery',
+					'project-image',
 				),
 
 				'price' => array(
+					'cards',
+					'food-menu',
 				),
 
 				'quote' => array(
+					'testimonial',
+					'testimonial-bg',
+					'testimonials',
 				),
 
 				'site' => array(
+					'footer',
+					'footer-form',
 				),
 
 				'team' => array(
+					'team',
+					'team-2',
 				),
 
 				'text' => array(
+					'2-columns-text',
+					'2-columns-wider-heading',
+					'extra-hierarchy',
+					'heading-columns',
+					'large-lead',
+					'parallax',
+					'with-image',
 				),
 
-			);
-
-			$___pattern_ids = array(
-				'blog',
-				'cards',
-				'contact-bg-1',
-				'contact-bg-2',
-				'contact-description',
-				'contact-image-middle',
-				'contact-image-side',
-				'contact-quote',
-				'contact-shadow',
-				'contact-social',
-				'cta',
-				'cta-bg',
-				'cta-box',
-				'cta-centered',
-				'cta-large',
-				'cta-quote',
-				'cta-simple',
-				'features-bg-image',
-				'features-bg-shadow',
-				'features-center-icon-1',
-				'features-center-icon-2',
-				'features-fullwidth-bg',
-				'features-large-image',
-				'features-parallax',
-				'features-shadow',
-				'features-simple',
-				'features-single',
-				'features-single-large',
-				'features-steps',
-				'food-menu',
-				'footer',
-				'footer-form',
-				'gallery-captions',
-				'gallery-no-gap',
-				'gallery-variable-with-description',
-				'heading-hidden-accessibly',
-				'image-padding-left',
-				'image-padding-right',
-				'image-parallax',
-				'intro-2-columns-text',
-				'intro-2-images',
-				'intro-bg-image',
-				'intro-bg-links',
-				'intro-bg-text-left',
-				'intro-centered-background',
-				'intro-color-image',
-				'intro-color-image-large',
-				'intro-fullscreen-bottom-text',
-				'intro-images',
-				'intro-overflow',
-				'intro-overlap',
-				'intro-with-description',
-				'logos',
-				'portfolio-project-gallery',
-				'portfolio-project-image',
-				'question-answer',
-				'team',
-				'team-2',
-				'testimonials',
-				'testimonials-single',
-				'testimonials-single-bg',
-				'text-2-columns-wider-heading',
-				'text-extra-hierarchy',
-				'text-heading-columns',
-				'text-large-lead',
-				'text-parallax',
-				'text-with-image',
 			);
 
 

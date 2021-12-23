@@ -42,7 +42,9 @@
 
 		--border_decorative_width: 10px;
 
-		--hr_width: #{ percentage( $ratio_min ) };
+		--hr_width: 10em;
+		--hr_height: 2px;
+
 		--hr_zigzag_height: 10px;
 		--hr_zigzag_segments: 6;
 		@include media( map_get( $breakpoint, 'm' ) ) {

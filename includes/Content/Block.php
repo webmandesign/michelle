@@ -12,6 +12,7 @@
 namespace WebManDesign\Michelle\Content;
 
 use WebManDesign\Michelle\Component_Interface;
+use WebManDesign\Michelle\Assets;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -29,6 +30,10 @@ class Block implements Component_Interface {
 	public static function init() {
 
 		// Processing
+
+			// Actions
+
+				add_action( 'enqueue_block_editor_assets', __CLASS__ . '::enqueue_editor_mods' );
 
 			// Filters
 
@@ -161,6 +166,25 @@ class Block implements Component_Interface {
 			return $block_content;
 
 	} // /render_block
+
+	/**
+	 * Enqueues block editor assets for block modifications.
+	 *
+	 * @since  1.3.0
+	 *
+	 * @return  void
+	 */
+	public static function enqueue_editor_mods() {
+
+		// Processing
+
+			Assets\Factory::script_enqueue( array(
+				'handle' => 'michelle-editor-blocks',
+				'src'    => get_theme_file_uri( 'assets/js/editor-blocks.min.js' ),
+				'deps'   => array( 'wp-blocks', 'wp-hooks' ),
+			) );
+
+	} // /enqueue_editor_mods
 
 	/**
 	 * Enable "Reusable blocks" in admin menu.

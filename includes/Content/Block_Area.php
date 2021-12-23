@@ -60,25 +60,10 @@ class Block_Area implements Component_Interface {
 	} // /get_post_type
 
 	/**
-	 * Error 404 page content.
-	 *
-	 * @since  1.0.6
-	 *
-	 * @return  void
-	 */
-	public static function error_404() {
-
-		// Output
-
-			get_template_part( 'templates/parts/block/area', '404' );
-
-	} // /error_404
-
-	/**
 	 * Site footer content.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.6
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -86,8 +71,24 @@ class Block_Area implements Component_Interface {
 
 		// Output
 
-			get_template_part( 'templates/parts/block/area', 'footer' );
+			get_template_part( 'templates/parts/block/area/footer' );
 
 	} // /footer
+
+	/**
+	 * Error 404 page content.
+	 *
+	 * @since    1.0.6
+	 * @version  1.3.0
+	 *
+	 * @return  void
+	 */
+	public static function error_404() {
+
+		// Output
+
+			get_template_part( 'templates/parts/block/area/404' );
+
+	} // /error_404
 
 }

@@ -5,11 +5,13 @@ hr {
 	box-sizing: inherit; // This is required due to Normalize.
 	width: 100%;
 	max-width: var(--layout_width_entry_content);
+	height: var(--hr_height);
+	text-align: center;
+	line-height: var(--hr_height);
 	margin-left: auto;
 	margin-right: auto;
 	background: none !important;
-	border-width: 0;
-	border-bottom: 1px solid;
+	border: 0 solid currentColor;
 
 	&::before {
 		content: '';
@@ -43,15 +45,24 @@ hr {
 	}
 
 	&.alignwide.alignwide {
-		--hr_width: var(--layout_width_content);
+		--hr_width: 100%;
 		width: 100%;
 		max-width: var(--layout_width_content);
 	}
 
 	&.alignfull.alignfull {
-		--hr_width: none;
+		--hr_width: 100%;
 		width: calc( 100vw - var(--scrollbar_width) );
 		max-width: none;
 	}
 
 }
+
+	hr,
+	.wp-block-separator {
+
+		&[class*="-wide"] {
+			--hr_width: 100%;
+		}
+
+	}

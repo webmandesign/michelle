@@ -99,13 +99,13 @@ if ( ! is_customize_preview() ) {
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:quote {"className":"is-style-large"} -->
-<blockquote class="wp-block-quote is-style-large"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit nulla auctor, arcu dictumst ullamcorper duis senectus lectus feugiat.</p><cite>Jane Doe</cite></blockquote>
+<blockquote class="wp-block-quote is-style-large"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit nulla auctor, arcu dictumst ullamcorper duis senectus lectus feugiat.</p><cite>Lorem Ipsum</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:quote {"className":"is-style-large"} -->
-<blockquote class="wp-block-quote is-style-large"><p>Adipiscing elit nulla auctor, arcu dictumst ullamcorper duis senectus lectus feugiat. Velit metus venenatis euismod aenean, eget fames.</p><cite>John Roe</cite></blockquote>
+<blockquote class="wp-block-quote is-style-large"><p>Adipiscing elit nulla auctor, arcu dictumst ullamcorper duis senectus lectus feugiat. Velit metus venenatis euismod aenean, eget fames.</p><cite>Lorem Ipsum</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

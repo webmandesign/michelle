@@ -83,7 +83,7 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:spacer -->
 
 <!-- wp:pullquote {"align":"wide","className":"is-style-simple"} -->
-<figure class="wp-block-pullquote alignwide is-style-simple"><blockquote><p>Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, ac hac ullamcorper class rutrum condimentum molestie mi, et suspendisse ante pulvinar praesent rhoncus taciti. Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, ac hac ullamcorper class rutrum condimentum molestie mi, et suspendisse ante pulvinar praesent rhoncus taciti.</p><cite>John Doe</cite></blockquote></figure>
+<figure class="wp-block-pullquote alignwide is-style-simple"><blockquote><p>Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, ac hac ullamcorper class rutrum condimentum molestie mi, et suspendisse ante pulvinar praesent rhoncus taciti. Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, ac hac ullamcorper class rutrum condimentum molestie mi, et suspendisse ante pulvinar praesent rhoncus taciti.</p><cite>Lorem Ipsum</cite></blockquote></figure>
 <!-- /wp:pullquote -->
 
 <!-- wp:spacer {"height":150} -->
@@ -111,7 +111,7 @@ if ( ! is_customize_preview() ) {
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>Lorem ipsum dolor sit amet elit, enim quis proin aliquam non lectus tellus blandit, vivamus vulputate donec semper dapibus.</p><cite>John Doe</cite></blockquote>
+<blockquote class="wp-block-quote"><p>Lorem ipsum dolor sit amet elit, enim quis proin aliquam non lectus tellus blandit, vivamus vulputate donec semper dapibus.</p><cite>Lorem Ipsum</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column -->
 
