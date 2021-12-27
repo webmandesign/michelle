@@ -2,8 +2,6 @@
 /**
  * Block pattern setup file.
  *
- * Default pattern categories: buttons, columns, gallery, header, text.
- *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -19,8 +17,17 @@ defined( 'ABSPATH' ) || exit;
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
 	'title'         => _x( 'Heading: Accessibly hidden', 'Block pattern title.', 'michelle' ),
-	'keywords'      => array( esc_html__( 'title', 'michelle' ) ),
 	'viewportWidth' => 400,
+	'keywords'      => array(
+		esc_html_x( 'title', 'keyword', 'michelle' ),
+		esc_html_x( 'heading', 'keyword', 'michelle' ),
+		esc_html_x( 'a11y', 'keyword', 'michelle' ),
+		esc_html_x( 'barrierless', 'keyword', 'michelle' ),
+		esc_html_x( 'screen reader', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/heading',
+	),
 ) );
 
 // Block pattern content:
@@ -28,5 +35,5 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 ?>
 
 <!-- wp:heading {"className":"is-style-screen-reader-text"} -->
-<h2 class="is-style-screen-reader-text">Lorem ipsum</h2>
+<h2 class="is-style-screen-reader-text"><?php esc_html_e( 'Visually hidden, but kept accessible for screen readers', 'michelle' ); ?></h2>
 <!-- /wp:heading -->

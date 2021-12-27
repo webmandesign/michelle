@@ -2,8 +2,6 @@
 /**
  * Block pattern setup file.
  *
- * Default pattern categories: buttons, columns, gallery, header, text.
- *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *

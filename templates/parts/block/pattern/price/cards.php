@@ -2,8 +2,6 @@
 /**
  * Block pattern setup file.
  *
- * Default pattern categories: buttons, columns, gallery, header, text.
- *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -18,8 +16,14 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Cards', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'services', 'michelle' ), esc_html__( 'features', 'michelle' ), esc_html__( 'price', 'michelle' ), esc_html__( 'food menu', 'michelle' ) ),
+	'title'    => _x( 'Cards', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'price', 'keyword', 'michelle' ),
+		esc_html_x( 'food menu', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/columns',
+	),
 ) );
 
 // Block pattern content:
@@ -32,38 +36,38 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"backgroundColor":"palette-2","textColor":"palette-3"} -->
-<div class="wp-block-group has-palette-3-color has-palette-2-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":3,"textColor":"palette-3","fontSize":"large"} -->
-<h3 class="has-palette-3-color has-text-color has-large-font-size"><strong>Lorem Ipsum ... $8</strong></h3>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#010101","text":"#fefefe"}}} -->
+<div class="wp-block-group has-text-color has-background" style="background-color:#010101;color:#fefefe"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?> &hellip; <?php Starter::the_text( 'price' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit.</p>
-<!-- /wp:paragraph --></div></div>
+<p><?php Starter::the_text( 2, '.' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"backgroundColor":"palette-2","textColor":"palette-3"} -->
-<div class="wp-block-group has-palette-3-color has-palette-2-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":3,"textColor":"palette-3","fontSize":"large"} -->
-<h3 class="has-palette-3-color has-text-color has-large-font-size"><strong>Lorem Ipsum ... $8</strong></h3>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#010101","text":"#fefefe"}}} -->
+<div class="wp-block-group has-text-color has-background" style="background-color:#010101;color:#fefefe"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?> &hellip; <?php Starter::the_text( 'price' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit.</p>
-<!-- /wp:paragraph --></div></div>
+<p><?php Starter::the_text( 2, '.' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#f3f5f7"}},"textColor":"palette-2"} -->
-<div class="wp-block-group has-palette-2-color has-text-color has-background" style="background-color:#f3f5f7"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="has-large-font-size"><strong>Lorem Ipsum ... $8</strong></h3>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#efefef","text":"#010101"}}} -->
+<div class="wp-block-group has-text-color has-background" style="background-color:#efefef;color:#010101"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?> &hellip; <?php Starter::the_text( 'price' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit.</p>
-<!-- /wp:paragraph --></div></div>
+<p><?php Starter::the_text( 2, '.' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -74,38 +78,38 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#f3f5f7"}},"textColor":"palette-2"} -->
-<div class="wp-block-group has-palette-2-color has-text-color has-background" style="background-color:#f3f5f7"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="has-large-font-size"><strong>Lorem Ipsum ... $8</strong></h3>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#efefef","text":"#010101"}}} -->
+<div class="wp-block-group has-text-color has-background" style="background-color:#efefef;color:#010101"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?> &hellip; <?php Starter::the_text( 'price' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit.</p>
-<!-- /wp:paragraph --></div></div>
+<p><?php Starter::the_text( 2, '.' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#f3f5f7"}},"textColor":"palette-2"} -->
-<div class="wp-block-group has-palette-2-color has-text-color has-background" style="background-color:#f3f5f7"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="has-large-font-size"><strong>Lorem Ipsum ... $8</strong></h3>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#efefef","text":"#010101"}}} -->
+<div class="wp-block-group has-text-color has-background" style="background-color:#efefef;color:#010101"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?> &hellip; <?php Starter::the_text( 'price' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit.</p>
-<!-- /wp:paragraph --></div></div>
+<p><?php Starter::the_text( 2, '.' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#f3f5f7"}},"textColor":"palette-2"} -->
-<div class="wp-block-group has-palette-2-color has-text-color has-background" style="background-color:#f3f5f7"><div class="wp-block-group__inner-container"><!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="has-large-font-size"><strong>Lorem Ipsum ... $8</strong></h3>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#efefef","text":"#010101"}}} -->
+<div class="wp-block-group has-text-color has-background" style="background-color:#efefef;color:#010101"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?> &hellip; <?php Starter::the_text( 'price' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit.</p>
-<!-- /wp:paragraph --></div></div>
+<p><?php Starter::the_text( 2, '.' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

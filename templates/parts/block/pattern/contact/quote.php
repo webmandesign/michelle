@@ -2,8 +2,6 @@
 /**
  * Block pattern setup file.
  *
- * Default pattern categories: buttons, columns, gallery, header, text.
- *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -18,7 +16,16 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Contact: With quote', 'Block pattern title.', 'michelle' ),
+	'title'    => _x( 'With quote', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'contact', 'keyword', 'michelle' ),
+		esc_html_x( 'quote', 'keyword', 'michelle' ),
+		esc_html_x( 'testimonial', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/columns',
+		'core/quote',
+	),
 ) );
 
 // Block pattern content:
@@ -28,25 +35,25 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"38%"} -->
 <div class="wp-block-column" style="flex-basis:38%"><!-- wp:heading -->
-<h2>Lorem Ipsum</h2>
+<h2><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum 1234<br>Dolor Sit, 900 00</p>
+<p><?php Starter::the_text( 'contact/address' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="tel:+321900123456">+321 900 123 456</a><br><a href="mailto:lorem@ipsum.dolor">lorem@ipsum.dolor</a></p>
+<p><a href="tel:<?php Starter::the_text( 'contact/phone' ); ?>"><?php Starter::the_text( 'contact/phone' ); ?></a><br><a href="mailto:<?php Starter::the_text( 'contact/email' ); ?>"><?php Starter::the_text( 'contact/email' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"62%"} -->
 <div class="wp-block-column" style="flex-basis:62%"><!-- wp:quote {"className":"is-style-large"} -->
-<blockquote class="wp-block-quote is-style-large"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit litora, massa natoque.</p><cite>Lorem Ipsum</cite></blockquote>
+<blockquote class="wp-block-quote is-style-large"><p><?php Starter::the_text( 3, '.' ); ?></p><cite><?php Starter::the_text( 'people/name' ); ?></cite></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit litora, massa natoque nunc urna class mus aenean interdum, sapien risus lacus accumsan habitasse ornare elementum.</p>
+<p><?php Starter::the_text( 5, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

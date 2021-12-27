@@ -2,8 +2,6 @@
 /**
  * Block pattern setup file.
  *
- * Default pattern categories: buttons, columns, gallery, header, text.
- *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -18,34 +16,44 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Call to action: Simple', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'button', 'michelle' ) ),
+	'title'    => _x( 'Simple', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'button', 'keyword', 'michelle' ),
+		esc_html_x( 'call to action', 'keyword', 'michelle' ),
+		esc_html_x( 'cta', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/buttons',
+		'core/columns',
+	),
 ) );
 
 // Block pattern content:
 
 ?>
 
-<!-- wp:separator {"align":"wide"} -->
+<!-- wp:group {"align":"full"} -->
+<div class="wp-block-group alignfull"><!-- wp:separator {"align":"wide"} -->
 <hr class="wp-block-separator alignwide"/>
 <!-- /wp:separator -->
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"38.2%"} -->
 <div class="wp-block-column" style="flex-basis:38.2%"><!-- wp:heading -->
-<h2>Lorem Ipsum</h2>
+<h2><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"61.8%"} -->
 <div class="wp-block-column" style="flex-basis:61.8%"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit commodo, facilisi a libero nunc curae habitasse aenean, parturient dictum dictumst lacinia gravida ac odio habitasse.</p>
+<p><?php Starter::the_text( 5, '.' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"className":"is-style-large"} -->
-<div class="wp-block-buttons is-style-large"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link">Lorem Ipsum</a></div>
+<!-- wp:buttons {} -->
+<div class="wp-block-buttons"><!-- wp:button {"fontSize":"normal"} -->
+<div class="wp-block-button has-custom-font-size has-normal-font-size"><a href="#0" class="wp-block-button__link"><?php Starter::the_text( 'button' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

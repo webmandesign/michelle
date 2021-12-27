@@ -59,12 +59,12 @@
 	}
 
 	.has-huge-font-size {
-		font-size: var(--typography_font_size_huge) $important_modifiers;
+		font-size: calc( var(--typography_font_size_huge) * 1em ) $important_modifiers;
 		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_huge) );
 	}
 
 	.has-gigantic-font-size {
-		font-size: var(--typography_font_size_gigantic) $important_modifiers;
+		font-size: calc( var(--typography_font_size_gigantic) * 1em ) $important_modifiers;
 		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_gigantic) );
 	}
 

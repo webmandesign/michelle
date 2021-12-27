@@ -2,8 +2,6 @@
 /**
  * Block pattern setup file.
  *
- * Default pattern categories: buttons, columns, gallery, header, text.
- *
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
@@ -18,34 +16,34 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Call to action: Centered', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'button', 'michelle' ) ),
+	'title'    => _x( 'Centered', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'button', 'keyword', 'michelle' ),
+		esc_html_x( 'call to action', 'keyword', 'michelle' ),
+		esc_html_x( 'cta', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/buttons',
+		'core/group',
+	),
 ) );
 
 // Block pattern content:
 
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"palette-1","textColor":"palette-2","className":"is-style-no-padding"} -->
-<div class="wp-block-group alignfull is-style-no-padding has-palette-2-color has-palette-1-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":150} -->
-<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:heading {"textAlign":"center","textColor":"palette-2","className":"is-style-default"} -->
-<h2 class="has-text-align-center is-style-default has-palette-2-color has-text-color">Lorem Ipsum Dolor</h2>
+<!-- wp:group {"align":"full","style":{"color":{"background":"#ffdd44","text":"#010101"},"spacing":{"padding":{"top":"150px","bottom":"150px"}}},"className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-text-color has-background" style="background-color:#ffdd44;color:#010101;padding-top:150px;padding-bottom:150px"><!-- wp:heading {"textAlign":"center","className":"is-style-default"} -->
+<h2 class="has-text-align-center is-style-default"><?php Starter::the_text( 'title/m' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit euismod tristique aliquet nisl torquent.</p>
+<p class="has-text-align-center has-large-font-size"><?php Starter::the_text( 4, '.' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"contentJustification":"center","className":"is-style-large"} -->
-<div class="wp-block-buttons is-content-justification-center is-style-large"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Lorem Ipsum →</a></div>
+<!-- wp:buttons {"contentJustification":"center"} -->
+<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"style":{"color":{"background":"#010101","text":"#fefefe"}},"fontSize":"normal"} -->
+<div class="wp-block-button has-custom-font-size has-normal-font-size"><a class="wp-block-button__link has-text-color has-background" href="#0" style="background-color:#010101;color:#fefefe"><?php Starter::the_text( 'button' ); ?></a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons -->
-
-<!-- wp:spacer {"height":150} -->
-<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->

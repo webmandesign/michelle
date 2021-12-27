@@ -15,13 +15,13 @@
 
 	&.is-style-dots {
 		--hr_width: calc( #{ $ratio } * 4em );
-		--hr_height: #{ $ratio_min + 1em };
+		--hr_height: #{ $ratio +em };
 		overflow: visible;
 
 		&::before {
-			content: '★★★';
+			content: '***';
 			padding: 0;
-			font-size: $ratio_min + 1em;
+			font-size: $ratio +em;
 			letter-spacing: $ratio_maj +em;
 			white-space: nowrap;
 			background: none;
@@ -31,11 +31,11 @@
 	}
 
 	&[class*="is-style-double-line"] {
-		--hr_height: 4px;
+		--hr_height: 7px;
 
 		&::before {
 			background: none;
-			border-bottom: 4px double;
+			border-bottom: var(--hr_height) double;
 		}
 
 	}
