@@ -16,7 +16,16 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Text with extra hierarchy', 'Block pattern title.', 'michelle' ),
+	'title'    => _x( 'Text with extra hierarchy', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'columns', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/heading',
+		'core/paragraph',
+		'core/columns',
+		'core/separator',
+	),
 ) );
 
 // Block pattern content:
@@ -24,7 +33,7 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 ?>
 
 <!-- wp:heading {"align":"wide","fontSize":"huge"} -->
-<h2 class="alignwide has-huge-font-size">Lorem ipsum dolor sit amet consectetur adipiscing</h2>
+<h2 class="alignwide has-huge-font-size"><?php Starter::the_text( 'title/l' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:separator {"align":"wide"} -->
@@ -34,17 +43,13 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"61.8%"} -->
 <div class="wp-block-column" style="flex-basis:61.8%"><!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit commodo, sociosqu facilisi a libero nunc curae habitasse aenean, parturient dictum dictumst lacinia gravida ac odio. Lorem ipsum dolor sit amet consectetur adipiscing elit commodo, sociosqu facilisi a libero nunc curae habitasse aenean, parturient dictum dictumst.</p>
+<p class="has-large-font-size"><?php Starter::the_text( 7, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"38.2%"} -->
 <div class="wp-block-column" style="flex-basis:38.2%"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit commodo, sociosqu facilisi a libero nunc curae habitasse aenean, parturient dictum dictumst lacinia.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit commodo, sociosqu facilisi a libero nunc curae habitasse aenean, parturient dictum dictumst lacinia.</p>
+<p><?php Starter::the_text( 6, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

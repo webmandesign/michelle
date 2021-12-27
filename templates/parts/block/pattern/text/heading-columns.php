@@ -16,7 +16,17 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Text with heading in columns', 'Block pattern title.', 'michelle' ),
+	'title'    => _x( 'Text with heading in columns', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'columns', 'keyword', 'theme-slug' ),
+		esc_html_x( 'title', 'keyword', 'theme-slug' ),
+		esc_html_x( 'heading', 'keyword', 'theme-slug' ),
+	),
+	'blockTypes' => array(
+		'core/columns',
+		'core/heading',
+		'core/paragraph',
+	),
 ) );
 
 // Block pattern content:
@@ -26,13 +36,13 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading -->
-<h2>Lorem Ipsum Dolor</h2>
+<h2><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et. Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus, lacinia laoreet convallis taciti integer augue cum conubia, purus donec dui bibendum parturient varius et.</p>
+<p><?php Starter::the_text( 7, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

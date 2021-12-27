@@ -16,21 +16,24 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Testimonials', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'quote', 'michelle' ) ),
+	'title'    => _x( 'Testimonials', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'quote', 'keyword', 'michelle' ),
+		esc_html_x( 'testimonial', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/columns',
+		'core/quote',
+	),
 ) );
 
 // Block pattern content:
 
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"palette-1","className":"is-style-no-padding"} -->
-<div class="wp-block-group alignfull is-style-no-padding has-palette-1-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"height":150} -->
-<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:heading {"align":"wide"} -->
-<h2 class="alignwide">Lorem Ipsum</h2>
+<!-- wp:group {"align":"full","style":{"color":{"background":"#ffdd44","text":"#010101"},"spacing":{"padding":{"top":"150px","bottom":"120px"}}},"className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-text-color has-background" style="background-color:#ffdd44;color:#010101;padding-top:150px;padding-bottom:120px"><!-- wp:heading {"align":"wide"} -->
+<h2 class="alignwide"><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":50} -->
@@ -40,18 +43,14 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit mattis, vitae hendrerit aliquam senectus erat cubilia viverra.</p><cite>Lorem Ipsum</cite></blockquote>
+<blockquote class="wp-block-quote"><p><?php Starter::the_text( 5, '.' ); ?></p><cite><?php Starter::the_text( 'people/name' ); ?></cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit mattis, vitae hendrerit aliquam senectus erat cubilia viverra.</p><cite>Lorem Ipsum</cite></blockquote>
+<blockquote class="wp-block-quote"><p><?php Starter::the_text( 5, '.' ); ?></p><cite><?php Starter::the_text( 'people/name' ); ?></cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:spacer {"height":150} -->
-<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->

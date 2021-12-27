@@ -16,8 +16,13 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Testimonial', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'quote', 'michelle' ) ),
+	'title'    => _x( 'Testimonial', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'quote', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/quote',
+	),
 ) );
 
 // Block pattern content:
@@ -25,9 +30,9 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 ?>
 
 <!-- wp:heading {"align":"wide","className":"is-style-uppercase","fontSize":"normal"} -->
-<h2 class="alignwide is-style-uppercase has-normal-font-size"><strong>Lorem Ipsum</strong></h2>
+<h2 class="alignwide is-style-uppercase has-normal-font-size"><strong><?php Starter::the_text( 'title/s' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:pullquote {"align":"wide","className":"is-style-simple"} -->
-<figure class="wp-block-pullquote alignwide is-style-simple"><blockquote><p>Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, ac hac ullamcorper class rutrum condimentum molestie mi, et suspendisse ante pulvinar praesent rhoncus taciti. Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, ac hac ullamcorper class rutrum condimentum molestie mi, et suspendisse ante pulvinar praesent rhoncus taciti.</p><cite>Lorem Ipsum</cite></blockquote></figure>
+<figure class="wp-block-pullquote alignwide is-style-simple"><blockquote><p><?php Starter::the_text( 8, '.' ); ?></p><cite><?php Starter::the_text( 'people/name' ); ?></cite></blockquote></figure>
 <!-- /wp:pullquote -->

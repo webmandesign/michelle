@@ -16,9 +16,16 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'         => _x( 'Intro: Centered heading with 2 columns text', 'Block pattern title.', 'michelle' ),
-	'keywords'      => array( esc_html__( 'title', 'michelle' ), esc_html__( 'heading', 'michelle' ), 'h1' ),
-	'viewportWidth' => 800,
+	'title'    => _x( 'Centered main heading with 2 columns text', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'title', 'keyword', 'michelle' ),
+		esc_html_x( 'columns', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/columns',
+		'core/heading',
+		'core/paragraph',
+	),
 ) );
 
 // Block pattern content:
@@ -26,7 +33,7 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 ?>
 
 <!-- wp:paragraph {"align":"center","className":"is-style-uppercase"} -->
-<p class="has-text-align-center is-style-uppercase">Lorem Ipsum</p>
+<p class="has-text-align-center is-style-uppercase"><?php Starter::the_text( 'title/s' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":50} -->
@@ -34,7 +41,7 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"center","level":1} -->
-<h1 class="has-text-align-center">Lorem ipsum dolor sit amet elit</h1>
+<h1 class="has-text-align-center"><?php Starter::the_text( 'title/m' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":50} -->
@@ -44,13 +51,13 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet elit consectetur adipiscing nisi, ad urna curabitur ullamcorper purus cum est odio, phasellus diam fames volutpat orci.</p>
+<p><?php Starter::the_text( 5, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet elit consectetur adipiscing nisi, ad urna curabitur ullamcorper purus cum est odio, phasellus diam fames volutpat orci.</p>
+<p><?php Starter::the_text( 5, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

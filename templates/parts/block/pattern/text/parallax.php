@@ -16,8 +16,15 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Text with parallax background', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'image', 'michelle' ) ),
+	'title'    => _x( 'Text with parallax background', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'image', 'keyword', 'theme-slug' ),
+		esc_html_x( 'columns', 'keyword', 'theme-slug' ),
+	),
+	'blockTypes' => array(
+		'core/columns',
+		'core/cover',
+	),
 ) );
 
 // Block pattern content:
@@ -33,17 +40,17 @@ $image = Starter::get_image_url( '16to9' );
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"overlayColor":"palette-2","minHeight":100,"minHeightUnit":"vh","contentPosition":"center center"} -->
-<div class="wp-block-cover has-palette-2-background-color has-background-dim" style="min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:heading {"textColor":"palette-3"} -->
-<h2 class="has-palette-3-color has-text-color">Lorem Ipsum</h2>
+<div class="wp-block-column"><!-- wp:cover {"customOverlayColor":"#010101","minHeight":100,"minHeightUnit":"vh","contentPosition":"center center"} -->
+<div class="wp-block-cover has-background-dim" style="background-color:#010101;min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:heading -->
+<h2><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit eleifend, cum nibh molestie non dis auctor.</p>
+<p><?php Starter::the_text( 4, '.' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"fontSize":"large"} -->
-<ul class="has-large-font-size"><li>Lorem ipsum dolor</li><li>Sit amet consectetur</li><li>Adipiscing, elit tortor</li><li>Ut lacinia auctor, varius</li></ul>
+<ul class="has-large-font-size"><li><?php Starter::the_text( 'xs' ); ?></li><li><?php Starter::the_text( 's' ); ?></li><li><?php Starter::the_text( 'xs' ); ?></li><li><?php Starter::the_text( 's' ); ?></li></ul>
 <!-- /wp:list --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column --></div>
