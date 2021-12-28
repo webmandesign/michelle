@@ -16,8 +16,15 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Features: With background image', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'services', 'michelle' ) ),
+	'title'    => _x( 'Features with background image', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'services', 'keyword', 'michelle' ),
+		esc_html_x( 'columns', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/columns',
+		'core/cover',
+	),
 ) );
 
 // Block pattern content:
@@ -26,17 +33,13 @@ $image = Starter::get_image_url( '16to9' );
 
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":90,"align":"full","className":"is-style-no-padding"} -->
-<div class="wp-block-cover alignfull has-background-dim-90 has-background-dim is-style-no-padding"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":150} -->
-<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:heading {"textAlign":"center"} -->
-<h2 class="has-text-align-center">Lorem Ipsum</h2>
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":80,"align":"full","style":{"spacing":{"padding":{"top":"150px","bottom":"120px"}}}} -->
+<div class="wp-block-cover alignfull has-background-dim-80 has-background-dim" style="padding-top:150px;padding-bottom:120px"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center"><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing, elit montes rutrum feugiat dictumst, justo.</p>
+<p class="has-text-align-center has-large-font-size"><?php Starter::the_text( 4, '.' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":50} -->
@@ -54,46 +57,42 @@ $image = Starter::get_image_url( '16to9' );
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3,"className":"is-style-uppercase","fontSize":"large"} -->
-<h3 class="has-text-align-center is-style-uppercase has-large-font-size"><strong>Lorem Ipsum</strong></h3>
+<h3 class="has-text-align-center is-style-uppercase has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Write title…"} -->
-<p class="has-text-align-center">Lorem ipsum dolor sit amet consectetur adipiscing elit purus, varius augue dapibus.</p>
+<p class="has-text-align-center"><?php Starter::the_text( 3, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3,"className":"is-style-uppercase","fontSize":"large"} -->
-<h3 class="has-text-align-center is-style-uppercase has-large-font-size"><strong>Lorem Ipsum</strong></h3>
+<h3 class="has-text-align-center is-style-uppercase has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Write title…"} -->
-<p class="has-text-align-center">Lorem ipsum dolor sit amet consectetur adipiscing elit purus, varius augue dapibus.</p>
+<p class="has-text-align-center"><?php Starter::the_text( 3, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3,"className":"is-style-uppercase","fontSize":"large"} -->
-<h3 class="has-text-align-center is-style-uppercase has-large-font-size"><strong>Lorem Ipsum</strong></h3>
+<h3 class="has-text-align-center is-style-uppercase has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Write title…"} -->
-<p class="has-text-align-center">Lorem ipsum dolor sit amet consectetur adipiscing elit purus, varius augue dapibus.</p>
+<p class="has-text-align-center"><?php Starter::the_text( 3, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3,"className":"is-style-uppercase","fontSize":"large"} -->
-<h3 class="has-text-align-center is-style-uppercase has-large-font-size"><strong>Lorem Ipsum</strong></h3>
+<h3 class="has-text-align-center is-style-uppercase has-large-font-size"><strong><?php Starter::the_text( 'title/s' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Write title…"} -->
-<p class="has-text-align-center">Lorem ipsum dolor sit amet consectetur adipiscing elit purus, varius augue dapibus.</p>
+<p class="has-text-align-center"><?php Starter::the_text( 3, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:spacer {"height":150} -->
-<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div></div>
+<!-- /wp:columns --></div></div>
 <!-- /wp:cover -->

@@ -18,9 +18,9 @@ defined( 'ABSPATH' ) || exit;
 Block_Patterns::add_pattern_args( __FILE__, array(
 	'title'    => _x( 'Text with heading in columns', 'Block pattern title.', 'michelle' ),
 	'keywords' => array(
-		esc_html_x( 'columns', 'keyword', 'theme-slug' ),
-		esc_html_x( 'title', 'keyword', 'theme-slug' ),
-		esc_html_x( 'heading', 'keyword', 'theme-slug' ),
+		esc_html_x( 'columns', 'keyword', 'michelle' ),
+		esc_html_x( 'title', 'keyword', 'michelle' ),
+		esc_html_x( 'heading', 'keyword', 'michelle' ),
 	),
 	'blockTypes' => array(
 		'core/columns',

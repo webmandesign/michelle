@@ -18,8 +18,8 @@ defined( 'ABSPATH' ) || exit;
 Block_Patterns::add_pattern_args( __FILE__, array(
 	'title'    => _x( 'Text with parallax background', 'Block pattern title.', 'michelle' ),
 	'keywords' => array(
-		esc_html_x( 'image', 'keyword', 'theme-slug' ),
-		esc_html_x( 'columns', 'keyword', 'theme-slug' ),
+		esc_html_x( 'image', 'keyword', 'michelle' ),
+		esc_html_x( 'columns', 'keyword', 'michelle' ),
 	),
 	'blockTypes' => array(
 		'core/columns',

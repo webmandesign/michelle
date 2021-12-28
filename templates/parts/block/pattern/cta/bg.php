@@ -35,8 +35,8 @@ $image = Starter::get_image_url( '16to9' );
 
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":90,"customOverlayColor":"#010101","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full","style":{"spacing":{"padding":{"bottom":"120px","right":"0px","left":"0px"}}}} -->
-<div class="wp-block-cover alignfull has-background-dim-90 has-background-dim has-custom-content-position is-position-bottom-center" style="padding-right:0px;padding-bottom:120px;padding-left:0px;background-color:#010101;min-height:100vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":80,"customOverlayColor":"#010101","minHeight":100,"minHeightUnit":"vh","contentPosition":"bottom center","align":"full","style":{"spacing":{"padding":{"bottom":"120px","right":"0px","left":"0px"}}}} -->
+<div class="wp-block-cover alignfull has-background-dim-80 has-background-dim has-custom-content-position is-position-bottom-center" style="padding-right:0px;padding-bottom:120px;padding-left:0px;background-color:#010101;min-height:100vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"className":"has-20vmax-min-height"} -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 

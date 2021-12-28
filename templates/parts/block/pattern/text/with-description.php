@@ -16,8 +16,16 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Intro: Simple, with description', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'title', 'michelle' ), esc_html__( 'heading', 'michelle' ), 'h1' ),
+	'title'    => _x( 'Main title with description on side', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'intro', 'keyword', 'michelle' ),
+		esc_html_x( 'title', 'keyword', 'michelle' ),
+		esc_html_x( 'heading', 'keyword', 'michelle' ),
+		'h1',
+	),
+	'blockTypes' => array(
+		'core/heading',
+	),
 ) );
 
 // Block pattern content:
@@ -27,17 +35,13 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <!-- wp:columns {"verticalAlignment":null,"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":1} -->
-<h1>Lorem ipsum dolor</h1>
+<h1><?php Starter::the_text( 'title/s' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"bottom"} -->
 <div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing, elit tortor ut lacinia auctor, varius potenti ad vehicula interdum. Aenean nullam luctus natoque sagittis, congue himenaeos.</p>
+<p class="has-large-font-size"><?php Starter::the_text( 5, '.' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
-
-<!-- wp:spacer {"height":150} -->
-<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->

@@ -1,7 +1,7 @@
 /**
  * Block modifications.
  *
- * @package    Themename
+ * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since  1.3.0
@@ -13,7 +13,7 @@
 	// Modify block supports.
 	wp.hooks.addFilter(
 		'blocks.registerBlockType',
-		'theme-slug/block-mods',
+		'michelle/block-mods',
 		function( settings, name ) {
 
 			// Processing

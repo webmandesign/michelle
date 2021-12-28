@@ -301,7 +301,6 @@ class Block_Patterns implements Component_Interface {
 					'images',
 					'overflow',
 					'overlap',
-					'with-description',
 				),
 
 				'cta' => array(
@@ -335,22 +334,22 @@ class Block_Patterns implements Component_Interface {
 				'list' => array(
 					'features-bg-image',
 					'features-bg-shadow',
-					'features-center-icon-1',
-					'features-center-icon-2',
+					'features-center-icon',
 					'features-fullwidth-bg',
 					'features-large-image',
 					'features-parallax',
 					'features-shadow',
 					'features-simple',
-					'features-single',
 					'features-single-large',
-					'features-steps',
 				),
 
 				'media-text' => array(
+					'parallax',
+					'with-image',
 				),
 
 				'number' => array(
+					'steps',
 				),
 
 				'post' => array(
@@ -361,7 +360,9 @@ class Block_Patterns implements Component_Interface {
 
 				'price' => array(
 					'cards',
+					'columns-with-icons',
 					'food-menu',
+					'with-contact',
 				),
 
 				'quote' => array(
@@ -386,8 +387,7 @@ class Block_Patterns implements Component_Interface {
 					'extra-hierarchy',
 					'heading-columns',
 					'large-lead',
-					'parallax',
-					'with-image',
+					'with-description',
 				),
 
 			);

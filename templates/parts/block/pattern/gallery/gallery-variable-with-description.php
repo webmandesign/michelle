@@ -16,8 +16,15 @@ defined( 'ABSPATH' ) || exit;
 
 // Add block pattern setup args.
 Block_Patterns::add_pattern_args( __FILE__, array(
-	'title'      => _x( 'Gallery: Variable, with description', 'Block pattern title.', 'michelle' ),
-	'keywords'   => array( esc_html__( 'image', 'michelle' ) ),
+	'title'    => _x( 'Variable, with description', 'Block pattern title.', 'michelle' ),
+	'keywords' => array(
+		esc_html_x( 'gallery', 'keyword', 'michelle' ),
+		esc_html_x( 'images', 'keyword', 'michelle' ),
+	),
+	'blockTypes' => array(
+		'core/gallery',
+		'core/image',
+	),
 ) );
 
 // Block pattern content:
@@ -32,7 +39,7 @@ $image4 = Starter::get_image_url( '1to1' );
 <!-- wp:columns {"verticalAlignment":"bottom","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-bottom"><!-- wp:column {"verticalAlignment":"bottom","width":"61.8%"} -->
 <div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:61.8%"><!-- wp:gallery {"ids":[2136,2137,1966,1970],"columns":2,"linkTo":"none","className":"is-style-variable"} -->
-<figure class="wp-block-gallery columns-2 is-cropped is-style-variable"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image1 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" data-id="999991" data-full-url="<?php echo esc_url_raw( $image1 ); ?>" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image2 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" data-id="999992" data-full-url="<?php echo esc_url_raw( $image2 ); ?>" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image3 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" data-id="999993" data-full-url="<?php echo esc_url_raw( $image3 ); ?>" data-link="#0" class="wp-image-999993"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image4 ); ?>" alt="<?php esc_attr_e( 'Image alt text', 'michelle' ); ?>" data-id="999994" data-full-url="<?php echo esc_url_raw( $image4 ); ?>" data-link="#0" class="wp-image-999994"/></figure></li></ul></figure>
+<figure class="wp-block-gallery columns-2 is-cropped is-style-variable"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image1 ); ?>" alt="<?php Starter::the_text( 'alt' ); ?>" data-id="999991" data-full-url="<?php echo esc_url_raw( $image1 ); ?>" data-link="#0" class="wp-image-999991"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image2 ); ?>" alt="<?php Starter::the_text( 'alt' ); ?>" data-id="999992" data-full-url="<?php echo esc_url_raw( $image2 ); ?>" data-link="#0" class="wp-image-999992"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image3 ); ?>" alt="<?php Starter::the_text( 'alt' ); ?>" data-id="999993" data-full-url="<?php echo esc_url_raw( $image3 ); ?>" data-link="#0" class="wp-image-999993"/></figure></li><li class="blocks-gallery-item"><figure><img src="<?php echo esc_url_raw( $image4 ); ?>" alt="<?php Starter::the_text( 'alt' ); ?>" data-id="999994" data-full-url="<?php echo esc_url_raw( $image4 ); ?>" data-link="#0" class="wp-image-999994"/></figure></li></ul></figure>
 <!-- /wp:gallery --></div>
 <!-- /wp:column -->
 
@@ -42,15 +49,15 @@ $image4 = Starter::get_image_url( '1to1' );
 <!-- /wp:spacer -->
 
 <!-- wp:heading -->
-<h2>Lorem Ipsum</h2>
+<h2><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing, elit felis nisi magna nisl nec, proin mi tempus turpis integer.</p>
+<p class="has-large-font-size"><?php Starter::the_text( 3, '.' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit felis nisi magna nisl nec, proin mi tempus turpis integer. Rhoncus nunc condimentum venenatis, orci.</p>
+<p><?php Starter::the_text( 4, '.' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":50} -->
