@@ -32,8 +32,8 @@ $image = Starter::get_image_url( '2to3' );
 
 ?>
 
-<!-- wp:group {"align":"full","style":{"color":{"background":"#ffdd44","text":"#010101"}},"className":"is-style-no-padding"} -->
-<div class="wp-block-group alignfull is-style-no-padding has-text-color has-background" style="background-color:#ffdd44;color:#010101"><!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image"} -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#ffdd44","text":"#010101"},"spacing":{"padding":{"top":"0px","bottom":"0px"}}}} -->
+<div class="wp-block-group alignfull has-text-color has-background" style="background-color:#ffdd44;color:#010101;padding-top:0px;padding-bottom:0px"><!-- wp:media-text {"mediaPosition":"right","mediaId":999999,"mediaLink":"#0","mediaType":"image"} -->
 <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php Starter::the_text( 'alt' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"className":"is-style-no-margin-vertical","fontSize":"normal"} -->
 <h2 class="is-style-no-margin-vertical has-normal-font-size"><?php Starter::the_text( 'xs' ); ?></h2>
 <!-- /wp:heading -->

@@ -189,8 +189,8 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"35%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:buttons {"contentJustification":"left","className":"is-style-large"} -->
-<div class="wp-block-buttons is-content-justification-left is-style-large"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":50} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:buttons {"contentJustification":"left"} -->
+<div class="wp-block-buttons is-content-justification-left"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":50} -->
 <div class="wp-block-button has-custom-width wp-block-button__width-50"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0">Contact</a></div>
 <!-- /wp:button -->
 

@@ -128,8 +128,8 @@ if ( ! is_customize_preview() ) {
 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit erat, at nostra bibendum aenean quisque vivamus dis sociosqu, vestibulum maecenas inceptos auctor sapien nisl tincidunt.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"className":"is-style-large"} -->
-<div class="wp-block-buttons is-style-large"><!-- wp:button -->
+<!-- wp:buttons {} -->
+<div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link" href="#0">Contact</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>

@@ -75,8 +75,8 @@ if ( ! is_customize_preview() ) {
 <p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas, mi facilisis sollicitudin sem litora lectus vitae luctus, proin fames risus gravida convallis netus euismod.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"className":"is-style-large"} -->
-<div class="wp-block-buttons is-style-large"><!-- wp:button -->
+<!-- wp:buttons {} -->
+<div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link" href="https://www.webmandesign.eu/project-tag/accessibility-ready/">Get themes</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
@@ -91,8 +91,8 @@ if ( ! is_customize_preview() ) {
 <p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas, mi facilisis sollicitudin sem litora lectus vitae luctus, proin fames risus gravida convallis netus euismod.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"className":"is-style-large"} -->
-<div class="wp-block-buttons is-style-large"><!-- wp:button -->
+<!-- wp:buttons {} -->
+<div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link" href="https://www.webmandesign.eu/">Get support</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
@@ -118,8 +118,8 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"25%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:buttons {"className":"is-style-large"} -->
-<div class="wp-block-buttons is-style-large"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":100} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:buttons {} -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":100} -->
 <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0"><strong>GET IN TOUCH →</strong></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>

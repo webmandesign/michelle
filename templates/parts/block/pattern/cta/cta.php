@@ -33,8 +33,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:group {"align":"full","style":{"color":{"background":"#ffdd44","text":"#010101"},"spacing":{"padding":{"top":"150px","bottom":"120px"}}},"className":"is-style-no-padding"} -->
-<div class="wp-block-group alignfull is-style-no-padding has-text-color has-background" style="background-color:#ffdd44;color:#010101;padding-top:150px;padding-bottom:120px"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#ffdd44","text":"#010101"},"spacing":{"padding":{"top":"150px","bottom":"120px"}}}} -->
+<div class="wp-block-group alignfull has-text-color has-background" style="background-color:#ffdd44;color:#010101;padding-top:150px;padding-bottom:120px"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"className":"is-style-uppercase","fontSize":"extra-large"} -->
 <h2 class="is-style-uppercase has-extra-large-font-size"><strong><?php Starter::the_text( 'title/m' ); ?></strong></h2>

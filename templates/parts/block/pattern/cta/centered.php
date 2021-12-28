@@ -32,8 +32,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:group {"align":"full","style":{"color":{"background":"#ffdd44","text":"#010101"},"spacing":{"padding":{"top":"150px","bottom":"150px"}}},"className":"is-style-no-padding"} -->
-<div class="wp-block-group alignfull is-style-no-padding has-text-color has-background" style="background-color:#ffdd44;color:#010101;padding-top:150px;padding-bottom:150px"><!-- wp:heading {"textAlign":"center","className":"is-style-default"} -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#ffdd44","text":"#010101"},"spacing":{"padding":{"top":"150px","bottom":"150px"}}}} -->
+<div class="wp-block-group alignfull has-text-color has-background" style="background-color:#ffdd44;color:#010101;padding-top:150px;padding-bottom:150px"><!-- wp:heading {"textAlign":"center","className":"is-style-default"} -->
 <h2 class="has-text-align-center is-style-default"><?php Starter::the_text( 'title/m' ); ?></h2>
 <!-- /wp:heading -->
 

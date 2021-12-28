@@ -37,8 +37,8 @@ $image2 = Starter::get_image_url( '1to1' );
 
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999991,"hasParallax":true,"dimRatio":80,"align":"full","className":"is-style-no-padding","style":{"spacing":{"padding":{"top":"150px","bottom":"120px"}}}} -->
-<div class="wp-block-cover alignfull has-background-dim-80 has-background-dim has-parallax is-style-no-padding" style="padding-top:150px;padding-bottom:120px;background-image:url(<?php echo esc_url_raw( $image1 ); ?>)"><div class="wp-block-cover__inner-container"><!-- wp:heading {"className":"is-style-screen-reader-text"} -->
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image1 ); ?>","id":999991,"hasParallax":true,"dimRatio":80,"align":"full","style":{"spacing":{"padding":{"top":"150px","bottom":"120px"}}}} -->
+<div class="wp-block-cover alignfull has-background-dim-80 has-background-dim has-parallax" style="padding-top:150px;padding-bottom:120px;background-image:url(<?php echo esc_url_raw( $image1 ); ?>)"><div class="wp-block-cover__inner-container"><!-- wp:heading {"className":"is-style-screen-reader-text"} -->
 <h2 class="is-style-screen-reader-text"><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->
 

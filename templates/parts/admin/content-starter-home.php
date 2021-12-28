@@ -36,8 +36,8 @@ if ( ! is_customize_preview() ) {
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:buttons {"contentJustification":"center","className":"is-style-large"} -->
-<div class="wp-block-buttons is-content-justification-center is-style-large"><!-- wp:button {"backgroundColor":"palette-1","textColor":"palette-2"} -->
+<!-- wp:buttons {"contentJustification":"center"} -->
+<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"palette-1","textColor":"palette-2"} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-palette-2-color has-palette-1-background-color has-text-color has-background" href="#0">Get in touch →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->

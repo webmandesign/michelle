@@ -45,7 +45,7 @@ $image = Starter::get_image_url( '1to1' );
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:media-text {"align":"","mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":false,"className":"is-style-media-on-top"} -->
-<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="Image alt text" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3,"className":"is-style-no-margin-vertical"} -->
+<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php Starter::the_text( 'alt' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3,"className":"is-style-no-margin-vertical"} -->
 <h3 class="is-style-no-margin-vertical"><strong><?php Starter::the_text( 'people/name' ); ?></strong></h3>
 <!-- /wp:heading -->
 
@@ -61,7 +61,7 @@ $image = Starter::get_image_url( '1to1' );
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:media-text {"align":"","mediaId":999999,"mediaLink":"#0","mediaType":"image","imageFill":false,"className":"is-style-media-on-top"} -->
-<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="Image alt text" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3,"className":"is-style-no-margin-vertical"} -->
+<div class="wp-block-media-text is-stacked-on-mobile is-style-media-on-top"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php Starter::the_text( 'alt' ); ?>" class="wp-image-999999 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3,"className":"is-style-no-margin-vertical"} -->
 <h3 class="is-style-no-margin-vertical"><strong><?php Starter::the_text( 'people/name' ); ?></strong></h3>
 <!-- /wp:heading -->
 
