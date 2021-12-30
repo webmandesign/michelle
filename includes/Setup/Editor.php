@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Setup;
@@ -21,7 +22,8 @@ class Editor implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -31,7 +33,8 @@ class Editor implements Component_Interface {
 
 			// Actions
 
-				add_action( 'after_setup_theme', __CLASS__ . '::after_setup_theme' );
+				// Loading late enough so we can use `get_background_color()` below.
+				add_action( 'after_setup_theme', __CLASS__ . '::after_setup_theme', 20 );
 
 	} // /init
 
@@ -75,7 +78,8 @@ class Editor implements Component_Interface {
 	 * These should be styled in the theme stylesheet already,
 	 * so no need to output any inline CSS code on front-end.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  array
 	 */
@@ -84,21 +88,16 @@ class Editor implements Component_Interface {
 		// Variables
 
 			$palette = array();
-			$colors  = $colors_unique = (array) Customize\Colors::get();
 
 
 		// Processing
 
-			$colors_unique = array_column( $colors_unique, 'color', 'id' );
-			$colors_unique = array_unique( $colors_unique );
-			asort( $colors_unique );
-
-			foreach ( $colors_unique as $id => $color ) {
+			foreach ( (array) Customize\Colors::get() as $color ) {
 				$palette[] = array(
-					'name'  => $colors[ $id ]['name'],
+					'name'  => $color['name'],
 					// (Though block editor automatically changes "_" to "-", we play safe here.)
-					'slug'  => str_replace( '_', '-', $colors[ $id ]['slug'] ),
-					'color' => maybe_hash_hex_color( $color ),
+					'slug'  => str_replace( '_', '-', $color['slug'] ),
+					'color' => maybe_hash_hex_color( $color['color'] ),
 				);
 			}
 
@@ -124,7 +123,8 @@ class Editor implements Component_Interface {
 	 * These are set in `em` units within the theme stylesheet,
 	 * so no need to output any inline CSS code on front-end.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  array
 	 */
@@ -132,53 +132,8 @@ class Editor implements Component_Interface {
 
 		// Variables
 
-			$base_font_size = Customize\Mod::get( 'typography_size_html' );
-
-			$sizes = array(
-
-				array(
-					'name' => esc_html_x( 'Extra Small', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * .618 ),
-					'slug' => 'extra-small',
-				),
-
-				array(
-					'name' => esc_html_x( 'Small', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * .75 ),
-					'slug' => 'small',
-				),
-
-				array(
-					'name' => esc_html_x( 'Normal', 'Font size.', 'michelle' ),
-					'size' => $base_font_size,
-					'slug' => 'normal', // Can not use empty value here as that would cause inline styles being applied.
-				),
-
-				array(
-					'name' => esc_html_x( 'Large', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * 1.333 ),
-					'slug' => 'large',
-				),
-
-				array(
-					'name' => esc_html_x( 'Extra Large', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * 1.777 ),
-					'slug' => 'extra-large',
-				),
-
-				array(
-					'name' => esc_html_x( 'Huge', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * 4.209 ),
-					'slug' => 'huge',
-				),
-
-				array(
-					'name' => esc_html_x( 'Gigantic', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * 5.61 ),
-					'slug' => 'gigantic',
-				),
-
-			);
+			$base_font_size   = Customize\Mod::get( 'typography_size_html' );
+			$typography_ratio = 1.333;
 
 
 		// Output
@@ -192,7 +147,45 @@ class Editor implements Component_Interface {
 			 *
 			 * @param  array $sizes
 			 */
-			return (array) apply_filters( 'michelle/setup/editor/get_font_sizes', $sizes );
+			return (array) apply_filters( 'michelle/setup/editor/get_font_sizes', array(
+
+				array(
+					'name' => esc_html_x( 'Small', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * pow( $typography_ratio, -1 ) ),
+					'slug' => 'small',
+				),
+
+				array(
+					'name' => esc_html_x( 'Normal', 'Font size.', 'michelle' ),
+					'size' => $base_font_size,
+					'slug' => 'normal', // Can not use empty value here as that would cause inline styles being applied.
+				),
+
+				array(
+					'name' => esc_html_x( 'Large', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * $typography_ratio ),
+					'slug' => 'large',
+				),
+
+				array(
+					'name' => esc_html_x( 'Extra Large', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * pow( $typography_ratio, 2 ) ),
+					'slug' => 'extra-large',
+				),
+
+				array(
+					'name' => esc_html_x( 'Huge', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * pow( $typography_ratio, 5 ) ),
+					'slug' => 'huge',
+				),
+
+				array(
+					'name' => esc_html_x( 'Gigantic', 'Font size.', 'michelle' ),
+					'size' => round( $base_font_size * pow( $typography_ratio, 6 ) ),
+					'slug' => 'gigantic',
+				),
+
+			) );
 
 	} // /get_font_sizes
 

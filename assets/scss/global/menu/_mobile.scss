@@ -121,7 +121,7 @@
 			a {
 				flex: 1 1 auto;
 				display: block;
-				padding: $ratio_maj +em;
+				padding: .25em ( $ratio_maj +em );
 			}
 
 			&-container {
@@ -147,6 +147,11 @@
 				padding-#{$left}: $ratio_maj +em;
 				background: transparent;
 				box-shadow: none;
+
+				a {
+					padding-top: $ratio_min +em;
+					padding-bottom: $ratio_min +em;
+				}
 
 				.sub-menu {
 					#{$left}: auto;

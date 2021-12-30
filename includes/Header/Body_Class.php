@@ -53,7 +53,8 @@ class Body_Class implements Component_Interface {
 	/**
 	 * HTML body classes.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @param  array $classes
 	 *
@@ -69,6 +70,11 @@ class Body_Class implements Component_Interface {
 			// Is mobile navigation enabled?
 			if ( Mod::get( 'navigation_mobile' ) ) {
 				$classes[] = 'has-navigation-mobile';
+			}
+
+			// Is sticky site header on mobile screens?
+			if ( Mod::get( 'header_mobile_sticky' ) ) {
+				$classes[] = 'has-sticky-header-mobile';
 			}
 
 			// Is site title text hidden?

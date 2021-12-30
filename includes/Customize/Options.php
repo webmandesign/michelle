@@ -927,6 +927,14 @@ class Options implements Component_Interface {
 						'default'     => true,
 					),
 
+					950 . 'others' . 120 => array(
+						'type'        => 'checkbox',
+						'id'          => 'header_mobile_sticky',
+						'label'       => esc_html__( 'Enable sticky header on small screens', 'michelle' ),
+						'description' => esc_html__( 'When visitor scrolls up on small screens site header appears immediately.', 'michelle' ),
+						'default'     => true,
+					),
+
 					950 . 'others' . 200 => array(
 						'type'        => 'html',
 						'content'     => '<h3>' . esc_html__( 'Content', 'michelle' ) . '</h3>',
