@@ -30,10 +30,14 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 ?>
 
 <!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"45%"} -->
+<div class="wp-block-column" style="flex-basis:45%"><!-- wp:heading -->
 <h2><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"5%"} -->
+<div class="wp-block-column" style="flex-basis:5%"></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"25%"} -->

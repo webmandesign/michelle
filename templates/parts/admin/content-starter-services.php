@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.3.0
  */
 
 // Exit if accessed directly.
@@ -18,8 +18,8 @@ if ( ! is_customize_preview() ) {
 
 ?>
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":1} -->
 <h1>We offer professional services</h1>
 <!-- /wp:heading -->
@@ -29,8 +29,8 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":""} -->
-<div class="wp-block-column"></div>
+<!-- wp:column {"width":"","className":"is-style-default"} -->
+<div class="wp-block-column is-style-default"></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
@@ -46,9 +46,9 @@ if ( ! is_customize_preview() ) {
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"></div>
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column {"className":"is-style-default"} -->
+<div class="wp-block-column is-style-default"></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
@@ -75,7 +75,7 @@ if ( ! is_customize_preview() ) {
 <p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas, mi facilisis sollicitudin sem litora lectus vitae luctus, proin fames risus gravida convallis netus euismod.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {} -->
+<!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link" href="https://www.webmandesign.eu/project-tag/accessibility-ready/">Get themes</a></div>
 <!-- /wp:button --></div>
@@ -91,7 +91,7 @@ if ( ! is_customize_preview() ) {
 <p class="has-large-font-size">Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas, mi facilisis sollicitudin sem litora lectus vitae luctus, proin fames risus gravida convallis netus euismod.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {} -->
+<!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link" href="https://www.webmandesign.eu/">Get support</a></div>
 <!-- /wp:button --></div>
@@ -102,8 +102,8 @@ if ( ! is_customize_preview() ) {
 <div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"verticalAlignment":"center","align":"wide","backgroundColor":"palette-1","textColor":"palette-2"} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center has-palette-2-color has-palette-1-background-color has-text-color has-background"><!-- wp:column {"verticalAlignment":"center","width":"65%"} -->
+<!-- wp:columns {"verticalAlignment":"center","align":"wide","backgroundColor":"palette-1","textColor":"palette-2","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-stacked-on-tablet has-palette-2-color has-palette-1-background-color has-text-color has-background"><!-- wp:column {"verticalAlignment":"center","width":"65%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:65%"><!-- wp:heading {"className":"is-style-screen-reader-text"} -->
 <h2 class="is-style-screen-reader-text">Lorem ipsum</h2>
 <!-- /wp:heading -->
@@ -113,12 +113,12 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"10%"} -->
-<div class="wp-block-column" style="flex-basis:10%"></div>
+<!-- wp:column {"width":"10%","className":"is-style-hidden-on-tablet"} -->
+<div class="wp-block-column is-style-hidden-on-tablet" style="flex-basis:10%"></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"25%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:buttons {} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:25%"><!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"palette-2","textColor":"palette-3","width":100} -->
 <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-palette-3-color has-palette-2-background-color has-text-color has-background" href="#0"><strong>GET IN TOUCH →</strong></a></div>
 <!-- /wp:button --></div>

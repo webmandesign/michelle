@@ -40,8 +40,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 <hr class="wp-block-separator alignwide"/>
 <!-- /wp:separator -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"61.8%"} -->
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column {"width":"61.8%"} -->
 <div class="wp-block-column" style="flex-basis:61.8%"><!-- wp:paragraph {"fontSize":"large"} -->
 <p class="has-large-font-size"><?php Starter::the_text( 7, '.' ); ?></p>
 <!-- /wp:paragraph --></div>

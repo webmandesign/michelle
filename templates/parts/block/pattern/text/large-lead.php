@@ -33,8 +33,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"66.66%"} -->
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:heading {"className":"is-style-no-margin-vertical","fontSize":"normal"} -->
 <h2 class="is-style-no-margin-vertical has-normal-font-size"><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->

@@ -29,8 +29,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading -->
 <h2><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->

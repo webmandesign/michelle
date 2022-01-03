@@ -29,8 +29,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"","className":"is-style-drop-shadow"} -->
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column {"width":"","className":"is-style-drop-shadow"} -->
 <div class="wp-block-column is-style-drop-shadow"><!-- wp:heading {"textAlign":"center","className":"is-style-uppercase","fontSize":"normal"} -->
 <h2 class="has-text-align-center is-style-uppercase has-normal-font-size"><strong><?php Starter::the_text( 'title/s' ); ?></strong></h2>
 <!-- /wp:heading -->

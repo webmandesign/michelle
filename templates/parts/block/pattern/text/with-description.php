@@ -32,8 +32,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:columns {"verticalAlignment":null,"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<!-- wp:columns {"verticalAlignment":null,"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":1} -->
 <h1><?php Starter::the_text( 'title/s' ); ?></h1>
 <!-- /wp:heading --></div>

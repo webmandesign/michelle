@@ -3,7 +3,7 @@
 html {
 	box-sizing: border-box;
 	overflow-y: scroll;
-	overscroll-behavior: none;
+	// overscroll-behavior: none;
 	scroll-behavior: smooth;
 
 	@media (prefers-reduced-motion: reduce) {

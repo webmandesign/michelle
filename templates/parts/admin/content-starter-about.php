@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.6
+ * @version  1.3.0
  */
 
 // Exit if accessed directly.
@@ -18,8 +18,8 @@ if ( ! is_customize_preview() ) {
 
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"palette-2","textColor":"palette-3","className":"is-style-no-padding"} -->
-<div class="wp-block-group alignfull is-style-no-padding has-palette-3-color has-palette-2-background-color has-text-color has-background"><div class="wp-block-group__inner-container"><!-- wp:spacer {"className":"has-15vmax-min-height"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"bottom":"120px"}}},"backgroundColor":"palette-2","textColor":"palette-3","className":"is-style-no-padding"} -->
+<div class="wp-block-group alignfull is-style-no-padding has-palette-3-color has-palette-2-background-color has-text-color has-background" style="padding-bottom:120px"><!-- wp:spacer {"className":"has-15vmax-min-height"} -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer has-15vmax-min-height"></div>
 <!-- /wp:spacer -->
 
@@ -49,19 +49,15 @@ if ( ! is_customize_preview() ) {
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:spacer {"height":150} -->
-<div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":150} -->
 <div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading -->
 <h2>How it all started</h2>
 <!-- /wp:heading --></div>
@@ -108,15 +104,15 @@ if ( ! is_customize_preview() ) {
 <div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:quote -->
 <blockquote class="wp-block-quote"><p>Lorem ipsum dolor sit amet elit, enim quis proin aliquam non lectus tellus blandit, vivamus vulputate donec semper dapibus.</p><cite>Lorem Ipsum</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"10%"} -->
-<div class="wp-block-column" style="flex-basis:10%"></div>
+<!-- wp:column {"width":"10%","className":"is-style-hidden-on-tablet"} -->
+<div class="wp-block-column is-style-hidden-on-tablet" style="flex-basis:10%"></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"40%"} -->
@@ -128,7 +124,7 @@ if ( ! is_customize_preview() ) {
 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit erat, at nostra bibendum aenean quisque vivamus dis sociosqu, vestibulum maecenas inceptos auctor sapien nisl tincidunt.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {} -->
+<!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link" href="#0">Contact</a></div>
 <!-- /wp:button --></div>

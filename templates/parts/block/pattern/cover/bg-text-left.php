@@ -41,8 +41,8 @@ $image = Starter::get_image_url( '16to9' );
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<!-- wp:columns {"align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide is-style-stacked-on-tablet"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":1} -->
 <h1><?php Starter::the_text( 'title/s' ); ?></h1>
 <!-- /wp:heading -->

@@ -32,8 +32,8 @@ $image = Starter::get_image_url( '2to3' );
 
 ?>
 
-<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
+<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-stacked-on-tablet"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"textAlign":"center","className":"is-style-uppercase","fontSize":"normal"} -->
 <h2 class="has-text-align-center is-style-uppercase has-normal-font-size"><strong><?php Starter::the_text( 'title/s' ); ?></strong></h2>
 <!-- /wp:heading -->

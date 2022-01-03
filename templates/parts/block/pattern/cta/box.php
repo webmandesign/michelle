@@ -33,8 +33,8 @@ Block_Patterns::add_pattern_args( __FILE__, array(
 
 ?>
 
-<!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"color":{"background":"#010101","text":"#fefefe"}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center has-text-color has-background" style="background-color:#010101;color:#fefefe"><!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
+<!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"color":{"background":"#010101","text":"#fefefe"}},"className":"is-style-stacked-on-tablet"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-stacked-on-tablet has-text-color has-background" style="background-color:#010101;color:#fefefe"><!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%"><!-- wp:heading {"className":"is-style-screen-reader-text"} -->
 <h2 class="is-style-screen-reader-text"><?php Starter::the_text( 'title/s' ); ?></h2>
 <!-- /wp:heading -->

@@ -37,10 +37,14 @@ $image = Starter::get_image_url( 'icon' );
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"150px","bottom":"50px"}},"color":{"background":"#ffdd44","text":"#010101"}},"className":"is-style-no-margin-vertical"} -->
 <div class="wp-block-group alignfull is-style-no-margin-vertical has-text-color has-background" style="background-color:#ffdd44;color:#010101;padding-top:150px;padding-bottom:50px"><!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"linkDestination":"none"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"45%"} -->
+<div class="wp-block-column" style="flex-basis:45%"><!-- wp:image {"linkDestination":"none"} -->
 <figure class="wp-block-image"><img src="<?php echo esc_url_raw( $image ); ?>" alt="<?php Starter::the_text( 'alt' ); ?>"/></figure>
 <!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"5%"} -->
+<div class="wp-block-column" style="flex-basis:5%"></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"25%"} -->
