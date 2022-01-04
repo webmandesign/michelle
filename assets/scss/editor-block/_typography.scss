@@ -14,7 +14,7 @@ body #{ $selector_editor_wrapper } {
 h2, h3, h4, h5, h6 {
 
 	&.wp-block:not(:first-child) {
-		margin-top: calc( var(--white_space) / 2 );
+		margin-top: var(--heading_space);
 	}
 
 }

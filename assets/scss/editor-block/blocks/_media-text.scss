@@ -48,8 +48,8 @@
 	@media (max-width: 600px) {
 
 		> .wp-block-media-text__content {
-			padding-left: 6vw; // No RTL here.
-			padding-right: 6vw; // No RTL here.
+			padding-left: var(--body_padding); // No RTL here.
+			padding-right: var(--body_padding); // No RTL here.
 		}
 
 	}

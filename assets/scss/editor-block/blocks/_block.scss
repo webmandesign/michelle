@@ -82,8 +82,8 @@
 
 	&[data-align="wide"] {
 		// Matching .alignwide-wrap styles, basically.
-		padding-left: 6vw;
-		padding-right: 6vw;
+		padding-left: var(--body_padding);
+		padding-right: var(--body_padding);
 		margin-left: -10px;
 		margin-right: -10px;
 

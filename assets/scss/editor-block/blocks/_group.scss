@@ -57,8 +57,8 @@
 	padding: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
 
 	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-		padding-left: 6vw;
-		padding-right: 6vw;
+		padding-left: var(--body_padding);
+		padding-right: var(--body_padding);
 	}
 
 }

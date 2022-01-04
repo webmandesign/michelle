@@ -2,8 +2,8 @@
 
 .site-content {
 	position: relative;
-	padding-left: 6vw;
-	padding-right: 6vw;
+	padding-left: var(--body_padding);
+	padding-right: var(--body_padding);
 	z-index: 1;
 
 	.no-js & {

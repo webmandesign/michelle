@@ -37,7 +37,7 @@ h1, .h1 {
 }
 
 h2, h3, h4, h5, h6 {
-	margin-top: calc( var(--white_space) / 2 );
+	margin-top: var(--heading_space);
 
 	&:first-child {
 		margin-top: 0;

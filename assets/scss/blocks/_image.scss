@@ -21,7 +21,7 @@
 }
 
 .is-style-padding-left {
-	padding-left: 6vw;
+	padding-left: var(--body_padding);
 
 	img {
 		margin-left: auto;
@@ -30,7 +30,7 @@
 }
 
 .is-style-padding-right {
-	padding-right: 6vw;
+	padding-right: var(--body_padding);
 
 	img {
 		margin-right: auto;

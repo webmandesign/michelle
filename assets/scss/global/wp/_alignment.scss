@@ -76,8 +76,8 @@
 	margin-right: auto;
 
 	&-wrap {
-		padding-left: 6vw;
-		padding-right: 6vw;
+		padding-left: var(--body_padding);
+		padding-right: var(--body_padding);
 
 		&:not(:last-child) > .alignwide {
 			margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.

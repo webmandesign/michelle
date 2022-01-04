@@ -12,8 +12,8 @@
 		}
 
 		&.alignfull {
-			padding-left: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
-			padding-right: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+			padding-left: var(--block_padding);
+			padding-right: var(--block_padding);
 		}
 
 		&.has-background {
@@ -21,8 +21,8 @@
 			padding-bottom: 0;
 
 			@include media( map_get( $breakpoint, 'xl' ) ) {
-				padding: 4%;
-				padding-bottom: calc( 4% - var(--typography_font_size_base) * #{ $ratio } );
+				padding: var(--block_padding);
+				padding-bottom: calc( var(--block_padding) - #{ $ratio +em } );
 			}
 
 		}
@@ -139,3 +139,26 @@
 	}
 
 }
+
+// Column gaps:
+
+	$prepend : '';
+	@if variable-exists( 'selector_editor_wrapper' ) {
+		$prepend : '.block-editor-block-list__block';
+	}
+
+	@media (min-width: 600px) {
+		#{ $prepend }.wp-block-column:nth-child(even) {
+			margin-#{$left}: var(--column_gap);
+		}
+	}
+	@media (min-width: 600px) and (max-width: 781px) {
+		#{ $prepend }.wp-block-column:not(:only-child) {
+			flex-basis: calc( 50% - var(--column_gap) / 2 ) !important;
+		}
+	}
+	@media (min-width: 782px) {
+		#{ $prepend }.wp-block-column:not(:first-child) {
+			margin-#{$left}: var(--column_gap);
+		}
+	}

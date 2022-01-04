@@ -47,10 +47,10 @@ $customize_options: (
 	'typography_size_html': 19px,
 	'typography_size_header': 16px,
 	'typography_size_footer': 16px,
-	'typography_font_global': ( Inter, sans-serif ),
-	'typography_font_headings': var(--typography_font_global),
-	'typography_font_site_title': var(--typography_font_global),
-	'typography_font_alt': var(--typography_font_global),
+	'typography_font_global':     ( Inter, sans-serif ),
+	'typography_font_headings':   ( Inter, sans-serif ),
+	'typography_font_site_title': ( Inter, sans-serif ),
+	'typography_font_alt':        ( Inter, sans-serif ),
 	// NOT CUSTOMIZABLE:
 	'typography_font_monospace': ( Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace ),
 

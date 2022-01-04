@@ -2,7 +2,7 @@
 
 .page-header {
 	width: calc( 100vw - var(--scrollbar_width) );
-	padding: 0 6vw;
+	padding: 0 var(--body_padding);
 	margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
 	margin-bottom: var(--content_padding);
 

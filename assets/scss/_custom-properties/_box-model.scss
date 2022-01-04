@@ -12,8 +12,22 @@
 			--white_space: 150px;
 		}
 
+		--body_padding:  1rem; // Horizontal padding of HTML body.
+		--block_padding: 1rem; // Horizontal padding of block content (for Cover/Group block, block with background,...).
+		@include media( 500 ) {
+			--body_padding:  6vw;
+			--block_padding: 30px;
+		}
+		@include media( map_get( $breakpoint, 'xxl' ) ) {
+			--block_padding: 40px;
+		}
+
 		--content_padding: var(--white_space);
 		--content_padding_negative: calc( -1 * var(--content_padding) );
+
+		--heading_space: calc( var(--white_space) / 2 );
+
+		--column_gap: #{ $ratio +em };
 
 		--posts_list_gap: 1em;
 		@include media( map_get( $breakpoint, 'xl' ) ) {

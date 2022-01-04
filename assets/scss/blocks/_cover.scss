@@ -2,7 +2,7 @@
 
 .wp-block-cover {
 	height: auto;
-	padding: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+	padding: var(--block_padding);
 
 	&:not(.has-text-color) {
 		color: #fff;

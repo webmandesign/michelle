@@ -59,8 +59,8 @@ blockquote {
 
 	blockquote.alignfull,
 	[data-align="full"] > blockquote {
-		padding-left: 6vw;
-		padding-right: 6vw;
+		padding-left: var(--block_padding);
+		padding-right: var(--block_padding);
 	}
 
 cite {

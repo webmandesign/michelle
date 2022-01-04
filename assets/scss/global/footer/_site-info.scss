@@ -7,7 +7,7 @@
 	align-items: center;
 
 	&-section {
-		padding: 6vh 6vw;
+		padding: 6vh var(--body_padding);
 		background: var(--color_footer_background);
 		color: var(--color_footer_text);
 	}
