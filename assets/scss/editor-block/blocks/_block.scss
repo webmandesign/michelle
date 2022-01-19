@@ -105,6 +105,12 @@
 
 }
 
+#{ $selector_editor_wrapper } .has-background.has-background .wp-block[data-align="full"] {
+	width: auto;
+	margin-left: calc( -1 * var(--block_padding) );
+	margin-right: calc( -1 * var(--block_padding) );
+}
+
 #{ $selector_editor_wrapper } figure.wp-block {
 	margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
 }

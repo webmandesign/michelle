@@ -87,6 +87,22 @@
 
 }
 
+.alignfull {
+
+	.alignwide & {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.has-background.has-background & {
+		width: auto;
+		margin-left: calc( -1 * var(--block_padding) );
+		margin-right: calc( -1 * var(--block_padding) );
+	}
+
+}
+
 .is-singular:not([class*="-content-only"]):not(.has-primary-title) .entry-content-singular > .alignfull:first-child,
 .error-404-content > .alignfull:first-child {
 	margin-top: var(--content_padding_negative);

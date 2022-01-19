@@ -57,6 +57,13 @@
 
 	}
 
+	.has-background.alignwide,
+	.has-background.alignfull,
+	[data-align="wide"] > .has-background,
+	[data-align="full"] > .has-background {
+		padding: var(--block_padding) $important_modifiers;
+	}
+
 	$important_modifiers: null; // Required reset.
 
 // Has text color

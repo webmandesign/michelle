@@ -3,10 +3,13 @@
 .wp-block-group {
 
 	&__inner-container {
+		@extend %block_inner_container;
 		@extend %clearfix;
-		max-width: var(--layout_width_entry_content);
-		margin-left: auto;
-		margin-right: auto;
+	}
+
+	&.has-background > .wp-block-group__inner-container > .alignwide-wrap {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 }

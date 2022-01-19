@@ -322,6 +322,7 @@
 
 	@for $i from 1 through 10 {
 		.has-#{$i}-z-index {
+			position: relative;
 			z-index: $i $important_modifiers;
 		}
 	}
