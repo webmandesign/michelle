@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2021-06-09 10:24+0200\n"
+"POT-Creation-Date: 2022-01-19 18:46+0100\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -11,13 +11,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. translators: 1: title.
@@ -39,24 +39,24 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
+#. translators: %s: menu item label.
 #: includes/Accessibility/Component.php:90
 #, php-format
-msgctxt "%s: menu item label"
 msgid "Collapse menu: %s"
 msgstr ""
 
-#: includes/Accessibility/Component.php:91
+#. translators: %s: menu item label.
+#: includes/Accessibility/Component.php:92
 #, php-format
-msgctxt "%s: menu item label"
 msgid "Expand menu: %s"
 msgstr ""
 
-#: includes/Accessibility/Component.php:187
+#: includes/Accessibility/Component.php:188
 #: templates/parts/accessibility/menu-skip-links.php:25
 msgid "Skip to main content"
 msgstr ""
 
-#: includes/Accessibility/Component.php:235
+#: includes/Accessibility/Component.php:239
 msgid "Skip back to main navigation"
 msgstr ""
 
@@ -80,122 +80,187 @@ msgstr ""
 msgid "Please upgrade and try again."
 msgstr ""
 
+#: includes/Content/Block_Patterns.php:234
+msgctxt "Block pattern category label."
+msgid "Call to Action"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:235
+msgctxt "Block pattern category label."
+msgid "Contact"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:236
+msgctxt "Block pattern category label."
+msgid "Cover"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:237
+msgctxt "Block pattern category label."
+msgid "Lists"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:238
+msgctxt "Block pattern category label."
+msgid "Media and Text"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:239
+msgctxt "Block pattern category label."
+msgid "Numbers"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:240
+msgctxt "Block pattern category label."
+msgid "Posts"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:241
+msgctxt "Block pattern category label."
+msgid "Prices"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:242
+msgctxt "Block pattern category label."
+msgid "Question and Answer"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:243
+msgctxt "Block pattern category label."
+msgid "Quotes"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:244
+msgctxt "Website. Block pattern category label."
+msgid "Site"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:245
+msgctxt "Block pattern category label."
+msgid "Team"
+msgstr ""
+
+#: includes/Content/Block_Patterns.php:262
+msgctxt "Block pattern category label."
+msgid "Michelle theme"
+msgstr ""
+
 #: includes/Content/Block_Styles.php:101
+msgctxt "Block style label."
+msgid "Single column: align left"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:107
+msgctxt "Block style label."
+msgid "Single column: align right"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:114
 msgctxt "Block style label."
 msgid "Double-line"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:108
+#: includes/Content/Block_Styles.php:121
 msgctxt "Block style label."
 msgid "Double-line wide"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:115
+#: includes/Content/Block_Styles.php:128
 msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:128
+#: includes/Content/Block_Styles.php:141
 msgctxt "Block style label."
 msgid "Has padding"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:135
+#: includes/Content/Block_Styles.php:148
 msgctxt "Block style label."
-msgid "Hide caption"
+msgid "Hide on tablet"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:142
+#: includes/Content/Block_Styles.php:155
 msgctxt "Block style label."
 msgid "Inner shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:151
-msgctxt "Block style label."
-msgid "Large buttons"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:158
+#: includes/Content/Block_Styles.php:164
 msgctxt "Block style label."
 msgid "Media on top"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:165
-msgctxt "Block style label."
-msgid "Narrow content"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:172
+#: includes/Content/Block_Styles.php:171
 msgctxt "Block style label."
 msgid "No gaps"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:180
+#: includes/Content/Block_Styles.php:179
 msgctxt "Block style label."
-msgid "Has no vertical margin"
+msgid "No vertical gap"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:194
-msgctxt "Block style label."
-msgid "Has no padding"
-msgstr ""
-
-#: includes/Content/Block_Styles.php:202
+#: includes/Content/Block_Styles.php:201
 msgctxt "Block style label."
 msgid "Overlap gradient"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:209
+#: includes/Content/Block_Styles.php:208
 msgctxt "Block style label."
 msgid "Padding left"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:216
+#: includes/Content/Block_Styles.php:214
 msgctxt "Block style label."
 msgid "Padding right"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:223
+#: includes/Content/Block_Styles.php:221
 msgctxt "Block style label."
 msgid "Scale image"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:230
+#: includes/Content/Block_Styles.php:228
 msgctxt "Block style label."
 msgid "Accessibly hidden"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:237
+#: includes/Content/Block_Styles.php:235
 msgctxt "Block style label."
 msgid "Simple"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:244
+#: includes/Content/Block_Styles.php:242
+msgctxt "Block style label."
+msgid "Stack on tablet"
+msgstr ""
+
+#: includes/Content/Block_Styles.php:250
 msgctxt "Block style label."
 msgid "Dark text shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:252
+#: includes/Content/Block_Styles.php:258
 msgctxt "Block style label."
 msgid "Light text shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:260
+#: includes/Content/Block_Styles.php:266
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:268
+#: includes/Content/Block_Styles.php:274
 msgctxt "Block style label."
 msgid "Variable"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:275
+#: includes/Content/Block_Styles.php:281
 msgctxt "Block style label."
 msgid "Zig-zag"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:282
+#: includes/Content/Block_Styles.php:288
 msgctxt "Block style label."
 msgid "Zig-zag wide"
 msgstr ""
@@ -251,43 +316,130 @@ msgctxt "Theme starter content."
 msgid "User manual"
 msgstr ""
 
-#: includes/Customize/Colors.php:160 includes/Customize/Options.php:334
-msgid "Accent color"
+#: includes/Content/Starter.php:333
+msgctxt "Demo text."
+msgid "Some text"
 msgstr ""
 
-#. translators: Customizer section title. %s = section name.
-#: includes/Customize/Colors.php:169 includes/Customize/Options.php:267
-#: includes/Customize/Options.php:325 includes/Customize/Options.php:391
-#: includes/Customize/Options.php:481
-#, php-format
-msgid "Colors: %s"
+#: includes/Content/Starter.php:334
+msgctxt "Demo text."
+msgid "Just a short sentence"
 msgstr ""
 
-#: includes/Customize/Colors.php:170
-msgctxt "Customizer color section title"
-msgid "Editor palette"
+#: includes/Content/Starter.php:335
+msgctxt "Demo text."
+msgid "Write your own copy text here"
 msgstr ""
 
-#: includes/Customize/Colors.php:172 includes/Customize/Options.php:237
-#: includes/Customize/Options.php:270 includes/Customize/Options.php:328
-#: includes/Customize/Options.php:394 includes/Customize/Options.php:484
-#: includes/Customize/Options.php:537 includes/Customize/Options.php:610
-#: includes/Customize/Options.php:789 includes/Customize/Options.php:817
-#: includes/Tool/Page_Builder.php:124
-msgctxt "Customizer panel title."
-msgid "Theme Options"
+#: includes/Content/Starter.php:336
+msgctxt "Demo text."
+msgid "This is just a demo text you should overwrite"
 msgstr ""
 
-#: includes/Customize/Colors.php:177
+#: includes/Content/Starter.php:339
+msgctxt "Demo text."
+msgid "This is title"
+msgstr ""
+
+#: includes/Content/Starter.php:340
+msgctxt "Demo text."
+msgid "Write some title text here"
+msgstr ""
+
+#: includes/Content/Starter.php:341
+msgctxt "Demo text."
 msgid ""
-"Accent color is also being conveniently added into editor color palette "
-"for you, so you don't need to duplicate it here."
+"The ideal length of the title text in here should be maybe a bit longer"
 msgstr ""
 
-#. translators: Editor palette color label. %d: color number.
-#: includes/Customize/Colors.php:187
-#, php-format
-msgid "Palette color %d"
+#: includes/Content/Starter.php:345
+msgctxt "Demo text."
+msgid "123 Street Name<br>Cityname, 56789<br>COUNTRY"
+msgstr ""
+
+#: includes/Content/Starter.php:346
+msgctxt "Demo text."
+msgid "example@example.com"
+msgstr ""
+
+#: includes/Content/Starter.php:347
+msgctxt "Demo text."
+msgid "+1 (123) 456-7890"
+msgstr ""
+
+#: includes/Content/Starter.php:351
+msgctxt "Demo text."
+msgid "10:30 am on Monday, July 1, 2021"
+msgstr ""
+
+#: includes/Content/Starter.php:352
+msgctxt "Demo text. Week days."
+msgid "Mon - Fri"
+msgstr ""
+
+#: includes/Content/Starter.php:353
+msgctxt "Demo text. Weekend days."
+msgid "Sat - Sun"
+msgstr ""
+
+#: includes/Content/Starter.php:354
+msgctxt "Demo text."
+msgid "Monday"
+msgstr ""
+
+#: includes/Content/Starter.php:355
+msgctxt "Demo text."
+msgid "Tuesday"
+msgstr ""
+
+#: includes/Content/Starter.php:356
+msgctxt "Demo text."
+msgid "Wednesday"
+msgstr ""
+
+#: includes/Content/Starter.php:357
+msgctxt "Demo text."
+msgid "Thursday"
+msgstr ""
+
+#: includes/Content/Starter.php:358
+msgctxt "Demo text."
+msgid "Friday"
+msgstr ""
+
+#: includes/Content/Starter.php:359
+msgctxt "Demo text."
+msgid "Saturday"
+msgstr ""
+
+#: includes/Content/Starter.php:360
+msgctxt "Demo text."
+msgid "Sunday"
+msgstr ""
+
+#: includes/Content/Starter.php:364
+msgctxt "Demo text."
+msgid "Name Surname"
+msgstr ""
+
+#: includes/Content/Starter.php:365
+msgctxt "Demo text. A job title."
+msgid "Designer"
+msgstr ""
+
+#: includes/Content/Starter.php:369
+msgctxt "Demo text. Image alt text."
+msgid "Image alternative description text"
+msgstr ""
+
+#: includes/Content/Starter.php:370
+msgctxt "Demo text. Button label."
+msgid "Click here →"
+msgstr ""
+
+#: includes/Content/Starter.php:371
+msgctxt "Demo text. Price."
+msgid "$19"
 msgstr ""
 
 #: includes/Customize/Control/HTML.php:56
@@ -298,362 +450,460 @@ msgstr ""
 msgid "Press CTRL key for multiple selection."
 msgstr ""
 
-#: includes/Customize/Options.php:144
+#: includes/Customize/Custom_Logo.php:77
+msgid "Logo variation: light"
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:78
+msgid ""
+"This logo image will be displayed in overlaid header with light color."
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:86
+#: includes/Customize/Custom_Logo.php:91
+#: includes/Customize/Custom_Logo.php:132
+#: includes/Customize/Custom_Logo.php:137
+msgid "Select logo"
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:87
+#: includes/Customize/Custom_Logo.php:133
+msgid "Change logo"
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:88
+#: includes/Customize/Custom_Logo.php:134
+msgid "Remove"
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:89
+#: includes/Customize/Custom_Logo.php:135
+msgid "Default"
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:90
+#: includes/Customize/Custom_Logo.php:136
+msgid "No logo selected"
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:92
+#: includes/Customize/Custom_Logo.php:138
+msgid "Choose logo"
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:123
+msgid "Logo variation: dark"
+msgstr ""
+
+#: includes/Customize/Custom_Logo.php:124
+msgid "This logo image will be displayed in overlaid header with dark color."
+msgstr ""
+
+#: includes/Customize/Options.php:149
 msgctxt "Variable image height."
 msgid "variable height"
 msgstr ""
 
-#: includes/Customize/Options.php:146
+#: includes/Customize/Options.php:151
 #: templates/parts/admin/media-image-sizes.php:59
 msgid "cropped"
 msgstr ""
 
-#: includes/Customize/Options.php:146
+#: includes/Customize/Options.php:151
 #: templates/parts/admin/media-image-sizes.php:59
 msgid "scaled"
 msgstr ""
 
-#: includes/Customize/Options.php:158
+#: includes/Customize/Options.php:163
 msgid "&mdash; no block"
 msgstr ""
 
-#: includes/Customize/Options.php:178
+#: includes/Customize/Options.php:183
 msgid "Max logo image height (px)"
 msgstr ""
 
-#: includes/Customize/Options.php:179
+#: includes/Customize/Options.php:184
 msgid "Do not forget to set the logo max height."
 msgstr ""
 
-#: includes/Customize/Options.php:179
+#: includes/Customize/Options.php:184
 msgid ""
 "Upload twice as big image to make your logo ready for high DPI screens."
 msgstr ""
 
-#: includes/Customize/Options.php:206
+#: includes/Customize/Options.php:211
 msgid "Display site title & tagline"
 msgstr ""
 
-#: includes/Customize/Options.php:207
+#: includes/Customize/Options.php:212
 msgid ""
 "Tagline longer than 40 characters gets accessibly hidden automatically on "
 "your live website."
 msgstr ""
 
-#: includes/Customize/Options.php:219
+#: includes/Customize/Options.php:224
 msgid "Site title position"
 msgstr ""
 
-#: includes/Customize/Options.php:222
+#: includes/Customize/Options.php:227
 msgid "First item in header"
 msgstr ""
 
-#: includes/Customize/Options.php:223
+#: includes/Customize/Options.php:228
 msgid "Last item in header"
 msgstr ""
 
-#: includes/Customize/Options.php:238
+#: includes/Customize/Options.php:242 includes/Customize/Options.php:275
+#: includes/Customize/Options.php:333 includes/Customize/Options.php:403
+#: includes/Customize/Options.php:493 includes/Customize/Options.php:550
+#: includes/Customize/Options.php:630 includes/Customize/Options.php:703
+#: includes/Customize/Options.php:882 includes/Customize/Options.php:910
+#: includes/Loop/Featured_Posts.php:259 includes/Tool/Page_Builder.php:126
+msgctxt "Customizer panel title."
+msgid "Theme Options"
+msgstr ""
+
+#: includes/Customize/Options.php:243
 msgid "Theme Credits"
 msgstr ""
 
 #. translators: 1: linked theme name, 2: theme author name.
-#: includes/Customize/Options.php:242
+#: includes/Customize/Options.php:247
 #, php-format
 msgid "%1$s is a WordPress theme developed by %2$s."
 msgstr ""
 
 #. translators: %s: theme author link.
-#: includes/Customize/Options.php:250
+#: includes/Customize/Options.php:255
 #, php-format
 msgid "You can obtain other professional WordPress themes at %s."
 msgstr ""
 
-#: includes/Customize/Options.php:255
+#: includes/Customize/Options.php:260
 msgid "Thank you for using a theme by WebMan Design!"
 msgstr ""
 
-#: includes/Customize/Options.php:268
+#. translators: Customizer section title. %s = section name.
+#: includes/Customize/Options.php:272 includes/Customize/Options.php:330
+#: includes/Customize/Options.php:400 includes/Customize/Options.php:490
+#: includes/Customize/Options.php:547
+#, php-format
+msgid "Colors: %s"
+msgstr ""
+
+#: includes/Customize/Options.php:273
 msgctxt "Customizer color section title"
 msgid "General"
 msgstr ""
 
-#: includes/Customize/Options.php:276 includes/Customize/Options.php:371
-#: includes/Customize/Options.php:423 includes/Customize/Options.php:461
-#: includes/Customize/Options.php:504
+#: includes/Customize/Options.php:281 includes/Customize/Options.php:380
+#: includes/Customize/Options.php:432 includes/Customize/Options.php:470
+#: includes/Customize/Options.php:513
 msgid "Text color"
 msgstr ""
 
-#: includes/Customize/Options.php:290
+#: includes/Customize/Options.php:295
 msgid "Headings color"
 msgstr ""
 
-#: includes/Customize/Options.php:305
+#: includes/Customize/Options.php:310
 msgid "Decorative border color"
 msgstr ""
 
-#: includes/Customize/Options.php:326
+#: includes/Customize/Options.php:331
 msgctxt "Customizer color section title"
 msgid "Accents"
 msgstr ""
 
-#: includes/Customize/Options.php:351
+#: includes/Customize/Options.php:339 includes/Customize/Options.php:350
+msgid "Accent color"
+msgstr ""
+
+#: includes/Customize/Options.php:360
 msgid "Button"
 msgstr ""
 
-#: includes/Customize/Options.php:357 includes/Customize/Options.php:409
-#: includes/Customize/Options.php:447 includes/Customize/Options.php:490
+#: includes/Customize/Options.php:366 includes/Customize/Options.php:418
+#: includes/Customize/Options.php:456 includes/Customize/Options.php:499
 msgid "Background color"
 msgstr ""
 
-#: includes/Customize/Options.php:392
+#: includes/Customize/Options.php:401
 msgctxt "Customizer color section title"
 msgid "Header"
 msgstr ""
 
-#: includes/Customize/Options.php:402
+#: includes/Customize/Options.php:411
 msgid "Site navigation"
 msgstr ""
 
-#: includes/Customize/Options.php:403
+#: includes/Customize/Options.php:412
 msgid "Primary menu location sub-menu colors."
 msgstr ""
 
-#: includes/Customize/Options.php:440
+#: includes/Customize/Options.php:449
 msgid "Search form"
 msgstr ""
 
-#: includes/Customize/Options.php:441
+#: includes/Customize/Options.php:450
 msgid "Pop-up search form colors."
 msgstr ""
 
-#: includes/Customize/Options.php:482
+#: includes/Customize/Options.php:491
 msgctxt "Customizer color section title"
 msgid "Footer"
 msgstr ""
 
-#: includes/Customize/Options.php:518
+#: includes/Customize/Options.php:527
 msgid "Link color"
 msgstr ""
 
-#: includes/Customize/Options.php:536
+#: includes/Customize/Options.php:548
+msgctxt "Customizer color section title"
+msgid "Editor palette"
+msgstr ""
+
+#: includes/Customize/Options.php:555
+msgid ""
+"Accent color is also being conveniently added into editor color palette "
+"for you, so you don't need to duplicate it here."
+msgstr ""
+
+#. translators: Editor palette color label. %d: color number.
+#: includes/Customize/Options.php:563 includes/Customize/Options.php:584
+#: includes/Customize/Options.php:605
+#, php-format
+msgid "Palette color %d"
+msgstr ""
+
+#: includes/Customize/Options.php:629
 msgctxt "Customizer section title."
 msgid "Layout"
 msgstr ""
 
-#: includes/Customize/Options.php:545
+#: includes/Customize/Options.php:638
 msgctxt "A website container."
 msgid "Site Container"
 msgstr ""
 
-#: includes/Customize/Options.php:551
+#: includes/Customize/Options.php:644
 msgid "Content width"
 msgstr ""
 
-#: includes/Customize/Options.php:553 includes/Customize/Options.php:579
-#: includes/Customize/Options.php:705 includes/Customize/Options.php:718
-#: includes/Customize/Options.php:731 includes/Customize/Options.php:744
+#: includes/Customize/Options.php:646 includes/Customize/Options.php:672
+#: includes/Customize/Options.php:798 includes/Customize/Options.php:811
+#: includes/Customize/Options.php:824 includes/Customize/Options.php:837
 msgid "Default value:"
 msgstr ""
 
-#: includes/Customize/Options.php:555
+#: includes/Customize/Options.php:648
 msgid "This width is applied on archive pages, wide-aligned blocks&hellip;"
 msgstr ""
 
-#: includes/Customize/Options.php:577
+#: includes/Customize/Options.php:670
 msgid "Entry content width"
 msgstr ""
 
-#: includes/Customize/Options.php:581
+#: includes/Customize/Options.php:674
 msgid "This width is applied on post and page actual content elements."
 msgstr ""
 
-#: includes/Customize/Options.php:583
+#: includes/Customize/Options.php:676
 msgid "Set this cautiously for the best readability."
 msgstr ""
 
-#: includes/Customize/Options.php:609
+#: includes/Customize/Options.php:702
 msgctxt "Customizer section title."
 msgid "Typography"
 msgstr ""
 
-#: includes/Customize/Options.php:616
+#: includes/Customize/Options.php:709
 msgid "Basic font size in px"
 msgstr ""
 
-#: includes/Customize/Options.php:617
+#: includes/Customize/Options.php:710
 msgid ""
 "All other font sizes are calculated automatically from this basic font "
 "size."
 msgstr ""
 
-#: includes/Customize/Options.php:639
+#: includes/Customize/Options.php:732
 msgid "Header font size in px"
 msgstr ""
 
-#: includes/Customize/Options.php:661
+#: includes/Customize/Options.php:754
 msgid "Footer font size in px"
 msgstr ""
 
-#: includes/Customize/Options.php:685
+#: includes/Customize/Options.php:778
 msgid "Font families setup"
 msgstr ""
 
 #. translators: %s: customizer option values.
-#: includes/Customize/Options.php:690
+#: includes/Customize/Options.php:783
 #, php-format
 msgid "Values of %s set web safe system font families."
 msgstr ""
 
-#: includes/Customize/Options.php:695
+#: includes/Customize/Options.php:788
 msgid "You can use any Google Fonts with this theme."
 msgstr ""
 
-#: includes/Customize/Options.php:697
+#: includes/Customize/Options.php:790
 msgid ""
 "Just input the Google Fonts font family name into the fields below, choose "
 "language, and you are done!"
 msgstr ""
 
-#: includes/Customize/Options.php:704
+#: includes/Customize/Options.php:797
 msgid "Global font"
 msgstr ""
 
-#: includes/Customize/Options.php:717
+#: includes/Customize/Options.php:810
 msgid "Headings font"
 msgstr ""
 
-#: includes/Customize/Options.php:730
+#: includes/Customize/Options.php:823
 msgid "Site title font"
 msgstr ""
 
-#: includes/Customize/Options.php:743
+#: includes/Customize/Options.php:836
 msgid "Alternative font"
 msgstr ""
 
-#: includes/Customize/Options.php:744
+#: includes/Customize/Options.php:837
 msgid "Used for quotes, for example."
 msgstr ""
 
-#: includes/Customize/Options.php:757
+#: includes/Customize/Options.php:850
 msgid "Enable theme Google Fonts loading"
 msgstr ""
 
-#: includes/Customize/Options.php:758
+#: includes/Customize/Options.php:851
 msgid "In case you are loading fonts via plugin, disable this option."
 msgstr ""
 
-#: includes/Customize/Options.php:764
+#: includes/Customize/Options.php:857
 msgid "Languages"
 msgstr ""
 
-#: includes/Customize/Options.php:766
+#: includes/Customize/Options.php:859
 msgid "Not all Google Fonts support all languages."
 msgstr ""
 
-#: includes/Customize/Options.php:768
+#: includes/Customize/Options.php:861
 msgid "Please check on Google Fonts website to make sure."
 msgstr ""
 
-#: includes/Customize/Options.php:771
+#: includes/Customize/Options.php:864
 msgid "Latin"
 msgstr ""
 
-#: includes/Customize/Options.php:772
+#: includes/Customize/Options.php:865
 msgid "Latin Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:773
+#: includes/Customize/Options.php:866
 msgid "Cyrillic"
 msgstr ""
 
-#: includes/Customize/Options.php:774
+#: includes/Customize/Options.php:867
 msgid "Cyrillic Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:775
+#: includes/Customize/Options.php:868
 msgid "Greek"
 msgstr ""
 
-#: includes/Customize/Options.php:776
+#: includes/Customize/Options.php:869
 msgid "Greek Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:777
+#: includes/Customize/Options.php:870
 msgid "Vietnamese"
 msgstr ""
 
-#: includes/Customize/Options.php:788
+#: includes/Customize/Options.php:881
 msgctxt "Customizer section title."
 msgid "Posts"
 msgstr ""
 
-#: includes/Customize/Options.php:795
+#: includes/Customize/Options.php:888
 msgid "Post thumbnail aspect ratio"
 msgstr ""
 
-#: includes/Customize/Options.php:796
+#: includes/Customize/Options.php:889
 msgid ""
 "Note that if you already have images uploaded to your website, you need to "
 "regenerate their sizes to apply this change."
 msgstr ""
 
-#: includes/Customize/Options.php:796
+#: includes/Customize/Options.php:889
 msgid "You can use a plugin for that &rarr;"
 msgstr ""
 
-#: includes/Customize/Options.php:796
+#: includes/Customize/Options.php:889
 msgid "(This option can not be previewed here, only on your live website.)"
 msgstr ""
 
-#: includes/Customize/Options.php:799
+#: includes/Customize/Options.php:892
 msgid "Keep original image aspect ratio"
 msgstr ""
 
-#: includes/Customize/Options.php:816
+#: includes/Customize/Options.php:909
 msgctxt "Customizer section title."
 msgid "Others"
 msgstr ""
 
-#: includes/Customize/Options.php:823
+#: includes/Customize/Options.php:916
 msgid "Show \"Welcome\" page"
 msgstr ""
 
-#: includes/Customize/Options.php:824
+#: includes/Customize/Options.php:917
 msgid "Under \"Appearance\" WordPress dashboard menu."
 msgstr ""
 
-#: includes/Customize/Options.php:832
+#: includes/Customize/Options.php:925
 msgid "Enable mobile navigation"
 msgstr ""
 
-#: includes/Customize/Options.php:833
+#: includes/Customize/Options.php:926
 msgid ""
 "If your website navigation is very simple and you do not want to use the "
 "mobile navigation functionality, you can disable it here."
 msgstr ""
 
-#: includes/Customize/Options.php:839
+#: includes/Customize/Options.php:933
+msgid "Enable sticky header on small screens"
+msgstr ""
+
+#: includes/Customize/Options.php:934
+msgid ""
+"When visitor scrolls up on small screens site header appears immediately."
+msgstr ""
+
+#: includes/Customize/Options.php:940
 msgid "Content"
 msgstr ""
 
-#: includes/Customize/Options.php:841
+#: includes/Customize/Options.php:942
 msgid ""
 "Create and edit your content with block editor in Reusable Blocks manager."
 msgstr ""
 
-#: includes/Customize/Options.php:843
+#: includes/Customize/Options.php:944
 msgid "Open Reusable Blocks manager in a new window now &rarr;"
 msgstr ""
 
-#: includes/Customize/Options.php:845
+#: includes/Customize/Options.php:946
 msgid "Then assign created reusable blocks for display below."
 msgstr ""
 
-#: includes/Customize/Options.php:851
+#: includes/Customize/Options.php:952
 msgid "Footer content"
 msgstr ""
 
-#: includes/Customize/Options.php:860
+#: includes/Customize/Options.php:961
 msgid "Error 404 content"
 msgstr ""
 
@@ -678,48 +928,6 @@ msgstr ""
 msgid "Published in"
 msgstr ""
 
-#: includes/Entry/Page_Template.php:255
-msgid "Logo variation: light"
-msgstr ""
-
-#: includes/Entry/Page_Template.php:256
-msgid ""
-"This logo image will be displayed in overlaid header with light color."
-msgstr ""
-
-#: includes/Entry/Page_Template.php:264 includes/Entry/Page_Template.php:269
-#: includes/Entry/Page_Template.php:313 includes/Entry/Page_Template.php:318
-msgid "Select logo"
-msgstr ""
-
-#: includes/Entry/Page_Template.php:265 includes/Entry/Page_Template.php:314
-msgid "Change logo"
-msgstr ""
-
-#: includes/Entry/Page_Template.php:266 includes/Entry/Page_Template.php:315
-msgid "Remove"
-msgstr ""
-
-#: includes/Entry/Page_Template.php:267 includes/Entry/Page_Template.php:316
-msgid "Default"
-msgstr ""
-
-#: includes/Entry/Page_Template.php:268 includes/Entry/Page_Template.php:317
-msgid "No logo selected"
-msgstr ""
-
-#: includes/Entry/Page_Template.php:270 includes/Entry/Page_Template.php:319
-msgid "Choose logo"
-msgstr ""
-
-#: includes/Entry/Page_Template.php:304
-msgid "Logo variation: dark"
-msgstr ""
-
-#: includes/Entry/Page_Template.php:305
-msgid "This logo image will be displayed in overlaid header with dark color."
-msgstr ""
-
 #: includes/Entry/Summary.php:71
 msgid "This content is password protected."
 msgstr ""
@@ -728,48 +936,53 @@ msgstr ""
 msgid "Enter the password to view it."
 msgstr ""
 
-#: includes/Header/Component.php:249
+#: includes/Header/Component.php:250
 msgctxt "Search form modal toggle button label."
 msgid "Toggle search form modal box"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:242
+#: includes/Loop/Featured_Posts.php:258
+msgctxt "Customizer section title."
+msgid "Blog"
+msgstr ""
+
+#: includes/Loop/Featured_Posts.php:267
 msgid "Featured posts"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:249
+#: includes/Loop/Featured_Posts.php:274
 msgid "Featured posts tag slug"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:250
+#: includes/Loop/Featured_Posts.php:275
 msgid ""
 "3 latest posts assigned to this tag will be displayed as featured posts on "
 "blog page."
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:250
+#: includes/Loop/Featured_Posts.php:275
 msgid "Open tags manager in a new window now &rarr;"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:255
+#: includes/Loop/Featured_Posts.php:280
 msgctxt "Form field placeholder. URL slug, no diacritic."
 msgid "featured"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:262
+#: includes/Loop/Featured_Posts.php:287
 msgid "Remove from blog posts"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:263
+#: includes/Loop/Featured_Posts.php:288
 msgid ""
 "Makes sure the featured posts will be removed from posts list on blog page."
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:270
+#: includes/Loop/Featured_Posts.php:295
 msgid "Fallback image"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:271
+#: includes/Loop/Featured_Posts.php:296
 msgid "This image will be displayed when post has no featured image set."
 msgstr ""
 
@@ -802,37 +1015,36 @@ msgctxt "Navigational menu location"
 msgid "Primary"
 msgstr ""
 
-#: includes/Setup/Editor.php:140
-msgctxt "Font size."
-msgid "Extra Small"
+#: includes/Menu/Component.php:103
+msgid "Skip to menu toggle button"
 msgstr ""
 
-#: includes/Setup/Editor.php:146
+#: includes/Setup/Editor.php:153
 msgctxt "Font size."
 msgid "Small"
 msgstr ""
 
-#: includes/Setup/Editor.php:152
+#: includes/Setup/Editor.php:159
 msgctxt "Font size."
 msgid "Normal"
 msgstr ""
 
-#: includes/Setup/Editor.php:158
+#: includes/Setup/Editor.php:165
 msgctxt "Font size."
 msgid "Large"
 msgstr ""
 
-#: includes/Setup/Editor.php:164
+#: includes/Setup/Editor.php:171
 msgctxt "Font size."
 msgid "Extra Large"
 msgstr ""
 
-#: includes/Setup/Editor.php:170
+#: includes/Setup/Editor.php:177
 msgctxt "Font size."
 msgid "Huge"
 msgstr ""
 
-#: includes/Setup/Editor.php:176
+#: includes/Setup/Editor.php:183
 msgctxt "Font size."
 msgid "Gigantic"
 msgstr ""
@@ -877,56 +1089,56 @@ msgstr ""
 msgid "Change this image &rarr;"
 msgstr ""
 
-#: includes/Tool/AMP.php:87
+#: includes/Tool/AMP.php:92
 msgid "Expand child menu"
 msgstr ""
 
-#: includes/Tool/AMP.php:88
+#: includes/Tool/AMP.php:93
 msgid "Collapse child menu"
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:123
+#: includes/Tool/Page_Builder.php:125
 msgctxt "Customizer section title."
 msgid "Page builders"
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:130
+#: includes/Tool/Page_Builder.php:132
 msgid "Enable \"Page builder\" page/post template"
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:131
+#: includes/Tool/Page_Builder.php:133
 msgid ""
 "Use this page/post template when building a content with your page builder "
 "plugin."
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:131
+#: includes/Tool/Page_Builder.php:133
 msgid "You can tweak the desired layout of this template below."
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:131
+#: includes/Tool/Page_Builder.php:133
 msgid "Open a page/post template instructions in new window &rarr;"
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:138
+#: includes/Tool/Page_Builder.php:140
 msgid "Page builder layout"
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:139
+#: includes/Tool/Page_Builder.php:141
 msgid "Tweaks content area layout when using \"Page builder\" template."
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:139
+#: includes/Tool/Page_Builder.php:141
 msgid ""
 "As every page builder plugin works differently, set this according to your "
 "needs."
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:142
+#: includes/Tool/Page_Builder.php:144
 msgid "Full width content area, no padding"
 msgstr ""
 
-#: includes/Tool/Page_Builder.php:143
+#: includes/Tool/Page_Builder.php:145
 msgid "Keep content area width, just remove padding"
 msgstr ""
 
@@ -1061,16 +1273,16 @@ msgid "%1$d &times; %2$d, %3$s"
 msgstr ""
 
 #. translators: %s: Theme name.
-#: templates/parts/admin/notice-welcome.php:31
+#: templates/parts/admin/notice-welcome.php:32
 #, php-format
 msgid "Thank you for installing %s theme!"
 msgstr ""
 
-#: templates/parts/admin/notice-welcome.php:39
+#: templates/parts/admin/notice-welcome.php:40
 msgid "Visit \"Welcome\" page for information on how to set up your website."
 msgstr ""
 
-#: templates/parts/admin/notice-welcome.php:47
+#: templates/parts/admin/notice-welcome.php:48
 msgid "Let's Get Started &raquo;"
 msgstr ""
 
@@ -1329,499 +1541,638 @@ msgstr ""
 msgid "Customization changes will go live only after you publish them."
 msgstr ""
 
-#: templates/parts/block/pattern-blog.php:20
+#: templates/parts/block/pattern/contact/bg-1.php:19
 msgctxt "Block pattern title."
-msgid "Blog"
+msgid "With background image"
 msgstr ""
 
-#: templates/parts/block/pattern-cards.php:20
+#: templates/parts/block/pattern/contact/bg-1.php:21
+#: templates/parts/block/pattern/contact/bg-2.php:21
+#: templates/parts/block/pattern/contact/description.php:21
+#: templates/parts/block/pattern/contact/image-middle.php:21
+#: templates/parts/block/pattern/contact/image-side.php:21
+#: templates/parts/block/pattern/contact/quote.php:21
+#: templates/parts/block/pattern/contact/shadow.php:21
+#: templates/parts/block/pattern/contact/social.php:21
+msgctxt "keyword"
+msgid "contact"
+msgstr ""
+
+#: templates/parts/block/pattern/contact/bg-2.php:19
 msgctxt "Block pattern title."
-msgid "Cards"
+msgid "Columns with background"
 msgstr ""
 
-#: templates/parts/block/pattern-cards.php:22
-#: templates/parts/block/pattern-features-bg-image.php:22
-#: templates/parts/block/pattern-features-bg-shadow.php:22
-#: templates/parts/block/pattern-features-center-icon-1.php:22
-#: templates/parts/block/pattern-features-center-icon-2.php:22
-#: templates/parts/block/pattern-features-fullwidth-bg.php:22
-#: templates/parts/block/pattern-features-large-image.php:22
-#: templates/parts/block/pattern-features-parallax.php:22
-#: templates/parts/block/pattern-features-shadow.php:22
-#: templates/parts/block/pattern-features-simple.php:22
-#: templates/parts/block/pattern-features-single-large.php:22
-#: templates/parts/block/pattern-features-single.php:22
-#: templates/parts/block/pattern-features-steps.php:22
-msgid "services"
-msgstr ""
-
-#: templates/parts/block/pattern-cards.php:22
-msgid "features"
-msgstr ""
-
-#: templates/parts/block/pattern-cards.php:22
-#: templates/parts/block/pattern-features-center-icon-1.php:22
-#: templates/parts/block/pattern-features-single.php:22
-#: templates/parts/block/pattern-food-menu.php:22
-msgid "price"
-msgstr ""
-
-#: templates/parts/block/pattern-cards.php:22
-msgid "food menu"
-msgstr ""
-
-#: templates/parts/block/pattern-contact-bg-1.php:20
+#: templates/parts/block/pattern/contact/description.php:19
 msgctxt "Block pattern title."
-msgid "Contact: With background image"
+msgid "With description"
 msgstr ""
 
-#: templates/parts/block/pattern-contact-bg-2.php:20
+#: templates/parts/block/pattern/contact/image-middle.php:19
 msgctxt "Block pattern title."
-msgid "Contact: Columns with background"
+msgid "With image in the middle"
 msgstr ""
 
-#: templates/parts/block/pattern-contact-description.php:20
-msgctxt "Block pattern title."
-msgid "Contact: With description"
-msgstr ""
-
-#: templates/parts/block/pattern-contact-image-middle.php:20
-msgctxt "Block pattern title."
-msgid "Contact: With image in the middle"
-msgstr ""
-
-#: templates/parts/block/pattern-contact-image-middle.php:47
-#: templates/parts/block/pattern-contact-image-side.php:31
-#: templates/parts/block/pattern-cta-large.php:32
-#: templates/parts/block/pattern-features-bg-image.php:34
-#: templates/parts/block/pattern-features-bg-image.php:52
-#: templates/parts/block/pattern-features-bg-image.php:70
-#: templates/parts/block/pattern-features-center-icon-1.php:34
-#: templates/parts/block/pattern-features-center-icon-1.php:62
-#: templates/parts/block/pattern-features-center-icon-1.php:90
-#: templates/parts/block/pattern-features-center-icon-2.php:39
-#: templates/parts/block/pattern-features-center-icon-2.php:57
-#: templates/parts/block/pattern-features-center-icon-2.php:75
-#: templates/parts/block/pattern-features-large-image.php:41
-#: templates/parts/block/pattern-features-large-image.php:59
-#: templates/parts/block/pattern-features-large-image.php:77
-#: templates/parts/block/pattern-features-shadow.php:34
-#: templates/parts/block/pattern-features-shadow.php:56
-#: templates/parts/block/pattern-features-shadow.php:78
-#: templates/parts/block/pattern-features-single-large.php:32
-#: templates/parts/block/pattern-features-single.php:33
-#: templates/parts/block/pattern-footer.php:38
-#: templates/parts/block/pattern-gallery-captions.php:36
-#: templates/parts/block/pattern-gallery-captions.php:37
-#: templates/parts/block/pattern-gallery-no-gap.php:34
-#: templates/parts/block/pattern-gallery-variable-with-description.php:38
-#: templates/parts/block/pattern-image-padding-left.php:31
-#: templates/parts/block/pattern-image-padding-right.php:31
-#: templates/parts/block/pattern-intro-2-images.php:40
-#: templates/parts/block/pattern-intro-2-images.php:58
-#: templates/parts/block/pattern-intro-bg-image.php:38
-#: templates/parts/block/pattern-intro-color-image-large.php:49
-#: templates/parts/block/pattern-intro-color-image.php:37
-#: templates/parts/block/pattern-intro-images.php:47
-#: templates/parts/block/pattern-intro-overlap.php:32
-#: templates/parts/block/pattern-logos.php:49
-#: templates/parts/block/pattern-portfolio-project-gallery.php:34
-#: templates/parts/block/pattern-portfolio-project-image.php:31
-#: templates/parts/block/pattern-team-2.php:44
-#: templates/parts/block/pattern-team-2.php:60
-#: templates/parts/block/pattern-team.php:52
-#: templates/parts/block/pattern-testimonials-single-bg.php:61
-#: templates/parts/block/pattern-text-with-image.php:32
+#: templates/parts/block/pattern/contact/image-middle.php:52
+#: templates/parts/block/pattern/contact/image-side.php:35
+#: templates/parts/block/pattern/media-text/with-image.php:35
+#: templates/parts/block/pattern/team/team.php:57
 msgid "Image alt text"
 msgstr ""
 
-#: templates/parts/block/pattern-contact-image-side.php:20
+#: templates/parts/block/pattern/contact/image-side.php:19
 msgctxt "Block pattern title."
-msgid "Contact: With image on side"
+msgid "With image on side"
 msgstr ""
 
-#: templates/parts/block/pattern-contact-quote.php:20
+#: templates/parts/block/pattern/contact/quote.php:19
+#: templates/parts/block/pattern/cta/quote.php:19
 msgctxt "Block pattern title."
-msgid "Contact: With quote"
+msgid "With quote"
 msgstr ""
 
-#: templates/parts/block/pattern-contact-shadow.php:20
+#: templates/parts/block/pattern/contact/quote.php:22
+#: templates/parts/block/pattern/quote/testimonial-bg.php:21
+#: templates/parts/block/pattern/quote/testimonial.php:21
+#: templates/parts/block/pattern/quote/testimonials.php:21
+msgctxt "keyword"
+msgid "quote"
+msgstr ""
+
+#: templates/parts/block/pattern/contact/quote.php:23
+#: templates/parts/block/pattern/quote/testimonial-bg.php:22
+#: templates/parts/block/pattern/quote/testimonials.php:22
+msgctxt "keyword"
+msgid "testimonial"
+msgstr ""
+
+#: templates/parts/block/pattern/contact/shadow.php:19
 msgctxt "Block pattern title."
-msgid "Contact: With drop shadow"
+msgid "With drop shadow"
 msgstr ""
 
-#: templates/parts/block/pattern-contact-social.php:20
+#: templates/parts/block/pattern/contact/social.php:19
 msgctxt "Block pattern title."
-msgid "Contact: With social links"
+msgid "With social links"
 msgstr ""
 
-#: templates/parts/block/pattern-cta-bg.php:20
+#: templates/parts/block/pattern/cover/2-images.php:19
 msgctxt "Block pattern title."
-msgid "Call to action: With background"
+msgid "With 2 images and description"
 msgstr ""
 
-#: templates/parts/block/pattern-cta-bg.php:22
-#: templates/parts/block/pattern-cta-box.php:22
-#: templates/parts/block/pattern-cta-centered.php:22
-#: templates/parts/block/pattern-cta-large.php:22
-#: templates/parts/block/pattern-cta-quote.php:22
-#: templates/parts/block/pattern-cta-simple.php:22
-#: templates/parts/block/pattern-cta.php:22
-msgid "button"
+#: templates/parts/block/pattern/cover/2-images.php:21
+#: templates/parts/block/pattern/cover/bg-image.php:21
+#: templates/parts/block/pattern/cover/bg-links.php:21
+#: templates/parts/block/pattern/cover/bg-text-left.php:21
+#: templates/parts/block/pattern/cover/centered-background.php:21
+#: templates/parts/block/pattern/cover/color-image-large.php:21
+#: templates/parts/block/pattern/cover/color-image.php:21
+#: templates/parts/block/pattern/cover/fullscreen-bottom-text.php:21
+#: templates/parts/block/pattern/cover/images.php:21
+#: templates/parts/block/pattern/cover/overflow.php:21
+#: templates/parts/block/pattern/cover/overlap.php:21
+#: templates/parts/block/pattern/text/with-description.php:21
+msgctxt "keyword"
+msgid "intro"
 msgstr ""
 
-#: templates/parts/block/pattern-cta-box.php:20
-msgctxt "Block pattern title."
-msgid "Call to action: Boxed"
-msgstr ""
-
-#: templates/parts/block/pattern-cta-centered.php:20
-msgctxt "Block pattern title."
-msgid "Call to action: Centered"
-msgstr ""
-
-#: templates/parts/block/pattern-cta-large.php:20
-msgctxt "Block pattern title."
-msgid "Call to action: Large"
-msgstr ""
-
-#: templates/parts/block/pattern-cta-quote.php:20
-msgctxt "Block pattern title."
-msgid "Call to action: With quote"
-msgstr ""
-
-#: templates/parts/block/pattern-cta-simple.php:20
-msgctxt "Block pattern title."
-msgid "Call to action: Simple"
-msgstr ""
-
-#: templates/parts/block/pattern-cta.php:20
-msgctxt "Block pattern title."
-msgid "Call to action"
-msgstr ""
-
-#: templates/parts/block/pattern-features-bg-image.php:20
-msgctxt "Block pattern title."
-msgid "Features: With background and image"
-msgstr ""
-
-#: templates/parts/block/pattern-features-bg-shadow.php:20
-msgctxt "Block pattern title."
-msgid "Features: With background image and drop shadow"
-msgstr ""
-
-#: templates/parts/block/pattern-features-center-icon-1.php:20
-msgctxt "Block pattern title."
-msgid "Features: Center aligned with icon 1"
-msgstr ""
-
-#: templates/parts/block/pattern-features-center-icon-2.php:20
-msgctxt "Block pattern title."
-msgid "Features: Center aligned with icon 2"
-msgstr ""
-
-#: templates/parts/block/pattern-features-fullwidth-bg.php:20
-msgctxt "Block pattern title."
-msgid "Features: With background image"
-msgstr ""
-
-#: templates/parts/block/pattern-features-large-image.php:20
-msgctxt "Block pattern title."
-msgid "Features: With large image"
-msgstr ""
-
-#: templates/parts/block/pattern-features-parallax.php:20
-msgctxt "Block pattern title."
-msgid "Features: Parallax"
-msgstr ""
-
-#: templates/parts/block/pattern-features-parallax.php:22
-#: templates/parts/block/pattern-gallery-captions.php:23
-#: templates/parts/block/pattern-gallery-no-gap.php:22
-#: templates/parts/block/pattern-gallery-variable-with-description.php:23
-#: templates/parts/block/pattern-logos.php:22
-#: templates/parts/block/pattern-team-2.php:23
-#: templates/parts/block/pattern-team.php:22
-#: templates/parts/block/pattern-text-parallax.php:22
-#: templates/parts/block/pattern-text-with-image.php:22
-msgid "image"
-msgstr ""
-
-#: templates/parts/block/pattern-features-shadow.php:20
-msgctxt "Block pattern title."
-msgid "Features: With drop shadow"
-msgstr ""
-
-#: templates/parts/block/pattern-features-simple.php:20
-msgctxt "Block pattern title."
-msgid "Features"
-msgstr ""
-
-#: templates/parts/block/pattern-features-single-large.php:20
-#: templates/parts/block/pattern-features-single.php:20
-msgctxt "Block pattern title."
-msgid "Features: A large feature"
-msgstr ""
-
-#: templates/parts/block/pattern-features-steps.php:20
-msgctxt "Block pattern title."
-msgid "Features: Steps"
-msgstr ""
-
-#: templates/parts/block/pattern-food-menu.php:20
-msgctxt "Block pattern title."
-msgid "Food menu"
-msgstr ""
-
-#: templates/parts/block/pattern-footer-form.php:20
-msgctxt "Block pattern title."
-msgid "Site footer: With subscription form example"
-msgstr ""
-
-#: templates/parts/block/pattern-footer.php:20
-msgctxt "Block pattern title."
-msgid "Site footer: With logo, links, description and social links"
-msgstr ""
-
-#: templates/parts/block/pattern-gallery-captions.php:21
-msgctxt "Block pattern title."
-msgid "Gallery: With captions"
-msgstr ""
-
-#: templates/parts/block/pattern-gallery-no-gap.php:20
-msgctxt "Block pattern title."
-msgid "Gallery: Full-width with no gaps"
-msgstr ""
-
-#: templates/parts/block/pattern-gallery-variable-with-description.php:21
-msgctxt "Block pattern title."
-msgid "Gallery: Variable, with description"
-msgstr ""
-
-#: templates/parts/block/pattern-heading-hidden-accessibly.php:20
-msgctxt "Block pattern title."
-msgid "Heading: Accessibly hidden"
-msgstr ""
-
-#: templates/parts/block/pattern-heading-hidden-accessibly.php:22
-#: templates/parts/block/pattern-intro-2-columns-text.php:22
-#: templates/parts/block/pattern-intro-2-images.php:22
-#: templates/parts/block/pattern-intro-bg-image.php:22
-#: templates/parts/block/pattern-intro-bg-links.php:22
-#: templates/parts/block/pattern-intro-bg-text-left.php:22
-#: templates/parts/block/pattern-intro-centered-background.php:22
-#: templates/parts/block/pattern-intro-color-image-large.php:22
-#: templates/parts/block/pattern-intro-color-image.php:22
-#: templates/parts/block/pattern-intro-fullscreen-bottom-text.php:22
-#: templates/parts/block/pattern-intro-images.php:22
-#: templates/parts/block/pattern-intro-overflow.php:22
-#: templates/parts/block/pattern-intro-overlap.php:22
-#: templates/parts/block/pattern-intro-with-description.php:22
+#: templates/parts/block/pattern/cover/2-images.php:22
+#: templates/parts/block/pattern/cover/bg-image.php:22
+#: templates/parts/block/pattern/cover/bg-links.php:22
+#: templates/parts/block/pattern/cover/bg-text-left.php:22
+#: templates/parts/block/pattern/cover/centered-background.php:22
+#: templates/parts/block/pattern/cover/color-image-large.php:22
+#: templates/parts/block/pattern/cover/color-image.php:22
+#: templates/parts/block/pattern/cover/fullscreen-bottom-text.php:22
+#: templates/parts/block/pattern/cover/images.php:22
+#: templates/parts/block/pattern/cover/overflow.php:22
+#: templates/parts/block/pattern/cover/overlap.php:22
+#: templates/parts/block/pattern/header/hidden-accessibly.php:22
+#: templates/parts/block/pattern/text/2-columns-text.php:21
+#: templates/parts/block/pattern/text/heading-columns.php:22
+#: templates/parts/block/pattern/text/large-lead.php:22
+#: templates/parts/block/pattern/text/with-description.php:22
+msgctxt "keyword"
 msgid "title"
 msgstr ""
 
-#: templates/parts/block/pattern-image-padding-left.php:20
-msgctxt "Block pattern title."
-msgid "Image: Fullwidth with left padding"
-msgstr ""
-
-#: templates/parts/block/pattern-image-padding-right.php:20
-msgctxt "Block pattern title."
-msgid "Image: Fullwidth with right padding"
-msgstr ""
-
-#: templates/parts/block/pattern-image-parallax.php:20
-msgctxt "Block pattern title."
-msgid "Image: Parallax background"
-msgstr ""
-
-#: templates/parts/block/pattern-intro-2-columns-text.php:20
-msgctxt "Block pattern title."
-msgid "Intro: Centered heading with 2 columns text"
-msgstr ""
-
-#: templates/parts/block/pattern-intro-2-columns-text.php:22
-#: templates/parts/block/pattern-intro-2-images.php:22
-#: templates/parts/block/pattern-intro-bg-image.php:22
-#: templates/parts/block/pattern-intro-bg-links.php:22
-#: templates/parts/block/pattern-intro-bg-text-left.php:22
-#: templates/parts/block/pattern-intro-centered-background.php:22
-#: templates/parts/block/pattern-intro-color-image-large.php:22
-#: templates/parts/block/pattern-intro-color-image.php:22
-#: templates/parts/block/pattern-intro-fullscreen-bottom-text.php:22
-#: templates/parts/block/pattern-intro-images.php:22
-#: templates/parts/block/pattern-intro-overflow.php:22
-#: templates/parts/block/pattern-intro-overlap.php:22
-#: templates/parts/block/pattern-intro-with-description.php:22
+#: templates/parts/block/pattern/cover/2-images.php:23
+#: templates/parts/block/pattern/cover/bg-image.php:23
+#: templates/parts/block/pattern/cover/bg-links.php:23
+#: templates/parts/block/pattern/cover/bg-text-left.php:23
+#: templates/parts/block/pattern/cover/centered-background.php:23
+#: templates/parts/block/pattern/cover/color-image-large.php:23
+#: templates/parts/block/pattern/cover/color-image.php:23
+#: templates/parts/block/pattern/cover/fullscreen-bottom-text.php:23
+#: templates/parts/block/pattern/cover/images.php:23
+#: templates/parts/block/pattern/cover/overflow.php:23
+#: templates/parts/block/pattern/cover/overlap.php:23
+#: templates/parts/block/pattern/header/hidden-accessibly.php:23
+#: templates/parts/block/pattern/text/heading-columns.php:23
+#: templates/parts/block/pattern/text/large-lead.php:23
+#: templates/parts/block/pattern/text/with-description.php:23
+msgctxt "keyword"
 msgid "heading"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-2-images.php:20
+#: templates/parts/block/pattern/cover/bg-image.php:19
 msgctxt "Block pattern title."
-msgid "Intro: With 2 images and description"
+msgid "With image and background image"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-2-images.php:22
-#: templates/parts/block/pattern-team-2.php:23
-#: templates/parts/block/pattern-team.php:22
-msgid "gallery"
-msgstr ""
-
-#: templates/parts/block/pattern-intro-bg-image.php:20
+#: templates/parts/block/pattern/cover/bg-links.php:19
 msgctxt "Block pattern title."
-msgid "Intro: With image and background image"
+msgid "With page links and background"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-bg-links.php:20
+#: templates/parts/block/pattern/cover/bg-text-left.php:19
 msgctxt "Block pattern title."
-msgid "Intro: With page links and background"
+msgid "With background and text on the left"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-bg-text-left.php:20
+#: templates/parts/block/pattern/cover/centered-background.php:19
 msgctxt "Block pattern title."
-msgid "Intro: With background and text on the left"
+msgid "Centered with background"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-centered-background.php:20
+#: templates/parts/block/pattern/cover/color-image-large.php:19
 msgctxt "Block pattern title."
-msgid "Intro: Centered with background"
+msgid "Colored, with large image"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-color-image-large.php:20
+#: templates/parts/block/pattern/cover/color-image.php:19
 msgctxt "Block pattern title."
-msgid "Intro: Colored, with large image"
+msgid "Colored, with image"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-color-image.php:20
+#: templates/parts/block/pattern/cover/fullscreen-bottom-text.php:19
 msgctxt "Block pattern title."
-msgid "Intro: Colored, with image"
+msgid "Full-screen with bottom text"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-fullscreen-bottom-text.php:20
+#: templates/parts/block/pattern/cover/images.php:19
 msgctxt "Block pattern title."
-msgid "Intro: Full-screen with bottom text"
+msgid "With 3 images"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-images.php:20
+#: templates/parts/block/pattern/cover/overflow.php:19
 msgctxt "Block pattern title."
-msgid "Intro: With 3 images"
+msgid "Overflown heading"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-overflow.php:20
+#: templates/parts/block/pattern/cover/overlap.php:19
 msgctxt "Block pattern title."
-msgid "Intro: Overflown heading"
+msgid "Overlapped"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-overlap.php:20
+#: templates/parts/block/pattern/cta/bg.php:19
 msgctxt "Block pattern title."
-msgid "Intro: Overlapped"
+msgid "With background"
 msgstr ""
 
-#: templates/parts/block/pattern-intro-with-description.php:20
+#: templates/parts/block/pattern/cta/bg.php:21
+#: templates/parts/block/pattern/cta/box.php:21
+#: templates/parts/block/pattern/cta/centered.php:21
+#: templates/parts/block/pattern/cta/cta.php:21
+#: templates/parts/block/pattern/cta/large.php:21
+#: templates/parts/block/pattern/cta/quote.php:21
+#: templates/parts/block/pattern/cta/simple.php:21
+#: templates/parts/block/pattern/list/features-bg-image.php:23
+#: templates/parts/block/pattern/list/features-bg-shadow.php:23
+#: templates/parts/block/pattern/list/features-parallax.php:23
+#: templates/parts/block/pattern/list/features-simple.php:23
+#: templates/parts/block/pattern/post/project-gallery.php:25
+msgctxt "keyword"
+msgid "button"
+msgstr ""
+
+#: templates/parts/block/pattern/cta/bg.php:22
+#: templates/parts/block/pattern/cta/box.php:22
+#: templates/parts/block/pattern/cta/centered.php:22
+#: templates/parts/block/pattern/cta/cta.php:22
+#: templates/parts/block/pattern/cta/large.php:22
+#: templates/parts/block/pattern/cta/quote.php:22
+#: templates/parts/block/pattern/cta/simple.php:22
+#: templates/parts/block/pattern/list/features-bg-image.php:24
+#: templates/parts/block/pattern/list/features-bg-shadow.php:24
+#: templates/parts/block/pattern/list/features-parallax.php:24
+#: templates/parts/block/pattern/list/features-simple.php:24
+#: templates/parts/block/pattern/post/project-gallery.php:24
+msgctxt "keyword"
+msgid "call to action"
+msgstr ""
+
+#: templates/parts/block/pattern/cta/bg.php:23
+#: templates/parts/block/pattern/cta/box.php:23
+#: templates/parts/block/pattern/cta/centered.php:23
+#: templates/parts/block/pattern/cta/cta.php:23
+#: templates/parts/block/pattern/cta/large.php:23
+#: templates/parts/block/pattern/cta/quote.php:23
+#: templates/parts/block/pattern/cta/simple.php:23
+msgctxt "keyword"
+msgid "cta"
+msgstr ""
+
+#: templates/parts/block/pattern/cta/box.php:19
 msgctxt "Block pattern title."
-msgid "Intro: Simple, with description"
+msgid "Boxed"
 msgstr ""
 
-#: templates/parts/block/pattern-logos.php:20
+#: templates/parts/block/pattern/cta/centered.php:19
 msgctxt "Block pattern title."
-msgid "Logos"
+msgid "Centered"
 msgstr ""
 
-#: templates/parts/block/pattern-portfolio-project-gallery.php:20
+#: templates/parts/block/pattern/cta/cta.php:19
 msgctxt "Block pattern title."
-msgid "Portfolio: Project with gallery"
+msgid "Fullwidth with 2 buttons"
 msgstr ""
 
-#: templates/parts/block/pattern-portfolio-project-image.php:20
+#: templates/parts/block/pattern/cta/large.php:19
 msgctxt "Block pattern title."
-msgid "Portfolio: Project with image"
+msgid "Large with image"
 msgstr ""
 
-#: templates/parts/block/pattern-question-answer.php:20
+#: templates/parts/block/pattern/cta/simple.php:19
+msgctxt "Block pattern title."
+msgid "Simple"
+msgstr ""
+
+#: templates/parts/block/pattern/faq/question-answer.php:19
 msgctxt "Block pattern title."
 msgid "Question and answer"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:21
+#: templates/parts/block/pattern/faq/question-answer.php:21
+msgctxt "keyword"
+msgid "FAQ - frequently asked questions"
+msgstr ""
+
+#: templates/parts/block/pattern/gallery/gallery-captions.php:19
 msgctxt "Block pattern title."
-msgid "Team: 2 large descriptions"
+msgid "With captions"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:23
-#: templates/parts/block/pattern-team.php:22
-msgid "staff"
+#: templates/parts/block/pattern/gallery/gallery-captions.php:21
+#: templates/parts/block/pattern/gallery/gallery-no-gap.php:21
+#: templates/parts/block/pattern/gallery/gallery-variable-with-description.php:21
+#: templates/parts/block/pattern/gallery/image-padding-left.php:21
+#: templates/parts/block/pattern/gallery/image-padding-right.php:21
+#: templates/parts/block/pattern/gallery/image-parallax.php:21
+#: templates/parts/block/pattern/gallery/logos.php:21
+#: templates/parts/block/pattern/post/project-gallery.php:23
+#: templates/parts/block/pattern/team/team-2.php:24
+#: templates/parts/block/pattern/team/team.php:24
+msgctxt "keyword"
+msgid "gallery"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:23
-#: templates/parts/block/pattern-team.php:22
-msgid "employees"
+#: templates/parts/block/pattern/gallery/gallery-captions.php:22
+#: templates/parts/block/pattern/gallery/gallery-no-gap.php:22
+#: templates/parts/block/pattern/gallery/gallery-variable-with-description.php:22
+#: templates/parts/block/pattern/gallery/image-padding-left.php:22
+#: templates/parts/block/pattern/gallery/image-padding-right.php:22
+#: templates/parts/block/pattern/gallery/image-parallax.php:22
+#: templates/parts/block/pattern/gallery/logos.php:22
+msgctxt "keyword"
+msgid "images"
 msgstr ""
 
-#: templates/parts/block/pattern-team-2.php:23
-#: templates/parts/block/pattern-team.php:22
-msgid "people"
-msgstr ""
-
-#: templates/parts/block/pattern-team-2.php:23
-#: templates/parts/block/pattern-team.php:22
-#: templates/parts/block/pattern-testimonials-single-bg.php:23
-msgid "photo"
-msgstr ""
-
-#: templates/parts/block/pattern-team.php:20
+#: templates/parts/block/pattern/gallery/gallery-no-gap.php:19
 msgctxt "Block pattern title."
-msgid "Team: 4 members"
+msgid "Full-width with no gaps"
 msgstr ""
 
-#: templates/parts/block/pattern-testimonials-single-bg.php:21
+#: templates/parts/block/pattern/gallery/gallery-variable-with-description.php:19
 msgctxt "Block pattern title."
-msgid "Testimonial: With background image"
+msgid "Variable, with description"
 msgstr ""
 
-#: templates/parts/block/pattern-testimonials-single-bg.php:23
-#: templates/parts/block/pattern-testimonials-single.php:22
-#: templates/parts/block/pattern-testimonials.php:22
-msgid "quote"
-msgstr ""
-
-#: templates/parts/block/pattern-testimonials-single.php:20
+#: templates/parts/block/pattern/gallery/image-padding-left.php:19
 msgctxt "Block pattern title."
-msgid "Testimonial"
+msgid "Fullwidth image with left padding"
 msgstr ""
 
-#: templates/parts/block/pattern-testimonials.php:20
+#: templates/parts/block/pattern/gallery/image-padding-right.php:19
 msgctxt "Block pattern title."
-msgid "Testimonials"
+msgid "Fullwidth image with right padding"
 msgstr ""
 
-#: templates/parts/block/pattern-text-2-columns-wider-heading.php:20
+#: templates/parts/block/pattern/gallery/image-parallax.php:19
 msgctxt "Block pattern title."
-msgid "Text in 2 columns with wider heading"
+msgid "Parallax background"
 msgstr ""
 
-#: templates/parts/block/pattern-text-extra-hierarchy.php:20
+#: templates/parts/block/pattern/gallery/logos.php:19
 msgctxt "Block pattern title."
-msgid "Text with extra hierarchy"
+msgid "Logos"
 msgstr ""
 
-#: templates/parts/block/pattern-text-heading-columns.php:20
+#: templates/parts/block/pattern/gallery/logos.php:23
+msgctxt "keyword"
+msgid "clients"
+msgstr ""
+
+#: templates/parts/block/pattern/gallery/logos.php:24
+msgctxt "keyword"
+msgid "partners"
+msgstr ""
+
+#: templates/parts/block/pattern/header/hidden-accessibly.php:19
 msgctxt "Block pattern title."
-msgid "Text with heading in columns"
+msgid "Heading: Accessibly hidden"
 msgstr ""
 
-#: templates/parts/block/pattern-text-large-lead.php:20
+#: templates/parts/block/pattern/header/hidden-accessibly.php:24
+msgctxt "keyword"
+msgid "a11y"
+msgstr ""
+
+#: templates/parts/block/pattern/header/hidden-accessibly.php:25
+msgctxt "keyword"
+msgid "barrierless"
+msgstr ""
+
+#: templates/parts/block/pattern/header/hidden-accessibly.php:26
+msgctxt "keyword"
+msgid "screen reader"
+msgstr ""
+
+#: templates/parts/block/pattern/header/hidden-accessibly.php:38
+msgid "Visually hidden, but kept accessible for screen readers"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-bg-image.php:19
 msgctxt "Block pattern title."
-msgid "Text with large subheading"
+msgid "Features with background and image"
 msgstr ""
 
-#: templates/parts/block/pattern-text-parallax.php:20
+#: templates/parts/block/pattern/list/features-bg-image.php:21
+#: templates/parts/block/pattern/list/features-bg-shadow.php:21
+#: templates/parts/block/pattern/list/features-center-icon.php:21
+#: templates/parts/block/pattern/list/features-fullwidth-bg.php:21
+#: templates/parts/block/pattern/list/features-large-image.php:21
+#: templates/parts/block/pattern/list/features-parallax.php:21
+#: templates/parts/block/pattern/list/features-shadow.php:21
+#: templates/parts/block/pattern/list/features-simple.php:21
+#: templates/parts/block/pattern/list/features-single-large.php:21
+#: templates/parts/block/pattern/price/columns-with-icons.php:22
+#: templates/parts/block/pattern/price/with-contact.php:22
+msgctxt "keyword"
+msgid "services"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-bg-image.php:22
+#: templates/parts/block/pattern/list/features-bg-shadow.php:22
+#: templates/parts/block/pattern/list/features-center-icon.php:22
+#: templates/parts/block/pattern/list/features-fullwidth-bg.php:22
+#: templates/parts/block/pattern/list/features-large-image.php:22
+#: templates/parts/block/pattern/list/features-parallax.php:22
+#: templates/parts/block/pattern/list/features-shadow.php:22
+#: templates/parts/block/pattern/list/features-simple.php:22
+#: templates/parts/block/pattern/media-text/parallax.php:22
+#: templates/parts/block/pattern/number/steps.php:21
+#: templates/parts/block/pattern/team/team-2.php:25
+#: templates/parts/block/pattern/team/team.php:25
+#: templates/parts/block/pattern/text/2-columns-text.php:22
+#: templates/parts/block/pattern/text/extra-hierarchy.php:21
+#: templates/parts/block/pattern/text/heading-columns.php:21
+#: templates/parts/block/pattern/text/large-lead.php:21
+msgctxt "keyword"
+msgid "columns"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-bg-shadow.php:19
+msgctxt "Block pattern title."
+msgid "Features with background image and drop shadow"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-center-icon.php:19
+msgctxt "Block pattern title."
+msgid "Center aligned features with icon"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-fullwidth-bg.php:19
+msgctxt "Block pattern title."
+msgid "Features with background image"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-large-image.php:19
+msgctxt "Block pattern title."
+msgid "Features with large image"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-parallax.php:19
+msgctxt "Block pattern title."
+msgid "Parallax features"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-shadow.php:19
+msgctxt "Block pattern title."
+msgid "Features with drop shadow"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-simple.php:19
+msgctxt "Block pattern title."
+msgid "Features"
+msgstr ""
+
+#: templates/parts/block/pattern/list/features-single-large.php:19
+msgctxt "Block pattern title."
+msgid "A large feature"
+msgstr ""
+
+#: templates/parts/block/pattern/media-text/parallax.php:19
 msgctxt "Block pattern title."
 msgid "Text with parallax background"
 msgstr ""
 
-#: templates/parts/block/pattern-text-with-image.php:20
+#: templates/parts/block/pattern/media-text/parallax.php:21
+#: templates/parts/block/pattern/media-text/with-image.php:21
+#: templates/parts/block/pattern/post/project-image.php:23
+msgctxt "keyword"
+msgid "image"
+msgstr ""
+
+#: templates/parts/block/pattern/media-text/with-image.php:19
 msgctxt "Block pattern title."
 msgid "Text with image"
+msgstr ""
+
+#: templates/parts/block/pattern/number/steps.php:19
+msgctxt "Block pattern title."
+msgid "Steps"
+msgstr ""
+
+#: templates/parts/block/pattern/post/blog.php:19
+msgctxt "Block pattern title."
+msgid "Blog"
+msgstr ""
+
+#: templates/parts/block/pattern/post/blog.php:21
+msgctxt "keyword"
+msgid "articles"
+msgstr ""
+
+#: templates/parts/block/pattern/post/blog.php:22
+#: templates/parts/block/pattern/post/project-gallery.php:21
+#: templates/parts/block/pattern/post/project-image.php:21
+msgctxt "keyword"
+msgid "posts"
+msgstr ""
+
+#: templates/parts/block/pattern/post/project-gallery.php:19
+msgctxt "Block pattern title."
+msgid "Project with gallery"
+msgstr ""
+
+#: templates/parts/block/pattern/post/project-gallery.php:22
+#: templates/parts/block/pattern/post/project-image.php:22
+msgctxt "keyword"
+msgid "portfolio"
+msgstr ""
+
+#: templates/parts/block/pattern/post/project-image.php:19
+msgctxt "Block pattern title."
+msgid "Project with image"
+msgstr ""
+
+#: templates/parts/block/pattern/price/cards.php:19
+msgctxt "Block pattern title."
+msgid "Cards"
+msgstr ""
+
+#: templates/parts/block/pattern/price/cards.php:21
+#: templates/parts/block/pattern/price/columns-with-icons.php:21
+#: templates/parts/block/pattern/price/food-menu.php:21
+#: templates/parts/block/pattern/price/with-contact.php:21
+msgctxt "keyword"
+msgid "price"
+msgstr ""
+
+#: templates/parts/block/pattern/price/cards.php:22
+msgctxt "keyword"
+msgid "food menu"
+msgstr ""
+
+#: templates/parts/block/pattern/price/columns-with-icons.php:19
+msgctxt "Block pattern title."
+msgid "Pricing columns with with icons"
+msgstr ""
+
+#: templates/parts/block/pattern/price/food-menu.php:19
+msgctxt "Block pattern title."
+msgid "Food menu"
+msgstr ""
+
+#: templates/parts/block/pattern/price/with-contact.php:19
+msgctxt "Block pattern title."
+msgid "A large feature with contact"
+msgstr ""
+
+#: templates/parts/block/pattern/quote/testimonial-bg.php:19
+msgctxt "Block pattern title."
+msgid "Testimonial: With background image"
+msgstr ""
+
+#: templates/parts/block/pattern/quote/testimonial-bg.php:23
+msgctxt "keyword"
+msgid "photo"
+msgstr ""
+
+#: templates/parts/block/pattern/quote/testimonial.php:19
+msgctxt "Block pattern title."
+msgid "Testimonial"
+msgstr ""
+
+#: templates/parts/block/pattern/quote/testimonials.php:19
+msgctxt "Block pattern title."
+msgid "Testimonials"
+msgstr ""
+
+#: templates/parts/block/pattern/site/footer-form.php:19
+msgctxt "Block pattern title."
+msgid "Site footer with subscription form"
+msgstr ""
+
+#: templates/parts/block/pattern/site/footer-form.php:21
+#: templates/parts/block/pattern/site/footer.php:21
+msgctxt "keyword"
+msgid "site"
+msgstr ""
+
+#: templates/parts/block/pattern/site/footer.php:19
+msgctxt "Block pattern title."
+msgid "Site footer with logo, links, description and social links"
+msgstr ""
+
+#: templates/parts/block/pattern/site/footer.php:22
+msgctxt "keyword"
+msgid "links"
+msgstr ""
+
+#: templates/parts/block/pattern/site/footer.php:23
+msgctxt "keyword"
+msgid "social links"
+msgstr ""
+
+#: templates/parts/block/pattern/team/team-2.php:19
+msgctxt "Block pattern title."
+msgid "2 large descriptions"
+msgstr ""
+
+#: templates/parts/block/pattern/team/team-2.php:21
+#: templates/parts/block/pattern/team/team.php:21
+msgctxt "keyword"
+msgid "staff"
+msgstr ""
+
+#: templates/parts/block/pattern/team/team-2.php:22
+#: templates/parts/block/pattern/team/team.php:22
+msgctxt "keyword"
+msgid "employees"
+msgstr ""
+
+#: templates/parts/block/pattern/team/team-2.php:23
+#: templates/parts/block/pattern/team/team.php:23
+msgctxt "keyword"
+msgid "people"
+msgstr ""
+
+#: templates/parts/block/pattern/team/team.php:19
+msgctxt "Block pattern title."
+msgid "4 members"
+msgstr ""
+
+#: templates/parts/block/pattern/text/2-columns-text.php:19
+msgctxt "Block pattern title."
+msgid "Centered main heading with 2 columns text"
+msgstr ""
+
+#: templates/parts/block/pattern/text/2-columns-wider-heading.php:19
+msgctxt "Block pattern title."
+msgid "Text in 2 columns with wider heading"
+msgstr ""
+
+#: templates/parts/block/pattern/text/extra-hierarchy.php:19
+msgctxt "Block pattern title."
+msgid "Text with extra hierarchy"
+msgstr ""
+
+#: templates/parts/block/pattern/text/heading-columns.php:19
+msgctxt "Block pattern title."
+msgid "Text with heading in columns"
+msgstr ""
+
+#: templates/parts/block/pattern/text/large-lead.php:19
+msgctxt "Block pattern title."
+msgid "Text with large subheading"
+msgstr ""
+
+#: templates/parts/block/pattern/text/with-description.php:19
+msgctxt "Block pattern title."
+msgid "Main title with description on side"
 msgstr ""
 
 #. translators: %s: Name of current post
@@ -1859,25 +2210,25 @@ msgstr[1] ""
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: templates/parts/content/content-attachment-image.php:31
+#: templates/parts/content/content-attachment-image.php:32
 msgctxt "Attachment page image info table caption."
 msgid "Image info"
 msgstr ""
 
-#: templates/parts/content/content-attachment-image.php:36
+#: templates/parts/content/content-attachment-image.php:37
 msgctxt "Attachment page publish time."
 msgid "Image published on:"
 msgstr ""
 
-#: templates/parts/content/content-attachment-image.php:50
+#: templates/parts/content/content-attachment-image.php:51
 msgid "Image size:"
 msgstr ""
 
-#: templates/parts/content/content-attachment-image.php:61
+#: templates/parts/content/content-attachment-image.php:62
 msgid "Image file name:"
 msgstr ""
 
-#: templates/parts/content/content-attachment.php:27
+#: templates/parts/content/content-attachment.php:28
 msgid "Download attachment file:"
 msgstr ""
 
@@ -1963,6 +2314,12 @@ msgctxt "Post meta info description: update date."
 msgid "Last updated on:"
 msgstr ""
 
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: templates/parts/meta/entry-meta-item-edit.php:22
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
 #. translators: Used between list items, there is a space after the comma.
 #: templates/parts/meta/entry-meta-item-tags.php:18
 msgctxt "Tags list separator."
@@ -1974,75 +2331,75 @@ msgctxt "Post meta info description: tags list."
 msgid "Tagged as:"
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:18
+#: templates/parts/plugin/content-ocdi-info.php:19
 msgid "Manual import procedure"
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:21
+#: templates/parts/plugin/content-ocdi-info.php:22
 msgid ""
 "By importing this demo content you get the exact copy of the theme demo "
 "website."
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:22
+#: templates/parts/plugin/content-ocdi-info.php:23
 msgid "Preview the theme demo website &raquo;"
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:25
+#: templates/parts/plugin/content-ocdi-info.php:26
 msgid ""
 "For instructions on importing theme demo content please visit GitHub "
 "repository."
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:26
+#: templates/parts/plugin/content-ocdi-info.php:27
 msgid "GitHub repository instructions &raquo;"
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:32
+#: templates/parts/plugin/content-ocdi-info.php:33
 msgid "Media files quality"
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:35
+#: templates/parts/plugin/content-ocdi-info.php:36
 msgid ""
 "Please note that imported media files (such as images, video and audio "
 "files) are of low quality to prevent copyright infringement."
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:36
+#: templates/parts/plugin/content-ocdi-info.php:37
 msgid ""
 "Please read \"Credits\" section of theme documentation for reference where "
 "the demo media files were obtained from."
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:39
+#: templates/parts/plugin/content-ocdi-info.php:40
 msgid "Get media for your website &raquo;"
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:45
+#: templates/parts/plugin/content-ocdi-info.php:46
 msgid "Install demo required plugins!"
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:48
+#: templates/parts/plugin/content-ocdi-info.php:49
 msgid ""
 "Please read the information about the theme demo required plugins first."
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:49
+#: templates/parts/plugin/content-ocdi-info.php:50
 msgid ""
 "If you do not install and activate the demo required plugins, some of the "
 "content will not be imported."
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:51
+#: templates/parts/plugin/content-ocdi-info.php:52
 msgid ""
 "Read the information before you run the theme demo content import process."
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:52
+#: templates/parts/plugin/content-ocdi-info.php:53
 msgid "View the list of required plugins &raquo;"
 msgstr ""
 
-#: templates/parts/plugin/content-ocdi-info.php:57
+#: templates/parts/plugin/content-ocdi-info.php:58
 msgid ""
 "(Note that this set of plugins may differ from plugins recommended under "
 "Appearance &rarr; Install Plugins!)"
