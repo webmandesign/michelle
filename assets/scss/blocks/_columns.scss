@@ -30,7 +30,7 @@
 		&.is-style-no-gaps {
 			padding: 0;
 
-			.wp-block-column.wp-block-column {
+			> .wp-block-column.wp-block-column {
 				margin: 0;
 			}
 
