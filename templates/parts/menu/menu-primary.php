@@ -12,7 +12,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle;
@@ -27,7 +27,6 @@ $is_mobile_nav_enabled = Customize\Mod::get( 'navigation_mobile' );
 <nav
 	id="site-navigation"
 	class="main-navigation"
-	role="navigation"
 	aria-label="<?php echo esc_attr_x( 'Main menu', 'Navigational menu.', 'michelle' ); ?>"
 >
 

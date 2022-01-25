@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle;
@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-<nav class="menu-skip-links" role="navigation" aria-label="<?php esc_attr_e( 'Skip links', 'michelle' ); ?>">
+<nav class="menu-skip-links" aria-label="<?php esc_attr_e( 'Skip links', 'michelle' ); ?>">
 	<ul>
 		<?php
 

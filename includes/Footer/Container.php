@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Footer;
@@ -40,7 +41,8 @@ class Container implements Component_Interface {
 	/**
 	 * Footer outer container.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -49,7 +51,7 @@ class Container implements Component_Interface {
 		// Output
 
 			if ( doing_action( 'tha_footer_top' ) ) {
-				echo PHP_EOL.PHP_EOL . '<footer id="colophon" class="site-footer" role="contentinfo">' . PHP_EOL;
+				echo PHP_EOL.PHP_EOL . '<footer id="colophon" class="site-footer">' . PHP_EOL;
 			} elseif ( doing_action( 'tha_footer_bottom' ) ) {
 				echo PHP_EOL . '</footer><!-- /#colophon.site-footer -->' . PHP_EOL.PHP_EOL;
 			}

@@ -11,7 +11,10 @@
 	.wp-block-cover__inner-container {
 		@extend %block_inner_container;
 		@extend %clearfix;
-		color: inherit;
+
+		&.wp-block-cover__inner-container {
+			color: inherit;
+		}
 
 		> .alignwide-wrap {
 			padding-left: 0;

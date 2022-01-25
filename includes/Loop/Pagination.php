@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Loop;
@@ -69,7 +69,7 @@ class Pagination implements Component_Interface {
 	 * Pagination.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.12
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -123,7 +123,7 @@ class Pagination implements Component_Interface {
 				$current = absint( max( get_query_var( 'paged' ), 1 ) );
 
 				$pagination =
-					'<nav class="pagination" role="navigation" aria-label="' . esc_attr__( 'Posts navigation', 'michelle' ) . '" data-current="' . esc_attr( $current ) . '" data-total="' . esc_attr( $total ) . '">'
+					'<nav class="pagination" aria-label="' . esc_attr__( 'Posts navigation', 'michelle' ) . '" data-current="' . esc_attr( $current ) . '" data-total="' . esc_attr( $total ) . '">'
 					. $pagination
 					. '</nav>';
 			}

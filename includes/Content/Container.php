@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -81,7 +82,8 @@ class Container implements Component_Interface {
 	/**
 	 * Content main.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.0
 	 *
 	 * @return  void
 	 */
@@ -90,7 +92,7 @@ class Container implements Component_Interface {
 		// Output
 
 			if ( doing_action( 'tha_content_top' ) ) {
-				echo PHP_EOL . "\t\t" . '<main id="main" class="site-main" role="main">' . PHP_EOL.PHP_EOL;
+				echo PHP_EOL . "\t\t" . '<main id="main" class="site-main">' . PHP_EOL.PHP_EOL;
 			} elseif ( doing_action( 'tha_content_bottom' ) ) {
 				echo PHP_EOL.PHP_EOL . "\t\t" . '</main><!-- /#main.site-main -->';
 			}
