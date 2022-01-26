@@ -14,8 +14,13 @@
 	margin-bottom: $ratio +em;
 }
 
-.wp-block-column > .wp-block {
-	max-width: none !important;
+.wp-block-column {
+	max-width: none;
+
+	> .wp-block {
+		max-width: none !important;
+	}
+
 }
 
 #{ $selector_editor_wrapper } .wp-block-columns.is-style-no-gaps > .wp-block-column.wp-block-column {

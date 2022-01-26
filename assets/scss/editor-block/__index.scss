@@ -1,6 +1,6 @@
 /* FILE: editor-block/__index.scss */
 
-$selector_editor_wrapper: 'div.editor-styles-wrapper';
+$selector_editor_wrapper: '.editor-styles-wrapper'; // Was `div.editor-styles-wrapper` - if any issue arises, specificity may be adapted.
 
 $selectors_margin_bottom: (
 	'p',
@@ -39,7 +39,7 @@ $important_contexts: append( $important_contexts, 'modifier_line_height' );
 	@import '../global/form/button';
 	@import '../global/modifiers/_index';
 
-	@import '../blocks/_index';
+	@import '../blocks/_index'; // Already contains extenders.
 }
 
-@import 'blocks/_index'; // Already contains extenders.
+@import 'blocks/_index';

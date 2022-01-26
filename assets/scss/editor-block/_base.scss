@@ -3,10 +3,12 @@
 .editor-styles-wrapper {
 	// Not using `$selector_editor_wrapper` here because
 	// specificity should be as low as possible!
+	box-sizing: border-box; // WP 5.9 fix for block pattern preview.
 
 	*,
 	*::after,
 	*::before {
+		box-sizing: inherit; // WP 5.9 fix for block pattern preview.
 		border-color: inherit;
 	}
 
@@ -18,7 +20,7 @@
 
 	// Colors.
 
-		body & {
+		html & {
 			background-color: var(--color_body_background);
 			color: var(--color_body_text);
 			border-color: var(--color_body_border);

@@ -126,3 +126,8 @@
 	}
 
 }
+
+// WP 5.9 fix for incorrect height in block pattern preview.
+body.editor-styles-wrapper .is-style-media-on-top .editor-media-container__resizer {
+	height: auto !important;
+}

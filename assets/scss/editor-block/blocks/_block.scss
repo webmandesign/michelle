@@ -126,7 +126,8 @@
 
 // Block previews in patterns and styles.
 
-	.block-editor-block-preview__container.editor-styles-wrapper {
+	.block-editor-block-preview__container .editor-styles-wrapper,
+	body.editor-styles-wrapper {
 		background-image: none;
 	}
 
@@ -136,4 +137,17 @@
 
 	.block-editor-block-styles__item-preview [class*="-min-height"] {
 		min-height: 100px !important;
+	}
+
+	// WP 5.9 fix for continual height change in block pattern preview.
+	body.editor-styles-wrapper {
+
+		[style*="min-height: 100vh"] {
+			min-height: calc( 100 * var(--min-height-multiplier-vh, 9px) ) !important;
+		}
+
+		[style*="min-height: 62vh"] {
+			min-height: calc( 62 * var(--min-height-multiplier-vh, 9px) ) !important;
+		}
+
 	}

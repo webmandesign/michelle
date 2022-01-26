@@ -28,25 +28,37 @@
 
 	$important_modifiers: _important( 'modifier_screen_min_height' );
 
+	@at-root :root {
+		--min-height-multiplier-vh: 1vh;
+		--min-height-multiplier-vmih: 1vmin;
+		--min-height-multiplier-vmax: 1vmax;
+	}
+	// WP 5.9 fix for continual height change in block pattern preview.
+	@at-root body.editor-styles-wrapper {
+		--min-height-multiplier-vh:   9px;
+		--min-height-multiplier-vmih: var(--min-height-multiplier-vh);
+		--min-height-multiplier-vmax: var(--min-height-multiplier-vh);
+	}
+
 	@for $i from 2 through 20 {
 		$h : $i * 5;
 
 		.has-#{ $h }vh-min-height {
-			min-height: $h +vh $important_modifiers;
+			min-height: calc( #{ $h } * var(--min-height-multiplier-vh) ) $important_modifiers;
 		}
 			[class*="wp-block-"].has-#{ $h }vh-min-height {
 				@extend .has-#{ $h }vh-min-height;
 			}
 
 		.has-#{ $h }vmin-min-height {
-			min-height: $h +vmin $important_modifiers;
+			min-height: calc( #{ $h } * var(--min-height-multiplier-vmin) ) $important_modifiers;
 		}
 			[class*="wp-block-"].has-#{ $h }vmin-min-height {
 				@extend .has-#{ $h }vmin-min-height;
 			}
 
 		.has-#{ $h }vmax-min-height {
-			min-height: $h +vmax $important_modifiers;
+			min-height: calc( #{ $h } * var(--min-height-multiplier-vmax) ) $important_modifiers;
 		}
 			[class*="wp-block-"].has-#{ $h }vmax-min-height {
 				@extend .has-#{ $h }vmax-min-height;
@@ -55,7 +67,7 @@
 	}
 
 	.has-phi-vh-min-height {
-		min-height: ( $ratio_maj * 100vh ) $important_modifiers;
+		min-height: calc( #{ $ratio_maj * 100 } * var(--min-height-multiplier-vh) ) $important_modifiers;
 	}
 
 		[class*="wp-block-"].has-phi-vh-min-height,

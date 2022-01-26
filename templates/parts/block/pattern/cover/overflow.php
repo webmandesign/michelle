@@ -42,8 +42,8 @@ $image = Starter::get_image_url( '3to4' );
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer has-20vmax-min-height"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":40,"customOverlayColor":"#010101","minHeight":70,"minHeightUnit":"vh","contentPosition":"bottom center","align":"wide","className":"is-style-scale-image","style":{"spacing":{"padding":{"top":"150px","right":"0px","bottom":"150px","left":"0px"}}}} -->
-<div class="wp-block-cover alignwide has-background-dim-40 has-background-dim has-custom-content-position is-position-bottom-center is-style-scale-image" style="padding-top:150px;padding-right:0px;padding-bottom:150px;padding-left:0px;background-color:#010101;min-height:70vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":1,"align":"wide","className":"is-style-text-shadow-dark"} -->
+<!-- wp:cover {"url":"<?php echo esc_url_raw( $image ); ?>","id":999999,"dimRatio":40,"customOverlayColor":"#010101","minHeight":62,"minHeightUnit":"vh","contentPosition":"bottom center","align":"wide","className":"is-style-scale-image","style":{"spacing":{"padding":{"top":"150px","right":"0px","bottom":"150px","left":"0px"}}}} -->
+<div class="wp-block-cover alignwide has-background-dim-40 has-background-dim has-custom-content-position is-position-bottom-center is-style-scale-image" style="padding-top:150px;padding-right:0px;padding-bottom:150px;padding-left:0px;background-color:#010101;min-height:62vh"><img class="wp-block-cover__image-background wp-image-999999" alt="" src="<?php echo esc_url_raw( $image ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":1,"align":"wide","className":"is-style-text-shadow-dark"} -->
 <h1 class="alignwide has-text-align-center is-style-text-shadow-dark"><strong><?php Starter::the_text( 'title/l' ); ?></strong></h1>
 <!-- /wp:heading -->
 
