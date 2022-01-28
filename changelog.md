@@ -1,5 +1,105 @@
 # Michelle Changelog
 
+## 1.3.0, 20220128
+
+### Added
+- Option to disable sticky header on small screens
+
+### Updated
+- WordPress 5.9 compatibility
+- Optimizing and improving styles
+- Improving accessibility
+- Not removing any custom color in editor
+- Improved block patterns and styles
+- Removing obsolete code
+- Localization
+- Documentation
+- Demo content
+
+### Fixed
+- Style issues
+- AMP compatibility
+
+### File updates
+	header.php
+	readme.txt
+	style.css
+	assets/js/customize-controls.js
+	assets/js/editor-blocks.js
+	assets/js/modal-search.js
+	assets/js/navigation-mobile.js
+	assets/js/scroll.js
+	assets/scss/_custom-properties.scss
+	assets/scss/_extend.scss
+	assets/scss/blocks.scss
+	assets/scss/comments.scss
+	assets/scss/content.scss
+	assets/scss/customize-controls.scss
+	assets/scss/customize-preview.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/editor-style-classic.scss
+	assets/scss/global.scss
+	assets/scss/_tools/_function-encode-url.scss
+	assets/scss/_tools/_function-important.scss
+	assets/scss/_tools/_function-pow.scss
+	assets/scss/_tools/_function-round.scss
+	assets/scss/_tools/_function-str-replace.scss
+	assets/scss/_tools/_mixin-gallery-caption.scss
+	assets/scss/_tools/_mixin-media.scss
+	assets/scss/_tools/_mixin-screen-reader-hiding.scss
+	includes/Autoload.php
+	includes/Accessibility/Component.php
+	includes/Assets/Factory.php
+	includes/Assets/Scripts.php
+	includes/Assets/Styles.php
+	includes/Content/Block.php
+	includes/Content/Block_Area.php
+	includes/Content/Block_Patterns.php
+	includes/Content/Container.php
+	includes/Content/Starter.php
+	includes/Customize/Colors.php
+	includes/Customize/CSS_Variables.php
+	includes/Customize/Custom_Logo.php
+	includes/Customize/Mod.php
+	includes/Customize/Options.php
+	includes/Customize/Preview.php
+	includes/Entry/Media.php
+	includes/Entry/Page_Template.php
+	includes/Entry/Summary.php
+	includes/Footer/Component.php
+	includes/Footer/Container.php
+	includes/Header/Body_Class.php
+	includes/Header/Component.php
+	includes/Header/Container.php
+	includes/Loop/Featured_Posts.php
+	includes/Loop/Pagination.php
+	includes/Menu/Component.php
+	includes/Plugin/One_Click_Demo_Import/Component.php
+	includes/Setup/Editor.php
+	includes/Tool/AMP.php
+	includes/Tool/Google_Fonts.php
+	includes/Tool/KSES.php
+	includes/Tool/Page_Builder.php
+	includes/Tool/Wrapper.php
+	languages/*.*
+	templates/parts/accessibility/menu-skip-links.php
+	templates/parts/admin/content-starter-about.php
+	templates/parts/admin/content-starter-faq.php
+	templates/parts/admin/content-starter-home.php
+	templates/parts/admin/content-starter-services.php
+	templates/parts/admin/notice-welcome.php
+	templates/parts/block/*.*
+	templates/parts/content/content-attachment-image.php
+	templates/parts/content/content-attachment.php
+	templates/parts/content/content-full.php
+	templates/parts/content/content.php
+	templates/parts/loop/loop-featured-posts.php
+	templates/parts/menu/menu-primary.php
+	templates/parts/meta/entry-meta-item-edit.php
+	templates/parts/meta/entry-meta-top.php
+	templates/parts/plugin/content-ocdi-info.php
+
+
 ## 1.2.0, 20210609
 
 ### Added
