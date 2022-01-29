@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.1
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -32,7 +32,7 @@ class Styles implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.3.1
 	 *
 	 * @return  void
 	 */
@@ -54,7 +54,7 @@ class Styles implements Component_Interface {
 				add_action( 'tha_content_top',     __CLASS__ . '::print', 0 );
 				add_action( 'tha_comments_before', __CLASS__ . '::print', 0 );
 
-				// Temporary WP 5.9 fix:
+				// WP 5.9 fix:
 				add_action( 'init', __CLASS__ . '::wp_global_styles' );
 
 	} // /init
@@ -341,9 +341,10 @@ class Styles implements Component_Interface {
 	} // /preload
 
 	/**
-	 * Temporary WP 5.9 fix for global styles CSS code overrides.
+	 * WP 5.9 fix for global styles CSS code overrides.
 	 *
-	 * @since  1.3.0
+	 * @since    1.3.0
+	 * @version  1.3.1
 	 *
 	 * @return  void
 	 */
@@ -358,11 +359,13 @@ class Styles implements Component_Interface {
 
 		// Processing
 
-			/**
-			 * Enqueue WP global styles early
-			 * and lower CSS code specificity.
-			 */
+			// Dequeue original WP global styles.
+			remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+
+			//  Enqueue WP global styles early.
 			add_action( 'wp_enqueue_scripts', function() {
+
+				// Lower CSS code specificity.
 				$stylesheet = str_replace(
 					[ 'body', '!important', ' ;' ],
 					[ ':root', '', ';' ],
@@ -373,17 +376,10 @@ class Styles implements Component_Interface {
 					return;
 				}
 
-				wp_register_style( 'michelle-wp-global-styles', false );
-				wp_add_inline_style( 'michelle-wp-global-styles', $stylesheet );
-				wp_enqueue_style( 'michelle-wp-global-styles' );
+				wp_register_style( 'wp-global-styles', false );
+				wp_add_inline_style( 'wp-global-styles', $stylesheet );
+				wp_enqueue_style( 'wp-global-styles' );
 			}, 0 );
-
-			/**
-			 * Dequeue original WP global styles.
-			 */
-			add_action( 'wp_enqueue_scripts', function() {
-				wp_dequeue_style( 'global-styles' );
-			}, 100 );
 
 	} // /wp_global_styles
 

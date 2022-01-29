@@ -59,6 +59,7 @@
 				}
 
 				@include media( ( map_get( $breakpoint, 'l' ), 'max-width' ) ) {
+					flex-wrap: wrap;
 
 					input,
 					select,

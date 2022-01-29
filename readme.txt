@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.0 =
-Adding WordPress 5.9 compatibility, improving code, fixing issues.
+= 1.3.1 =
+Fixing mobile screen search form display and improving WP5.9 global styles fix code.
 
 
 == Copyright ==

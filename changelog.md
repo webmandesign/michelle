@@ -1,5 +1,21 @@
 # Michelle Changelog
 
+## 1.3.1, 20220129
+
+### Updated
+- Improving WP5.9 global styles fix code
+
+### Fixed
+- Mobile screen search form display
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/global.scss
+	includes/Assets/Styles.php
+
+
 ## 1.3.0, 20220128
 
 ### Added
