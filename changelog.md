@@ -1,5 +1,21 @@
 # Michelle Changelog
 
+## 1.3.2, 20220130
+
+### Updated
+- Improving WP5.9 compatibility
+- Code formatting
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+	includes/Assets/Styles.php
+	templates/parts/menu/menu-primary.php
+
+
 ## 1.3.1, 20220129
 
 ### Updated

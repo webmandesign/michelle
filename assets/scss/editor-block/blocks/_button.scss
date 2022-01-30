@@ -7,30 +7,4 @@
 
 .wp-block-buttons > .wp-block-button {
 	width: auto !important;
-	margin: .5em;
-	margin-#{$left}: 0;
-
-	&:last-child {
-		margin-#{$right}: 0;
-	}
-
-	&:only-child {
-		margin: 0;
-	}
-
-}
-
-.wp-block-buttons > .wp-block-button.wp-block-button__width-25 {
-	width: calc( 25% - .5em ) !important;
-}
-.wp-block-buttons > .wp-block-button.wp-block-button__width-50 {
-	width: calc( 50% - .5em ) !important;
-}
-.wp-block-buttons > .wp-block-button.wp-block-button__width-75 {
-	width: calc( 75% - .5em ) !important;
-}
-.wp-block-buttons > .wp-block-button.wp-block-button__width-100 {
-	width: 100% !important;
-	margin-left: 0;
-	margin-right: 0;
 }

@@ -38,10 +38,6 @@
 
 	}
 
-	&.wp-block-column:last-child {
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
-	}
-
 	&.wp-block-column:only-child {
 		// With single column we can control content width, so we need to center align the column!
 		margin-left: auto;
@@ -62,6 +58,18 @@
 		&.alignright,
 		&.is-style-alignright {
 			margin-right: 0;
+		}
+
+	}
+
+	&.wp-block-column {
+
+		&.wp-block-column:last-child {
+			margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
+		}
+
+		&.is-style-no-margin-vertical:last-child {
+			margin-bottom: 0;
 		}
 
 	}

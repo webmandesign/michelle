@@ -8,6 +8,14 @@
 		color: #fff;
 	}
 
+	&[class*="-gradient-background"] {
+		background-size: cover;
+	}
+
+	.has-background-dim[class*="-gradient-background"] {
+		background-color: transparent;
+	}
+
 	.wp-block-cover__inner-container {
 		@extend %block_inner_container;
 		@extend %clearfix;

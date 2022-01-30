@@ -4,21 +4,7 @@
 
 	&s {
 		align-items: center;
-
-		.wp-block-button {
-			margin: calc( var(--typography_font_size_base) / 2 );
-			margin-#{$left}: 0;
-
-			&:last-child {
-				margin-#{$right}: 0;
-			}
-
-			&:only-child {
-				margin: 0;
-			}
-
-		}
-
+		gap: .5em;
 	}
 
 	&__link {

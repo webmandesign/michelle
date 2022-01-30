@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.1 =
-Fixing mobile screen search form display and improving WP5.9 global styles fix code.
+= 1.3.2 =
+Improving WP5.9 compatibility.
 
 
 == Copyright ==
