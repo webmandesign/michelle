@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.3
  */
 
 namespace WebManDesign\Michelle\Entry;
@@ -114,7 +114,8 @@ class Media implements Component_Interface {
 	/**
 	 * Featured image.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.3
 	 *
 	 * @param  string $image_size
 	 *
@@ -169,17 +170,18 @@ class Media implements Component_Interface {
 				/**
 				 * Filters featured image link URL.
 				 *
-				 * @since  1.0.0
+				 * @since    1.0.0
+				 * @version  1.3.3
 				 *
 				 * @param  string   $link_url  Image link URL.
 				 * @param  int/null $post_id   Post ID.
 				 * @param  int/null $image_id  Thumbnail ID.
 				 */
-				$link_url = (string) apply_filters( 'michelle/entry/media/image_featured/link_url', $link_url, $post_id, $image_id );
+				$link_url = (string) apply_filters( 'michelle/entry/media/image_featured/link_url', (string) $link_url, $post_id, $image_id );
 
 				$output .= '<figure class="post-thumbnail">';
 
-					if ( ! empty( $link_url ) ) {
+					if ( $link_url ) {
 						$output .= '<a href="' . esc_url( $link_url ) . '">';
 					}
 
@@ -189,7 +191,7 @@ class Media implements Component_Interface {
 						$output .= get_the_post_thumbnail( null, $image_size );
 					}
 
-					if ( ! empty( $link_url ) ) {
+					if ( $link_url ) {
 						$output .= '</a>';
 					}
 

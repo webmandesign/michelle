@@ -18,23 +18,3 @@ h2, h3, h4, h5, h6 {
 	}
 
 }
-
-// Block previews in patterns and styles.
-
-	body.editor-styles-wrapper {
-		// In WP 5.9 we can not control typography via external font sources, such as Google Fonts.
-		// So we need to override those here, unfortunately...
-		--typography_font_global: #{ (
-			-apple-system,
-			BlinkMacSystemFont,
-			'Segoe UI',
-			Roboto,
-			Oxygen-Sans,
-			Ubuntu,
-			Cantarell,
-			'Helvetica Neue',
-			sans-serif
-		) };
-		--typography_font_headings: var(--typography_font_global);
-		--typography_font_alt:      var(--typography_font_global);
-	}

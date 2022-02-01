@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.11
+ * @version  1.3.3
  */
 
 namespace WebManDesign\Michelle\Welcome;
@@ -129,7 +129,7 @@ class Component implements Component_Interface {
 	 * Welcome screen CSS styles.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.11
+	 * @version  1.3.3
 	 *
 	 * @param  string $hook
 	 *
@@ -173,6 +173,10 @@ class Component implements Component_Interface {
 					margin-bottom: 0;
 					text-align: center;
 				}
+
+					.about__header::before {
+						display: none;
+					}
 
 					.welcome--header,
 					.welcome--footer {

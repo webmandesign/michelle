@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.2 =
-Improving WP5.9 compatibility.
+= 1.3.3 =
+Fixing bugs.
 
 
 == Copyright ==

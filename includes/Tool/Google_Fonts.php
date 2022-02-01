@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.3
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -159,7 +159,8 @@ class Google_Fonts implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.3
 	 *
 	 * @return  void
 	 */
@@ -169,8 +170,7 @@ class Google_Fonts implements Component_Interface {
 
 			// Actions
 
-				add_action( 'wp_enqueue_scripts',          __CLASS__ . '::enqueue', 5 );
-				add_action( 'enqueue_block_editor_assets', __CLASS__ . '::enqueue', 5 );
+				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue', 5 );
 
 			// Filters
 
@@ -226,6 +226,42 @@ class Google_Fonts implements Component_Interface {
 			return $styles;
 
 	} // /enqueue_classic_editor
+
+	/**
+	 * Get remote Google Fonts stylesheet content.
+	 *
+	 * Best used in editor styles.
+	 * @see  WebManDesign\Michelle\Assets\Editor::enqueue_block_styles()
+	 *
+	 * The same approach is used in `get_block_editor_theme_styles()`.
+	 * @link  https://developer.wordpress.org/reference/functions/get_block_editor_theme_styles/
+	 *
+	 * @since  1.3.3
+	 *
+	 * @return  string
+	 */
+	public static function get_stylesheet_content(): string {
+
+		// Variables
+
+			$styles = '';
+
+
+		// Processing
+
+			if ( self::get_url() ) {
+				$response = wp_remote_get( self::get_url() );
+				if ( ! is_wp_error( $response ) ) {
+					$styles = wp_remote_retrieve_body( $response );
+				}
+			}
+
+
+		// Return
+
+			return (string) $styles;
+
+	} // /get_stylesheet_content
 
 	/**
 	 * Add preconnect for the stylesheet.

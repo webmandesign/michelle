@@ -1,5 +1,24 @@
 # Michelle Changelog
 
+## 1.3.3, 20220201
+
+### Fixed
+- Loading Google Fonts in block pattern preview
+- Welcome page styles
+- Preventing featured image link PHP error
+- Padding of wide-aligned block within wide-aligned block in editor
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/editor-style-blocks.scss
+	includes/Assets/Editor.php
+	includes/Entry/Media.php
+	includes/Tool/Google_Fonts.php
+	includes/Welcome/Component.php
+
+
 ## 1.3.2, 20220130
 
 ### Updated

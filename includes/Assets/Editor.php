@@ -5,13 +5,15 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.3
  */
 
 namespace WebManDesign\Michelle\Assets;
 
 use WebManDesign\Michelle\Component_Interface;
 use WebManDesign\Michelle\Customize;
+use WebManDesign\Michelle\Tool\Google_Fonts;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -87,7 +89,8 @@ class Editor implements Component_Interface {
 	/**
 	 * Enqueues block editor stylesheets.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.3
 	 *
 	 * @return  void
 	 */
@@ -103,7 +106,9 @@ class Editor implements Component_Interface {
 					'precache' => true,
 				),
 				'inline'   => array(
-					'customize-styles-editor' => Customize\Styles::get_css_variables(),
+					'customize-styles-editor' =>
+						Google_Fonts::get_stylesheet_content() . PHP_EOL . PHP_EOL
+						. Customize\Styles::get_css_variables(),
 				),
 			) );
 
