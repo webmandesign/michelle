@@ -27,15 +27,6 @@
 
 		}
 
-		&.is-style-no-gaps {
-			padding: 0;
-
-			> .wp-block-column.wp-block-column {
-				margin: 0;
-			}
-
-		}
-
 	}
 
 	&.wp-block-column:only-child {
@@ -70,6 +61,15 @@
 
 		&.is-style-no-margin-vertical:last-child {
 			margin-bottom: 0;
+		}
+
+	}
+
+	&s.is-style-no-gaps {
+		padding: 0;
+
+		> .wp-block-column.wp-block-column {
+			margin: 0;
 		}
 
 	}

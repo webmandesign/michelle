@@ -1,5 +1,16 @@
 # Michelle Changelog
 
+## 1.3.4, 20220201
+
+### Fixed
+- Columns block last column margin
+
+### File updates
+	changelog.md
+	style.css
+	assets/scss/blocks.scss
+
+
 ## 1.3.3, 20220201
 
 ### Fixed

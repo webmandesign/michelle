@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.3 =
-Fixing bugs.
+= 1.3.4 =
+Fixing columns block last column margin.
 
 
 == Copyright ==
