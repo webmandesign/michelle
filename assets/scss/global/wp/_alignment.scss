@@ -18,7 +18,7 @@
 	float: left;
 
 	&,
-	[class^=wp-block-] & {
+	[class*="wp-block-"] & {
 		margin-right: var(--typography_font_size_base); // Simulating rem unit for block editor.
 
 		@include media( map_get( $breakpoint, 'l' ) ) {
@@ -33,7 +33,7 @@
 	float: right;
 
 	&,
-	[class^=wp-block-] & {
+	[class*="wp-block-"] & {
 		margin-left: var(--typography_font_size_base); // Simulating rem unit for block editor.
 
 		@include media( map_get( $breakpoint, 'l' ) ) {

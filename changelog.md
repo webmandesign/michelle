@@ -1,5 +1,25 @@
 # Michelle Changelog
 
+## 1.3.5, 20220218
+
+### Updated
+- Improving styles
+
+### Fixed
+- WordPress 5.9 bugs
+- Editor style bugs
+- Filter hook name for disabling JavaScript
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	includes/Assets/Factory.php
+
+
 ## 1.3.4, 20220201
 
 ### Fixed

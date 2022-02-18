@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.5
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -328,7 +328,8 @@ class Factory {
 	/**
 	 * Check whether we should disable JavaScript output.
 	 *
-	 * @since  1.3.0
+	 * @since    1.3.0
+	 * @version  1.3.5
 	 *
 	 * @return  bool
 	 */
@@ -339,11 +340,12 @@ class Factory {
 			/**
 			 * Filters whether to disable outputting JavaScript into HTML.
 			 *
-			 * @since  1.3.0
+			 * @since    1.3.0
+			 * @version  1.3.5
 			 *
 			 * @param  bool $disabled  By default, returns false.
 			 */
-			return (bool) apply_filters( 'michelle/assets/scripts/is_js_disabled', false );
+			return (bool) apply_filters( 'michelle/assets/is_js_disabled', false );
 
 	} // /is_js_disabled
 

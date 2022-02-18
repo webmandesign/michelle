@@ -64,7 +64,12 @@ class Editor implements Component_Interface {
 			add_theme_support( 'custom-spacing' );
 
 			// Experimental
-			add_theme_support( 'experimental-link-color' ); // Check `--wp--style--color--link` CSS variable.
+			/**
+			 * Check `--wp--style--color--link` CSS variable.
+			 * Does not work in WP 5.9 without `theme.json`,
+			 * which on the other hand causes so much more issues...
+			 */
+			add_theme_support( 'experimental-link-color' );
 
 	} // /after_setup_theme
 

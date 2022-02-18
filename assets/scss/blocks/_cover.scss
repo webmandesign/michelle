@@ -12,8 +12,19 @@
 		background-size: cover;
 	}
 
-	.has-background-dim[class*="-gradient-background"] {
-		background-color: transparent;
+	> .has-background-dim,
+	> .wp-block-cover__gradient-background {
+		margin-bottom: 0;
+
+		&.has-background-gradient {
+			background-color: transparent;
+		}
+
+		// WP 5.9 fix:
+		&::before {
+			display: none;
+		}
+
 	}
 
 	.wp-block-cover__inner-container {
@@ -61,10 +72,6 @@
 			}
 		}
 
-	}
-
-	&__gradient-background {
-		margin-bottom: 0;
 	}
 
 	&.is-style-scale-image {

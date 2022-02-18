@@ -51,9 +51,12 @@ class Editor implements Component_Interface {
 		// Variables
 
 			/**
-			 * The `0` key item has to be empty to bypass WordPress native
-			 * RTL stylesheet enqueuing (duplicating the `0` key stylesheet
-			 * and additionally enqueuing its RTL version).
+			 * The `0` key is reserved for WordPress.
+			 * WordPress duplicates this stylesheet and makes an RTL version for it.
+			 * This is obviously not ideal when we enqueue multiple stylesheets and
+			 * want RTL for all of those. That's why we make our own RTL versions below.
+			 * @see   add_editor_style()
+			 * @link  https://developer.wordpress.org/reference/functions/add_editor_style/
 			 */
 			$styles = array( 0 => '' );
 
@@ -88,6 +91,14 @@ class Editor implements Component_Interface {
 
 	/**
 	 * Enqueues block editor stylesheets.
+	 *
+	 * Unfortunately, we can not really use
+	 *   add_theme_support( 'editor-styles' );
+	 *   add_editor_style( [ 'editor-styles.css', 'google-fonts.css' ] );
+	 * as that way there is no way to separate classic and block editor
+	 * stylesheets (yes, all `add_editor_style()` stylesheets are being
+	 * enqueued in both editors, plus block editor will replace certain
+	 * selectors and wrap everything in `.editor-styles-wrapper`.)
 	 *
 	 * @since    1.0.0
 	 * @version  1.3.3

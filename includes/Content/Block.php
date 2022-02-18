@@ -206,7 +206,7 @@ class Block implements Component_Interface {
 			}
 
 
-    // Output
+		// Output
 
 			return $args;
 

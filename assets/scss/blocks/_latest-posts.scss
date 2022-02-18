@@ -117,7 +117,7 @@
 				width: calc( 100% - var(--posts_list_gap) );
 			}
 
-			&[class*=columns-] li {
+			&[class*="columns-"] li {
 				margin: calc( var(--posts_list_gap) / 2 );
 			}
 
