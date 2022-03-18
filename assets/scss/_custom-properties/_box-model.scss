@@ -28,6 +28,7 @@
 		--heading_space: calc( var(--white_space) / 2 );
 
 		--column_gap: #{ $ratio +em };
+		--wp--style--block-gap: var(--column_gap);
 
 		--posts_list_gap: 1em;
 		@include media( map_get( $breakpoint, 'xl' ) ) {
@@ -50,6 +51,8 @@
 		--letter_spacing: .05em;
 
 	// Widths & heights.
+
+		--max_screen_width: 1920px;
 
 		--max_width_header_content: var(--layout_width_content);
 		--max_width_footer_content: var(--layout_width_content);

@@ -103,7 +103,7 @@
 	&.is-style-hidden-on-tablet {
 		@media (min-width: 600px) and (max-width: 781px) {
 
-			~ .wp-block-column {
+			~ .wp-block-column.wp-block-column {
 				margin-#{$left}: 0;
 
 				&:nth-child(odd) {

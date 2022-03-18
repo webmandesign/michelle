@@ -1,5 +1,21 @@
 # Michelle Changelog
 
+## 1.3.6, 20220318
+
+### Fixed
+- Fixing WordPress 5.9 columns block gap
+- Fixing quotation marks localization
+- Fixing tablet stacking styles
+
+### File updates
+	changelog.md
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/content.scss
+	assets/scss/global.scss
+	templates/parts/content/content-none.php
+
+
 ## 1.3.5, 20220218
 
 ### Updated

@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.5 =
-Fixing bugs, improving styles.
+= 1.3.6 =
+Fixing styling bugs.
 
 
 == Copyright ==

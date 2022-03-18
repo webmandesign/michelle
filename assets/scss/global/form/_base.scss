@@ -74,7 +74,7 @@ select {
 		max-width: 100%;
 		padding-#{$right}: calc( 14px + 1em );
 		background: none;
-		background-image: url('data:image/svg+xml;utf8,#{ _encode_url( $dropdown_svg ) }');
+		background-image: url('data:image/svg+xml;utf8,#{ _url_encode( $dropdown_svg ) }');
 		background-size: $dropdown_svg_size auto;
 		background-position: $right 4px top 50%;
 		background-repeat: no-repeat;

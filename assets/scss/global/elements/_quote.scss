@@ -29,7 +29,7 @@ blockquote {
 		font-size: 1em;
 	}
 
-	p::before {
+	p:first-child::before {
 		content: open-quote;
 		display: inline-block;
 		margin-#{$left}: -.2em;
@@ -81,11 +81,6 @@ q {
 
 	&::after {
 		content: close-quote;
-	}
-
-	&::before,
-	&::after {
-		display: inline-block; // Required for correct RTL display.
 	}
 
 }

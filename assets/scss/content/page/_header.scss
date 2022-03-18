@@ -102,7 +102,6 @@
 			display: block;
 			font-size: var(--typography_font_size_L_em);
 			text-transform: none;
-			quotes: '“' '”';
 
 			@include media( map_get( $breakpoint, 'xxl' ) ) {
 				font-size: var(--typography_font_size_XL_em);
@@ -114,11 +113,6 @@
 
 			&::after {
 				content: close-quote;
-			}
-
-			&::before,
-			&::after {
-				display: inline-block; // Required for correct RTL display.
 			}
 
 		}

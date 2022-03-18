@@ -146,7 +146,7 @@
 			( map_get( $breakpoint, 'l' ), 'max-width' )
 		) {
 
-			img {
+			> .wp-block-media-text__media img {
 				width: auto;
 				max-width: 100%;
 				height: auto;

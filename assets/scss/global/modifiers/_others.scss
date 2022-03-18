@@ -20,17 +20,22 @@
 
 	.is-stacked-on-tablet,
 	.is-style-stacked-on-tablet {
-		@include media( ( map_get( $breakpoint, 'l' ), 'max-width' ) ) {
-			display: block $important_modifiers;
-		}
 
-		> *:not(:only-child),
-		> [class*="wp-block-"]:not(:only-child) {
+		&:not(.is-not-stacked-on-mobile) {
+
 			@include media( ( map_get( $breakpoint, 'l' ), 'max-width' ) ) {
-				width: 100% $important_modifiers;
-				margin-left: auto;
-				margin-right: auto;
+				display: block $important_modifiers;
 			}
+
+			> *:not(:only-child),
+			> [class*="wp-block-"]:not(:only-child) {
+				@include media( ( map_get( $breakpoint, 'l' ), 'max-width' ) ) {
+					width: 100% $important_modifiers;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
 		}
 
 	}

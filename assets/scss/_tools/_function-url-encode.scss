@@ -2,11 +2,11 @@
 // Encode symbols for URL.
 //
 // @since    1.0.0
-// @version  1.3.0
+// @version  1.3.6
 //
 // @param  string $string
 //
-@function _encode_url( $url ) {
+@function _url_encode( $url ) {
 
 	// Variables
 

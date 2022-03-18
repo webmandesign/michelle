@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.6
  */
 
 namespace WebManDesign\Michelle;
@@ -13,7 +14,11 @@ namespace WebManDesign\Michelle;
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_template_part( 'templates/parts/component/page-header', 'none' );
+if ( is_search() ) {
+	get_template_part( 'templates/parts/component/page-header-search', get_query_var( 'post_type' ) );
+} else {
+	get_template_part( 'templates/parts/component/page-header', 'none' );
+}
 
 ?>
 
