@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.7
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -115,7 +115,7 @@ class Scripts implements Component_Interface {
 	 * @see  assets/js/navigation-mobile.js
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.3.7
 	 *
 	 * @return  void
 	 */
@@ -135,7 +135,7 @@ class Scripts implements Component_Interface {
 
 			wp_add_inline_script(
 				'michelle-scripts-footer',
-				'"use strict";!function(){function l(){a.classList.toggle("toggled"),document.body.classList.toggle("has-navigation-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==a.className.indexOf("toggled")?s.setAttribute("aria-expanded","true"):s.setAttribute("aria-expanded","false")}var a=document.getElementById("site-navigation");if(a){var s=document.getElementById("menu-toggle");if(s)document.getElementById("menu-primary")?(s.onclick=function(){l()},document.addEventListener("keydown",function(e){if(a.classList.contains("toggled")){var t=a.querySelectorAll("a, button, input:not([type=hidden]), select"),n=t[0];lastEl=t[t.length-1],activeEl=document.activeElement,tabKey=9===e.keyCode,escKey=27===e.keyCode,shiftKey=e.shiftKey,escKey&&(e.preventDefault(),l(),s.focus()),!shiftKey&&tabKey&&lastEl===activeEl&&(e.preventDefault(),n.focus()),shiftKey&&tabKey&&n===activeEl&&(e.preventDefault(),lastEl.focus()),tabKey&&n===lastEl&&e.preventDefault()}})):s.style.display="none"}}();'
+				'"use strict";!function(){var e=document.getElementById("site-navigation");if(e){var t=document.getElementById("menu-toggle");if(t)document.getElementById("menu-primary")?(t.onclick=function(){n()},document.addEventListener("keydown",(function(o){if(e.classList.contains("toggled")){var l=e.querySelectorAll("a, button, input:not([type=hidden]), select"),a=l[0],i=l[l.length-1],s=document.activeElement,c=9===o.keyCode,d=27===o.keyCode,u=o.shiftKey;d&&(o.preventDefault(),n(),t.focus()),!u&&c&&i===s&&(o.preventDefault(),a.focus()),u&&c&&a===s&&(o.preventDefault(),i.focus()),c&&a===i&&o.preventDefault()}}))):t.style.display="none"}function n(){e.classList.toggle("toggled"),document.body.classList.toggle("has-navigation-toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==e.className.indexOf("toggled")?t.setAttribute("aria-expanded","true"):t.setAttribute("aria-expanded","false")}}();'
 			);
 
 	} // /enqueue_inline_nav_mobile
@@ -144,7 +144,7 @@ class Scripts implements Component_Interface {
 	 * Remove "no-js" class from elements.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.7
 	 *
 	 * @return  void
 	 */
@@ -158,10 +158,7 @@ class Scripts implements Component_Interface {
 					( function() {
 						'use strict';
 
-						var nojs = document.getElementsByClassName( 'no-js' );
-						for ( var i = 0, max = nojs.length; i < max; i++ ) {
-							nojs[ i ].classList.remove( 'no-js' );
-						}
+						document.querySelectorAll( '.no-js' ).forEach( function( e ) { e.classList.remove( 'no-js' ) } );
 					} )();
 				" )
 			);

@@ -3,6 +3,7 @@
 .wp-block-cover {
 	height: auto;
 	padding: var(--block_padding);
+	background: #000; // This is required to prevent color contrast issues.
 
 	&:not(.has-text-color) {
 		color: #fff;

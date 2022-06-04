@@ -62,7 +62,10 @@
 
 	--typography_heading_size_posts: var(--typography_heading_size_3);
 
-	--typography_line_height: #{ $ratio };
+	--typography_line_height: 1.5;
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		--typography_line_height: #{ $ratio };
+	}
 	--typography_line_height_headings: #{ $ratio_min };
 
 	--typography_font_size_huge: var(--typography_heading_size_1);

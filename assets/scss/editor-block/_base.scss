@@ -30,7 +30,7 @@
 
 		#{ $selectors_margin_bottom } {
 			margin-top: 0;
-			margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
+			margin-bottom: var(--gap);
 		}
 
 		a {

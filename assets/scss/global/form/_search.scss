@@ -42,7 +42,7 @@ form[role="search"],
 .wp-block-search {
 
 	&:not(:last-child) {
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
+		margin-bottom: var(--gap);
 	}
 
 	&__label {

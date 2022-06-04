@@ -4,7 +4,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.3.0
+ * @since    1.3.0
+ * @version  1.3.7
  */
 
 ( function() {
@@ -33,10 +34,6 @@
 						settings = lodash.merge( {}, settings, {
 							supports: {
 								align: [ 'wide', 'full' ],
-								typography: {
-									fontSize: true,
-									lineHeight: true,
-								},
 							},
 						} );
 						break;

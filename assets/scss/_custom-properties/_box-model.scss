@@ -27,8 +27,11 @@
 
 		--heading_space: calc( var(--white_space) / 2 );
 
-		--column_gap: #{ $ratio +em };
-		--wp--style--block-gap: var(--column_gap);
+		// Default gap size.
+		// Line height in rem.
+		// Simulating rem unit for block editor styles consistency.
+		--gap: calc( var(--typography_font_size_base) * var(--typography_line_height) );
+		--wp--style--block-gap: var(--gap);
 
 		--posts_list_gap: 1em;
 		@include media( map_get( $breakpoint, 'xl' ) ) {

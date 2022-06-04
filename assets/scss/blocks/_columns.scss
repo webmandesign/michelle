@@ -56,7 +56,7 @@
 	&.wp-block-column {
 
 		&.wp-block-column:last-child {
-			margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } );
+			margin-bottom: var(--wp--style--block-gap);
 		}
 
 		&.is-style-no-margin-vertical:last-child {
@@ -107,7 +107,7 @@
 				margin-#{$left}: 0;
 
 				&:nth-child(odd) {
-					margin-#{$left}: var(--column_gap);
+					margin-#{$left}: var(--wp--style--block-gap);
 				}
 
 			}
@@ -157,16 +157,16 @@
 
 	@media (min-width: 600px) {
 		#{ $prepend }.wp-block-column:nth-child(even) {
-			margin-#{$left}: var(--column_gap);
+			margin-#{$left}: var(--wp--style--block-gap);
 		}
 	}
 	@media (min-width: 600px) and (max-width: 781px) {
 		#{ $prepend }.wp-block-column:not(:only-child) {
-			flex-basis: calc( 50% - var(--column_gap) / 2 ) !important;
+			flex-basis: calc( 50% - var(--wp--style--block-gap) / 2 ) !important;
 		}
 	}
 	@media (min-width: 782px) {
 		#{ $prepend }.wp-block-column:not(:first-child) {
-			margin-#{$left}: var(--column_gap);
+			margin-#{$left}: var(--wp--style--block-gap);
 		}
 	}

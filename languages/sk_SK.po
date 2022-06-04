@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-01-19 18:46+0100\n"
-"PO-Revision-Date: 2022-01-19 19:01+0100\n"
+"POT-Creation-Date: 2022-06-04 20:37+0200\n"
+"PO-Revision-Date: 2022-06-04 20:38+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #. translators: 1: title.
 #: comments.php:49
-#, fuzzy, php-format
+#, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr "Jeden komentár k &ldquo;%1$s&rdquo;"
 
@@ -36,36 +36,33 @@ msgstr[1] "%1$d komentáre k &ldquo;%2$s&rdquo;"
 msgstr[2] "%1$d komentárov k &ldquo;%2$s&rdquo;"
 
 #: comments.php:85
-#, fuzzy
 msgid "Comments are closed."
 msgstr "Komentáre sú uzavreté."
 
 #. translators: %s: menu item label.
 #: includes/Accessibility/Component.php:90
-#, fuzzy, php-format
+#, php-format
 msgid "Collapse menu: %s"
 msgstr "Zbaliť menu: %s"
 
 #. translators: %s: menu item label.
 #: includes/Accessibility/Component.php:92
-#, fuzzy, php-format
+#, php-format
 msgid "Expand menu: %s"
 msgstr "Rozbaliť menu: %s"
 
 #: includes/Accessibility/Component.php:188
 #: templates/parts/accessibility/menu-skip-links.php:25
-#, fuzzy
 msgid "Skip to main content"
 msgstr "Preskočiť na hlavný obsah"
 
 #: includes/Accessibility/Component.php:239
-#, fuzzy
 msgid "Skip back to main navigation"
 msgstr "Preskočiť späť na hlavnú navigáciu"
 
 #. translators: 1: required WP version number, 2: available WP version number
 #: includes/Compatibility.php:56
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "This theme requires at least WordPress version %1$s. You are running version "
 "%2$s."
@@ -73,84 +70,71 @@ msgstr "Táto téma vyžaduje aspoň WordPress verzie %1$s. Používate verziu %
 
 #. translators: 1: required PHP version number, 2: available PHP version number
 #: includes/Compatibility.php:65
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "This theme requires at least PHP version %1$s. You are running version %2$s."
 msgstr "Táto téma vyžaduje aspoň PHP verzie %1$s. Používate verziu %2$s."
 
 #: includes/Compatibility.php:72
-#, fuzzy
 msgid "Please upgrade and try again."
 msgstr "Aktualizujte a skúste to znova."
 
 #: includes/Content/Block_Patterns.php:234
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Call to Action"
 msgstr "Výzva k akcii"
 
 #: includes/Content/Block_Patterns.php:235
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Contact"
 msgstr "Kontakt"
 
 #: includes/Content/Block_Patterns.php:236
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Cover"
 msgstr "Titulka"
 
 #: includes/Content/Block_Patterns.php:237
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Lists"
 msgstr "Zoznamy"
 
 #: includes/Content/Block_Patterns.php:238
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Media and Text"
 msgstr "Médiá a text"
 
 #: includes/Content/Block_Patterns.php:239
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Numbers"
 msgstr "Čísla"
 
 #: includes/Content/Block_Patterns.php:240
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Posts"
 msgstr "Príspevky"
 
 #: includes/Content/Block_Patterns.php:241
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Prices"
 msgstr "Ceny"
 
 #: includes/Content/Block_Patterns.php:242
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Question and Answer"
 msgstr "Otázka a odpoveď"
 
 #: includes/Content/Block_Patterns.php:243
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Quotes"
 msgstr "Citácie"
 
 #: includes/Content/Block_Patterns.php:244
-#, fuzzy
 msgctxt "Website. Block pattern category label."
 msgid "Site"
 msgstr "Webstránka"
 
 #: includes/Content/Block_Patterns.php:245
-#, fuzzy
 msgctxt "Block pattern category label."
 msgid "Team"
 msgstr "Tím"
@@ -161,13 +145,11 @@ msgid "Michelle theme"
 msgstr "Téma Michelle"
 
 #: includes/Content/Block_Styles.php:101
-#, fuzzy
 msgctxt "Block style label."
 msgid "Single column: align left"
 msgstr "Jediný stĺpec: zarovnať doľava"
 
 #: includes/Content/Block_Styles.php:107
-#, fuzzy
 msgctxt "Block style label."
 msgid "Single column: align right"
 msgstr "Jediný stĺpec: zarovnať doprava"
@@ -193,7 +175,6 @@ msgid "Has padding"
 msgstr "Vnútorné odsadenie"
 
 #: includes/Content/Block_Styles.php:148
-#, fuzzy
 msgctxt "Block style label."
 msgid "Hide on tablet"
 msgstr "Skryť na tablete"
@@ -214,7 +195,6 @@ msgid "No gaps"
 msgstr "Žiadne medzery"
 
 #: includes/Content/Block_Styles.php:179
-#, fuzzy
 msgctxt "Block style label."
 msgid "No vertical gap"
 msgstr "Žiadna vertikálna medzera"
@@ -250,7 +230,6 @@ msgid "Simple"
 msgstr "Jednoduchý"
 
 #: includes/Content/Block_Styles.php:242
-#, fuzzy
 msgctxt "Block style label."
 msgid "Stack on tablet"
 msgstr "Naskladať na tablete"
@@ -266,7 +245,6 @@ msgid "Light text shadow"
 msgstr "Svetlý tieň textu"
 
 #: includes/Content/Block_Styles.php:266
-#, fuzzy
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr "Veľké písmená"
@@ -288,7 +266,7 @@ msgstr "Široký cik-cak"
 
 #. translators: Paginated content title suffix. %d: page number.
 #: includes/Content/Component.php:126
-#, fuzzy, php-format
+#, php-format
 msgid "(page %d)"
 msgstr "(strana %d)"
 
@@ -298,7 +276,6 @@ msgid "Home"
 msgstr "Úvod"
 
 #: includes/Content/Starter.php:141 includes/Content/Starter.php:193
-#, fuzzy
 msgctxt "Theme starter content"
 msgid "About"
 msgstr "O nás"
@@ -314,19 +291,16 @@ msgid "FAQ"
 msgstr "Otázky"
 
 #: includes/Content/Starter.php:165 includes/Content/Starter.php:211
-#, fuzzy
 msgctxt "Theme starter content"
 msgid "Contact"
 msgstr "Kontakt"
 
 #: includes/Content/Starter.php:189
-#, fuzzy
 msgctxt "Theme starter content"
 msgid "Primary Menu"
 msgstr "Primárne menu"
 
 #: includes/Content/Starter.php:217
-#, fuzzy
 msgctxt "Theme starter content"
 msgid "Blog"
 msgstr "Blog"
@@ -342,162 +316,135 @@ msgid "User manual"
 msgstr "Príručka pre používateľov"
 
 #: includes/Content/Starter.php:333
-#, fuzzy
 msgctxt "Demo text."
 msgid "Some text"
 msgstr "Nejaký text"
 
 #: includes/Content/Starter.php:334
-#, fuzzy
 msgctxt "Demo text."
 msgid "Just a short sentence"
 msgstr "Len krátka vetička"
 
 #: includes/Content/Starter.php:335
-#, fuzzy
 msgctxt "Demo text."
 msgid "Write your own copy text here"
 msgstr "Sem si napíšte vlastný text"
 
 #: includes/Content/Starter.php:336
-#, fuzzy
 msgctxt "Demo text."
 msgid "This is just a demo text you should overwrite"
 msgstr "Toto je len demo text, ktorý by ste mali prepísať"
 
 #: includes/Content/Starter.php:339
-#, fuzzy
 msgctxt "Demo text."
 msgid "This is title"
 msgstr "Som nadpis"
 
 #: includes/Content/Starter.php:340
-#, fuzzy
 msgctxt "Demo text."
 msgid "Write some title text here"
 msgstr "Napíšte sem text nadpisu"
 
 #: includes/Content/Starter.php:341
-#, fuzzy
 msgctxt "Demo text."
 msgid "The ideal length of the title text in here should be maybe a bit longer"
 msgstr "Ideálna dĺžka textu nadpisu by tu mala byť možno o niečo dlhšia"
 
 #: includes/Content/Starter.php:345
-#, fuzzy
 msgctxt "Demo text."
 msgid "123 Street Name<br>Cityname, 56789<br>COUNTRY"
 msgstr "Názov Ulice 123<br>Názovmesta, 56789<br>KRAJINA"
 
 #: includes/Content/Starter.php:346
-#, fuzzy
 msgctxt "Demo text."
 msgid "example@example.com"
 msgstr "priklad@priklad.sk"
 
 #: includes/Content/Starter.php:347
-#, fuzzy
 msgctxt "Demo text."
 msgid "+1 (123) 456-7890"
 msgstr "+421 (900) 123 456"
 
 #: includes/Content/Starter.php:351
-#, fuzzy
 msgctxt "Demo text."
 msgid "10:30 am on Monday, July 1, 2021"
 msgstr "10:30 v pondelok 1. júla 2021"
 
 #: includes/Content/Starter.php:352
-#, fuzzy
 msgctxt "Demo text. Week days."
 msgid "Mon - Fri"
 msgstr "Po - Pi"
 
 #: includes/Content/Starter.php:353
-#, fuzzy
 msgctxt "Demo text. Weekend days."
 msgid "Sat - Sun"
 msgstr "So - Ne"
 
 #: includes/Content/Starter.php:354
-#, fuzzy
 msgctxt "Demo text."
 msgid "Monday"
 msgstr "Pondelok"
 
 #: includes/Content/Starter.php:355
-#, fuzzy
 msgctxt "Demo text."
 msgid "Tuesday"
 msgstr "Utorok"
 
 #: includes/Content/Starter.php:356
-#, fuzzy
 msgctxt "Demo text."
 msgid "Wednesday"
 msgstr "Streda"
 
 #: includes/Content/Starter.php:357
-#, fuzzy
 msgctxt "Demo text."
 msgid "Thursday"
 msgstr "Štvrtok"
 
 #: includes/Content/Starter.php:358
-#, fuzzy
 msgctxt "Demo text."
 msgid "Friday"
 msgstr "Piatok"
 
 #: includes/Content/Starter.php:359
-#, fuzzy
 msgctxt "Demo text."
 msgid "Saturday"
 msgstr "Sobota"
 
 #: includes/Content/Starter.php:360
-#, fuzzy
 msgctxt "Demo text."
 msgid "Sunday"
 msgstr "Nedeľa"
 
 #: includes/Content/Starter.php:364
-#, fuzzy
 msgctxt "Demo text."
 msgid "Name Surname"
 msgstr "Meno Priezvisko"
 
 #: includes/Content/Starter.php:365
-#, fuzzy
 msgctxt "Demo text. A job title."
 msgid "Designer"
 msgstr "Dizajnér"
 
 #: includes/Content/Starter.php:369
-#, fuzzy
 msgctxt "Demo text. Image alt text."
 msgid "Image alternative description text"
 msgstr "Text alternatívneho popisu obrázka"
 
 #: includes/Content/Starter.php:370
-#, fuzzy
 msgctxt "Demo text. Button label."
 msgid "Click here →"
 msgstr "Kliknite sem →"
 
 #: includes/Content/Starter.php:371
-#, fuzzy
 msgctxt "Demo text. Price."
 msgid "$19"
 msgstr "19 €"
 
 #: includes/Customize/Control/HTML.php:56
-#, fuzzy
 msgid "Please set the `content` parameter for the HTML control."
 msgstr "Nastavte parameter `content` pre pole HTML."
 
 #: includes/Customize/Control/Multiselect.php:127
-#, fuzzy
 msgid "Press CTRL key for multiple selection."
 msgstr "Pridržte klávesu CTRL pre viacnásobnú voľbu."
 
@@ -520,12 +467,10 @@ msgid "Change logo"
 msgstr "Zmeniť logo"
 
 #: includes/Customize/Custom_Logo.php:88 includes/Customize/Custom_Logo.php:134
-#, fuzzy
 msgid "Remove"
 msgstr "Odstrániť"
 
 #: includes/Customize/Custom_Logo.php:89 includes/Customize/Custom_Logo.php:135
-#, fuzzy
 msgid "Default"
 msgstr "Pôvodná"
 
@@ -546,20 +491,17 @@ msgid "This logo image will be displayed in overlaid header with dark color."
 msgstr "Tento obrázok loga sa zobrazí v prekrytej hlavičke tmavej farby."
 
 #: includes/Customize/Options.php:149
-#, fuzzy
 msgctxt "Variable image height."
 msgid "variable height"
 msgstr "variabilná výška"
 
 #: includes/Customize/Options.php:151
 #: templates/parts/admin/media-image-sizes.php:59
-#, fuzzy
 msgid "cropped"
 msgstr "orezaný"
 
 #: includes/Customize/Options.php:151
 #: templates/parts/admin/media-image-sizes.php:59
-#, fuzzy
 msgid "scaled"
 msgstr "zmenšený"
 
@@ -568,17 +510,14 @@ msgid "&mdash; no block"
 msgstr "&mdash; žiadny blok"
 
 #: includes/Customize/Options.php:183
-#, fuzzy
 msgid "Max logo image height (px)"
 msgstr "Maximálna výška obrázka loga (px)"
 
 #: includes/Customize/Options.php:184
-#, fuzzy
 msgid "Do not forget to set the logo max height."
 msgstr "Nezabudnite nastaviť maximálnu výšku loga."
 
 #: includes/Customize/Options.php:184
-#, fuzzy
 msgid "Upload twice as big image to make your logo ready for high DPI screens."
 msgstr ""
 "Nahrajte dvakrát tak veľký obrázok, aby bolo logo pripravené pre obrazovky s "
@@ -612,30 +551,27 @@ msgstr "Posledná položka v hlavičke"
 #: includes/Customize/Options.php:630 includes/Customize/Options.php:703
 #: includes/Customize/Options.php:882 includes/Customize/Options.php:910
 #: includes/Loop/Featured_Posts.php:259 includes/Tool/Page_Builder.php:126
-#, fuzzy
 msgctxt "Customizer panel title."
 msgid "Theme Options"
 msgstr "Nastavenia témy"
 
 #: includes/Customize/Options.php:243
-#, fuzzy
 msgid "Theme Credits"
 msgstr "O téme"
 
 #. translators: 1: linked theme name, 2: theme author name.
 #: includes/Customize/Options.php:247
-#, fuzzy, php-format
+#, php-format
 msgid "%1$s is a WordPress theme developed by %2$s."
 msgstr "%1$s je WordPress téma vytvorená spoločnosťou %2$s."
 
 #. translators: %s: theme author link.
 #: includes/Customize/Options.php:255
-#, fuzzy, php-format
+#, php-format
 msgid "You can obtain other professional WordPress themes at %s."
 msgstr "Ďalšie profesionálne WordPress témy môžete získať na %s."
 
 #: includes/Customize/Options.php:260
-#, fuzzy
 msgid "Thank you for using a theme by WebMan Design!"
 msgstr "Ďakujeme, že používate tému od WebMan Design!"
 
@@ -643,12 +579,11 @@ msgstr "Ďakujeme, že používate tému od WebMan Design!"
 #: includes/Customize/Options.php:272 includes/Customize/Options.php:330
 #: includes/Customize/Options.php:400 includes/Customize/Options.php:490
 #: includes/Customize/Options.php:547
-#, fuzzy, php-format
+#, php-format
 msgid "Colors: %s"
 msgstr "Farby: %s"
 
 #: includes/Customize/Options.php:273
-#, fuzzy
 msgctxt "Customizer color section title"
 msgid "General"
 msgstr "Všeobecné"
@@ -656,44 +591,36 @@ msgstr "Všeobecné"
 #: includes/Customize/Options.php:281 includes/Customize/Options.php:380
 #: includes/Customize/Options.php:432 includes/Customize/Options.php:470
 #: includes/Customize/Options.php:513
-#, fuzzy
 msgid "Text color"
 msgstr "Farba textu"
 
 #: includes/Customize/Options.php:295
-#, fuzzy
 msgid "Headings color"
 msgstr "Farba nadpisov"
 
 #: includes/Customize/Options.php:310
-#, fuzzy
 msgid "Decorative border color"
 msgstr "Farba dekoratívneho okraja"
 
 #: includes/Customize/Options.php:331
-#, fuzzy
 msgctxt "Customizer color section title"
 msgid "Accents"
 msgstr "Akcentované"
 
 #: includes/Customize/Options.php:339 includes/Customize/Options.php:350
-#, fuzzy
 msgid "Accent color"
 msgstr "Akcentovaná farba"
 
 #: includes/Customize/Options.php:360
-#, fuzzy
 msgid "Button"
 msgstr "Tlačidlo"
 
 #: includes/Customize/Options.php:366 includes/Customize/Options.php:418
 #: includes/Customize/Options.php:456 includes/Customize/Options.php:499
-#, fuzzy
 msgid "Background color"
 msgstr "Farba pozadia"
 
 #: includes/Customize/Options.php:401
-#, fuzzy
 msgctxt "Customizer color section title"
 msgid "Header"
 msgstr "Záhlavie"
@@ -707,7 +634,6 @@ msgid "Primary menu location sub-menu colors."
 msgstr "Farby vnoreného menu primárneho menu umiestnenia."
 
 #: includes/Customize/Options.php:449
-#, fuzzy
 msgid "Search form"
 msgstr "Formulár vyhľadávania"
 
@@ -716,24 +642,20 @@ msgid "Pop-up search form colors."
 msgstr "Farby vyskakovacieho formulára vyhľadávania."
 
 #: includes/Customize/Options.php:491
-#, fuzzy
 msgctxt "Customizer color section title"
 msgid "Footer"
 msgstr "Pätka"
 
 #: includes/Customize/Options.php:527
-#, fuzzy
 msgid "Link color"
 msgstr "Farba odkazu"
 
 #: includes/Customize/Options.php:548
-#, fuzzy
 msgctxt "Customizer color section title"
 msgid "Editor palette"
 msgstr "Paleta editora"
 
 #: includes/Customize/Options.php:555
-#, fuzzy
 msgid ""
 "Accent color is also being conveniently added into editor color palette for "
 "you, so you don't need to duplicate it here."
@@ -744,41 +666,35 @@ msgstr ""
 #. translators: Editor palette color label. %d: color number.
 #: includes/Customize/Options.php:563 includes/Customize/Options.php:584
 #: includes/Customize/Options.php:605
-#, fuzzy, php-format
+#, php-format
 msgid "Palette color %d"
 msgstr "Paletová farba %d"
 
 #: includes/Customize/Options.php:629
-#, fuzzy
 msgctxt "Customizer section title."
 msgid "Layout"
 msgstr "Rozloženie"
 
 #: includes/Customize/Options.php:638
-#, fuzzy
 msgctxt "A website container."
 msgid "Site Container"
 msgstr "Kontajner webovej stránky"
 
 #: includes/Customize/Options.php:644
-#, fuzzy
 msgid "Content width"
 msgstr "Šírka obsahu"
 
 #: includes/Customize/Options.php:646 includes/Customize/Options.php:672
 #: includes/Customize/Options.php:798 includes/Customize/Options.php:811
 #: includes/Customize/Options.php:824 includes/Customize/Options.php:837
-#, fuzzy
 msgid "Default value:"
 msgstr "Predvolená hodnota:"
 
 #: includes/Customize/Options.php:648
-#, fuzzy
 msgid "This width is applied on archive pages, wide-aligned blocks&hellip;"
 msgstr "Táto šírka sa aplikuje na stránky archívov, na široké bloky&hellip;"
 
 #: includes/Customize/Options.php:670
-#, fuzzy
 msgid "Entry content width"
 msgstr "Šírka obsahu stránky"
 
@@ -787,23 +703,19 @@ msgid "This width is applied on post and page actual content elements."
 msgstr "Táto šírka sa aplikuje na samotné prvky obsahu stránky."
 
 #: includes/Customize/Options.php:676
-#, fuzzy
 msgid "Set this cautiously for the best readability."
 msgstr "Nastavte ju s ohľadom na najlepšiu čitateľnosť."
 
 #: includes/Customize/Options.php:702
-#, fuzzy
 msgctxt "Customizer section title."
 msgid "Typography"
 msgstr "Písmo"
 
 #: includes/Customize/Options.php:709
-#, fuzzy
 msgid "Basic font size in px"
 msgstr "Základná veľkosť písma v px"
 
 #: includes/Customize/Options.php:710
-#, fuzzy
 msgid ""
 "All other font sizes are calculated automatically from this basic font size."
 msgstr ""
@@ -819,24 +731,21 @@ msgid "Footer font size in px"
 msgstr "Veľkosť písma pätičky v px"
 
 #: includes/Customize/Options.php:778
-#, fuzzy
 msgid "Font families setup"
 msgstr "Nastavenie typov písma"
 
 #. translators: %s: customizer option values.
 #: includes/Customize/Options.php:783
-#, fuzzy, php-format
+#, php-format
 msgid "Values of %s set web safe system font families."
 msgstr ""
 "Hodnoty %s nastavia typy písma bezpečne použiteľné na webových stránkach."
 
 #: includes/Customize/Options.php:788
-#, fuzzy
 msgid "You can use any Google Fonts with this theme."
 msgstr "S touto témou môžete použiť akýkoľvek z Google Fonts."
 
 #: includes/Customize/Options.php:790
-#, fuzzy
 msgid ""
 "Just input the Google Fonts font family name into the fields below, choose "
 "language, and you are done!"
@@ -845,17 +754,14 @@ msgstr ""
 "hotoví!"
 
 #: includes/Customize/Options.php:797
-#, fuzzy
 msgid "Global font"
 msgstr "Globálny typ písma"
 
 #: includes/Customize/Options.php:810
-#, fuzzy
 msgid "Headings font"
 msgstr "Písmo nadpisov"
 
 #: includes/Customize/Options.php:823
-#, fuzzy
 msgid "Site title font"
 msgstr "Typ písma názvu stránky"
 
@@ -868,68 +774,55 @@ msgid "Used for quotes, for example."
 msgstr "Používa sa napríklad v citáciách."
 
 #: includes/Customize/Options.php:850
-#, fuzzy
 msgid "Enable theme Google Fonts loading"
 msgstr "Povoliť načítavanie Google Fonts témou"
 
 #: includes/Customize/Options.php:851
-#, fuzzy
 msgid "In case you are loading fonts via plugin, disable this option."
 msgstr ""
 "V prípade, že načítavate typy písma pomocou pluginu, vypnite túto možnosť."
 
 #: includes/Customize/Options.php:857
-#, fuzzy
 msgid "Languages"
 msgstr "Jazyky"
 
 #: includes/Customize/Options.php:859
-#, fuzzy
 msgid "Not all Google Fonts support all languages."
 msgstr "Nie všetky Google Fonts podporujú všetky jazyky."
 
 #: includes/Customize/Options.php:861
-#, fuzzy
 msgid "Please check on Google Fonts website to make sure."
 msgstr "Skontrolujte podporu na stránkach Google Fonts."
 
 #: includes/Customize/Options.php:864
-#, fuzzy
 msgid "Latin"
 msgstr "Latinka"
 
 #: includes/Customize/Options.php:865
-#, fuzzy
 msgid "Latin Extended"
 msgstr "Rozšírená latinka"
 
 #: includes/Customize/Options.php:866
-#, fuzzy
 msgid "Cyrillic"
 msgstr "Cyrilika"
 
 #: includes/Customize/Options.php:867
-#, fuzzy
 msgid "Cyrillic Extended"
 msgstr "Rozšírená cyrilika"
 
 #: includes/Customize/Options.php:868
-#, fuzzy
 msgid "Greek"
 msgstr "Gréčtina"
 
 #: includes/Customize/Options.php:869
-#, fuzzy
 msgid "Greek Extended"
 msgstr "Rozšírená gréčtina"
 
 #: includes/Customize/Options.php:870
-#, fuzzy
 msgid "Vietnamese"
 msgstr "Vietnamčina"
 
 #: includes/Customize/Options.php:881
-#, fuzzy
 msgctxt "Customizer section title."
 msgid "Posts"
 msgstr "Príspevky"
@@ -960,28 +853,23 @@ msgid "Keep original image aspect ratio"
 msgstr "Zachovať pôvodný pomer strán obrázka"
 
 #: includes/Customize/Options.php:909
-#, fuzzy
 msgctxt "Customizer section title."
 msgid "Others"
 msgstr "Ostatné"
 
 #: includes/Customize/Options.php:916
-#, fuzzy
 msgid "Show \"Welcome\" page"
 msgstr "Zobraziť stránku \"Vitajte\""
 
 #: includes/Customize/Options.php:917
-#, fuzzy
 msgid "Under \"Appearance\" WordPress dashboard menu."
 msgstr "V administračnom menu \"Vzhľad\"."
 
 #: includes/Customize/Options.php:925
-#, fuzzy
 msgid "Enable mobile navigation"
 msgstr "Povoliť mobilnú navigáciu"
 
 #: includes/Customize/Options.php:926
-#, fuzzy
 msgid ""
 "If your website navigation is very simple and you do not want to use the "
 "mobile navigation functionality, you can disable it here."
@@ -1021,7 +909,6 @@ msgstr ""
 "Následne zobrazte vytvorené opakovane použiteľné bloky priradením nižšie."
 
 #: includes/Customize/Options.php:952
-#, fuzzy
 msgid "Footer content"
 msgstr "Obsah pätičky"
 
@@ -1036,28 +923,25 @@ msgstr "Bez názvu"
 
 #. translators: %s: Custom post type singular label.
 #: includes/Entry/Navigation.php:95
-#, fuzzy, php-format
+#, php-format
 msgid "Previous %s"
 msgstr "Predchádzajúci %s"
 
 #. translators: %s: Custom post type singular label.
 #: includes/Entry/Navigation.php:102
-#, fuzzy, php-format
+#, php-format
 msgid "Next %s"
 msgstr "Nasledujúci %s"
 
 #: includes/Entry/Navigation.php:109
-#, fuzzy
 msgid "Published in"
 msgstr "Uverejnené v"
 
 #: includes/Entry/Summary.php:71
-#, fuzzy
 msgid "This content is password protected."
 msgstr "Tento obsah je chránený heslom."
 
 #: includes/Entry/Summary.php:73
-#, fuzzy
 msgid "Enter the password to view it."
 msgstr "Zadajte heslo pre jeho zobrazenie."
 
@@ -1067,7 +951,6 @@ msgid "Toggle search form modal box"
 msgstr "Zobraziť/skryť modálne okno formulára vyhľadávania"
 
 #: includes/Loop/Featured_Posts.php:258
-#, fuzzy
 msgctxt "Customizer section title."
 msgid "Blog"
 msgstr "Blog"
@@ -1119,82 +1002,69 @@ msgstr ""
 "obrázok."
 
 #: includes/Loop/Pagination.php:107 includes/Loop/Pagination.php:164
-#, fuzzy
 msgctxt "Pagination text (visible): previous."
 msgid "&laquo;"
 msgstr "&laquo;"
 
 #: includes/Loop/Pagination.php:108 includes/Loop/Pagination.php:165
-#, fuzzy
 msgctxt "Pagination text (hidden): previous."
 msgid "Previous page"
 msgstr "Predchádzajúca stránka"
 
 #: includes/Loop/Pagination.php:110 includes/Loop/Pagination.php:167
-#, fuzzy
 msgctxt "Pagination text (hidden): next."
 msgid "Next page"
 msgstr "Nasledujúca stránka"
 
 #: includes/Loop/Pagination.php:111 includes/Loop/Pagination.php:168
-#, fuzzy
 msgctxt "Pagination text (visible): next."
 msgid "&raquo;"
 msgstr "&raquo;"
 
 #: includes/Loop/Pagination.php:126
-#, fuzzy
 msgid "Posts navigation"
 msgstr "Navigácia príspevkov"
 
 #: includes/Menu/Component.php:59
-#, fuzzy
 msgctxt "Navigational menu location"
 msgid "Primary"
 msgstr "Primárne"
 
 #: includes/Menu/Component.php:103
-#, fuzzy
 msgid "Skip to menu toggle button"
 msgstr "Preskočiť na tlačidlo zapnutia a vypnutia menu"
 
-#: includes/Setup/Editor.php:153
-#, fuzzy
+#: includes/Setup/Editor.php:158
 msgctxt "Font size."
 msgid "Small"
 msgstr "Malé"
 
-#: includes/Setup/Editor.php:159
-#, fuzzy
+#: includes/Setup/Editor.php:164
 msgctxt "Font size."
 msgid "Normal"
 msgstr "Normálne"
 
-#: includes/Setup/Editor.php:165
-#, fuzzy
+#: includes/Setup/Editor.php:170
 msgctxt "Font size."
 msgid "Large"
 msgstr "Veľký"
 
-#: includes/Setup/Editor.php:171
-#, fuzzy
+#: includes/Setup/Editor.php:176
 msgctxt "Font size."
 msgid "Extra Large"
 msgstr "Extra veľké"
 
-#: includes/Setup/Editor.php:177
-#, fuzzy
+#: includes/Setup/Editor.php:182
 msgctxt "Font size."
 msgid "Huge"
 msgstr "Obrovské"
 
-#: includes/Setup/Editor.php:183
+#: includes/Setup/Editor.php:188
 msgctxt "Font size."
 msgid "Gigantic"
 msgstr "Gigantické"
 
 #: includes/Setup/Media.php:160
-#, fuzzy
 msgctxt "WordPress predefined image size name."
 msgid "Thumbnail"
 msgstr "Prezentačný obrázok"
@@ -1204,18 +1074,15 @@ msgid "Not used by the theme."
 msgstr "Nepoužíva sa v téme."
 
 #: includes/Setup/Media.php:168
-#, fuzzy
 msgctxt "WordPress predefined image size name."
 msgid "Medium"
 msgstr "Stredný"
 
 #: includes/Setup/Media.php:169
-#, fuzzy
 msgid "In image attachment page preview."
 msgstr "V ukážke na stránke prílohy typu obrázok."
 
 #: includes/Setup/Media.php:176
-#, fuzzy
 msgctxt "WordPress predefined image size name."
 msgid "Large"
 msgstr "Veľký"
@@ -1238,17 +1105,14 @@ msgid "Change this image &rarr;"
 msgstr "Zmeniť tento obrázok &rarr;"
 
 #: includes/Tool/AMP.php:92
-#, fuzzy
 msgid "Expand child menu"
 msgstr "Rozbaliť vnorené menu"
 
 #: includes/Tool/AMP.php:93
-#, fuzzy
 msgid "Collapse child menu"
 msgstr "Zbaliť vnorené menu"
 
 #: includes/Tool/Page_Builder.php:125
-#, fuzzy
 msgctxt "Customizer section title."
 msgid "Page builders"
 msgstr "Editory stránok"
@@ -1272,7 +1136,6 @@ msgid "Open a page/post template instructions in new window &rarr;"
 msgstr "Otvoriť inštrukcie o šablónach v novom okne &rarr;"
 
 #: includes/Tool/Page_Builder.php:140
-#, fuzzy
 msgid "Page builder layout"
 msgstr "Rozloženie editora stránok"
 
@@ -1281,7 +1144,6 @@ msgid "Tweaks content area layout when using \"Page builder\" template."
 msgstr "Vyladí rozloženie obsahu pri použití šablóny \"Editor stránok\"."
 
 #: includes/Tool/Page_Builder.php:141
-#, fuzzy
 msgid ""
 "As every page builder plugin works differently, set this according to your "
 "needs."
@@ -1289,50 +1151,43 @@ msgstr ""
 "Keďže každý plugin typu editora stránok je iný, zvoľte možnosť podľa potreby."
 
 #: includes/Tool/Page_Builder.php:144
-#, fuzzy
 msgid "Full width content area, no padding"
 msgstr "Roztiahnuť oblasť obsahu, žiadne odsadenie"
 
 #: includes/Tool/Page_Builder.php:145
-#, fuzzy
 msgid "Keep content area width, just remove padding"
 msgstr "Zachovať šírku obsahovej oblasti, ale odstrániť odsadenie"
 
-#: includes/Welcome/Component.php:271 includes/Welcome/Component.php:272
-#, fuzzy
+#: includes/Welcome/Component.php:171 includes/Welcome/Component.php:172
 msgid "Welcome"
 msgstr "Vitajte"
 
 #. translators: %1$s: heart icon, %2$s: star icons.
-#: includes/Welcome/Component.php:333
-#, fuzzy, php-format
+#: includes/Welcome/Component.php:233
+#, php-format
 msgid "If you %1$s love this theme don't forget to rate it %2$s."
 msgstr "Ak sa vám %1$s páči táto téma, nezabudnite ju hodnotiť %2$s."
 
-#: includes/Welcome/Component.php:340
+#: includes/Welcome/Component.php:240
 msgid "And/or please consider a donation."
 msgstr "Zvážte prosím podporu."
 
-#: includes/Welcome/Component.php:343
-#: templates/parts/admin/welcome-promo.php:34
-#, fuzzy
+#: includes/Welcome/Component.php:243
+#: templates/parts/admin/welcome-promo.php:35
 msgid "Thank you!"
 msgstr "Vďaka!"
 
-#: includes/Welcome/Component.php:360
-#, fuzzy
+#: includes/Welcome/Component.php:260
 msgid ""
 "Have a suggestion for improvement or something is not working as it should?"
 msgstr "Máte návrh na zlepšenie, alebo niečo nefunguje tak, ako by malo?"
 
-#: includes/Welcome/Component.php:362
-#, fuzzy
+#: includes/Welcome/Component.php:262
 msgid "&rarr; Contact support"
 msgstr "&rarr; Kontaktujte technickú podporu"
 
 #. translators: Custom page template name.
 #: templates/no-intro-content-only.php:21
-#, fuzzy
 msgid "Content only"
 msgstr "Iba obsah"
 
@@ -1348,7 +1203,6 @@ msgstr "Prekrytá hlavička (svetlá)"
 
 #. translators: Custom page template name.
 #: templates/no-intro.php:19
-#, fuzzy
 msgid "No intro"
 msgstr "Bez intra"
 
@@ -1364,17 +1218,14 @@ msgstr "Editor stránok (prekrytá hlavička svetlá)"
 
 #. translators: Custom page template name.
 #: templates/page-builder.php:20
-#, fuzzy
 msgid "Page builder"
 msgstr "Editor stránok"
 
 #: templates/parts/accessibility/menu-skip-links.php:19
-#, fuzzy
 msgid "Skip links"
 msgstr "Preskakovacie odkazy"
 
 #: templates/parts/accessibility/menu-skip-links.php:24
-#, fuzzy
 msgid "Skip to main navigation"
 msgstr "Preskočiť na hlavnú navigáciu"
 
@@ -1383,18 +1234,15 @@ msgid "Skip to search form"
 msgstr "Preskočiť na formulár vyhľadávania"
 
 #: templates/parts/accessibility/menu-skip-links.php:27
-#, fuzzy
 msgid "Skip to footer"
 msgstr "Preskočiť na pätičku"
 
 #: templates/parts/admin/content-starter-excerpt.php:22
-#, fuzzy
 msgctxt "Theme starter content"
 msgid "This is a page/post excerpt text."
 msgstr "Toto je text výňatku stránky/článku."
 
 #: templates/parts/admin/media-image-sizes.php:31
-#, fuzzy
 msgid "Recommended image sizes"
 msgstr "Odporúčané rozmery obrázkov"
 
@@ -1416,27 +1264,22 @@ msgid "Resize images using plugin &rarr;"
 msgstr "Regenerovať obrázky pomocou pluginu &rarr;"
 
 #: templates/parts/admin/media-image-sizes.php:43
-#, fuzzy
 msgid "Size name"
 msgstr "Názov rozmeru"
 
 #: templates/parts/admin/media-image-sizes.php:44
-#, fuzzy
 msgid "Size ID"
 msgstr "ID veľkosti"
 
 #: templates/parts/admin/media-image-sizes.php:45
-#, fuzzy
 msgid "Size parameters"
 msgstr "Parametre rozmeru"
 
 #: templates/parts/admin/media-image-sizes.php:46
-#, fuzzy
 msgid "Theme usage"
 msgstr "Použitie v téme"
 
 #: templates/parts/admin/media-image-sizes.php:63
-#, fuzzy
 msgid ""
 "Additional image size added by the theme. Can not be changed on this page."
 msgstr ""
@@ -1445,51 +1288,54 @@ msgstr ""
 
 #. translators: 1: image width, 2: image height, 3: cropped or scaled?
 #: templates/parts/admin/media-image-sizes.php:91
-#, fuzzy, php-format
+#, php-format
 msgid "%1$d &times; %2$d, %3$s"
 msgstr "%1$d &times; %2$d, %3$s"
 
 #. translators: %s: Theme name.
 #: templates/parts/admin/notice-welcome.php:32
-#, fuzzy, php-format
+#, php-format
 msgid "Thank you for installing %s theme!"
 msgstr "Vďaka za inštaláciu témy %s!"
 
 #: templates/parts/admin/notice-welcome.php:40
-#, fuzzy
 msgid "Visit \"Welcome\" page for information on how to set up your website."
 msgstr ""
 "Začnite na uvítacej stránke, kde nájdete informácie, ako nastaviť vašu "
 "webovú stránku."
 
 #: templates/parts/admin/notice-welcome.php:48
-#, fuzzy
 msgid "Let's Get Started &raquo;"
 msgstr "Začíname &raquo;"
 
-#: templates/parts/admin/welcome-accessibility.php:27
+#: templates/parts/admin/welcome-a11y.php:27
 msgid "Create an Accessible Website"
 msgstr "Vytvorte prístupnú webstránku"
 
-#: templates/parts/admin/welcome-accessibility.php:30
-msgid "Hierarchy"
-msgstr "Hierarchia"
+#: templates/parts/admin/welcome-a11y.php:31
+msgid "Make your website inclusive and accessible to anyone."
+msgstr "Urobte svoju webovú stránku inkluzívnou a prístupnou pre kohokoľvek."
 
-#: templates/parts/admin/welcome-accessibility.php:31
-#, fuzzy
+#: templates/parts/admin/welcome-a11y.php:32
 msgid ""
-"Keep proper headings hierarchy, do not skip heading levels: H2 should be "
-"followed by H3 and so on."
+"This theme will help you create a disabilities friendly and barrier-less "
+"user experience."
 msgstr ""
-"Udržujte správnu hierarchiu nadpisov, nepreskakujte úrovne nadpisov: po H2 "
-"by mal nasledovať H3 a tak ďalej."
+"Táto téma vám pomôže vytvoriť bezbariérový používateľský zážitok bez ohľadu "
+"na zdravotné postihnutie."
 
-#: templates/parts/admin/welcome-accessibility.php:33
+#: templates/parts/admin/welcome-a11y.php:33
+msgid ""
+"When building your content, just follow web accessibility best practices."
+msgstr ""
+"Pri vytváraní obsahu stačí dodržiavať osvedčené postupy prístupnosti "
+"webových stránok."
+
+#: templates/parts/admin/welcome-a11y.php:37
 msgid "Simplicity"
 msgstr "Jednoduchosť"
 
-#: templates/parts/admin/welcome-accessibility.php:34
-#, fuzzy
+#: templates/parts/admin/welcome-a11y.php:38
 msgid ""
 "Keep your text simple. Paragraphs with more than four lines are more "
 "difficult to read. Use lists and spacing in your content."
@@ -1497,163 +1343,151 @@ msgstr ""
 "Udržujte text jednoduchý. Odseky s viac ako štyrmi riadkami textu sú ťažšie "
 "čitateľné. Používajte zoznamy a dostatok priestoru v obsahu stránok."
 
-#: templates/parts/admin/welcome-accessibility.php:38
-#, fuzzy
+#: templates/parts/admin/welcome-a11y.php:42
+msgid "Hierarchy"
+msgstr "Hierarchia"
+
+#: templates/parts/admin/welcome-a11y.php:43
+msgid ""
+"Keep proper headings hierarchy, do not skip heading levels: H2 should be "
+"followed by H3 and so on."
+msgstr ""
+"Udržujte správnu hierarchiu nadpisov, nepreskakujte úrovne nadpisov: po H2 "
+"by mal nasledovať H3 a tak ďalej."
+
+#: templates/parts/admin/welcome-a11y.php:47
 msgid "Images"
 msgstr "Obrázky"
 
-#: templates/parts/admin/welcome-accessibility.php:39
-#, fuzzy
+#: templates/parts/admin/welcome-a11y.php:48
 msgid "Adding images to posts and pages makes your content easier to remember."
 msgstr ""
 "Pridávaním obrázkov do príspevkov a stránok uľahčíte zapamätanie obsahu."
 
-#: templates/parts/admin/welcome-accessibility.php:41
+#: templates/parts/admin/welcome-a11y.php:52
 msgid "Alternatives"
 msgstr "Alternatívy"
 
-#: templates/parts/admin/welcome-accessibility.php:43
-#, fuzzy
+#: templates/parts/admin/welcome-a11y.php:54
 msgid ""
-"Add alt texts to images (you can do this in the media library or directly in "
-"post editor)."
+"Set alt text to images (do this in the media library or directly in post "
+"editor)."
 msgstr ""
-"Do obrázkov pridajte alternatívne texty (môžete to urobiť v knižnici médií "
-"alebo priamo v editore obsahu)."
+"Nastavte alternatívny text obrázkov (urobte to v knižnici médií alebo priamo "
+"v editore obsahu)."
 
-#: templates/parts/admin/welcome-accessibility.php:44
-#, fuzzy
-msgid "Add text alternatives for videos and sound."
-msgstr "Pridajte textové alternatívy pre videá a zvuk."
+#: templates/parts/admin/welcome-a11y.php:55
+msgid "Provide text alternatives for videos and sound."
+msgstr "Poskytnite textové alternatívy pre videá a zvuk."
 
-#: templates/parts/admin/welcome-demo.php:26
-#, fuzzy
-msgid "Theme demo content"
+#: templates/parts/admin/welcome-a11y.php:61
+msgid "More info in theme documentation &rarr;"
+msgstr "Viac informácií v dokumentácii témy &rarr;"
+
+#: templates/parts/admin/welcome-demo.php:27
+msgid "Theme Demo Content"
 msgstr "Demo obsah témy"
 
-#: templates/parts/admin/welcome-demo.php:29
-#, fuzzy
+#: templates/parts/admin/welcome-demo.php:32
 msgid "WordPress starter content"
 msgstr "Štartovací obsah WordPress"
 
-#: templates/parts/admin/welcome-demo.php:32
-#, fuzzy
+#: templates/parts/admin/welcome-demo.php:35
 msgid "This theme contains a predefined starter content."
 msgstr "Táto téma obsahuje preddefinovaný štartovací obsah."
 
-#: templates/parts/admin/welcome-demo.php:33
-#, fuzzy
+#: templates/parts/admin/welcome-demo.php:36
 msgid ""
-"So, if your WordPress installation is fresh and you haven't created any "
-"content yet, just open website customizer to preview the starter content."
+"So, if you haven't created any content yet, just open the customizer to "
+"preview the starter content."
 msgstr ""
-"Takže, ak je vaša inštalácia WordPress úplne nová a nevytvorili ste ešte "
-"žiaden obsah, otvorte prispôsobenie webstránky pre náhľad štartovacieho "
-"obsahu."
-
-#: templates/parts/admin/welcome-demo.php:34
-#, fuzzy
-msgid ""
-"Once you publish your customizer settings, the starter content will be "
-"ported into your website automatically."
-msgstr ""
-"Po publikovaní nastavení prispôsobenia webstránky bude štartovací obsah "
-"automaticky inštalovaný do vašej webovej stránky."
+"Ak ste teda ešte nevytvorili žiadny obsah, stačí otvoriť Prispôsobenie a "
+"prezrieť si ukážku štartovacieho obsahu."
 
 #: templates/parts/admin/welcome-demo.php:37
-#: templates/parts/admin/welcome-quickstart.php:51
-#, fuzzy
-msgid "Customize your website &raquo;"
-msgstr "Prispôsobiť stránku &raquo;"
-
-#: templates/parts/admin/welcome-demo.php:39
-#, fuzzy
 msgid ""
-"(Note that WordPress starter content works only with fresh install of "
-"WordPress!)"
+"Once you publish your customizer settings, the starter content will be "
+"imported into your website automatically."
 msgstr ""
-"(Upozorňujeme, že štartovací obsah WordPress funguje iba s novou, čerstvou "
-"inštaláciou WordPress!)"
+"Po zverejnení nastavení Prispôsobenia sa štartovací obsah automaticky "
+"importuje do vašej webovej stránky."
 
-#: templates/parts/admin/welcome-demo.php:43
-#, fuzzy
+#: templates/parts/admin/welcome-demo.php:40
+msgid ""
+"(Note that WordPress starter content works only with fresh installation of "
+"WordPress.)"
+msgstr ""
+"(Upozorňujeme, že štartovací obsah funguje iba s čerstvou novou inštaláciou "
+"WordPress.)"
+
+#: templates/parts/admin/welcome-demo.php:42
+#: templates/parts/admin/welcome-guide.php:42
+#: templates/parts/admin/welcome-guide.php:48
+msgid "Customize"
+msgstr "Prispôsobiť"
+
+#: templates/parts/admin/welcome-demo.php:47
 msgid "Full theme demo content"
 msgstr "Plný demo obsah témy"
 
-#: templates/parts/admin/welcome-demo.php:46
-#, fuzzy
+#: templates/parts/admin/welcome-demo.php:50
 msgid ""
-"Alternatively you can install a full theme demo content to match the theme "
-"demo website."
+"You can install a full theme demo content to match the theme demo website."
 msgstr ""
-"Prípadne môžete nainštalovať plný demo obsah témy zodpovedajúci demo stránke "
-"témy."
-
-#: templates/parts/admin/welcome-demo.php:47
-#, fuzzy
-msgid ""
-"This provides a more complex data and a great fresh start to build your own "
-"website."
-msgstr ""
-"Tento spôsob poskytuje komplexnejšie dáta a výborný štart pre vytváranie "
-"vašej vlastnej webstránky."
+"Môžete nainštalovať plný demo obsah témy zodpovedajúci demo stránke témy."
 
 #: templates/parts/admin/welcome-demo.php:51
-#, fuzzy
-msgid "Install theme demo content &raquo;"
-msgstr "Inštalovať demo obsah témy &raquo;"
+msgid "(Preview the demo &rarr;)"
+msgstr "(Prezrieť demo →)"
 
 #: templates/parts/admin/welcome-demo.php:52
-#, fuzzy
-msgid ""
-"Or head over to Appearance &raquo; Import Demo Data to start the import "
-"process."
+msgid "This provides a comprehensive start for building your own website."
 msgstr ""
-"Alebo spustite proces importu v administračnom menu Vzhľad &raquo; Import "
-"demo dát."
+"Týmto poskytujeme obsiahly začiatok pre vytvorenie vlastnej webovej stránky."
 
-#: templates/parts/admin/welcome-demo.php:54
+#: templates/parts/admin/welcome-demo.php:57
+msgid "Install demo content"
+msgstr "Inštalovať demo obsah"
+
+#: templates/parts/admin/welcome-demo.php:59
+msgid "(Appearance &rarr; Import Demo Data)"
+msgstr "(Vzhľad → Importovať demo údaje)"
+
+#: templates/parts/admin/welcome-demo.php:62
 msgid "How to import demo content &raquo;"
 msgstr "Ako importovať demo obsah &raquo;"
 
-#: templates/parts/admin/welcome-demo.php:57
-#, fuzzy
-msgid "Preview theme demo &raquo;"
-msgstr "Ukážka dema témy &raquo;"
-
-#: templates/parts/admin/welcome-features.php:26
+#: templates/parts/admin/welcome-features.php:25
 msgid "Theme Features"
 msgstr "Vybrané vlastnosti témy"
 
-#: templates/parts/admin/welcome-features.php:31
+#: templates/parts/admin/welcome-features.php:29
 msgid "Block Patterns"
 msgstr "Vzory blokov"
 
-#: templates/parts/admin/welcome-features.php:32
-msgid "Create your content faster with integrated block patterns library."
-msgstr "Vytvorte obsah rýchlejšie pomocou integrovanej knižnice vzorov blokov."
+#: templates/parts/admin/welcome-features.php:30
+msgid ""
+"Create your content faster with integrated pre-designed patterns library."
+msgstr ""
+"Vytvorte obsah rýchlejšie pomocou integrovanej knižnice predpripravených "
+"vzorov blokov."
 
-#: templates/parts/admin/welcome-features.php:33
-#: templates/parts/admin/welcome-features.php:39
+#: templates/parts/admin/welcome-features.php:31
+#: templates/parts/admin/welcome-features.php:38
 #: templates/parts/admin/welcome-features.php:45
-#: templates/parts/admin/welcome-features.php:52
+#: templates/parts/admin/welcome-features.php:53
 msgid "Watch instructions in new window &rarr;"
 msgstr "Pozrieť inštrukcie v novom okne &rarr;"
 
-#: templates/parts/admin/welcome-features.php:37
+#: templates/parts/admin/welcome-features.php:36
 msgid "Block Styles"
 msgstr "Štýly blokov"
 
-#: templates/parts/admin/welcome-features.php:38
-msgid ""
-"Style your blocks immediately and easily without coding using predefined "
-"styles."
-msgstr ""
-"Zmeňte vzhľad blokov okamžite a jednoducho bez kódovania použitím "
-"prednastavených štýlov."
+#: templates/parts/admin/welcome-features.php:37
+msgid "Change the style of blocks immediately and easily without coding."
+msgstr "Zmeňte štýl blokov okamžite a jednoducho bez kódovania."
 
 #: templates/parts/admin/welcome-features.php:43
-#, fuzzy
 msgid "Templates"
 msgstr "Šablóny"
 
@@ -1661,22 +1495,19 @@ msgstr "Šablóny"
 msgid "Modify a front-end page or post layout swiftly using templates."
 msgstr "Upravte rozloženie strany alebo príspevku rýchlo pomocou šablón."
 
-#: templates/parts/admin/welcome-features.php:49
+#: templates/parts/admin/welcome-features.php:50
 msgid "Featured Posts"
 msgstr "Odporúčané príspevky"
 
-#: templates/parts/admin/welcome-features.php:50
-msgid "Your featured posts deserve special display on top of blog page."
-msgstr ""
-"Vaše odporúčané príspevky si zaslúžia špeciálne zobrazenie v hornej časti "
-"stránky blogu."
+#: templates/parts/admin/welcome-features.php:51
+msgid "Display important news immediately on top of your blog page."
+msgstr "Zobrazte dôležité novinky ihneď v hornej časti stránky blogu."
 
-#: templates/parts/admin/welcome-features.php:54
+#: templates/parts/admin/welcome-features.php:55
 msgid "Set featured posts tag now &rarr;"
 msgstr "Nastaviť značku odporúčaných príspevkov &rarr;"
 
-#: templates/parts/admin/welcome-footer.php:38
-#, fuzzy
+#: templates/parts/admin/welcome-footer.php:31
 msgid ""
 "You can disable this page in Appearance &rarr; Customize &rarr; Theme "
 "Options &rarr; Others."
@@ -1684,34 +1515,98 @@ msgstr ""
 "Túto stránku môžete vypnúť vo Vzhľad &rarr; Prispôsobenie &rarr; Možnosti "
 "témy &rarr; Iné."
 
+#: templates/parts/admin/welcome-guide.php:25
+msgid "Quickstart Guide"
+msgstr "Inštalačná príručka"
+
+#: templates/parts/admin/welcome-guide.php:30
+msgid "Set up"
+msgstr "Nastaviť"
+
+#: templates/parts/admin/welcome-guide.php:33
+msgid "Make sure to tweak \"Settings\" section of your site."
+msgstr "Nezabudnite vyladiť sekciu Nastavení vašej webovej stránky."
+
+#: templates/parts/admin/welcome-guide.php:34
+msgid "(Pay attention to image size setup under Settings &rarr; Media.)"
+msgstr ""
+"(Venujte pozornosť nastaveniu veľkostí obrázkov v sekcii Nastavenia &rarr; "
+"Médiá.)"
+
+#: templates/parts/admin/welcome-guide.php:36
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: templates/parts/admin/welcome-guide.php:45
+msgid "You can customize your website using a live-preview editor."
+msgstr "Stránku si môžete prispôsobiť použitím editora so živím náhľadom."
+
+#: templates/parts/admin/welcome-guide.php:46
+msgid "Customization changes apply only after you publish them."
+msgstr "Zmeny prispôsobenia sa aplikujú až po ich publikovaní."
+
+#: templates/parts/admin/welcome-guide.php:54
+msgid "New to WordPress?"
+msgstr "Je pre vás WordPress novinkou?"
+
+#: templates/parts/admin/welcome-guide.php:56
+msgid "If you are new to WordPress check out info in theme documentation."
+msgstr ""
+"Ak ste vo WordPress nováčikom, pozrite si informácie v dokumentácii k téme."
+
+#: templates/parts/admin/welcome-guide.php:57
+msgid "Get to know WordPress &rarr;"
+msgstr "Spoznajte WordPress &rarr;"
+
 #. translators: 1: theme name, 2: theme developer link.
 #: templates/parts/admin/welcome-header.php:37
-#, fuzzy, php-format
-msgid "Thank you for using %1$s theme by %2$s!"
-msgstr "Vďaka za používanie témy %1$s od %2$s!"
+#, php-format
+msgid "Congratulations and thank you for choosing %1$s theme by %2$s!"
+msgstr "Gratulujeme a ďakujeme za používanie témy %1$s od %2$s!"
 
-#: templates/parts/admin/welcome-header.php:44
-#, fuzzy
-msgid "Please take time to read the steps below to set up your website."
+#: templates/parts/admin/welcome-header.php:43
+msgid "Information on this page introduces the theme and provides useful tips."
 msgstr ""
-"Venujte prosím čas doleuvedeným inštrukciám pre nastavenie vašej webovej "
-"stránky."
+"Informácie na tejto stránke predstavujú tému a poskytujú užitočné tipy."
 
-#: templates/parts/admin/welcome-header.php:46
-#, fuzzy
-msgid "Read documentation &raquo;"
-msgstr "Čítať dokumentáciu &raquo;"
+#: templates/parts/admin/welcome-header.php:48
+msgid "Features"
+msgstr "Vlastnosti"
 
-#: templates/parts/admin/welcome-header.php:47
-#, fuzzy
-msgid "Contact support &raquo;"
-msgstr "Kontaktovať podporu &raquo;"
+#: templates/parts/admin/welcome-header.php:49
+msgid "Accessibility"
+msgstr "Prístupnosť"
+
+#: templates/parts/admin/welcome-header.php:50
+msgid "Quickstart"
+msgstr "Sprievodca nastavením"
+
+#: templates/parts/admin/welcome-header.php:51
+msgid "Demo content"
+msgstr "Demo obsah"
+
+#: templates/parts/admin/welcome-header.php:52
+msgid "Upgrade"
+msgstr "Aktualizácia"
+
+#: templates/parts/admin/welcome-header.php:57
+msgid "Documentation &rarr;"
+msgstr "Dokumentácia &rarr;"
+
+#: templates/parts/admin/welcome-header.php:58
+msgid "Support Forum &rarr;"
+msgstr "Fórum technickej podpory &rarr;"
+
+#: templates/parts/admin/welcome-header.php:62
+msgctxt "Notice, hint."
+msgid "Tip:"
+msgstr "Tip:"
 
 #: templates/parts/admin/welcome-promo.php:29
 msgid "Like the theme?"
 msgstr "Páči sa vám téma?"
 
-#: templates/parts/admin/welcome-promo.php:32
+#: templates/parts/admin/welcome-promo.php:33
 #, php-format
 msgid ""
 "You are using a fully functional 100% free WordPress theme without any paid "
@@ -1720,7 +1615,7 @@ msgstr ""
 "Používate plne funkčnú a bezplatnú WordPress tému bez akejkoľvek platenej "
 "nadstavby."
 
-#: templates/parts/admin/welcome-promo.php:33
+#: templates/parts/admin/welcome-promo.php:34
 msgid ""
 "If you find it helpful, please support its updates and technical support "
 "service with a donation or by purchasing one of paid products at "
@@ -1730,67 +1625,9 @@ msgstr ""
 "pomoci darom alebo zakúpením jedného z platených produktov na stránke "
 "WebManDesign.eu."
 
-#: templates/parts/admin/welcome-promo.php:36
+#: templates/parts/admin/welcome-promo.php:38
 msgid "Visit WebMan Design website now &rarr;"
 msgstr "Navštíviť webstránku WebMan Design &rarr;"
-
-#: templates/parts/admin/welcome-quickstart.php:26
-#, fuzzy
-msgid "New to WordPress?"
-msgstr "Je pre vás WordPress novinkou?"
-
-#: templates/parts/admin/welcome-quickstart.php:27
-#, fuzzy
-msgid ""
-"If you are new to WordPress, please check out the introduction section in "
-"theme documentation."
-msgstr ""
-"Ak nie ste dostatočne oboznámený so systémom WordPress, preštudujte si "
-"úvodnú sekciu dokumentácie témy."
-
-#: templates/parts/admin/welcome-quickstart.php:28
-#, fuzzy
-msgid "Get to know WordPress &raquo;"
-msgstr "Spoznajte WordPress &raquo;"
-
-#: templates/parts/admin/welcome-quickstart.php:35
-#, fuzzy
-msgid "WordPress settings"
-msgstr "Nastavenia WordPress"
-
-#: templates/parts/admin/welcome-quickstart.php:37
-#, fuzzy
-msgid ""
-"Make sure you set up your site in \"Settings\" section of the dashboard."
-msgstr "Nastavte stránku v časti \"Nastavenia\" v administrácii."
-
-#: templates/parts/admin/welcome-quickstart.php:38
-#, fuzzy
-msgid ""
-"(Pay special attention to image sizes setup under Settings &rarr; Media.)"
-msgstr ""
-"(Venujte osobitnú pozornosť nastaveniu veľkosti obrázkov v sekcii Nastavenia "
-"&rarr; Médiá.)"
-
-#: templates/parts/admin/welcome-quickstart.php:40
-#, fuzzy
-msgid "Set up WordPress &raquo;"
-msgstr "Nastaviť WordPress &raquo;"
-
-#: templates/parts/admin/welcome-quickstart.php:46
-#, fuzzy
-msgid "Customize your website"
-msgstr "Prispôsobenie stránky"
-
-#: templates/parts/admin/welcome-quickstart.php:48
-#, fuzzy
-msgid "You can customize your website using a live-preview editor."
-msgstr "Stránku si môžete prispôsobiť použitím editora so živím náhľadom."
-
-#: templates/parts/admin/welcome-quickstart.php:49
-#, fuzzy
-msgid "Customization changes will go live only after you publish them."
-msgstr "Zmeny prispôsobenia sa aplikujú až keď ich publikujete."
 
 #: templates/parts/block/pattern/contact/bg-1.php:19
 msgctxt "Block pattern title."
@@ -1805,7 +1642,6 @@ msgstr "S obrázkom pozadia"
 #: templates/parts/block/pattern/contact/quote.php:21
 #: templates/parts/block/pattern/contact/shadow.php:21
 #: templates/parts/block/pattern/contact/social.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "contact"
 msgstr "kontakt"
@@ -1847,7 +1683,6 @@ msgstr "S citátom"
 #: templates/parts/block/pattern/quote/testimonial-bg.php:21
 #: templates/parts/block/pattern/quote/testimonial.php:21
 #: templates/parts/block/pattern/quote/testimonials.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "quote"
 msgstr "citát"
@@ -1855,7 +1690,6 @@ msgstr "citát"
 #: templates/parts/block/pattern/contact/quote.php:23
 #: templates/parts/block/pattern/quote/testimonial-bg.php:22
 #: templates/parts/block/pattern/quote/testimonials.php:22
-#, fuzzy
 msgctxt "keyword"
 msgid "testimonial"
 msgstr "referencia"
@@ -1887,7 +1721,6 @@ msgstr "S 2 obrázkami a popisom"
 #: templates/parts/block/pattern/cover/overflow.php:21
 #: templates/parts/block/pattern/cover/overlap.php:21
 #: templates/parts/block/pattern/text/with-description.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "intro"
 msgstr "intro"
@@ -1908,7 +1741,6 @@ msgstr "intro"
 #: templates/parts/block/pattern/text/heading-columns.php:22
 #: templates/parts/block/pattern/text/large-lead.php:22
 #: templates/parts/block/pattern/text/with-description.php:22
-#, fuzzy
 msgctxt "keyword"
 msgid "title"
 msgstr "titulok"
@@ -1928,7 +1760,6 @@ msgstr "titulok"
 #: templates/parts/block/pattern/text/heading-columns.php:23
 #: templates/parts/block/pattern/text/large-lead.php:23
 #: templates/parts/block/pattern/text/with-description.php:23
-#, fuzzy
 msgctxt "keyword"
 msgid "heading"
 msgstr "nadpis"
@@ -2000,7 +1831,6 @@ msgstr "S pozadím"
 #: templates/parts/block/pattern/list/features-parallax.php:23
 #: templates/parts/block/pattern/list/features-simple.php:23
 #: templates/parts/block/pattern/post/project-gallery.php:25
-#, fuzzy
 msgctxt "keyword"
 msgid "button"
 msgstr "tlačidlo"
@@ -2017,7 +1847,6 @@ msgstr "tlačidlo"
 #: templates/parts/block/pattern/list/features-parallax.php:24
 #: templates/parts/block/pattern/list/features-simple.php:24
 #: templates/parts/block/pattern/post/project-gallery.php:24
-#, fuzzy
 msgctxt "keyword"
 msgid "call to action"
 msgstr "výzva k akcii"
@@ -2034,7 +1863,6 @@ msgid "cta"
 msgstr "výzva k akcii (VKA, CTA)"
 
 #: templates/parts/block/pattern/cta/box.php:19
-#, fuzzy
 msgctxt "Block pattern title."
 msgid "Boxed"
 msgstr "Orámovaná"
@@ -2055,10 +1883,9 @@ msgid "Large with image"
 msgstr "Veľká s obrázkom"
 
 #: templates/parts/block/pattern/cta/simple.php:19
-#, fuzzy
 msgctxt "Block pattern title."
 msgid "Simple"
-msgstr "Jednoduchý"
+msgstr "Jednoduché"
 
 #: templates/parts/block/pattern/faq/question-answer.php:19
 msgctxt "Block pattern title."
@@ -2066,7 +1893,6 @@ msgid "Question and answer"
 msgstr "Otázka a odpoveď"
 
 #: templates/parts/block/pattern/faq/question-answer.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "FAQ - frequently asked questions"
 msgstr "FAQ - často kladené otázky"
@@ -2086,7 +1912,6 @@ msgstr "S popiskami"
 #: templates/parts/block/pattern/post/project-gallery.php:23
 #: templates/parts/block/pattern/team/team-2.php:24
 #: templates/parts/block/pattern/team/team.php:24
-#, fuzzy
 msgctxt "keyword"
 msgid "gallery"
 msgstr "galéria"
@@ -2113,13 +1938,11 @@ msgid "Variable, with description"
 msgstr "Premenlivá, s popisom"
 
 #: templates/parts/block/pattern/gallery/image-padding-left.php:19
-#, fuzzy
 msgctxt "Block pattern title."
 msgid "Fullwidth image with left padding"
 msgstr "Obrázok na celú šírku s odsadením vľavo"
 
 #: templates/parts/block/pattern/gallery/image-padding-right.php:19
-#, fuzzy
 msgctxt "Block pattern title."
 msgid "Fullwidth image with right padding"
 msgstr "Obrázok na celú šírku s odsadením vpravo"
@@ -2150,25 +1973,21 @@ msgid "Heading: Accessibly hidden"
 msgstr "Nadpis: Prístupne skrytý"
 
 #: templates/parts/block/pattern/header/hidden-accessibly.php:24
-#, fuzzy
 msgctxt "keyword"
 msgid "a11y"
 msgstr "a11y"
 
 #: templates/parts/block/pattern/header/hidden-accessibly.php:25
-#, fuzzy
 msgctxt "keyword"
 msgid "barrierless"
 msgstr "bezbariérový"
 
 #: templates/parts/block/pattern/header/hidden-accessibly.php:26
-#, fuzzy
 msgctxt "keyword"
 msgid "screen reader"
 msgstr "čítačka obrazovky"
 
 #: templates/parts/block/pattern/header/hidden-accessibly.php:38
-#, fuzzy
 msgid "Visually hidden, but kept accessible for screen readers"
 msgstr "Vizuálne skryté, ale prístupné pre čítačky obrazovky"
 
@@ -2188,7 +2007,6 @@ msgstr "Vlastnosti s pozadím a obrázkom"
 #: templates/parts/block/pattern/list/features-single-large.php:21
 #: templates/parts/block/pattern/price/columns-with-icons.php:22
 #: templates/parts/block/pattern/price/with-contact.php:22
-#, fuzzy
 msgctxt "keyword"
 msgid "services"
 msgstr "služby"
@@ -2209,7 +2027,6 @@ msgstr "služby"
 #: templates/parts/block/pattern/text/extra-hierarchy.php:21
 #: templates/parts/block/pattern/text/heading-columns.php:21
 #: templates/parts/block/pattern/text/large-lead.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "columns"
 msgstr "stĺpce"
@@ -2250,7 +2067,6 @@ msgid "Features"
 msgstr "Vlastnosti"
 
 #: templates/parts/block/pattern/list/features-single-large.php:19
-#, fuzzy
 msgctxt "Block pattern title."
 msgid "A large feature"
 msgstr "Veľká vlastnosť"
@@ -2263,7 +2079,6 @@ msgstr "Text s paralaxou pozadia"
 #: templates/parts/block/pattern/media-text/parallax.php:21
 #: templates/parts/block/pattern/media-text/with-image.php:21
 #: templates/parts/block/pattern/post/project-image.php:23
-#, fuzzy
 msgctxt "keyword"
 msgid "image"
 msgstr "obrázok"
@@ -2284,7 +2099,6 @@ msgid "Blog"
 msgstr "Blog"
 
 #: templates/parts/block/pattern/post/blog.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "articles"
 msgstr "články"
@@ -2297,14 +2111,12 @@ msgid "posts"
 msgstr "príspevky, články"
 
 #: templates/parts/block/pattern/post/project-gallery.php:19
-#, fuzzy
 msgctxt "Block pattern title."
 msgid "Project with gallery"
 msgstr "Projekt s galériou"
 
 #: templates/parts/block/pattern/post/project-gallery.php:22
 #: templates/parts/block/pattern/post/project-image.php:22
-#, fuzzy
 msgctxt "keyword"
 msgid "portfolio"
 msgstr "portfólio"
@@ -2323,13 +2135,11 @@ msgstr "Karty"
 #: templates/parts/block/pattern/price/columns-with-icons.php:21
 #: templates/parts/block/pattern/price/food-menu.php:21
 #: templates/parts/block/pattern/price/with-contact.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "price"
 msgstr "cena"
 
 #: templates/parts/block/pattern/price/cards.php:22
-#, fuzzy
 msgctxt "keyword"
 msgid "food menu"
 msgstr "jedálny lístok"
@@ -2355,7 +2165,6 @@ msgid "Testimonial: With background image"
 msgstr "Referencia: S obrázkom na pozadí"
 
 #: templates/parts/block/pattern/quote/testimonial-bg.php:23
-#, fuzzy
 msgctxt "keyword"
 msgid "photo"
 msgstr "fotografia"
@@ -2377,7 +2186,6 @@ msgstr "Pätička s formulárom odberu"
 
 #: templates/parts/block/pattern/site/footer-form.php:21
 #: templates/parts/block/pattern/site/footer.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "site"
 msgstr "webstránka"
@@ -2388,13 +2196,11 @@ msgid "Site footer with logo, links, description and social links"
 msgstr "Pätička s logom, odkazmi, popisom a sociálnymi odkazmi"
 
 #: templates/parts/block/pattern/site/footer.php:22
-#, fuzzy
 msgctxt "keyword"
 msgid "links"
 msgstr "odkazy"
 
 #: templates/parts/block/pattern/site/footer.php:23
-#, fuzzy
 msgctxt "keyword"
 msgid "social links"
 msgstr "odkazy sociálnych sietí"
@@ -2406,21 +2212,18 @@ msgstr "2 veľké popisy"
 
 #: templates/parts/block/pattern/team/team-2.php:21
 #: templates/parts/block/pattern/team/team.php:21
-#, fuzzy
 msgctxt "keyword"
 msgid "staff"
 msgstr "zamestnanci"
 
 #: templates/parts/block/pattern/team/team-2.php:22
 #: templates/parts/block/pattern/team/team.php:22
-#, fuzzy
 msgctxt "keyword"
 msgid "employees"
 msgstr "zamestnanci"
 
 #: templates/parts/block/pattern/team/team-2.php:23
 #: templates/parts/block/pattern/team/team.php:23
-#, fuzzy
 msgctxt "keyword"
 msgid "people"
 msgstr "ľudia"
@@ -2462,28 +2265,25 @@ msgstr "Hlavný nadpis s popisom na boku"
 
 #. translators: %s: Name of current post
 #: templates/parts/component/link-more.php:26
-#, fuzzy, php-format
+#, php-format
 msgid "Continue reading %s"
 msgstr "Prečítať %s"
 
 #: templates/parts/component/link-more.php:35
-#, fuzzy
 msgid "Continue reading&hellip;"
 msgstr "Prečítať&hellip;"
 
 #: templates/parts/component/page-header-404.php:35
-#, fuzzy
 msgid "Oops! That page can not be found."
 msgstr "Hľadaná stránka nebola nájdená."
 
 #: templates/parts/component/page-header-none.php:35
-#, fuzzy
 msgid "Nothing Found"
 msgstr "Nenašli sa žiadne záznamy"
 
 #. translators: %s: search query.
 #: templates/parts/component/page-header-search.php:39
-#, fuzzy, php-format
+#, php-format
 msgid "Search Results for: %s"
 msgstr "Výsledky vyhľadávania pre: %s"
 
@@ -2496,48 +2296,41 @@ msgstr[1] "Našli sme %d výsledky vášho vyhľadávania."
 msgstr[2] "Našli sme %d výsledkov vášho vyhľadávania."
 
 #: templates/parts/content/content-404.php:19
-#, fuzzy
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 "Vyzerá to tak, že sa nenašli žiadne záznamy. Možno skúste vyhľadávanie?"
 
 #: templates/parts/content/content-attachment-image.php:32
-#, fuzzy
 msgctxt "Attachment page image info table caption."
 msgid "Image info"
 msgstr "Informácie o obrázku"
 
 #: templates/parts/content/content-attachment-image.php:37
-#, fuzzy
 msgctxt "Attachment page publish time."
 msgid "Image published on:"
 msgstr "Obrázok publikovaný dňa:"
 
 #: templates/parts/content/content-attachment-image.php:51
-#, fuzzy
 msgid "Image size:"
 msgstr "Veľkosť obrázku:"
 
 #: templates/parts/content/content-attachment-image.php:62
-#, fuzzy
 msgid "Image file name:"
 msgstr "Názov súboru obrázku:"
 
 #: templates/parts/content/content-attachment.php:28
-#, fuzzy
 msgid "Download attachment file:"
 msgstr "Prevziať súbor prílohy:"
 
 #. translators: 1: link to WP admin new post page.
-#: templates/parts/content/content-none.php:28
-#, fuzzy, php-format
+#: templates/parts/content/content-none.php:33
+#, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 "Pripravený publikovať svoj prvý článok? <a href=\"%1$s\">Začnite hneď</a>."
 
-#: templates/parts/content/content-none.php:41
-#, fuzzy
+#: templates/parts/content/content-none.php:46
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -2545,8 +2338,7 @@ msgstr ""
 "Vášmu vyhľadávaniu nezodpovedajú žiadne záznamy. Skúste znovu pomocou iných "
 "kľúčových slov."
 
-#: templates/parts/content/content-none.php:50
-#, fuzzy
+#: templates/parts/content/content-none.php:55
 msgid ""
 "It seems we can not find what you are looking for. Perhaps searching can "
 "help."
@@ -2558,29 +2350,25 @@ msgstr "Späť na začiatok stránky"
 
 #. translators: 1: linked CMS name (WordPress), 2: theme name.
 #: templates/parts/footer/site-info.php:49
-#, fuzzy, php-format
+#, php-format
 msgid "Powered by %1$s and %2$s."
 msgstr "Používame %1$s a %2$s."
 
 #: templates/parts/footer/site-info.php:50
-#, fuzzy
 msgid "https://wordpress.org/"
 msgstr "https://sk.wordpress.org/"
 
-#: templates/parts/menu/menu-primary.php:31
-#, fuzzy
+#: templates/parts/menu/menu-primary.php:27
 msgctxt "Navigational menu."
 msgid "Main menu"
 msgstr "Hlavné menu"
 
-#: templates/parts/menu/menu-primary.php:46
-#, fuzzy
+#: templates/parts/menu/menu-primary.php:41
 msgctxt "Mobile navigation toggle button title."
 msgid "Menu"
 msgstr "Navigácia"
 
 #: templates/parts/meta/entry-meta-item-author.php:22
-#, fuzzy
 msgctxt "Post meta info description: author name."
 msgid "Written by:"
 msgstr "Autor:"
@@ -2592,40 +2380,36 @@ msgid ", "
 msgstr ", "
 
 #: templates/parts/meta/entry-meta-item-category.php:30
-#, fuzzy
 msgctxt "Post meta info description: categories list."
 msgid "Categorized in:"
 msgstr "Kategorizované ako:"
 
 #. translators: %d: number of comments.
 #: templates/parts/meta/entry-meta-item-comments.php:37
-#, fuzzy, php-format
+#, php-format
 msgid "Comments: %d"
 msgstr "Komentáre: %d"
 
 #: templates/parts/meta/entry-meta-item-comments.php:40
-#, fuzzy
 msgctxt "Post meta info description: comments count."
 msgid "Comments:"
 msgstr "Komentáre:"
 
 #: templates/parts/meta/entry-meta-item-date.php:22
 #: templates/parts/meta/entry-meta-item-date.php:23
-#, fuzzy
 msgctxt "Post meta info description: publish date."
 msgid "Posted on:"
 msgstr "Publikované dňa:"
 
 #: templates/parts/meta/entry-meta-item-date.php:25
 #: templates/parts/meta/entry-meta-item-date.php:26
-#, fuzzy
 msgctxt "Post meta info description: update date."
 msgid "Last updated on:"
 msgstr "Naposledy aktualizované:"
 
 #. translators: %s: Name of current post. Only visible to screen readers.
 #: templates/parts/meta/entry-meta-item-edit.php:22
-#, fuzzy, php-format
+#, php-format
 msgid "Edit %s"
 msgstr "Upraviť %s"
 
@@ -2636,7 +2420,6 @@ msgid ", "
 msgstr ", "
 
 #: templates/parts/meta/entry-meta-item-tags.php:33
-#, fuzzy
 msgctxt "Post meta info description: tags list."
 msgid "Tagged as:"
 msgstr "Označené ako:"
@@ -2646,7 +2429,6 @@ msgid "Manual import procedure"
 msgstr "Postup manuálneho importu"
 
 #: templates/parts/plugin/content-ocdi-info.php:22
-#, fuzzy
 msgid ""
 "By importing this demo content you get the exact copy of the theme demo "
 "website."
@@ -2655,7 +2437,6 @@ msgstr ""
 "témy."
 
 #: templates/parts/plugin/content-ocdi-info.php:23
-#, fuzzy
 msgid "Preview the theme demo website &raquo;"
 msgstr "Prezrieť demo webstránku témy &raquo;"
 
@@ -2670,12 +2451,10 @@ msgid "GitHub repository instructions &raquo;"
 msgstr "Inštrukcie v GitHub depozitári &raquo;"
 
 #: templates/parts/plugin/content-ocdi-info.php:33
-#, fuzzy
 msgid "Media files quality"
 msgstr "Kvalita súborov médií"
 
 #: templates/parts/plugin/content-ocdi-info.php:36
-#, fuzzy
 msgid ""
 "Please note that imported media files (such as images, video and audio "
 "files) are of low quality to prevent copyright infringement."
@@ -2684,7 +2463,6 @@ msgstr ""
 "súbory) majú nízku kvalitu, aby sa zabránilo porušovaniu autorských práv."
 
 #: templates/parts/plugin/content-ocdi-info.php:37
-#, fuzzy
 msgid ""
 "Please read \"Credits\" section of theme documentation for reference where "
 "the demo media files were obtained from."
@@ -2693,17 +2471,14 @@ msgstr ""
 "dokumentácii témy."
 
 #: templates/parts/plugin/content-ocdi-info.php:40
-#, fuzzy
 msgid "Get media for your website &raquo;"
 msgstr "Získať médiá pre vaše webové stránky &raquo;"
 
 #: templates/parts/plugin/content-ocdi-info.php:46
-#, fuzzy
 msgid "Install demo required plugins!"
 msgstr "Nainštalujte vyžadované demo pluginy!"
 
 #: templates/parts/plugin/content-ocdi-info.php:49
-#, fuzzy
 msgid ""
 "Please read the information about the theme demo required plugins first."
 msgstr ""
@@ -2711,7 +2486,6 @@ msgstr ""
 "témy."
 
 #: templates/parts/plugin/content-ocdi-info.php:50
-#, fuzzy
 msgid ""
 "If you do not install and activate the demo required plugins, some of the "
 "content will not be imported."
@@ -2720,19 +2494,16 @@ msgstr ""
 "časti demo obsahu nebudú importované."
 
 #: templates/parts/plugin/content-ocdi-info.php:52
-#, fuzzy
 msgid ""
 "Read the information before you run the theme demo content import process."
 msgstr ""
 "Preštudujte si informácie predtým, než spustíte proces importu demo obsahu."
 
 #: templates/parts/plugin/content-ocdi-info.php:53
-#, fuzzy
 msgid "View the list of required plugins &raquo;"
 msgstr "Zobraziť zoznam požadovaných pluginov &raquo;"
 
 #: templates/parts/plugin/content-ocdi-info.php:58
-#, fuzzy
 msgid ""
 "(Note that this set of plugins may differ from plugins recommended under "
 "Appearance &rarr; Install Plugins!)"

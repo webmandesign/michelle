@@ -7,7 +7,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.3.0
+// @version  1.3.7
 //
 
 :root {
@@ -21,8 +21,8 @@
 
 }
 
-@import '_custom-properties/_theme-options';
-@import '_custom-properties/_colors';
-@import '_custom-properties/_typography';
-@import '_custom-properties/_box-model';
-@import '_custom-properties/_others';
+@import '_custom-properties/theme-options';
+@import '_custom-properties/colors';
+@import '_custom-properties/typography';
+@import '_custom-properties/box-model';
+@import '_custom-properties/others';

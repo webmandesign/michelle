@@ -3,7 +3,7 @@
 @if not variable-exists( 'selector_editor_wrapper' ) {
 	#{ $selectors_margin_bottom } {
 		margin-top: 0;
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+		margin-bottom: var(--gap); // Simulating rem unit for block editor.
 
 		&:last-child {
 			margin-bottom: 0;

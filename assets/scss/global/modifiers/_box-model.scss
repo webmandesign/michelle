@@ -275,7 +275,7 @@
 	.has-regular-margin-bottom,
 	.has-normal-margin-bottom,
 	.is-style-has-margin-bottom {
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ) $important_modifiers;
+		margin-bottom: var(--gap) $important_modifiers;
 	}
 
 	$important_modifiers: null; // Required reset.

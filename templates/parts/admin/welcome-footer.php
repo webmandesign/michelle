@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.7
  */
 
 namespace WebManDesign\Michelle;
@@ -21,20 +22,11 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 
 ?>
 
-<div class="about__section has-2-columns welcome--footer">
-
-	<div class="column">
-		<?php echo Welcome\Component::get_info_like(); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>
-	</div>
-
-	<div class="column">
-		<?php echo Welcome\Component::get_info_support(); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>
-	</div>
-
+<div class="welcome__section welcome__footer">
+	<p><?php echo Welcome\Component::get_info_like(); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
+	<p><?php echo Welcome\Component::get_info_support(); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
 </div>
 
-<div class="about__footer">
-	<p>
-		<em><?php esc_html_e( 'You can disable this page in Appearance &rarr; Customize &rarr; Theme Options &rarr; Others.', 'michelle' ); ?></em>
-	</p>
+<div class="welcome__section welcome__section--colophon">
+	<p><small><em><?php esc_html_e( 'You can disable this page in Appearance &rarr; Customize &rarr; Theme Options &rarr; Others.', 'Michelle' ); ?></em></small></p>
 </div>

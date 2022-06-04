@@ -6,12 +6,13 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.3
+ * @version  1.3.7
  */
 
 namespace WebManDesign\Michelle\Welcome;
 
 use WebManDesign\Michelle\Component_Interface;
+use WebManDesign\Michelle\Assets;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -52,7 +53,8 @@ class Component implements Component_Interface {
 	/**
 	 * Renders "Welcome" screen content.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.7
 	 *
 	 * @return  void
 	 */
@@ -77,10 +79,10 @@ class Component implements Component_Interface {
 			$sections = (array) apply_filters( 'michelle/welcome/render/sections', array(
 				0   => 'header',
 				5   => 'features',
-				10  => 'quickstart',
-				20  => 'accessibility',
+				10  => 'a11y',
+				20  => 'guide',
 				30  => 'demo',
-				90  => 'promo',
+				40  => 'promo',
 				100 => 'footer',
 			) );
 
@@ -91,7 +93,7 @@ class Component implements Component_Interface {
 
 			?>
 
-			<div class="wrap about__container welcome-wrap">
+			<div class="wrap welcome__container">
 
 				<?php
 
@@ -129,7 +131,7 @@ class Component implements Component_Interface {
 	 * Welcome screen CSS styles.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.3
+	 * @version  1.3.7
 	 *
 	 * @param  string $hook
 	 *
@@ -146,117 +148,11 @@ class Component implements Component_Interface {
 
 		// Processing
 
-			wp_add_inline_style( 'about', '
-
-				.welcome-wrap {
-					--wp-color-dark: #1d2327;
-					--wp-color-dark-text: #f0f0f1;
-					--wp-color-primary: #2271b1;
-					--wp-color-primary-text: #fff;
-				}
-
-				.welcome-wrap h3 {
-					margin-bottom: 10px;
-				}
-
-				.welcome-wrap h3:not(:first-child) {
-					margin-top: 30px;
-				}
-
-				.welcome-wrap h3 + p {
-					margin-top: 0;
-				}
-
-				.about__header.welcome--header {
-					padding-top: 15vh;
-					padding-bottom: 15vh;
-					margin-bottom: 0;
-					text-align: center;
-				}
-
-					.about__header::before {
-						display: none;
-					}
-
-					.welcome--header,
-					.welcome--footer {
-						background: var(--wp-color-dark);
-						color: var(--wp-color-dark-text);
-					}
-
-					.welcome--header a,
-					.welcome--header a:hover,
-					.welcome--header a:focus,
-					.welcome--header a:active,
-					.welcome--footer a,
-					.welcome--footer a:hover,
-					.welcome--footer a:focus,
-					.welcome--footer a:active {
-						color: inherit;
-					}
-
-					.welcome--header small {
-						font-size: .5em;
-						font-weight: 400;
-					}
-
-				.welcome--like {
-					text-align: center;
-				}
-
-				.about__section.welcome--promo {
-					padding: 15vh 2em;
-					margin-bottom: 0;
-					text-align: center;
-					background: var(--wp-color-primary);
-					color: var(--wp-color-primary-text);
-				}
-
-					.welcome-wrap .welcome--promo > h2,
-					.welcome-wrap .welcome--promo > p {
-						max-width: 640px;
-						margin-left: auto;
-						margin-right: auto;
-					}
-
-					.welcome--promo h2 {
-						font-size: 2.175em;
-						color: inherit;
-					}
-
-				.welcome--features {
-					text-align: center;
-				}
-
-					.welcome--features h2 {
-						margin-bottom: .618em;
-					}
-
-					.welcome--features .column {
-						padding: 10%;
-						background: var(--background, #fff);
-						border: 1px solid rgba(0,0,0,.2);
-					}
-
-				.welcome--quickstart {
-					background-image: url("' . get_theme_file_uri( 'assets/images/welcome.svg' ) . '");
-				}
-
-				.welcome--footer {
-					padding-top: 32px;
-				}
-
-				body .welcome-wrap .button.welcome--button-outline,
-				body .welcome-wrap .button.welcome--button-outline:hover,
-				body .welcome-wrap .button.welcome--button-outline:focus,
-				body .welcome-wrap .button.welcome--button-outline:active {
-					font-size: .75em;
-					background: none;
-					color: inherit;
-					border: 2px solid;
-				}
-
-			' );
+			Assets\Factory::style_enqueue( array(
+				'handle' => 'michelle-welcome',
+				'src'    => get_theme_file_uri( 'assets/css/welcome.css' ),
+				'deps'   => array( 'about' ),
+			) );
 
 	} // /styles
 

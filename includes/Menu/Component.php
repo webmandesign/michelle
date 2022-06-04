@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.7
  */
 
 namespace WebManDesign\Michelle\Menu;
@@ -80,7 +80,7 @@ class Component implements Component_Interface {
 	 * Get menu arguments: Primary.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.3.7
 	 *
 	 * @param  bool $mobile_nav  Is mobile navigation enabled?
 	 * @param  bool $fallback    Return arguments to set a `wp_page_menu()` fallback?
@@ -107,11 +107,10 @@ class Component implements Component_Interface {
 
 			if ( ! $fallback ) {
 				// For `wp_nav_menu()`
-				$args['theme_location']  = 'primary';
-				$args['container_class'] = 'menu';
-				$args['depth']           = 4;
-				$args['fallback_cb']     = __CLASS__ . '::wp_page_menu';
-				$args['items_wrap']      = '<ul id="%1$s" class="%2$s">%3$s' . $a11y_link . '</ul>';
+				$args['theme_location'] = 'primary';
+				$args['depth']          = 4;
+				$args['fallback_cb']    = __CLASS__ . '::wp_page_menu';
+				$args['items_wrap']     = '<ul id="%1$s" class="%2$s">%3$s' . $a11y_link . '</ul>';
 			} else {
 				// For `wp_page_menu()`
 				$args['before'] = '<ul id="menu-primary" class="menu menu-primary toggle-sub-menus menu-fallback">';
@@ -171,7 +170,8 @@ class Component implements Component_Interface {
 	/**
 	 * Navigation item classes.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.7
 	 *
 	 * @param  array   $classes The CSS classes that are applied to the menu item's `<li>` element.
 	 * @param  WP_Post $item    The current menu item.
@@ -195,6 +195,14 @@ class Component implements Component_Interface {
 
 				// Depth indication class.
 				$classes[] = 'menu-item-is-depth-' . absint( $depth );
+			}
+
+			// Fixing blog page ancestry for posts.
+			if (
+				array_search( 'current_page_ancestor', $classes )
+				|| array_search( 'current_page_parent', $classes )
+			) {
+				$classes[] = 'current-menu-ancestor';
 			}
 
 

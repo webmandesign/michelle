@@ -13,24 +13,27 @@
 			$selector: _str_replace( 'color_', '', $option );
 			$selector: _str_replace( '_', '-', $selector );
 
-			#{ $specificity }.has-#{ $selector }-color {
+			#{ $specificity }.has-#{ $selector } {
 
-				&,
-				&:hover,
-				&:focus,
-				&:active,
-				&:visited {
-					color: var(--#{ $option });
+				&-color {
+
+					&,
+					&:hover,
+					&:focus,
+					&:active,
+					&:visited {
+						color: var(--#{ $option });
+					}
+
 				}
 
-			}
+				&-background-color {
+					background-color: var(--#{ $option });
+				}
 
-			#{ $specificity }.has-#{ $selector }-background-color {
-				background-color: var(--#{ $option });
-			}
-
-			#{ $specificity }.has-#{ $selector }-border-color {
-				border-color: var(--#{ $option });
+				&-border-color {
+					border-color: var(--#{ $option });
+				}
 			}
 		}
 	}
@@ -48,7 +51,7 @@
 	.has-background.has-background {
 		// Need to use absolute units due to possible
 		// custom font size set on the paragraph block.
-		padding: calc( var(--typography_font_size_base) * #{ $ratio } ) $important_modifiers; // Simulating rem unit for block editor.
+		padding: var(--gap) $important_modifiers; // Simulating rem unit for block editor.
 
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
 			padding-left: 6vw $important_modifiers;

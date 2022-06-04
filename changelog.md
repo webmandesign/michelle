@@ -1,5 +1,55 @@
 # Michelle Changelog
 
+## 1.3.7, 20220604
+
+### Updated
+- "Welcome" page improvements
+- Removing obsolete `container_class` primary menu argument
+- Improved accessibility
+- Improved mobile device line height
+- Localization
+
+### Fixed
+- WordPress 6.0 align and width issues
+- WordPress 6.0 large Quote styles
+- Mobile navigation JavaScript issue
+- Mega menu focus styles
+- Cover block color contrast issue
+- Primary menu `.current_page_parent` styles
+- Editor color palette customization
+- CSS quotes localization
+- Editor styles
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/js/editor-blocks.js
+	assets/js/modal-search.js
+	assets/js/navigation-mobile.js
+	assets/scss/_custom-properties.scss
+	assets/scss/_extend.scss
+	assets/scss/blocks.scss
+	assets/scss/customize-controls.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	assets/scss/welcome.scss
+	includes/Assets/Scripts.php
+	includes/Content/Block.php
+	includes/Content/Starter.php
+	includes/Header/Component.php
+	includes/Menu/Component.php
+	includes/Welcome/Component.php
+	languages/*.*
+	templates/parts/admin/welcome-a11y.php
+	templates/parts/admin/welcome-demo.php
+	templates/parts/admin/welcome-features.php
+	templates/parts/admin/welcome-footer.php
+	templates/parts/admin/welcome-guide.php
+	templates/parts/admin/welcome-header.php
+	templates/parts/admin/welcome-promo.php
+
+
 ## 1.3.6, 20220318
 
 ### Fixed

@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.7
  */
 
 namespace WebManDesign\Michelle\Header;
@@ -226,7 +226,7 @@ class Component implements Component_Interface {
 	 * Also compatible with WooCommerce product search form.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.3.7
 	 *
 	 * @param  string $html
 	 *
@@ -262,7 +262,7 @@ class Component implements Component_Interface {
 
 			wp_add_inline_script(
 				'michelle-scripts-footer', // -> AMP ready.
-				'"use strict";!function(){function a(){s.classList.toggle("toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==s.className.indexOf("toggled")?(n.setAttribute("aria-expanded","true"),e&&e.focus()):n.setAttribute("aria-expanded","false")}var s=document.getElementById("search-form-modal");if(document.getElementById("modal-search")){var n=document.getElementById("modal-search-toggle"),e=s.querySelector("[type=search]");n.onclick=function(){a()},document.addEventListener("keydown",function(e){if(s.classList.contains("toggled")){var t=s.querySelectorAll("a, button, input:not([type=hidden]), select"),l=t[0];lastEl=t[t.length-1],activeEl=document.activeElement,tabKey=9===e.keyCode,escKey=27===e.keyCode,shiftKey=e.shiftKey,escKey&&(e.preventDefault(),a(),n.focus()),!shiftKey&&tabKey&&lastEl===activeEl&&(e.preventDefault(),l.focus()),shiftKey&&tabKey&&l===activeEl&&(e.preventDefault(),lastEl.focus()),tabKey&&l===lastEl&&e.preventDefault()}})}else s.style.display="none"}();'
+				'"use strict";!function(){var e=document.getElementById("search-form-modal");if(document.getElementById("modal-search")){var t=document.getElementById("modal-search-toggle"),n=e.querySelector("[type=search]");t.onclick=function(){o()},document.addEventListener("keydown",(function(n){if(e.classList.contains("toggled")){var l=e.querySelectorAll("a, button, input:not([type=hidden]), select"),c=l[0],s=l[l.length-1],a=document.activeElement,d=9===n.keyCode,u=27===n.keyCode,r=n.shiftKey;u&&(n.preventDefault(),o(),t.focus()),!r&&d&&s===a&&(n.preventDefault(),c.focus()),r&&d&&c===a&&(n.preventDefault(),s.focus()),d&&c===s&&n.preventDefault()}}))}else e.style.display="none";function o(){e.classList.toggle("toggled"),document.documentElement.classList.toggle("lock-scroll"),-1!==e.className.indexOf("toggled")?(t.setAttribute("aria-expanded","true"),n&&n.focus()):t.setAttribute("aria-expanded","false")}}();'
 			);
 
 

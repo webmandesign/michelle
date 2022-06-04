@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.7
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -23,7 +23,7 @@ class Block implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.3.7
 	 *
 	 * @return  void
 	 */
@@ -39,14 +39,15 @@ class Block implements Component_Interface {
 
 				add_filter( 'register_post_type_args', __CLASS__ . '::register_reusable_blocks_args', 10, 2 );
 
-				add_filter( 'render_block', __CLASS__ . '::render_block', 5, 2 );
+				add_filter( 'render_block', __CLASS__ . '::render_block', 15, 2 );
 
 	} // /init
 
 	/**
 	 * Block editor output modifications.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.3.7
 	 *
 	 * @param  string $block_content  The pre-rendered content. Default null.
 	 * @param  array  $block          The block being rendered.
@@ -158,6 +159,23 @@ class Block implements Component_Interface {
 				$re .= '/s';
 
 				$block_content = preg_replace( $re, '<div class="entry-meta">$0</div>', $block_content );
+			}
+
+			// Cover block.
+			if (
+				'core/cover' === $block['blockName']
+				&& ! empty( $attrs['gradient'] )
+			) {
+				/**
+				 * Modifying gradient CSS class applied onto the block container.
+				 *
+				 * This should not happen by default, but as we enable text color setup
+				 * for Cover block, we get this weird erroneous behavior we need to fix.
+				 * We invalidate the gradient CSS class applied on container only by
+				 * appending `-overlay` to it.
+				 */
+				$re = '/wp-block-cover ([a-z0-9\-_\s]*?)-gradient-background/i';
+				$block_content = preg_replace( $re, '$0-overlay', $block_content, 1 );
 			}
 
 

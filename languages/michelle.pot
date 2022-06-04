@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-01-19 18:46+0100\n"
+"POT-Creation-Date: 2022-06-04 22:19+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -1019,32 +1019,32 @@ msgstr ""
 msgid "Skip to menu toggle button"
 msgstr ""
 
-#: includes/Setup/Editor.php:153
+#: includes/Setup/Editor.php:158
 msgctxt "Font size."
 msgid "Small"
 msgstr ""
 
-#: includes/Setup/Editor.php:159
+#: includes/Setup/Editor.php:164
 msgctxt "Font size."
 msgid "Normal"
 msgstr ""
 
-#: includes/Setup/Editor.php:165
+#: includes/Setup/Editor.php:170
 msgctxt "Font size."
 msgid "Large"
 msgstr ""
 
-#: includes/Setup/Editor.php:171
+#: includes/Setup/Editor.php:176
 msgctxt "Font size."
 msgid "Extra Large"
 msgstr ""
 
-#: includes/Setup/Editor.php:177
+#: includes/Setup/Editor.php:182
 msgctxt "Font size."
 msgid "Huge"
 msgstr ""
 
-#: includes/Setup/Editor.php:183
+#: includes/Setup/Editor.php:188
 msgctxt "Font size."
 msgid "Gigantic"
 msgstr ""
@@ -1142,31 +1142,31 @@ msgstr ""
 msgid "Keep content area width, just remove padding"
 msgstr ""
 
-#: includes/Welcome/Component.php:271 includes/Welcome/Component.php:272
+#: includes/Welcome/Component.php:171 includes/Welcome/Component.php:172
 msgid "Welcome"
 msgstr ""
 
 #. translators: %1$s: heart icon, %2$s: star icons.
-#: includes/Welcome/Component.php:333
+#: includes/Welcome/Component.php:233
 #, php-format
 msgid "If you %1$s love this theme don't forget to rate it %2$s."
 msgstr ""
 
-#: includes/Welcome/Component.php:340
+#: includes/Welcome/Component.php:240
 msgid "And/or please consider a donation."
 msgstr ""
 
-#: includes/Welcome/Component.php:343
-#: templates/parts/admin/welcome-promo.php:34
+#: includes/Welcome/Component.php:243
+#: templates/parts/admin/welcome-promo.php:35
 msgid "Thank you!"
 msgstr ""
 
-#: includes/Welcome/Component.php:360
+#: includes/Welcome/Component.php:260
 msgid ""
 "Have a suggestion for improvement or something is not working as it should?"
 msgstr ""
 
-#: includes/Welcome/Component.php:362
+#: includes/Welcome/Component.php:262
 msgid "&rarr; Contact support"
 msgstr ""
 
@@ -1286,149 +1286,163 @@ msgstr ""
 msgid "Let's Get Started &raquo;"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:27
+#: templates/parts/admin/welcome-a11y.php:27
 msgid "Create an Accessible Website"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:30
-msgid "Hierarchy"
+#: templates/parts/admin/welcome-a11y.php:31
+msgid "Make your website inclusive and accessible to anyone."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:31
+#: templates/parts/admin/welcome-a11y.php:32
 msgid ""
-"Keep proper headings hierarchy, do not skip heading levels: H2 should be "
-"followed by H3 and so on."
+"This theme will help you create a disabilities friendly and barrier-less "
+"user experience."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:33
+#: templates/parts/admin/welcome-a11y.php:33
+msgid ""
+"When building your content, just follow web accessibility best practices."
+msgstr ""
+
+#: templates/parts/admin/welcome-a11y.php:37
 msgid "Simplicity"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:34
+#: templates/parts/admin/welcome-a11y.php:38
 msgid ""
 "Keep your text simple. Paragraphs with more than four lines are more "
 "difficult to read. Use lists and spacing in your content."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:38
+#: templates/parts/admin/welcome-a11y.php:42
+msgid "Hierarchy"
+msgstr ""
+
+#: templates/parts/admin/welcome-a11y.php:43
+msgid ""
+"Keep proper headings hierarchy, do not skip heading levels: H2 should be "
+"followed by H3 and so on."
+msgstr ""
+
+#: templates/parts/admin/welcome-a11y.php:47
 msgid "Images"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:39
+#: templates/parts/admin/welcome-a11y.php:48
 msgid ""
 "Adding images to posts and pages makes your content easier to remember."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:41
+#: templates/parts/admin/welcome-a11y.php:52
 msgid "Alternatives"
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:43
+#: templates/parts/admin/welcome-a11y.php:54
 msgid ""
-"Add alt texts to images (you can do this in the media library or directly "
-"in post editor)."
+"Set alt text to images (do this in the media library or directly in post "
+"editor)."
 msgstr ""
 
-#: templates/parts/admin/welcome-accessibility.php:44
-msgid "Add text alternatives for videos and sound."
+#: templates/parts/admin/welcome-a11y.php:55
+msgid "Provide text alternatives for videos and sound."
 msgstr ""
 
-#: templates/parts/admin/welcome-demo.php:26
-msgid "Theme demo content"
+#: templates/parts/admin/welcome-a11y.php:61
+msgid "More info in theme documentation &rarr;"
 msgstr ""
 
-#: templates/parts/admin/welcome-demo.php:29
-msgid "WordPress starter content"
+#: templates/parts/admin/welcome-demo.php:27
+msgid "Theme Demo Content"
 msgstr ""
 
 #: templates/parts/admin/welcome-demo.php:32
+msgid "WordPress starter content"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:35
 msgid "This theme contains a predefined starter content."
 msgstr ""
 
-#: templates/parts/admin/welcome-demo.php:33
+#: templates/parts/admin/welcome-demo.php:36
 msgid ""
-"So, if your WordPress installation is fresh and you haven't created any "
-"content yet, just open website customizer to preview the starter content."
-msgstr ""
-
-#: templates/parts/admin/welcome-demo.php:34
-msgid ""
-"Once you publish your customizer settings, the starter content will be "
-"ported into your website automatically."
+"So, if you haven't created any content yet, just open the customizer to "
+"preview the starter content."
 msgstr ""
 
 #: templates/parts/admin/welcome-demo.php:37
-#: templates/parts/admin/welcome-quickstart.php:51
-msgid "Customize your website &raquo;"
-msgstr ""
-
-#: templates/parts/admin/welcome-demo.php:39
 msgid ""
-"(Note that WordPress starter content works only with fresh install of "
-"WordPress!)"
+"Once you publish your customizer settings, the starter content will be "
+"imported into your website automatically."
 msgstr ""
 
-#: templates/parts/admin/welcome-demo.php:43
-msgid "Full theme demo content"
-msgstr ""
-
-#: templates/parts/admin/welcome-demo.php:46
+#: templates/parts/admin/welcome-demo.php:40
 msgid ""
-"Alternatively you can install a full theme demo content to match the theme "
-"demo website."
+"(Note that WordPress starter content works only with fresh installation of "
+"WordPress.)"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:42
+#: templates/parts/admin/welcome-guide.php:42
+#: templates/parts/admin/welcome-guide.php:48
+msgid "Customize"
 msgstr ""
 
 #: templates/parts/admin/welcome-demo.php:47
+msgid "Full theme demo content"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:50
 msgid ""
-"This provides a more complex data and a great fresh start to build your "
-"own website."
+"You can install a full theme demo content to match the theme demo website."
 msgstr ""
 
 #: templates/parts/admin/welcome-demo.php:51
-msgid "Install theme demo content &raquo;"
+msgid "(Preview the demo &rarr;)"
 msgstr ""
 
 #: templates/parts/admin/welcome-demo.php:52
-msgid ""
-"Or head over to Appearance &raquo; Import Demo Data to start the import "
-"process."
-msgstr ""
-
-#: templates/parts/admin/welcome-demo.php:54
-msgid "How to import demo content &raquo;"
+msgid "This provides a comprehensive start for building your own website."
 msgstr ""
 
 #: templates/parts/admin/welcome-demo.php:57
-msgid "Preview theme demo &raquo;"
+msgid "Install demo content"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:26
+#: templates/parts/admin/welcome-demo.php:59
+msgid "(Appearance &rarr; Import Demo Data)"
+msgstr ""
+
+#: templates/parts/admin/welcome-demo.php:62
+msgid "How to import demo content &raquo;"
+msgstr ""
+
+#: templates/parts/admin/welcome-features.php:25
 msgid "Theme Features"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:31
+#: templates/parts/admin/welcome-features.php:29
 msgid "Block Patterns"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:32
-msgid "Create your content faster with integrated block patterns library."
+#: templates/parts/admin/welcome-features.php:30
+msgid ""
+"Create your content faster with integrated pre-designed patterns library."
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:33
-#: templates/parts/admin/welcome-features.php:39
+#: templates/parts/admin/welcome-features.php:31
+#: templates/parts/admin/welcome-features.php:38
 #: templates/parts/admin/welcome-features.php:45
-#: templates/parts/admin/welcome-features.php:52
+#: templates/parts/admin/welcome-features.php:53
 msgid "Watch instructions in new window &rarr;"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:37
+#: templates/parts/admin/welcome-features.php:36
 msgid "Block Styles"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:38
-msgid ""
-"Style your blocks immediately and easily without coding using predefined "
-"styles."
+#: templates/parts/admin/welcome-features.php:37
+msgid "Change the style of blocks immediately and easily without coding."
 msgstr ""
 
 #: templates/parts/admin/welcome-features.php:43
@@ -1439,106 +1453,128 @@ msgstr ""
 msgid "Modify a front-end page or post layout swiftly using templates."
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:49
+#: templates/parts/admin/welcome-features.php:50
 msgid "Featured Posts"
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:50
-msgid "Your featured posts deserve special display on top of blog page."
+#: templates/parts/admin/welcome-features.php:51
+msgid "Display important news immediately on top of your blog page."
 msgstr ""
 
-#: templates/parts/admin/welcome-features.php:54
+#: templates/parts/admin/welcome-features.php:55
 msgid "Set featured posts tag now &rarr;"
 msgstr ""
 
-#: templates/parts/admin/welcome-footer.php:38
+#: templates/parts/admin/welcome-footer.php:31
 msgid ""
 "You can disable this page in Appearance &rarr; Customize &rarr; Theme "
 "Options &rarr; Others."
 msgstr ""
 
+#: templates/parts/admin/welcome-guide.php:25
+msgid "Quickstart Guide"
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:30
+msgid "Set up"
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:33
+msgid "Make sure to tweak \"Settings\" section of your site."
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:34
+msgid "(Pay attention to image size setup under Settings &rarr; Media.)"
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:36
+msgid "Settings"
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:45
+msgid "You can customize your website using a live-preview editor."
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:46
+msgid "Customization changes apply only after you publish them."
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:54
+msgid "New to WordPress?"
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:56
+msgid "If you are new to WordPress check out info in theme documentation."
+msgstr ""
+
+#: templates/parts/admin/welcome-guide.php:57
+msgid "Get to know WordPress &rarr;"
+msgstr ""
+
 #. translators: 1: theme name, 2: theme developer link.
 #: templates/parts/admin/welcome-header.php:37
 #, php-format
-msgid "Thank you for using %1$s theme by %2$s!"
+msgid "Congratulations and thank you for choosing %1$s theme by %2$s!"
 msgstr ""
 
-#: templates/parts/admin/welcome-header.php:44
-msgid "Please take time to read the steps below to set up your website."
+#: templates/parts/admin/welcome-header.php:43
+msgid ""
+"Information on this page introduces the theme and provides useful tips."
 msgstr ""
 
-#: templates/parts/admin/welcome-header.php:46
-msgid "Read documentation &raquo;"
+#: templates/parts/admin/welcome-header.php:48
+msgid "Features"
 msgstr ""
 
-#: templates/parts/admin/welcome-header.php:47
-msgid "Contact support &raquo;"
+#: templates/parts/admin/welcome-header.php:49
+msgid "Accessibility"
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:50
+msgid "Quickstart"
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:51
+msgid "Demo content"
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:52
+msgid "Upgrade"
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:57
+msgid "Documentation &rarr;"
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:58
+msgid "Support Forum &rarr;"
+msgstr ""
+
+#: templates/parts/admin/welcome-header.php:62
+msgctxt "Notice, hint."
+msgid "Tip:"
 msgstr ""
 
 #: templates/parts/admin/welcome-promo.php:29
 msgid "Like the theme?"
 msgstr ""
 
-#: templates/parts/admin/welcome-promo.php:32
+#: templates/parts/admin/welcome-promo.php:33
 #, php-format
 msgid ""
 "You are using a fully functional 100% free WordPress theme without any "
 "paid upgrade."
 msgstr ""
 
-#: templates/parts/admin/welcome-promo.php:33
+#: templates/parts/admin/welcome-promo.php:34
 msgid ""
 "If you find it helpful, please support its updates and technical support "
 "service with a donation or by purchasing one of paid products at "
 "WebManDesign.eu."
 msgstr ""
 
-#: templates/parts/admin/welcome-promo.php:36
+#: templates/parts/admin/welcome-promo.php:38
 msgid "Visit WebMan Design website now &rarr;"
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:26
-msgid "New to WordPress?"
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:27
-msgid ""
-"If you are new to WordPress, please check out the introduction section in "
-"theme documentation."
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:28
-msgid "Get to know WordPress &raquo;"
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:35
-msgid "WordPress settings"
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:37
-msgid ""
-"Make sure you set up your site in \"Settings\" section of the dashboard."
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:38
-msgid ""
-"(Pay special attention to image sizes setup under Settings &rarr; Media.)"
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:40
-msgid "Set up WordPress &raquo;"
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:46
-msgid "Customize your website"
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:48
-msgid "You can customize your website using a live-preview editor."
-msgstr ""
-
-#: templates/parts/admin/welcome-quickstart.php:49
-msgid "Customization changes will go live only after you publish them."
 msgstr ""
 
 #: templates/parts/block/pattern/contact/bg-1.php:19
@@ -2233,19 +2269,19 @@ msgid "Download attachment file:"
 msgstr ""
 
 #. translators: 1: link to WP admin new post page.
-#: templates/parts/content/content-none.php:28
+#: templates/parts/content/content-none.php:33
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: templates/parts/content/content-none.php:41
+#: templates/parts/content/content-none.php:46
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: templates/parts/content/content-none.php:50
+#: templates/parts/content/content-none.php:55
 msgid ""
 "It seems we can not find what you are looking for. Perhaps searching can "
 "help."
@@ -2265,12 +2301,12 @@ msgstr ""
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: templates/parts/menu/menu-primary.php:31
+#: templates/parts/menu/menu-primary.php:27
 msgctxt "Navigational menu."
 msgid "Main menu"
 msgstr ""
 
-#: templates/parts/menu/menu-primary.php:46
+#: templates/parts/menu/menu-primary.php:41
 msgctxt "Mobile navigation toggle button title."
 msgid "Menu"
 msgstr ""

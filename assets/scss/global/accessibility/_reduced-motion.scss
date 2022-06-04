@@ -7,9 +7,9 @@
 	*,
 	*::before,
 	*::after {
-		animation-duration: 0 !important;
+		animation-duration: 0s !important;
 		animation-iteration-count: 1 !important;
-		transition-duration: 0 !important;
+		transition-duration: 0s !important;
 	}
 
 }

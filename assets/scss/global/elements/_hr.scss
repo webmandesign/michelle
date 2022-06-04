@@ -27,7 +27,7 @@ hr {
 	&.alignleft,
 	&.alignright {
 		float: none;
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+		margin-bottom: var(--gap); // Simulating rem unit for block editor.
 	}
 
 		&.alignleft.alignleft {

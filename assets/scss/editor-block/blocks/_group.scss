@@ -48,13 +48,13 @@
 }
 
 .wp-block-group.has-background:not(:last-child) {
-	margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Don't understand why WP sets this to zero...
+	margin-bottom: var(--gap); // Don't understand why WP sets this to zero...
 }
 
-[data-align=full] .wp-block-group > .wp-block-group__inner-container > .has-background {
+[data-align="full"] .wp-block-group > .wp-block-group__inner-container > .has-background {
 	// Need to use absolute units due to possible
 	// custom font size set on the paragraph block.
-	padding: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+	padding: var(--gap); // Simulating rem unit for block editor.
 
 	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
 		padding-left: var(--body_padding);

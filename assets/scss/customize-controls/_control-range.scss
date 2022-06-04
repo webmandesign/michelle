@@ -39,7 +39,7 @@ $range_value_color: #fff;
 		background: $range_thumb_color_hover;
 	}
 
-input[type=range] {
+input[type="range"] {
 	appearance: none;
 	width: 100%;
 	margin: 1.618em 0;
@@ -69,9 +69,9 @@ input[type=range] {
 		align-items: center;
 		cursor: default;
 
-		&:hover input[type=range]::-webkit-slider-thumb { @include range_thumb_hover; }
-		&:hover input[type=range]::-moz-range-thumb     { @include range_thumb_hover; }
-		&:hover input[type=range]::-ms-thumb            { @include range_thumb_hover; }
+		&:hover input[type="range"]::-webkit-slider-thumb { @include range_thumb_hover; }
+		&:hover input[type="range"]::-moz-range-thumb     { @include range_thumb_hover; }
+		&:hover input[type="range"]::-ms-thumb            { @include range_thumb_hover; }
 
 	}
 
@@ -104,6 +104,6 @@ input[type=range] {
 }
 
 .range-container:hover .range-value,
-input[type=range]:focus + .range-value {
+input[type="range"]:focus + .range-value {
 	background: $range_value_background_hover;
 }

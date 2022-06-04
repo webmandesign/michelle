@@ -79,8 +79,13 @@
 		padding-left: var(--body_padding);
 		padding-right: var(--body_padding);
 
+		> .alignwide {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		&:not(:last-child) > .alignwide {
-			margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+			margin-bottom: var(--gap); // Simulating rem unit for block editor.
 		}
 
 	}

@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.7
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -395,7 +395,8 @@ class Starter implements Component_Interface {
 	/**
 	 * Echos starter content texts.
 	 *
-	 * @since  1.3.0
+	 * @since    1.3.0
+	 * @version  1.3.7
 	 *
 	 * @param  string/array $scope
 	 * @param  string       $suffix
@@ -416,14 +417,14 @@ class Starter implements Component_Interface {
 				// Get direct text defined with string scope.
 				$output = array( self::get_text( $scope ) . $suffix );
 
-			} else if ( is_array( $scope ) ) {
+			} elseif ( is_array( $scope ) ) {
 
 				// Get all texts defined with multiple scopes in an array.
 				foreach ( $scope as $text ) {
 					$output[] = self::get_text( $text ) . $suffix;
 				}
 
-			} else if ( is_numeric( $scope ) ) {
+			} elseif ( is_numeric( $scope ) ) {
 
 				// Get specific number of various length sentences.
 				$sequence  = array( 's','l','m','l','m', 's','l','m','l','m', 's','l','m','l','m', 's','l','m','l','m', );

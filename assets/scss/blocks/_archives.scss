@@ -4,7 +4,7 @@
 	@extend %widget_list_items;
 
 	&:not(:last-child) {
-		margin-bottom: calc( var(--typography_font_size_base) * #{ $ratio } ); // Simulating rem unit for block editor.
+		margin-bottom: var(--gap); // Simulating rem unit for block editor.
 	}
 
 }

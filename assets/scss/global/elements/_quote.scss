@@ -9,7 +9,6 @@ blockquote {
 	font-size: var(--typography_heading_size_4_em);
 	font-weight: 300;
 	color: var(--color_body_headings);
-	quotes: '“' '';
 
 	@include media( map_get( $breakpoint, 'l' ) ) {
 		font-size: 1.5em;
@@ -30,7 +29,7 @@ blockquote {
 	}
 
 	p:first-child::before {
-		content: open-quote;
+		content: '“';
 		display: inline-block;
 		margin-#{$left}: -.2em;
 		margin-#{$right}: .1em;
