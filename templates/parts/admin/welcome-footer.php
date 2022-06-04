@@ -28,5 +28,5 @@ if ( ! class_exists( 'WebManDesign\Michelle\Welcome\Component' ) ) {
 </div>
 
 <div class="welcome__section welcome__section--colophon">
-	<p><small><em><?php esc_html_e( 'You can disable this page in Appearance &rarr; Customize &rarr; Theme Options &rarr; Others.', 'Michelle' ); ?></em></small></p>
+	<p><small><em><?php esc_html_e( 'You can disable this page in Appearance &rarr; Customize &rarr; Theme Options &rarr; Others.', 'michelle' ); ?></em></small></p>
 </div>
