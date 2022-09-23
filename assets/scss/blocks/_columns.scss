@@ -1,5 +1,27 @@
 /* FILE: blocks/_columns.scss */
 
+// WP6.0+ fix:
+// @link  https://github.com/WordPress/gutenberg/blob/b12e82a53d534eac76550e5d03d513f8458b4cf2/packages/block-library/src/columns/style.scss
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+	// Between mobile and large viewports, allow 2 columns.
+	@media (min-width: 600px) and (max-width: 781px) {
+		// Only add two column styling if there are two or more columns
+		&:not(:only-child) {
+			// As with mobile styles, this must be important since the Column
+			// assigns its own width as an inline style, which should take effect
+			// starting at `break-medium`.
+			flex-basis: calc(50% - calc(var(--wp--style--block-gap, 2em) / 2)) !important;
+			flex-grow: 0;
+		}
+
+		// Add space between the multiple columns. Themes can customize this if they wish to work differently.
+		// Only apply this beyond the mobile breakpoint, as there's only a single column on mobile.
+		&:nth-child(even) {
+			margin-left: var(--wp--style--block-gap, 2em);
+		}
+	}
+}
+
 .wp-block-column {
 	@if not variable-exists( 'selector_editor_wrapper' ) {
 		@extend %clearfix;
@@ -65,19 +87,6 @@
 
 	}
 
-	&s.is-style-no-gaps {
-		padding: 0;
-
-		> .wp-block-column.wp-block-column {
-			margin: 0;
-		}
-
-	}
-
-	&.is-style-no-margin-vertical:last-child {
-		margin-bottom: 0;
-	}
-
 	&s.is-style-no-margin-vertical > .wp-block-column {
 
 		@include media(
@@ -101,7 +110,10 @@
 	}
 
 	&.is-style-hidden-on-tablet {
-		@media (min-width: 600px) and (max-width: 781px) {
+		@include media(
+			( 600 ),
+			( map_get( $breakpoint, 'l' ), 'max-width' )
+		) {
 
 			~ .wp-block-column.wp-block-column {
 				margin-#{$left}: 0;

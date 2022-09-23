@@ -7,6 +7,7 @@
 - Removing obsolete `container_class` primary menu argument
 - Improved accessibility
 - Improved mobile device line height
+- Improved styles
 - Localization
 
 ### Fixed
@@ -16,7 +17,6 @@
 - Mega menu focus styles
 - Cover block color contrast issue
 - Primary menu `.current_page_parent` styles
-- Editor color palette customization
 - CSS quotes localization
 - Editor styles
 

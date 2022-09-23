@@ -55,9 +55,10 @@
 			color: currentColor;
 		}
 
-		&:hover,
-		&:focus,
-		&:active {
+		&,
+		&:not(.has-background):hover,
+		&:not(.has-background):focus,
+		&:not(.has-background):active {
 			background: none;
 		}
 

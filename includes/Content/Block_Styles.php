@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.2.0
+ * @version  1.3.8
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -87,7 +87,7 @@ class Block_Styles implements Component_Interface {
 	 * Gets theme block styles setup array.
 	 *
 	 * @since    1.0.0
-	 * @version  1.0.10
+	 * @version  1.3.8
 	 *
 	 * @return  array
 	 */
@@ -171,6 +171,7 @@ class Block_Styles implements Component_Interface {
 					'label'  => _x( 'No gaps', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/columns',
+						'core/cover',
 						'core/gallery',
 					),
 				),

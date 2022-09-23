@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.7
+ * @version  1.3.8
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -23,7 +23,7 @@ class Block implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.7
+	 * @version  1.3.8
 	 *
 	 * @return  void
 	 */
@@ -37,6 +37,9 @@ class Block implements Component_Interface {
 
 			// Filters
 
+				// WP6.0+ fix:
+				remove_filter( 'render_block', 'wp_render_layout_support_flag' );
+
 				add_filter( 'register_post_type_args', __CLASS__ . '::register_reusable_blocks_args', 10, 2 );
 
 				add_filter( 'render_block', __CLASS__ . '::render_block', 15, 2 );
@@ -47,7 +50,7 @@ class Block implements Component_Interface {
 	 * Block editor output modifications.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.7
+	 * @version  1.3.8
 	 *
 	 * @param  string $block_content  The pre-rendered content. Default null.
 	 * @param  array  $block          The block being rendered.
@@ -107,6 +110,16 @@ class Block implements Component_Interface {
 
 
 		// Processing
+
+			// WP6.0+ fix:
+			// This must be first.
+			if ( ! in_array( $block['blockName'], array(
+				// See also `assets/js/editor-blocks.js`.
+				'core/column',
+				'core/columns',
+			) ) ) {
+				$block_content = wp_render_layout_support_flag( $block_content, $block );
+			}
 
 			// Wide align wrapper.
 			if (

@@ -34,7 +34,7 @@
 		position: relative;
 
 		// Inaccessible menu fallback indicating submenu.
-		.no-js:not(.is-amp) &:not([aria-haspopup]):not(.menu-item-is-depth-3) {
+		.no-js:not(.is-amp) &:not(.menu-item-is-depth-3) {
 			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 
 				> a {

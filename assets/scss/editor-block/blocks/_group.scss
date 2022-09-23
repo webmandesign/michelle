@@ -1,36 +1,5 @@
 /* FILE: editor-block/blocks/_group.scss */
 
-#{ $selector_editor_wrapper } .wp-block-group {
-
-	.wp-block-group__inner-container {
-		max-width: none;
-	}
-
-	.wp-block:not(hr):not([data-align="wide"]):not([data-align="full"]):not([data-type*="column"]) {
-		width: 100%;
-		max-width: $max_width_entry_content;
-	}
-
-}
-
-.wp-block[data-align="wide"],
-.wp-block[data-align="full"] {
-
-	> .wp-block-group {
-
-		&.has-background {
-			padding-left: 0;
-			padding-right: 0;
-		}
-
-	}
-
-}
-
-[data-align="full"] > .wp-block-group > .wp-block-group__inner-container {
-	width: 88%;
-}
-
 .wp-block-group__inner-container > .wp-block:last-child {
 	margin-bottom: 0;
 }
@@ -40,25 +9,6 @@
 	margin-right: auto;
 }
 
-.wp-block-group.has-background > .wp-block-group__inner-container > [data-align="full"],
-[data-align="full"] .wp-block-group.has-background > .wp-block-group__inner-container > [data-align="full"] {
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-}
-
 .wp-block-group.has-background:not(:last-child) {
 	margin-bottom: var(--gap); // Don't understand why WP sets this to zero...
-}
-
-[data-align="full"] .wp-block-group > .wp-block-group__inner-container > .has-background {
-	// Need to use absolute units due to possible
-	// custom font size set on the paragraph block.
-	padding: var(--gap); // Simulating rem unit for block editor.
-
-	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-		padding-left: var(--body_padding);
-		padding-right: var(--body_padding);
-	}
-
 }

@@ -5,7 +5,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.3.0
- * @version  1.3.7
+ * @version  1.3.8
  */
 
 ( function() {
@@ -20,6 +20,16 @@
 			// Processing
 
 				switch( name ) {
+
+					case 'core/column':
+					case 'core/columns':
+						// See also `includes/Content/Block.php/Block:render_block()`
+						settings = lodash.merge( {}, settings, {
+							supports: {
+								__experimentalLayout: false
+							},
+						} );
+						break;
 
 					case 'core/cover':
 						// https://github.com/WordPress/gutenberg/issues/33723

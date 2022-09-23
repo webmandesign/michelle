@@ -22,8 +22,28 @@
 
 }
 
+[class*="wp-container-"] {
+
+	&.blocks-gallery-grid,
+	&.wp-block-gallery {
+		gap: var(--wp--style--block-gap);
+	}
+
+}
+
 .wp-block-gallery.wp-block-gallery figure.wp-block-image figcaption {
 	@include gallery_caption();
+}
+
+.wp-block-gallery,
+.blocks-gallery-grid {
+
+	&.alignfull {
+		// Unfortunately, we need to do this for WP6.0+
+		// @see  assets/scss/global/wp/_alignment.scss
+		margin-#{$left}: calc( 50% - 50vw + ( var(--scrollbar_width) / 2 ) );
+	}
+
 }
 
 .is-style-hide-caption figcaption {

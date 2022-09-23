@@ -79,13 +79,18 @@
 		padding-left: var(--body_padding);
 		padding-right: var(--body_padding);
 
+		.alignwide-wrap {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
 		> .alignwide {
 			margin-left: auto;
 			margin-right: auto;
 		}
 
 		&:not(:last-child) > .alignwide {
-			margin-bottom: var(--gap); // Simulating rem unit for block editor.
+			margin-bottom: var(--gap);
 		}
 
 	}

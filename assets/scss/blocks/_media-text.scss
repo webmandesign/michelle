@@ -98,8 +98,8 @@
 	&.is-style-media-on-top {
 		display: block;
 
-		img {
-			width: auto;
+		> .wp-block-media-text__media img {
+			// width: auto; // Can not set this as it causes horizontal scrolling.
 			max-width: 100%;
 			height: auto;
 			object-fit: fill; // This is default value.
@@ -130,12 +130,15 @@
 
 		}
 
-		// Making it simpler text align:
-		&.is-vertically-aligned-center {
+		// Making it simpler to align image:
+		&.is-vertically-aligned-center > .wp-block-media-text__media {
 			text-align: center;
 		}
-		&.is-vertically-aligned-bottom {
+		&.is-vertically-aligned-bottom > .wp-block-media-text__media {
 			text-align: $right;
+		}
+		&.has-background[class*="is-vertically-aligned-"] > .wp-block-media-text__media {
+			padding: 2em 10% 0;
 		}
 
 	}

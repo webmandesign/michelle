@@ -32,6 +32,7 @@
 		// Simulating rem unit for block editor styles consistency.
 		--gap: calc( var(--typography_font_size_base) * var(--typography_line_height) );
 		--wp--style--block-gap: var(--gap);
+		--gallery-block--gutter-size: var(--wp--style--block-gap);
 
 		--posts_list_gap: 1em;
 		@include media( map_get( $breakpoint, 'xl' ) ) {
