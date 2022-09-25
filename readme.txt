@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.7 =
-Fixing WordPress 6.0 compatibility and other bugs.
+= 1.3.8 =
+Fixing layout issues and other bugs.
 
 
 == Copyright ==

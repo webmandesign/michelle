@@ -8,7 +8,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.8
  */
 
 // Exit if accessed directly.
@@ -40,7 +41,7 @@ defined( 'ABSPATH' ) || exit;
 			<span class="site-info-item">
 				&copy; <?php echo date_i18n( 'Y' ); /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong><?php bloginfo( 'name' ); ?></strong></a>
-				<?php the_privacy_policy_link( '<span class="sep"> &bull; </span>' ); ?>
+				<?php the_privacy_policy_link( '<span class="sep"> &bull; </span>' . PHP_EOL ); ?>
 				<span class="sep"> &bull; </span>
 				<?php
 

@@ -33,7 +33,7 @@
 			margin-bottom: 0;
 		}
 
-		&.alignfull {
+		&.alignfull:not(.is-style-no-gaps) {
 			padding-left: var(--block_padding);
 			padding-right: var(--block_padding);
 		}
@@ -116,6 +116,7 @@
 		) {
 
 			~ .wp-block-column.wp-block-column {
+				flex-grow: 1;
 				margin-#{$left}: 0;
 
 				&:nth-child(odd) {

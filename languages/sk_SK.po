@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-06-04 20:37+0200\n"
-"PO-Revision-Date: 2022-06-04 20:38+0200\n"
+"POT-Creation-Date: 2022-09-25 20:46+0200\n"
+"PO-Revision-Date: 2022-09-25 20:46+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -194,72 +194,72 @@ msgctxt "Block style label."
 msgid "No gaps"
 msgstr "Žiadne medzery"
 
-#: includes/Content/Block_Styles.php:179
+#: includes/Content/Block_Styles.php:180
 msgctxt "Block style label."
 msgid "No vertical gap"
 msgstr "Žiadna vertikálna medzera"
 
-#: includes/Content/Block_Styles.php:201
+#: includes/Content/Block_Styles.php:202
 msgctxt "Block style label."
 msgid "Overlap gradient"
 msgstr "Postupné prekrytie"
 
-#: includes/Content/Block_Styles.php:208
+#: includes/Content/Block_Styles.php:209
 msgctxt "Block style label."
 msgid "Padding left"
 msgstr "Odsadenie vľavo"
 
-#: includes/Content/Block_Styles.php:214
+#: includes/Content/Block_Styles.php:215
 msgctxt "Block style label."
 msgid "Padding right"
 msgstr "Odsadenie vpravo"
 
-#: includes/Content/Block_Styles.php:221
+#: includes/Content/Block_Styles.php:222
 msgctxt "Block style label."
 msgid "Scale image"
 msgstr "Prispôsobiť veľkosť obrázka"
 
-#: includes/Content/Block_Styles.php:228
+#: includes/Content/Block_Styles.php:229
 msgctxt "Block style label."
 msgid "Accessibly hidden"
 msgstr "Prístupne skrytý"
 
-#: includes/Content/Block_Styles.php:235
+#: includes/Content/Block_Styles.php:236
 msgctxt "Block style label."
 msgid "Simple"
 msgstr "Jednoduchý"
 
-#: includes/Content/Block_Styles.php:242
+#: includes/Content/Block_Styles.php:243
 msgctxt "Block style label."
 msgid "Stack on tablet"
 msgstr "Naskladať na tablete"
 
-#: includes/Content/Block_Styles.php:250
+#: includes/Content/Block_Styles.php:251
 msgctxt "Block style label."
 msgid "Dark text shadow"
 msgstr "Tmavý tieň textu"
 
-#: includes/Content/Block_Styles.php:258
+#: includes/Content/Block_Styles.php:259
 msgctxt "Block style label."
 msgid "Light text shadow"
 msgstr "Svetlý tieň textu"
 
-#: includes/Content/Block_Styles.php:266
+#: includes/Content/Block_Styles.php:267
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr "Veľké písmená"
 
-#: includes/Content/Block_Styles.php:274
+#: includes/Content/Block_Styles.php:275
 msgctxt "Block style label."
 msgid "Variable"
 msgstr "Variabilná"
 
-#: includes/Content/Block_Styles.php:281
+#: includes/Content/Block_Styles.php:282
 msgctxt "Block style label."
 msgid "Zig-zag"
 msgstr "Cik-cak"
 
-#: includes/Content/Block_Styles.php:288
+#: includes/Content/Block_Styles.php:289
 msgctxt "Block style label."
 msgid "Zig-zag wide"
 msgstr "Široký cik-cak"
@@ -2344,17 +2344,17 @@ msgid ""
 "help."
 msgstr "Zdá sa, že nemôžeme nájsť to, čo hľadáte. Možno pomôže vyhľadávanie."
 
-#: templates/parts/footer/site-info.php:36
+#: templates/parts/footer/site-info.php:37
 msgid "Back to top of the page"
 msgstr "Späť na začiatok stránky"
 
 #. translators: 1: linked CMS name (WordPress), 2: theme name.
-#: templates/parts/footer/site-info.php:49
+#: templates/parts/footer/site-info.php:50
 #, php-format
 msgid "Powered by %1$s and %2$s."
 msgstr "Používame %1$s a %2$s."
 
-#: templates/parts/footer/site-info.php:50
+#: templates/parts/footer/site-info.php:51
 msgid "https://wordpress.org/"
 msgstr "https://sk.wordpress.org/"
 

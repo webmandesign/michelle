@@ -31,8 +31,8 @@
 			> [class*="wp-block-"]:not(:only-child) {
 				@include media( ( map_get( $breakpoint, 'l' ), 'max-width' ) ) {
 					width: 100% $important_modifiers;
-					margin-left: auto;
-					margin-right: auto;
+					margin-left: auto $important_modifiers;
+					margin-right: auto $important_modifiers;
 				}
 			}
 

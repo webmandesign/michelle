@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-06-04 22:19+0200\n"
+"POT-Creation-Date: 2022-09-25 20:46+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -195,72 +195,72 @@ msgctxt "Block style label."
 msgid "No gaps"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:179
+#: includes/Content/Block_Styles.php:180
 msgctxt "Block style label."
 msgid "No vertical gap"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:201
+#: includes/Content/Block_Styles.php:202
 msgctxt "Block style label."
 msgid "Overlap gradient"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:208
+#: includes/Content/Block_Styles.php:209
 msgctxt "Block style label."
 msgid "Padding left"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:214
+#: includes/Content/Block_Styles.php:215
 msgctxt "Block style label."
 msgid "Padding right"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:221
+#: includes/Content/Block_Styles.php:222
 msgctxt "Block style label."
 msgid "Scale image"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:228
+#: includes/Content/Block_Styles.php:229
 msgctxt "Block style label."
 msgid "Accessibly hidden"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:235
+#: includes/Content/Block_Styles.php:236
 msgctxt "Block style label."
 msgid "Simple"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:242
+#: includes/Content/Block_Styles.php:243
 msgctxt "Block style label."
 msgid "Stack on tablet"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:250
+#: includes/Content/Block_Styles.php:251
 msgctxt "Block style label."
 msgid "Dark text shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:258
+#: includes/Content/Block_Styles.php:259
 msgctxt "Block style label."
 msgid "Light text shadow"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:266
+#: includes/Content/Block_Styles.php:267
 msgctxt "Block style label."
 msgid "Uppercase"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:274
+#: includes/Content/Block_Styles.php:275
 msgctxt "Block style label."
 msgid "Variable"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:281
+#: includes/Content/Block_Styles.php:282
 msgctxt "Block style label."
 msgid "Zig-zag"
 msgstr ""
 
-#: includes/Content/Block_Styles.php:288
+#: includes/Content/Block_Styles.php:289
 msgctxt "Block style label."
 msgid "Zig-zag wide"
 msgstr ""
@@ -2287,17 +2287,17 @@ msgid ""
 "help."
 msgstr ""
 
-#: templates/parts/footer/site-info.php:36
+#: templates/parts/footer/site-info.php:37
 msgid "Back to top of the page"
 msgstr ""
 
 #. translators: 1: linked CMS name (WordPress), 2: theme name.
-#: templates/parts/footer/site-info.php:49
+#: templates/parts/footer/site-info.php:50
 #, php-format
 msgid "Powered by %1$s and %2$s."
 msgstr ""
 
-#: templates/parts/footer/site-info.php:50
+#: templates/parts/footer/site-info.php:51
 msgid "https://wordpress.org/"
 msgstr ""
 

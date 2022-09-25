@@ -1,5 +1,19 @@
 # Michelle Changelog
 
+## 1.3.8, 20220926
+
+### Updated
+- 
+
+### Fixed
+- 
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+
+
 ## 1.3.7, 20220604
 
 ### Updated

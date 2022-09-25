@@ -265,6 +265,10 @@
 .wp-block-media-text .wp-block-media-text__content {
 	padding: 12% 0;
 	padding-left: 15%; // No RTL here.
+
+	@media (max-width: 600px) {
+		padding-top: 2em;
+	}
 }
 
 .has-media-on-the-right > .wp-block-media-text__content {
