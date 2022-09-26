@@ -11,7 +11,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.8
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -40,7 +40,7 @@ class AMP implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.3.8
 	 *
 	 * @return  void
 	 */
@@ -54,8 +54,8 @@ class AMP implements Component_Interface {
 
 			// Filters
 
-				add_action( 'michelle/assets/is_js_disabled',                __CLASS__ . '::is_amp' );
-				add_action( 'michelle/assets/is_preloading_styles_disabled', __CLASS__ . '::is_amp' );
+				add_filter( 'michelle/assets/is_js_disabled',                __CLASS__ . '::is_amp' );
+				add_filter( 'michelle/assets/is_preloading_styles_disabled', __CLASS__ . '::is_amp' );
 
 				add_filter( 'body_class', __CLASS__ . '::body_class', 98 );
 

@@ -27,7 +27,7 @@ hr {
 	&.alignleft,
 	&.alignright {
 		float: none;
-		margin-bottom: var(--gap); // Simulating rem unit for block editor.
+		margin-bottom: var(--gap);
 	}
 
 		&.alignleft.alignleft {

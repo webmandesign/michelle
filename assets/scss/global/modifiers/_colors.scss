@@ -51,7 +51,7 @@
 	.has-background.has-background {
 		// Need to use absolute units due to possible
 		// custom font size set on the paragraph block.
-		padding: var(--gap) $important_modifiers; // Simulating rem unit for block editor.
+		padding: var(--gap) $important_modifiers;
 
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
 			padding-left: 6vw $important_modifiers;
@@ -65,6 +65,12 @@
 	[data-align="wide"] > .has-background,
 	[data-align="full"] > .has-background {
 		padding: var(--block_padding) $important_modifiers;
+	}
+
+	.has-background.alignfull,
+	[data-align="full"] > .has-background {
+		padding-left: var(--body_padding) $important_modifiers;
+		padding-right: var(--body_padding) $important_modifiers;
 	}
 
 	$important_modifiers: null; // Required reset.

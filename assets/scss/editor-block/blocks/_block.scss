@@ -122,6 +122,11 @@
 
 }
 
+.has-background [data-align="wide"] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 #{ $selector_editor_wrapper } .has-background.has-background .wp-block[data-align="full"] {
 	width: auto;
 	margin-left: calc( -1 * var(--block_padding) );
