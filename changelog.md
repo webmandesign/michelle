@@ -3,15 +3,32 @@
 ## 1.3.8, 20220926
 
 ### Updated
-- 
+- Enabling "no gaps" block style for Group block
+- Improving compatibility with WordPress 6.0 blocks functionality
+- Improving accessibility
 
 ### Fixed
-- 
+- Improving navigational menu accessibility
+- WordPress 6.0 Columns block spacing and layout
+- Wide and full aligned blocks spacing
+- "No gaps" block style not working
+- Left/right alignment issues
+- Styling issues
+- Block editor styles
+- Site info privacy link separator spacing
 
 ### File updates
 	changelog.md
 	readme.txt
 	style.css
+	assets/js/editor-blocks.js
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	includes/Content/Block.php
+	includes/Content/Block_Styles.php
+	includes/Tool/AMP.php
+	templates/parts/footer/site-info.php
 
 
 ## 1.3.7, 20220604

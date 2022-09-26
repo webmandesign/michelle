@@ -171,8 +171,8 @@ class Block_Styles implements Component_Interface {
 					'label'  => _x( 'No gaps', 'Block style label.', 'michelle' ),
 					'blocks' => array(
 						'core/columns',
-						'core/cover',
 						'core/gallery',
+						'core/group',
 					),
 				),
 
