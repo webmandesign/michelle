@@ -1,5 +1,20 @@
 # Michelle Changelog
 
+## 1.3.9, 20220927
+
+### Fixed
+- Gallery image caption styles
+- Full aligned blocks horizontal padding
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+
+
 ## 1.3.8, 20220926
 
 ### Updated

@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.8 =
-Fixing layout issues and other bugs.
+= 1.3.9 =
+Fixing gallery caption styles and full aligned blocks horizontal padding.
 
 
 == Copyright ==

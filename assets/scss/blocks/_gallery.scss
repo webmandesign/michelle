@@ -42,7 +42,7 @@
 
 }
 
-.wp-block-gallery.wp-block-gallery figure.wp-block-image figcaption {
+.wp-block-gallery.wp-block-gallery.wp-block-gallery figure figcaption {
 	@include gallery_caption();
 }
 

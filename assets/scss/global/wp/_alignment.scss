@@ -107,8 +107,8 @@
 
 	.has-background.has-background & {
 		width: auto;
-		margin-left: calc( -1 * var(--block_padding) );
-		margin-right: calc( -1 * var(--block_padding) );
+		margin-left: calc( -1 * var(--body_padding) );
+		margin-right: calc( -1 * var(--body_padding) );
 	}
 
 }

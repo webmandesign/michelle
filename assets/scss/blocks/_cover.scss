@@ -2,7 +2,7 @@
 
 .wp-block-cover {
 	height: auto;
-	padding: var(--block_padding);
+	padding: var(--block_padding) var(--body_padding);
 
 	&:not(.has-text-color) {
 		color: #fff;

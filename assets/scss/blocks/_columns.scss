@@ -34,8 +34,8 @@
 		}
 
 		&.alignfull:not(.is-style-no-gaps) {
-			padding-left: var(--block_padding);
-			padding-right: var(--block_padding);
+			padding-left: var(--body_padding);
+			padding-right: var(--body_padding);
 		}
 
 		&.has-background {
