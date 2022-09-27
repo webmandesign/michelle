@@ -5,6 +5,9 @@
 ### Fixed
 - Gallery image caption styles
 - Full aligned blocks horizontal padding
+- Dotted separator alignment
+- Spacing of lists with background
+- Columns block spacing 
 
 ### File updates
 	changelog.md

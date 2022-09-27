@@ -47,6 +47,15 @@
 				padding-bottom: calc( 4% - #{ $ratio +em } );
 			}
 
+			&.is-style-no-gaps {
+				padding-bottom: $ratio +em;
+
+				@include media( map_get( $breakpoint, 'xl' ) ) {
+					padding-bottom: 4%;
+				}
+
+			}
+
 		}
 
 	}
@@ -87,26 +96,8 @@
 
 	}
 
-	&s.is-style-no-margin-vertical > .wp-block-column {
-
-		@include media(
-			( 600, 'min-width' ),
-			( 781, 'max-width' )
-		) {
-			// All columns have 50% width here, so we have to be smart:
-			&:last-child,                     // Always the last column.
-			&:nth-child(1):nth-last-child(2), // 1st column in 2 columns layout.
-			&:nth-child(3):nth-last-child(2), // 3rd column in 4 columns layout.
-			&:nth-child(5):nth-last-child(2)  // 5th column in 6 columns layout.
-			{
-				margin-bottom: 0;
-			}
-		}
-
-		@include media( 782 ) {
-			margin-bottom: 0;
-		}
-
+	&s.is-style-no-margin-vertical:not(.has-background) > .wp-block-column {
+		margin-bottom: 0;
 	}
 
 	&.is-style-hidden-on-tablet {

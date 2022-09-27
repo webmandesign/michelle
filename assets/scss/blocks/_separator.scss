@@ -21,6 +21,7 @@
 		&::before {
 			content: '***';
 			padding: 0;
+			padding-#{$left}: $ratio_maj +em;
 			font-size: $ratio +em;
 			letter-spacing: $ratio_maj +em;
 			white-space: nowrap;
