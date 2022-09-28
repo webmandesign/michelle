@@ -5,7 +5,7 @@
 	padding-right: var(--block_ui_margin);
 }
 
-[data-align="full"] > .wp-block-columns {
+[data-align="full"] > .wp-block-columns:not(.is-style-no-gaps) {
 	padding-left: var(--body_padding);
 	padding-right: var(--body_padding);
 }

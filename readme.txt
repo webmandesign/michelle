@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.9 =
-Fixing gallery caption styles and full aligned blocks horizontal padding.
+= 1.3.10 =
+Fixing Cover block padding and block editor styles.
 
 
 == Copyright ==

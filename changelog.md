@@ -1,5 +1,19 @@
 # Michelle Changelog
 
+## 1.3.10, 20220928
+
+### Fixed
+- Cover block padding
+- Block editor styles
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+
+
 ## 1.3.9, 20220927
 
 ### Fixed

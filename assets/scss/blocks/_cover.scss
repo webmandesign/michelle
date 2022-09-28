@@ -2,7 +2,12 @@
 
 .wp-block-cover {
 	height: auto;
-	padding: var(--block_padding) var(--body_padding);
+	padding: var(--block_padding);
+
+	&.alignfull {
+		padding-left: var(--body_padding);
+		padding-right: var(--body_padding);
+	}
 
 	&:not(.has-text-color) {
 		color: #fff;
