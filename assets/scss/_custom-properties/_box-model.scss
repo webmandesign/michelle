@@ -78,6 +78,12 @@
 			--button_toggle_sub_menu_size: 24px;
 		}
 
+		// WP:
+		--wp-admin--admin-bar--height: 32px;
+		@media screen and (max-width: 782px) {
+			--wp-admin--admin-bar--height: 46px;
+		}
+
 }
 
 .has-navigation-mobile {

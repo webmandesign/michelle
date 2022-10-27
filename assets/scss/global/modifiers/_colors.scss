@@ -38,6 +38,24 @@
 		}
 	}
 
+	$white_text_bg: (
+		'black',
+	);
+	@each $color in $white_text_bg {
+		#{ $specificity }.has-#{ $color }-background-color:not(.has-text-color) {
+			color: #fff;
+		}
+	}
+
+	$black_text_bg: (
+		'white',
+	);
+	@each $color in $black_text_bg {
+		#{ $specificity }.has-#{ $color }-background-color:not(.has-text-color) {
+			color: #000;
+		}
+	}
+
 	.has-initial-border-color,
 	.has-current-border-color,
 	.has-currentColor-border-color {
@@ -54,8 +72,8 @@
 		padding: var(--gap) $important_modifiers;
 
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-			padding-left: 6vw $important_modifiers;
-			padding-right: 6vw $important_modifiers;
+			padding-left: var(--body_padding) $important_modifiers;
+			padding-right: var(--body_padding) $important_modifiers;
 		}
 
 	}

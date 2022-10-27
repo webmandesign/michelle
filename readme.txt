@@ -35,8 +35,12 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.10 =
-Fixing Cover block padding and block editor styles.
+= 1.3.11 =
+Improving HTML, styles, JavaScript, updating localization, preventing issues.
+
+### Fixed
+- Preventing scrollbar width miscalculation on Android devices
+- Preventing accessibility issue regarding skip link color contrast
 
 
 == Copyright ==

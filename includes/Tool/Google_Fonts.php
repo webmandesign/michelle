@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.3
+ * @version  1.3.11
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -75,11 +75,10 @@ class Google_Fonts implements Component_Interface {
 	 *
 	 * @since     1.0.0
 	 * @version   1.3.0
-	 *
-	 * @access  private
-	 * @var     array
-	 * @param   KEY   string  Font families context, such as "generic", "body", "headings".
-	 * @param   VALUE array   An array of context related font family names.
+	 * @access    private
+	 * @var       array
+	 * @param     KEY   string  Font families context, such as "generic", "body", "headings".
+	 * @param     VALUE array   An array of context related font family names.
 	 */
 	private static $suggestions = array(
 		'generic' => array(
@@ -236,7 +235,16 @@ class Google_Fonts implements Component_Interface {
 	 * The same approach is used in `get_block_editor_theme_styles()`.
 	 * @link  https://developer.wordpress.org/reference/functions/get_block_editor_theme_styles/
 	 *
-	 * @since  1.3.3
+	 * Unfortunately, we can not really use
+	 *   add_theme_support( 'editor-styles' );
+	 *   add_editor_style( [ 'editor-styles.css', 'google-fonts.css' ] );
+	 * as then there is no way to separate classic and block editor
+	 * stylesheets (yes, all `add_editor_style()` stylesheets are being
+	 * enqueued in both editors, plus block editor will replace certain
+	 * selectors and wrap everything in `.editor-styles-wrapper`.)
+	 *
+	 * @since    1.3.3
+	 * @version  1.3.11
 	 *
 	 * @return  string
 	 */
@@ -252,7 +260,11 @@ class Google_Fonts implements Component_Interface {
 			if ( self::get_url() ) {
 				$response = wp_remote_get( self::get_url() );
 				if ( ! is_wp_error( $response ) ) {
-					$styles = wp_remote_retrieve_body( $response );
+					$styles =
+						'/* Google Fonts */'
+						. PHP_EOL
+						. wp_remote_retrieve_body( $response )
+						. PHP_EOL . PHP_EOL;
 				}
 			}
 

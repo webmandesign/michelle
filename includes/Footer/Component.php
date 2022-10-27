@@ -73,6 +73,8 @@ class Component implements Component_Interface {
 	/**
 	 * Is footer disabled?
 	 *
+	 * To check if footer is disabled, use `! Footer::is_enabled()` instead.
+	 *
 	 * @since  1.0.0
 	 *
 	 * @return  bool

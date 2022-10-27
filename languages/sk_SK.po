@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-09-25 20:46+0200\n"
-"PO-Revision-Date: 2022-09-25 20:46+0200\n"
+"POT-Creation-Date: 2022-10-27 12:28+0200\n"
+"PO-Revision-Date: 2022-10-27 12:29+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -275,22 +275,22 @@ msgctxt "Theme starter content"
 msgid "Home"
 msgstr "Úvod"
 
-#: includes/Content/Starter.php:141 includes/Content/Starter.php:193
+#: includes/Content/Starter.php:141 includes/Content/Starter.php:195
 msgctxt "Theme starter content"
 msgid "About"
 msgstr "O nás"
 
-#: includes/Content/Starter.php:149 includes/Content/Starter.php:199
+#: includes/Content/Starter.php:149 includes/Content/Starter.php:202
 msgctxt "Theme starter content"
 msgid "Services"
 msgstr "Služby"
 
-#: includes/Content/Starter.php:157 includes/Content/Starter.php:205
+#: includes/Content/Starter.php:157 includes/Content/Starter.php:209
 msgctxt "Theme starter content"
 msgid "FAQ"
 msgstr "Otázky"
 
-#: includes/Content/Starter.php:165 includes/Content/Starter.php:211
+#: includes/Content/Starter.php:165 includes/Content/Starter.php:216
 msgctxt "Theme starter content"
 msgid "Contact"
 msgstr "Kontakt"
@@ -300,142 +300,142 @@ msgctxt "Theme starter content"
 msgid "Primary Menu"
 msgstr "Primárne menu"
 
-#: includes/Content/Starter.php:217
+#: includes/Content/Starter.php:223
 msgctxt "Theme starter content"
 msgid "Blog"
 msgstr "Blog"
 
-#: includes/Content/Starter.php:224
+#: includes/Content/Starter.php:230
 msgctxt "Theme starter content."
 msgid "Demo website"
 msgstr "Demo webstránka"
 
-#: includes/Content/Starter.php:228
+#: includes/Content/Starter.php:235
 msgctxt "Theme starter content."
 msgid "User manual"
 msgstr "Príručka pre používateľov"
 
-#: includes/Content/Starter.php:333
+#: includes/Content/Starter.php:344
 msgctxt "Demo text."
 msgid "Some text"
 msgstr "Nejaký text"
 
-#: includes/Content/Starter.php:334
+#: includes/Content/Starter.php:345
 msgctxt "Demo text."
 msgid "Just a short sentence"
 msgstr "Len krátka vetička"
 
-#: includes/Content/Starter.php:335
+#: includes/Content/Starter.php:346
 msgctxt "Demo text."
 msgid "Write your own copy text here"
 msgstr "Sem si napíšte vlastný text"
 
-#: includes/Content/Starter.php:336
+#: includes/Content/Starter.php:347
 msgctxt "Demo text."
 msgid "This is just a demo text you should overwrite"
 msgstr "Toto je len demo text, ktorý by ste mali prepísať"
 
-#: includes/Content/Starter.php:339
+#: includes/Content/Starter.php:350
 msgctxt "Demo text."
 msgid "This is title"
 msgstr "Som nadpis"
 
-#: includes/Content/Starter.php:340
+#: includes/Content/Starter.php:351
 msgctxt "Demo text."
 msgid "Write some title text here"
 msgstr "Napíšte sem text nadpisu"
 
-#: includes/Content/Starter.php:341
+#: includes/Content/Starter.php:352
 msgctxt "Demo text."
 msgid "The ideal length of the title text in here should be maybe a bit longer"
 msgstr "Ideálna dĺžka textu nadpisu by tu mala byť možno o niečo dlhšia"
 
-#: includes/Content/Starter.php:345
+#: includes/Content/Starter.php:356
 msgctxt "Demo text."
 msgid "123 Street Name<br>Cityname, 56789<br>COUNTRY"
 msgstr "Názov Ulice 123<br>Názovmesta, 56789<br>KRAJINA"
 
-#: includes/Content/Starter.php:346
+#: includes/Content/Starter.php:357
 msgctxt "Demo text."
 msgid "example@example.com"
 msgstr "priklad@priklad.sk"
 
-#: includes/Content/Starter.php:347
+#: includes/Content/Starter.php:358
 msgctxt "Demo text."
 msgid "+1 (123) 456-7890"
 msgstr "+421 (900) 123 456"
 
-#: includes/Content/Starter.php:351
+#: includes/Content/Starter.php:362
 msgctxt "Demo text."
 msgid "10:30 am on Monday, July 1, 2021"
 msgstr "10:30 v pondelok 1. júla 2021"
 
-#: includes/Content/Starter.php:352
+#: includes/Content/Starter.php:363
 msgctxt "Demo text. Week days."
 msgid "Mon - Fri"
 msgstr "Po - Pi"
 
-#: includes/Content/Starter.php:353
+#: includes/Content/Starter.php:364
 msgctxt "Demo text. Weekend days."
 msgid "Sat - Sun"
 msgstr "So - Ne"
 
-#: includes/Content/Starter.php:354
+#: includes/Content/Starter.php:365
 msgctxt "Demo text."
 msgid "Monday"
 msgstr "Pondelok"
 
-#: includes/Content/Starter.php:355
+#: includes/Content/Starter.php:366
 msgctxt "Demo text."
 msgid "Tuesday"
 msgstr "Utorok"
 
-#: includes/Content/Starter.php:356
+#: includes/Content/Starter.php:367
 msgctxt "Demo text."
 msgid "Wednesday"
 msgstr "Streda"
 
-#: includes/Content/Starter.php:357
+#: includes/Content/Starter.php:368
 msgctxt "Demo text."
 msgid "Thursday"
 msgstr "Štvrtok"
 
-#: includes/Content/Starter.php:358
+#: includes/Content/Starter.php:369
 msgctxt "Demo text."
 msgid "Friday"
 msgstr "Piatok"
 
-#: includes/Content/Starter.php:359
+#: includes/Content/Starter.php:370
 msgctxt "Demo text."
 msgid "Saturday"
 msgstr "Sobota"
 
-#: includes/Content/Starter.php:360
+#: includes/Content/Starter.php:371
 msgctxt "Demo text."
 msgid "Sunday"
 msgstr "Nedeľa"
 
-#: includes/Content/Starter.php:364
+#: includes/Content/Starter.php:375
 msgctxt "Demo text."
 msgid "Name Surname"
 msgstr "Meno Priezvisko"
 
-#: includes/Content/Starter.php:365
+#: includes/Content/Starter.php:376
 msgctxt "Demo text. A job title."
 msgid "Designer"
 msgstr "Dizajnér"
 
-#: includes/Content/Starter.php:369
+#: includes/Content/Starter.php:380
 msgctxt "Demo text. Image alt text."
 msgid "Image alternative description text"
 msgstr "Text alternatívneho popisu obrázka"
 
-#: includes/Content/Starter.php:370
+#: includes/Content/Starter.php:381
 msgctxt "Demo text. Button label."
 msgid "Click here →"
 msgstr "Kliknite sem →"
 
-#: includes/Content/Starter.php:371
+#: includes/Content/Starter.php:382
 msgctxt "Demo text. Price."
 msgid "$19"
 msgstr "19 €"
@@ -945,7 +945,7 @@ msgstr "Tento obsah je chránený heslom."
 msgid "Enter the password to view it."
 msgstr "Zadajte heslo pre jeho zobrazenie."
 
-#: includes/Header/Component.php:250
+#: includes/Header/Component.php:252
 msgctxt "Search form modal toggle button label."
 msgid "Toggle search form modal box"
 msgstr "Zobraziť/skryť modálne okno formulára vyhľadávania"
@@ -1035,31 +1035,51 @@ msgid "Skip to menu toggle button"
 msgstr "Preskočiť na tlačidlo zapnutia a vypnutia menu"
 
 #: includes/Setup/Editor.php:158
-msgctxt "Font size."
-msgid "Small"
-msgstr "Malé"
+msgctxt "Font size label."
+msgid "S (Small)"
+msgstr "S (malé)"
 
-#: includes/Setup/Editor.php:164
-msgctxt "Font size."
-msgid "Normal"
-msgstr "Normálne"
+#: includes/Setup/Editor.php:159
+msgctxt "Font size label abbreviation."
+msgid "S"
+msgstr "S"
 
-#: includes/Setup/Editor.php:170
+#: includes/Setup/Editor.php:165
 msgctxt "Font size."
-msgid "Large"
-msgstr "Veľký"
+msgid "M (Medium, normal)"
+msgstr "M (stredné, normálne)"
 
-#: includes/Setup/Editor.php:176
+#: includes/Setup/Editor.php:166
+msgctxt "Font size label abbreviation."
+msgid "M"
+msgstr "M"
+
+#: includes/Setup/Editor.php:172
 msgctxt "Font size."
-msgid "Extra Large"
-msgstr "Extra veľké"
+msgid "L (Large)"
+msgstr "L (veľké)"
 
-#: includes/Setup/Editor.php:182
+#: includes/Setup/Editor.php:173
+msgctxt "Font size label abbreviation."
+msgid "L"
+msgstr "L"
+
+#: includes/Setup/Editor.php:179
+msgctxt "Font size."
+msgid "XL (Extra Large)"
+msgstr "XL (extra veľké)"
+
+#: includes/Setup/Editor.php:180
+msgctxt "Font size label abbreviation."
+msgid "XL"
+msgstr "XL"
+
+#: includes/Setup/Editor.php:186
 msgctxt "Font size."
 msgid "Huge"
 msgstr "Obrovské"
 
-#: includes/Setup/Editor.php:188
+#: includes/Setup/Editor.php:192
 msgctxt "Font size."
 msgid "Gigantic"
 msgstr "Gigantické"
@@ -2273,16 +2293,16 @@ msgstr "Prečítať %s"
 msgid "Continue reading&hellip;"
 msgstr "Prečítať&hellip;"
 
-#: templates/parts/component/page-header-404.php:35
+#: templates/parts/component/page-header-404.php:36
 msgid "Oops! That page can not be found."
 msgstr "Hľadaná stránka nebola nájdená."
 
-#: templates/parts/component/page-header-none.php:35
+#: templates/parts/component/page-header-none.php:36
 msgid "Nothing Found"
 msgstr "Nenašli sa žiadne záznamy"
 
 #. translators: %s: search query.
-#: templates/parts/component/page-header-search.php:39
+#: templates/parts/component/page-header-search.php:40
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Výsledky vyhľadávania pre: %s"

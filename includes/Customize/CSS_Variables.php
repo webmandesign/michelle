@@ -8,7 +8,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.11
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -26,9 +26,8 @@ class CSS_Variables implements Component_Interface {
 	 *
 	 * @since    1.0.0
 	 * @version  1.2.0
-	 *
-	 * @access  public
-	 * @var     string
+	 * @access   public
+	 * @var      string
 	 */
 	public static $transient_cache_key = 'michelle_cache_css_vars';
 
@@ -232,7 +231,7 @@ class CSS_Variables implements Component_Interface {
 	 * Scrollbar width via JavaScript.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.3.11
 	 *
 	 * @return  void
 	 */
@@ -247,9 +246,11 @@ class CSS_Variables implements Component_Interface {
 						'use strict';
 
 						function michelleScrollbarWidth() {
+							var scrollbar_width = window.innerWidth - document.documentElement.clientWidth;
+
 							document.documentElement.style.setProperty(
 								'--scrollbar_width',
-								window.innerWidth - document.documentElement.clientWidth + 'px'
+								( 40 > scrollbar_width ) ? ( scrollbar_width + 'px' ) : ( '0px' )
 							);
 						}
 

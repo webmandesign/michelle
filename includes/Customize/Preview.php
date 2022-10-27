@@ -91,10 +91,10 @@ class Preview implements Component_Interface {
 	 *     'css' => array(
 	 *
 	 *       // CSS variables (the `[[id]]` gets replaced with option ID)
-	 * 			 ':root' => array(
+	 *       ':root' => array(
 	 *         '--[[id]]',
 	 *       ),
-	 * 			 ':root' => array(
+	 *       ':root' => array(
 	 *         array(
 	 *           'property' => '--[[id]]',
 	 *           'suffix'   => 'px',

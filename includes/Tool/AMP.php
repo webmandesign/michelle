@@ -11,7 +11,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.8
+ * @version  1.3.11
  */
 
 namespace WebManDesign\Michelle\Tool;
@@ -40,7 +40,7 @@ class AMP implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.8
+	 * @version  1.3.11
 	 *
 	 * @return  void
 	 */
@@ -59,7 +59,7 @@ class AMP implements Component_Interface {
 
 				add_filter( 'body_class', __CLASS__ . '::body_class', 98 );
 
-				add_action( 'amp_dev_mode_element_xpaths', __CLASS__ . '::dev_mode_xpaths' );
+				add_filter( 'amp_dev_mode_element_xpaths', __CLASS__ . '::dev_mode_xpaths' );
 
 	} // /init
 

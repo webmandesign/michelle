@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.3.11
  */
 
 namespace WebManDesign\Michelle\Setup;
@@ -129,7 +129,7 @@ class Editor implements Component_Interface {
 	 * so no need to output any inline CSS code on front-end.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.3.11
 	 *
 	 * @return  array
 	 */
@@ -155,27 +155,31 @@ class Editor implements Component_Interface {
 			return (array) apply_filters( 'michelle/setup/editor/get_font_sizes', array(
 
 				array(
-					'name' => esc_html_x( 'Small', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * pow( $typography_ratio, -1 ) ),
-					'slug' => 'small',
+					'name'      => esc_html_x( 'S (Small)', 'Font size label.', 'michelle' ),
+					'shortName' => esc_html_x( 'S', 'Font size label abbreviation.', 'michelle' ),
+					'size'      => round( $base_font_size * pow( $typography_ratio, -1 ) ),
+					'slug'      => 'small',
 				),
 
 				array(
-					'name' => esc_html_x( 'Normal', 'Font size.', 'michelle' ),
-					'size' => $base_font_size,
-					'slug' => 'normal', // Can not use empty value here as that would cause inline styles being applied.
+					'name'      => esc_html_x( 'M (Medium, normal)', 'Font size.', 'michelle' ),
+					'shortName' => esc_html_x( 'M', 'Font size label abbreviation.', 'michelle' ),
+					'size'      => $base_font_size,
+					'slug'      => 'normal', // Can not use empty value here as that would cause inline styles being applied.
 				),
 
 				array(
-					'name' => esc_html_x( 'Large', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * $typography_ratio ),
-					'slug' => 'large',
+					'name'      => esc_html_x( 'L (Large)', 'Font size.', 'michelle' ),
+					'shortName' => esc_html_x( 'L', 'Font size label abbreviation.', 'michelle' ),
+					'size'      => round( $base_font_size * $typography_ratio ),
+					'slug'      => 'large',
 				),
 
 				array(
-					'name' => esc_html_x( 'Extra Large', 'Font size.', 'michelle' ),
-					'size' => round( $base_font_size * pow( $typography_ratio, 2 ) ),
-					'slug' => 'extra-large',
+					'name'      => esc_html_x( 'XL (Extra Large)', 'Font size.', 'michelle' ),
+					'shortName' => esc_html_x( 'XL', 'Font size label abbreviation.', 'michelle' ),
+					'size'      => round( $base_font_size * pow( $typography_ratio, 2 ) ),
+					'slug'      => 'extra-large',
 				),
 
 				array(

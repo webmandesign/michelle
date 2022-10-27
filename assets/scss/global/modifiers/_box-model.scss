@@ -194,8 +194,8 @@
 	.has-huge-padding,
 	.has-extra-large-padding {
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-			padding-left: 6vw $important_modifiers;
-			padding-right: 6vw $important_modifiers;
+			padding-left: var(--body_padding) $important_modifiers;
+			padding-right: var(--body_padding) $important_modifiers;
 		}
 	}
 

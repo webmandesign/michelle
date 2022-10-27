@@ -49,8 +49,8 @@ class Component implements Component_Interface {
 			// Actions
 
 				add_action( 'tha_entry_top', __CLASS__ . '::header', 20 );
+				add_action( 'tha_entry_top', __CLASS__ . '::meta', 30 );
 
-				add_action( 'tha_entry_top',    __CLASS__ . '::meta', 30 );
 				add_action( 'tha_entry_bottom', __CLASS__ . '::meta' );
 
 			// Filters

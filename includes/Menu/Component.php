@@ -95,7 +95,7 @@ class Component implements Component_Interface {
 				'container'    => '',
 				'menu_id'      => 'menu-primary',
 				'menu_class'   => 'menu menu-primary toggle-sub-menus',
-				'item_spacing' => 'preserve', // Required for `wp_page_menu()` is different than `wp_nav_menu()` one.
+				'item_spacing' => 'preserve', // Required for `wp_page_menu()`, which differs from `wp_nav_menu()`.
 			);
 			// -> produces `<ul id="menu-primary" class="menu menu-primary toggle-sub-menus">...</ul>`
 
@@ -106,13 +106,13 @@ class Component implements Component_Interface {
 		// Processing
 
 			if ( ! $fallback ) {
-				// For `wp_nav_menu()`
+			// For `wp_nav_menu()`
 				$args['theme_location'] = 'primary';
 				$args['depth']          = 4;
 				$args['fallback_cb']    = __CLASS__ . '::wp_page_menu';
 				$args['items_wrap']     = '<ul id="%1$s" class="%2$s">%3$s' . $a11y_link . '</ul>';
 			} else {
-				// For `wp_page_menu()`
+			// For `wp_page_menu()`
 				$args['before'] = '<ul id="menu-primary" class="menu menu-primary toggle-sub-menus menu-fallback">';
 				$args['after']  = $a11y_link . '</ul>';
 			}

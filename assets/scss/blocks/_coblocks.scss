@@ -11,6 +11,10 @@
 
 }
 
+.mb-0[class*="wp-block-coblocks-"] > .has-columns > [class*="wp-block-coblocks-"] {
+	margin-bottom: 0;
+}
+
 // Shape Divider block.
 .wp-block-coblocks-shape-divider__svg-wrapper {
 	margin: 0;

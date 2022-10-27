@@ -10,10 +10,4 @@
 	--featured_posts_opacity_shaded: 1;
 	--featured_posts_transition_speed: .3s;
 
-	// WP:
-	--wp-admin--admin-bar--height: 32px;
-	@media screen and (max-width: 782px) {
-		--wp-admin--admin-bar--height: 46px;
-	}
-
 }

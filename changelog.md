@@ -1,5 +1,42 @@
 # Michelle Changelog
 
+## 1.3.11, 20221027
+
+### Updated
+- Improving HTML
+- Code comments, formatting and organization
+- Block editor font size names
+- Improving styles
+- Improving JavaScript
+- Localization
+
+### Fixed
+- Preventing scrollbar width miscalculation on Android devices
+- Preventing accessibility issue regarding skip link color contrast
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/js/customize-preview.js
+	assets/scss/blocks.scss
+	assets/scss/content.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	includes/Assets/Editor.php
+	includes/Customize/CSS_Variables.php
+	includes/Setup/Editor.php
+	includes/Tool/AMP.php
+	includes/Tool/Google_Fonts.php
+	languages/*.*
+	templates/parts/component/entry-header-singular.php
+	templates/parts/component/page-header-404.php
+	templates/parts/component/page-header-archive.php
+	templates/parts/component/page-header-none.php
+	templates/parts/component/page-header-search.php
+	templates/parts/component/page-header.php
+
+
 ## 1.3.10, 20220928
 
 ### Fixed

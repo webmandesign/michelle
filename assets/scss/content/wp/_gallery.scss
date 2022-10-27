@@ -9,7 +9,7 @@
 	margin: $gutter / -2;
 
 	&:not(:last-child) {
-		margin-bottom: 1.618em;
+		margin-bottom: var(--gap);
 	}
 
 	&-item {

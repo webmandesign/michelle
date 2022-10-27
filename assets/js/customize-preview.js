@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.11
  */
 
 /**
@@ -49,11 +50,11 @@
 		/**
 		 * Convert hex color into RGB array.
 		 *
-		 * @since  1.0.0
+		 * @since    1.0.0
+		 * @version  1.3.11
 		 */
 		hexToRgbArray : function( $hex = '' ) {
-			var
-				$rgb = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec( $hex );
+			const $rgb = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec( $hex );
 
 			return ( $rgb ) ? ( [
 				parseInt( $rgb[1], 16 ),

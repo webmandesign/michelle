@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-09-25 20:46+0200\n"
+"POT-Creation-Date: 2022-10-27 12:28+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -276,22 +276,22 @@ msgctxt "Theme starter content"
 msgid "Home"
 msgstr ""
 
-#: includes/Content/Starter.php:141 includes/Content/Starter.php:193
+#: includes/Content/Starter.php:141 includes/Content/Starter.php:195
 msgctxt "Theme starter content"
 msgid "About"
 msgstr ""
 
-#: includes/Content/Starter.php:149 includes/Content/Starter.php:199
+#: includes/Content/Starter.php:149 includes/Content/Starter.php:202
 msgctxt "Theme starter content"
 msgid "Services"
 msgstr ""
 
-#: includes/Content/Starter.php:157 includes/Content/Starter.php:205
+#: includes/Content/Starter.php:157 includes/Content/Starter.php:209
 msgctxt "Theme starter content"
 msgid "FAQ"
 msgstr ""
 
-#: includes/Content/Starter.php:165 includes/Content/Starter.php:211
+#: includes/Content/Starter.php:165 includes/Content/Starter.php:216
 msgctxt "Theme starter content"
 msgid "Contact"
 msgstr ""
@@ -301,143 +301,143 @@ msgctxt "Theme starter content"
 msgid "Primary Menu"
 msgstr ""
 
-#: includes/Content/Starter.php:217
+#: includes/Content/Starter.php:223
 msgctxt "Theme starter content"
 msgid "Blog"
 msgstr ""
 
-#: includes/Content/Starter.php:224
+#: includes/Content/Starter.php:230
 msgctxt "Theme starter content."
 msgid "Demo website"
 msgstr ""
 
-#: includes/Content/Starter.php:228
+#: includes/Content/Starter.php:235
 msgctxt "Theme starter content."
 msgid "User manual"
 msgstr ""
 
-#: includes/Content/Starter.php:333
+#: includes/Content/Starter.php:344
 msgctxt "Demo text."
 msgid "Some text"
 msgstr ""
 
-#: includes/Content/Starter.php:334
+#: includes/Content/Starter.php:345
 msgctxt "Demo text."
 msgid "Just a short sentence"
 msgstr ""
 
-#: includes/Content/Starter.php:335
+#: includes/Content/Starter.php:346
 msgctxt "Demo text."
 msgid "Write your own copy text here"
 msgstr ""
 
-#: includes/Content/Starter.php:336
+#: includes/Content/Starter.php:347
 msgctxt "Demo text."
 msgid "This is just a demo text you should overwrite"
 msgstr ""
 
-#: includes/Content/Starter.php:339
+#: includes/Content/Starter.php:350
 msgctxt "Demo text."
 msgid "This is title"
 msgstr ""
 
-#: includes/Content/Starter.php:340
+#: includes/Content/Starter.php:351
 msgctxt "Demo text."
 msgid "Write some title text here"
 msgstr ""
 
-#: includes/Content/Starter.php:341
+#: includes/Content/Starter.php:352
 msgctxt "Demo text."
 msgid ""
 "The ideal length of the title text in here should be maybe a bit longer"
 msgstr ""
 
-#: includes/Content/Starter.php:345
+#: includes/Content/Starter.php:356
 msgctxt "Demo text."
 msgid "123 Street Name<br>Cityname, 56789<br>COUNTRY"
 msgstr ""
 
-#: includes/Content/Starter.php:346
+#: includes/Content/Starter.php:357
 msgctxt "Demo text."
 msgid "example@example.com"
 msgstr ""
 
-#: includes/Content/Starter.php:347
+#: includes/Content/Starter.php:358
 msgctxt "Demo text."
 msgid "+1 (123) 456-7890"
 msgstr ""
 
-#: includes/Content/Starter.php:351
+#: includes/Content/Starter.php:362
 msgctxt "Demo text."
 msgid "10:30 am on Monday, July 1, 2021"
 msgstr ""
 
-#: includes/Content/Starter.php:352
+#: includes/Content/Starter.php:363
 msgctxt "Demo text. Week days."
 msgid "Mon - Fri"
 msgstr ""
 
-#: includes/Content/Starter.php:353
+#: includes/Content/Starter.php:364
 msgctxt "Demo text. Weekend days."
 msgid "Sat - Sun"
 msgstr ""
 
-#: includes/Content/Starter.php:354
+#: includes/Content/Starter.php:365
 msgctxt "Demo text."
 msgid "Monday"
 msgstr ""
 
-#: includes/Content/Starter.php:355
+#: includes/Content/Starter.php:366
 msgctxt "Demo text."
 msgid "Tuesday"
 msgstr ""
 
-#: includes/Content/Starter.php:356
+#: includes/Content/Starter.php:367
 msgctxt "Demo text."
 msgid "Wednesday"
 msgstr ""
 
-#: includes/Content/Starter.php:357
+#: includes/Content/Starter.php:368
 msgctxt "Demo text."
 msgid "Thursday"
 msgstr ""
 
-#: includes/Content/Starter.php:358
+#: includes/Content/Starter.php:369
 msgctxt "Demo text."
 msgid "Friday"
 msgstr ""
 
-#: includes/Content/Starter.php:359
+#: includes/Content/Starter.php:370
 msgctxt "Demo text."
 msgid "Saturday"
 msgstr ""
 
-#: includes/Content/Starter.php:360
+#: includes/Content/Starter.php:371
 msgctxt "Demo text."
 msgid "Sunday"
 msgstr ""
 
-#: includes/Content/Starter.php:364
+#: includes/Content/Starter.php:375
 msgctxt "Demo text."
 msgid "Name Surname"
 msgstr ""
 
-#: includes/Content/Starter.php:365
+#: includes/Content/Starter.php:376
 msgctxt "Demo text. A job title."
 msgid "Designer"
 msgstr ""
 
-#: includes/Content/Starter.php:369
+#: includes/Content/Starter.php:380
 msgctxt "Demo text. Image alt text."
 msgid "Image alternative description text"
 msgstr ""
 
-#: includes/Content/Starter.php:370
+#: includes/Content/Starter.php:381
 msgctxt "Demo text. Button label."
 msgid "Click here →"
 msgstr ""
 
-#: includes/Content/Starter.php:371
+#: includes/Content/Starter.php:382
 msgctxt "Demo text. Price."
 msgid "$19"
 msgstr ""
@@ -936,7 +936,7 @@ msgstr ""
 msgid "Enter the password to view it."
 msgstr ""
 
-#: includes/Header/Component.php:250
+#: includes/Header/Component.php:252
 msgctxt "Search form modal toggle button label."
 msgid "Toggle search form modal box"
 msgstr ""
@@ -1020,31 +1020,51 @@ msgid "Skip to menu toggle button"
 msgstr ""
 
 #: includes/Setup/Editor.php:158
-msgctxt "Font size."
-msgid "Small"
+msgctxt "Font size label."
+msgid "S (Small)"
 msgstr ""
 
-#: includes/Setup/Editor.php:164
-msgctxt "Font size."
-msgid "Normal"
+#: includes/Setup/Editor.php:159
+msgctxt "Font size label abbreviation."
+msgid "S"
 msgstr ""
 
-#: includes/Setup/Editor.php:170
+#: includes/Setup/Editor.php:165
 msgctxt "Font size."
-msgid "Large"
+msgid "M (Medium, normal)"
 msgstr ""
 
-#: includes/Setup/Editor.php:176
-msgctxt "Font size."
-msgid "Extra Large"
+#: includes/Setup/Editor.php:166
+msgctxt "Font size label abbreviation."
+msgid "M"
 msgstr ""
 
-#: includes/Setup/Editor.php:182
+#: includes/Setup/Editor.php:172
+msgctxt "Font size."
+msgid "L (Large)"
+msgstr ""
+
+#: includes/Setup/Editor.php:173
+msgctxt "Font size label abbreviation."
+msgid "L"
+msgstr ""
+
+#: includes/Setup/Editor.php:179
+msgctxt "Font size."
+msgid "XL (Extra Large)"
+msgstr ""
+
+#: includes/Setup/Editor.php:180
+msgctxt "Font size label abbreviation."
+msgid "XL"
+msgstr ""
+
+#: includes/Setup/Editor.php:186
 msgctxt "Font size."
 msgid "Huge"
 msgstr ""
 
-#: includes/Setup/Editor.php:188
+#: includes/Setup/Editor.php:192
 msgctxt "Font size."
 msgid "Gigantic"
 msgstr ""
@@ -2221,16 +2241,16 @@ msgstr ""
 msgid "Continue reading&hellip;"
 msgstr ""
 
-#: templates/parts/component/page-header-404.php:35
+#: templates/parts/component/page-header-404.php:36
 msgid "Oops! That page can not be found."
 msgstr ""
 
-#: templates/parts/component/page-header-none.php:35
+#: templates/parts/component/page-header-none.php:36
 msgid "Nothing Found"
 msgstr ""
 
 #. translators: %s: search query.
-#: templates/parts/component/page-header-search.php:39
+#: templates/parts/component/page-header-search.php:40
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""

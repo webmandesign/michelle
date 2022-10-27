@@ -362,7 +362,7 @@ class Styles implements Component_Interface {
 			// Dequeue original WP global styles.
 			remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
 
-			//  Enqueue WP global styles early.
+			// Enqueue WP global styles early.
 			add_action( 'wp_enqueue_scripts', function() {
 
 				// Lower CSS code specificity.

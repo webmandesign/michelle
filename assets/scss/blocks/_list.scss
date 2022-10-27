@@ -21,8 +21,8 @@ ol {
 		}
 
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-			padding-left: calc( #{$ratio +em} + 6vw );
-			padding-right: calc( #{$ratio +em} + 6vw );
+			padding-left: calc( #{$ratio +em} + var(--body_padding) );
+			padding-right: calc( #{$ratio +em} + var(--body_padding) );
 		}
 
 	}

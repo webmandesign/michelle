@@ -3,6 +3,10 @@
 .pagination {
 	@extend %clearfix;
 	clear: both;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	position: relative;
 	margin-top: var(--white_space);
 	text-align: center;
@@ -20,51 +24,52 @@
 
 	}
 
-	a,
-	span {
-		display: none;
-		min-width: 2.5em;
-		padding: ( $form_field_padding_vertical / $button_font_size ) 0;
-		margin: .15em;
-		font-size: $button_font_size +em;
-		line-height: $ratio / $button_font_size;
-		text-align: center;
-		text-decoration: none;
-		vertical-align: top;
-
-		@include media( map_get( $breakpoint, 'm' ) ) {
-			display: inline-block;
-		}
-
+	.nav-links {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
 	}
 
-	.prev,
-	.next {
+}
+
+.pagination a:not(.next):not(.prev),
+.pagination span,
+.page-numbers {
+	display: none;
+	min-width: 2.5em;
+	margin: .25em;
+	font-size: $button_font_size +em;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: top;
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
 		display: inline-block;
 	}
 
-	.prev {
+	&.prev {
 
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-			float: $left;
+			margin-#{$right}: auto;
 		}
 
 	}
 
-	.next {
+	&.next {
 
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
-			float: $right;
+			margin-#{$left}: auto;
 		}
 
 	}
 
-	.dots,
-	.extend {
+	&.dots,
+	&.extend {
 		width: auto;
 	}
 
-	.current {
+	&.current {
 		font-weight: 700;
 	}
 

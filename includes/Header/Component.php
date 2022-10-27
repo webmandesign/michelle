@@ -85,6 +85,8 @@ class Component implements Component_Interface {
 	/**
 	 * Is header disabled?
 	 *
+	 * To check if header is disabled, use `! Header::is_enabled()` instead.
+	 *
 	 * @since  1.0.0
 	 *
 	 * @return  bool

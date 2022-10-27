@@ -5,7 +5,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.3.11
  */
 
 namespace WebManDesign\Michelle;
@@ -29,7 +30,7 @@ if (
 
 ?>
 
-<header class="page-header">
+<header id="page-header" class="page-header">
 	<div class="page-header-content">
 		<?php
 

@@ -33,6 +33,7 @@ textarea {
 	color: inherit;
 	border: 1px solid transparent;
 	border-bottom-color: currentColor;
+	border-radius: 0;
 	vertical-align: baseline;
 
 	&:focus {
@@ -79,7 +80,6 @@ select {
 		background-position: $right 4px top 50%;
 		background-repeat: no-repeat;
 		color: inherit;
-		border-radius: 0;
 		appearance: none;
 		overflow-wrap: normal;
 		word-wrap: normal;
