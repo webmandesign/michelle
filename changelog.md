@@ -1,5 +1,20 @@
 # Michelle Changelog
 
+## 1.4.0, 20221102
+
+### Fixed
+- WordPress 6.1 compatibility
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/_custom-properties.scss
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+
+
 ## 1.3.11, 20221027
 
 ### Updated

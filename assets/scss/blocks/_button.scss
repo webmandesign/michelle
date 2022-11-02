@@ -44,27 +44,28 @@
 
 }
 
-.is-style-outline {
+.wp-block-button.is-style-outline > .wp-block-button__link {
+	padding-left: 1.5em / $button_font_size;
+	padding-right: 1.5em / $button_font_size;
+	border: 1px solid;
 
-	.wp-block-button__link {
-		padding-left: 1.5em / $button_font_size;
-		padding-right: 1.5em / $button_font_size;
-		border: 1px solid;
+	&:not(.has-text-color) {
+		color: inherit;
+	}
 
-		&:not(.has-text-color) {
-			color: currentColor;
-		}
-
-		&,
-		&:not(.has-background):hover,
-		&:not(.has-background):focus,
-		&:not(.has-background):active {
-			background: none;
-		}
-
+	&:not(.has-background),
+	&:not(.has-background):hover,
+	&:not(.has-background):focus,
+	&:not(.has-background):active {
+		background: none;
 	}
 
 }
+
+	.wp-block-button.is-style-outline > .wp-block-button__link,
+	.wp-block-button__link.is-style-outline {
+		padding: ( $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 ) ) 1.5em;
+	}
 
 .is-style-outline > .wp-block-button__link,
 .wp-block-button__link.is-style-outline {

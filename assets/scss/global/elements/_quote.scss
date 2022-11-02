@@ -28,6 +28,10 @@ blockquote {
 		font-size: 1em;
 	}
 
+	p {
+		max-width: none;
+	}
+
 	p:first-child::before {
 		content: '“';
 		display: inline-block;

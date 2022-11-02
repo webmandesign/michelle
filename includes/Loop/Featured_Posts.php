@@ -24,7 +24,9 @@ class Featured_Posts implements Component_Interface {
 	/**
 	 * Soft cache for queried featured posts.
 	 *
-	 * @var array
+	 * @since   1.0.0
+	 * @access  private
+	 * @var     array
 	 */
 	private static $posts = array();
 

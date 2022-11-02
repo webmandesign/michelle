@@ -2,7 +2,7 @@
 
 Contributors: webmandesign, jamesosborne
 Requires at least: 5.5
-Tested up to: 6.0
+Tested up to: 6.1
 Requires PHP: 7.0
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
@@ -35,12 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.3.11 =
-Improving HTML, styles, JavaScript, updating localization, preventing issues.
-
-### Fixed
-- Preventing scrollbar width miscalculation on Android devices
-- Preventing accessibility issue regarding skip link color contrast
+= 1.4.0 =
+Fixing WordPress 6.1 compatibility.
 
 
 == Copyright ==
