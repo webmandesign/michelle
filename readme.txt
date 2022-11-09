@@ -35,7 +35,7 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.4.0 =
+= 1.5.0 =
 Fixing WordPress 6.1 compatibility.
 
 

@@ -1,5 +1,16 @@
 # Michelle Changelog
 
+## 1.5.0, 20221110
+
+### Fixed
+- WordPress 6.1 compatibility
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+
+
 ## 1.4.0, 20221102
 
 ### Fixed
