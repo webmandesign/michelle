@@ -1,6 +1,7 @@
 /* FILE: global/form/_button.scss */
 
 #{ $selectors_button } {
+	display: inline-block; // This is must have not to overflow empty paragraph containers, for example.
 	padding: ( $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 ) ) 0;
 	font-family: var(--typography_font_global);
 	font-size: $button_font_size +em;

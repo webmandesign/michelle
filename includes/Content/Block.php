@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.8
+ * @version  1.4.1
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -50,7 +50,7 @@ class Block implements Component_Interface {
 	 * Block editor output modifications.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.8
+	 * @version  1.4.1
 	 *
 	 * @param  string $block_content  The pre-rendered content. Default null.
 	 * @param  array  $block          The block being rendered.
@@ -172,6 +172,16 @@ class Block implements Component_Interface {
 				$re .= '/s';
 
 				$block_content = preg_replace( $re, '<div class="entry-meta">$0</div>', $block_content );
+			}
+
+			// Post Excerpt block.
+			if ( 'core/post-excerpt' == $block['blockName'] ) {
+				// Remove excerpt opening paragraph tag.
+				$block_content = str_replace( '<p class="wp-block-post-excerpt__excerpt">', '', $block_content );
+				// Remove excerpt closing paragraph tag (is `</p></div>`).
+				$block_content = substr( $block_content, 0, -10 ) . '</div>';
+				// Adding excerpt class back in.
+				$block_content = str_replace( '"entry-summary', '"entry-summary wp-block-post-excerpt__excerpt', $block_content );
 			}
 
 			// Cover block.

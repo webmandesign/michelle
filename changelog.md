@@ -1,14 +1,20 @@
 # Michelle Changelog
 
-## 1.5.0, 20221110
+## 1.4.1, 20221109
 
 ### Fixed
-- WordPress 6.1 compatibility
+- Outline button padding
+- Excerpt HTML in Query Loop block
+- Mobile pagination previous/next button not displaying
+- Full aligned blocks horizontal margin
 
 ### File updates
 	changelog.md
 	readme.txt
 	style.css
+	assets/scss/blocks.scss
+	assets/scss/global.scss
+	includes/Content/Block.php
 
 
 ## 1.4.0, 20221102

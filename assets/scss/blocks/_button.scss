@@ -64,18 +64,12 @@
 
 	.wp-block-button.is-style-outline > .wp-block-button__link,
 	.wp-block-button__link.is-style-outline {
-		padding: ( $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 ) ) 1.5em;
+		$button_padding_vertical : $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 );
+		$border_width : 1px;
+
+		padding-top: calc( #{$button_padding_vertical} - #{$border_width} );
+		padding-bottom: calc( #{$button_padding_vertical} - #{$border_width} );
 	}
-
-.is-style-outline > .wp-block-button__link,
-.wp-block-button__link.is-style-outline {
-	$button_padding_vertical : $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 );
-	$border_width : 1px;
-
-	padding-top: calc( #{$button_padding_vertical} - #{$border_width} );
-	padding-bottom: calc( #{$button_padding_vertical} - #{$border_width} );
-	color: inherit;
-}
 
 .wp-block-buttons.is-style-large {
 	font-size: var(--typography_font_size_L_em);
