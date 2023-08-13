@@ -1,4 +1,5 @@
 /* FILE: editor-style-blocks.scss */
+@use 'sass:math';
 
 //
 // Blocks editor styles.
@@ -9,7 +10,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.4.0
+// @version  1.5.0
 //
 
 $left: left;

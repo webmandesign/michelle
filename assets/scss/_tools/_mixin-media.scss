@@ -63,7 +63,7 @@
 						$query_value : $query_value - 1;
 					}
 
-					$query_value : $query_value +px;
+					$query_value : $query_value + px;
 
 					$query : set-nth( $query, 1, $query_value );
 

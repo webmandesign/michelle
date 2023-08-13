@@ -3,7 +3,7 @@
 .comment-respond {
 
 	.comment-list & {
-		margin: ( $ratio +em ) 0;
+		margin: ( $ratio + em ) 0;
 	}
 
 	textarea,
@@ -15,7 +15,7 @@
 
 	label:first-child {
 		display: block;
-		margin-bottom: $ratio_min +em;
+		margin-bottom: $ratio_min + em;
 	}
 
 	textarea:invalid {

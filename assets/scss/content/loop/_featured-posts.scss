@@ -6,7 +6,7 @@
 	min-height: 50vh;
 
 	@include media( map_get( $breakpoint, 'l' ) ) {
-		min-height: $ratio_maj * 100 +vh;
+		min-height: $ratio_maj * 100 + vh;
 	}
 
 	&-section {
@@ -40,7 +40,7 @@
 	}
 
 	.link-more-container {
-		padding-top: $ratio_maj +rem;
+		padding-top: $ratio_maj + rem;
 	}
 
 	.entry {
@@ -51,7 +51,7 @@
 		position: relative;
 		width: 100%;
 		min-width: 100%;
-		min-height: $ratio_min * 100 +vh;
+		min-height: $ratio_min * 100 + vh;
 		padding: var(--posts_list_gap);
 		padding-top: var(--white_space);
 		background: #333;
@@ -85,7 +85,7 @@
 		}
 
 		> * {
-			margin-top: $ratio_maj +rem;
+			margin-top: $ratio_maj + rem;
 			margin-bottom: 0;
 		}
 

@@ -18,7 +18,7 @@
 		fill: currentColor;
 		width: auto !important;
 		height: calc( var(--typography_font_size_base) * 1.5 ) !important;
-		margin: ( -$ratio_maj / 2 +em ) 0;
+		margin: ( math.div( -$ratio_maj, 2 ) + em ) 0;
 		vertical-align: middle;
 	}
 

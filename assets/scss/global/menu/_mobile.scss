@@ -30,7 +30,7 @@
 		}
 
 		.admin-bar & {
-			@media screen and (min-width: 601px) and (max-width: #{ map_get( $breakpoint, $mobile_menu_breakpoint ) +px }) {
+			@media screen and (min-width: 601px) and (max-width: #{ map_get( $breakpoint, $mobile_menu_breakpoint ) + px }) {
 				top: var(--wp-admin--admin-bar--height);
 			}
 		}
@@ -38,7 +38,7 @@
 	}
 
 	.svg-icon {
-		font-size: $ratio +em;
+		font-size: $ratio + em;
 		vertical-align: middle;
 	}
 
@@ -118,7 +118,7 @@
 			a {
 				flex: 1 1 auto;
 				display: block;
-				padding: .25em ( $ratio_maj +em );
+				padding: .25em ( $ratio_maj + em );
 			}
 
 			&-container {
@@ -141,13 +141,13 @@
 				#{$left}: auto;
 				top: auto;
 				padding: 0;
-				padding-#{$left}: $ratio_maj +em;
+				padding-#{$left}: $ratio_maj + em;
 				background: transparent;
 				box-shadow: none;
 
 				a {
-					padding-top: $ratio_min +em;
-					padding-bottom: $ratio_min +em;
+					padding-top: $ratio_min + em;
+					padding-bottom: $ratio_min + em;
 				}
 
 				.sub-menu {
@@ -169,7 +169,7 @@
 
 			// Top level menu items.
 			> li {
-				font-size: $ratio +em;
+				font-size: $ratio + em;
 
 				&,
 				&:not(:last-child) {
@@ -177,7 +177,7 @@
 				}
 
 				> .sub-menu {
-					font-size: $ratio_maj +em;
+					font-size: $ratio_maj + em;
 				}
 
 			}
@@ -203,7 +203,7 @@
 	}
 
 	&.admin-bar .main-navigation-container {
-		@media screen and (min-width: 601px) and (max-width: #{ map_get( $breakpoint, $mobile_menu_breakpoint ) +px }) {
+		@media screen and (min-width: 601px) and (max-width: #{ map_get( $breakpoint, $mobile_menu_breakpoint ) + px }) {
 			padding-top: calc( var(--wp-admin--admin-bar--height) + 6em );
 		}
 	}

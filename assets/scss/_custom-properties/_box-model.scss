@@ -86,7 +86,7 @@
 			--wp--style--block-gap: var(--gap);
 			--wp--style--gallery-gap-default: var(--wp--style--block-gap);
 
-			--wp--style--spacing--base: #{ $ratio_maj +vw };
+			--wp--style--spacing--base: #{ $ratio_maj + vw };
 			@for $i from 1 through 10 {
 				--wp--preset--spacing--#{ $i * 10 }: calc( #{ $i } * var(--wp--style--spacing--base) );
 			}

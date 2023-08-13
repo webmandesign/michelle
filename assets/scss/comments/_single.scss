@@ -3,7 +3,7 @@
 .comment {
 
 	&-body {
-		padding: 0 0 ( $ratio +em );
+		padding: 0 0 ( $ratio + em );
 
 		@include media( map_get( $breakpoint, 'm' ) ) {
 			padding-#{$left}: 1em;
@@ -34,7 +34,7 @@
 	.reply {
 		position: absolute;
 		#{$right}: 0;
-		top: $ratio +rem;
+		top: $ratio + rem;
 		font-size: var(--typography_font_size_S_em);
 		text-transform: uppercase;
 		letter-spacing: var(--letter_spacing);

@@ -96,7 +96,7 @@
 	}
 
 		#{$selectors_sticky_header_mobile}.admin-bar:not(.has-navigation-toggled) & {
-			@media screen and (min-width: 601px) and (max-width: #{ map_get( $breakpoint, $mobile_menu_breakpoint ) +px }) {
+			@media screen and (min-width: 601px) and (max-width: #{ map_get( $breakpoint, $mobile_menu_breakpoint ) + px }) {
 				top: var(--wp-admin--admin-bar--height);
 			}
 		}

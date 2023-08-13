@@ -5,7 +5,7 @@
 	margin-bottom: 0;
 
 	&:not(:first-child) {
-		margin-top: -$ratio +em;
+		margin-top: -$ratio + em;
 
 		+ .wp-block-spacer {
 			margin-top: 0;

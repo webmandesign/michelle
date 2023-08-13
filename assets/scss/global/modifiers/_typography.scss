@@ -114,7 +114,7 @@
 
 	.has-xs-line-height,
 	.has-extra-small-line-height {
-		line-height: ( 1 + $ratio_min / 2 ) $important_modifiers;
+		line-height: ( 1 + math.div( $ratio_min, 2 ) ) $important_modifiers;
 	}
 
 	.has-s-line-height,

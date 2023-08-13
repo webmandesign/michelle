@@ -27,7 +27,7 @@ $range_value_color: #fff;
 	appearance: none;
 	width: $range_thumb_size;
 	height: $range_thumb_size;
-	margin-top: ( $range_track_size - $range_thumb_size ) / 2;
+	margin-top: math.div( ( $range_track_size - $range_thumb_size ), 2 );
 	background: $range_thumb_color;
 	border: 0;
 	border-radius: .191em;

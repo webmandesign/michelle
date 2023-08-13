@@ -2,7 +2,7 @@
 
 table {
 	width: 100%;
-	margin: 0 0 ( $ratio +em );
+	margin: 0 0 ( $ratio + em );
 	color: inherit; // Required for Chrome browser, for example.
 	border: 1px solid;
 	border-collapse: collapse;
@@ -14,7 +14,7 @@ table {
 }
 
 caption {
-	padding: ( $ratio_maj +em ) 0;
+	padding: ( $ratio_maj + em ) 0;
 	text-align: $left;
 	font-style: italic;
 	caption-side: bottom;
@@ -22,7 +22,7 @@ caption {
 
 th,
 td {
-	padding: $ratio_maj +em;
+	padding: $ratio_maj + em;
 	border-width: 1px;
 	border-style: solid;
 	vertical-align: top;

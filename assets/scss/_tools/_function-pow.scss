@@ -1,7 +1,8 @@
 //
 // Math power function.
 //
-// @since  1.3.0
+// @since    1.3.0
+// @version  1.5.0
 //
 // @param  float $number
 // @param  int   $exponent
@@ -21,7 +22,7 @@
 			}
 		} @else if $exponent < 0 {
 			@for $i from 1 through -$exponent {
-				$value: $value / $number;
+				$value: math.div( $value, $number );
 			}
 		}
 

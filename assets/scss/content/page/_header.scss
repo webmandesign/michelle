@@ -73,12 +73,12 @@
 
 	.page-meta {
 		width: 100%;
-		margin-top: $ratio +rem;
+		margin-top: $ratio + rem;
 
 		@include media( map_get( $breakpoint, 'xl' ) ) {
 			order: -1;
 			margin-top: 0;
-			margin-bottom: $ratio_maj +rem;
+			margin-bottom: $ratio_maj + rem;
 		}
 
 	}

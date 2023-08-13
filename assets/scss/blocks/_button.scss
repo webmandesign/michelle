@@ -10,7 +10,7 @@
 	&__link {
 
 		&.has-background {
-			padding: ( $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 ) ) 0;
+			padding: ( math.div( $form_field_padding_vertical, $button_font_size ) * math.div( $ratio, 1.25 ) ) 0;
 		}
 
 		&:not(.has-text-color) {
@@ -45,8 +45,8 @@
 }
 
 .wp-block-button.is-style-outline > .wp-block-button__link {
-	padding-left: 1.5em / $button_font_size;
-	padding-right: 1.5em / $button_font_size;
+	padding-left: math.div( 1.5em, $button_font_size );
+	padding-right: math.div( 1.5em, $button_font_size );
 	border: 1px solid;
 
 	&:not(.has-text-color) {
@@ -64,7 +64,7 @@
 
 	.wp-block-button.is-style-outline > .wp-block-button__link,
 	.wp-block-button__link.is-style-outline {
-		$button_padding_vertical : $form_field_padding_vertical / $button_font_size * ( $ratio / 1.25 );
+		$button_padding_vertical : math.div( $form_field_padding_vertical, $button_font_size ) * math.div( $ratio, 1.25 );
 		$border_width : 1px;
 
 		padding-top: calc( #{$button_padding_vertical} - #{$border_width} );

@@ -39,16 +39,16 @@
 		}
 
 		&.has-background {
-			padding: $ratio +em;
+			padding: $ratio + em;
 			padding-bottom: 0;
 
 			@include media( map_get( $breakpoint, 'xl' ) ) {
 				padding: var(--block_padding);
-				padding-bottom: calc( var(--block_padding) - #{ $ratio +em } );
+				padding-bottom: calc( var(--block_padding) - #{ $ratio + em } );
 			}
 
 			&.is-style-no-gaps {
-				padding-bottom: $ratio +em;
+				padding-bottom: $ratio + em;
 
 				@include media( map_get( $breakpoint, 'xl' ) ) {
 					padding-bottom: var(--block_padding);
@@ -145,7 +145,7 @@
 
 		&.is-style-drop-shadow,
 		&.is-style-inner-shadow {
-			padding: $ratio +em;
+			padding: $ratio + em;
 		}
 
 	}

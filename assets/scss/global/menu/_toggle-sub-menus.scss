@@ -9,7 +9,7 @@
 		justify-content: space-between;
 
 		> a {
-			padding-#{$right}: $ratio_min +em;
+			padding-#{$right}: $ratio_min + em;
 		}
 
 	}

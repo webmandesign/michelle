@@ -5,7 +5,7 @@
 	clear: both;
 	display: block;
 	position: relative;
-	padding: ( $ratio +em ) 0;
+	padding: ( $ratio + em ) 0;
 	margin: 0;
 
 	.comment-list + & {
@@ -14,7 +14,7 @@
 
 	a {
 		display: inline-block;
-		padding: ( $ratio_maj +em ) 1em;
+		padding: ( $ratio_maj + em ) 1em;
 		line-height: normal;
 		cursor: pointer;
 
