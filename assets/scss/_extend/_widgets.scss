@@ -4,7 +4,7 @@
 	text-align: inherit;
 
 	caption {
-		font-size: var(--typography_font_size_S_em);
+		font-size: var(--typography_font_size_s_em);
 		font-weight: 700;
 		font-style: normal;
 		text-transform: uppercase;
@@ -41,7 +41,7 @@
 	thead {
 
 		th {
-			font-size: var(--typography_font_size_S_em);
+			font-size: var(--typography_font_size_s_em);
 			font-weight: 700;
 			background: var(--color_body_headings);
 			color: var(--color_body_background);
@@ -84,7 +84,7 @@
 
 	.wp-calendar-nav {
 		margin-top: .5em;
-		font-size: var(--typography_font_size_S_em);
+		font-size: var(--typography_font_size_s_em);
 		font-weight: 700;
 		text-align: inherit;
 		text-transform: uppercase;
@@ -110,7 +110,7 @@
 		display: inline-block;
 		padding: .15em .5em;
 		margin: .15em 0;
-		font-size: var(--typography_font_size_S_em);
+		font-size: var(--typography_font_size_s_em);
 		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: var(--letter_spacing);

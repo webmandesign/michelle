@@ -36,7 +36,7 @@ Please see `changelog.md` file.
 == Upgrade Notice ==
 
 = 1.5.0 =
-Fixing bugs.
+Fixes WordPress 6.3 compatibility issues, improving accessibility, fixing bugs.
 
 
 == Copyright ==

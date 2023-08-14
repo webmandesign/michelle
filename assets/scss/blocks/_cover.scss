@@ -3,6 +3,7 @@
 .wp-block-cover {
 	height: auto;
 	padding: var(--block_padding);
+	overflow: visible;
 
 	&.alignfull {
 		padding-left: var(--body_padding);

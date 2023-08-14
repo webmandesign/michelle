@@ -35,12 +35,12 @@
 
 	.has-xs-font-size,
 	.has-extra-small-font-size {
-		font-size: var(--typography_font_size_XS_em) $important_modifiers;
+		font-size: var(--typography_font_size_xs_em) $important_modifiers;
 	}
 
 	.has-s-font-size,
 	.has-small-font-size {
-		font-size: var(--typography_font_size_S_em) $important_modifiers;
+		font-size: var(--typography_font_size_s_em) $important_modifiers;
 	}
 
 	#{ $specificity }.has-m-font-size,
@@ -53,26 +53,26 @@
 
 	#{ $specificity }.has-l-font-size,
 	#{ $specificity }.has-large-font-size {
-		font-size: var(--typography_font_size_L_em) $important_modifiers;
-		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_L) );
+		font-size: var(--typography_font_size_l_em) $important_modifiers;
+		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_l) );
 	}
 
 	#{ $specificity }.has-xl-font-size,
 	#{ $specificity }.has-extra-large-font-size {
-		font-size: var(--typography_font_size_XL_em) $important_modifiers;
-		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_XL) );
+		font-size: var(--typography_font_size_xl_em) $important_modifiers;
+		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_xl) );
 	}
 
 	#{ $specificity }.has-xxl-font-size,
 	#{ $specificity }.has-giant-font-size {
-		font-size: var(--typography_font_size_XXL_em) $important_modifiers;
-		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_XXL) );
+		font-size: var(--typography_font_size_xxl_em) $important_modifiers;
+		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_xxl) );
 	}
 
 	#{ $specificity }.has-xxxl-font-size,
 	#{ $specificity }.has-huge-font-size {
-		font-size: var(--typography_font_size_XXXL_em) $important_modifiers;
-		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_XXXL) );
+		font-size: var(--typography_font_size_xxxl_em) $important_modifiers;
+		line-height: calc( 1 + #{ $ratio_maj } / var(--typography_font_size_xxxl) );
 	}
 
 	$important_modifiers: null; // Required reset.

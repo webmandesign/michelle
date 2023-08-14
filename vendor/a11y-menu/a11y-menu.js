@@ -1,7 +1,7 @@
 /*!
 @package      A11y Menu
 @description  A keyboard accessible navigational menu script.
-@version      1.2.0
+@version      1.3.0
 @author       WebMan Design, Oliver Juhas, https://www.webmandesign.eu
 @copyright    2019 WebMan Design, Oliver Juhas
 @license      GPL-3.0-or-later, https://www.gnu.org/licenses/gpl-3.0-standalone.html
@@ -62,8 +62,12 @@
 
 						// Prepend child menu with toggle button. The button mode check is done in getButton().
 						if ( null != button ) {
-							const childButton = button.cloneNode( true );
-							menuItem.insertBefore( childButton, childMenu );
+							let childButton = menuItem.getElementsByClassName( _.getOption( 'button_attributes', 'class' ) )[0];
+
+							if ( 'undefined' == typeof childButton ) {
+								childButton = button.cloneNode( true );
+								menuItem.insertBefore( childButton, childMenu );
+							}
 
 							_.changeButtonAttributes( menuItem );
 
@@ -385,7 +389,7 @@
 					menuItemLabel = '';
 
 				if ( null != menuItem ) {
-					button = menuItem.querySelector( 'button[aria-expanded]' );
+					button = menuItem.querySelector( '[aria-expanded]' );
 				}
 
 				// Don't bother if no button.

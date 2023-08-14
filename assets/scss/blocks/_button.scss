@@ -29,15 +29,15 @@
 	@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
 
 		&.has-large-font-size {
-			font-size: calc( var(--typography_font_size_L_em) * .9 );
+			font-size: calc( var(--typography_font_size_l_em) * .9 );
 		}
 
 		&.has-extra-large-font-size {
-			font-size: calc( var(--typography_font_size_XL_em) * .8 );
+			font-size: calc( var(--typography_font_size_xl_em) * .8 );
 		}
 
 		&.has-giant-font-size {
-			font-size: calc( var(--typography_font_size_XXL_em) * .7 );
+			font-size: calc( var(--typography_font_size_xxl_em) * .7 );
 		}
 
 	}
@@ -72,7 +72,7 @@
 	}
 
 .wp-block-buttons.is-style-large {
-	font-size: var(--typography_font_size_L_em);
+	font-size: var(--typography_font_size_l_em);
 }
 
 .is-style-secondary {

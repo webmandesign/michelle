@@ -11,9 +11,13 @@
 	}
 
 	&-content {
-		max-width: var(--layout_width_content);
 		margin-left: auto;
 		margin-right: auto;
+
+		// Higher specificity for WooCommerce.
+		.page-header & {
+			max-width: var(--layout_width_content);
+		}
 	}
 
 	&-text:not(.has-page-summary) {
@@ -65,7 +69,7 @@
 
 	.page-number {
 		display: block;
-		font-size: calc( var(--typography_font_size_L) * 1rem );
+		font-size: calc( var(--typography_font_size_l) * 1rem );
 		font-weight: 400;
 		text-transform: none;
 		white-space: nowrap;
@@ -100,11 +104,11 @@
 
 		span:not(.page-number) {
 			display: block;
-			font-size: var(--typography_font_size_L_em);
+			font-size: var(--typography_font_size_l_em);
 			text-transform: none;
 
 			@include media( map_get( $breakpoint, 'xxl' ) ) {
-				font-size: var(--typography_font_size_XL_em);
+				font-size: var(--typography_font_size_xl_em);
 			}
 
 			&::before {

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-10-27 12:28+0200\n"
-"PO-Revision-Date: 2022-10-27 12:29+0200\n"
+"POT-Creation-Date: 2023-08-14 06:55+0200\n"
+"PO-Revision-Date: 2023-08-14 06:55+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -40,23 +40,23 @@ msgid "Comments are closed."
 msgstr "Komentáre sú uzavreté."
 
 #. translators: %s: menu item label.
-#: includes/Accessibility/Component.php:90
+#: includes/Accessibility/Component.php:89
 #, php-format
 msgid "Collapse menu: %s"
 msgstr "Zbaliť menu: %s"
 
 #. translators: %s: menu item label.
-#: includes/Accessibility/Component.php:92
+#: includes/Accessibility/Component.php:91
 #, php-format
 msgid "Expand menu: %s"
 msgstr "Rozbaliť menu: %s"
 
-#: includes/Accessibility/Component.php:188
+#: includes/Accessibility/Component.php:158
 #: templates/parts/accessibility/menu-skip-links.php:25
 msgid "Skip to main content"
 msgstr "Preskočiť na hlavný obsah"
 
-#: includes/Accessibility/Component.php:239
+#: includes/Accessibility/Component.php:209
 msgid "Skip back to main navigation"
 msgstr "Preskočiť späť na hlavnú navigáciu"
 
@@ -550,7 +550,7 @@ msgstr "Posledná položka v hlavičke"
 #: includes/Customize/Options.php:493 includes/Customize/Options.php:550
 #: includes/Customize/Options.php:630 includes/Customize/Options.php:703
 #: includes/Customize/Options.php:882 includes/Customize/Options.php:910
-#: includes/Loop/Featured_Posts.php:259 includes/Tool/Page_Builder.php:126
+#: includes/Loop/Featured_Posts.php:261 includes/Tool/Page_Builder.php:126
 msgctxt "Customizer panel title."
 msgid "Theme Options"
 msgstr "Nastavenia témy"
@@ -950,20 +950,20 @@ msgctxt "Search form modal toggle button label."
 msgid "Toggle search form modal box"
 msgstr "Zobraziť/skryť modálne okno formulára vyhľadávania"
 
-#: includes/Loop/Featured_Posts.php:258
+#: includes/Loop/Featured_Posts.php:260
 msgctxt "Customizer section title."
 msgid "Blog"
 msgstr "Blog"
 
-#: includes/Loop/Featured_Posts.php:267
+#: includes/Loop/Featured_Posts.php:269
 msgid "Featured posts"
 msgstr "Odporúčané príspevky"
 
-#: includes/Loop/Featured_Posts.php:274
+#: includes/Loop/Featured_Posts.php:276
 msgid "Featured posts tag slug"
 msgstr "Slug značky odporúčaných príspevkov"
 
-#: includes/Loop/Featured_Posts.php:275
+#: includes/Loop/Featured_Posts.php:277
 msgid ""
 "3 latest posts assigned to this tag will be displayed as featured posts on "
 "blog page."
@@ -971,59 +971,78 @@ msgstr ""
 "3 najnovšie príspevky priradené k tejto značke sa zobrazia ako odporúčané "
 "príspevky na stránke blogu."
 
-#: includes/Loop/Featured_Posts.php:275
+#: includes/Loop/Featured_Posts.php:277
 msgid "Open tags manager in a new window now &rarr;"
 msgstr "Otvoriť správcu značiek v novom okne &rarr;"
 
-#: includes/Loop/Featured_Posts.php:280
+#: includes/Loop/Featured_Posts.php:282
 msgctxt "Form field placeholder. URL slug, no diacritic."
 msgid "featured"
 msgstr "odporucane"
 
-#: includes/Loop/Featured_Posts.php:287
+#: includes/Loop/Featured_Posts.php:289
 msgid "Remove from blog posts"
 msgstr "Odstrániť z blogových príspevkov"
 
-#: includes/Loop/Featured_Posts.php:288
+#: includes/Loop/Featured_Posts.php:290
 msgid ""
 "Makes sure the featured posts will be removed from posts list on blog page."
 msgstr ""
 "Zabezpečuje, aby sa odporúčané príspevky odstránili zo zoznamu príspevkov na "
 "stránke blogu."
 
-#: includes/Loop/Featured_Posts.php:295
+#: includes/Loop/Featured_Posts.php:297
 msgid "Fallback image"
 msgstr "Záložný obrázok"
 
-#: includes/Loop/Featured_Posts.php:296
+#: includes/Loop/Featured_Posts.php:298
 msgid "This image will be displayed when post has no featured image set."
 msgstr ""
 "Tento obrázok sa zobrazí, keď príspevok nemá nastavený žiadny prezentačný "
 "obrázok."
 
-#: includes/Loop/Pagination.php:107 includes/Loop/Pagination.php:164
+#: includes/Loop/Pagination.php:107 includes/Loop/Pagination.php:212
 msgctxt "Pagination text (visible): previous."
 msgid "&laquo;"
 msgstr "&laquo;"
 
-#: includes/Loop/Pagination.php:108 includes/Loop/Pagination.php:165
+#: includes/Loop/Pagination.php:108 includes/Loop/Pagination.php:213
 msgctxt "Pagination text (hidden): previous."
 msgid "Previous page"
 msgstr "Predchádzajúca stránka"
 
-#: includes/Loop/Pagination.php:110 includes/Loop/Pagination.php:167
+#: includes/Loop/Pagination.php:110 includes/Loop/Pagination.php:215
 msgctxt "Pagination text (hidden): next."
 msgid "Next page"
 msgstr "Nasledujúca stránka"
 
-#: includes/Loop/Pagination.php:111 includes/Loop/Pagination.php:168
+#: includes/Loop/Pagination.php:111 includes/Loop/Pagination.php:216
 msgctxt "Pagination text (visible): next."
 msgid "&raquo;"
 msgstr "&raquo;"
 
-#: includes/Loop/Pagination.php:126
-msgid "Posts navigation"
-msgstr "Navigácia príspevkov"
+#: includes/Loop/Pagination.php:141 includes/Loop/Pagination.php:240
+msgctxt "Pagination page number screen reader label."
+msgid "Page:"
+msgstr "Strana:"
+
+#. translators: 1: current page number, 2: total page count.
+#: includes/Loop/Pagination.php:160
+#, php-format
+msgid "Posts navigation, page %1$d of %2$d"
+msgstr "Navigácia príspevkov, strana %1$d z %2$d"
+
+#. translators: 1: current page number, 2: total page count.
+#: includes/Loop/Pagination.php:166 includes/Loop/Pagination.php:283
+#, php-format
+msgid "Page %1$d of %2$d"
+msgstr "Strana %1$d z %2$d"
+
+#. translators: 1: current page number, 2: total page count.
+#: includes/Loop/Pagination.php:267
+#, php-format
+msgid "Comments navigation, page %1$d of %2$d"
+msgstr "Navigácia komentárov, strana %1$d z %2$d"
 
 #: includes/Menu/Component.php:59
 msgctxt "Navigational menu location"
@@ -1034,52 +1053,52 @@ msgstr "Primárne"
 msgid "Skip to menu toggle button"
 msgstr "Preskočiť na tlačidlo zapnutia a vypnutia menu"
 
-#: includes/Setup/Editor.php:158
+#: includes/Setup/Editor.php:166
 msgctxt "Font size label."
 msgid "S (Small)"
 msgstr "S (malé)"
 
-#: includes/Setup/Editor.php:159
+#: includes/Setup/Editor.php:167
 msgctxt "Font size label abbreviation."
 msgid "S"
 msgstr "S"
 
-#: includes/Setup/Editor.php:165
+#: includes/Setup/Editor.php:173
 msgctxt "Font size."
 msgid "M (Medium, normal)"
 msgstr "M (stredné, normálne)"
 
-#: includes/Setup/Editor.php:166
+#: includes/Setup/Editor.php:174
 msgctxt "Font size label abbreviation."
 msgid "M"
 msgstr "M"
 
-#: includes/Setup/Editor.php:172
+#: includes/Setup/Editor.php:180
 msgctxt "Font size."
 msgid "L (Large)"
 msgstr "L (veľké)"
 
-#: includes/Setup/Editor.php:173
+#: includes/Setup/Editor.php:181
 msgctxt "Font size label abbreviation."
 msgid "L"
 msgstr "L"
 
-#: includes/Setup/Editor.php:179
+#: includes/Setup/Editor.php:187
 msgctxt "Font size."
 msgid "XL (Extra Large)"
 msgstr "XL (extra veľké)"
 
-#: includes/Setup/Editor.php:180
+#: includes/Setup/Editor.php:188
 msgctxt "Font size label abbreviation."
 msgid "XL"
 msgstr "XL"
 
-#: includes/Setup/Editor.php:186
+#: includes/Setup/Editor.php:194
 msgctxt "Font size."
 msgid "Huge"
 msgstr "Obrovské"
 
-#: includes/Setup/Editor.php:192
+#: includes/Setup/Editor.php:200
 msgctxt "Font size."
 msgid "Gigantic"
 msgstr "Gigantické"
@@ -1627,7 +1646,7 @@ msgid "Like the theme?"
 msgstr "Páči sa vám téma?"
 
 #: templates/parts/admin/welcome-promo.php:33
-#, php-format
+#, no-php-format
 msgid ""
 "You are using a fully functional 100% free WordPress theme without any paid "
 "upgrade."
@@ -2530,3 +2549,6 @@ msgid ""
 msgstr ""
 "(Upozorňujeme, že táto sada pluginov sa môže líšiť od pluginov odporúčaných "
 "na stránke Vzhľad &rarr; Inštalovať pluginy!)"
+
+#~ msgid "Posts navigation"
+#~ msgstr "Navigácia príspevkov"

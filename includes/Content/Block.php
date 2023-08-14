@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.4.1
+ * @version  1.5.0
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -211,7 +211,8 @@ class Block implements Component_Interface {
 	/**
 	 * Enqueues block editor assets for block modifications.
 	 *
-	 * @since  1.3.0
+	 * @since    1.3.0
+	 * @version  1.5.0
 	 *
 	 * @return  void
 	 */
@@ -222,7 +223,7 @@ class Block implements Component_Interface {
 			Assets\Factory::script_enqueue( array(
 				'handle' => 'michelle-editor-blocks',
 				'src'    => get_theme_file_uri( 'assets/js/editor-blocks.min.js' ),
-				'deps'   => array( 'wp-blocks', 'wp-hooks' ),
+				'deps'   => array( 'wp-blocks', 'wp-hooks', 'lodash' ),
 			) );
 
 	} // /enqueue_editor_mods

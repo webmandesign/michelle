@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.7
+ * @version  1.5.0
  */
 
 namespace WebManDesign\Michelle\Menu;
@@ -80,7 +80,7 @@ class Component implements Component_Interface {
 	 * Get menu arguments: Primary.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.7
+	 * @version  1.5.0
 	 *
 	 * @param  bool $mobile_nav  Is mobile navigation enabled?
 	 * @param  bool $fallback    Return arguments to set a `wp_page_menu()` fallback?
@@ -100,7 +100,7 @@ class Component implements Component_Interface {
 			// -> produces `<ul id="menu-primary" class="menu menu-primary toggle-sub-menus">...</ul>`
 
 			// Accessibility helper: last accessible focusable element.
-			$a11y_link = '<li class="menu-toggle-skip-link-container"><a href="#menu-toggle" class="menu-toggle-skip-link">' . esc_html__( 'Skip to menu toggle button', 'michelle' ) . '</a></li>';
+			$a11y_link = ( Mod::get( 'navigation_mobile' ) ) ? ( '<li class="menu-toggle-skip-link-container"><a href="#menu-toggle" class="menu-toggle-skip-link">' . esc_html__( 'Skip to menu toggle button', 'michelle' ) . '</a></li>' ) : ( '' );
 
 
 		// Processing

@@ -8,6 +8,10 @@
 	padding: ( $ratio + em ) 0;
 	margin: 0;
 
+	&[aria-label] > h2.screen-reader-text {
+		display: none;
+	}
+
 	.comment-list + & {
 		padding: 0 0 ( $ratio * 2em );
 	}
@@ -21,19 +25,12 @@
 		&:hover {
 			text-decoration: none;
 		}
-
 	}
 
-	@include media( map_get( $breakpoint, 'm' ) ) {
-
-		.nav-previous {
-			float: $left;
-		}
-
-		.nav-next {
-			float: $right;
-		}
-
+	.nav-links {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
 	}
-
 }

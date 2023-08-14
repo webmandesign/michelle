@@ -33,7 +33,7 @@
 
 	label {
 		display: block;
-		font-size: var(--typography_font_size_S_em);
+		font-size: var(--typography_font_size_s_em);
 	}
 
 	[type="checkbox"] + label,
@@ -69,5 +69,5 @@
 
 #cancel-comment-reply-link {
 	float: $right;
-	font-size: var(--typography_font_size_S_em);
+	font-size: var(--typography_font_size_s_em);
 }

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-10-27 12:28+0200\n"
+"POT-Creation-Date: 2023-08-14 06:55+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -40,23 +40,23 @@ msgid "Comments are closed."
 msgstr ""
 
 #. translators: %s: menu item label.
-#: includes/Accessibility/Component.php:90
+#: includes/Accessibility/Component.php:89
 #, php-format
 msgid "Collapse menu: %s"
 msgstr ""
 
 #. translators: %s: menu item label.
-#: includes/Accessibility/Component.php:92
+#: includes/Accessibility/Component.php:91
 #, php-format
 msgid "Expand menu: %s"
 msgstr ""
 
-#: includes/Accessibility/Component.php:188
+#: includes/Accessibility/Component.php:158
 #: templates/parts/accessibility/menu-skip-links.php:25
 msgid "Skip to main content"
 msgstr ""
 
-#: includes/Accessibility/Component.php:239
+#: includes/Accessibility/Component.php:209
 msgid "Skip back to main navigation"
 msgstr ""
 
@@ -558,7 +558,7 @@ msgstr ""
 #: includes/Customize/Options.php:493 includes/Customize/Options.php:550
 #: includes/Customize/Options.php:630 includes/Customize/Options.php:703
 #: includes/Customize/Options.php:882 includes/Customize/Options.php:910
-#: includes/Loop/Featured_Posts.php:259 includes/Tool/Page_Builder.php:126
+#: includes/Loop/Featured_Posts.php:261 includes/Tool/Page_Builder.php:126
 msgctxt "Customizer panel title."
 msgid "Theme Options"
 msgstr ""
@@ -941,73 +941,92 @@ msgctxt "Search form modal toggle button label."
 msgid "Toggle search form modal box"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:258
+#: includes/Loop/Featured_Posts.php:260
 msgctxt "Customizer section title."
 msgid "Blog"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:267
+#: includes/Loop/Featured_Posts.php:269
 msgid "Featured posts"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:274
+#: includes/Loop/Featured_Posts.php:276
 msgid "Featured posts tag slug"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:275
+#: includes/Loop/Featured_Posts.php:277
 msgid ""
 "3 latest posts assigned to this tag will be displayed as featured posts on "
 "blog page."
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:275
+#: includes/Loop/Featured_Posts.php:277
 msgid "Open tags manager in a new window now &rarr;"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:280
+#: includes/Loop/Featured_Posts.php:282
 msgctxt "Form field placeholder. URL slug, no diacritic."
 msgid "featured"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:287
+#: includes/Loop/Featured_Posts.php:289
 msgid "Remove from blog posts"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:288
+#: includes/Loop/Featured_Posts.php:290
 msgid ""
 "Makes sure the featured posts will be removed from posts list on blog page."
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:295
+#: includes/Loop/Featured_Posts.php:297
 msgid "Fallback image"
 msgstr ""
 
-#: includes/Loop/Featured_Posts.php:296
+#: includes/Loop/Featured_Posts.php:298
 msgid "This image will be displayed when post has no featured image set."
 msgstr ""
 
-#: includes/Loop/Pagination.php:107 includes/Loop/Pagination.php:164
+#: includes/Loop/Pagination.php:107 includes/Loop/Pagination.php:212
 msgctxt "Pagination text (visible): previous."
 msgid "&laquo;"
 msgstr ""
 
-#: includes/Loop/Pagination.php:108 includes/Loop/Pagination.php:165
+#: includes/Loop/Pagination.php:108 includes/Loop/Pagination.php:213
 msgctxt "Pagination text (hidden): previous."
 msgid "Previous page"
 msgstr ""
 
-#: includes/Loop/Pagination.php:110 includes/Loop/Pagination.php:167
+#: includes/Loop/Pagination.php:110 includes/Loop/Pagination.php:215
 msgctxt "Pagination text (hidden): next."
 msgid "Next page"
 msgstr ""
 
-#: includes/Loop/Pagination.php:111 includes/Loop/Pagination.php:168
+#: includes/Loop/Pagination.php:111 includes/Loop/Pagination.php:216
 msgctxt "Pagination text (visible): next."
 msgid "&raquo;"
 msgstr ""
 
-#: includes/Loop/Pagination.php:126
-msgid "Posts navigation"
+#: includes/Loop/Pagination.php:141 includes/Loop/Pagination.php:240
+msgctxt "Pagination page number screen reader label."
+msgid "Page:"
+msgstr ""
+
+#. translators: 1: current page number, 2: total page count.
+#: includes/Loop/Pagination.php:160
+#, php-format
+msgid "Posts navigation, page %1$d of %2$d"
+msgstr ""
+
+#. translators: 1: current page number, 2: total page count.
+#: includes/Loop/Pagination.php:166 includes/Loop/Pagination.php:283
+#, php-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#. translators: 1: current page number, 2: total page count.
+#: includes/Loop/Pagination.php:267
+#, php-format
+msgid "Comments navigation, page %1$d of %2$d"
 msgstr ""
 
 #: includes/Menu/Component.php:59
@@ -1019,52 +1038,52 @@ msgstr ""
 msgid "Skip to menu toggle button"
 msgstr ""
 
-#: includes/Setup/Editor.php:158
+#: includes/Setup/Editor.php:166
 msgctxt "Font size label."
 msgid "S (Small)"
 msgstr ""
 
-#: includes/Setup/Editor.php:159
+#: includes/Setup/Editor.php:167
 msgctxt "Font size label abbreviation."
 msgid "S"
 msgstr ""
 
-#: includes/Setup/Editor.php:165
+#: includes/Setup/Editor.php:173
 msgctxt "Font size."
 msgid "M (Medium, normal)"
 msgstr ""
 
-#: includes/Setup/Editor.php:166
+#: includes/Setup/Editor.php:174
 msgctxt "Font size label abbreviation."
 msgid "M"
 msgstr ""
 
-#: includes/Setup/Editor.php:172
+#: includes/Setup/Editor.php:180
 msgctxt "Font size."
 msgid "L (Large)"
 msgstr ""
 
-#: includes/Setup/Editor.php:173
+#: includes/Setup/Editor.php:181
 msgctxt "Font size label abbreviation."
 msgid "L"
 msgstr ""
 
-#: includes/Setup/Editor.php:179
+#: includes/Setup/Editor.php:187
 msgctxt "Font size."
 msgid "XL (Extra Large)"
 msgstr ""
 
-#: includes/Setup/Editor.php:180
+#: includes/Setup/Editor.php:188
 msgctxt "Font size label abbreviation."
 msgid "XL"
 msgstr ""
 
-#: includes/Setup/Editor.php:186
+#: includes/Setup/Editor.php:194
 msgctxt "Font size."
 msgid "Huge"
 msgstr ""
 
-#: includes/Setup/Editor.php:192
+#: includes/Setup/Editor.php:200
 msgctxt "Font size."
 msgid "Gigantic"
 msgstr ""
@@ -1580,7 +1599,7 @@ msgid "Like the theme?"
 msgstr ""
 
 #: templates/parts/admin/welcome-promo.php:33
-#, php-format
+#, no-php-format
 msgid ""
 "You are using a fully functional 100% free WordPress theme without any "
 "paid upgrade."

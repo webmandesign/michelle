@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.11
+ * @version  1.5.0
  */
 
 namespace WebManDesign\Michelle\Setup;
@@ -41,7 +41,8 @@ class Editor implements Component_Interface {
 	/**
 	 * After setup theme.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.5.0
 	 *
 	 * @return  void
 	 */
@@ -70,6 +71,13 @@ class Editor implements Component_Interface {
 			 * which on the other hand causes so much more issues...
 			 */
 			add_theme_support( 'experimental-link-color' );
+
+			/**
+			 * WP6.3
+			 * @link  https://make.wordpress.org/core/2023/07/18/miscellaneous-developer-changes-in-wordpress-6-3/
+			 */
+			add_theme_support( 'link-color' );
+			add_theme_support( 'border' );
 
 	} // /after_setup_theme
 

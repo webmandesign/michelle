@@ -31,3 +31,28 @@ $max_width_entry_content: calc( var(--layout_width_entry_content) + var(--editor
 	}
 
 }
+
+// Image URL replace fix.
+.block-editor-media-flow__url-input .block-editor-link-control {
+
+	.block-editor-link-control__search-item-title[href^="data:"] {
+		max-width: 140px;
+
+		+ .block-editor-link-control__search-item-info {
+			display: none;
+			// This below is just in case...
+			white-space: normal;
+			max-height: 2em;
+			overflow: hidden;
+		}
+	}
+}
+
+// Spacing options.
+.tools-panel-item-spacing {
+	position: relative;
+	padding: 1em;
+	background: rgba( #000, .025 );
+	border: 1px solid rgba( #000, .1 );
+	border-radius: .25em;
+}

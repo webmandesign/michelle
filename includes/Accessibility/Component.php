@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.5.0
  */
 
 namespace WebManDesign\Michelle\Accessibility;
@@ -26,7 +26,7 @@ class Component implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.5.0
 	 *
 	 * @return  void
 	 */
@@ -37,7 +37,6 @@ class Component implements Component_Interface {
 			// Actions
 
 				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue', MICHELLE_ENQUEUE_PRIORITY );
-				add_action( 'wp_enqueue_scripts', __CLASS__ . '::enqueue_inline_skip_link_focus_fix', MICHELLE_ENQUEUE_PRIORITY );
 
 				add_action( 'tha_body_top', __CLASS__ . '::anchor_top_of_page', -10 );
 
@@ -98,35 +97,6 @@ class Component implements Component_Interface {
 			}
 
 	} // /enqueue
-
-	/**
-	 * Fixing skip link focus in IE11.
-	 *
-	 * Since this will never need to be changed, it is minified.
-	 * @link https://git.io/vWdr2
-	 *
-	 * @since    1.0.0
-	 * @version  1.2.0
-	 *
-	 * @return  void
-	 */
-	public static function enqueue_inline_skip_link_focus_fix() {
-
-		// Requirements check
-
-			if ( empty( $GLOBALS['is_IE'] ) ) {
-				return;
-			}
-
-
-		// Processing
-
-			wp_add_inline_script(
-				'michelle-scripts-footer',
-				'/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);'
-			);
-
-	} // /enqueue_inline_skip_link_focus_fix
 
 	/**
 	 * Anchor for top of the page.

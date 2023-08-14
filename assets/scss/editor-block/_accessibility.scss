@@ -1,47 +1,50 @@
-/* FILE: editor-block/_accessibility.scss */
+/* FILE: editor/_accessibility.scss */
 
-#{ $selector_editor_wrapper } .wp-block.screen-reader-text,
-#{ $selector_editor_wrapper } .wp-block > .screen-reader-text,
-#{ $selector_editor_wrapper } .wp-block.is-style-screen-reader-text,
-#{ $selector_editor_wrapper } .wp-block > .is-style-screen-reader-text {
+.wp-block.screen-reader-text,
+.wp-block > .screen-reader-text,
+.wp-block.is-style-screen-reader-text,
+.wp-block > .is-style-screen-reader-text {
 	position: relative !important;
 	clip: auto !important;
 	clip-path: none !important;
 	width: auto !important;
-	height: auto !important;
+	height: 2em !important;
 	padding: 0 !important;
-	margin-top: 0 !important;
-	font-size: 1em !important;
-	font-weight: 700 !important;
-	text-transform: none !important;
-	letter-spacing: 0 !important;
+	margin-block: 0 !important;
+	font-size: 1rem;
+	line-height: 1;
 	background: none !important;
+	color: inherit !important;
 
 	&:not(:hover):not(:focus):not(:focus-within) {
 		opacity: .5;
 	}
 
 	&::before {
-		content: ")";
+		content: "🎧";
 		display: inline-block;
-		margin: $ratio_maj + em;
-		font-size: 16px;
-		font-weight: 700;
+		margin-inline-end: .5em;
 		speak: none;
-		transform: rotate( 90deg );
 	}
-
 }
 
-#{ $selector_editor_wrapper } .wp-block:hover > .screen-reader-text,
-#{ $selector_editor_wrapper } .is-selected > .screen-reader-text,
-#{ $selector_editor_wrapper } .screen-reader-text:hover,
-#{ $selector_editor_wrapper } .screen-reader-text:focus,
-#{ $selector_editor_wrapper } .screen-reader-text:focus-within,
-#{ $selector_editor_wrapper } .wp-block:hover > .is-style-screen-reader-text,
-#{ $selector_editor_wrapper } .is-selected > .is-style-screen-reader-text,
-#{ $selector_editor_wrapper } .is-style-screen-reader-text:hover,
-#{ $selector_editor_wrapper } .is-style-screen-reader-text:focus,
-#{ $selector_editor_wrapper } .is-style-screen-reader-text:focus-within {
+.wp-block:hover > .screen-reader-text,
+.is-selected > .screen-reader-text,
+.wp-block:hover > .is-style-screen-reader-text,
+.is-selected > .is-style-screen-reader-text {
+	@extend %a11y_hover_focus;
+}
+
+.screen-reader-text,
+.is-style-screen-reader-text {
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		@extend %a11y_hover_focus;
+	}
+}
+
+%a11y_hover_focus {
 	opacity: 1 !important;
 }

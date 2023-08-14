@@ -1,5 +1,50 @@
 # Michelle Changelog
 
+## 1.5.0, 20230814
+
+### Updated
+- Improved editor UI
+- Enabled link color and border controls for editor
+- Preventing issues with CSS minification tools
+- Improving screen reader text styles in editor
+- Improving pagination accessibility
+- Updating and fixing minor CSS style issues
+- Updating 3rd party scripts
+- Localization
+
+### Fixed
+- Compatibility with WordPress 6.3
+- Plugin recommendation script (TGMPA) PHP8 error
+- Heading spacing styles
+- Removing skip link to mobile menu toggle when mobile menu is disabled
+- Compatibility with "Integration for WooCommerce" plugin
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/_custom-properties.scss
+	assets/scss/blocks.scss
+	assets/scss/comments.scss
+	assets/scss/content.scss
+	assets/scss/customize-controls.scss
+	assets/scss/customize-preview.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/editor-style-classic.scss
+	assets/scss/global.scss
+	assets/scss/welcome.scss
+	assets/scss/_tools/_function-pow.scss
+	assets/scss/_tools/_function-round.scss
+	includes/Accessibility/Component.php
+	includes/Content/Block.php
+	includes/Loop/Pagination.php
+	includes/Menu/Component.php
+	includes/Setup/Editor.php
+	languages/*.*
+	vendor/a11y-menu/a11y-menu.dist.min.js
+	vendor/a11y-menu/a11y-menu.js
+
+
 ## 1.4.1, 20221109
 
 ### Fixed

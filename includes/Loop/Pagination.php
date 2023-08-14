@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.5.0
  */
 
 namespace WebManDesign\Michelle\Loop;
@@ -69,7 +69,7 @@ class Pagination implements Component_Interface {
 	 * Pagination.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.5.0
 	 *
 	 * @return  void
 	 */
@@ -122,10 +122,57 @@ class Pagination implements Component_Interface {
 				$total   = ( isset( $GLOBALS['wp_query']->max_num_pages ) ) ? ( $GLOBALS['wp_query']->max_num_pages ) : ( 1 );
 				$current = absint( max( get_query_var( 'paged' ), 1 ) );
 
-				$pagination =
-					'<nav class="pagination" aria-label="' . esc_attr__( 'Posts navigation', 'michelle' ) . '" data-current="' . esc_attr( $current ) . '" data-total="' . esc_attr( $total ) . '">'
-					. $pagination
-					. '</nav>';
+				if (
+					$total > 0
+					&& $current > 0
+				) {
+
+					// Improving accessibility of page numbers.
+					preg_match_all(
+						'/>\d+</',
+						$pagination,
+						$matches,
+						PREG_SET_ORDER
+					);
+					foreach ( $matches as $match ) {
+						$pagination = str_replace(
+							$match[0],
+							// The HTML here is correct:
+							'><span class="screen-reader-text">' . esc_html_x( 'Page:', 'Pagination page number screen reader label.', 'michelle' ) . ' </span' . $match[0],
+							$pagination
+						);
+					}
+
+					// Make current page focusable for screen readers.
+					$pagination = str_replace(
+						' aria-current=',
+						' tabindex="0" aria-current=',
+						$pagination
+					);
+
+					// Container improvements.
+					$pagination =
+						'<nav'
+						. ' class="pagination"'
+						. ' aria-label="'
+							. esc_attr( sprintf(
+								/* translators: 1: current page number, 2: total page count. */
+								__( 'Posts navigation, page %1$d of %2$d', 'michelle' ),
+								$current,
+								$total
+							) ) . '"'
+						. ' data-page="' . esc_attr( sprintf(
+								/* translators: 1: current page number, 2: total page count. */
+								__( 'Page %1$d of %2$d', 'michelle' ),
+								$current,
+								$total
+							) ) . '"'
+						. ' data-current="' . esc_attr( $current ) . '"'
+						. ' data-total="' . esc_attr( $total ) . '"'
+						. '>'
+						. $pagination
+						. '</nav>';
+				}
 			}
 
 
@@ -140,7 +187,8 @@ class Pagination implements Component_Interface {
 	 *
 	 * From simple next/previous links to full pagination.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.5.0
 	 *
 	 * @param  string $template  The default template.
 	 * @param  string $class     The class passed by the calling function.
@@ -178,6 +226,29 @@ class Pagination implements Component_Interface {
 
 		// Processing
 
+			// Improving accessibility of page numbers.
+			preg_match_all(
+				'/>\d+</',
+				$pagination,
+				$matches,
+				PREG_SET_ORDER
+			);
+			foreach ( $matches as $match ) {
+				$pagination = str_replace(
+					$match[0],
+					// The HTML here is correct:
+					'><span class="screen-reader-text">' . esc_html_x( 'Page:', 'Pagination page number screen reader label.', 'michelle' ) . ' </span' . $match[0],
+					$pagination
+				);
+			}
+
+			// Make current page focusable for screen readers.
+			$pagination = str_replace(
+				' aria-current=',
+				' tabindex="0" aria-current=',
+				$pagination
+			);
+
 			// Modifying navigation wrapper classes.
 			$template = str_replace(
 				'<nav class="navigation',
@@ -186,16 +257,36 @@ class Pagination implements Component_Interface {
 			);
 
 			// Adding responsive view HTML helper attributes.
+			$template = str_replace( ' aria-label=', ' data-aria-label=', $template );
 			$template = str_replace(
 				'<nav',
-				'<nav data-current="' . esc_attr( $current ) . '" data-total="' . esc_attr( $total ) . '"',
+				'<nav'
+				. ' aria-label="'
+					. esc_attr( sprintf(
+						/* translators: 1: current page number, 2: total page count. */
+						__( 'Comments navigation, page %1$d of %2$d', 'michelle' ),
+						$current,
+						$total
+					) ) . '"'
+				. ' data-current="' . esc_attr( $current ) . '"'
+				. ' data-total="' . esc_attr( $total ) . '"',
 				$template
 			);
 
 			// Displaying pagination HTML in the template.
 			$template = str_replace(
 				'<div class="nav-links">%3$s</div>',
-				'<div class="nav-links">' . $pagination . '</div>',
+				'<div'
+				. ' class="nav-links"'
+				. ' data-page="' . esc_attr( sprintf(
+						/* translators: 1: current page number, 2: total page count. */
+						__( 'Page %1$d of %2$d', 'michelle' ),
+						$current,
+						$total
+					) ) . '"'
+				. '>'
+				. $pagination
+				. '</div>',
 				$template
 			);
 
