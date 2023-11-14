@@ -1,5 +1,23 @@
 # Michelle Changelog
 
+## 1.5.1, 20231114
+
+### Updated
+- Block editor post title styles
+- Removing `experimental-` prefix from block editor theme setup
+
+### Fixed
+- Excerpt block double "read more" text
+
+### File updates
+	changelog.md
+	readme.txt 
+	style.css
+	assets/scss/editor-style-blocks.scss
+	includes/Entry/Summary.php
+	includes/Setup/Editor.php
+
+
 ## 1.5.0, 20230814
 
 ### Updated

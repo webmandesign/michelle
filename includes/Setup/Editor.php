@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.5.0
+ * @version  1.5.1
  */
 
 namespace WebManDesign\Michelle\Setup;
@@ -42,7 +42,7 @@ class Editor implements Component_Interface {
 	 * After setup theme.
 	 *
 	 * @since    1.0.0
-	 * @version  1.5.0
+	 * @version  1.5.1
 	 *
 	 * @return  void
 	 */
@@ -70,7 +70,7 @@ class Editor implements Component_Interface {
 			 * Does not work in WP 5.9 without `theme.json`,
 			 * which on the other hand causes so much more issues...
 			 */
-			add_theme_support( 'experimental-link-color' );
+			add_theme_support( 'link-color' );
 
 			/**
 			 * WP6.3

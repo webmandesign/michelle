@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.5.1
  */
 
 namespace WebManDesign\Michelle\Entry;
@@ -22,7 +22,8 @@ class Summary implements Component_Interface {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.5.1
 	 *
 	 * @return  void
 	 */
@@ -40,6 +41,8 @@ class Summary implements Component_Interface {
 				add_filter( 'excerpt_length', __CLASS__ . '::excerpt_length' );
 
 				add_filter( 'excerpt_more', __CLASS__ . '::excerpt_more' );
+
+				add_filter( 'pre_render_block', __CLASS__ . '::pre_render_block', 10, 2 );
 
 	} // /init
 
@@ -273,5 +276,30 @@ class Summary implements Component_Interface {
 			return (string) apply_filters( 'michelle/entry/summary/get_continue_reading_html', $html, $post, $context );
 
 	} // /get_continue_reading_html
+
+	/**
+	 * Block output modification: No need for theme "Continue reading" in Excerpt block.
+	 *
+	 * @since  1.5.1
+	 *
+	 * @param  string|null $pre_render  The rendered content. Default null.
+	 * @param  array       $block       The block being rendered.
+	 *
+	 * @return  string|null
+	 */
+	public static function pre_render_block( $pre_render, array $block ) {
+
+		// Processing
+
+			if ( 'core/post-excerpt' === $block['blockName'] ) {
+				remove_filter( 'get_the_excerpt', __CLASS__ . '::continue_reading', 30 );
+			}
+
+
+		// Output
+
+			return $pre_render;
+
+	} // /pre_render_block
 
 }
