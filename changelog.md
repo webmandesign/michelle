@@ -1,5 +1,38 @@
 # Michelle Changelog
 
+## 1.5.2, 20240823
+
+### Added
+- Enabling appearance tools for block editor (such as margin setup options)
+
+### Updated
+- Improving theme options
+- Editor UI styles
+- Spacing styles
+- Localization
+
+### Fixed
+- Spacing of lists within Groups with background
+- Missing asset dependency error
+- Style issues
+- Block editor styles
+
+### File updates
+	changelog.md
+	readme.txt 
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	includes/Assets/Editor.php
+	includes/Assets/Styles.php
+	includes/Customize/Options.php
+	includes/Customize/Styles.php
+	includes/Customize/Control/Text.php
+	includes/Setup/Editor.php
+	languages/*.*
+
+
 ## 1.5.1, 20231114
 
 ### Updated

@@ -32,7 +32,7 @@
 	}
 
 	&.is-reusable {
-		max-width: calc( 100% - 120px ) !important;
+		max-width: 100% !important;
 	}
 
 	&[data-align="left"] {

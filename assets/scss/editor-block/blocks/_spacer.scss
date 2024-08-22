@@ -51,3 +51,7 @@
 	.block-editor-block-preview__content .wp-block-spacer:not(.is-selected):not(:hover):not(:focus) {
 		opacity: 0;
 	}
+
+.wp-block:not(.alignwide)[data-align="wide"] + .wp-block-spacer {
+	margin-top: 0;
+}

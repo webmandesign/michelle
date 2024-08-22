@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.2
+ * @version  1.5.2
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -344,7 +344,7 @@ class Styles implements Component_Interface {
 	 * WP 5.9 fix for global styles CSS code overrides.
 	 *
 	 * @since    1.3.0
-	 * @version  1.3.2
+	 * @version  1.5.2
 	 *
 	 * @return  void
 	 */
@@ -376,9 +376,12 @@ class Styles implements Component_Interface {
 					return;
 				}
 
-				wp_register_style( 'wp-global-styles', false );
-				wp_add_inline_style( 'wp-global-styles', $stylesheet );
-				wp_enqueue_style( 'wp-global-styles' );
+				wp_register_style( 'global-styles', false );
+				wp_add_inline_style( 'global-styles', $stylesheet );
+				wp_enqueue_style( 'global-styles' );
+
+				// Add each block as an inline css.
+				wp_add_global_styles_for_blocks();
 			}, 0 );
 
 			// Treat also editor styles.

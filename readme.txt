@@ -2,7 +2,7 @@
 
 Contributors: webmandesign, jamesosborne
 Requires at least: 5.5
-Tested up to: 6.4
+Tested up to: 6.6
 Requires PHP: 7.0
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html

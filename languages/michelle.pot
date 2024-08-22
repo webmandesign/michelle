@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2023-08-14 06:55+0200\n"
+"POT-Creation-Date: 2024-08-22 20:39+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -557,7 +557,7 @@ msgstr ""
 #: includes/Customize/Options.php:333 includes/Customize/Options.php:403
 #: includes/Customize/Options.php:493 includes/Customize/Options.php:550
 #: includes/Customize/Options.php:630 includes/Customize/Options.php:703
-#: includes/Customize/Options.php:882 includes/Customize/Options.php:910
+#: includes/Customize/Options.php:914 includes/Customize/Options.php:942
 #: includes/Loop/Featured_Posts.php:261 includes/Tool/Page_Builder.php:126
 msgctxt "Customizer panel title."
 msgid "Theme Options"
@@ -691,8 +691,8 @@ msgid "Content width"
 msgstr ""
 
 #: includes/Customize/Options.php:646 includes/Customize/Options.php:672
-#: includes/Customize/Options.php:798 includes/Customize/Options.php:811
-#: includes/Customize/Options.php:824 includes/Customize/Options.php:837
+#: includes/Customize/Options.php:798 includes/Customize/Options.php:819
+#: includes/Customize/Options.php:840 includes/Customize/Options.php:861
 msgid "Default value:"
 msgstr ""
 
@@ -759,151 +759,156 @@ msgstr ""
 msgid "Global font"
 msgstr ""
 
-#: includes/Customize/Options.php:810
+#: includes/Customize/Options.php:804 includes/Customize/Options.php:825
+#: includes/Customize/Options.php:846 includes/Customize/Options.php:867
+msgid "Default value"
+msgstr ""
+
+#: includes/Customize/Options.php:818
 msgid "Headings font"
 msgstr ""
 
-#: includes/Customize/Options.php:823
+#: includes/Customize/Options.php:839
 msgid "Site title font"
 msgstr ""
 
-#: includes/Customize/Options.php:836
+#: includes/Customize/Options.php:860
 msgid "Alternative font"
 msgstr ""
 
-#: includes/Customize/Options.php:837
+#: includes/Customize/Options.php:861
 msgid "Used for quotes, for example."
 msgstr ""
 
-#: includes/Customize/Options.php:850
+#: includes/Customize/Options.php:882
 msgid "Enable theme Google Fonts loading"
 msgstr ""
 
-#: includes/Customize/Options.php:851
+#: includes/Customize/Options.php:883
 msgid "In case you are loading fonts via plugin, disable this option."
 msgstr ""
 
-#: includes/Customize/Options.php:857
+#: includes/Customize/Options.php:889
 msgid "Languages"
 msgstr ""
 
-#: includes/Customize/Options.php:859
+#: includes/Customize/Options.php:891
 msgid "Not all Google Fonts support all languages."
 msgstr ""
 
-#: includes/Customize/Options.php:861
+#: includes/Customize/Options.php:893
 msgid "Please check on Google Fonts website to make sure."
 msgstr ""
 
-#: includes/Customize/Options.php:864
+#: includes/Customize/Options.php:896
 msgid "Latin"
 msgstr ""
 
-#: includes/Customize/Options.php:865
+#: includes/Customize/Options.php:897
 msgid "Latin Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:866
+#: includes/Customize/Options.php:898
 msgid "Cyrillic"
 msgstr ""
 
-#: includes/Customize/Options.php:867
+#: includes/Customize/Options.php:899
 msgid "Cyrillic Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:868
+#: includes/Customize/Options.php:900
 msgid "Greek"
 msgstr ""
 
-#: includes/Customize/Options.php:869
+#: includes/Customize/Options.php:901
 msgid "Greek Extended"
 msgstr ""
 
-#: includes/Customize/Options.php:870
+#: includes/Customize/Options.php:902
 msgid "Vietnamese"
 msgstr ""
 
-#: includes/Customize/Options.php:881
+#: includes/Customize/Options.php:913
 msgctxt "Customizer section title."
 msgid "Posts"
 msgstr ""
 
-#: includes/Customize/Options.php:888
+#: includes/Customize/Options.php:920
 msgid "Post thumbnail aspect ratio"
 msgstr ""
 
-#: includes/Customize/Options.php:889
+#: includes/Customize/Options.php:921
 msgid ""
 "Note that if you already have images uploaded to your website, you need to "
 "regenerate their sizes to apply this change."
 msgstr ""
 
-#: includes/Customize/Options.php:889
+#: includes/Customize/Options.php:921
 msgid "You can use a plugin for that &rarr;"
 msgstr ""
 
-#: includes/Customize/Options.php:889
+#: includes/Customize/Options.php:921
 msgid "(This option can not be previewed here, only on your live website.)"
 msgstr ""
 
-#: includes/Customize/Options.php:892
+#: includes/Customize/Options.php:924
 msgid "Keep original image aspect ratio"
 msgstr ""
 
-#: includes/Customize/Options.php:909
+#: includes/Customize/Options.php:941
 msgctxt "Customizer section title."
 msgid "Others"
 msgstr ""
 
-#: includes/Customize/Options.php:916
+#: includes/Customize/Options.php:948
 msgid "Show \"Welcome\" page"
 msgstr ""
 
-#: includes/Customize/Options.php:917
+#: includes/Customize/Options.php:949
 msgid "Under \"Appearance\" WordPress dashboard menu."
 msgstr ""
 
-#: includes/Customize/Options.php:925
+#: includes/Customize/Options.php:957
 msgid "Enable mobile navigation"
 msgstr ""
 
-#: includes/Customize/Options.php:926
+#: includes/Customize/Options.php:958
 msgid ""
 "If your website navigation is very simple and you do not want to use the "
 "mobile navigation functionality, you can disable it here."
 msgstr ""
 
-#: includes/Customize/Options.php:933
+#: includes/Customize/Options.php:965
 msgid "Enable sticky header on small screens"
 msgstr ""
 
-#: includes/Customize/Options.php:934
+#: includes/Customize/Options.php:966
 msgid ""
 "When visitor scrolls up on small screens site header appears immediately."
 msgstr ""
 
-#: includes/Customize/Options.php:940
+#: includes/Customize/Options.php:972
 msgid "Content"
 msgstr ""
 
-#: includes/Customize/Options.php:942
+#: includes/Customize/Options.php:974
 msgid ""
 "Create and edit your content with block editor in Reusable Blocks manager."
 msgstr ""
 
-#: includes/Customize/Options.php:944
+#: includes/Customize/Options.php:976
 msgid "Open Reusable Blocks manager in a new window now &rarr;"
 msgstr ""
 
-#: includes/Customize/Options.php:946
+#: includes/Customize/Options.php:978
 msgid "Then assign created reusable blocks for display below."
 msgstr ""
 
-#: includes/Customize/Options.php:952
+#: includes/Customize/Options.php:984
 msgid "Footer content"
 msgstr ""
 
-#: includes/Customize/Options.php:961
+#: includes/Customize/Options.php:993
 msgid "Error 404 content"
 msgstr ""
 
@@ -928,11 +933,11 @@ msgstr ""
 msgid "Published in"
 msgstr ""
 
-#: includes/Entry/Summary.php:71
+#: includes/Entry/Summary.php:74
 msgid "This content is password protected."
 msgstr ""
 
-#: includes/Entry/Summary.php:73
+#: includes/Entry/Summary.php:76
 msgid "Enter the password to view it."
 msgstr ""
 
@@ -1038,52 +1043,52 @@ msgstr ""
 msgid "Skip to menu toggle button"
 msgstr ""
 
-#: includes/Setup/Editor.php:166
+#: includes/Setup/Editor.php:160
 msgctxt "Font size label."
 msgid "S (Small)"
 msgstr ""
 
-#: includes/Setup/Editor.php:167
+#: includes/Setup/Editor.php:161
 msgctxt "Font size label abbreviation."
 msgid "S"
 msgstr ""
 
-#: includes/Setup/Editor.php:173
+#: includes/Setup/Editor.php:167
 msgctxt "Font size."
 msgid "M (Medium, normal)"
 msgstr ""
 
-#: includes/Setup/Editor.php:174
+#: includes/Setup/Editor.php:168
 msgctxt "Font size label abbreviation."
 msgid "M"
 msgstr ""
 
-#: includes/Setup/Editor.php:180
+#: includes/Setup/Editor.php:174
 msgctxt "Font size."
 msgid "L (Large)"
 msgstr ""
 
-#: includes/Setup/Editor.php:181
+#: includes/Setup/Editor.php:175
 msgctxt "Font size label abbreviation."
 msgid "L"
 msgstr ""
 
-#: includes/Setup/Editor.php:187
+#: includes/Setup/Editor.php:181
 msgctxt "Font size."
 msgid "XL (Extra Large)"
 msgstr ""
 
-#: includes/Setup/Editor.php:188
+#: includes/Setup/Editor.php:182
 msgctxt "Font size label abbreviation."
 msgid "XL"
 msgstr ""
 
-#: includes/Setup/Editor.php:194
+#: includes/Setup/Editor.php:188
 msgctxt "Font size."
 msgid "Huge"
 msgstr ""
 
-#: includes/Setup/Editor.php:200
+#: includes/Setup/Editor.php:194
 msgctxt "Font size."
 msgid "Gigantic"
 msgstr ""

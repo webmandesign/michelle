@@ -31,3 +31,8 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.is-layout-constrained {
+	@extend %block_inner_container;
+	@extend %clearfix;
+}

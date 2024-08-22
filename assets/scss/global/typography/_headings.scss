@@ -8,7 +8,14 @@ h1, h2, h3, h4, h5, h6,
 	font-family: var(--typography_font_headings);
 	font-weight: 700;
 	word-wrap: break-word;
-	color: var(--color_body_headings);
+
+	@if variable-exists( 'selector_editor_wrapper' ) {
+		@at-root html :where( & ) {
+			color: var(--color_body_headings);
+		}
+	} @else {
+		color: var(--color_body_headings);
+	}
 
 	&:last-child {
 		margin-bottom: 0;

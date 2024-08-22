@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.0
+ * @version  1.5.2
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -121,7 +121,7 @@ class Options implements Component_Interface {
 	 * Sets theme options array.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.0
+	 * @version  1.5.2
 	 *
 	 * @param  array $options
 	 *
@@ -133,12 +133,12 @@ class Options implements Component_Interface {
 
 			// Predefined font families.
 			$font_families = array_filter( array_merge(
-				Google_Fonts::get_suggested_fonts(),
 				array(
 					'system',
 					'sans-serif',
 					'serif',
-				)
+				),
+				Google_Fonts::get_suggested_fonts()
 			) );
 
 			// Image sizes.
@@ -797,7 +797,15 @@ class Options implements Component_Interface {
 							'label'             => esc_html__( 'Global font', 'michelle' ),
 							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>Inter, sans-serif</code>',
 							'default'           => 'Inter, sans-serif',
-							'datalist'          => $font_families,
+							'datalist'          => array_merge(
+								array(
+									array(
+										'value' => 'Inter, sans-serif',
+										'label' => __( 'Default value', 'michelle' ),
+									),
+								),
+								$font_families
+							),
 							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
 							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
 							'input_attrs'       => array(
@@ -810,7 +818,15 @@ class Options implements Component_Interface {
 							'label'             => esc_html__( 'Headings font', 'michelle' ),
 							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>Inter, sans-serif</code>',
 							'default'           => 'Inter, sans-serif',
-							'datalist'          => $font_families,
+							'datalist'          => array_merge(
+								array(
+									array(
+										'value' => 'Inter, sans-serif',
+										'label' => __( 'Default value', 'michelle' ),
+									),
+								),
+								$font_families
+							),
 							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
 							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
 							'input_attrs'       => array(
@@ -823,7 +839,15 @@ class Options implements Component_Interface {
 							'label'             => esc_html__( 'Site title font', 'michelle' ),
 							'description'       => esc_html__( 'Default value:', 'michelle' ) . ' <code>Inter, sans-serif</code>',
 							'default'           => 'Inter, sans-serif',
-							'datalist'          => $font_families,
+							'datalist'          => array_merge(
+								array(
+									array(
+										'value' => 'Inter, sans-serif',
+										'label' => __( 'Default value', 'michelle' ),
+									),
+								),
+								$font_families
+							),
 							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
 							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
 							'input_attrs'       => array(
@@ -836,7 +860,15 @@ class Options implements Component_Interface {
 							'label'             => esc_html__( 'Alternative font', 'michelle' ),
 							'description'       => esc_html__( 'Used for quotes, for example.', 'michelle' ) . ' ' . esc_html__( 'Default value:', 'michelle' ) . ' <code>Inter, sans-serif</code>',
 							'default'           => 'Inter, sans-serif',
-							'datalist'          => $font_families,
+							'datalist'          => array_merge(
+								array(
+									array(
+										'value' => 'Inter, sans-serif',
+										'label' => __( 'Default value', 'michelle' ),
+									),
+								),
+								$font_families
+							),
 							'sanitize_callback' => __NAMESPACE__ . '\Sanitize::fonts',
 							'css_var'           => __NAMESPACE__ . '\Sanitize::css_fonts',
 							'input_attrs'       => array(

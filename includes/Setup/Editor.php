@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.5.1
+ * @version  1.5.2
  */
 
 namespace WebManDesign\Michelle\Setup;
@@ -42,7 +42,7 @@ class Editor implements Component_Interface {
 	 * After setup theme.
 	 *
 	 * @since    1.0.0
-	 * @version  1.5.1
+	 * @version  1.5.2
 	 *
 	 * @return  void
 	 */
@@ -63,15 +63,9 @@ class Editor implements Component_Interface {
 			// Others.
 			add_theme_support( 'custom-units' );
 			add_theme_support( 'custom-spacing' );
+			add_theme_support( 'appearance-tools' );
 
 			// Experimental
-			/**
-			 * Check `--wp--style--color--link` CSS variable.
-			 * Does not work in WP 5.9 without `theme.json`,
-			 * which on the other hand causes so much more issues...
-			 */
-			add_theme_support( 'link-color' );
-
 			/**
 			 * WP6.3
 			 * @link  https://make.wordpress.org/core/2023/07/18/miscellaneous-developer-changes-in-wordpress-6-3/

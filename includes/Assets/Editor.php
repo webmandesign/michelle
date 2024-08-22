@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.11
+ * @version  1.5.2
  */
 
 namespace WebManDesign\Michelle\Assets;
@@ -101,7 +101,7 @@ class Editor implements Component_Interface {
 	 * selectors and wrap everything in `.editor-styles-wrapper`.)
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.11
+	 * @version  1.5.2
 	 *
 	 * @return  void
 	 */
@@ -119,7 +119,7 @@ class Editor implements Component_Interface {
 				'inline'   => array(
 					'customize-styles-editor' =>
 						Google_Fonts::get_stylesheet_content() . PHP_EOL . PHP_EOL
-						. Styles::get_css_variables(),
+						. Styles::get_css_variables( '.editor-styles-wrapper.editor-styles-wrapper' ), // @see `assets/scss/editor-style-blocks.scss`
 				),
 			) );
 

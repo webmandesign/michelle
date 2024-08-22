@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.0.12
+ * @version  1.5.2
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -68,11 +68,14 @@ class Styles implements Component_Interface {
 	/**
 	 * Get processed CSS variables string.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.5.2
+	 *
+	 * @param  string $root  CSS root selector for defining CSS variables.
 	 *
 	 * @return  string
 	 */
-	public static function get_css_variables(): string {
+	public static function get_css_variables( string $root = ':root' ): string {
 
 		// Variables
 
@@ -86,7 +89,7 @@ class Styles implements Component_Interface {
 				$css_vars =
 					'/* START CSS variables */'
 					. PHP_EOL
-					. ':root { '
+					. $root . ' { '
 					. PHP_EOL
 					. $css_vars
 					. PHP_EOL
