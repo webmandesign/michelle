@@ -154,7 +154,7 @@ class Options implements Component_Interface {
 				Media::get_image_sizes()
 			);
 
-			// Reusable blocks.
+			// Patterns.
 			$blocks_reusable = get_posts( array(
 				'post_type'   => Block_Area::get_post_type(),
 				'numberposts' => 100,
@@ -971,11 +971,11 @@ class Options implements Component_Interface {
 						'type'        => 'html',
 						'content'     => '<h3>' . esc_html__( 'Content', 'michelle' ) . '</h3>',
 						'description' =>
-							esc_html__( 'Create and edit your content with block editor in Reusable Blocks manager.', 'michelle' )
+							esc_html__( 'Create and edit your content with block editor in Patterns manager.', 'michelle' )
 							. ' '
-							. '(<a href="' . esc_url( admin_url( 'edit.php?post_type=wp_block' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Open Reusable Blocks manager in a new window now &rarr;', 'michelle' ) . '</a>)'
+							. '(<a href="' . esc_url( admin_url( 'edit.php?post_type=wp_block' ) ) . '" target="_blank"  rel="noopener noreferrer">' . esc_html__( 'Open Patterns manager in a new window now &rarr;', 'michelle' ) . '</a>)'
 							. '<br><br>'
-							. esc_html__( 'Then assign created reusable blocks for display below.', 'michelle' ),
+							. esc_html__( 'Then assign created Patterns for display below.', 'michelle' ),
 					),
 
 					950 . 'others' . 210 => array(

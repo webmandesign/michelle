@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2024-08-22 20:39+0200\n"
-"PO-Revision-Date: 2024-08-22 20:40+0200\n"
+"POT-Creation-Date: 2024-08-23 12:10+0200\n"
+"PO-Revision-Date: 2024-08-23 12:10+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -898,20 +898,17 @@ msgid "Content"
 msgstr "Obsah"
 
 #: includes/Customize/Options.php:974
-msgid ""
-"Create and edit your content with block editor in Reusable Blocks manager."
+msgid "Create and edit your content with block editor in Patterns manager."
 msgstr ""
-"Vytvorte alebo upravte obsah editorom blokov v správcovi opakovane "
-"použiteľných blokov."
+"Vytvárajte a upravujte svoj obsah pomocou editora blokov v správcovi Vzorov."
 
 #: includes/Customize/Options.php:976
-msgid "Open Reusable Blocks manager in a new window now &rarr;"
-msgstr "Otvoriť správcu opakovane použiteľných blokov v novom okne &rarr;"
+msgid "Open Patterns manager in a new window now &rarr;"
+msgstr "Otvorte správcu Vzorov v novom okne &rarr;"
 
 #: includes/Customize/Options.php:978
-msgid "Then assign created reusable blocks for display below."
-msgstr ""
-"Následne zobrazte vytvorené opakovane použiteľné bloky priradením nižšie."
+msgid "Then assign created Patterns for display below."
+msgstr "Potom priraďte vytvorený Vzor na zobrazenie nižšie."
 
 #: includes/Customize/Options.php:984
 msgid "Footer content"

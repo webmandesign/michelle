@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Michelle\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2024-08-22 20:39+0200\n"
+"POT-Creation-Date: 2024-08-23 12:10+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -892,16 +892,15 @@ msgid "Content"
 msgstr ""
 
 #: includes/Customize/Options.php:974
-msgid ""
-"Create and edit your content with block editor in Reusable Blocks manager."
+msgid "Create and edit your content with block editor in Patterns manager."
 msgstr ""
 
 #: includes/Customize/Options.php:976
-msgid "Open Reusable Blocks manager in a new window now &rarr;"
+msgid "Open Patterns manager in a new window now &rarr;"
 msgstr ""
 
 #: includes/Customize/Options.php:978
-msgid "Then assign created reusable blocks for display below."
+msgid "Then assign created Patterns for display below."
 msgstr ""
 
 #: includes/Customize/Options.php:984
