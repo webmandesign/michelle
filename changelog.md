@@ -1,5 +1,16 @@
 # Michelle Changelog
 
+## 1.5.4, 20240823
+
+### Fixed
+- Spacing styles
+
+### File updates
+	changelog.md
+	style.css
+	assets/scss/global.scss
+
+
 ## 1.5.3, 20240823
 
 ### Fixed

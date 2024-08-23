@@ -86,7 +86,8 @@
 			padding-inline: 0;
 		}
 
-		> .alignwide {
+		> .alignwide,
+		.alignwide > & {
 			margin-inline: auto;
 		}
 
