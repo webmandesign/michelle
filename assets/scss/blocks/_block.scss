@@ -36,3 +36,16 @@
 	@extend %block_inner_container;
 	@extend %clearfix;
 }
+
+.is-layout-constrained,
+.is-layout-flow {
+
+	> * {
+		margin-top: 0;
+		margin-bottom: var(--gap);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
