@@ -75,7 +75,7 @@
 	&[data-align="wide"],
 	&[data-align="full"] {
 		max-width: none;
-		margin: 0;
+		margin: 0 !important;
 
 		&:not(:last-child) > * {
 			margin-bottom: var(--gap);

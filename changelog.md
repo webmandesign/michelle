@@ -1,5 +1,18 @@
 # Michelle Changelog
 
+## 1.5.5, 20240826
+
+### Fixed
+- Block alignment
+- Editor spacing styles
+
+### File updates
+	changelog.md
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+
+
 ## 1.5.4, 20240823
 
 ### Fixed
