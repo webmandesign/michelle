@@ -1,5 +1,18 @@
 # Michelle Changelog
 
+## 1.5.6, 20240904
+
+### Fixed
+- Latest Posts block layout
+
+### File updates
+	changelog.md
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/editor-style-blocks.scss
+	includes/Content/Block.php
+
+
 ## 1.5.5, 20240826
 
 ### Fixed

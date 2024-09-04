@@ -32,13 +32,11 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
-
 		}
 
 		&:not(:first-child) {
 			margin-top: 1em;
 		}
-
 	}
 
 	li .wp-block-latest-posts__featured-image {
@@ -51,7 +49,6 @@
 		img {
 			width: 100%;
 		}
-
 	}
 
 	a:not(.link-more) { // Post title.
@@ -70,7 +67,6 @@
 			text-underline-offset: .15em;
 			text-decoration-thickness: 1px;
 		}
-
 	}
 
 	.entry-meta {
@@ -88,7 +84,6 @@
 			display: inline-block;
 			margin: 0 .5em;
 		}
-
 	}
 
 		&__post-author,
@@ -108,35 +103,42 @@
 
 		@include media( map_get( $breakpoint, 'm' ) ) {
 
-			&:not(.alignwide):not(.alignfull) {
+			&:not(.alignfull) {
 				width: calc( 100% + var(--posts_list_gap) );
 				margin: calc( var(--posts_list_gap) / 2 * -1 );
 			}
 
-			li {
+			> li:not([class]) {
 				width: calc( 100% - var(--posts_list_gap) );
 			}
 
 			&[class*="columns-"] li {
 				margin: calc( var(--posts_list_gap) / 2 );
 			}
-
 		}
 
+		&-inline {
+			--posts_list_gap: var(--gap);
+		}
 	}
 
 	// Columns.
 
-		&[class*="columns-"] li {
+		&[class*="columns-"] > li:not([class]) {
 			width: 100%;
 		}
 
 		@for $i from 2 through 6 {
-			&.columns-#{ $i } li {
+
+			&.columns-#{ $i } > li:not([class]) {
 				@extend %posts_list_columns_#{$i};
 			}
 		}
 
+	// Wide alignment layout fix.
+	&__alignwide-wrap > .is-grid {
+		max-width: none;
+	}
 }
 
 .has-text-color .wp-block-latest-posts,
@@ -147,5 +149,4 @@
 	a:not(.link-more) { // Post title.
 		color: inherit;
 	}
-
 }

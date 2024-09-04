@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.5.0
+ * @version  1.5.6
  */
 
 namespace WebManDesign\Michelle\Content;
@@ -23,7 +23,7 @@ class Block implements Component_Interface {
 	 * Initialization.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.8
+	 * @version  1.5.6
 	 *
 	 * @return  void
 	 */
@@ -42,6 +42,10 @@ class Block implements Component_Interface {
 
 				add_filter( 'register_post_type_args', __CLASS__ . '::register_reusable_blocks_args', 10, 2 );
 
+				// Has to be executed before `self::render_block()`.
+				// And we cannot use `render_block_core/latest-posts` as it is executed later.
+				add_filter( 'render_block', __CLASS__ . '::render__latest_posts', 11, 2 );
+
 				add_filter( 'render_block', __CLASS__ . '::render_block', 15, 2 );
 
 	} // /init
@@ -50,7 +54,7 @@ class Block implements Component_Interface {
 	 * Block editor output modifications.
 	 *
 	 * @since    1.0.0
-	 * @version  1.4.1
+	 * @version  1.5.6
 	 *
 	 * @param  string $block_content  The pre-rendered content. Default null.
 	 * @param  array  $block          The block being rendered.
@@ -145,35 +149,6 @@ class Block implements Component_Interface {
 				);
 			}
 
-			// Latest Posts block.
-			if (
-				'core/latest-posts' === $block['blockName']
-				&& (
-					! empty( $attrs['displayAuthor'] )
-					|| ! empty( $attrs['displayPostDate'] )
-				)
-			) {
-				$re = '/';
-
-				if ( ! empty( $attrs['displayAuthor'] ) ) {
-					$re .= '<div class="wp-block-latest-posts__post-author">';
-				} else {
-					$re .= '<time(.*?)>';
-				}
-
-				$re .= '(.*?)';
-
-				if ( ! empty( $attrs['displayPostDate'] ) ) {
-					$re .= '<\/time>';
-				} else {
-					$re .= '<\/div>';
-				}
-
-				$re .= '/s';
-
-				$block_content = preg_replace( $re, '<div class="entry-meta">$0</div>', $block_content );
-			}
-
 			// Post Excerpt block.
 			if ( 'core/post-excerpt' == $block['blockName'] ) {
 				// Remove excerpt opening paragraph tag.
@@ -253,5 +228,95 @@ class Block implements Component_Interface {
 			return $args;
 
 	} // /register_reusable_blocks_args
+
+	/**
+	 * Block output modification: Latest Posts.
+	 *
+	 * @since  1.5.6
+	 *
+	 * @param  string $block_content  The rendered content. Default null.
+	 * @param  array  $block          The block being rendered.
+	 *
+	 * @return  string
+	 */
+	public static function render__latest_posts( string $block_content, array $block ): string {
+
+		// Requirements check
+
+			if ( 'core/latest-posts' !== $block['blockName'] ) {
+				return $block_content;
+			}
+
+
+		// Processing
+
+			// Wrap entry meta data.
+			if (
+				! empty( $block['attrs']['displayAuthor'] )
+				|| ! empty( $block['attrs']['displayPostDate'] )
+			) {
+
+				$re = '/';
+
+				if ( ! empty( $block['attrs']['displayAuthor'] ) ) {
+					$re .= '<div class="wp-block-latest-posts__post-author">';
+				} else {
+					$re .= '<time(.*?)>';
+				}
+
+				$re .= '(.*?)';
+
+				if ( ! empty( $block['attrs']['displayPostDate'] ) ) {
+					$re .= '<\/time>';
+				} else {
+					$re .= '<\/div>';
+				}
+
+				$re .= '/s';
+
+				$block_content = preg_replace( $re, '<div class="entry-meta">$0</div>', $block_content );
+			}
+
+			// Fix layout.
+			if (
+				isset( $block['attrs']['align'] )
+				&& 'wide' === $block['attrs']['align']
+			) {
+
+				$block_content = '<div class="wp-block-latest-posts__alignwide-wrap alignwide">' . $block_content . '</div>';
+			}
+
+			// Helper class if posts are displayed inline.
+			if (
+				isset( $block['attrs']['postLayout'] )
+				&& 'grid' === $block['attrs']['postLayout']
+			) {
+
+				$columns     = $block['attrs']['columns']     ?? 3;
+				$posts_count = $block['attrs']['postsToShow'] ?? 5;
+
+				if ( $posts_count == $columns ) {
+
+					$block_content = str_replace(
+						' is-grid ',
+						' is-grid is-grid-inline ',
+						$block_content
+					);
+				}
+			}
+
+			// Add class to list items.
+			// $block_content = str_replace(
+			// 	'<li>',
+			// 	'<li class="wp-block-latest-posts__list-item">',
+			// 	$block_content
+			// );
+
+
+		// Output
+
+			return $block_content;
+
+	} // /render__latest_posts
 
 }
