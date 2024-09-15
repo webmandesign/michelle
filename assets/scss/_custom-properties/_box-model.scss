@@ -32,6 +32,12 @@
 		// Simulating rem unit for block editor styles consistency.
 		--gap: calc( var(--typography_font_size_base) * var(--typography_line_height) );
 
+		--gap_elements: 0;
+		// Touch enabled devices.
+		@media (hover: none) {
+			--gap_elements: 6px;
+		}
+
 		--posts_list_gap: 1em;
 		@include media( map_get( $breakpoint, 'xl' ) ) {
 			--posts_list_gap: 2em;
@@ -51,6 +57,8 @@
 		}
 
 		--letter_spacing: .05em;
+
+		--navigation_button_toggle_spacing: var(--gap_elements);
 
 	// Widths & heights.
 

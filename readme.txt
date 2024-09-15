@@ -35,11 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.5.1 =
-Block editor post title styles and fixing Excerpt block duplicate "read more" text.
-
-= 1.5.0 =
-Fixes WordPress 6.3 compatibility issues, improving accessibility, fixing bugs.
+= 1.5.7 =
+Improving accessibility
 
 
 == Copyright ==

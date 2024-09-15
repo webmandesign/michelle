@@ -1,5 +1,18 @@
 # Michelle Changelog
 
+## 1.5.7, 20240915
+
+### Updated
+- Improving accessibility
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/_custom-properties.scss
+	assets/scss/global.scss
+
+
 ## 1.5.6, 20240904
 
 ### Fixed
