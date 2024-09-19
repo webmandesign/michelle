@@ -35,8 +35,8 @@ Please see `changelog.md` file.
 
 == Upgrade Notice ==
 
-= 1.5.7 =
-Improving accessibility
+= 1.5.8 =
+Fixing styles.
 
 
 == Copyright ==

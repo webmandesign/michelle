@@ -1,5 +1,20 @@
 # Michelle Changelog
 
+## 1.5.8, 20240919
+
+### Fixed
+- Latest Posts block responsive styles
+- Image block border style override
+- Row block justification styles
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/blocks.scss
+	assets/scss/global.scss
+
+
 ## 1.5.7, 20240915
 
 ### Updated

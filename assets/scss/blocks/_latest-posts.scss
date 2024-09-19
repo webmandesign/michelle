@@ -137,6 +137,7 @@
 
 	// Wide alignment layout fix.
 	&__alignwide-wrap > .is-grid {
+		width: 100%;
 		max-width: none;
 	}
 }
