@@ -8,7 +8,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.5.9
  */
 
 namespace WebManDesign\Michelle\Plugin\Beaver_Builder;
@@ -46,7 +47,8 @@ class Component implements Component_Interface {
 	/**
 	 * Upgrade URL.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.5.9
 	 *
 	 * @param  string $url
 	 *
@@ -56,7 +58,7 @@ class Component implements Component_Interface {
 
 		// Output
 
-			return esc_url( add_query_arg( 'fla', '67', (string) $url ) );
+			return trailingslashit( FL_BUILDER_STORE_URL ) . 'fla/67/';
 
 	} // /upgrade_url
 

@@ -1,5 +1,20 @@
 # Michelle Changelog
 
+## 1.5.9, 20250118
+
+### Updated
+- Beaver Builder upgrade link
+
+### Fixed
+- WooCommerce styles
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	includes/Plugin/Beaver_Builder/Component.php
+	
+
 ## 1.5.8, 20240919
 
 ### Fixed
