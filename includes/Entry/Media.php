@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.3.3
+ * @version  1.5.10
  */
 
 namespace WebManDesign\Michelle\Entry;
@@ -115,7 +115,7 @@ class Media implements Component_Interface {
 	 * Featured image.
 	 *
 	 * @since    1.0.0
-	 * @version  1.3.3
+	 * @version  1.5.10
 	 *
 	 * @param  string $image_size
 	 *
@@ -161,8 +161,8 @@ class Media implements Component_Interface {
 			) {
 
 				if ( Component::is_singular( $post_id ) || is_attachment() ) {
-					$link_url = wp_get_attachment_image_src( $image_id, 'full' );
-					$link_url = $link_url[0];
+					$link_url = (array) wp_get_attachment_image_src( $image_id, 'full' );
+					$link_url = (string) $link_url[0];
 				} else {
 					$link_url = get_permalink();
 				}

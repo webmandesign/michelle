@@ -7,7 +7,8 @@
  * @package    Michelle
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.5.10
  */
 
 namespace WebManDesign\Michelle\Customize;
@@ -351,7 +352,8 @@ class Sanitize {
 	/**
 	 * CSS: Sanitize image URL.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.5.10
 	 *
 	 * @param  array|int|string $image  Could be a URL, numeric image ID or an array with `id` image ID key.
 	 *
@@ -371,8 +373,8 @@ class Sanitize {
 			}
 
 			if ( is_numeric( $image ) ) {
-				$image = wp_get_attachment_image_src( absint( $image ), 'full' );
-				$image = $image[0];
+				$image = (array) wp_get_attachment_image_src( absint( $image ), 'full' );
+				$image = (string) $image[0];
 			}
 
 			if ( ! empty( $image ) ) {

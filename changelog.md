@@ -1,5 +1,25 @@
 # Michelle Changelog
 
+## 1.5.10, 20250424
+
+### Updated
+- WordPress 6.8 compatibility
+- Accessibility styles
+- Improving code
+
+### Fixed
+- Editor styles
+
+### File updates
+	changelog.md
+	readme.txt
+	style.css
+	assets/scss/editor-style-blocks.scss
+	assets/scss/global.scss
+	includes/Customize/Sanitize.php
+	includes/Entry/Media.php
+
+
 ## 1.5.9, 20250118
 
 ### Updated

@@ -1,9 +1,9 @@
 /* FILE: global/accessibility/_base.scss */
 
-.site :focus {
+:where( .site :focus ) {
 	outline-width: 2px;
 	outline-style: dashed;
-	outline-offset: 1px;
+	outline-offset: 3px;
 	outline-color: currentColor;
 }
 
